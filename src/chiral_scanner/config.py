@@ -10,6 +10,17 @@ DEFAULT_INITIAL_DATE = "2017-01-01"
 DEFAULT_SCAN_OVERLAP_DAYS = 14
 DEFAULT_AI_MODEL = "openai/gpt-4.1-mini"
 
+# Verified arXiv records anchoring the field map. These are documentation/seeding references;
+# the date-window collector remains unchanged and continues to deduplicate them normally when
+# their windows are scanned.
+CURATED_ARXIV_SEEDS = [
+    "1512.06351",  # ErFeO3 magnetophononics
+    "2305.11551",  # phononic switching / ultrafast Barnett effect
+    "2507.22232",  # LiNbO3 chiral phonon-polaritons
+    "2603.06144",  # electric-field switching in BaTiO3
+    "2607.01841",  # direct structural trajectory in SrTiO3
+]
+
 ARXIV_CATEGORIES = [
     "cond-mat.mtrl-sci",
     "cond-mat.mes-hall",
