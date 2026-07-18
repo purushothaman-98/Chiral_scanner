@@ -30,7 +30,7 @@ from chiral_scanner.field_map import (
 from chiral_scanner.github_dispatch import dispatch_metadata_scan
 
 try:
-    from chiral_scanner.history import (
+    from chiral_scanner.history_v2 import (
         CONCEPT_STAGES,
         EVIDENCE_LEVELS,
         LANDMARKS,
