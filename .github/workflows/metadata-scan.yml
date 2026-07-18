@@ -53,6 +53,10 @@ jobs:
           ARGS=(--output /tmp/chiral_candidates.json --summary /tmp/chiral_scan_summary.json)
           if [ -n "$SINCE" ]; then
             ARGS+=(--since "$SINCE")
+          elif [ "$GITHUB_EVENT_NAME" = "push" ]; then
+            # This workflow-file update safely bootstraps the requested archive once.
+            # Data-only commits do not match the push path filter, so it cannot loop.
+            ARGS+=(--since "2026-06-01" --until "2026-07-18")
           fi
           if [ -n "$UNTIL" ]; then
             ARGS+=(--until "$UNTIL")
