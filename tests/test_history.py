@@ -1,4 +1,4 @@
-from chiral_scanner.history import (
+from chiral_scanner.history_v2 import (
     CONCEPT_STAGES,
     EVIDENCE_LEVELS,
     LANDMARKS,
@@ -7,7 +7,7 @@ from chiral_scanner.history import (
 
 
 def test_history_public_exports_are_available():
-    import chiral_scanner.history as history
+    import chiral_scanner.history_v2 as history
 
     for name in ("CONCEPT_STAGES", "EVIDENCE_LEVELS", "LANDMARKS", "MATERIAL_SYSTEMS"):
         assert hasattr(history, name)
