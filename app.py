@@ -1,11 +1,20 @@
 from __future__ import annotations
 
+# ruff: noqa: E402 -- source-path bootstrap must precede project imports on Streamlit Cloud.
 import hashlib
 import hmac
 import html
+import sys
 from collections import defaultdict
 from datetime import date, datetime, timezone
 from pathlib import Path
+
+# Streamlit Cloud can retain an older editable package between rapid redeploys. Ensure the
+# checked-out source tree wins over any stale site-packages copy before project imports.
+ROOT = Path(__file__).resolve().parent
+SRC = ROOT / "src"
+if str(SRC) not in sys.path:
+    sys.path.insert(0, str(SRC))
 
 import pandas as pd
 import streamlit as st
@@ -29,7 +38,6 @@ from chiral_scanner.scope import has_chiral_phonon_scope
 from chiral_scanner.storage import empty_archive, load_json
 from chiral_scanner.ui import flatten_unique, paginate
 
-ROOT = Path(__file__).parent
 DATA = ROOT / "data"
 
 st.set_page_config(
