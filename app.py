@@ -96,6 +96,8 @@ def scope_passes(paper: dict) -> bool:
 
 def feed_status(paper: dict) -> str:
     if not decision_is_current(paper):
+        if paper.get("preliminary_include") is not True and not scope_passes(paper):
+            return "Rule-excluded candidate"
         return "Pending AI review"
     decision = paper["ai_decision"]
     if decision.get("relevance") == "Uncertain":
@@ -186,11 +188,14 @@ def paper_card(paper: dict) -> None:
 
 
 archive, history, events, tools = load_all()
+review_history = load_json(DATA / "review_history.json", [])
+backfill_state = load_json(DATA / "backfill_state.json", {})
 papers = archive.get("papers", [])
 statuses = {paper["base_arxiv_id"]: feed_status(paper) for paper in papers}
 approved = [p for p in papers if statuses[p["base_arxiv_id"]] == "Approved research feed"]
 pending = [p for p in papers if statuses[p["base_arxiv_id"]] == "Pending AI review"]
 review_queue = [p for p in papers if statuses[p["base_arxiv_id"]] == "Needs scientific review"]
+rule_excluded = [p for p in papers if statuses[p["base_arxiv_id"]] == "Rule-excluded candidate"]
 experimental = [p for p in papers if is_experimental_study(p)]
 reviewed = [p for p in papers if decision_is_current(p)]
 
@@ -227,7 +232,8 @@ coverage = (
 last_scan = history[-1].get("scan_timestamp") if history else archive.get("updated_at")
 st.markdown(
     f'<div class="coverage">{coverage} · Last metadata scan: {short_date(last_scan)} · '
-    f'{len(pending)} pending · {len(review_queue)} need scientific review</div>',
+    f'{len(pending)} eligible papers pending · {len(review_queue)} need scientific review · '
+    f'backfill checkpoint: {html.escape(str(backfill_state.get("next_until", "not started")))}</div>',
     unsafe_allow_html=True,
 )
 
@@ -246,6 +252,7 @@ with paper_tab:
                 "Experimental studies",
                 "Pending AI review",
                 "Needs scientific review",
+                "Rule-excluded candidates",
                 "All retrieved candidates",
             ],
         )
@@ -284,6 +291,8 @@ with paper_tab:
         candidates = pending
     elif view == "Needs scientific review":
         candidates = review_queue
+    elif view == "Rule-excluded candidates":
+        candidates = rule_excluded
     else:
         candidates = papers
 
@@ -339,6 +348,24 @@ with paper_tab:
         st.info("No papers match this view and filter combination.")
 
 with analysis_tab:
+    st.subheader("Pipeline status")
+    pipeline_metrics = st.columns(4)
+    pipeline_metrics[0].metric("Eligible AI pending", len(pending))
+    pipeline_metrics[1].metric(
+        "Last review succeeded",
+        review_history[-1].get("succeeded", 0) if review_history else 0,
+    )
+    pipeline_metrics[2].metric(
+        "Backfill windows complete", backfill_state.get("windows_completed", 0)
+    )
+    pipeline_metrics[3].metric(
+        "Backfill next date", backfill_state.get("next_until", "—")
+    )
+    st.caption(
+        "Daily metadata: 04:00 UTC · AI review: every four hours at :40 · "
+        "historical backfill: 02:10, 08:10, 14:10 and 20:10 UTC. "
+        "All archive writers use one non-cancelling queue."
+    )
     st.subheader("Approved-feed analysis")
     st.caption("Charts use only the scientifically approved feed; rejected candidates cannot distort the distributions.")
     if not approved:

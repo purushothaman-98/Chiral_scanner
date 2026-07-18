@@ -1,0 +1,70 @@
+name: Backfill historical arXiv windows
+
+on:
+  schedule:
+    - cron: "10 2,8,14,20 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: chiral-archive-writes
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Resolve the next checkpointed window
+        id: window
+        run: |
+          WINDOW=$(python scripts/backfill_window.py --emit)
+          echo "payload=$WINDOW" >> "$GITHUB_OUTPUT"
+          python -c 'import json,sys; print(json.loads(sys.argv[1]))' "$WINDOW"
+      - name: Query one 30-day historical window
+        if: ${{ fromJSON(steps.window.outputs.payload).completed == false }}
+        env:
+          SINCE: ${{ fromJSON(steps.window.outputs.payload).since }}
+          UNTIL: ${{ fromJSON(steps.window.outputs.payload).until }}
+        run: |
+          python scripts/scan_arxiv.py \
+            --since "$SINCE" \
+            --until "$UNTIL" \
+            --output /tmp/chiral_candidates.json \
+            --summary /tmp/chiral_scan_summary.json
+      - name: Merge and advance checkpoint only after success
+        if: ${{ fromJSON(steps.window.outputs.payload).completed == false }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+          python scripts/merge_scan.py \
+            --candidates /tmp/chiral_candidates.json \
+            --summary /tmp/chiral_scan_summary.json
+          python scripts/backfill_window.py --advance
+          python scripts/validate_data.py
+      - name: Commit archive and checkpoint
+        if: ${{ fromJSON(steps.window.outputs.payload).completed == false }}
+        run: |
+          git add data/papers.json data/scan_history.json data/backfill_state.json
+          if git diff --cached --quiet; then
+            echo "No backfill changes"
+          else
+            git commit -m "Backfill chiral phonon archive window"
+            git push origin HEAD:main
+          fi
+      - name: Report completion
+        if: ${{ fromJSON(steps.window.outputs.payload).completed == true }}
+        run: echo "Historical backfill is complete; no API query was made."

@@ -30,6 +30,13 @@ The detailed topic taxonomy is retained in `topic_research_notes.md` and impleme
 
 The metadata workflow runs at **04:00 UTC every day** and queries an overlapping **14-day submitted-or-updated window**, so delayed records and new versions are revisited. Manual workflow dispatch accepts bounded `since` and `until` dates. AI classification starts as a separate workflow after a successful metadata scan.
 
+The pipeline also uses a rate-safe 24-hour work cycle:
+
+- AI review runs every four hours at `00:40`, `04:40`, `08:40`, `12:40`, `16:40` and `20:40` UTC, with at most 20 eligible abstracts per run.
+- Historical collection runs at `02:10`, `08:10`, `14:10` and `20:10` UTC. Each run scans one checkpointed 30-day window backwards from 1 June 2026 toward 1 January 2017.
+- Daily scans, historical scans and AI commits share the `chiral-archive-writes` concurrency group with cancellation disabled. They queue instead of modifying the archive simultaneously.
+- Obvious rule-excluded candidates remain searchable but do not consume GitHub Models requests. Failed individual AI reviews are deferred for a later scheduled run without discarding successful decisions from the same batch.
+
 ## First archive build
 
 The default initial date is **2017-01-01**. From GitHub Actions, run **Scan arXiv metadata**, enable `initial`, and leave `since` empty. The script queries safe yearly batches and respects a delay between arXiv API pages.
