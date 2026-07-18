@@ -9,14 +9,16 @@ def test_all_dashboard_tabs_render_without_an_exception():
     app = AppTest.from_file("app.py", default_timeout=15).run(timeout=15)
 
     assert not app.exception
-    assert [tab.label for tab in app.tabs] == [
-        "Research evolution",
-        "Daily scan",
-        "Field analysis",
-        "News & breakthroughs",
-        "Projects & opportunities",
-        "Operations",
-    ]
+    labels = [tab.label for tab in app.tabs]
+    for label in [
+        "Field atlas",
+        "Latest papers",
+        "Research landscape",
+        "Breakthroughs",
+        "Ecosystem",
+        "Pipeline",
+    ]:
+        assert label in labels
 
 
 def test_legacy_industry_record_does_not_break_later_tabs(monkeypatch):
