@@ -1,6 +1,6 @@
 from datetime import date
 
-from scripts.backfill_window import next_window
+from chiral_scanner.backfill import next_window
 
 
 def test_backfill_moves_back_one_bounded_window() -> None:

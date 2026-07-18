@@ -2,18 +2,10 @@ from __future__ import annotations
 
 import argparse
 import json
-from datetime import date, datetime, timedelta, timezone
+from datetime import date, datetime, timezone
 
+from chiral_scanner.backfill import next_window
 from chiral_scanner.storage import atomic_write_json, load_json
-
-
-def next_window(state: dict) -> tuple[date, date] | None:
-    target = date.fromisoformat(state["target_date"])
-    until = date.fromisoformat(state["next_until"])
-    if state.get("completed") or until <= target:
-        return None
-    since = max(target, until - timedelta(days=int(state.get("window_days", 30))))
-    return since, until
 
 
 def main() -> None:
