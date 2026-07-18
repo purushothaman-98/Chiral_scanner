@@ -4,6 +4,7 @@ from __future__ import annotations
 import hashlib
 import hmac
 import html
+import importlib
 import sys
 from collections import defaultdict
 from datetime import date, datetime, timezone
@@ -30,12 +31,16 @@ from chiral_scanner.field_map import (
 from chiral_scanner.github_dispatch import dispatch_metadata_scan
 
 try:
-    from chiral_scanner.history_v2 import (
-        CONCEPT_STAGES,
-        EVIDENCE_LEVELS,
-        LANDMARKS,
-        MATERIAL_SYSTEMS,
-    )
+    import chiral_scanner.history_v2 as history_data
+
+    # Streamlit reruns app.py inside a long-lived process. Reload the curated data module so
+    # newly deployed materials and papers appear without requiring a manual server reboot.
+    importlib.invalidate_caches()
+    history_data = importlib.reload(history_data)
+    CONCEPT_STAGES = history_data.CONCEPT_STAGES
+    EVIDENCE_LEVELS = history_data.EVIDENCE_LEVELS
+    LANDMARKS = history_data.LANDMARKS
+    MATERIAL_SYSTEMS = history_data.MATERIAL_SYSTEMS
 except ImportError:
     # Keep the site alive if Streamlit's in-place pull leaves app.py newer than history.py.
     from chiral_scanner.history import CONCEPT_STAGES, LANDMARKS
@@ -323,9 +328,7 @@ st.markdown(
     paper_tab,
     analysis_tab,
     news_tab,
-    funding_tab,
-    events_tab,
-    tools_tab,
+    ecosystem_tab,
     admin_tab,
 ) = st.tabs(
     [
@@ -333,15 +336,23 @@ st.markdown(
         "Daily scan",
         "Field analysis",
         "News & breakthroughs",
-        "Funding & projects",
-        "Opportunities",
-        "Sources",
-        "Data operations",
+        "Projects & opportunities",
+        "Operations",
     ]
 )
 
 with history_tab:
-    st.subheader("Experimental materials map")
+    overview_metrics = st.columns(4)
+    overview_metrics[0].metric("Material systems", len(MATERIAL_SYSTEMS))
+    overview_metrics[1].metric(
+        "Direct mode-resolved",
+        sum(item["evidence"] == "Direct mode-resolved" for item in MATERIAL_SYSTEMS),
+    )
+    overview_metrics[2].metric(
+        "Driven responses", sum(item["evidence"] == "Driven response" for item in MATERIAL_SYSTEMS)
+    )
+    overview_metrics[3].metric("Landmark papers", len(LANDMARKS))
+    st.subheader("Materials where chiral-phonon physics has been reported")
     st.caption(
         "Materials with published experimental evidence. Labels distinguish observation of the mode itself "
         "from a driven effect or angular-momentum-selective coupling."
@@ -354,7 +365,8 @@ with history_tab:
     filtered_materials = [
         material for material in MATERIAL_SYSTEMS if material["evidence"] in evidence_filter
     ]
-    st.markdown(" · ".join(f"**{item['material']}**" for item in filtered_materials))
+    if filtered_materials:
+        st.markdown(" · ".join(f"**{item['material']}**" for item in filtered_materials))
     if not MATERIAL_SYSTEMS:
         st.info(
             "The enriched materials map is waiting for Streamlit Cloud to complete its repository "
@@ -365,19 +377,22 @@ with history_tab:
         for label, meaning in EVIDENCE_LEVELS.items():
             st.markdown(f"**{label}:** {meaning}")
 
-    material_columns = st.columns(2)
-    for index, material in enumerate(filtered_materials):
-        with material_columns[index % 2]:
-            with st.container(border=True):
-                st.markdown(f"#### {material['material']}")
-                st.caption(f"{material['family']} · {material['year']} · {material['evidence']}")
-                st.markdown(f"**What was measured:** {material['finding']}")
-                st.write(f"Method: {material['method']}")
-                st.warning(f"Interpretation boundary: {material['caveat']}")
-                papers = material.get("papers", [("Primary paper", material["url"])])
-                with st.expander(f"Papers and records · {len(papers)}"):
-                    for label, url in papers:
-                        st.markdown(f"- [{label}]({url})")
+    if filtered_materials:
+        selected_name = st.selectbox(
+            "Explore one material in depth",
+            [item["material"] for item in filtered_materials],
+        )
+        material = next(item for item in filtered_materials if item["material"] == selected_name)
+        with st.container(border=True):
+            st.markdown(f"### {material['material']}")
+            st.caption(f"{material['family']} · {material['year']} · {material['evidence']}")
+            st.markdown(f"**Reported result:** {material['finding']}")
+            st.write(f"**Method:** {material['method']}")
+            st.warning(f"**Interpretation boundary:** {material['caveat']}")
+            papers = material.get("papers", [("Primary paper", material["url"])])
+            st.markdown("**Papers and records**")
+            for label, url in papers:
+                st.markdown(f"- [{label}]({url})")
 
     st.markdown("### How the concept changed")
     stage_columns = st.columns(3)
@@ -683,6 +698,12 @@ keeps true eigenmode chirality, driven circular motion and pseudo-angular moment
             values = [value for paper in approved for value in paper["ai_decision"].get(field, [])]
             return pd.Series(values, dtype="object").value_counts().head(15)
 
+        def render_distribution(column, values: pd.Series) -> None:
+            if values.empty:
+                column.caption("No classified values yet.")
+            else:
+                column.bar_chart(values)
+
         rows = [
             ("Field ecosystems", "_ecosystem"),
             ("Evidence maturity", "_evidence"),
@@ -703,12 +724,12 @@ keeps true eigenmode chirality, driven circular motion and pseudo-angular moment
                 column.markdown(f"#### {title}")
                 if field == "_ecosystem":
                     values = [value for paper in approved for value in ecosystem_areas(paper)]
-                    column.bar_chart(pd.Series(values, dtype="object").value_counts())
+                    render_distribution(column, pd.Series(values, dtype="object").value_counts())
                 elif field == "_evidence":
                     values = [evidence_stage(paper) for paper in approved]
-                    column.bar_chart(pd.Series(values, dtype="object").value_counts())
+                    render_distribution(column, pd.Series(values, dtype="object").value_counts())
                 else:
-                    column.bar_chart(distribution(field))
+                    render_distribution(column, distribution(field))
 
 with news_tab:
     st.subheader("Breakthrough coverage")
@@ -723,7 +744,7 @@ with news_tab:
             st.write(item["summary"])
             st.link_button("Read source ↗", item["url"])
 
-with funding_tab:
+with ecosystem_tab:
     st.subheader("Funded chiral-phonon ecosystem")
     st.caption(
         "Verified projects are separated from general funding portals and speculative industry signals."
@@ -749,7 +770,8 @@ with funding_tab:
     for signal in INDUSTRY_SIGNALS:
         st.info(f"**{signal['name']} — {signal['signal']}**\n\n{signal['detail']}")
 
-with events_tab:
+with ecosystem_tab:
+    st.divider()
     st.subheader("Conferences, workshops, schools and networks")
     for event in events:
         with st.container(border=True):
@@ -770,7 +792,8 @@ with events_tab:
                 st.write(f"**Deadline:** {event['deadline']}")
             st.link_button("Official source ↗", event["url"])
 
-with tools_tab:
+with ecosystem_tab:
+    st.divider()
     st.subheader("Research tools and official sources")
     for item in tools:
         with st.container(border=True):
