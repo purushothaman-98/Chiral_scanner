@@ -10,9 +10,16 @@ VALID = {
     "paper_nature": "Original research",
     "materials_or_systems": ["SrTiO3"],
     "material_or_system_family": ["Perovskite oxides"],
-    "experimental_methods": ["THz pump-probe"],
+    "research_focus": ["Dynamical multiferroicity / phonomagnetism"],
+    "chirality_class": ["Circular/elliptical phonon polarization"],
+    "phonon_character": ["Infrared-active", "Polar / ferroelectric soft mode"],
+    "generation_mechanisms": ["Circular/elliptical THz resonant drive"],
+    "experimental_methods": ["Ultrafast THz pump-probe"],
     "computational_methods": [],
     "physical_properties": ["Transient magnetization"],
+    "evidence_level": "Direct magnetic or magneto-optical consequence",
+    "evidence_caveats": ["magnetization does not directly establish eigenmode chirality"],
+    "application_directions": ["Ultrafast magnetic control"],
     "confidence": 0.94,
     "reason": "The authors directly drive a circular polar phonon and measure magnetization.",
     "supporting_phrases": ["circular polar phonon", "transient magnetization"],
@@ -27,3 +34,16 @@ def test_valid_ai_output():
 def test_invalid_confidence_rejected():
     with pytest.raises(ValidationError):
         AIDecision.model_validate({**VALID, "confidence": 1.5})
+
+
+def test_scientific_axes_remain_separate():
+    decision = AIDecision.model_validate(VALID)
+    assert decision.chirality_class == ["Circular/elliptical phonon polarization"]
+    assert decision.evidence_level == "Direct magnetic or magneto-optical consequence"
+
+
+def test_invented_method_label_is_rejected_even_without_json_schema():
+    with pytest.raises(ValidationError):
+        AIDecision.model_validate(
+            {**VALID, "experimental_methods": ["Ultrafast quantum chirality imaging"]}
+        )

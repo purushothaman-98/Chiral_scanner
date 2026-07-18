@@ -24,8 +24,7 @@ def main() -> None:
         or has_chiral_phonon_scope(paper.get("title", ""), paper.get("abstract", ""))
     ]
     pending = sum(
-        paper.get("ai_fingerprint") != fingerprint(paper, PROMPT_VERSION)
-        for paper in eligible
+        paper.get("ai_fingerprint") != fingerprint(paper, PROMPT_VERSION) for paper in eligible
     )
     summary = load_json(args.summary, {})
     history.append(
@@ -35,6 +34,8 @@ def main() -> None:
             "selected": int(summary.get("selected", 0)),
             "succeeded": int(summary.get("succeeded", 0)),
             "failed": int(summary.get("failed", 0)),
+            "deferred": int(summary.get("deferred", 0)),
+            "rate_limited": bool(summary.get("rate_limited", False)),
             "eligible_total": len(eligible),
             "eligible_pending_after_run": pending,
         }
