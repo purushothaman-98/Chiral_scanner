@@ -6,6 +6,13 @@ from chiral_scanner.history import (
 )
 
 
+def test_history_public_exports_are_available():
+    import chiral_scanner.history as history
+
+    for name in ("CONCEPT_STAGES", "EVIDENCE_LEVELS", "LANDMARKS", "MATERIAL_SYSTEMS"):
+        assert hasattr(history, name)
+
+
 def test_landmark_timeline_is_chronological_and_linked():
     years = [item["year"] for item in LANDMARKS]
     assert years == sorted(years)
