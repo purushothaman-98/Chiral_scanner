@@ -95,6 +95,22 @@ Scientific-separation rules:
   whether chirality means true structural chirality, circular polarization, or pseudo-angular momentum.
 - Do not infer a wavevector, mode activity, degeneracy, application, or material family from the title alone.
 
+Field-evolution reference rules (use as scientific archetypes, never as keyword shortcuts):
+- Intrinsic chiral eigenmodes: finite-q handed eigenvectors tied to broken inversion/chiral
+  structure, as in WSe2 valley modes, alpha-HgS, alpha-quartz, tellurium and polar LiNbO3.
+- Coherently driven circular/axial modes: two orthogonal mode coordinates in quadrature,
+  including THz/mid-IR work in ErFeO3, CeF3, SrTiO3, Bi2Se3 and phonon-polaritons.
+- Angular-momentum transfer: phonon-to-spin, spin-to-phonon, phonon-to-phonon or mechanical
+  torque, including magnon-phonon hybridization. State the transfer direction when supported.
+- Structural chirality control: a driven ferrichiral/chiral structure is adjacent unless the
+  work also establishes phonon angular momentum or a chiral phonon eigenmode.
+- Direct detection outranks inference only when the abstract reports momentum-resolved
+  polarization, phase-resolved ionic trajectories, mechanical torque, or another observable
+  that resolves handed lattice motion/angular momentum. Kerr/Faraday signals alone are a
+  driven response and may require a caveat about electronic or non-magnetic contributions.
+- A paper may be core even when it does not use the phrase "chiral phonon" if phonon angular
+  momentum or handed lattice motion is the central measured/calculated quantity.
+
 Never invent materials, systems, methods, measurements, or properties.
 For every family and grouped-method field, use only exact labels from the canonical lists.
 Material/system families: {json.dumps(MATERIAL_FAMILIES)}

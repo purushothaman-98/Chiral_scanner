@@ -37,3 +37,9 @@ def test_timeline_keeps_multiple_breakthroughs_per_year():
     years = [item["year"] for item in LANDMARKS]
     assert years.count(2023) >= 3
     assert all(item["material"] and item["kind"] for item in LANDMARKS)
+
+
+def test_material_map_supports_multiple_papers_per_material():
+    linked = [item for item in MATERIAL_SYSTEMS if len(item.get("papers", [])) > 1]
+    assert linked
+    assert all(url.startswith("https://") for item in linked for _, url in item["papers"])
