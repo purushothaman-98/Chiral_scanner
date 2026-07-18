@@ -11,7 +11,13 @@ import pandas as pd
 import streamlit as st
 from streamlit.errors import StreamlitSecretNotFoundError
 
-from chiral_scanner.config import PROMPT_VERSION
+from chiral_scanner.field_map import (
+    ecosystem_areas,
+    evidence_stage,
+    is_experimental_evidence,
+    is_field_paper,
+    is_thz_frontier,
+)
 from chiral_scanner.github_dispatch import dispatch_metadata_scan
 from chiral_scanner.scope import has_chiral_phonon_scope
 from chiral_scanner.storage import empty_archive, load_json
@@ -86,44 +92,36 @@ def short_date(value: str | None) -> str:
     return parsed.strftime("%d %b %Y") if parsed else "—"
 
 
-def decision_is_current(paper: dict) -> bool:
-    return bool(paper.get("ai_decision") and paper.get("ai_prompt_version") == PROMPT_VERSION)
-
-
 def scope_passes(paper: dict) -> bool:
     return has_chiral_phonon_scope(paper.get("title", ""), paper.get("abstract", ""))
 
 
 def feed_status(paper: dict) -> str:
-    if not decision_is_current(paper):
+    if not paper.get("ai_decision"):
         if paper.get("preliminary_include") is not True and not scope_passes(paper):
-            return "Rule-excluded candidate"
-        return "Pending AI review"
+            return "Discovery archive"
+        return "Awaiting classification"
     decision = paper["ai_decision"]
     if decision.get("relevance") == "Uncertain":
-        return "Needs scientific review"
-    if decision.get("include_in_feed") is True and scope_passes(paper):
-        return "Approved research feed"
+        return "Open interpretation"
     if decision.get("include_in_feed") is True:
-        return "Needs scientific review"
-    return "Excluded candidate"
+        return "Field ecosystem"
+    return "Outside current field map"
 
 
 def is_experimental_study(paper: dict) -> bool:
-    return feed_status(paper) == "Approved research feed" and (
-        paper.get("ai_decision", {}).get("research_type") in {"Experimental", "Theory + Experiment"}
-    )
+    return is_field_paper(paper) and is_experimental_evidence(paper)
 
 
 def badges(values: list[str], status: str | None = None) -> str:
     result: list[str] = []
     for index, value in enumerate(value for value in values if value):
         extra = ""
-        if index == 0 and status == "Approved research feed":
+        if index == 0 and status == "Field ecosystem":
             extra = " status-approved"
-        elif index == 0 and status == "Pending AI review":
+        elif index == 0 and status == "Awaiting classification":
             extra = " status-pending"
-        elif index == 0 and status == "Needs scientific review":
+        elif index == 0 and status == "Open interpretation":
             extra = " status-review"
         result.append(f'<span class="badge{extra}">{html.escape(str(value))}</span>')
     return "".join(result)
@@ -153,9 +151,10 @@ def paper_card(paper: dict) -> None:
         + decision.get("chirality_class", [])
         + decision.get("phonon_character", [])
     )
+    field_areas = ecosystem_areas(paper) if decision else []
     tags = [status]
-    if decision_is_current(paper):
-        tags.extend([decision.get("relevance"), decision.get("research_type")])
+    if decision:
+        tags.extend([evidence_stage(paper), decision.get("research_type")])
 
     with st.container(border=True):
         st.markdown(
@@ -163,7 +162,7 @@ def paper_card(paper: dict) -> None:
             f'<div class="meta">{html.escape(author_names)} · Submitted '
             f"{short_date(paper.get('initial_submission_date'))} · "
             f"arXiv:{html.escape(str(paper.get('base_arxiv_id', '')))}</div>"
-            f"<div>{badges(tags, status)}{badges((scientific_identity + systems)[:5])}</div>"
+            f"<div>{badges(tags, status)}{badges((field_areas + scientific_identity + systems)[:5])}</div>"
             f'<div class="abstract">{html.escape(preview)}</div>',
             unsafe_allow_html=True,
         )
@@ -178,6 +177,8 @@ def paper_card(paper: dict) -> None:
             st.write(abstract)
             if decision:
                 st.markdown(f"**Classification reason:** {decision.get('reason', '—')}")
+                st.markdown("**Field ecosystem:** " + ", ".join(field_areas))
+                st.markdown(f"**Research maturity:** {evidence_stage(paper)}")
                 phrases = decision.get("supporting_phrases", [])
                 if phrases:
                     st.markdown("**Evidence from abstract:** " + " · ".join(phrases))
@@ -223,12 +224,16 @@ review_history = load_json(DATA / "review_history.json", [])
 backfill_state = load_json(DATA / "backfill_state.json", {})
 papers = archive.get("papers", [])
 statuses = {paper["base_arxiv_id"]: feed_status(paper) for paper in papers}
-approved = [p for p in papers if statuses[p["base_arxiv_id"]] == "Approved research feed"]
-pending = [p for p in papers if statuses[p["base_arxiv_id"]] == "Pending AI review"]
-review_queue = [p for p in papers if statuses[p["base_arxiv_id"]] == "Needs scientific review"]
-rule_excluded = [p for p in papers if statuses[p["base_arxiv_id"]] == "Rule-excluded candidate"]
+approved = [p for p in papers if is_field_paper(p)]
+pending = [p for p in papers if statuses[p["base_arxiv_id"]] == "Awaiting classification"]
+review_queue = [p for p in papers if statuses[p["base_arxiv_id"]] == "Open interpretation"]
+rule_excluded = [p for p in papers if statuses[p["base_arxiv_id"]] == "Discovery archive"]
 experimental = [p for p in papers if is_experimental_study(p)]
-reviewed = [p for p in papers if decision_is_current(p)]
+reviewed = [p for p in papers if p.get("ai_decision")]
+thz_frontier = [p for p in approved if is_thz_frontier(p)]
+direct_evidence = [
+    p for p in approved if evidence_stage(p) in {"Direct measurement", "Experimental evidence"}
+]
 
 st.markdown(
     '<div class="topline">ARXIV CHIRAL PHONON FEED · DAILY AT 04:00 UTC</div>',
@@ -238,9 +243,10 @@ st.markdown(
     """
 <div class="hero">
 <h1>Chiral Phonon Research Scanner</h1>
-<p>A date-ordered research feed for chiral phonons, phonon angular momentum,
-dynamical multiferroicity, phonomagnetism and nonlinear phononics. Every retrieved
-candidate is preserved for audit, while the default feed shows only scientifically approved papers.</p>
+<p>Track how the chiral-phonon field is evolving across phonon angular momentum,
+THz and ultrafast control, magnetism, quantum materials and transport. Direct measurements,
+experimental indications and predictions stay distinct without treating an unsettled definition
+as a reason to hide useful research.</p>
 </div>
 """,
     unsafe_allow_html=True,
@@ -248,24 +254,24 @@ candidate is preserved for audit, while the default feed shows only scientifical
 
 metrics = st.columns(4)
 metrics[0].metric(
-    "Retrieved candidates",
-    len(papers),
-    help="Every deduplicated arXiv result stored in the archive.",
+    "Papers in the field map",
+    len(approved),
+    help="Reviewed papers connected to the chiral-phonon and phonon-angular-momentum ecosystem.",
 )
 metrics[1].metric(
-    "AI reviewed",
-    len(reviewed),
-    help=f"Papers with a stored AI decision. New decisions use {PROMPT_VERSION}.",
+    "THz & ultrafast frontier",
+    len(thz_frontier),
+    help="Field papers involving THz, mid-infrared or ultrafast phonon control.",
 )
 metrics[2].metric(
-    "Approved research feed",
-    len(approved),
-    help="AI-approved papers that also pass the independent phonon/lattice scope guard.",
+    "Direct / spectroscopic evidence",
+    len(direct_evidence),
+    help="Direct measurements and experimental selection-rule evidence.",
 )
 metrics[3].metric(
-    "Approved experimental studies",
+    "Experimental studies",
     len(experimental),
-    help="Approved Experimental and Theory + Experiment papers; rejected candidates are not counted.",
+    help="Reviewed original experimental and combined theory–experiment studies in the field map.",
 )
 
 coverage_dates = [parse_date(p.get("initial_submission_date")) for p in papers]
@@ -278,34 +284,36 @@ coverage = (
 last_scan = history[-1].get("scan_timestamp") if history else archive.get("updated_at")
 st.markdown(
     f'<div class="coverage">{coverage} · Last metadata scan: {short_date(last_scan)} · '
-    f"{len(pending)} eligible papers pending · {len(review_queue)} need scientific review · "
+    f"{len(reviewed)} classified · {len(pending)} awaiting classification · "
+    f"{len(review_queue)} open-interpretation papers · "
     f"backfill checkpoint: {html.escape(str(backfill_state.get('next_until', 'not started')))}</div>",
     unsafe_allow_html=True,
 )
 
 paper_tab, analysis_tab, events_tab, tools_tab, admin_tab = st.tabs(
-    ["Research feed", "Analysis", "Opportunities", "Tools & sources", "Owner controls"]
+    ["Field tracker", "Field map", "Opportunities", "Tools & sources", "Data operations"]
 )
 
 with paper_tab:
     with st.sidebar:
-        st.header("Explore the archive")
-        st.caption(
-            "The approved feed is selected by default. Excluded candidates remain auditable."
-        )
+        st.header("Explore the field")
+        st.caption("Choose a scientific lens. Pipeline queues are kept under Data operations.")
         view = st.radio(
-            "Feed",
+            "Research lens",
             [
-                "Approved research feed",
-                "Experimental studies",
-                "Pending AI review",
-                "Needs scientific review",
-                "Rule-excluded candidates",
-                "All retrieved candidates",
+                "Field evolution",
+                "THz & ultrafast frontier",
+                "Experimental evidence",
+                "Phonon angular momentum",
+                "Magnetism & spintronics",
+                "2D optoelectronics & quantum materials",
+                "Transport, Hall & mechanics",
+                "Theory & materials discovery",
+                "Open questions / interpretation",
             ],
         )
-        search = st.text_input("Search", placeholder="Title, abstract, author, arXiv ID…")
-        current_decisions = [p for p in papers if decision_is_current(p)]
+        search = st.text_input("Search", placeholder="Material, method, author, concept…")
+        current_decisions = [p for p in papers if p.get("ai_decision")]
         relevance_filter = st.multiselect(
             "Chiral-phonon relevance",
             flatten_unique(current_decisions, ("ai_decision", "relevance")),
@@ -355,18 +363,21 @@ with paper_tab:
             flatten_unique(current_decisions, ("ai_decision", "application_directions")),
         )
 
-    if view == "Approved research feed":
+    if view == "Field evolution":
         candidates = approved
-    elif view == "Experimental studies":
+    elif view == "THz & ultrafast frontier":
+        candidates = thz_frontier
+    elif view == "Experimental evidence":
         candidates = experimental
-    elif view == "Pending AI review":
-        candidates = pending
-    elif view == "Needs scientific review":
+    elif view == "Open questions / interpretation":
         candidates = review_queue
-    elif view == "Rule-excluded candidates":
-        candidates = rule_excluded
     else:
-        candidates = papers
+        area = (
+            "Fundamental chirality & phonon angular momentum"
+            if view == "Phonon angular momentum"
+            else view
+        )
+        candidates = [p for p in approved if area in ecosystem_areas(p)]
 
     filtered: list[dict] = []
     needle = search.casefold().strip()
@@ -412,12 +423,30 @@ with paper_tab:
 
     filtered.sort(key=lambda p: p.get("initial_submission_date", ""), reverse=True)
     st.subheader(f"{view} · {len(filtered)} papers")
-    if view == "Approved research feed":
+    if view == "Field evolution":
         st.caption(
-            "Only current AI approvals that independently pass the phonon/lattice scope guard."
+            "Core results, connected phonon-angular-momentum physics and open interpretations."
         )
-    elif view == "Experimental studies":
-        st.caption("Only approved original experimental or combined theory–experiment studies.")
+    elif view == "THz & ultrafast frontier":
+        st.caption(
+            "Coherent THz/mid-IR excitation, nonlinear phononics, dynamical multiferroicity and ultrafast readout."
+        )
+        thz_experimental = [p for p in thz_frontier if is_experimental_evidence(p)]
+        thz_direct = [p for p in thz_frontier if evidence_stage(p) == "Direct measurement"]
+        thz_metrics = st.columns(3)
+        thz_metrics[0].metric("THz-connected papers", len(thz_frontier))
+        thz_metrics[1].metric("Experimental", len(thz_experimental))
+        thz_metrics[2].metric("Direct measurement", len(thz_direct))
+        st.info(
+            "Research question: does the paper merely drive a phonon with THz light, "
+            "or does it establish circular ionic motion, angular momentum, or a magnetic consequence?"
+        )
+    elif view == "Experimental evidence":
+        st.caption("Original experimental and combined theory–experiment studies.")
+    elif view == "Open questions / interpretation":
+        st.caption(
+            "Boundary cases where the meaning or evidence for phonon chirality remains scientifically unsettled."
+        )
 
     page_size = 20
     total_pages = max(1, (len(filtered) + page_size - 1) // page_size)
@@ -444,25 +473,51 @@ with paper_tab:
         st.info("No papers match this view and filter combination.")
 
 with analysis_tab:
-    st.subheader("Pipeline status")
+    st.subheader("How the field is evolving")
+    st.markdown(
+        """
+The community does not use one settled definition. This tracker therefore follows the
+unifying question—**how lattice motion carries, generates or transfers angular momentum**—and
+keeps true eigenmode chirality, driven circular motion and pseudo-angular momentum separate.
+"""
+    )
+    guide = st.columns(4)
+    with guide[0]:
+        st.markdown("#### 1 · Identify")
+        st.write("Resolve symmetry, handedness, circular ionic motion and phonon angular momentum.")
+    with guide[1]:
+        st.markdown("#### 2 · Generate")
+        st.write("Use THz/mid-IR pulses, nonlinear coupling, magnetic order or thermal imbalance.")
+    with guide[2]:
+        st.markdown("#### 3 · Detect")
+        st.write(
+            "Distinguish direct motion/torque from Raman selection rules and magneto-optical inference."
+        )
+    with guide[3]:
+        st.markdown("#### 4 · Use")
+        st.write(
+            "Track transfer into spins, electrons, excitons, orbital currents and heat transport."
+        )
+    st.caption(
+        "Community framing: CECAM Chiral Phonons in Quantum Materials workshop · "
+        "magnetism/spintronics · 2D optoelectronics · ultrafast dynamics · transport/Hall effects."
+    )
+    st.link_button(
+        "Open community field map ↗",
+        "https://www.cecam.org/workshop-details/chiral-phonons-in-quantum-materials-1202",
+    )
     pipeline_metrics = st.columns(4)
-    pipeline_metrics[0].metric("Eligible AI pending", len(pending))
-    pipeline_metrics[1].metric(
-        "Last review succeeded",
-        review_history[-1].get("succeeded", 0) if review_history else 0,
-    )
-    pipeline_metrics[2].metric(
-        "Backfill windows complete", backfill_state.get("windows_completed", 0)
-    )
-    pipeline_metrics[3].metric("Backfill next date", backfill_state.get("next_until", "—"))
+    pipeline_metrics[0].metric("Field-map papers", len(approved))
+    pipeline_metrics[1].metric("THz & ultrafast", len(thz_frontier))
+    pipeline_metrics[2].metric("Experimental", len(experimental))
+    pipeline_metrics[3].metric("Direct evidence", len(direct_evidence))
     st.caption(
-        "Daily metadata: 04:00 UTC · AI review: every four hours at :40 · "
-        "historical backfill: 02:10, 08:10, 14:10 and 20:10 UTC. "
-        "All archive writers use one non-cancelling queue."
+        "The map follows overlapping research communities rather than forcing one definition "
+        "of a chiral phonon. A paper may belong to several areas at once."
     )
-    st.subheader("Approved-feed analysis")
+    st.subheader("Research landscape")
     st.caption(
-        "Charts use only the scientifically approved feed; rejected candidates cannot distort the distributions."
+        "Reviewed field papers are grouped by ecosystem, evidence maturity, material and method."
     )
     if not approved:
         st.info("Analysis will appear as current AI classifications are completed.")
@@ -478,14 +533,16 @@ with analysis_tab:
         )
         frame["week"] = pd.to_datetime(frame["date"]).dt.to_period("W").dt.start_time
         left, right = st.columns(2)
-        left.line_chart(frame.groupby("date").size().rename("approved papers"))
-        right.line_chart(frame.groupby("week").size().rename("approved papers"))
+        left.line_chart(frame.groupby("date").size().rename("field papers"))
+        right.line_chart(frame.groupby("week").size().rename("field papers"))
 
         def distribution(field: str) -> pd.Series:
             values = [value for paper in approved for value in paper["ai_decision"].get(field, [])]
             return pd.Series(values, dtype="object").value_counts().head(15)
 
         rows = [
+            ("Field ecosystems", "_ecosystem"),
+            ("Evidence maturity", "_evidence"),
             ("Research focus", "research_focus"),
             ("Meaning of chirality", "chirality_class"),
             ("Phonon character", "phonon_character"),
@@ -501,7 +558,14 @@ with analysis_tab:
             columns = st.columns(3)
             for column, (title, field) in zip(columns, rows[start : start + 3], strict=False):
                 column.markdown(f"#### {title}")
-                column.bar_chart(distribution(field))
+                if field == "_ecosystem":
+                    values = [value for paper in approved for value in ecosystem_areas(paper)]
+                    column.bar_chart(pd.Series(values, dtype="object").value_counts())
+                elif field == "_evidence":
+                    values = [evidence_stage(paper) for paper in approved]
+                    column.bar_chart(pd.Series(values, dtype="object").value_counts())
+                else:
+                    column.bar_chart(distribution(field))
 
 with events_tab:
     st.subheader("Conferences, workshops, schools and networks")
@@ -534,6 +598,25 @@ with tools_tab:
             st.link_button("Open resource ↗", item["url"])
 
 with admin_tab:
+    st.subheader("Archive and review health")
+    health = st.columns(4)
+    health[0].metric("Retrieved", len(papers))
+    health[1].metric("Classified", len(reviewed))
+    health[2].metric("Awaiting classification", len(pending))
+    health[3].metric("Discovery archive", len(rule_excluded))
+    st.caption(
+        "Discovery archive means broad search results that are not currently mapped into the field; "
+        "it is an operational audit state, not a scientific judgement."
+    )
+    with st.expander("Review schedule and backfill status"):
+        st.write(
+            "Metadata 04:00 UTC · AI review every four hours at :40 · historical backfill "
+            "02:10, 08:10, 14:10 and 20:10 UTC."
+        )
+        st.write(f"Backfill next date: {backfill_state.get('next_until', '—')}")
+        st.write(
+            f"Last review succeeded: {review_history[-1].get('succeeded', 0) if review_history else 0}"
+        )
     st.subheader("Owner-only live scan")
     required = ["github_token", "admin_passcode"]
     try:
