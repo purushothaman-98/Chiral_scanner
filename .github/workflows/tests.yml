@@ -11,6 +11,7 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
@@ -21,3 +22,27 @@ jobs:
       - run: ruff check .
       - run: pytest -q
       - run: python scripts/validate_data.py
+      - name: Smoke-test Streamlit startup
+        shell: bash
+        run: |
+          set -euo pipefail
+          streamlit run app.py \
+            --server.headless true \
+            --server.port 8501 \
+            > /tmp/chiral-streamlit.log 2>&1 &
+          APP_PID=$!
+          cleanup() {
+            kill "$APP_PID" 2>/dev/null || true
+          }
+          trap cleanup EXIT
+
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:8501/_stcore/health | grep -q "ok"; then
+              echo "Streamlit health check passed"
+              exit 0
+            fi
+            sleep 1
+          done
+
+          cat /tmp/chiral-streamlit.log
+          exit 1
