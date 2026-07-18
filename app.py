@@ -42,6 +42,12 @@ except ImportError:
 
     EVIDENCE_LEVELS = {}
     MATERIAL_SYSTEMS = []
+from chiral_scanner.research_intelligence import (
+    FUNDED_PROJECTS,
+    FUNDING_WATCH,
+    INDUSTRY_SIGNALS,
+    NEWS,
+)
 from chiral_scanner.scope import has_chiral_phonon_scope
 from chiral_scanner.storage import empty_archive, load_json
 from chiral_scanner.ui import flatten_unique, paginate
@@ -312,11 +318,22 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-history_tab, paper_tab, analysis_tab, events_tab, tools_tab, admin_tab = st.tabs(
+(
+    history_tab,
+    paper_tab,
+    analysis_tab,
+    news_tab,
+    funding_tab,
+    events_tab,
+    tools_tab,
+    admin_tab,
+) = st.tabs(
     [
-        "History & landmarks",
+        "Research evolution",
         "Daily scan",
         "Field analysis",
+        "News & breakthroughs",
+        "Funding & projects",
         "Opportunities",
         "Sources",
         "Data operations",
@@ -357,7 +374,10 @@ with history_tab:
                 st.markdown(f"**What was measured:** {material['finding']}")
                 st.write(f"Method: {material['method']}")
                 st.warning(f"Interpretation boundary: {material['caveat']}")
-                st.link_button("Primary paper ↗", material["url"])
+                papers = material.get("papers", [("Primary paper", material["url"])])
+                with st.expander(f"Papers and records · {len(papers)}"):
+                    for label, url in papers:
+                        st.markdown(f"- [{label}]({url})")
 
     st.markdown("### How the concept changed")
     stage_columns = st.columns(3)
@@ -367,7 +387,7 @@ with history_tab:
                 st.markdown(f"**{index + 1}. {title}**")
                 st.write(question)
 
-    st.markdown("### Deep timeline: landmark papers")
+    st.markdown("### Historical timeline")
     st.caption(
         "Multiple papers are retained within breakthrough years so the timeline shows parallel "
         "progress in definitions, measurement and THz-driven effects."
@@ -689,6 +709,45 @@ keeps true eigenmode chirality, driven circular motion and pseudo-angular moment
                     column.bar_chart(pd.Series(values, dtype="object").value_counts())
                 else:
                     column.bar_chart(distribution(field))
+
+with news_tab:
+    st.subheader("Breakthrough coverage")
+    st.caption(
+        "Curated journal and research-magazine coverage. This is editorial context, kept separate "
+        "from the automated arXiv feed."
+    )
+    for item in sorted(NEWS, key=lambda value: value["year"], reverse=True):
+        with st.container(border=True):
+            st.markdown(f"### {item['title']}")
+            st.caption(f"{item['outlet']} · {item['year']} · {item['kind']}")
+            st.write(item["summary"])
+            st.link_button("Read source ↗", item["url"])
+
+with funding_tab:
+    st.subheader("Funded chiral-phonon ecosystem")
+    st.caption(
+        "Verified projects are separated from general funding portals and speculative industry signals."
+    )
+    st.markdown("### Verified projects and networks")
+    for project in FUNDED_PROJECTS:
+        with st.container(border=True):
+            st.markdown(f"### {project['name']}")
+            st.caption(f"{project['scheme']} · {project['host']} · {project['status']}")
+            st.write(project["focus"])
+            st.write(f"**Lead:** {project['lead']}")
+            st.link_button("Official record ↗", project["url"])
+    st.markdown("### Funding watch portals")
+    funding_columns = st.columns(2)
+    for index, source in enumerate(FUNDING_WATCH):
+        with funding_columns[index % 2]:
+            with st.container(border=True):
+                st.markdown(f"#### {source['name']}")
+                st.caption(source["region"])
+                st.write(source["purpose"])
+                st.link_button("Open official portal ↗", source["url"])
+    st.markdown("### Industry maturity")
+    for signal in INDUSTRY_SIGNALS:
+        st.info(f"**{signal['name']} — {signal['signal']}**\n\n{signal['detail']}")
 
 with events_tab:
     st.subheader("Conferences, workshops, schools and networks")
