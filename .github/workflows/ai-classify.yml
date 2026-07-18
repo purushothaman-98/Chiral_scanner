@@ -9,7 +9,7 @@ on:
       limit:
         description: "Maximum papers to classify in this run"
         required: false
-        default: "100"
+        default: "60"
         type: string
 
 permissions:
@@ -40,7 +40,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_MODELS_MODEL: ${{ vars.GITHUB_MODELS_MODEL || 'openai/gpt-4.1-mini' }}
-          LIMIT: ${{ inputs.limit || '100' }}
+          LIMIT: ${{ inputs.limit || '60' }}
         run: python scripts/classify_ai.py --limit "$LIMIT" --output /tmp/chiral_ai_results.json
       - name: Merge decisions by stable ID and fingerprint
         run: |

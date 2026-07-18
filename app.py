@@ -82,6 +82,7 @@ def paper_card(paper: dict) -> None:
     preview = html.escape(preview_text)
     versioned_id = html.escape(str(paper.get("versioned_arxiv_id", "")))
     methods = decision.get("experimental_methods", []) + decision.get("computational_methods", [])
+    methods += decision.get("excitation_methods", []) + decision.get("detection_methods", [])
     systems = decision.get("materials_or_systems", []) or paper.get(
         "detected_materials_or_systems", []
     )
@@ -163,13 +164,20 @@ with paper_tab:
             research_options = flatten_unique(papers, ("ai_decision", "research_type"))
             nature_options = flatten_unique(papers, ("ai_decision", "paper_nature"))
             system_options = flatten_unique(papers, ("ai_decision", "materials_or_systems"))
+            family_options = flatten_unique(papers, ("ai_decision", "material_or_system_family"))
             exp_options = flatten_unique(papers, ("ai_decision", "experimental_methods"))
+            excitation_options = flatten_unique(papers, ("ai_decision", "excitation_methods"))
+            detection_options = flatten_unique(papers, ("ai_decision", "detection_methods"))
             comp_options = flatten_unique(papers, ("ai_decision", "computational_methods"))
             property_options = flatten_unique(papers, ("ai_decision", "physical_properties"))
             research_filter = st.multiselect("Research type", research_options)
             nature_filter = st.multiselect("Paper nature", nature_options)
             system_filter = st.multiselect("Material or system", system_options)
-            method_filter = st.multiselect("Method", sorted(set(exp_options + comp_options)))
+            family_filter = st.multiselect("Material family", family_options)
+            exp_filter = st.multiselect("Experimental method", exp_options)
+            excitation_filter = st.multiselect("Excitation method", excitation_options)
+            detection_filter = st.multiselect("Detection method", detection_options)
+            theory_filter = st.multiselect("Theory / computation", comp_options)
             property_filter = st.multiselect("Physical property", property_options)
             page_size = st.select_slider(
                 "Papers per page", options=[10, 20, 40, 80], value=20
@@ -204,10 +212,25 @@ with paper_tab:
                 decision.get("materials_or_systems", [])
             ):
                 continue
-            all_methods = decision.get("experimental_methods", []) + decision.get(
-                "computational_methods", []
-            )
-            if method_filter and not set(method_filter).intersection(all_methods):
+            if family_filter and not set(family_filter).intersection(
+                decision.get("material_or_system_family", [])
+            ):
+                continue
+            if exp_filter and not set(exp_filter).intersection(
+                decision.get("experimental_methods", [])
+            ):
+                continue
+            if excitation_filter and not set(excitation_filter).intersection(
+                decision.get("excitation_methods", [])
+            ):
+                continue
+            if detection_filter and not set(detection_filter).intersection(
+                decision.get("detection_methods", [])
+            ):
+                continue
+            if theory_filter and not set(theory_filter).intersection(
+                decision.get("computational_methods", [])
+            ):
                 continue
             if property_filter and not set(property_filter).intersection(
                 decision.get("physical_properties", [])
@@ -269,20 +292,25 @@ with trends_tab:
 
         cols = st.columns(3)
         with cols[0]:
-            st.subheader("Materials / systems")
-            st.bar_chart(distribution("materials_or_systems"))
+            st.subheader("Material families")
+            st.bar_chart(distribution("material_or_system_family"))
         with cols[1]:
-            st.subheader("Methods")
-            methods = (
-                distribution("experimental_methods")
-                .add(distribution("computational_methods"), fill_value=0)
-                .sort_values(ascending=False)
-                .head(20)
-            )
-            st.bar_chart(methods)
+            st.subheader("Experimental methods")
+            st.bar_chart(distribution("experimental_methods"))
         with cols[2]:
             st.subheader("Physical properties")
             st.bar_chart(distribution("physical_properties"))
+
+        method_cols = st.columns(3)
+        with method_cols[0]:
+            st.subheader("Excitation methods")
+            st.bar_chart(distribution("excitation_methods"))
+        with method_cols[1]:
+            st.subheader("Detection methods")
+            st.bar_chart(distribution("detection_methods"))
+        with method_cols[2]:
+            st.subheader("Theory / computation")
+            st.bar_chart(distribution("computational_methods"))
 
         st.subheader("Scan history")
         if history:

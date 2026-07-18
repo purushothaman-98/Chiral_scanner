@@ -34,6 +34,8 @@ class AIDecision(BaseModel):
     materials_or_systems: list[str] = Field(default_factory=list)
     material_or_system_family: list[str] = Field(default_factory=list)
     experimental_methods: list[str] = Field(default_factory=list)
+    excitation_methods: list[str] = Field(default_factory=list)
+    detection_methods: list[str] = Field(default_factory=list)
     computational_methods: list[str] = Field(default_factory=list)
     physical_properties: list[str] = Field(default_factory=list)
     confidence: float = Field(ge=0, le=1)
@@ -44,6 +46,8 @@ class AIDecision(BaseModel):
         "materials_or_systems",
         "material_or_system_family",
         "experimental_methods",
+        "excitation_methods",
+        "detection_methods",
         "computational_methods",
         "physical_properties",
         "supporting_phrases",

@@ -5,7 +5,7 @@ TOPIC_DESCRIPTION = (
     "Chiral phonons, phonon angular momentum, dynamical multiferroicity, "
     "phonomagnetism, nonlinear phononics, and related angular-momentum phononics."
 )
-PROMPT_VERSION = "chiral-phonons-v1.0"
+PROMPT_VERSION = "chiral-phonons-v2.0"
 DEFAULT_INITIAL_DATE = "2017-01-01"
 DEFAULT_SCAN_OVERLAP_DAYS = 14
 DEFAULT_AI_MODEL = "openai/gpt-4.1-mini"
@@ -200,12 +200,15 @@ LATTICE_ANCHORS = [
 
 MATERIAL_FAMILIES = [
     "Perovskite oxides",
-    "Two-dimensional materials",
+    "Transition-metal dichalcogenides",
+    "Other two-dimensional materials",
     "Van der Waals magnets",
     "Chiral/enantiomorphic crystals",
     "Ferroelectrics and polar crystals",
     "Magnetic insulators",
     "Topological materials",
+    "Elemental chalcogens",
+    "Semiconductors",
     "Molecular crystals",
     "Other / unspecified",
 ]
@@ -222,6 +225,31 @@ EXPERIMENTAL_METHOD_GROUPS = [
     "Thermal transport",
     "Magnetometry",
     "Other experimental method",
+]
+
+EXCITATION_METHOD_GROUPS = [
+    "Circular/elliptical THz excitation",
+    "Linear THz excitation",
+    "Mid-infrared phonon excitation",
+    "Impulsive/coherent Raman excitation",
+    "Optical pump excitation",
+    "Raman/infrared optical excitation",
+    "Thermal excitation",
+    "Other / unspecified excitation",
+]
+
+DETECTION_METHOD_GROUPS = [
+    "Kerr/Faraday polarimetry",
+    "Transient optical spectroscopy",
+    "THz time-domain spectroscopy",
+    "Raman spectroscopy",
+    "RIXS / inelastic X-ray scattering",
+    "X-ray diffraction/scattering",
+    "Electron diffraction",
+    "Neutron scattering",
+    "Thermal transport",
+    "Magnetometry",
+    "Other / unspecified detection",
 ]
 
 COMPUTATIONAL_METHOD_GROUPS = [
