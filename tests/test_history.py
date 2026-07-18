@@ -43,3 +43,9 @@ def test_material_map_supports_multiple_papers_per_material():
     linked = [item for item in MATERIAL_SYSTEMS if len(item.get("papers", [])) > 1]
     assert linked
     assert all(url.startswith("https://") for item in linked for _, url in item["papers"])
+
+
+def test_expanded_material_map_is_not_stuck_at_original_eight():
+    assert len(MATERIAL_SYSTEMS) >= 13
+    names = {item["material"] for item in MATERIAL_SYSTEMS}
+    assert {"ErFeO₃", "Bi₂Se₃", "BPO₄", "SrRuO₃/SrTiO₃ heterostructures"} <= names
