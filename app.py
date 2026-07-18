@@ -767,8 +767,21 @@ with ecosystem_tab:
                 st.write(source["purpose"])
                 st.link_button("Open official portal ↗", source["url"])
     st.markdown("### Industry maturity")
-    for signal in INDUSTRY_SIGNALS:
-        st.info(f"**{signal['name']} — {signal['signal']}**\n\n{signal['detail']}")
+    st.info(
+        "**Current assessment · 18 Jul 2026:** pre-commercial research field. The verified "
+        "records below are adjacent capabilities and capital signals—not evidence that any listed "
+        "organization is investing in or commercializing chiral phonons."
+    )
+    industry_columns = st.columns(2)
+    for index, signal in enumerate(INDUSTRY_SIGNALS):
+        with industry_columns[index % 2]:
+            with st.container(border=True):
+                st.markdown(f"#### {signal['name']}")
+                st.caption(f"{signal['category']} · {signal['signal_type']}")
+                st.write(f"**Verified activity:** {signal['evidence']}")
+                st.write(f"**Why researchers should watch it:** {signal['relevance']}")
+                st.warning(f"**Claim boundary:** {signal['boundary']}")
+                st.link_button(f"Open {signal['source'].lower()} ↗", signal["url"])
 
 with ecosystem_tab:
     st.divider()
