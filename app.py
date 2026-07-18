@@ -47,12 +47,24 @@ except ImportError:
 
     EVIDENCE_LEVELS = {}
     MATERIAL_SYSTEMS = []
-from chiral_scanner.research_intelligence import (
-    FUNDED_PROJECTS,
-    FUNDING_WATCH,
-    INDUSTRY_SIGNALS,
-    NEWS,
-)
+
+try:
+    import chiral_scanner.research_intelligence as intelligence_data
+
+    # Curated intelligence changes more often than the app process restarts. Reload it explicitly,
+    # while keeping the renderer compatible with the previous schema during an in-place deploy.
+    importlib.invalidate_caches()
+    intelligence_data = importlib.reload(intelligence_data)
+    FUNDED_PROJECTS = getattr(intelligence_data, "FUNDED_PROJECTS", [])
+    FUNDING_WATCH = getattr(intelligence_data, "FUNDING_WATCH", [])
+    INDUSTRY_SIGNALS = getattr(intelligence_data, "INDUSTRY_SIGNALS", [])
+    NEWS = getattr(intelligence_data, "NEWS", [])
+except ImportError:
+    # A partial Streamlit Cloud repository refresh must never take down the research feed.
+    FUNDED_PROJECTS = []
+    FUNDING_WATCH = []
+    INDUSTRY_SIGNALS = []
+    NEWS = []
 from chiral_scanner.scope import has_chiral_phonon_scope
 from chiral_scanner.storage import empty_archive, load_json
 from chiral_scanner.ui import flatten_unique, paginate
@@ -123,6 +135,25 @@ def parse_date(value: str | None) -> datetime | None:
 def short_date(value: str | None) -> str:
     parsed = parse_date(value)
     return parsed.strftime("%d %b %Y") if parsed else "—"
+
+
+def record_text(
+    record: dict, key: str, *, legacy_key: str | None = None, default: str = "Not specified"
+) -> str:
+    """Read evolving curated records without failing during staggered Streamlit deploys."""
+    value = record.get(key)
+    if value not in (None, ""):
+        return str(value)
+    if legacy_key:
+        legacy_value = record.get(legacy_key)
+        if legacy_value not in (None, ""):
+            return str(legacy_value)
+    return default
+
+
+def source_url(record: dict) -> str | None:
+    value = record.get("url")
+    return str(value) if isinstance(value, str) and value.startswith("https://") else None
 
 
 def scope_passes(paper: dict) -> bool:
@@ -737,12 +768,21 @@ with news_tab:
         "Curated journal and research-magazine coverage. This is editorial context, kept separate "
         "from the automated arXiv feed."
     )
-    for item in sorted(NEWS, key=lambda value: value["year"], reverse=True):
+    for item in sorted(NEWS, key=lambda value: str(value.get("year", "")), reverse=True):
         with st.container(border=True):
-            st.markdown(f"### {item['title']}")
-            st.caption(f"{item['outlet']} · {item['year']} · {item['kind']}")
-            st.write(item["summary"])
-            st.link_button("Read source ↗", item["url"])
+            st.markdown(f"### {record_text(item, 'title', default='Untitled coverage')}")
+            st.caption(
+                " · ".join(
+                    [
+                        record_text(item, "outlet", default="Source not specified"),
+                        record_text(item, "year", default="Date not specified"),
+                        record_text(item, "kind", default="Coverage"),
+                    ]
+                )
+            )
+            st.write(record_text(item, "summary", default="Summary pending."))
+            if url := source_url(item):
+                st.link_button("Read source ↗", url)
 
 with ecosystem_tab:
     st.subheader("Funded chiral-phonon ecosystem")
@@ -752,20 +792,30 @@ with ecosystem_tab:
     st.markdown("### Verified projects and networks")
     for project in FUNDED_PROJECTS:
         with st.container(border=True):
-            st.markdown(f"### {project['name']}")
-            st.caption(f"{project['scheme']} · {project['host']} · {project['status']}")
-            st.write(project["focus"])
-            st.write(f"**Lead:** {project['lead']}")
-            st.link_button("Official record ↗", project["url"])
+            st.markdown(f"### {record_text(project, 'name', default='Unnamed project')}")
+            st.caption(
+                " · ".join(
+                    [
+                        record_text(project, "scheme", default="Scheme not specified"),
+                        record_text(project, "host", default="Host not specified"),
+                        record_text(project, "status", default="Status not specified"),
+                    ]
+                )
+            )
+            st.write(record_text(project, "focus", default="Project focus pending."))
+            st.write(f"**Lead:** {record_text(project, 'lead', default='Not specified')}")
+            if url := source_url(project):
+                st.link_button("Official record ↗", url)
     st.markdown("### Funding watch portals")
     funding_columns = st.columns(2)
     for index, source in enumerate(FUNDING_WATCH):
         with funding_columns[index % 2]:
             with st.container(border=True):
-                st.markdown(f"#### {source['name']}")
-                st.caption(source["region"])
-                st.write(source["purpose"])
-                st.link_button("Open official portal ↗", source["url"])
+                st.markdown(f"#### {record_text(source, 'name', default='Funding source')}")
+                st.caption(record_text(source, "region", default="Region not specified"))
+                st.write(record_text(source, "purpose", default="Description pending."))
+                if url := source_url(source):
+                    st.link_button("Open official portal ↗", url)
     st.markdown("### Industry maturity")
     st.info(
         "**Current assessment · 18 Jul 2026:** pre-commercial research field. The verified "
@@ -776,12 +826,38 @@ with ecosystem_tab:
     for index, signal in enumerate(INDUSTRY_SIGNALS):
         with industry_columns[index % 2]:
             with st.container(border=True):
-                st.markdown(f"#### {signal['name']}")
-                st.caption(f"{signal['category']} · {signal['signal_type']}")
-                st.write(f"**Verified activity:** {signal['evidence']}")
-                st.write(f"**Why researchers should watch it:** {signal['relevance']}")
-                st.warning(f"**Claim boundary:** {signal['boundary']}")
-                st.link_button(f"Open {signal['source'].lower()} ↗", signal["url"])
+                st.markdown(f"#### {record_text(signal, 'name', default='Industry signal')}")
+                st.caption(
+                    f"{record_text(signal, 'category', default='Field-level assessment')} · "
+                    f"{record_text(signal, 'signal_type', legacy_key='signal', default='Maturity signal')}"
+                )
+                st.write(
+                    "**Verified activity:** "
+                    + record_text(
+                        signal, "evidence", legacy_key="detail", default="Review pending."
+                    )
+                )
+                st.write(
+                    "**Why researchers should watch it:** "
+                    + record_text(
+                        signal,
+                        "relevance",
+                        default="This record tracks the adjacent technology ecosystem.",
+                    )
+                )
+                st.warning(
+                    "**Claim boundary:** "
+                    + record_text(
+                        signal,
+                        "boundary",
+                        default=(
+                            "No dedicated chiral-phonon activity is inferred without a primary source."
+                        ),
+                    )
+                )
+                if url := source_url(signal):
+                    source_name = record_text(signal, "source", default="primary source").lower()
+                    st.link_button(f"Open {source_name} ↗", url)
 
 with ecosystem_tab:
     st.divider()
