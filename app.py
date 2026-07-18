@@ -389,9 +389,9 @@ with history_tab:
             st.markdown(f"**Reported result:** {material['finding']}")
             st.write(f"**Method:** {material['method']}")
             st.warning(f"**Interpretation boundary:** {material['caveat']}")
-            papers = material.get("papers", [("Primary paper", material["url"])])
+            material_papers = material.get("papers", [("Primary paper", material["url"])])
             st.markdown("**Papers and records**")
-            for label, url in papers:
+            for label, url in material_papers:
                 st.markdown(f"- [{label}]({url})")
 
     st.markdown("### How the concept changed")
