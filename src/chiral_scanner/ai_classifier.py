@@ -18,6 +18,7 @@ from .config import (
     PROMPT_VERSION,
 )
 from .models import AIDecision
+from .scope import has_chiral_phonon_scope
 from .storage import fingerprint
 
 LOGGER = logging.getLogger(__name__)
@@ -31,6 +32,8 @@ Judge the supplied title and complete abstract together. A keyword match alone i
 Include papers whose scientific focus is chiral phonons, phonon angular momentum, phonon chirality/helicity, dynamical multiferroicity, phonomagnetism, circularly driven lattice modes, angular-momentum transfer involving phonons, or a tightly connected experimental/theoretical mechanism.
 
 Set include_in_feed=false only when the topic is incidental, background-only, metaphorical, or scientifically unrelated. Preserve borderline cases as Uncertain with include_in_feed=true so a human can review them.
+
+Scope requirement: an included paper must study a phonon, lattice vibration, ionic motion, or vibrational mode together with chirality, helicity, circular motion, angular momentum, phonomagnetism, dynamical multiferroicity, or a directly related phonon effect. Electronic chiral edges, chiral charge-density waves, fermion/QFT chirality, photonic or polaritonic chirality, generic spin-lattice coupling, and thermal Hall papers are not relevant unless the abstract explicitly makes phonons central to the reported result.
 
 Research-type rules:
 - Experimental requires original measurements/fabrication/detection reported by the paper's authors.
@@ -188,6 +191,16 @@ def classify_paper(
             response.raise_for_status()
             content = response.json()["choices"][0]["message"]["content"]
             parsed = AIDecision.model_validate_json(content)
+            if parsed.include_in_feed and not has_chiral_phonon_scope(
+                paper.get("title", ""), paper.get("abstract", "")
+            ):
+                parsed.include_in_feed = False
+                parsed.relevance = "Not relevant"
+                parsed.reason = (
+                    "Excluded by the independent scope guard: the abstract does not make "
+                    "a phonon, lattice vibration, ionic motion, or vibrational mode central "
+                    "to the claimed chiral or angular-momentum result."
+                )
             return {
                 "base_arxiv_id": paper["base_arxiv_id"],
                 "fingerprint": fingerprint(paper),
