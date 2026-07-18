@@ -1,0 +1,67 @@
+name: Scan arXiv metadata
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/metadata-scan.yml"
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+    inputs:
+      since:
+        description: "Optional ISO start date (YYYY-MM-DD). Leave blank for 14-day overlap."
+        required: false
+        type: string
+      initial:
+        description: "Build from the configured initial date in yearly batches"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: chiral-archive-writes
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Query official arXiv API
+        env:
+          SINCE: ${{ inputs.since }}
+          INITIAL: ${{ inputs.initial }}
+        run: |
+          ARGS=(--output /tmp/chiral_candidates.json --summary /tmp/chiral_scan_summary.json)
+          if [ -n "$SINCE" ]; then ARGS+=(--since "$SINCE"); fi
+          if [ "$INITIAL" = "true" ]; then ARGS+=(--initial); fi
+          python scripts/scan_arxiv.py "${ARGS[@]}"
+      - name: Merge against latest archive by stable arXiv ID
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+          python scripts/merge_scan.py --candidates /tmp/chiral_candidates.json --summary /tmp/chiral_scan_summary.json
+          python scripts/validate_data.py
+      - name: Commit archive changes
+        run: |
+          git add data/papers.json data/scan_history.json
+          if git diff --cached --quiet; then
+            echo "No archive changes"
+          else
+            git commit -m "Update chiral phonon arXiv archive"
+            git push origin HEAD:main
+          fi

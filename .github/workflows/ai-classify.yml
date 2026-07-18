@@ -1,0 +1,60 @@
+name: AI classify arXiv papers
+
+on:
+  workflow_run:
+    workflows: ["Scan arXiv metadata"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Maximum papers to classify in this run"
+        required: false
+        default: "100"
+        type: string
+
+permissions:
+  contents: write
+  models: read
+
+concurrency:
+  group: chiral-archive-writes
+  cancel-in-progress: false
+
+jobs:
+  classify:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Classify changed and uncached abstracts with GitHub Models
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_MODELS_MODEL: ${{ vars.GITHUB_MODELS_MODEL || 'openai/gpt-4.1-mini' }}
+          LIMIT: ${{ inputs.limit || '100' }}
+        run: python scripts/classify_ai.py --limit "$LIMIT" --output /tmp/chiral_ai_results.json
+      - name: Merge decisions by stable ID and fingerprint
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+          python scripts/merge_ai.py --results /tmp/chiral_ai_results.json
+          python scripts/validate_data.py
+      - name: Commit AI classifications
+        run: |
+          git add data/papers.json
+          if git diff --cached --quiet; then
+            echo "No AI changes"
+          else
+            git commit -m "Classify chiral phonon papers"
+            git push origin HEAD:main
+          fi
