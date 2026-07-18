@@ -87,7 +87,7 @@ def short_date(value: str | None) -> str:
 
 
 def decision_is_current(paper: dict) -> bool:
-    return bool(paper.get("ai_decision"))
+    return bool(paper.get("ai_decision") and paper.get("ai_prompt_version") == PROMPT_VERSION)
 
 
 def scope_passes(paper: dict) -> bool:
@@ -111,8 +111,7 @@ def feed_status(paper: dict) -> str:
 
 def is_experimental_study(paper: dict) -> bool:
     return feed_status(paper) == "Approved research feed" and (
-        paper.get("ai_decision", {}).get("research_type")
-        in {"Experimental", "Theory + Experiment"}
+        paper.get("ai_decision", {}).get("research_type") in {"Experimental", "Theory + Experiment"}
     )
 
 
@@ -149,6 +148,11 @@ def paper_card(paper: dict) -> None:
         + decision.get("detection_methods", [])
         + decision.get("computational_methods", [])
     )
+    scientific_identity = (
+        decision.get("research_focus", [])
+        + decision.get("chirality_class", [])
+        + decision.get("phonon_character", [])
+    )
     tags = [status]
     if decision_is_current(paper):
         tags.extend([decision.get("relevance"), decision.get("research_type")])
@@ -157,17 +161,18 @@ def paper_card(paper: dict) -> None:
         st.markdown(
             f'<div class="paper-title"><a href="{url}" target="_blank">{title}</a></div>'
             f'<div class="meta">{html.escape(author_names)} · Submitted '
-            f'{short_date(paper.get("initial_submission_date"))} · '
-            f'arXiv:{html.escape(str(paper.get("base_arxiv_id", "")))}</div>'
-            f'<div>{badges(tags, status)}{badges((systems + methods)[:4])}</div>'
+            f"{short_date(paper.get('initial_submission_date'))} · "
+            f"arXiv:{html.escape(str(paper.get('base_arxiv_id', '')))}</div>"
+            f"<div>{badges(tags, status)}{badges((scientific_identity + systems)[:5])}</div>"
             f'<div class="abstract">{html.escape(preview)}</div>',
             unsafe_allow_html=True,
         )
         links = st.columns([1, 1, 4])
         links[0].link_button("arXiv page ↗", paper.get("abstract_url", "https://arxiv.org"))
         links[1].link_button("PDF ↗", paper.get("pdf_url", "https://arxiv.org"))
-        if len(systems + methods) > 4:
-            links[2].caption(f"+{len(systems + methods) - 4} additional scientific labels")
+        label_count = len(scientific_identity + systems + methods)
+        if label_count > 5:
+            links[2].caption(f"+{label_count - 5} additional scientific labels")
 
         with st.expander("Abstract, complete metadata and classification evidence"):
             st.write(abstract)
@@ -177,10 +182,36 @@ def paper_card(paper: dict) -> None:
                 if phrases:
                     st.markdown("**Evidence from abstract:** " + " · ".join(phrases))
                 st.markdown("**Material/system:** " + ", ".join(systems or ["Not specified"]))
-                st.markdown("**Methods:** " + ", ".join(methods or ["Not specified"]))
+                st.markdown(
+                    "**Research focus:** "
+                    + ", ".join(decision.get("research_focus", []) or ["Not specified"])
+                )
+                st.markdown(
+                    "**Meaning of chirality:** "
+                    + ", ".join(decision.get("chirality_class", []) or ["Not established"])
+                )
+                st.markdown(
+                    "**Phonon character:** "
+                    + ", ".join(decision.get("phonon_character", []) or ["Not specified"])
+                )
+                st.markdown(
+                    "**Generation mechanism:** "
+                    + ", ".join(decision.get("generation_mechanisms", []) or ["Not specified"])
+                )
+                st.markdown(
+                    "**Methods actually performed:** " + ", ".join(methods or ["Not specified"])
+                )
                 st.markdown(
                     "**Properties:** "
                     + ", ".join(decision.get("physical_properties", []) or ["Not specified"])
+                )
+                st.markdown(f"**Evidence level:** {decision.get('evidence_level', 'Not assessed')}")
+                caveats = decision.get("evidence_caveats", [])
+                if caveats:
+                    st.warning("Evidence caveats: " + " · ".join(caveats))
+                st.markdown(
+                    "**Research/application direction:** "
+                    + ", ".join(decision.get("application_directions", []) or ["Not claimed"])
                 )
             else:
                 st.info("This paper is stored safely but has not completed AI review.")
@@ -199,7 +230,10 @@ rule_excluded = [p for p in papers if statuses[p["base_arxiv_id"]] == "Rule-excl
 experimental = [p for p in papers if is_experimental_study(p)]
 reviewed = [p for p in papers if decision_is_current(p)]
 
-st.markdown('<div class="topline">ARXIV CHIRAL PHONON FEED · DAILY AT 04:00 UTC</div>', unsafe_allow_html=True)
+st.markdown(
+    '<div class="topline">ARXIV CHIRAL PHONON FEED · DAILY AT 04:00 UTC</div>',
+    unsafe_allow_html=True,
+)
 st.markdown(
     """
 <div class="hero">
@@ -213,14 +247,26 @@ candidate is preserved for audit, while the default feed shows only scientifical
 )
 
 metrics = st.columns(4)
-metrics[0].metric("Retrieved candidates", len(papers), help="Every deduplicated arXiv result stored in the archive.")
+metrics[0].metric(
+    "Retrieved candidates",
+    len(papers),
+    help="Every deduplicated arXiv result stored in the archive.",
+)
 metrics[1].metric(
     "AI reviewed",
     len(reviewed),
     help=f"Papers with a stored AI decision. New decisions use {PROMPT_VERSION}.",
 )
-metrics[2].metric("Approved research feed", len(approved), help="AI-approved papers that also pass the independent phonon/lattice scope guard.")
-metrics[3].metric("Approved experimental studies", len(experimental), help="Approved Experimental and Theory + Experiment papers; rejected candidates are not counted.")
+metrics[2].metric(
+    "Approved research feed",
+    len(approved),
+    help="AI-approved papers that also pass the independent phonon/lattice scope guard.",
+)
+metrics[3].metric(
+    "Approved experimental studies",
+    len(experimental),
+    help="Approved Experimental and Theory + Experiment papers; rejected candidates are not counted.",
+)
 
 coverage_dates = [parse_date(p.get("initial_submission_date")) for p in papers]
 coverage_dates = [value for value in coverage_dates if value]
@@ -232,8 +278,8 @@ coverage = (
 last_scan = history[-1].get("scan_timestamp") if history else archive.get("updated_at")
 st.markdown(
     f'<div class="coverage">{coverage} · Last metadata scan: {short_date(last_scan)} · '
-    f'{len(pending)} eligible papers pending · {len(review_queue)} need scientific review · '
-    f'backfill checkpoint: {html.escape(str(backfill_state.get("next_until", "not started")))}</div>',
+    f"{len(pending)} eligible papers pending · {len(review_queue)} need scientific review · "
+    f"backfill checkpoint: {html.escape(str(backfill_state.get('next_until', 'not started')))}</div>",
     unsafe_allow_html=True,
 )
 
@@ -244,7 +290,9 @@ paper_tab, analysis_tab, events_tab, tools_tab, admin_tab = st.tabs(
 with paper_tab:
     with st.sidebar:
         st.header("Explore the archive")
-        st.caption("The approved feed is selected by default. Excluded candidates remain auditable.")
+        st.caption(
+            "The approved feed is selected by default. Excluded candidates remain auditable."
+        )
         view = st.radio(
             "Feed",
             [
@@ -259,28 +307,52 @@ with paper_tab:
         search = st.text_input("Search", placeholder="Title, abstract, author, arXiv ID…")
         current_decisions = [p for p in papers if decision_is_current(p)]
         relevance_filter = st.multiselect(
-            "Chiral-phonon relevance", flatten_unique(current_decisions, ("ai_decision", "relevance"))
+            "Chiral-phonon relevance",
+            flatten_unique(current_decisions, ("ai_decision", "relevance")),
         )
         research_filter = st.multiselect(
             "Research type", flatten_unique(current_decisions, ("ai_decision", "research_type"))
         )
+        focus_filter = st.multiselect(
+            "Research focus", flatten_unique(current_decisions, ("ai_decision", "research_focus"))
+        )
+        chirality_filter = st.multiselect(
+            "Meaning of chirality",
+            flatten_unique(current_decisions, ("ai_decision", "chirality_class")),
+        )
+        phonon_filter = st.multiselect(
+            "Phonon character",
+            flatten_unique(current_decisions, ("ai_decision", "phonon_character")),
+        )
+        evidence_filter = st.multiselect(
+            "Evidence level", flatten_unique(current_decisions, ("ai_decision", "evidence_level"))
+        )
         family_filter = st.multiselect(
-            "Material family", flatten_unique(current_decisions, ("ai_decision", "material_or_system_family"))
+            "Material family",
+            flatten_unique(current_decisions, ("ai_decision", "material_or_system_family")),
         )
         exp_filter = st.multiselect(
-            "Experimental method", flatten_unique(current_decisions, ("ai_decision", "experimental_methods"))
+            "Experimental method",
+            flatten_unique(current_decisions, ("ai_decision", "experimental_methods")),
         )
         excitation_filter = st.multiselect(
-            "Excitation", flatten_unique(current_decisions, ("ai_decision", "excitation_methods"))
+            "Generation mechanism",
+            flatten_unique(current_decisions, ("ai_decision", "generation_mechanisms")),
         )
         detection_filter = st.multiselect(
             "Detection", flatten_unique(current_decisions, ("ai_decision", "detection_methods"))
         )
         theory_filter = st.multiselect(
-            "Theory / computation", flatten_unique(current_decisions, ("ai_decision", "computational_methods"))
+            "Theory / computation",
+            flatten_unique(current_decisions, ("ai_decision", "computational_methods")),
         )
         property_filter = st.multiselect(
-            "Physical property", flatten_unique(current_decisions, ("ai_decision", "physical_properties"))
+            "Physical property",
+            flatten_unique(current_decisions, ("ai_decision", "physical_properties")),
+        )
+        application_filter = st.multiselect(
+            "Research/application direction",
+            flatten_unique(current_decisions, ("ai_decision", "application_directions")),
         )
 
     if view == "Approved research feed":
@@ -301,35 +373,59 @@ with paper_tab:
     for paper in candidates:
         decision = paper.get("ai_decision") or {}
         searchable = " ".join(
-            [paper.get("base_arxiv_id", ""), paper.get("title", ""), paper.get("abstract", ""), " ".join(paper.get("authors", []))]
+            [
+                paper.get("base_arxiv_id", ""),
+                paper.get("title", ""),
+                paper.get("abstract", ""),
+                " ".join(paper.get("authors", [])),
+            ]
         ).casefold()
         if needle and needle not in searchable:
             continue
-        scalar_filters = [(relevance_filter, "relevance"), (research_filter, "research_type")]
-        if any(selected and decision.get(field) not in selected for selected, field in scalar_filters):
+        scalar_filters = [
+            (relevance_filter, "relevance"),
+            (research_filter, "research_type"),
+            (evidence_filter, "evidence_level"),
+        ]
+        if any(
+            selected and decision.get(field) not in selected for selected, field in scalar_filters
+        ):
             continue
         list_filters = [
             (family_filter, "material_or_system_family"),
+            (focus_filter, "research_focus"),
+            (chirality_filter, "chirality_class"),
+            (phonon_filter, "phonon_character"),
             (exp_filter, "experimental_methods"),
-            (excitation_filter, "excitation_methods"),
+            (excitation_filter, "generation_mechanisms"),
             (detection_filter, "detection_methods"),
             (theory_filter, "computational_methods"),
             (property_filter, "physical_properties"),
+            (application_filter, "application_directions"),
         ]
-        if any(selected and not set(selected).intersection(decision.get(field, [])) for selected, field in list_filters):
+        if any(
+            selected and not set(selected).intersection(decision.get(field, []))
+            for selected, field in list_filters
+        ):
             continue
         filtered.append(paper)
 
     filtered.sort(key=lambda p: p.get("initial_submission_date", ""), reverse=True)
     st.subheader(f"{view} · {len(filtered)} papers")
     if view == "Approved research feed":
-        st.caption("Only current AI approvals that independently pass the phonon/lattice scope guard.")
+        st.caption(
+            "Only current AI approvals that independently pass the phonon/lattice scope guard."
+        )
     elif view == "Experimental studies":
         st.caption("Only approved original experimental or combined theory–experiment studies.")
 
     page_size = 20
     total_pages = max(1, (len(filtered) + page_size - 1) // page_size)
-    page = st.selectbox("Page", range(1, total_pages + 1), format_func=lambda value: f"Page {value} of {total_pages}")
+    page = st.selectbox(
+        "Page",
+        range(1, total_pages + 1),
+        format_func=lambda value: f"Page {value} of {total_pages}",
+    )
     page_items, _, _ = paginate(filtered, page, page_size)
 
     grouped: dict[str, list[dict]] = defaultdict(list)
@@ -358,22 +454,24 @@ with analysis_tab:
     pipeline_metrics[2].metric(
         "Backfill windows complete", backfill_state.get("windows_completed", 0)
     )
-    pipeline_metrics[3].metric(
-        "Backfill next date", backfill_state.get("next_until", "—")
-    )
+    pipeline_metrics[3].metric("Backfill next date", backfill_state.get("next_until", "—"))
     st.caption(
         "Daily metadata: 04:00 UTC · AI review: every four hours at :40 · "
         "historical backfill: 02:10, 08:10, 14:10 and 20:10 UTC. "
         "All archive writers use one non-cancelling queue."
     )
     st.subheader("Approved-feed analysis")
-    st.caption("Charts use only the scientifically approved feed; rejected candidates cannot distort the distributions.")
+    st.caption(
+        "Charts use only the scientifically approved feed; rejected candidates cannot distort the distributions."
+    )
     if not approved:
         st.info("Analysis will appear as current AI classifications are completed.")
     else:
         frame = pd.DataFrame(
             {
-                "date": [pd.to_datetime(p["initial_submission_date"], utc=True).date() for p in approved],
+                "date": [
+                    pd.to_datetime(p["initial_submission_date"], utc=True).date() for p in approved
+                ],
                 "research_type": [p["ai_decision"]["research_type"] for p in approved],
                 "relevance": [p["ai_decision"]["relevance"] for p in approved],
             }
@@ -388,12 +486,16 @@ with analysis_tab:
             return pd.Series(values, dtype="object").value_counts().head(15)
 
         rows = [
+            ("Research focus", "research_focus"),
+            ("Meaning of chirality", "chirality_class"),
+            ("Phonon character", "phonon_character"),
             ("Material families", "material_or_system_family"),
             ("Experimental methods", "experimental_methods"),
-            ("Excitation methods", "excitation_methods"),
+            ("Generation mechanisms", "generation_mechanisms"),
             ("Detection methods", "detection_methods"),
             ("Theory / computation", "computational_methods"),
             ("Physical properties", "physical_properties"),
+            ("Application directions", "application_directions"),
         ]
         for start in range(0, len(rows), 3):
             columns = st.columns(3)
@@ -407,7 +509,17 @@ with events_tab:
         with st.container(border=True):
             st.markdown(f"### {event['title']}")
             st.write(event.get("description", ""))
-            st.caption(" · ".join(value for value in [event.get("event_type"), event.get("organiser"), event.get("location")] if value))
+            st.caption(
+                " · ".join(
+                    value
+                    for value in [
+                        event.get("event_type"),
+                        event.get("organiser"),
+                        event.get("location"),
+                    ]
+                    if value
+                )
+            )
             if event.get("deadline"):
                 st.write(f"**Deadline:** {event['deadline']}")
             st.link_button("Official source ↗", event["url"])

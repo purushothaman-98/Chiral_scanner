@@ -5,7 +5,7 @@ TOPIC_DESCRIPTION = (
     "Chiral phonons, phonon angular momentum, dynamical multiferroicity, "
     "phonomagnetism, nonlinear phononics, and related angular-momentum phononics."
 )
-PROMPT_VERSION = "chiral-phonons-v2.0"
+PROMPT_VERSION = "chiral-phonons-v3.0"
 DEFAULT_INITIAL_DATE = "2017-01-01"
 DEFAULT_SCAN_OVERLAP_DAYS = 14
 DEFAULT_AI_MODEL = "openai/gpt-4.1-mini"
@@ -213,17 +213,79 @@ MATERIAL_FAMILIES = [
     "Other / unspecified",
 ]
 
+# Scientific axes are deliberately orthogonal.  A paper can concern phonon angular
+# momentum without establishing true eigenmode chirality, and a driven circular
+# lattice trajectory is not automatically a chiral normal mode.
+RESEARCH_FOCUS_AREAS = [
+    "Intrinsic/symmetry-defined chiral phonons",
+    "Coherently driven circular phonons",
+    "Dynamical multiferroicity / phonomagnetism",
+    "Nonlinear / helical phononics",
+    "Magnon-phonon or spin-phonon angular-momentum transfer",
+    "Phonon magnetic moment / Zeeman physics",
+    "Topological / valley phonons",
+    "Thermal or mechanical angular-momentum transport",
+    "Chiral phonon-electron / exciton coupling",
+    "Cavity / polariton / photon-phonon coupling",
+    "Methods or materials discovery",
+]
+
+CHIRALITY_CLASSES = [
+    "True structural/eigenmode chirality",
+    "Circular/elliptical phonon polarization",
+    "Phonon angular momentum",
+    "Pseudo-angular momentum / valley chirality",
+    "Dynamically induced chirality",
+    "Chirality transferred by magnon/spin coupling",
+    "Claimed or ambiguous chirality",
+    "Not established",
+]
+
+PHONON_CHARACTERISTICS = [
+    "Zone-centre (Gamma)",
+    "Finite-momentum / valley",
+    "Optical",
+    "Acoustic",
+    "Infrared-active",
+    "Raman-active",
+    "Polar / ferroelectric soft mode",
+    "Degenerate E mode",
+    "Nondegenerate circular mode",
+    "Surface / interface / polariton mode",
+    "Not specified",
+]
+
+GENERATION_MECHANISMS = [
+    "Intrinsic crystal symmetry",
+    "Circular/elliptical THz resonant drive",
+    "Mid-infrared resonant drive",
+    "Raman / impulsive coherent excitation",
+    "Valley-selective optical excitation or scattering",
+    "Magnetic-order / magnon hybridization",
+    "Nonlinear phonon-phonon coupling",
+    "Thermal gradient / population imbalance",
+    "Static magnetic field / Zeeman selection",
+    "Cavity / phonon-polariton coupling",
+    "Theoretical eigenmode construction",
+    "Direct observation without generation",
+]
+
 EXPERIMENTAL_METHOD_GROUPS = [
-    "THz pump-probe",
-    "Optical pump-probe",
-    "Raman spectroscopy",
-    "RIXS / inelastic X-ray scattering",
+    "Ultrafast THz pump-probe",
+    "THz time- or frequency-domain spectroscopy",
+    "Transient optical spectroscopy",
+    "Time-resolved Kerr/Faraday polarimetry",
+    "Circular/polarization-resolved Raman spectroscopy",
+    "Raman optical activity / vibrational circular dichroism",
+    "RIXS / inelastic X-ray spectroscopy",
     "X-ray diffraction/scattering",
     "Electron diffraction",
     "Neutron scattering",
     "Kerr/Faraday polarimetry",
     "Thermal transport",
+    "Torque / cantilever / mechanical detection",
     "Magnetometry",
+    "Photoemission / electron spectroscopy",
     "Other experimental method",
 ]
 
@@ -253,32 +315,71 @@ DETECTION_METHOD_GROUPS = [
 ]
 
 COMPUTATIONAL_METHOD_GROUPS = [
-    "DFT / DFPT",
+    "DFT / DFPT phonons",
+    "Frozen phonon / finite displacement",
+    "First-principles electron-phonon coupling",
+    "Anharmonic / self-consistent phonons",
     "Many-body perturbation theory / BSE",
-    "Real-time TDDFT",
-    "Molecular dynamics",
+    "Real-time TDDFT / electron-ion dynamics",
+    "Molecular or spin-lattice dynamics",
     "Model Hamiltonian / tight binding",
+    "Magnon-phonon / spin-wave theory",
     "Boltzmann transport",
     "Group theory / symmetry analysis",
+    "Berry-phase / topological phonon analysis",
+    "Electrodynamics / cavity / polariton modelling",
     "Machine learning",
     "Other theory/computation",
 ]
 
 PHYSICAL_PROPERTIES = [
+    "Real-space circular/elliptical ionic motion",
     "Phonon angular momentum",
-    "Phonon chirality/helicity",
-    "Pseudo-angular momentum",
-    "Transient magnetization",
+    "Phonon pseudo-angular momentum",
     "Phonon magnetic moment",
-    "Spin-lattice angular-momentum transfer",
+    "Effective / transient magnetic field",
+    "Transient magnetization",
+    "Phonon Zeeman splitting",
+    "Magneto-optical Kerr/Faraday response",
+    "Circular dichroism / helicity selection",
+    "Angular-momentum transfer",
     "Magnon-phonon hybridization",
+    "Spin polarization / spin current / switching",
     "Nonlinear phonon coupling",
+    "Berry curvature / Chern topology",
+    "Valley polarization / selection rules",
     "Thermal Hall response",
-    "Berry curvature/topology",
-    "Valley scattering",
-    "Magneto-optical response",
-    "Coherent lattice dynamics",
-    "Polarization/ferroelectric response",
+    "Mechanical torque / Einstein-de Haas response",
+    "Structural / ferroelectric order control",
+    "Nonreciprocity / directional transport",
+    "Phonon-electron / exciton coupling",
+    "Strong coupling / polariton formation",
+]
+
+EVIDENCE_LEVELS = [
+    "Direct observation of circular ionic motion / chirality",
+    "Direct phonon angular-momentum measurement",
+    "Direct magnetic or magneto-optical consequence",
+    "Spectroscopic selection-rule evidence",
+    "Indirect experimental inference plus modelling",
+    "First-principles prediction",
+    "Model / theory proposal",
+    "Review / perspective synthesis",
+    "Insufficient abstract evidence",
+]
+
+APPLICATION_DIRECTIONS = [
+    "Ultrafast magnetic control",
+    "Spintronics / orbitronics",
+    "Valleytronics",
+    "Thermal management / caloritronics",
+    "Topological phononics",
+    "Quantum sensing / metrology",
+    "Cavity control / hybrid quantum systems",
+    "Ferroelectric / structural switching",
+    "Nonreciprocal devices",
+    "Materials discovery / design",
+    "Fundamental symmetry / selection rules",
 ]
 
 # Split into several manageable broad-recall API queries. The rule/AI layers decide final relevance.
@@ -286,28 +387,28 @@ QUERY_EXPRESSIONS = [
     "("
     + " OR ".join(
         [
-            'all:\"chiral phonon\"',
-            'all:\"phonon chirality\"',
-            'all:\"phonon angular momentum\"',
-            'all:\"phonon pseudoangular momentum\"',
-            'all:\"phonon helicity\"',
-            'all:\"helical phonon\"',
-            'all:\"circularly polarized phonon\"',
+            'all:"chiral phonon"',
+            'all:"phonon chirality"',
+            'all:"phonon angular momentum"',
+            'all:"phonon pseudoangular momentum"',
+            'all:"phonon helicity"',
+            'all:"helical phonon"',
+            'all:"circularly polarized phonon"',
         ]
     )
     + ")",
     "(all:phonon OR all:lattice) AND "
-    "(all:chiral OR all:chirality OR all:helicity OR all:\"angular momentum\" "
-    "OR all:handedness OR all:\"circular polarization\")",
+    '(all:chiral OR all:chirality OR all:helicity OR all:"angular momentum" '
+    'OR all:handedness OR all:"circular polarization")',
     "(all:phonon OR all:lattice) AND "
-    "(all:terahertz OR all:THz OR all:Raman OR all:RIXS OR all:\"pump probe\") AND "
-    "(all:magnetization OR all:\"angular momentum\" OR all:circular OR all:helicity)",
-    "(all:\"spin phonon\" OR all:\"magnon phonon\" OR all:\"spin lattice\") AND "
-    "(all:chirality OR all:\"angular momentum\" OR all:helicity OR all:circular)",
-    "(all:\"nonlinear phononics\" OR all:\"phonon polariton\" OR "
-    "all:\"thermal Hall\" OR all:\"topological phonon\" OR all:phonomagnetism OR "
-    "all:\"dynamical multiferroicity\") AND "
-    "(all:chiral OR all:phonon OR all:lattice OR all:\"angular momentum\")",
+    '(all:terahertz OR all:THz OR all:Raman OR all:RIXS OR all:"pump probe") AND '
+    '(all:magnetization OR all:"angular momentum" OR all:circular OR all:helicity)',
+    '(all:"spin phonon" OR all:"magnon phonon" OR all:"spin lattice") AND '
+    '(all:chirality OR all:"angular momentum" OR all:helicity OR all:circular)',
+    '(all:"nonlinear phononics" OR all:"phonon polariton" OR '
+    'all:"thermal Hall" OR all:"topological phonon" OR all:phonomagnetism OR '
+    'all:"dynamical multiferroicity") AND '
+    '(all:chiral OR all:phonon OR all:lattice OR all:"angular momentum")',
 ]
 
 AUTHOR_ACTION_PATTERNS = {

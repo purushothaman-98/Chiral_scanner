@@ -21,4 +21,6 @@ def flatten_unique(papers: list[dict], path: tuple[str, ...]) -> list[str]:
             current = current.get(key, {}) if isinstance(current, dict) else {}
         if isinstance(current, list):
             values.update(str(value) for value in current if value)
+        elif isinstance(current, str) and current:
+            values.add(current)
     return sorted(values, key=str.casefold)

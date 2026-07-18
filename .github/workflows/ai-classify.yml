@@ -3,9 +3,6 @@ name: AI classify arXiv papers
 on:
   schedule:
     - cron: "40 0,4,8,12,16,20 * * *"
-  workflow_run:
-    workflows: ["Scan arXiv metadata"]
-    types: [completed]
   workflow_dispatch:
     inputs:
       limit:
@@ -24,7 +21,6 @@ concurrency:
 
 jobs:
   classify:
-    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     timeout-minutes: 180
     steps:
@@ -46,6 +42,7 @@ jobs:
         run: |
           python scripts/classify_ai.py \
             --limit "$LIMIT" \
+            --max-limit 25 \
             --sleep 3.5 \
             --output /tmp/chiral_ai_results.json \
             --summary /tmp/chiral_ai_summary.json
