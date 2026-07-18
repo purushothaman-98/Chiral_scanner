@@ -81,32 +81,70 @@ st.set_page_config(
 st.markdown(
     """
 <style>
-.block-container {padding-top: 1.2rem; max-width: 1440px;}
-.topline {color:#a78bfa; font-size:.76rem; font-weight:700; letter-spacing:.13em; margin-bottom:.55rem;}
-.hero {padding:1.55rem 1.8rem; border:1px solid rgba(139,92,246,.32); border-radius:20px;
-background:radial-gradient(circle at 90% 0%,rgba(124,58,237,.22),transparent 38%),
-linear-gradient(135deg,rgba(15,23,42,.97),rgba(17,13,35,.97)); margin-bottom:1rem;}
-.hero h1 {margin:0; font-size:2.35rem; letter-spacing:-.04em;}
-.hero p {max-width:940px; color:#c4b5fd; font-size:1rem; margin:.55rem 0 0;}
-.coverage {padding:.7rem 1rem; border-radius:12px; background:rgba(139,92,246,.08);
-border:1px solid rgba(139,92,246,.18); color:#cbd5e1; font-size:.88rem; margin:.65rem 0 1rem;}
-.date-row {display:flex; align-items:center; gap:.7rem; margin:1.45rem 0 .25rem;}
-.date-row h2 {font-size:1.22rem; margin:0;}
-.count-pill {font-size:.74rem; color:#c4b5fd; padding:.15rem .48rem; border-radius:999px;
-background:rgba(139,92,246,.14); border:1px solid rgba(139,92,246,.28);}
-.paper-title {font-size:1.08rem; font-weight:700; line-height:1.35; margin-bottom:.2rem;}
-.paper-title a {color:inherit; text-decoration:none;}
+:root {--violet:#8b5cf6; --cyan:#22d3ee; --ink:#f8fafc; --muted:#94a3b8;
+--panel:rgba(15,23,42,.72); --line:rgba(148,163,184,.16);}
+.block-container {padding-top:1rem; padding-bottom:2.5rem; max-width:1280px;}
+.hero {padding:1.25rem 1.45rem; border:1px solid rgba(139,92,246,.34); border-radius:22px;
+background:radial-gradient(circle at 88% 10%,rgba(34,211,238,.12),transparent 25%),
+radial-gradient(circle at 72% 0%,rgba(124,58,237,.25),transparent 38%),
+linear-gradient(135deg,rgba(15,23,42,.98),rgba(20,14,44,.97)); margin-bottom:.8rem;
+box-shadow:0 18px 55px rgba(2,6,23,.22);}
+.hero-kicker {display:flex; align-items:center; gap:.45rem; color:#c4b5fd; font-size:.72rem;
+font-weight:750; letter-spacing:.11em; text-transform:uppercase; margin-bottom:.55rem;}
+.live-dot {width:.48rem; height:.48rem; border-radius:999px; background:#34d399;
+box-shadow:0 0 0 4px rgba(52,211,153,.12); display:inline-block;}
+.hero h1 {margin:0; font-size:2.12rem; letter-spacing:-.045em; line-height:1.08;}
+.hero p {max-width:850px; color:#cbd5e1; font-size:.95rem; line-height:1.55; margin:.55rem 0 .75rem;}
+.hero-tags {display:flex; flex-wrap:wrap; gap:.4rem;}
+.hero-tag {padding:.22rem .55rem; border:1px solid rgba(196,181,253,.2); border-radius:999px;
+color:#ddd6fe; background:rgba(139,92,246,.08); font-size:.72rem;}
+.coverage {display:flex; flex-wrap:wrap; gap:.45rem 1.15rem; padding:.65rem .85rem;
+border-radius:12px; background:rgba(15,23,42,.62); border:1px solid var(--line);
+color:#cbd5e1; font-size:.8rem; margin:.45rem 0 .9rem;}
+.coverage strong {color:#f8fafc; font-weight:650;}
+.section-kicker {color:#a78bfa; font-size:.7rem; font-weight:750; letter-spacing:.1em;
+text-transform:uppercase; margin-bottom:.2rem;}
+.section-intro {color:#94a3b8; max-width:850px; font-size:.88rem; line-height:1.55;
+margin-top:-.25rem; margin-bottom:.9rem;}
+.material-strip {padding:.65rem .8rem; border:1px solid var(--line); border-radius:12px;
+background:rgba(15,23,42,.45); color:#cbd5e1; font-size:.82rem; margin:.45rem 0 .75rem;}
+.date-row {display:flex; align-items:center; gap:.7rem; margin:1.2rem 0 .2rem;}
+.date-row h2 {font-size:1.08rem; margin:0;}
+.count-pill {font-size:.7rem; color:#c4b5fd; padding:.13rem .44rem; border-radius:999px;
+background:rgba(139,92,246,.12); border:1px solid rgba(139,92,246,.24);}
+.paper-title {font-size:1.04rem; font-weight:720; line-height:1.4; margin-bottom:.18rem;}
+.paper-title a {color:var(--ink); text-decoration:none;}
 .paper-title a:hover {color:#a78bfa;}
-.meta {color:#94a3b8; font-size:.82rem; margin:.2rem 0 .4rem;}
-.badge {display:inline-block; padding:.18rem .48rem; margin:.12rem .2rem .12rem 0;
-border-radius:999px; background:rgba(124,58,237,.13); border:1px solid rgba(139,92,246,.28);
-font-size:.73rem; color:#ddd6fe;}
-.status-approved {background:rgba(16,185,129,.12); border-color:rgba(16,185,129,.35); color:#a7f3d0;}
-.status-pending {background:rgba(245,158,11,.12); border-color:rgba(245,158,11,.35); color:#fde68a;}
-.status-review {background:rgba(244,63,94,.11); border-color:rgba(244,63,94,.32); color:#fecdd3;}
-.abstract {color:#d1d5db; line-height:1.55; margin:.55rem 0;}
-div[data-testid="stMetric"] {padding:.45rem .2rem;}
-div[data-testid="stMetricLabel"] {font-size:.82rem;}
+.meta {color:#94a3b8; font-size:.78rem; margin:.18rem 0 .38rem;}
+.badge {display:inline-block; padding:.16rem .44rem; margin:.1rem .16rem .1rem 0;
+border-radius:999px; background:rgba(124,58,237,.1); border:1px solid rgba(139,92,246,.24);
+font-size:.68rem; color:#ddd6fe;}
+.status-approved {background:rgba(16,185,129,.1); border-color:rgba(16,185,129,.3); color:#a7f3d0;}
+.status-pending {background:rgba(245,158,11,.1); border-color:rgba(245,158,11,.3); color:#fde68a;}
+.status-review {background:rgba(244,63,94,.1); border-color:rgba(244,63,94,.28); color:#fecdd3;}
+.paper-signal {border-left:2px solid rgba(34,211,238,.55); padding:.35rem .65rem;
+margin:.55rem 0 .35rem; color:#cbd5e1; font-size:.82rem; line-height:1.5;
+background:rgba(34,211,238,.035);}
+.abstract {color:#b8c1cf; line-height:1.5; margin:.4rem 0; font-size:.86rem;}
+div[data-testid="stMetric"] {padding:.72rem .82rem; background:rgba(15,23,42,.52);
+border:1px solid var(--line); border-radius:14px; min-height:92px;}
+div[data-testid="stMetricLabel"] {font-size:.76rem; color:#94a3b8;}
+div[data-testid="stMetricValue"] {font-size:1.65rem;}
+div[data-baseweb="tab-list"] {gap:.25rem; padding:.28rem; border:1px solid var(--line);
+border-radius:14px; background:rgba(15,23,42,.5); overflow-x:auto;}
+button[data-baseweb="tab"] {border-radius:10px; padding:.45rem .75rem;}
+div[data-testid="stExpander"] {border-color:var(--line); border-radius:12px;}
+div[data-testid="stVerticalBlockBorderWrapper"] {border-color:var(--line); border-radius:14px;}
+.stButton > button, .stLinkButton > a {border-radius:10px;}
+@media (max-width:700px) {
+  .block-container {padding:.65rem .75rem 2rem;}
+  .hero {padding:1rem; border-radius:17px;}
+  .hero h1 {font-size:1.65rem;}
+  .hero p {font-size:.86rem;}
+  .coverage {display:block; line-height:1.65;}
+  div[data-testid="stMetric"] {min-height:82px; padding:.55rem .6rem;}
+  button[data-baseweb="tab"] {padding:.38rem .55rem; font-size:.78rem;}
+}
 </style>
 """,
     unsafe_allow_html=True,
@@ -200,7 +238,7 @@ def paper_card(paper: dict) -> None:
     if len(paper.get("authors", [])) > 5:
         author_names += " et al."
     abstract = str(paper.get("abstract", ""))
-    preview = abstract if len(abstract) <= 430 else abstract[:427].rstrip() + "…"
+    preview = abstract if len(abstract) <= 300 else abstract[:297].rstrip() + "…"
     systems = decision.get("material_or_system_family", []) + decision.get(
         "materials_or_systems", []
     )
@@ -219,6 +257,14 @@ def paper_card(paper: dict) -> None:
     tags = [status]
     if decision:
         tags.extend([evidence_stage(paper), decision.get("research_type")])
+    visible_science_tags = (field_areas + scientific_identity + systems)[:3]
+    reason = str(decision.get("reason", "")).strip()
+    signal = reason if len(reason) <= 260 else reason[:257].rstrip() + "…"
+    signal_html = (
+        f'<div class="paper-signal"><strong>Research signal</strong> · {html.escape(signal)}</div>'
+        if signal
+        else ""
+    )
 
     with st.container(border=True):
         st.markdown(
@@ -226,18 +272,21 @@ def paper_card(paper: dict) -> None:
             f'<div class="meta">{html.escape(author_names)} · Submitted '
             f"{short_date(paper.get('initial_submission_date'))} · "
             f"arXiv:{html.escape(str(paper.get('base_arxiv_id', '')))}</div>"
-            f"<div>{badges(tags, status)}{badges((field_areas + scientific_identity + systems)[:5])}</div>"
+            f"<div>{badges(tags, status)}{badges(visible_science_tags)}</div>"
+            f"{signal_html}"
             f'<div class="abstract">{html.escape(preview)}</div>',
             unsafe_allow_html=True,
         )
         links = st.columns([1, 1, 4])
         links[0].link_button("arXiv page ↗", paper.get("abstract_url", "https://arxiv.org"))
         links[1].link_button("PDF ↗", paper.get("pdf_url", "https://arxiv.org"))
-        label_count = len(scientific_identity + systems + methods)
-        if label_count > 5:
-            links[2].caption(f"+{label_count - 5} additional scientific labels")
+        label_count = len(field_areas + scientific_identity + systems + methods)
+        if label_count > len(visible_science_tags):
+            links[2].caption(
+                f"{label_count - len(visible_science_tags)} more labels in the evidence panel"
+            )
 
-        with st.expander("Abstract, complete metadata and classification evidence"):
+        with st.expander("Evidence, methods and complete metadata"):
             st.write(abstract)
             if decision:
                 st.markdown(f"**Classification reason:** {decision.get('reason', '—')}")
@@ -300,17 +349,17 @@ direct_evidence = [
 ]
 
 st.markdown(
-    '<div class="topline">ARXIV CHIRAL PHONON FEED · DAILY AT 04:00 UTC</div>',
-    unsafe_allow_html=True,
-)
-st.markdown(
     """
 <div class="hero">
-<h1>Chiral Phonon Research Scanner</h1>
-<p>Track how the chiral-phonon field is evolving across phonon angular momentum,
-THz and ultrafast control, magnetism, quantum materials and transport. Direct measurements,
-experimental indications and predictions stay distinct without treating an unsettled definition
-as a reason to hide useful research.</p>
+<div class="hero-kicker"><span class="live-dot"></span> Daily arXiv intelligence · 04:00 UTC</div>
+<h1>Chiral phonon field tracker</h1>
+<p>A researcher-first map of how the field is changing—from phonon angular momentum and
+true dynamical chirality to THz control, magnetism and direct measurement. Evidence,
+interpretation and prediction remain visibly distinct.</p>
+<div class="hero-tags">
+<span class="hero-tag">Field history</span><span class="hero-tag">Latest papers</span>
+<span class="hero-tag">Materials & methods</span><span class="hero-tag">THz frontier</span>
+</div>
 </div>
 """,
     unsafe_allow_html=True,
@@ -318,24 +367,24 @@ as a reason to hide useful research.</p>
 
 metrics = st.columns(4)
 metrics[0].metric(
-    "Total papers scanned",
+    "Archive",
     len(papers),
     help="Every deduplicated paper retrieved by the broad discovery scan.",
 )
 metrics[1].metric(
-    "Scientific analysis complete",
+    "Scientifically reviewed",
     len(reviewed),
     help="Papers with a stored scientific classification.",
 )
 metrics[2].metric(
-    "Analysis pending",
-    len(pending),
-    help="Likely field-connected papers waiting for classification.",
+    "Mapped to the field",
+    len(approved),
+    help="Reviewed papers connected to the chiral-phonon research ecosystem.",
 )
 metrics[3].metric(
-    "Papers in field timeline",
-    len(approved),
-    help="Reviewed papers mapped into the chiral-phonon field timeline.",
+    "Review queue",
+    len(pending),
+    help="Likely field-connected papers waiting for scientific classification.",
 )
 
 coverage_dates = [parse_date(p.get("initial_submission_date")) for p in papers]
@@ -347,10 +396,11 @@ coverage = (
 )
 last_scan = history[-1].get("scan_timestamp") if history else archive.get("updated_at")
 st.markdown(
-    f'<div class="coverage">{coverage} · Last metadata scan: {short_date(last_scan)} · '
-    f"{len(reviewed)} classified · {len(pending)} awaiting classification · "
-    f"{len(review_queue)} open-interpretation papers · "
-    f"backfill checkpoint: {html.escape(str(backfill_state.get('next_until', 'not started')))}</div>",
+    f'<div class="coverage"><span><strong>Coverage</strong> · {coverage.removeprefix("Archive coverage: ")}</span>'
+    f"<span><strong>Last scan</strong> · {short_date(last_scan)}</span>"
+    f"<span><strong>Open interpretation</strong> · {len(review_queue)}</span>"
+    f"<span><strong>Backfill checkpoint</strong> · "
+    f"{html.escape(str(backfill_state.get('next_until', 'not started')))}</span></div>",
     unsafe_allow_html=True,
 )
 
@@ -363,16 +413,24 @@ st.markdown(
     admin_tab,
 ) = st.tabs(
     [
-        "Research evolution",
-        "Daily scan",
-        "Field analysis",
-        "News & breakthroughs",
-        "Projects & opportunities",
-        "Operations",
+        "Field atlas",
+        "Latest papers",
+        "Research landscape",
+        "Breakthroughs",
+        "Ecosystem",
+        "Pipeline",
     ]
 )
 
 with history_tab:
+    st.markdown('<div class="section-kicker">Field atlas</div>', unsafe_allow_html=True)
+    st.subheader("Evidence, materials and the evolution of the concept")
+    st.markdown(
+        '<div class="section-intro">Start with what has been observed, then move through how '
+        "the definition changed. The atlas separates a mode-resolved observation from "
+        "spectroscopic identification, driven response and angular-momentum coupling.</div>",
+        unsafe_allow_html=True,
+    )
     overview_metrics = st.columns(4)
     overview_metrics[0].metric("Material systems", len(MATERIAL_SYSTEMS))
     overview_metrics[1].metric(
@@ -383,49 +441,58 @@ with history_tab:
         "Driven responses", sum(item["evidence"] == "Driven response" for item in MATERIAL_SYSTEMS)
     )
     overview_metrics[3].metric("Landmark papers", len(LANDMARKS))
-    st.subheader("Materials where chiral-phonon physics has been reported")
-    st.caption(
-        "Materials with published experimental evidence. Labels distinguish observation of the mode itself "
-        "from a driven effect or angular-momentum-selective coupling."
-    )
-    evidence_filter = st.multiselect(
-        "Evidence represented",
-        list(EVIDENCE_LEVELS),
-        default=list(EVIDENCE_LEVELS),
-    )
+    st.markdown("### Experimental materials map")
+    map_controls = st.columns([3, 2])
+    with map_controls[0]:
+        evidence_filter = st.multiselect(
+            "Filter by evidence type",
+            list(EVIDENCE_LEVELS),
+            default=list(EVIDENCE_LEVELS),
+        )
     filtered_materials = [
         material for material in MATERIAL_SYSTEMS if material["evidence"] in evidence_filter
     ]
-    if filtered_materials:
-        st.markdown(" · ".join(f"**{item['material']}**" for item in filtered_materials))
+    with map_controls[1]:
+        selected_name = st.selectbox(
+            "Open a material record",
+            [item["material"] for item in filtered_materials],
+            disabled=not filtered_materials,
+        )
     if not MATERIAL_SYSTEMS:
         st.info(
             "The enriched materials map is waiting for Streamlit Cloud to complete its repository "
             "refresh. The established landmark timeline remains available below."
         )
 
-    with st.expander("How to read the evidence labels", expanded=False):
-        for label, meaning in EVIDENCE_LEVELS.items():
-            st.markdown(f"**{label}:** {meaning}")
-
     if filtered_materials:
-        selected_name = st.selectbox(
-            "Explore one material in depth",
-            [item["material"] for item in filtered_materials],
+        st.markdown(
+            '<div class="material-strip"><strong>Systems in this view</strong> · '
+            + " · ".join(html.escape(item["material"]) for item in filtered_materials)
+            + "</div>",
+            unsafe_allow_html=True,
         )
         material = next(item for item in filtered_materials if item["material"] == selected_name)
         with st.container(border=True):
-            st.markdown(f"### {material['material']}")
-            st.caption(f"{material['family']} · {material['year']} · {material['evidence']}")
-            st.markdown(f"**Reported result:** {material['finding']}")
-            st.write(f"**Method:** {material['method']}")
-            st.warning(f"**Interpretation boundary:** {material['caveat']}")
-            material_papers = material.get("papers", [("Primary paper", material["url"])])
-            st.markdown("**Papers and records**")
-            for label, url in material_papers:
-                st.markdown(f"- [{label}]({url})")
+            record_main, record_context = st.columns([3, 2])
+            with record_main:
+                st.markdown(f"### {material['material']}")
+                st.caption(
+                    f"{material['family']} · First report {material['year']} · {material['evidence']}"
+                )
+                st.markdown(f"**What was established**  \n{material['finding']}")
+                st.markdown(f"**Method**  \n{material['method']}")
+            with record_context:
+                st.warning(f"**Interpretation boundary**\n\n{material['caveat']}")
+                material_papers = material.get("papers", [("Primary paper", material["url"])])
+                st.markdown("**Primary literature**")
+                for label, url in material_papers:
+                    st.markdown(f"- [{label}]({url})")
 
-    st.markdown("### How the concept changed")
+    with st.expander("Evidence-label guide"):
+        for label, meaning in EVIDENCE_LEVELS.items():
+            st.markdown(f"**{label}** — {meaning}")
+
+    st.markdown("### Six questions that moved the field")
     stage_columns = st.columns(3)
     for index, (title, question) in enumerate(CONCEPT_STAGES):
         with stage_columns[index % 3]:
@@ -433,49 +500,48 @@ with history_tab:
                 st.markdown(f"**{index + 1}. {title}**")
                 st.write(question)
 
-    st.markdown("### Historical timeline")
-    st.caption(
-        "Multiple papers are retained within breakthrough years so the timeline shows parallel "
-        "progress in definitions, measurement and THz-driven effects."
+    st.info(
+        "**Definition checkpoint:** circular polarization, phonon angular momentum and true "
+        "dynamical chirality are related but not interchangeable. A Γ-point circular mode can "
+        "carry angular momentum without being a propagating chiral object; valley pseudo-angular "
+        "momentum is a crystal-symmetry quantum number."
     )
+
+    st.markdown("### Landmark timeline")
+    st.caption("Recent years open by default; earlier foundations remain one click away.")
     landmarks_by_year: dict[int, list[dict]] = defaultdict(list)
     for landmark in LANDMARKS:
         landmarks_by_year[landmark["year"]].append(landmark)
     for year in sorted(landmarks_by_year, reverse=True):
-        st.markdown(f"## {year}")
-        for item in landmarks_by_year[year]:
-            with st.container(border=True):
-                left, right = st.columns([2, 7])
-                left.markdown(f"**{item['stage']}**")
-                material = item.get("material", item.get("theme", "Field landmark"))
-                kind = item.get("kind", "Research paper")
-                left.caption(f"{material} · {kind}")
-                right.markdown(f"#### {item['title']}")
-                right.write(item["why"])
-                right.link_button("Open primary paper ↗", item["url"])
-
-    st.info(
-        "Technical boundary: circular polarization, phonon angular momentum and true dynamical "
-        "chirality are related but not interchangeable. A Γ-point circular mode can carry angular "
-        "momentum without being a propagating chiral object; valley pseudo-angular momentum is a "
-        "crystal-symmetry quantum number; true chirality additionally concerns how rotation and "
-        "propagation transform under space and time reversal."
-    )
+        year_items = landmarks_by_year[year]
+        paper_word = "milestone" if len(year_items) == 1 else "milestones"
+        with st.expander(
+            f"{year} · {len(year_items)} {paper_word}",
+            expanded=year >= 2024,
+        ):
+            for item in year_items:
+                with st.container(border=True):
+                    left, right = st.columns([2, 7])
+                    left.markdown(f"**{item['stage']}**")
+                    landmark_material = item.get("material", item.get("theme", "Field landmark"))
+                    kind = item.get("kind", "Research paper")
+                    left.caption(f"{landmark_material} · {kind}")
+                    right.markdown(f"#### {item['title']}")
+                    right.write(item["why"])
+                    right.link_button("Primary paper ↗", item["url"])
 
 with paper_tab:
-    st.subheader("Daily research scan")
-    st.caption(
-        "Newest mapped papers first. Use the THz lens for coherent excitation, nonlinear phononics and ultrafast experiments."
+    st.markdown('<div class="section-kicker">Daily discovery</div>', unsafe_allow_html=True)
+    st.subheader("Latest mapped research")
+    st.markdown(
+        '<div class="section-intro">Search the scientifically mapped feed first. Choose a broad '
+        "research lens, then open advanced filters only when you need method-, material- or "
+        "evidence-level precision.</div>",
+        unsafe_allow_html=True,
     )
-    scan_window = st.radio(
-        "Timeline",
-        ["Latest 7 days", "Latest 30 days", "All mapped papers"],
-        horizontal=True,
-    )
-    with st.sidebar:
-        st.header("Advanced paper filters")
-        st.caption("Optional controls for narrowing the Daily scan.")
-        view = st.radio(
+    quick_filters = st.columns([2, 3])
+    with quick_filters[0]:
+        view = st.selectbox(
             "Research lens",
             [
                 "Field evolution",
@@ -489,56 +555,77 @@ with paper_tab:
                 "Open questions / interpretation",
             ],
         )
-        search = st.text_input("Search", placeholder="Material, method, author, concept…")
-        current_decisions = [p for p in papers if p.get("ai_decision")]
-        relevance_filter = st.multiselect(
-            "Chiral-phonon relevance",
-            flatten_unique(current_decisions, ("ai_decision", "relevance")),
+    with quick_filters[1]:
+        search = st.text_input(
+            "Search papers", placeholder="Material, method, author, arXiv ID or concept…"
         )
-        research_filter = st.multiselect(
-            "Research type", flatten_unique(current_decisions, ("ai_decision", "research_type"))
+    scan_window = st.radio(
+        "Publication window",
+        ["Latest 7 days", "Latest 30 days", "All mapped papers"],
+        horizontal=True,
+    )
+    current_decisions = [p for p in papers if p.get("ai_decision")]
+    with st.expander("Advanced scientific filters"):
+        st.caption(
+            "Combine filters across evidence, physical interpretation, materials and methods. "
+            "Empty controls are ignored."
         )
-        focus_filter = st.multiselect(
-            "Research focus", flatten_unique(current_decisions, ("ai_decision", "research_focus"))
-        )
-        chirality_filter = st.multiselect(
-            "Meaning of chirality",
-            flatten_unique(current_decisions, ("ai_decision", "chirality_class")),
-        )
-        phonon_filter = st.multiselect(
-            "Phonon character",
-            flatten_unique(current_decisions, ("ai_decision", "phonon_character")),
-        )
-        evidence_filter = st.multiselect(
-            "Evidence level", flatten_unique(current_decisions, ("ai_decision", "evidence_level"))
-        )
-        family_filter = st.multiselect(
-            "Material family",
-            flatten_unique(current_decisions, ("ai_decision", "material_or_system_family")),
-        )
-        exp_filter = st.multiselect(
-            "Experimental method",
-            flatten_unique(current_decisions, ("ai_decision", "experimental_methods")),
-        )
-        excitation_filter = st.multiselect(
-            "Generation mechanism",
-            flatten_unique(current_decisions, ("ai_decision", "generation_mechanisms")),
-        )
-        detection_filter = st.multiselect(
-            "Detection", flatten_unique(current_decisions, ("ai_decision", "detection_methods"))
-        )
-        theory_filter = st.multiselect(
-            "Theory / computation",
-            flatten_unique(current_decisions, ("ai_decision", "computational_methods")),
-        )
-        property_filter = st.multiselect(
-            "Physical property",
-            flatten_unique(current_decisions, ("ai_decision", "physical_properties")),
-        )
-        application_filter = st.multiselect(
-            "Research/application direction",
-            flatten_unique(current_decisions, ("ai_decision", "application_directions")),
-        )
+        filter_columns = st.columns(3)
+        with filter_columns[0]:
+            relevance_filter = st.multiselect(
+                "Chiral-phonon relevance",
+                flatten_unique(current_decisions, ("ai_decision", "relevance")),
+            )
+            research_filter = st.multiselect(
+                "Research type",
+                flatten_unique(current_decisions, ("ai_decision", "research_type")),
+            )
+            evidence_filter = st.multiselect(
+                "Evidence level",
+                flatten_unique(current_decisions, ("ai_decision", "evidence_level")),
+            )
+            focus_filter = st.multiselect(
+                "Research focus",
+                flatten_unique(current_decisions, ("ai_decision", "research_focus")),
+            )
+        with filter_columns[1]:
+            chirality_filter = st.multiselect(
+                "Meaning of chirality",
+                flatten_unique(current_decisions, ("ai_decision", "chirality_class")),
+            )
+            phonon_filter = st.multiselect(
+                "Phonon character",
+                flatten_unique(current_decisions, ("ai_decision", "phonon_character")),
+            )
+            family_filter = st.multiselect(
+                "Material family",
+                flatten_unique(current_decisions, ("ai_decision", "material_or_system_family")),
+            )
+            property_filter = st.multiselect(
+                "Physical property",
+                flatten_unique(current_decisions, ("ai_decision", "physical_properties")),
+            )
+        with filter_columns[2]:
+            exp_filter = st.multiselect(
+                "Experimental method",
+                flatten_unique(current_decisions, ("ai_decision", "experimental_methods")),
+            )
+            excitation_filter = st.multiselect(
+                "Generation mechanism",
+                flatten_unique(current_decisions, ("ai_decision", "generation_mechanisms")),
+            )
+            detection_filter = st.multiselect(
+                "Detection method",
+                flatten_unique(current_decisions, ("ai_decision", "detection_methods")),
+            )
+            theory_filter = st.multiselect(
+                "Theory / computation",
+                flatten_unique(current_decisions, ("ai_decision", "computational_methods")),
+            )
+            application_filter = st.multiselect(
+                "Research/application direction",
+                flatten_unique(current_decisions, ("ai_decision", "application_directions")),
+            )
 
     if view == "Field evolution":
         candidates = approved
@@ -611,7 +698,29 @@ with paper_tab:
         filtered.append(paper)
 
     filtered.sort(key=lambda p: p.get("initial_submission_date", ""), reverse=True)
+    active_filter_count = sum(
+        bool(value)
+        for value in [
+            search,
+            relevance_filter,
+            research_filter,
+            focus_filter,
+            chirality_filter,
+            phonon_filter,
+            evidence_filter,
+            family_filter,
+            exp_filter,
+            excitation_filter,
+            detection_filter,
+            theory_filter,
+            property_filter,
+            application_filter,
+        ]
+    )
+    st.markdown('<div class="section-kicker">Results</div>', unsafe_allow_html=True)
     st.subheader(f"{view} · {len(filtered)} papers")
+    if active_filter_count:
+        st.caption(f"{active_filter_count} search or advanced filters active")
     if view == "Field evolution":
         st.caption(
             "Core results, connected phonon-angular-momentum physics and open interpretations."
@@ -639,11 +748,14 @@ with paper_tab:
 
     page_size = 20
     total_pages = max(1, (len(filtered) + page_size - 1) // page_size)
-    page = st.selectbox(
-        "Page",
-        range(1, total_pages + 1),
-        format_func=lambda value: f"Page {value} of {total_pages}",
-    )
+    if total_pages > 1:
+        page = st.selectbox(
+            "Results page",
+            range(1, total_pages + 1),
+            format_func=lambda value: f"Page {value} of {total_pages}",
+        )
+    else:
+        page = 1
     page_items, _, _ = paginate(filtered, page, page_size)
 
     grouped: dict[str, list[dict]] = defaultdict(list)
@@ -662,37 +774,42 @@ with paper_tab:
         st.info("No papers match this view and filter combination.")
 
 with analysis_tab:
+    st.markdown('<div class="section-kicker">Research landscape</div>', unsafe_allow_html=True)
     st.subheader("How the field is evolving")
     st.markdown(
-        """
-The community does not use one settled definition. This tracker therefore follows the
-unifying question—**how lattice motion carries, generates or transfers angular momentum**—and
-keeps true eigenmode chirality, driven circular motion and pseudo-angular momentum separate.
-"""
+        '<div class="section-intro">The dashboard follows one unifying question—<strong>how '
+        "lattice motion carries, generates or transfers angular momentum</strong>—without "
+        "collapsing true eigenmode chirality, driven circular motion and pseudo-angular "
+        "momentum into one label.</div>",
+        unsafe_allow_html=True,
     )
     guide = st.columns(4)
     with guide[0]:
-        st.markdown("#### 1 · Identify")
-        st.write("Resolve symmetry, handedness, circular ionic motion and phonon angular momentum.")
+        with st.container(border=True):
+            st.markdown("#### 1 · Identify")
+            st.write(
+                "Resolve symmetry, handedness, circular ionic motion and phonon angular momentum."
+            )
     with guide[1]:
-        st.markdown("#### 2 · Generate")
-        st.write("Use THz/mid-IR pulses, nonlinear coupling, magnetic order or thermal imbalance.")
+        with st.container(border=True):
+            st.markdown("#### 2 · Generate")
+            st.write(
+                "Use THz/mid-IR pulses, nonlinear coupling, magnetic order or thermal imbalance."
+            )
     with guide[2]:
-        st.markdown("#### 3 · Detect")
-        st.write(
-            "Distinguish direct motion/torque from Raman selection rules and magneto-optical inference."
-        )
+        with st.container(border=True):
+            st.markdown("#### 3 · Detect")
+            st.write(
+                "Distinguish direct motion or torque from selection rules and magneto-optical inference."
+            )
     with guide[3]:
-        st.markdown("#### 4 · Use")
-        st.write(
-            "Track transfer into spins, electrons, excitons, orbital currents and heat transport."
-        )
-    st.caption(
-        "Community framing: CECAM Chiral Phonons in Quantum Materials workshop · "
-        "magnetism/spintronics · 2D optoelectronics · ultrafast dynamics · transport/Hall effects."
-    )
+        with st.container(border=True):
+            st.markdown("#### 4 · Use")
+            st.write(
+                "Track transfer into spins, electrons, excitons, orbital currents and heat transport."
+            )
     st.link_button(
-        "Open community field map ↗",
+        "Community field map · CECAM ↗",
         "https://www.cecam.org/workshop-details/chiral-phonons-in-quantum-materials-1202",
     )
     pipeline_metrics = st.columns(4)
@@ -703,10 +820,6 @@ keeps true eigenmode chirality, driven circular motion and pseudo-angular moment
     st.caption(
         "The map follows overlapping research communities rather than forcing one definition "
         "of a chiral phonon. A paper may belong to several areas at once."
-    )
-    st.subheader("Research landscape")
-    st.caption(
-        "Reviewed field papers are grouped by ecosystem, evidence maturity, material and method."
     )
     if not approved:
         st.info("Analysis will appear as current AI classifications are completed.")
@@ -721,9 +834,6 @@ keeps true eigenmode chirality, driven circular motion and pseudo-angular moment
             }
         )
         frame["week"] = pd.to_datetime(frame["date"]).dt.to_period("W").dt.start_time
-        left, right = st.columns(2)
-        left.line_chart(frame.groupby("date").size().rename("field papers"))
-        right.line_chart(frame.groupby("week").size().rename("field papers"))
 
         def distribution(field: str) -> pd.Series:
             values = [value for paper in approved for value in paper["ai_decision"].get(field, [])]
@@ -735,164 +845,218 @@ keeps true eigenmode chirality, driven circular motion and pseudo-angular moment
             else:
                 column.bar_chart(values)
 
-        rows = [
-            ("Field ecosystems", "_ecosystem"),
-            ("Evidence maturity", "_evidence"),
-            ("Research focus", "research_focus"),
-            ("Meaning of chirality", "chirality_class"),
-            ("Phonon character", "phonon_character"),
-            ("Material families", "material_or_system_family"),
-            ("Experimental methods", "experimental_methods"),
-            ("Generation mechanisms", "generation_mechanisms"),
-            ("Detection methods", "detection_methods"),
-            ("Theory / computation", "computational_methods"),
-            ("Physical properties", "physical_properties"),
-            ("Application directions", "application_directions"),
-        ]
-        for start in range(0, len(rows), 3):
-            columns = st.columns(3)
-            for column, (title, field) in zip(columns, rows[start : start + 3], strict=False):
-                column.markdown(f"#### {title}")
-                if field == "_ecosystem":
-                    values = [value for paper in approved for value in ecosystem_areas(paper)]
-                    render_distribution(column, pd.Series(values, dtype="object").value_counts())
-                elif field == "_evidence":
-                    values = [evidence_stage(paper) for paper in approved]
-                    render_distribution(column, pd.Series(values, dtype="object").value_counts())
-                else:
-                    render_distribution(column, distribution(field))
+        def render_group(rows: list[tuple[str, str]]) -> None:
+            for start in range(0, len(rows), 2):
+                columns = st.columns(2)
+                for column, (title, field) in zip(columns, rows[start : start + 2], strict=False):
+                    column.markdown(f"#### {title}")
+                    if field == "_ecosystem":
+                        values = [value for paper in approved for value in ecosystem_areas(paper)]
+                        render_distribution(
+                            column, pd.Series(values, dtype="object").value_counts()
+                        )
+                    elif field == "_evidence":
+                        values = [evidence_stage(paper) for paper in approved]
+                        render_distribution(
+                            column, pd.Series(values, dtype="object").value_counts()
+                        )
+                    else:
+                        render_distribution(column, distribution(field))
+
+        growth_view, concepts_view, methods_view = st.tabs(
+            ["Growth", "Scientific concepts", "Methods & materials"]
+        )
+        with growth_view:
+            st.caption("Daily and weekly accumulation of reviewed field-map papers.")
+            left, right = st.columns(2)
+            left.line_chart(frame.groupby("date").size().rename("field papers"))
+            right.line_chart(frame.groupby("week").size().rename("field papers"))
+        with concepts_view:
+            render_group(
+                [
+                    ("Field ecosystems", "_ecosystem"),
+                    ("Evidence maturity", "_evidence"),
+                    ("Research focus", "research_focus"),
+                    ("Meaning of chirality", "chirality_class"),
+                    ("Phonon character", "phonon_character"),
+                    ("Physical properties", "physical_properties"),
+                ]
+            )
+        with methods_view:
+            render_group(
+                [
+                    ("Material families", "material_or_system_family"),
+                    ("Experimental methods", "experimental_methods"),
+                    ("Generation mechanisms", "generation_mechanisms"),
+                    ("Detection methods", "detection_methods"),
+                    ("Theory / computation", "computational_methods"),
+                    ("Application directions", "application_directions"),
+                ]
+            )
 
 with news_tab:
+    st.markdown('<div class="section-kicker">Breakthroughs</div>', unsafe_allow_html=True)
     st.subheader("Breakthrough coverage")
-    st.caption(
-        "Curated journal and research-magazine coverage. This is editorial context, kept separate "
-        "from the automated arXiv feed."
+    st.markdown(
+        '<div class="section-intro">A concise editorial layer for major experimental and '
+        "conceptual milestones. It is curated separately from the automated arXiv feed so "
+        "coverage never becomes classification evidence.</div>",
+        unsafe_allow_html=True,
     )
-    for item in sorted(NEWS, key=lambda value: str(value.get("year", "")), reverse=True):
-        with st.container(border=True):
-            st.markdown(f"### {record_text(item, 'title', default='Untitled coverage')}")
-            st.caption(
-                " · ".join(
-                    [
-                        record_text(item, "outlet", default="Source not specified"),
-                        record_text(item, "year", default="Date not specified"),
-                        record_text(item, "kind", default="Coverage"),
-                    ]
-                )
-            )
-            st.write(record_text(item, "summary", default="Summary pending."))
-            if url := source_url(item):
-                st.link_button("Read source ↗", url)
-
-with ecosystem_tab:
-    st.subheader("Funded chiral-phonon ecosystem")
-    st.caption(
-        "Verified projects are separated from general funding portals and speculative industry signals."
-    )
-    st.markdown("### Verified projects and networks")
-    for project in FUNDED_PROJECTS:
-        with st.container(border=True):
-            st.markdown(f"### {record_text(project, 'name', default='Unnamed project')}")
-            st.caption(
-                " · ".join(
-                    [
-                        record_text(project, "scheme", default="Scheme not specified"),
-                        record_text(project, "host", default="Host not specified"),
-                        record_text(project, "status", default="Status not specified"),
-                    ]
-                )
-            )
-            st.write(record_text(project, "focus", default="Project focus pending."))
-            st.write(f"**Lead:** {record_text(project, 'lead', default='Not specified')}")
-            if url := source_url(project):
-                st.link_button("Official record ↗", url)
-    st.markdown("### Funding watch portals")
-    funding_columns = st.columns(2)
-    for index, source in enumerate(FUNDING_WATCH):
-        with funding_columns[index % 2]:
+    news_columns = st.columns(2)
+    for index, item in enumerate(
+        sorted(NEWS, key=lambda value: str(value.get("year", "")), reverse=True)
+    ):
+        with news_columns[index % 2]:
             with st.container(border=True):
-                st.markdown(f"#### {record_text(source, 'name', default='Funding source')}")
-                st.caption(record_text(source, "region", default="Region not specified"))
-                st.write(record_text(source, "purpose", default="Description pending."))
-                if url := source_url(source):
-                    st.link_button("Open official portal ↗", url)
-    st.markdown("### Industry maturity")
-    st.info(
-        "**Current assessment · 18 Jul 2026:** pre-commercial research field. The verified "
-        "records below are adjacent capabilities and capital signals—not evidence that any listed "
-        "organization is investing in or commercializing chiral phonons."
-    )
-    industry_columns = st.columns(2)
-    for index, signal in enumerate(INDUSTRY_SIGNALS):
-        with industry_columns[index % 2]:
-            with st.container(border=True):
-                st.markdown(f"#### {record_text(signal, 'name', default='Industry signal')}")
                 st.caption(
-                    f"{record_text(signal, 'category', default='Field-level assessment')} · "
-                    f"{record_text(signal, 'signal_type', legacy_key='signal', default='Maturity signal')}"
-                )
-                st.write(
-                    "**Verified activity:** "
-                    + record_text(
-                        signal, "evidence", legacy_key="detail", default="Review pending."
+                    " · ".join(
+                        [
+                            record_text(item, "outlet", default="Source not specified"),
+                            record_text(item, "year", default="Date not specified"),
+                            record_text(item, "kind", default="Coverage"),
+                        ]
                     )
                 )
-                st.write(
-                    "**Why researchers should watch it:** "
-                    + record_text(
-                        signal,
-                        "relevance",
-                        default="This record tracks the adjacent technology ecosystem.",
-                    )
-                )
-                st.warning(
-                    "**Claim boundary:** "
-                    + record_text(
-                        signal,
-                        "boundary",
-                        default=(
-                            "No dedicated chiral-phonon activity is inferred without a primary source."
-                        ),
-                    )
-                )
-                if url := source_url(signal):
-                    source_name = record_text(signal, "source", default="primary source").lower()
-                    st.link_button(f"Open {source_name} ↗", url)
+                st.markdown(f"#### {record_text(item, 'title', default='Untitled coverage')}")
+                st.write(record_text(item, "summary", default="Summary pending."))
+                if url := source_url(item):
+                    st.link_button("Read primary source ↗", url)
 
 with ecosystem_tab:
-    st.divider()
-    st.subheader("Conferences, workshops, schools and networks")
-    for event in events:
-        with st.container(border=True):
-            st.markdown(f"### {event['title']}")
-            st.write(event.get("description", ""))
-            st.caption(
-                " · ".join(
-                    value
-                    for value in [
-                        event.get("event_type"),
-                        event.get("organiser"),
-                        event.get("location"),
-                    ]
-                    if value
-                )
-            )
-            if event.get("deadline"):
-                st.write(f"**Deadline:** {event['deadline']}")
-            st.link_button("Official source ↗", event["url"])
+    st.markdown('<div class="section-kicker">Research ecosystem</div>', unsafe_allow_html=True)
+    st.subheader("Projects, opportunities and enabling infrastructure")
+    st.markdown(
+        '<div class="section-intro">Verified projects, open funding portals, community events and '
+        "industry-adjacent capabilities are kept in separate views so researchers can distinguish "
+        "a funded chiral-phonon programme from a general opportunity or market signal.</div>",
+        unsafe_allow_html=True,
+    )
 
-with ecosystem_tab:
-    st.divider()
-    st.subheader("Research tools and official sources")
-    for item in tools:
-        with st.container(border=True):
-            st.markdown(f"### {item['name']}")
-            st.write(item.get("description", ""))
-            st.caption(" · ".join(item.get("tags", [])))
-            st.link_button("Open resource ↗", item["url"])
+    projects_view, funding_view, industry_view, community_view, resources_view = st.tabs(
+        ["Verified projects", "Funding watch", "Industry signals", "Community", "Resources"]
+    )
+    with projects_view:
+        st.caption("Named projects and networks with an official record.")
+        project_columns = st.columns(2)
+        for index, project in enumerate(FUNDED_PROJECTS):
+            with project_columns[index % 2]:
+                with st.container(border=True):
+                    st.caption(
+                        " · ".join(
+                            [
+                                record_text(project, "scheme", default="Scheme not specified"),
+                                record_text(project, "status", default="Status not specified"),
+                            ]
+                        )
+                    )
+                    st.markdown(f"### {record_text(project, 'name', default='Unnamed project')}")
+                    st.write(record_text(project, "focus", default="Project focus pending."))
+                    st.write(
+                        f"**Lead / host:** {record_text(project, 'lead', default='Not specified')} · "
+                        f"{record_text(project, 'host', default='Host not specified')}"
+                    )
+                    if url := source_url(project):
+                        st.link_button("Official record ↗", url)
+    with funding_view:
+        st.caption("Official portals to monitor; inclusion does not imply a dedicated project.")
+        funding_columns = st.columns(2)
+        for index, source in enumerate(FUNDING_WATCH):
+            with funding_columns[index % 2]:
+                with st.container(border=True):
+                    st.caption(record_text(source, "region", default="Region not specified"))
+                    st.markdown(f"#### {record_text(source, 'name', default='Funding source')}")
+                    st.write(record_text(source, "purpose", default="Description pending."))
+                    if url := source_url(source):
+                        st.link_button("Open official portal ↗", url)
+    with industry_view:
+        st.info(
+            "**Current assessment:** pre-commercial research field. These are adjacent capabilities "
+            "and capital signals—not evidence that a listed organization is investing in or "
+            "commercializing chiral phonons."
+        )
+        industry_columns = st.columns(2)
+        for index, signal in enumerate(INDUSTRY_SIGNALS):
+            with industry_columns[index % 2]:
+                with st.container(border=True):
+                    st.caption(
+                        f"{record_text(signal, 'category', default='Field-level assessment')} · "
+                        f"{record_text(signal, 'signal_type', legacy_key='signal', default='Maturity signal')}"
+                    )
+                    st.markdown(f"#### {record_text(signal, 'name', default='Industry signal')}")
+                    st.write(
+                        "**Verified activity:** "
+                        + record_text(
+                            signal, "evidence", legacy_key="detail", default="Review pending."
+                        )
+                    )
+                    st.write(
+                        "**Research relevance:** "
+                        + record_text(
+                            signal,
+                            "relevance",
+                            default="This record tracks the adjacent technology ecosystem.",
+                        )
+                    )
+                    st.warning(
+                        "**Claim boundary:** "
+                        + record_text(
+                            signal,
+                            "boundary",
+                            default=(
+                                "No dedicated chiral-phonon activity is inferred without a primary source."
+                            ),
+                        )
+                    )
+                    if url := source_url(signal):
+                        source_name = record_text(
+                            signal, "source", default="primary source"
+                        ).lower()
+                        st.link_button(f"Open {source_name} ↗", url)
+    with community_view:
+        st.caption("Conferences, workshops, schools and active research networks.")
+        event_columns = st.columns(2)
+        for index, event in enumerate(events):
+            with event_columns[index % 2]:
+                with st.container(border=True):
+                    st.caption(
+                        " · ".join(
+                            value
+                            for value in [
+                                event.get("event_type"),
+                                event.get("organiser"),
+                                event.get("location"),
+                            ]
+                            if value
+                        )
+                    )
+                    st.markdown(f"#### {event.get('title', 'Community event')}")
+                    st.write(event.get("description", "Description pending."))
+                    if event.get("deadline"):
+                        st.write(f"**Deadline:** {event['deadline']}")
+                    if url := source_url(event):
+                        st.link_button("Official source ↗", url)
+    with resources_view:
+        st.caption("Research tools, databases and official sources used by the field tracker.")
+        resource_columns = st.columns(2)
+        for index, item in enumerate(tools):
+            with resource_columns[index % 2]:
+                with st.container(border=True):
+                    st.markdown(f"#### {item.get('name', 'Research resource')}")
+                    st.write(item.get("description", "Description pending."))
+                    st.caption(" · ".join(item.get("tags", [])))
+                    if url := source_url(item):
+                        st.link_button("Open resource ↗", url)
 
 with admin_tab:
-    st.subheader("Archive and review health")
+    st.markdown('<div class="section-kicker">Pipeline status</div>', unsafe_allow_html=True)
+    st.subheader("Archive health and automation")
+    st.markdown(
+        '<div class="section-intro">A transparent operational view of what has been retrieved, '
+        "reviewed and deferred. These states describe pipeline progress; they are not scientific "
+        "quality judgements.</div>",
+        unsafe_allow_html=True,
+    )
     health = st.columns(4)
     health[0].metric("Retrieved", len(papers))
     health[1].metric("Classified", len(reviewed))
@@ -902,38 +1066,61 @@ with admin_tab:
         "Discovery archive means broad search results that are not currently mapped into the field; "
         "it is an operational audit state, not a scientific judgement."
     )
-    with st.expander("Review schedule and backfill status"):
-        st.write(
-            "Metadata 04:00 UTC · AI review every four hours at :40 · historical backfill "
-            "02:10, 08:10, 14:10 and 20:10 UTC."
+    classified_fraction = len(reviewed) / len(papers) if papers else 0.0
+    st.progress(classified_fraction)
+    st.caption(f"Scientific classification coverage · {classified_fraction:.0%} of the archive")
+
+    st.markdown("### Automation cadence")
+    schedule_columns = st.columns(3)
+    with schedule_columns[0]:
+        with st.container(border=True):
+            st.markdown("#### 04:00 UTC")
+            st.caption("Daily metadata scan")
+            st.write("Collect and deduplicate the newest arXiv metadata.")
+    with schedule_columns[1]:
+        with st.container(border=True):
+            st.markdown("#### Every 4 hours · :40")
+            st.caption("Scientific review")
+            st.write("Resume pending classifications with checkpoint preservation.")
+    with schedule_columns[2]:
+        with st.container(border=True):
+            st.markdown("#### 4 windows / day")
+            st.caption("Historical backfill")
+            st.write("02:10 · 08:10 · 14:10 · 20:10 UTC")
+
+    status_columns = st.columns(2)
+    status_columns[0].metric("Backfill next date", backfill_state.get("next_until", "—"))
+    status_columns[1].metric(
+        "Last review succeeded",
+        review_history[-1].get("succeeded", 0) if review_history else 0,
+    )
+
+    with st.expander("Owner controls · run a metadata scan"):
+        st.caption(
+            "Manual dispatch is optional. The scheduled pipeline continues independently of this control."
         )
-        st.write(f"Backfill next date: {backfill_state.get('next_until', '—')}")
-        st.write(
-            f"Last review succeeded: {review_history[-1].get('succeeded', 0) if review_history else 0}"
-        )
-    st.subheader("Owner-only live scan")
-    required = ["github_token", "admin_passcode"]
-    try:
-        owner_controls_ready = all(key in st.secrets for key in required)
-    except StreamlitSecretNotFoundError:
-        owner_controls_ready = False
-    if not owner_controls_ready:
-        st.info("Add the owner secrets in Streamlit settings to enable secure manual scans.")
-    else:
-        passcode = st.text_input("Admin passcode", type="password")
-        since_date = st.date_input("Scan from", value=date.today())
-        expected = hashlib.sha256(str(st.secrets["admin_passcode"]).encode()).digest()
-        supplied = hashlib.sha256(passcode.encode()).digest()
-        authenticated = bool(passcode) and hmac.compare_digest(expected, supplied)
-        if st.button("Run metadata scan now", type="primary", disabled=not authenticated):
-            run_url = dispatch_metadata_scan(
-                repo=st.secrets.get("github_repo", "purushothaman-98/Chiral_scanner"),
-                token=st.secrets["github_token"],
-                since=since_date.isoformat(),
-            )
-            st.success("Metadata scan dispatched. AI review follows after it succeeds.")
-            if run_url:
-                st.link_button("Monitor GitHub Actions ↗", run_url)
+        required = ["github_token", "admin_passcode"]
+        try:
+            owner_controls_ready = all(key in st.secrets for key in required)
+        except StreamlitSecretNotFoundError:
+            owner_controls_ready = False
+        if not owner_controls_ready:
+            st.info("Add the owner secrets in Streamlit settings to enable secure manual scans.")
+        else:
+            passcode = st.text_input("Admin passcode", type="password")
+            since_date = st.date_input("Scan from", value=date.today())
+            expected = hashlib.sha256(str(st.secrets["admin_passcode"]).encode()).digest()
+            supplied = hashlib.sha256(passcode.encode()).digest()
+            authenticated = bool(passcode) and hmac.compare_digest(expected, supplied)
+            if st.button("Run metadata scan now", type="primary", disabled=not authenticated):
+                run_url = dispatch_metadata_scan(
+                    repo=st.secrets.get("github_repo", "purushothaman-98/Chiral_scanner"),
+                    token=st.secrets["github_token"],
+                    since=since_date.isoformat(),
+                )
+                st.success("Metadata scan dispatched. AI review follows after it succeeds.")
+                if run_url:
+                    st.link_button("Monitor GitHub Actions ↗", run_url)
 
 st.divider()
 st.caption(
