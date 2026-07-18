@@ -19,7 +19,12 @@ from chiral_scanner.field_map import (
     is_thz_frontier,
 )
 from chiral_scanner.github_dispatch import dispatch_metadata_scan
-from chiral_scanner.history import CONCEPT_STAGES, LANDMARKS
+from chiral_scanner.history import (
+    CONCEPT_STAGES,
+    EVIDENCE_LEVELS,
+    LANDMARKS,
+    MATERIAL_SYSTEMS,
+)
 from chiral_scanner.scope import has_chiral_phonon_scope
 from chiral_scanner.storage import empty_archive, load_json
 from chiral_scanner.ui import flatten_unique, paginate
@@ -303,10 +308,37 @@ history_tab, paper_tab, analysis_tab, events_tab, tools_tab, admin_tab = st.tabs
 )
 
 with history_tab:
-    st.subheader("How the chiral-phonon concept grew")
+    st.subheader("Experimental materials map")
     st.caption(
-        "A scientific timeline from phonon angular momentum to contemporary THz control and direct verification."
+        "Materials with published experimental evidence. Labels distinguish observation of the mode itself "
+        "from a driven effect or angular-momentum-selective coupling."
     )
+    evidence_filter = st.multiselect(
+        "Evidence represented",
+        list(EVIDENCE_LEVELS),
+        default=list(EVIDENCE_LEVELS),
+    )
+    filtered_materials = [
+        material for material in MATERIAL_SYSTEMS if material["evidence"] in evidence_filter
+    ]
+    st.markdown(" · ".join(f"**{item['material']}**" for item in filtered_materials))
+
+    with st.expander("How to read the evidence labels", expanded=False):
+        for label, meaning in EVIDENCE_LEVELS.items():
+            st.markdown(f"**{label}:** {meaning}")
+
+    material_columns = st.columns(2)
+    for index, material in enumerate(filtered_materials):
+        with material_columns[index % 2]:
+            with st.container(border=True):
+                st.markdown(f"#### {material['material']}")
+                st.caption(f"{material['family']} · {material['year']} · {material['evidence']}")
+                st.markdown(f"**What was measured:** {material['finding']}")
+                st.write(f"Method: {material['method']}")
+                st.warning(f"Interpretation boundary: {material['caveat']}")
+                st.link_button("Primary paper ↗", material["url"])
+
+    st.markdown("### How the concept changed")
     stage_columns = st.columns(3)
     for index, (title, question) in enumerate(CONCEPT_STAGES):
         with stage_columns[index % 3]:
@@ -314,21 +346,31 @@ with history_tab:
                 st.markdown(f"**{index + 1}. {title}**")
                 st.write(question)
 
-    st.markdown("### Landmark papers")
-    for item in reversed(LANDMARKS):
-        with st.container(border=True):
-            left, right = st.columns([1, 6])
-            left.markdown(f"## {item['year']}")
-            left.caption(item["theme"])
-            right.markdown(f"#### {item['stage']}")
-            right.markdown(f"**{item['title']}**")
-            right.write(item["why"])
-            right.link_button("Open paper ↗", item["url"])
+    st.markdown("### Deep timeline: landmark papers")
+    st.caption(
+        "Multiple papers are retained within breakthrough years so the timeline shows parallel "
+        "progress in definitions, measurement and THz-driven effects."
+    )
+    landmarks_by_year: dict[int, list[dict]] = defaultdict(list)
+    for landmark in LANDMARKS:
+        landmarks_by_year[landmark["year"]].append(landmark)
+    for year in sorted(landmarks_by_year, reverse=True):
+        st.markdown(f"## {year}")
+        for item in landmarks_by_year[year]:
+            with st.container(border=True):
+                left, right = st.columns([2, 7])
+                left.markdown(f"**{item['stage']}**")
+                left.caption(f"{item['material']} · {item['kind']}")
+                right.markdown(f"#### {item['title']}")
+                right.write(item["why"])
+                right.link_button("Open primary paper ↗", item["url"])
 
     st.info(
-        "Contemporary shift: the question is no longer only whether a mode can be called chiral. "
-        "The frontier is to identify the motion unambiguously, quantify angular momentum, and show "
-        "what it transfers to spins, electrons, orbital currents or heat."
+        "Technical boundary: circular polarization, phonon angular momentum and true dynamical "
+        "chirality are related but not interchangeable. A Γ-point circular mode can carry angular "
+        "momentum without being a propagating chiral object; valley pseudo-angular momentum is a "
+        "crystal-symmetry quantum number; true chirality additionally concerns how rotation and "
+        "propagation transform under space and time reversal."
     )
 
 with paper_tab:
