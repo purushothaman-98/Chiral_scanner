@@ -10,6 +10,8 @@ import requests
 from .config import (
     COMPUTATIONAL_METHOD_GROUPS,
     DEFAULT_AI_MODEL,
+    DETECTION_METHOD_GROUPS,
+    EXCITATION_METHOD_GROUPS,
     EXPERIMENTAL_METHOD_GROUPS,
     MATERIAL_FAMILIES,
     PHYSICAL_PROPERTIES,
@@ -38,9 +40,11 @@ Research-type rules:
 - Do not call a paper computational merely because a method is mentioned as background.
 
 Never invent materials, systems, methods, measurements, or properties.
-Use normalized canonical groups when supported.
+For every family and grouped-method field, use only exact labels from the canonical lists.
 Material/system families: {json.dumps(MATERIAL_FAMILIES)}
 Experimental method groups: {json.dumps(EXPERIMENTAL_METHOD_GROUPS)}
+Excitation method groups: {json.dumps(EXCITATION_METHOD_GROUPS)}
+Detection method groups: {json.dumps(DETECTION_METHOD_GROUPS)}
 Computational method groups: {json.dumps(COMPUTATIONAL_METHOD_GROUPS)}
 Physical properties: {json.dumps(PHYSICAL_PROPERTIES)}
 
@@ -63,6 +67,8 @@ def decision_schema() -> dict:
                 "materials_or_systems",
                 "material_or_system_family",
                 "experimental_methods",
+                "excitation_methods",
+                "detection_methods",
                 "computational_methods",
                 "physical_properties",
                 "confidence",
@@ -100,10 +106,30 @@ def decision_schema() -> dict:
                     ],
                 },
                 "materials_or_systems": {"type": "array", "items": {"type": "string"}},
-                "material_or_system_family": {"type": "array", "items": {"type": "string"}},
-                "experimental_methods": {"type": "array", "items": {"type": "string"}},
-                "computational_methods": {"type": "array", "items": {"type": "string"}},
-                "physical_properties": {"type": "array", "items": {"type": "string"}},
+                "material_or_system_family": {
+                    "type": "array",
+                    "items": {"type": "string", "enum": MATERIAL_FAMILIES},
+                },
+                "experimental_methods": {
+                    "type": "array",
+                    "items": {"type": "string", "enum": EXPERIMENTAL_METHOD_GROUPS},
+                },
+                "excitation_methods": {
+                    "type": "array",
+                    "items": {"type": "string", "enum": EXCITATION_METHOD_GROUPS},
+                },
+                "detection_methods": {
+                    "type": "array",
+                    "items": {"type": "string", "enum": DETECTION_METHOD_GROUPS},
+                },
+                "computational_methods": {
+                    "type": "array",
+                    "items": {"type": "string", "enum": COMPUTATIONAL_METHOD_GROUPS},
+                },
+                "physical_properties": {
+                    "type": "array",
+                    "items": {"type": "string", "enum": PHYSICAL_PROPERTIES},
+                },
                 "confidence": {"type": "number", "minimum": 0, "maximum": 1},
                 "reason": {"type": "string"},
                 "supporting_phrases": {

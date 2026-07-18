@@ -28,7 +28,7 @@ The detailed topic taxonomy is retained in `topic_research_notes.md` and impleme
 
 ## Daily schedule
 
-The metadata workflow runs at **05:17 UTC every day** and queries an overlapping **14-day submitted-or-updated window**, so delayed records and new versions are revisited. Manual workflow dispatch accepts a custom `since` date. AI classification starts as a separate workflow after a successful metadata scan.
+The metadata workflow runs at **04:00 UTC every day** and queries an overlapping **14-day submitted-or-updated window**, so delayed records and new versions are revisited. Manual workflow dispatch accepts bounded `since` and `until` dates. AI classification starts as a separate workflow after a successful metadata scan.
 
 ## First archive build
 

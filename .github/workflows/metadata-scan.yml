@@ -6,11 +6,15 @@ on:
     paths:
       - ".github/workflows/metadata-scan.yml"
   schedule:
-    - cron: "17 5 * * *"
+    - cron: "0 4 * * *"
   workflow_dispatch:
     inputs:
       since:
         description: "Optional ISO start date (YYYY-MM-DD). Leave blank for 14-day overlap."
+        required: false
+        type: string
+      until:
+        description: "Optional ISO end date (YYYY-MM-DD). Useful for bounded backfills."
         required: false
         type: string
       initial:
@@ -43,20 +47,17 @@ jobs:
       - name: Query official arXiv API
         env:
           SINCE: ${{ inputs.since }}
+          UNTIL: ${{ inputs.until }}
           INITIAL: ${{ inputs.initial }}
         run: |
           ARGS=(--output /tmp/chiral_candidates.json --summary /tmp/chiral_scan_summary.json)
-          HISTORICAL_INITIALIZED=$(python - <<'PY'
-          import json
-          from pathlib import Path
-          path = Path("data/scan_history.json")
-          history = json.loads(path.read_text()) if path.exists() else []
-          print("true" if any(str(row.get("earliest_queried_date", ""))[:10] <= "2017-01-01" for row in history) else "false")
-          PY
-          )
           if [ -n "$SINCE" ]; then
             ARGS+=(--since "$SINCE")
-          elif [ "$INITIAL" = "true" ] || [ "$HISTORICAL_INITIALIZED" != "true" ]; then
+          fi
+          if [ -n "$UNTIL" ]; then
+            ARGS+=(--until "$UNTIL")
+          fi
+          if [ "$INITIAL" = "true" ]; then
             ARGS+=(--initial)
           fi
           python scripts/scan_arxiv.py "${ARGS[@]}"
