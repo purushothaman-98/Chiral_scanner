@@ -19,6 +19,7 @@ from chiral_scanner.field_map import (
     is_thz_frontier,
 )
 from chiral_scanner.github_dispatch import dispatch_metadata_scan
+from chiral_scanner.history import CONCEPT_STAGES, LANDMARKS
 from chiral_scanner.scope import has_chiral_phonon_scope
 from chiral_scanner.storage import empty_archive, load_json
 from chiral_scanner.ui import flatten_unique, paginate
@@ -30,7 +31,7 @@ st.set_page_config(
     page_title="Chiral Phonon Research Scanner",
     page_icon="◉",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="collapsed",
 )
 
 st.markdown(
@@ -254,24 +255,24 @@ as a reason to hide useful research.</p>
 
 metrics = st.columns(4)
 metrics[0].metric(
-    "Papers in the field map",
-    len(approved),
-    help="Reviewed papers connected to the chiral-phonon and phonon-angular-momentum ecosystem.",
+    "Total papers scanned",
+    len(papers),
+    help="Every deduplicated paper retrieved by the broad discovery scan.",
 )
 metrics[1].metric(
-    "THz & ultrafast frontier",
-    len(thz_frontier),
-    help="Field papers involving THz, mid-infrared or ultrafast phonon control.",
+    "Scientific analysis complete",
+    len(reviewed),
+    help="Papers with a stored scientific classification.",
 )
 metrics[2].metric(
-    "Direct / spectroscopic evidence",
-    len(direct_evidence),
-    help="Direct measurements and experimental selection-rule evidence.",
+    "Analysis pending",
+    len(pending),
+    help="Likely field-connected papers waiting for classification.",
 )
 metrics[3].metric(
-    "Experimental studies",
-    len(experimental),
-    help="Reviewed original experimental and combined theory–experiment studies in the field map.",
+    "Papers in field timeline",
+    len(approved),
+    help="Reviewed papers mapped into the chiral-phonon field timeline.",
 )
 
 coverage_dates = [parse_date(p.get("initial_submission_date")) for p in papers]
@@ -290,14 +291,59 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-paper_tab, analysis_tab, events_tab, tools_tab, admin_tab = st.tabs(
-    ["Field tracker", "Field map", "Opportunities", "Tools & sources", "Data operations"]
+history_tab, paper_tab, analysis_tab, events_tab, tools_tab, admin_tab = st.tabs(
+    [
+        "History & landmarks",
+        "Daily scan",
+        "Field analysis",
+        "Opportunities",
+        "Sources",
+        "Data operations",
+    ]
 )
 
+with history_tab:
+    st.subheader("How the chiral-phonon concept grew")
+    st.caption(
+        "A scientific timeline from phonon angular momentum to contemporary THz control and direct verification."
+    )
+    stage_columns = st.columns(3)
+    for index, (title, question) in enumerate(CONCEPT_STAGES):
+        with stage_columns[index % 3]:
+            with st.container(border=True):
+                st.markdown(f"**{index + 1}. {title}**")
+                st.write(question)
+
+    st.markdown("### Landmark papers")
+    for item in reversed(LANDMARKS):
+        with st.container(border=True):
+            left, right = st.columns([1, 6])
+            left.markdown(f"## {item['year']}")
+            left.caption(item["theme"])
+            right.markdown(f"#### {item['stage']}")
+            right.markdown(f"**{item['title']}**")
+            right.write(item["why"])
+            right.link_button("Open paper ↗", item["url"])
+
+    st.info(
+        "Contemporary shift: the question is no longer only whether a mode can be called chiral. "
+        "The frontier is to identify the motion unambiguously, quantify angular momentum, and show "
+        "what it transfers to spins, electrons, orbital currents or heat."
+    )
+
 with paper_tab:
+    st.subheader("Daily research scan")
+    st.caption(
+        "Newest mapped papers first. Use the THz lens for coherent excitation, nonlinear phononics and ultrafast experiments."
+    )
+    scan_window = st.radio(
+        "Timeline",
+        ["Latest 7 days", "Latest 30 days", "All mapped papers"],
+        horizontal=True,
+    )
     with st.sidebar:
-        st.header("Explore the field")
-        st.caption("Choose a scientific lens. Pipeline queues are kept under Data operations.")
+        st.header("Advanced paper filters")
+        st.caption("Optional controls for narrowing the Daily scan.")
         view = st.radio(
             "Research lens",
             [
@@ -378,6 +424,18 @@ with paper_tab:
             else view
         )
         candidates = [p for p in approved if area in ecosystem_areas(p)]
+
+    mapped_dates = [parse_date(p.get("initial_submission_date")) for p in approved]
+    mapped_dates = [value for value in mapped_dates if value]
+    if scan_window != "All mapped papers" and mapped_dates:
+        days = 7 if scan_window == "Latest 7 days" else 30
+        cutoff = max(mapped_dates).date().toordinal() - days + 1
+        candidates = [
+            paper
+            for paper in candidates
+            if (parsed := parse_date(paper.get("initial_submission_date")))
+            and parsed.date().toordinal() >= cutoff
+        ]
 
     filtered: list[dict] = []
     needle = search.casefold().strip()
