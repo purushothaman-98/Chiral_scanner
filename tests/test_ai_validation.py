@@ -1,7 +1,16 @@
 import pytest
 from pydantic import ValidationError
 
+from chiral_scanner.ai_classifier import build_system_prompt
 from chiral_scanner.models import AIDecision
+
+
+def test_prompt_separates_field_archetypes():
+    prompt = build_system_prompt()
+    assert "Intrinsic chiral eigenmodes" in prompt
+    assert "Coherently driven circular/axial modes" in prompt
+    assert "Structural chirality control" in prompt
+
 
 VALID = {
     "include_in_feed": True,
