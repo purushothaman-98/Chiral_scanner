@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 import hmac
+import html
 from datetime import date, datetime, timezone
 from pathlib import Path
 
@@ -64,31 +65,40 @@ def format_date(value: str | None) -> str:
 
 
 def badges(values: list[str]) -> str:
-    return "".join(f'<span class="badge">{value}</span>' for value in values if value)
+    return "".join(
+        f'<span class="badge">{html.escape(str(value))}</span>' for value in values if value
+    )
 
 
 def paper_card(paper: dict) -> None:
     decision = paper.get("ai_decision") or {}
-    title = paper.get("title", "Untitled")
-    authors = ", ".join(paper.get("authors", [])[:8])
+    title = html.escape(str(paper.get("title", "Untitled")))
+    author_names = ", ".join(str(author) for author in paper.get("authors", [])[:8])
     if len(paper.get("authors", [])) > 8:
-        authors += " et al."
-    abstract = paper.get("abstract", "")
-    preview = abstract if len(abstract) <= 700 else abstract[:697].rstrip() + "…"
+        author_names += " et al."
+    authors = html.escape(author_names)
+    abstract = str(paper.get("abstract", ""))
+    preview_text = abstract if len(abstract) <= 700 else abstract[:697].rstrip() + "…"
+    preview = html.escape(preview_text)
+    versioned_id = html.escape(str(paper.get("versioned_arxiv_id", "")))
     methods = decision.get("experimental_methods", []) + decision.get("computational_methods", [])
-    systems = decision.get("materials_or_systems", []) or paper.get("detected_materials_or_systems", [])
+    systems = decision.get("materials_or_systems", []) or paper.get(
+        "detected_materials_or_systems", []
+    )
     properties = decision.get("physical_properties", [])
     tags = [
         decision.get("relevance") or "Awaiting AI review",
-        decision.get("research_type") or paper.get("preliminary_research_type", "Unclassified"),
-        decision.get("paper_nature") or paper.get("preliminary_paper_nature", "Uncertain"),
+        decision.get("research_type")
+        or paper.get("preliminary_research_type", "Unclassified"),
+        decision.get("paper_nature")
+        or paper.get("preliminary_paper_nature", "Uncertain"),
     ]
     st.markdown(
         f"""
 <div class="paper-card">
 <h3>{title}</h3>
 <div class="meta">{authors}</div>
-<div class="meta">Submitted {format_date(paper.get('initial_submission_date'))} · Updated {format_date(paper.get('latest_update_date'))} · {paper.get('versioned_arxiv_id','')}</div>
+<div class="meta">Submitted {format_date(paper.get('initial_submission_date'))} · Updated {format_date(paper.get('latest_update_date'))} · {versioned_id}</div>
 <div>{badges(tags)}</div>
 <p>{preview}</p>
 <div>{badges(systems + methods + properties)}</div>
@@ -100,8 +110,12 @@ def paper_card(paper: dict) -> None:
     if reason:
         st.caption(f"AI reason: {reason}")
     cols = st.columns([1, 1, 4])
-    cols[0].link_button("arXiv page", paper.get("abstract_url", "https://arxiv.org"), use_container_width=True)
-    cols[1].link_button("PDF", paper.get("pdf_url", "https://arxiv.org"), use_container_width=True)
+    cols[0].link_button(
+        "arXiv page", paper.get("abstract_url", "https://arxiv.org"), use_container_width=True
+    )
+    cols[1].link_button(
+        "PDF", paper.get("pdf_url", "https://arxiv.org"), use_container_width=True
+    )
     with cols[2]:
         st.caption("Categories: " + ", ".join(paper.get("categories", [])))
 
@@ -121,8 +135,14 @@ st.markdown(
 
 metric_cols = st.columns(4)
 metric_cols[0].metric("Archived papers", len(papers))
-metric_cols[1].metric("In research feed", sum(bool((p.get("ai_decision") or {}).get("include_in_feed")) for p in papers))
-metric_cols[2].metric("Experimental", sum((p.get("ai_decision") or {}).get("research_type") == "Experimental" for p in papers))
+metric_cols[1].metric(
+    "In research feed",
+    sum(bool((p.get("ai_decision") or {}).get("include_in_feed")) for p in papers),
+)
+metric_cols[2].metric(
+    "Experimental",
+    sum((p.get("ai_decision") or {}).get("research_type") == "Experimental" for p in papers),
+)
 metric_cols[3].metric("Last archive update", format_date(archive.get("updated_at")))
 
 paper_tab, trends_tab, events_tab, tools_tab, admin_tab = st.tabs(
@@ -151,7 +171,9 @@ with paper_tab:
             system_filter = st.multiselect("Material or system", system_options)
             method_filter = st.multiselect("Method", sorted(set(exp_options + comp_options)))
             property_filter = st.multiselect("Physical property", property_options)
-            page_size = st.select_slider("Papers per page", options=[10, 20, 40, 80], value=20)
+            page_size = st.select_slider(
+                "Papers per page", options=[10, 20, 40, 80], value=20
+            )
 
         filtered: list[dict] = []
         needle = search.casefold().strip()
@@ -166,7 +188,11 @@ with paper_tab:
             ):
                 continue
             searchable = " ".join(
-                [paper.get("title", ""), paper.get("abstract", ""), " ".join(paper.get("authors", []))]
+                [
+                    paper.get("title", ""),
+                    paper.get("abstract", ""),
+                    " ".join(paper.get("authors", [])),
+                ]
             ).casefold()
             if needle and needle not in searchable:
                 continue
@@ -174,22 +200,32 @@ with paper_tab:
                 continue
             if nature_filter and decision.get("paper_nature") not in nature_filter:
                 continue
-            if system_filter and not set(system_filter).intersection(decision.get("materials_or_systems", [])):
+            if system_filter and not set(system_filter).intersection(
+                decision.get("materials_or_systems", [])
+            ):
                 continue
-            all_methods = decision.get("experimental_methods", []) + decision.get("computational_methods", [])
+            all_methods = decision.get("experimental_methods", []) + decision.get(
+                "computational_methods", []
+            )
             if method_filter and not set(method_filter).intersection(all_methods):
                 continue
-            if property_filter and not set(property_filter).intersection(decision.get("physical_properties", [])):
+            if property_filter and not set(property_filter).intersection(
+                decision.get("physical_properties", [])
+            ):
                 continue
             filtered.append(paper)
 
         filtered.sort(
-            key=lambda item: item.get("latest_update_date") or item.get("initial_submission_date") or "",
+            key=lambda item: item.get("latest_update_date")
+            or item.get("initial_submission_date")
+            or "",
             reverse=True,
         )
         st.subheader(f"Newest papers · {len(filtered)} matches")
         total_pages = max(1, (len(filtered) + page_size - 1) // page_size)
-        page = st.number_input("Page", min_value=1, max_value=total_pages, value=1, step=1)
+        page = st.number_input(
+            "Page", min_value=1, max_value=total_pages, value=1, step=1
+        )
         page_items, total_pages, safe_page = paginate(filtered, int(page), page_size)
         st.caption(f"Page {safe_page} of {total_pages}")
         for paper in page_items:
@@ -224,7 +260,11 @@ with trends_tab:
             st.bar_chart(frame["relevance"].value_counts())
 
         def distribution(field: str) -> pd.Series:
-            values = [value for paper in classified for value in paper["ai_decision"].get(field, [])]
+            values = [
+                value
+                for paper in classified
+                for value in paper["ai_decision"].get(field, [])
+            ]
             return pd.Series(values, dtype="object").value_counts().head(20)
 
         cols = st.columns(3)
@@ -233,9 +273,12 @@ with trends_tab:
             st.bar_chart(distribution("materials_or_systems"))
         with cols[1]:
             st.subheader("Methods")
-            methods = distribution("experimental_methods").add(
-                distribution("computational_methods"), fill_value=0
-            ).sort_values(ascending=False).head(20)
+            methods = (
+                distribution("experimental_methods")
+                .add(distribution("computational_methods"), fill_value=0)
+                .sort_values(ascending=False)
+                .head(20)
+            )
             st.bar_chart(methods)
         with cols[2]:
             st.subheader("Physical properties")
@@ -244,8 +287,14 @@ with trends_tab:
         st.subheader("Scan history")
         if history:
             history_frame = pd.DataFrame(history)
-            history_frame["scan_timestamp"] = pd.to_datetime(history_frame["scan_timestamp"], utc=True)
-            st.line_chart(history_frame.set_index("scan_timestamp")[["fetched", "newly_added", "updated"]])
+            history_frame["scan_timestamp"] = pd.to_datetime(
+                history_frame["scan_timestamp"], utc=True
+            )
+            st.line_chart(
+                history_frame.set_index("scan_timestamp")[
+                    ["fetched", "newly_added", "updated"]
+                ]
+            )
         else:
             st.caption("No scan-history records yet.")
 
@@ -268,7 +317,10 @@ with events_tab:
             meta = [event.get("event_type"), event.get("organiser"), event.get("location")]
             st.caption(" · ".join(value for value in meta if value))
             if event.get("start_date"):
-                st.write(f"**Dates:** {event.get('start_date')} to {event.get('end_date') or event.get('start_date')}")
+                st.write(
+                    f"**Dates:** {event.get('start_date')} to "
+                    f"{event.get('end_date') or event.get('start_date')}"
+                )
             if event.get("deadline"):
                 st.write(f"**Deadline:** {event['deadline']}")
             st.link_button("Official source", event["url"])
@@ -302,7 +354,9 @@ with admin_tab:
                 token=st.secrets["github_token"],
                 since=since_date.isoformat(),
             )
-            st.success("Metadata workflow dispatched. AI review starts automatically after it succeeds.")
+            st.success(
+                "Metadata workflow dispatched. AI review starts automatically after it succeeds."
+            )
             if run_url:
                 st.link_button("Monitor GitHub Actions run", run_url)
 
