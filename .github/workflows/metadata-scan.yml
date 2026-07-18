@@ -46,10 +46,17 @@ jobs:
           INITIAL: ${{ inputs.initial }}
         run: |
           ARGS=(--output /tmp/chiral_candidates.json --summary /tmp/chiral_scan_summary.json)
-          ARCHIVE_SIZE=$(python -c 'import json; print(len(json.load(open("data/papers.json"))["papers"]))')
+          HISTORICAL_INITIALIZED=$(python - <<'PY'
+          import json
+          from pathlib import Path
+          path = Path("data/scan_history.json")
+          history = json.loads(path.read_text()) if path.exists() else []
+          print("true" if any(str(row.get("earliest_queried_date", ""))[:10] <= "2017-01-01" for row in history) else "false")
+          PY
+          )
           if [ -n "$SINCE" ]; then
             ARGS+=(--since "$SINCE")
-          elif [ "$INITIAL" = "true" ] || [ "$ARCHIVE_SIZE" = "0" ]; then
+          elif [ "$INITIAL" = "true" ] || [ "$HISTORICAL_INITIALIZED" != "true" ]; then
             ARGS+=(--initial)
           fi
           python scripts/scan_arxiv.py "${ARGS[@]}"
