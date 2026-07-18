@@ -46,8 +46,12 @@ jobs:
           INITIAL: ${{ inputs.initial }}
         run: |
           ARGS=(--output /tmp/chiral_candidates.json --summary /tmp/chiral_scan_summary.json)
-          if [ -n "$SINCE" ]; then ARGS+=(--since "$SINCE"); fi
-          if [ "$INITIAL" = "true" ]; then ARGS+=(--initial); fi
+          ARCHIVE_SIZE=$(python -c 'import json; print(len(json.load(open("data/papers.json"))["papers"]))')
+          if [ -n "$SINCE" ]; then
+            ARGS+=(--since "$SINCE")
+          elif [ "$INITIAL" = "true" ] || [ "$ARCHIVE_SIZE" = "0" ]; then
+            ARGS+=(--initial)
+          fi
           python scripts/scan_arxiv.py "${ARGS[@]}"
       - name: Merge against latest archive by stable arXiv ID
         run: |
