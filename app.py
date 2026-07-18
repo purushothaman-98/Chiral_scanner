@@ -28,12 +28,20 @@ from chiral_scanner.field_map import (
     is_thz_frontier,
 )
 from chiral_scanner.github_dispatch import dispatch_metadata_scan
-from chiral_scanner.history import (
-    CONCEPT_STAGES,
-    EVIDENCE_LEVELS,
-    LANDMARKS,
-    MATERIAL_SYSTEMS,
-)
+
+try:
+    from chiral_scanner.history import (
+        CONCEPT_STAGES,
+        EVIDENCE_LEVELS,
+        LANDMARKS,
+        MATERIAL_SYSTEMS,
+    )
+except ImportError:
+    # Keep the site alive if Streamlit's in-place pull leaves app.py newer than history.py.
+    from chiral_scanner.history import CONCEPT_STAGES, LANDMARKS
+
+    EVIDENCE_LEVELS = {}
+    MATERIAL_SYSTEMS = []
 from chiral_scanner.scope import has_chiral_phonon_scope
 from chiral_scanner.storage import empty_archive, load_json
 from chiral_scanner.ui import flatten_unique, paginate
@@ -330,6 +338,11 @@ with history_tab:
         material for material in MATERIAL_SYSTEMS if material["evidence"] in evidence_filter
     ]
     st.markdown(" · ".join(f"**{item['material']}**" for item in filtered_materials))
+    if not MATERIAL_SYSTEMS:
+        st.info(
+            "The enriched materials map is waiting for Streamlit Cloud to complete its repository "
+            "refresh. The established landmark timeline remains available below."
+        )
 
     with st.expander("How to read the evidence labels", expanded=False):
         for label, meaning in EVIDENCE_LEVELS.items():
@@ -368,7 +381,9 @@ with history_tab:
             with st.container(border=True):
                 left, right = st.columns([2, 7])
                 left.markdown(f"**{item['stage']}**")
-                left.caption(f"{item['material']} · {item['kind']}")
+                material = item.get("material", item.get("theme", "Field landmark"))
+                kind = item.get("kind", "Research paper")
+                left.caption(f"{material} · {kind}")
                 right.markdown(f"#### {item['title']}")
                 right.write(item["why"])
                 right.link_button("Open primary paper ↗", item["url"])
