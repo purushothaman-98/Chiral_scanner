@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-07-18T21:35:10.335068+00:00",
+  "updated_at": "2026-07-19T04:06:29.416566+00:00",
   "papers": [
     {
       "base_arxiv_id": "2605.27053",
@@ -11913,8 +11913,53 @@
       },
       "first_seen_at": "2026-07-18T18:16:44.197416+00:00",
       "last_seen_at": "2026-07-18T18:16:44.197416+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
+      "ai_decision": {
+        "include_in_feed": true,
+        "relevance": "Core chiral-phonon paper",
+        "research_type": "Computational / theoretical",
+        "paper_nature": "Original research",
+        "materials_or_systems": [
+          "InAs/GaAs nanoclusters"
+        ],
+        "material_or_system_family": [
+          "Other / unspecified"
+        ],
+        "research_focus": [
+          "Intrinsic/symmetry-defined chiral phonons"
+        ],
+        "chirality_class": [
+          "Phonon angular momentum"
+        ],
+        "phonon_character": [
+          "Optical"
+        ],
+        "generation_mechanisms": [
+          "Intrinsic crystal symmetry"
+        ],
+        "experimental_methods": [],
+        "excitation_methods": [],
+        "detection_methods": [],
+        "computational_methods": [],
+        "physical_properties": [
+          "Phonon angular momentum"
+        ],
+        "evidence_level": "Model / theory proposal",
+        "evidence_caveats": [
+          "chirality inferred rather than directly observed"
+        ],
+        "application_directions": [],
+        "confidence": 0.7,
+        "reason": "The abstract discusses emission of chiral optical phonons carrying orbital angular momentum, analyzing angular momentum conservation and spatial symmetry in nanoclusters, indicating a theoretical study of phonon angular momentum and chirality in optical phonons.",
+        "supporting_phrases": [
+          "emission of chiral optical phonons carrying orbital angular momentum",
+          "law of conservation of angular momentum projection",
+          "emission of LO phonons with zero angular momentum"
+        ]
+      },
+      "ai_fingerprint": "c518dbca9cd14276f30f19a2cc2d0efdcc6af531f11ca9c3b9b19a5b64be1df1",
+      "ai_prompt_version": "chiral-phonons-v3.0",
+      "ai_model": "openai/gpt-4.1-mini",
+      "ai_classified_at": "2026-07-19T04:06:20.841289+00:00"
     },
     {
       "base_arxiv_id": "2605.19408",
@@ -12757,8 +12802,60 @@
       },
       "first_seen_at": "2026-07-18T18:16:44.197461+00:00",
       "last_seen_at": "2026-07-18T18:16:44.197461+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
+      "ai_decision": {
+        "include_in_feed": true,
+        "relevance": "Core chiral-phonon paper",
+        "research_type": "Computational / theoretical",
+        "paper_nature": "Original research",
+        "materials_or_systems": [],
+        "material_or_system_family": [
+          "Other / unspecified"
+        ],
+        "research_focus": [
+          "Intrinsic/symmetry-defined chiral phonons"
+        ],
+        "chirality_class": [
+          "Phonon angular momentum",
+          "Circular/elliptical phonon polarization"
+        ],
+        "phonon_character": [
+          "Acoustic"
+        ],
+        "generation_mechanisms": [
+          "Theoretical eigenmode construction"
+        ],
+        "experimental_methods": [],
+        "excitation_methods": [],
+        "detection_methods": [],
+        "computational_methods": [
+          "Model Hamiltonian / tight binding",
+          "Group theory / symmetry analysis"
+        ],
+        "physical_properties": [
+          "Phonon angular momentum",
+          "Real-space circular/elliptical ionic motion"
+        ],
+        "evidence_level": "Model / theory proposal",
+        "evidence_caveats": [
+          "chirality inferred rather than directly observed"
+        ],
+        "application_directions": [
+          "Fundamental symmetry / selection rules"
+        ],
+        "confidence": 0.9,
+        "reason": "The paper presents a theoretical framework revealing chirality and angular momentum in elastic (acoustic) phonons, establishing chirality as a fundamental property of elastic waves. It focuses on phonon angular momentum and circular polarization in acoustic modes, with no experimental data but a clear theoretical proposal.",
+        "supporting_phrases": [
+          "chirality of elastic waves",
+          "population imbalance between right- and left-handed transverse phonons",
+          "chirality as a fundamental property of elastic waves",
+          "acoustic helicity",
+          "false chirality"
+        ]
+      },
+      "ai_fingerprint": "8f823644b78bcfeee8b3c57027dfb6fd23466e58922766d8aa8e811d227bf0c3",
+      "ai_prompt_version": "chiral-phonons-v3.0",
+      "ai_model": "openai/gpt-4.1-mini",
+      "ai_classified_at": "2026-07-19T04:06:29.124457+00:00"
     },
     {
       "base_arxiv_id": "2605.14183",
