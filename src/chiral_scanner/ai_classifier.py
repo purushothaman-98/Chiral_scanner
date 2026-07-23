@@ -76,6 +76,13 @@ Set include_in_feed=false only when the topic is incidental, background-only, me
 
 Scope requirement: an included paper must study a phonon, lattice vibration, ionic motion, or vibrational mode together with chirality, helicity, circular motion, angular momentum, phonomagnetism, dynamical multiferroicity, or a directly related phonon effect. Electronic chiral edges, chiral charge-density waves, fermion/QFT chirality, photonic or polaritonic chirality, generic spin-lattice coupling, and thermal Hall papers are not relevant unless the abstract explicitly makes phonons central to the reported result.
 
+False-friend rule: words such as nonreciprocal, directional, spinning, helical, circular,
+topological or "chiral network" do not establish a chiral phonon. Phonon blockade/lasing,
+optomechanical resonators, acoustic waveguides and generic phononic devices must be marked
+Not relevant unless the abstract explicitly studies handed lattice eigenvectors, circular ionic
+motion, phonon angular momentum/pseudo-angular momentum, or angular-momentum transfer by phonons.
+Do not assign "Phonon angular momentum" merely from nonreciprocity or propagation direction.
+
 Research-type rules:
 - Experimental requires original measurements/fabrication/detection reported by the paper's authors.
 - Computational / theoretical requires original calculations, derivations, models, or simulations.
