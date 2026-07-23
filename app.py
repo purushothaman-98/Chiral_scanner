@@ -18,9 +18,13 @@ if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
 import pandas as pd
-import plotly.graph_objects as go
 import streamlit as st
 from streamlit.errors import StreamlitSecretNotFoundError
+
+try:
+    import plotly.graph_objects as go
+except ModuleNotFoundError:
+    go = None
 
 from chiral_scanner.field_map import (
     ecosystem_areas,
@@ -1308,7 +1312,7 @@ with people_tab:
         ),
         help="Verified affiliation matches divided by all authors in mapped papers.",
     )
-    if active_institutions:
+    if active_institutions and go is not None:
         projection_label = st.segmented_control(
             "Map view",
             ["World map", "Flat 2D map"],
@@ -1417,6 +1421,12 @@ with people_tab:
                 )
             )
             st.link_button("Verify paper affiliation ↗", institution["evidence_url"])
+    elif active_institutions:
+        st.warning(
+            "The interactive geography map is temporarily unavailable while its visualization "
+            "dependency is being installed. Author, year and collaboration analysis remains "
+            "available below."
+        )
     else:
         st.info(
             "Verified institution markers will appear when matched authors enter the field map."
