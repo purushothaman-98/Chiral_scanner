@@ -29,6 +29,7 @@ from chiral_scanner.field_map import (
     is_thz_frontier,
 )
 from chiral_scanner.github_dispatch import dispatch_metadata_scan
+from chiral_scanner.research_insights import field_brief, signal_tier
 
 try:
     import chiral_scanner.history_v2 as history_data
@@ -125,6 +126,10 @@ font-size:.68rem; color:#ddd6fe;}
 .paper-signal {border-left:2px solid rgba(34,211,238,.55); padding:.35rem .65rem;
 margin:.55rem 0 .35rem; color:#cbd5e1; font-size:.82rem; line-height:1.5;
 background:rgba(34,211,238,.035);}
+.brief {padding:.85rem 1rem; border:1px solid rgba(34,211,238,.2); border-radius:14px;
+background:linear-gradient(135deg,rgba(34,211,238,.055),rgba(139,92,246,.055));
+color:#cbd5e1; line-height:1.55; margin:.65rem 0 1rem;}
+.brief strong {color:#f8fafc;}
 .abstract {color:#b8c1cf; line-height:1.5; margin:.4rem 0; font-size:.86rem;}
 div[data-testid="stMetric"] {padding:.72rem .82rem; background:rgba(15,23,42,.52);
 border:1px solid var(--line); border-radius:14px; min-height:92px;}
@@ -254,7 +259,8 @@ def paper_card(paper: dict) -> None:
         + decision.get("phonon_character", [])
     )
     field_areas = ecosystem_areas(paper) if decision else []
-    tags = [status]
+    tier = signal_tier(paper)
+    tags = [tier]
     if decision:
         tags.extend([evidence_stage(paper), decision.get("research_type")])
     visible_science_tags = (field_areas + scientific_identity + systems)[:3]
@@ -347,6 +353,7 @@ thz_frontier = [p for p in approved if is_thz_frontier(p)]
 direct_evidence = [
     p for p in approved if evidence_stage(p) in {"Direct measurement", "Experimental evidence"}
 ]
+brief = field_brief(papers)
 
 st.markdown(
     """
@@ -377,14 +384,14 @@ metrics[1].metric(
     help="Papers with a stored scientific classification.",
 )
 metrics[2].metric(
-    "Mapped to the field",
-    len(approved),
-    help="Reviewed papers connected to the chiral-phonon research ecosystem.",
+    "Strong field signal",
+    brief["strong"],
+    help="Conservative subset with an explicit chiral-phonon or phonon-angular-momentum anchor.",
 )
 metrics[3].metric(
-    "Review queue",
-    len(pending),
-    help="Likely field-connected papers waiting for scientific classification.",
+    "New in 30 days",
+    brief["recent"],
+    help="Mapped papers submitted during the latest 30-day window.",
 )
 
 coverage_dates = [parse_date(p.get("initial_submission_date")) for p in papers]
@@ -783,6 +790,37 @@ with analysis_tab:
         "momentum into one label.</div>",
         unsafe_allow_html=True,
     )
+    evidence_gap = max(brief["strong"] - brief["experimental"], 0)
+    st.markdown(
+        f'<div class="brief"><strong>Field brief</strong> · The archive contains '
+        f"{brief['strong']} strong scientific signals. {brief['experimental']} have original "
+        f"experimental evidence and {brief['direct']} are classified as direct measurements. "
+        f"The remaining evidence gap is {evidence_gap} prediction, theory or non-direct records. "
+        f"{brief['needs_interpretation']} mapped records need careful interpretation rather than "
+        "automatic promotion as core results.</div>",
+        unsafe_allow_html=True,
+    )
+    snapshot = st.columns(4)
+    snapshot[0].metric("Strong signals", brief["strong"])
+    snapshot[1].metric("Experimental", brief["experimental"])
+    snapshot[2].metric("Direct measurement", brief["direct"])
+    snapshot[3].metric("Needs interpretation", brief["needs_interpretation"])
+
+    st.markdown("### What the collected literature is concentrating on")
+    trend_columns = st.columns(3)
+    for column, title, values in [
+        (trend_columns[0], "Scientific frontiers", brief["top_focus"]),
+        (trend_columns[1], "Material families", brief["top_materials"]),
+        (trend_columns[2], "Experimental methods", brief["top_methods"]),
+    ]:
+        with column:
+            with st.container(border=True):
+                st.markdown(f"#### {title}")
+                if values:
+                    for label, count in values:
+                        st.markdown(f"**{count}** · {label}")
+                else:
+                    st.caption("Not enough classified evidence yet.")
     guide = st.columns(4)
     with guide[0]:
         with st.container(border=True):
