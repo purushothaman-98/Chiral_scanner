@@ -85,6 +85,9 @@ st.markdown(
 :root {--violet:#8b5cf6; --cyan:#22d3ee; --ink:#f8fafc; --muted:#94a3b8;
 --panel:rgba(15,23,42,.72); --line:rgba(148,163,184,.16);}
 .block-container {padding-top:1rem; padding-bottom:2.5rem; max-width:1280px;}
+.stApp {background:
+radial-gradient(circle at 8% 0%,rgba(34,211,238,.055),transparent 24rem),
+radial-gradient(circle at 92% 8%,rgba(139,92,246,.07),transparent 28rem);}
 .hero {padding:1.25rem 1.45rem; border:1px solid rgba(139,92,246,.34); border-radius:22px;
 background:radial-gradient(circle at 88% 10%,rgba(34,211,238,.12),transparent 25%),
 radial-gradient(circle at 72% 0%,rgba(124,58,237,.25),transparent 38%),
@@ -130,6 +133,14 @@ background:rgba(34,211,238,.035);}
 background:linear-gradient(135deg,rgba(34,211,238,.055),rgba(139,92,246,.055));
 color:#cbd5e1; line-height:1.55; margin:.65rem 0 1rem;}
 .brief strong {color:#f8fafc;}
+.journey-card {height:100%; padding:.9rem 1rem; border:1px solid var(--line); border-radius:14px;
+background:linear-gradient(145deg,rgba(15,23,42,.72),rgba(30,41,59,.38));}
+.journey-card .number {color:#67e8f9; font-size:.72rem; font-weight:750; letter-spacing:.08em;
+text-transform:uppercase;}
+.journey-card h3 {font-size:1rem; margin:.25rem 0;}
+.journey-card p {color:#aeb9c8; font-size:.82rem; line-height:1.48; margin:0;}
+.insight-row {padding:.68rem .8rem; margin:.38rem 0; border-left:3px solid #22d3ee;
+border-radius:0 10px 10px 0; background:rgba(15,23,42,.5); color:#cbd5e1; font-size:.86rem;}
 .abstract {color:#b8c1cf; line-height:1.5; margin:.4rem 0; font-size:.86rem;}
 div[data-testid="stMetric"] {padding:.72rem .82rem; background:rgba(15,23,42,.52);
 border:1px solid var(--line); border-radius:14px; min-height:92px;}
@@ -138,6 +149,8 @@ div[data-testid="stMetricValue"] {font-size:1.65rem;}
 div[data-baseweb="tab-list"] {gap:.25rem; padding:.28rem; border:1px solid var(--line);
 border-radius:14px; background:rgba(15,23,42,.5); overflow-x:auto;}
 button[data-baseweb="tab"] {border-radius:10px; padding:.45rem .75rem;}
+button[data-baseweb="tab"]:focus-visible, .stButton > button:focus-visible,
+.stLinkButton > a:focus-visible {outline:3px solid rgba(34,211,238,.65); outline-offset:2px;}
 div[data-testid="stExpander"] {border-color:var(--line); border-radius:12px;}
 div[data-testid="stVerticalBlockBorderWrapper"] {border-color:var(--line); border-radius:14px;}
 .stButton > button, .stLinkButton > a {border-radius:10px;}
@@ -412,6 +425,7 @@ st.markdown(
 )
 
 (
+    overview_tab,
     history_tab,
     paper_tab,
     analysis_tab,
@@ -420,18 +434,98 @@ st.markdown(
     admin_tab,
 ) = st.tabs(
     [
-        "Field atlas",
+        "Overview",
+        "History & materials",
         "Latest papers",
-        "Research landscape",
+        "Field analysis",
         "Breakthroughs",
         "Ecosystem",
         "Pipeline",
     ]
 )
 
+with overview_tab:
+    st.markdown('<div class="section-kicker">Research briefing</div>', unsafe_allow_html=True)
+    st.subheader("Understand the field before opening the archive")
+    st.markdown(
+        '<div class="section-intro">A concise view of the evidence, momentum and research gaps. '
+        "Use this page for orientation; open History & materials for the full scientific record "
+        "or Latest papers for the daily arXiv feed.</div>",
+        unsafe_allow_html=True,
+    )
+    evidence_gap = max(brief["strong"] - brief["experimental"], 0)
+    briefing = st.columns(4)
+    briefing[0].metric("Mapped research", len(approved))
+    briefing[1].metric("Experimental studies", brief["experimental"])
+    briefing[2].metric("Direct measurements", brief["direct"])
+    briefing[3].metric("Theory / evidence gap", evidence_gap)
+
+    st.markdown("### The field in four steps")
+    journey = [
+        (
+            "01 · Discover",
+            "New research",
+            "Daily arXiv scans identify emerging papers and connections.",
+        ),
+        (
+            "02 · Verify",
+            "Evidence",
+            "Experiments, direct measurements and predictions remain distinct.",
+        ),
+        (
+            "03 · Connect",
+            "Mechanisms",
+            "Track how lattice angular momentum couples to spins, electrons and transport.",
+        ),
+        (
+            "04 · Apply",
+            "Frontier",
+            "Follow coherent control, quantum materials and device-relevant directions.",
+        ),
+    ]
+    for column, (number, title, description) in zip(st.columns(4), journey, strict=True):
+        column.markdown(
+            f'<div class="journey-card"><div class="number">{number}</div>'
+            f"<h3>{title}</h3><p>{description}</p></div>",
+            unsafe_allow_html=True,
+        )
+
+    st.markdown("### What the archive says now")
+    overview_columns = st.columns([3, 2])
+    with overview_columns[0]:
+        st.markdown(
+            f'<div class="insight-row"><strong>{brief["recent"]} mapped papers</strong> were '
+            "submitted in the latest 30-day research window.</div>",
+            unsafe_allow_html=True,
+        )
+        st.markdown(
+            f'<div class="insight-row"><strong>{brief["experimental"]} experimental records</strong> '
+            f"sit against {evidence_gap} theory, prediction or non-direct records.</div>",
+            unsafe_allow_html=True,
+        )
+        st.markdown(
+            f'<div class="insight-row"><strong>{brief["needs_interpretation"]} papers</strong> need '
+            "human interpretation before they should be treated as field evidence.</div>",
+            unsafe_allow_html=True,
+        )
+    with overview_columns[1]:
+        with st.container(border=True):
+            st.markdown("#### Leading directions")
+            if brief["top_focus"]:
+                for label, count in brief["top_focus"][:5]:
+                    st.markdown(f"**{count}** · {label}")
+            else:
+                st.caption("More classified evidence is needed.")
+
+    st.markdown("### Where to go next")
+    st.caption(
+        "**History & materials** for landmark evidence · **Latest papers** for new work · "
+        "**Field analysis** for trends · **Ecosystem** for projects and opportunities"
+    )
+
 with history_tab:
-    st.markdown('<div class="section-kicker">Field atlas</div>', unsafe_allow_html=True)
-    st.subheader("Evidence, materials and the evolution of the concept")
+    st.markdown('<div class="section-kicker">History & materials</div>', unsafe_allow_html=True)
+    st.subheader("Landmark evidence and the evolution of the concept")
     st.markdown(
         '<div class="section-intro">Start with what has been observed, then move through how '
         "the definition changed. The atlas separates a mode-resolved observation from "
@@ -551,15 +645,12 @@ with paper_tab:
         view = st.selectbox(
             "Research lens",
             [
-                "Field evolution",
-                "THz & ultrafast frontier",
-                "Experimental evidence",
-                "Phonon angular momentum",
-                "Magnetism & spintronics",
-                "2D optoelectronics & quantum materials",
-                "Transport, Hall & mechanics",
-                "Theory & materials discovery",
-                "Open questions / interpretation",
+                "All mapped research",
+                "Experiments & measurement",
+                "THz & coherent control",
+                "Theory & materials",
+                "Coupled quantum responses",
+                "Open interpretation",
             ],
         )
     with quick_filters[1]:
@@ -634,21 +725,28 @@ with paper_tab:
                 flatten_unique(current_decisions, ("ai_decision", "application_directions")),
             )
 
-    if view == "Field evolution":
+    if view == "All mapped research":
         candidates = approved
-    elif view == "THz & ultrafast frontier":
+    elif view == "THz & coherent control":
         candidates = thz_frontier
-    elif view == "Experimental evidence":
+    elif view == "Experiments & measurement":
         candidates = experimental
-    elif view == "Open questions / interpretation":
+    elif view == "Open interpretation":
         candidates = review_queue
+    elif view == "Theory & materials":
+        candidates = [
+            p
+            for p in approved
+            if (p.get("ai_decision") or {}).get("research_type") in {"Theory", "Computational"}
+            or "Theory & materials discovery" in ecosystem_areas(p)
+        ]
     else:
-        area = (
-            "Fundamental chirality & phonon angular momentum"
-            if view == "Phonon angular momentum"
-            else view
-        )
-        candidates = [p for p in approved if area in ecosystem_areas(p)]
+        response_areas = {
+            "Magnetism & spintronics",
+            "2D optoelectronics & quantum materials",
+            "Transport, Hall & mechanics",
+        }
+        candidates = [p for p in approved if response_areas.intersection(ecosystem_areas(p))]
 
     mapped_dates = [parse_date(p.get("initial_submission_date")) for p in approved]
     mapped_dates = [value for value in mapped_dates if value]
@@ -728,11 +826,11 @@ with paper_tab:
     st.subheader(f"{view} · {len(filtered)} papers")
     if active_filter_count:
         st.caption(f"{active_filter_count} search or advanced filters active")
-    if view == "Field evolution":
+    if view == "All mapped research":
         st.caption(
             "Core results, connected phonon-angular-momentum physics and open interpretations."
         )
-    elif view == "THz & ultrafast frontier":
+    elif view == "THz & coherent control":
         st.caption(
             "Coherent THz/mid-IR excitation, nonlinear phononics, dynamical multiferroicity and ultrafast readout."
         )
@@ -746,9 +844,9 @@ with paper_tab:
             "Research question: does the paper merely drive a phonon with THz light, "
             "or does it establish circular ionic motion, angular momentum, or a magnetic consequence?"
         )
-    elif view == "Experimental evidence":
+    elif view == "Experiments & measurement":
         st.caption("Original experimental and combined theory–experiment studies.")
-    elif view == "Open questions / interpretation":
+    elif view == "Open interpretation":
         st.caption(
             "Boundary cases where the meaning or evidence for phonon chirality remains scientifically unsettled."
         )
