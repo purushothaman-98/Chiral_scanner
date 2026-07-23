@@ -18,6 +18,7 @@ if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
 import pandas as pd
+import plotly.graph_objects as go
 import streamlit as st
 from streamlit.errors import StreamlitSecretNotFoundError
 
@@ -30,6 +31,7 @@ from chiral_scanner.field_map import (
 )
 from chiral_scanner.github_dispatch import dispatch_metadata_scan
 from chiral_scanner.people_map import author_connections
+from chiral_scanner.research_geography import institution_activity
 from chiral_scanner.research_insights import field_brief, signal_tier
 
 try:
@@ -1285,6 +1287,146 @@ with people_tab:
     people_metrics[1].metric("Repeated collaborations", len(repeat_links))
     people_metrics[2].metric("Active years", len(active_years))
     people_metrics[3].metric("Most recent year", max(active_years) if active_years else "—")
+
+    st.markdown("### Research geography")
+    st.caption(
+        "Locations come only from verified paper affiliations. Marker activity is recalculated "
+        "from the current scientifically mapped archive; an author is never geocoded from their "
+        "name or assumed current workplace."
+    )
+    institutions, institution_links, geo_coverage = institution_activity(approved)
+    active_institutions = [item for item in institutions if item["author_count"]]
+    geo_metrics = st.columns(3)
+    geo_metrics[0].metric("Verified institutions", len(active_institutions))
+    geo_metrics[1].metric("Located mapped authors", geo_coverage["verified_authors"])
+    geo_metrics[2].metric(
+        "Location coverage",
+        (
+            f"{geo_coverage['verified_authors'] / geo_coverage['archive_authors']:.0%}"
+            if geo_coverage["archive_authors"]
+            else "—"
+        ),
+        help="Verified affiliation matches divided by all authors in mapped papers.",
+    )
+    if active_institutions:
+        projection_label = st.segmented_control(
+            "Map view",
+            ["World map", "Flat 2D map"],
+            default="World map",
+            key="research_geo_projection",
+        )
+        projection = "natural earth" if projection_label == "World map" else "equirectangular"
+        by_name = {item["institution"]: item for item in active_institutions}
+        map_figure = go.Figure()
+        for link in institution_links:
+            first = by_name.get(link["institution_1"])
+            second = by_name.get(link["institution_2"])
+            if not first or not second:
+                continue
+            map_figure.add_trace(
+                go.Scattergeo(
+                    lon=[first["longitude"], second["longitude"]],
+                    lat=[first["latitude"], second["latitude"]],
+                    mode="lines",
+                    line={"width": 1 + min(link["joint_papers"], 4), "color": "#67e8f9"},
+                    opacity=0.35,
+                    hoverinfo="text",
+                    text=(
+                        f"{first['institution']} ↔ {second['institution']}<br>"
+                        f"{link['joint_papers']} joint mapped paper(s)"
+                    ),
+                    showlegend=False,
+                )
+            )
+        map_figure.add_trace(
+            go.Scattergeo(
+                lon=[item["longitude"] for item in active_institutions],
+                lat=[item["latitude"] for item in active_institutions],
+                mode="markers",
+                marker={
+                    "size": [12 + 4 * item["author_count"] for item in active_institutions],
+                    "color": [item["paper_count"] for item in active_institutions],
+                    "colorscale": [[0, "#8b5cf6"], [1, "#22d3ee"]],
+                    "line": {"color": "#f8fafc", "width": 1},
+                    "colorbar": {"title": "Mapped<br>papers", "thickness": 10},
+                },
+                customdata=[
+                    [
+                        item["institution"],
+                        f"{item['city']}, {item['country']}",
+                        ", ".join(item["mapped_authors"]),
+                        item["paper_count"],
+                        (
+                            "—"
+                            if not item["years"]
+                            else (
+                                str(item["years"][0])
+                                if len(item["years"]) == 1
+                                else f"{item['years'][0]}–{item['years'][-1]}"
+                            )
+                        ),
+                    ]
+                    for item in active_institutions
+                ],
+                hovertemplate=(
+                    "<b>%{customdata[0]}</b><br>%{customdata[1]}<br>"
+                    "Mapped authors: %{customdata[2]}<br>"
+                    "Mapped papers: %{customdata[3]}<br>"
+                    "Active years: %{customdata[4]}<extra></extra>"
+                ),
+                showlegend=False,
+            )
+        )
+        map_figure.update_geos(
+            projection_type=projection,
+            showland=True,
+            landcolor="#172033",
+            showocean=True,
+            oceancolor="#070d1b",
+            showcountries=True,
+            countrycolor="#334155",
+            coastlinecolor="#475569",
+            bgcolor="rgba(0,0,0,0)",
+        )
+        map_figure.update_layout(
+            height=500,
+            margin={"l": 0, "r": 0, "t": 8, "b": 0},
+            paper_bgcolor="rgba(0,0,0,0)",
+            font={"color": "#e2e8f0"},
+        )
+        st.plotly_chart(map_figure, use_container_width=True, config={"displaylogo": False})
+
+        selected_institution = st.selectbox(
+            "Inspect an institution",
+            [item["institution"] for item in active_institutions],
+            key="people_institution",
+        )
+        institution = by_name[selected_institution]
+        with st.container(border=True):
+            st.markdown(f"#### {institution['institution']}")
+            st.caption(f"{institution['city']}, {institution['country']}")
+            st.write(
+                "**Verified authors in this archive:** " + ", ".join(institution["mapped_authors"])
+            )
+            st.write(
+                f"**Live mapped activity:** {institution['paper_count']} paper(s) across "
+                + (
+                    ", ".join(str(year) for year in institution["years"])
+                    if institution["years"]
+                    else "no dated mapped records"
+                )
+            )
+            st.link_button("Verify paper affiliation ↗", institution["evidence_url"])
+    else:
+        st.info(
+            "Verified institution markers will appear when matched authors enter the field map."
+        )
+    if geo_coverage["archive_authors"] > geo_coverage["verified_authors"]:
+        st.warning(
+            f"{geo_coverage['archive_authors'] - geo_coverage['verified_authors']} mapped authors "
+            "do not yet have a paper-verified location. They remain visible in the author analysis "
+            "below but are deliberately omitted from the geographic map."
+        )
 
     if not people:
         st.info("Author connections will appear as papers complete scientific review.")
