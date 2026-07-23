@@ -11,9 +11,10 @@ def test_all_dashboard_tabs_render_without_an_exception():
     assert not app.exception
     labels = [tab.label for tab in app.tabs]
     for label in [
-        "Field atlas",
+        "Overview",
+        "History & materials",
         "Latest papers",
-        "Research landscape",
+        "Field analysis",
         "Breakthroughs",
         "Ecosystem",
         "Pipeline",
