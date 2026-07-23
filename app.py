@@ -6,7 +6,7 @@ import hmac
 import html
 import importlib
 import sys
-from collections import defaultdict
+from collections import Counter, defaultdict
 from datetime import date, datetime, timezone
 from pathlib import Path
 
@@ -29,6 +29,7 @@ from chiral_scanner.field_map import (
     is_thz_frontier,
 )
 from chiral_scanner.github_dispatch import dispatch_metadata_scan
+from chiral_scanner.people_map import author_connections
 from chiral_scanner.research_insights import field_brief, signal_tier
 
 try:
@@ -432,6 +433,7 @@ st.markdown(
     news_tab,
     ecosystem_tab,
     admin_tab,
+    people_tab,
 ) = st.tabs(
     [
         "Overview",
@@ -441,6 +443,7 @@ st.markdown(
         "Breakthroughs",
         "Ecosystem",
         "Pipeline",
+        "People & connections",
     ]
 )
 
@@ -1257,6 +1260,129 @@ with admin_tab:
                 st.success("Metadata scan dispatched. AI review follows after it succeeds.")
                 if run_url:
                     st.link_button("Monitor GitHub Actions ↗", run_url)
+
+with people_tab:
+    st.markdown('<div class="section-kicker">Research community</div>', unsafe_allow_html=True)
+    st.subheader("Authors, years and collaboration connections")
+    st.markdown(
+        '<div class="section-intro">Explore who appears in the scientifically mapped archive, '
+        "when their work entered the record, and which researchers repeatedly publish together. "
+        "Connections below mean verified co-authorship in the stored papers—not inferred influence, "
+        "institutional affiliation or citation.</div>",
+        unsafe_allow_html=True,
+    )
+    people, collaboration_links = author_connections(approved)
+    repeat_links = [link for link in collaboration_links if link["joint_papers"] >= 2]
+    active_years = sorted(
+        {
+            parsed.year
+            for paper in approved
+            if (parsed := parse_date(paper.get("initial_submission_date"))) is not None
+        }
+    )
+    people_metrics = st.columns(4)
+    people_metrics[0].metric("Mapped authors", len(people))
+    people_metrics[1].metric("Repeated collaborations", len(repeat_links))
+    people_metrics[2].metric("Active years", len(active_years))
+    people_metrics[3].metric("Most recent year", max(active_years) if active_years else "—")
+
+    if not people:
+        st.info("Author connections will appear as papers complete scientific review.")
+    else:
+        st.markdown("### Community map")
+        map_columns = st.columns([3, 2])
+        with map_columns[0]:
+            top_people = pd.DataFrame(
+                [
+                    {
+                        "Author": item["author"],
+                        "Mapped papers": item["papers"],
+                        "Active span": (
+                            str(item["first_year"])
+                            if item["first_year"] == item["latest_year"]
+                            else f"{item['first_year']}–{item['latest_year']}"
+                        ),
+                    }
+                    for item in people[:20]
+                ]
+            )
+            st.dataframe(
+                top_people,
+                hide_index=True,
+                use_container_width=True,
+                column_config={
+                    "Mapped papers": st.column_config.ProgressColumn(
+                        "Mapped papers",
+                        min_value=0,
+                        max_value=max(item["papers"] for item in people),
+                    )
+                },
+            )
+        with map_columns[1]:
+            yearly_counts = Counter(
+                parsed.year
+                for paper in approved
+                if (parsed := parse_date(paper.get("initial_submission_date"))) is not None
+            )
+            st.markdown("#### Papers by year")
+            st.bar_chart(
+                pd.Series(yearly_counts, dtype="int64").sort_index(),
+                x_label="Year",
+                y_label="Mapped papers",
+            )
+
+    st.markdown("### Repeated co-author connections")
+    st.caption(
+        "Pairs are ranked by joint mapped papers. Single-paper links are hidden to keep the map useful."
+    )
+    if repeat_links:
+        st.dataframe(
+            pd.DataFrame(repeat_links[:30]).rename(
+                columns={
+                    "author_1": "Author",
+                    "author_2": "Collaborator",
+                    "joint_papers": "Joint mapped papers",
+                }
+            ),
+            hide_index=True,
+            use_container_width=True,
+        )
+    else:
+        st.info("No repeated co-author pair is present in the currently mapped archive.")
+
+    st.markdown("### Follow an author through the field")
+    selected_author = st.selectbox(
+        "Choose an author",
+        [item["author"] for item in people],
+        key="people_author",
+        disabled=not people,
+    )
+    if people and selected_author:
+        profile = next(item for item in people if item["author"] == selected_author)
+        profile_columns = st.columns(3)
+        profile_columns[0].metric("Mapped papers", profile["papers"])
+        profile_columns[1].metric(
+            "Active span",
+            (
+                str(profile["first_year"])
+                if profile["first_year"] == profile["latest_year"]
+                else f"{profile['first_year']}–{profile['latest_year']}"
+            ),
+        )
+        profile_columns[2].metric("Active years", len(profile["years"]))
+        if profile["materials"]:
+            st.caption("Leading material families · " + " · ".join(profile["materials"]))
+        for record in profile["records"]:
+            title = html.escape(str(record.get("title", "Untitled")))
+            url = html.escape(str(record.get("abstract_url", "https://arxiv.org")))
+            year = short_date(record.get("initial_submission_date"))
+            focus = ecosystem_areas(record)[:2]
+            st.markdown(
+                f'<div class="insight-row"><strong>{year}</strong> · '
+                f'<a href="{url}" target="_blank">{title}</a>'
+                f"{' · ' + html.escape(' / '.join(focus)) if focus else ''}</div>",
+                unsafe_allow_html=True,
+            )
 
 st.divider()
 st.caption(
