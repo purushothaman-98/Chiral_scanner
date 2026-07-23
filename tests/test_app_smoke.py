@@ -18,6 +18,7 @@ def test_all_dashboard_tabs_render_without_an_exception():
         "Breakthroughs",
         "Ecosystem",
         "Pipeline",
+        "People & connections",
     ]:
         assert label in labels
 
