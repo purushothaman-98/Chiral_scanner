@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-07-24T06:22:23.602685+00:00",
+  "updated_at": "2026-07-24T07:18:15.742661+00:00",
   "papers": [
     {
       "base_arxiv_id": "2607.21525",
@@ -104,8 +104,60 @@
       },
       "first_seen_at": "2026-07-24T06:22:23.602170+00:00",
       "last_seen_at": "2026-07-24T06:22:23.602170+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
+      "ai_decision": {
+        "include_in_feed": false,
+        "relevance": "Not relevant",
+        "research_type": "Unclassified",
+        "paper_nature": "Original research",
+        "materials_or_systems": [
+          "La5/3Sr1/3NiO4"
+        ],
+        "material_or_system_family": [
+          "Other / unspecified"
+        ],
+        "research_focus": [
+          "Thermal or mechanical angular-momentum transport"
+        ],
+        "chirality_class": [
+          "Not established"
+        ],
+        "phonon_character": [
+          "Not specified"
+        ],
+        "generation_mechanisms": [
+          "Thermal gradient / population imbalance"
+        ],
+        "experimental_methods": [],
+        "excitation_methods": [
+          "Thermal excitation"
+        ],
+        "detection_methods": [],
+        "computational_methods": [],
+        "physical_properties": [
+          "Thermal Hall response"
+        ],
+        "evidence_level": "Indirect experimental inference plus modelling",
+        "evidence_caveats": [
+          "phonon thermal Hall effect discussed without explicit phonon angular momentum or chirality"
+        ],
+        "application_directions": [
+          "Thermal management / caloritronics",
+          "Fundamental symmetry / selection rules"
+        ],
+        "confidence": 0.7,
+        "reason": "The paper studies phonon thermal Hall effect in insulators but does not explicitly address phonon chirality, angular momentum, or circular ionic motion. The focus is on thermal Hall resistivity as a unifying description, without establishing chiral phonon properties or angular momentum transfer mechanisms.",
+        "supporting_phrases": [
+          "phonon thermal Hall effect",
+          "thermal Hall resistivity",
+          "insulating-like temperature dependence",
+          "linear magnetic-field dependence",
+          "thermal Hall angle"
+        ]
+      },
+      "ai_fingerprint": "1d0432e7c9767a51b55d1a4e00c361b7119f02399233ad376aa738a8e696b1ef",
+      "ai_prompt_version": "chiral-phonons-v3.0",
+      "ai_model": "openai/gpt-4.1-mini",
+      "ai_classified_at": "2026-07-24T07:15:51.044043+00:00"
     },
     {
       "base_arxiv_id": "2607.19319",
@@ -19719,8 +19771,64 @@
       },
       "first_seen_at": "2026-07-24T05:29:40.521859+00:00",
       "last_seen_at": "2026-07-24T05:29:40.521859+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
+      "ai_decision": {
+        "include_in_feed": true,
+        "relevance": "Core chiral-phonon paper",
+        "research_type": "Computational / theoretical",
+        "paper_nature": "Original research",
+        "materials_or_systems": [
+          "honeycomb lattice"
+        ],
+        "material_or_system_family": [
+          "Other / unspecified"
+        ],
+        "research_focus": [
+          "Phonon magnetic moment / Zeeman physics"
+        ],
+        "chirality_class": [
+          "Phonon angular momentum"
+        ],
+        "phonon_character": [
+          "Finite-momentum / valley",
+          "Optical"
+        ],
+        "generation_mechanisms": [
+          "Intrinsic crystal symmetry",
+          "Theoretical eigenmode construction"
+        ],
+        "experimental_methods": [],
+        "excitation_methods": [],
+        "detection_methods": [],
+        "computational_methods": [
+          "Group theory / symmetry analysis",
+          "Model Hamiltonian / tight binding"
+        ],
+        "physical_properties": [
+          "Phonon angular momentum",
+          "Phonon magnetic moment"
+        ],
+        "evidence_level": "First-principles prediction",
+        "evidence_caveats": [
+          "extrinsic phonon magnetic moment contributions inferred rather than directly observed"
+        ],
+        "application_directions": [
+          "Fundamental symmetry / selection rules",
+          "Materials discovery / design"
+        ],
+        "confidence": 0.9,
+        "reason": "The paper develops a formalism for phonon magnetic moment including extrinsic mechanisms (skew-scattering, side-jump) related to phonon Berry curvature, predicting phonon angular momentum variations in a honeycomb lattice. This is a theoretical study focused on phonon angular momentum and magnetic moment, core to chiral phonon research.",
+        "supporting_phrases": [
+          "phonon magnetic moment",
+          "phonon angular momentum",
+          "nonlocal phonon Berry curvature",
+          "extrinsic contribution",
+          "honeycomb lattice"
+        ]
+      },
+      "ai_fingerprint": "32df65be95d66105f005f185b78e25c4555fb7638b978c0c4a89d1a63b782edf",
+      "ai_prompt_version": "chiral-phonons-v3.0",
+      "ai_model": "openai/gpt-4.1-mini",
+      "ai_classified_at": "2026-07-24T07:16:04.473158+00:00"
     },
     {
       "base_arxiv_id": "2604.26739",
@@ -63284,8 +63392,61 @@
       },
       "first_seen_at": "2026-07-24T05:29:40.521915+00:00",
       "last_seen_at": "2026-07-24T05:29:40.521915+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
+      "ai_decision": {
+        "include_in_feed": true,
+        "relevance": "Core chiral-phonon paper",
+        "research_type": "Computational / theoretical",
+        "paper_nature": "Original research",
+        "materials_or_systems": [],
+        "material_or_system_family": [
+          "Other / unspecified"
+        ],
+        "research_focus": [
+          "Intrinsic/symmetry-defined chiral phonons",
+          "Phonon magnetic moment / Zeeman physics",
+          "Thermal or mechanical angular-momentum transport"
+        ],
+        "chirality_class": [
+          "Phonon angular momentum"
+        ],
+        "phonon_character": [
+          "Optical"
+        ],
+        "generation_mechanisms": [
+          "Intrinsic crystal symmetry",
+          "Static magnetic field / Zeeman selection"
+        ],
+        "experimental_methods": [],
+        "excitation_methods": [],
+        "detection_methods": [],
+        "computational_methods": [
+          "Group theory / symmetry analysis",
+          "Berry-phase / topological phonon analysis"
+        ],
+        "physical_properties": [
+          "Phonon angular momentum"
+        ],
+        "evidence_level": "First-principles prediction",
+        "evidence_caveats": [
+          "phonon angular momentum inferred from Berry curvature, no direct measurement"
+        ],
+        "application_directions": [
+          "Thermal management / caloritronics"
+        ],
+        "confidence": 0.8,
+        "reason": "The paper studies intrinsic thermal Hall conductivity from optical phonons in a cubic system, focusing on Berry curvature effects induced by discrete rotational symmetry and magnetic field. This relates to phonon angular momentum and intrinsic chiral phonon effects, though no direct experimental measurement is reported.",
+        "supporting_phrases": [
+          "intrinsic thermal Hall conductivity contributed by optical phonons",
+          "discrete rotational symmetry of the system splits the degeneracy of transverse modes",
+          "phonon Berry curvatures become sharply peaked",
+          "intrinsic thermal Hall conductivity that is significantly enhanced",
+          "nonlinear B ln B dependence on the magnetic field"
+        ]
+      },
+      "ai_fingerprint": "b3fe296d7fcfe37f8c158f76db1072cc17578cf37692be50dbb875307bede026",
+      "ai_prompt_version": "chiral-phonons-v3.0",
+      "ai_model": "openai/gpt-4.1-mini",
+      "ai_classified_at": "2026-07-24T07:16:17.185286+00:00"
     },
     {
       "base_arxiv_id": "2504.18940",
@@ -70605,8 +70766,61 @@
       },
       "first_seen_at": "2026-07-24T05:29:40.521957+00:00",
       "last_seen_at": "2026-07-24T05:29:40.521957+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
+      "ai_decision": {
+        "include_in_feed": true,
+        "relevance": "Core chiral-phonon paper",
+        "research_type": "Computational / theoretical",
+        "paper_nature": "Original research",
+        "materials_or_systems": [
+          "GaP",
+          "hBN",
+          "α-MoO3",
+          "ZnTeMoO6"
+        ],
+        "material_or_system_family": [
+          "Ferroelectrics and polar crystals",
+          "Other / unspecified"
+        ],
+        "research_focus": [
+          "Cavity / polariton / photon-phonon coupling"
+        ],
+        "chirality_class": [
+          "Circular/elliptical phonon polarization"
+        ],
+        "phonon_character": [
+          "Optical",
+          "Surface / interface / polariton mode"
+        ],
+        "generation_mechanisms": [
+          "Theoretical eigenmode construction"
+        ],
+        "experimental_methods": [],
+        "excitation_methods": [],
+        "detection_methods": [],
+        "computational_methods": [
+          "Model Hamiltonian / tight binding"
+        ],
+        "physical_properties": [
+          "Real-space circular/elliptical ionic motion"
+        ],
+        "evidence_level": "First-principles prediction",
+        "evidence_caveats": [
+          "circular polarization of ion vibration component only in phonon polariton eigenstates, not phonons"
+        ],
+        "application_directions": [
+          "Materials discovery / design"
+        ],
+        "confidence": 0.8,
+        "reason": "The paper theoretically studies phonon polaritons in polyatomic polar crystals and finds nonzero circular polarization of the ion vibration component in phonon polariton eigenstates in hBN flakes, indicating circular/elliptical ionic motion related to phonon polaritons, which is relevant to chiral phonon research.",
+        "supporting_phrases": [
+          "circular polarization of the ion vibration component of these eigenstates is nonzero in hBN flakes",
+          "We obtained the eigenstates of the phonon polariton"
+        ]
+      },
+      "ai_fingerprint": "ffbaf2017a39c912775fa5519220d7009374467d2f990a6f2cf48b273ee66577",
+      "ai_prompt_version": "chiral-phonons-v3.0",
+      "ai_model": "openai/gpt-4.1-mini",
+      "ai_classified_at": "2026-07-24T07:18:15.220267+00:00"
     },
     {
       "base_arxiv_id": "2412.21003",
@@ -70799,8 +71013,66 @@
       },
       "first_seen_at": "2026-07-24T05:29:40.521968+00:00",
       "last_seen_at": "2026-07-24T05:29:40.521968+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
+      "ai_decision": {
+        "include_in_feed": false,
+        "relevance": "Not relevant",
+        "research_type": "Theory + Experiment",
+        "paper_nature": "Original research",
+        "materials_or_systems": [
+          "FePS3"
+        ],
+        "material_or_system_family": [
+          "Van der Waals magnets"
+        ],
+        "research_focus": [
+          "Magnon-phonon or spin-phonon angular-momentum transfer"
+        ],
+        "chirality_class": [
+          "Not established"
+        ],
+        "phonon_character": [
+          "Optical"
+        ],
+        "generation_mechanisms": [
+          "Magnetic-order / magnon hybridization"
+        ],
+        "experimental_methods": [
+          "Raman optical activity / vibrational circular dichroism"
+        ],
+        "excitation_methods": [
+          "Raman/infrared optical excitation"
+        ],
+        "detection_methods": [
+          "Raman spectroscopy"
+        ],
+        "computational_methods": [
+          "Model Hamiltonian / tight binding"
+        ],
+        "physical_properties": [
+          "Magnon-phonon hybridization"
+        ],
+        "evidence_level": "Indirect experimental inference plus modelling",
+        "evidence_caveats": [
+          "chirality not established; focus on magnon-phonon coupling without phonon angular momentum or chirality"
+        ],
+        "application_directions": [
+          "Spintronics / orbitronics",
+          "Topological phononics"
+        ],
+        "confidence": 0.7,
+        "reason": "The paper focuses on magnon-phonon coupling observed via magneto-Raman spectroscopy in FePS3, a van der Waals antiferromagnet. However, it does not establish phonon chirality, phonon angular momentum, or circular ionic motion. The phonon-magnon hybridization is central but chirality-related phonon effects are not demonstrated.",
+        "supporting_phrases": [
+          "magneto-Raman scattering",
+          "spin-phonon coupling",
+          "magnon with a frequency of 3.7 THz",
+          "one magnon band and three phonon bands are coupled via the magneto-elastic coupling",
+          "avoided crossings between the hybridized magnon and phonon branches"
+        ]
+      },
+      "ai_fingerprint": "731e8be7cbfa2bb7f82e61d993c8db1d10b0346092eb27bb65d4776504d60844",
+      "ai_prompt_version": "chiral-phonons-v3.0",
+      "ai_model": "openai/gpt-4.1-mini",
+      "ai_classified_at": "2026-07-24T07:17:32.187051+00:00"
     },
     {
       "base_arxiv_id": "2412.17476",
@@ -71084,8 +71356,60 @@
       },
       "first_seen_at": "2026-07-24T05:29:40.521985+00:00",
       "last_seen_at": "2026-07-24T05:29:40.521985+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
+      "ai_decision": {
+        "include_in_feed": true,
+        "relevance": "Core chiral-phonon paper",
+        "research_type": "Theory + Experiment",
+        "paper_nature": "Original research",
+        "materials_or_systems": [
+          "magnetite"
+        ],
+        "material_or_system_family": [
+          "Magnetic insulators"
+        ],
+        "research_focus": [
+          "Magnon-phonon or spin-phonon angular-momentum transfer",
+          "Dynamical multiferroicity / phonomagnetism"
+        ],
+        "chirality_class": [
+          "Chirality transferred by magnon/spin coupling"
+        ],
+        "phonon_character": [
+          "Not specified"
+        ],
+        "generation_mechanisms": [
+          "Magnetic-order / magnon hybridization"
+        ],
+        "experimental_methods": [],
+        "excitation_methods": [],
+        "detection_methods": [],
+        "computational_methods": [],
+        "physical_properties": [
+          "Angular-momentum transfer",
+          "Phonon angular momentum"
+        ],
+        "evidence_level": "Model / theory proposal",
+        "evidence_caveats": [
+          "chirality inferred rather than directly observed",
+          "phonon angular momentum not explicitly measured"
+        ],
+        "application_directions": [
+          "Ultrafast magnetic control",
+          "Spintronics / orbitronics"
+        ],
+        "confidence": 0.8,
+        "reason": "The paper proposes a mechanism where phonons coupled to magnons via chirality enhance ferromagnetic order and anisotropy energy. Although phonon angular momentum is not directly measured, the coupling enabled by chirality and energy diversion involving phonons and magnons is central, making it relevant to chiral phonon research.",
+        "supporting_phrases": [
+          "nuclear vibrations (phonons) coupled to ferromagnetic spin excitations (magnons)",
+          "coupling between phonons with magnons is enabled by chirality due to the lack of inversion symmetry",
+          "energy diversion",
+          "enhances its stability by increasing the anisotropy energy for magnon excitations"
+        ]
+      },
+      "ai_fingerprint": "83c321e06086d5eccb6db6a23b74fa22365b37ca07259c1c6e8082fe4d1bde6b",
+      "ai_prompt_version": "chiral-phonons-v3.0",
+      "ai_model": "openai/gpt-4.1-mini",
+      "ai_classified_at": "2026-07-24T07:17:44.975879+00:00"
     },
     {
       "base_arxiv_id": "2412.12557",
@@ -71454,8 +71778,69 @@
       },
       "first_seen_at": "2026-07-24T05:29:40.522006+00:00",
       "last_seen_at": "2026-07-24T05:29:40.522006+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
+      "ai_decision": {
+        "include_in_feed": false,
+        "relevance": "Not relevant",
+        "research_type": "Theory + Experiment",
+        "paper_nature": "Original research",
+        "materials_or_systems": [
+          "CoTiO3"
+        ],
+        "material_or_system_family": [
+          "Magnetic insulators"
+        ],
+        "research_focus": [
+          "Phonon magnetic moment / Zeeman physics",
+          "Magnon-phonon or spin-phonon angular-momentum transfer"
+        ],
+        "chirality_class": [
+          "Phonon angular momentum"
+        ],
+        "phonon_character": [
+          "Optical"
+        ],
+        "generation_mechanisms": [
+          "Static magnetic field / Zeeman selection"
+        ],
+        "experimental_methods": [
+          "Raman optical activity / vibrational circular dichroism"
+        ],
+        "excitation_methods": [
+          "Other / unspecified excitation"
+        ],
+        "detection_methods": [
+          "Raman spectroscopy",
+          "Other / unspecified detection"
+        ],
+        "computational_methods": [
+          "DFT / DFPT phonons",
+          "Model Hamiltonian / tight binding"
+        ],
+        "physical_properties": [
+          "Phonon Zeeman splitting",
+          "Phonon angular momentum"
+        ],
+        "evidence_level": "Indirect experimental inference plus modelling",
+        "evidence_caveats": [
+          "phonon Zeeman splitting inferred from splitting rather than direct angular momentum measurement"
+        ],
+        "application_directions": [
+          "Fundamental symmetry / selection rules"
+        ],
+        "confidence": 0.8,
+        "reason": "Excluded by the independent scope guard: the abstract does not make a phonon, lattice vibration, ionic motion, or vibrational mode central to the claimed chiral or angular-momentum result.",
+        "supporting_phrases": [
+          "phonon nearby in energy splitting under magnetic field",
+          "spin-orbital and lattice excitations coupling",
+          "phonon Zeeman effect",
+          "density functional theory (DFT)",
+          "spin-orbital excitation energies and their behavior in an applied field"
+        ]
+      },
+      "ai_fingerprint": "5cbe99eb6ed3d397526822a0f343ecce31c1037eb20dd4ee1aa8f08572808278",
+      "ai_prompt_version": "chiral-phonons-v3.0",
+      "ai_model": "openai/gpt-4.1-mini",
+      "ai_classified_at": "2026-07-24T07:17:59.677845+00:00"
     }
   ]
 }
