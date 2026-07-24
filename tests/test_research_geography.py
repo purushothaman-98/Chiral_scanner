@@ -1,34 +1,54 @@
-from chiral_scanner.research_geography import institution_activity
+import json
+
+from chiral_scanner.research_geography import (
+    institution_activity,
+    load_affiliation_registry,
+)
 
 
-def test_institution_activity_uses_verified_authors_and_real_paper_links():
-    affiliations = [
-        {
-            "institution": "Institute A",
-            "city": "Alpha",
-            "country": "Testland",
-            "latitude": 1.0,
-            "longitude": 2.0,
-            "authors": ["Ada A"],
-            "evidence_title": "Paper",
-            "evidence_url": "https://example.org/a",
+def test_institution_activity_counts_unique_papers_and_never_guesses_authors():
+    registry = {
+        "last_verified": "2026-07-24",
+        "institutions": {
+            "a": {
+                "name": "Institute A",
+                "city": "Alpha",
+                "country": "Testland",
+                "latitude": 1.0,
+                "longitude": 2.0,
+                "institution_type": "Experiment",
+                "evidence_url": "https://example.org/a",
+            },
+            "b": {
+                "name": "Institute B",
+                "city": "Beta",
+                "country": "Elsewhere",
+                "latitude": 3.0,
+                "longitude": 4.0,
+                "institution_type": "Theory",
+                "evidence_url": "https://example.org/b",
+            },
         },
-        {
-            "institution": "Institute B",
-            "city": "Beta",
-            "country": "Testland",
-            "latitude": 3.0,
-            "longitude": 4.0,
-            "authors": ["Ben B"],
-            "evidence_title": "Paper",
-            "evidence_url": "https://example.org/b",
+        "authors": {
+            "Ada A": {
+                "institution_ids": ["a"],
+                "role": "spectroscopy",
+                "contribution": "Measured the response.",
+            },
+            "Ben B": {
+                "institution_ids": ["b"],
+                "role": "theory",
+                "contribution": "Modelled the modes.",
+            },
         },
-    ]
+    }
     papers = [
         {
             "base_arxiv_id": "1",
+            "title": "Shared paper",
             "authors": ["Ada A", "Ben B", "Unmapped C"],
             "initial_submission_date": "2025-01-02T00:00:00Z",
+            "materials": ["alpha-HgS"],
         },
         {
             "base_arxiv_id": "2",
@@ -37,15 +57,62 @@ def test_institution_activity_uses_verified_authors_and_real_paper_links():
         },
     ]
 
-    institutions, links, coverage = institution_activity(papers, affiliations)
+    institutions, links, coverage = institution_activity(papers, registry)
+    by_id = {row["id"]: row for row in institutions}
 
-    assert institutions[0]["paper_count"] == 2
-    assert institutions[0]["years"] == [2025, 2026]
-    assert links == [
-        {"institution_1": "Institute A", "institution_2": "Institute B", "joint_papers": 1}
-    ]
-    assert coverage == {
-        "archive_authors": 3,
-        "verified_authors": 2,
-        "verified_institutions": 2,
+    assert by_id["a"]["paper_count"] == 2
+    assert by_id["a"]["years"] == [2025, 2026]
+    assert by_id["a"]["roles"] == ["spectroscopy"]
+    assert "Unmapped C" not in by_id["a"]["mapped_authors"]
+    assert links[0]["institution_1"] == "a"
+    assert links[0]["institution_2"] == "b"
+    assert links[0]["joint_papers"] == 1
+    assert links[0]["materials"] == ["alpha-HgS"]
+    assert coverage["archive_authors"] == 3
+    assert coverage["verified_authors"] == 2
+    assert coverage["verified_institutions"] == 2
+    assert coverage["covered_papers"] == 2
+    assert coverage["total_papers"] == 2
+    assert coverage["uncovered_papers"] == 0
+    assert coverage["countries"] == 2
+
+
+def test_paper_coverage_leaves_unresolved_papers_visible():
+    registry = {
+        "institutions": {
+            "a": {
+                "name": "Institute A",
+                "city": "Alpha",
+                "country": "Testland",
+                "latitude": 1.0,
+                "longitude": 2.0,
+                "evidence_url": "https://example.org/a",
+            }
+        },
+        "authors": {"Ada A": {"institution_id": "a", "role": "research"}},
     }
+    papers = [
+        {"base_arxiv_id": "1", "authors": ["Ada A"]},
+        {"base_arxiv_id": "2", "authors": ["Unmapped C"]},
+    ]
+
+    _, _, coverage = institution_activity(papers, registry)
+
+    assert coverage["covered_papers"] == 1
+    assert coverage["uncovered_papers"] == 1
+
+
+def test_registry_loader_has_safe_schema_for_invalid_json(tmp_path):
+    path = tmp_path / "registry.json"
+    path.write_text("{broken", encoding="utf-8")
+
+    assert load_affiliation_registry(path) == {
+        "institutions": {},
+        "authors": {},
+        "last_verified": None,
+    }
+
+    path.write_text(json.dumps({"institutions": {}, "authors": {}}), encoding="utf-8")
+    loaded = load_affiliation_registry(path)
+    assert loaded["institutions"] == {}
+    assert loaded["authors"] == {}
