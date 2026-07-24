@@ -1292,26 +1292,38 @@ with people_tab:
     people_metrics[2].metric("Active years", len(active_years))
     people_metrics[3].metric("Most recent year", max(active_years) if active_years else "—")
 
-    st.markdown("### Research geography")
+    st.markdown("### Evidence-backed research geography")
     st.caption(
-        "Locations come only from verified paper affiliations. Marker activity is recalculated "
-        "from the current scientifically mapped archive; an author is never geocoded from their "
-        "name or assumed current workplace."
+        "This map answers where the mapped research is being produced and what each centre "
+        "contributes. Locations and roles come only from cited affiliation evidence; paper "
+        "activity, materials, years and collaboration links are recalculated from the live archive."
     )
     institutions, institution_links, geo_coverage = institution_activity(approved)
-    active_institutions = [item for item in institutions if item["author_count"]]
-    geo_metrics = st.columns(3)
-    geo_metrics[0].metric("Verified institutions", len(active_institutions))
-    geo_metrics[1].metric("Located mapped authors", geo_coverage["verified_authors"])
-    geo_metrics[2].metric(
-        "Location coverage",
-        (
-            f"{geo_coverage['verified_authors'] / geo_coverage['archive_authors']:.0%}"
-            if geo_coverage["archive_authors"]
-            else "—"
-        ),
-        help="Verified affiliation matches divided by all authors in mapped papers.",
+    active_institutions = [item for item in institutions if item.get("paper_count", 0)]
+    covered_papers = int(geo_coverage.get("covered_papers", 0) or 0)
+    total_geo_papers = int(geo_coverage.get("total_papers", len(approved)) or 0)
+    country_count = int(
+        geo_coverage.get(
+            "countries",
+            len({item.get("country") for item in active_institutions if item.get("country")}),
+        )
+        or 0
     )
+    paper_coverage = covered_papers / total_geo_papers if total_geo_papers else 0.0
+    geo_metrics = st.columns(4)
+    geo_metrics[0].metric("Represented papers", f"{covered_papers} / {total_geo_papers}")
+    geo_metrics[1].metric("Verified institutions", len(active_institutions))
+    geo_metrics[2].metric("Verified authors", int(geo_coverage.get("verified_authors", 0) or 0))
+    geo_metrics[3].metric("Countries", country_count)
+    st.progress(
+        paper_coverage,
+        text=f"{paper_coverage:.1%} of scientifically mapped papers have at least one verified institution",
+    )
+    st.caption(
+        f"Registry checked {geo_coverage.get('registry_updated') or 'date unavailable'} · "
+        f"{int(geo_coverage.get('uncovered_papers', 0) or 0)} papers remain explicitly unresolved."
+    )
+
     if active_institutions and go is not None:
         projection_label = st.segmented_control(
             "Map view",
@@ -1320,46 +1332,63 @@ with people_tab:
             key="research_geo_projection",
         )
         projection = "natural earth" if projection_label == "World map" else "equirectangular"
-        by_name = {item["institution"]: item for item in active_institutions}
+        by_id = {item["id"]: item for item in active_institutions}
         map_figure = go.Figure()
         for link in institution_links:
-            first = by_name.get(link["institution_1"])
-            second = by_name.get(link["institution_2"])
+            first = by_id.get(link["institution_1"])
+            second = by_id.get(link["institution_2"])
             if not first or not second:
                 continue
+            shared_materials = ", ".join(link.get("materials", [])) or "not classified"
+            titles = "<br>• ".join(link.get("titles", [])[:3])
             map_figure.add_trace(
                 go.Scattergeo(
                     lon=[first["longitude"], second["longitude"]],
                     lat=[first["latitude"], second["latitude"]],
                     mode="lines",
-                    line={"width": 1 + min(link["joint_papers"], 4), "color": "#67e8f9"},
-                    opacity=0.35,
+                    line={
+                        "width": 1 + min(link["joint_papers"], 4),
+                        "color": "rgba(103,232,249,.75)",
+                    },
+                    opacity=0.5,
                     hoverinfo="text",
                     text=(
-                        f"{first['institution']} ↔ {second['institution']}<br>"
-                        f"{link['joint_papers']} joint mapped paper(s)"
+                        f"<b>{first['institution']} ↔ {second['institution']}</b><br>"
+                        f"Shared mapped papers: {link['joint_papers']}<br>"
+                        f"Materials: {shared_materials}"
+                        + (f"<br>• {titles}" if titles else "")
                     ),
                     showlegend=False,
                 )
             )
+
         map_figure.add_trace(
             go.Scattergeo(
                 lon=[item["longitude"] for item in active_institutions],
                 lat=[item["latitude"] for item in active_institutions],
                 mode="markers",
                 marker={
-                    "size": [12 + 4 * item["author_count"] for item in active_institutions],
+                    "size": [14 + 6 * min(item["paper_count"] ** 0.5, 4) for item in active_institutions],
                     "color": [item["paper_count"] for item in active_institutions],
-                    "colorscale": [[0, "#8b5cf6"], [1, "#22d3ee"]],
-                    "line": {"color": "#f8fafc", "width": 1},
-                    "colorbar": {"title": "Mapped<br>papers", "thickness": 10},
+                    "colorscale": [
+                        [0.0, "#fde68a"],
+                        [0.35, "#fb923c"],
+                        [0.7, "#a78bfa"],
+                        [1.0, "#22d3ee"],
+                    ],
+                    "line": {"color": "#f8fafc", "width": 1.4},
+                    "colorbar": {"title": "Unique<br>papers", "thickness": 11},
+                    "cmin": 0,
                 },
                 customdata=[
                     [
                         item["institution"],
                         f"{item['city']}, {item['country']}",
+                        item.get("institution_type", "Research institution"),
                         ", ".join(item["mapped_authors"]),
                         item["paper_count"],
+                        ", ".join(item.get("roles", [])) or "research",
+                        ", ".join(item.get("materials", [])) or "not classified",
                         (
                             "—"
                             if not item["years"]
@@ -1374,9 +1403,12 @@ with people_tab:
                 ],
                 hovertemplate=(
                     "<b>%{customdata[0]}</b><br>%{customdata[1]}<br>"
-                    "Mapped authors: %{customdata[2]}<br>"
-                    "Mapped papers: %{customdata[3]}<br>"
-                    "Active years: %{customdata[4]}<extra></extra>"
+                    "%{customdata[2]}<br>"
+                    "Verified authors: %{customdata[3]}<br>"
+                    "Unique mapped papers: %{customdata[4]}<br>"
+                    "Research roles: %{customdata[5]}<br>"
+                    "Materials: %{customdata[6]}<br>"
+                    "Active years: %{customdata[7]}<extra></extra>"
                 ),
                 showlegend=False,
             )
@@ -1384,16 +1416,19 @@ with people_tab:
         map_figure.update_geos(
             projection_type=projection,
             showland=True,
-            landcolor="#172033",
+            landcolor="#243248",
             showocean=True,
-            oceancolor="#070d1b",
+            oceancolor="#071525",
+            showlakes=True,
+            lakecolor="#0b2035",
             showcountries=True,
-            countrycolor="#334155",
-            coastlinecolor="#475569",
+            countrycolor="#64748b",
+            coastlinecolor="#94a3b8",
+            coastlinewidth=0.8,
             bgcolor="rgba(0,0,0,0)",
         )
         map_figure.update_layout(
-            height=500,
+            height=520,
             margin={"l": 0, "r": 0, "t": 8, "b": 0},
             paper_bgcolor="rgba(0,0,0,0)",
             font={"color": "#e2e8f0"},
@@ -1405,37 +1440,53 @@ with people_tab:
             [item["institution"] for item in active_institutions],
             key="people_institution",
         )
-        institution = by_name[selected_institution]
+        institution = next(
+            item for item in active_institutions if item["institution"] == selected_institution
+        )
         with st.container(border=True):
             st.markdown(f"#### {institution['institution']}")
-            st.caption(f"{institution['city']}, {institution['country']}")
-            st.write(
-                "**Verified authors in this archive:** " + ", ".join(institution["mapped_authors"])
+            st.caption(
+                f"{institution['city']}, {institution['country']} · "
+                f"{institution.get('institution_type', 'Research institution')}"
             )
-            st.write(
-                f"**Live mapped activity:** {institution['paper_count']} paper(s) across "
-                + (
-                    ", ".join(str(year) for year in institution["years"])
-                    if institution["years"]
-                    else "no dated mapped records"
-                )
+            detail_columns = st.columns(3)
+            detail_columns[0].metric("Unique mapped papers", institution["paper_count"])
+            detail_columns[1].metric("Verified authors", institution["author_count"])
+            detail_columns[2].metric(
+                "Active span",
+                (
+                    "—"
+                    if not institution["years"]
+                    else (
+                        str(institution["years"][0])
+                        if len(institution["years"]) == 1
+                        else f"{institution['years'][0]}–{institution['years'][-1]}"
+                    )
+                ),
             )
-            st.link_button("Verify paper affiliation ↗", institution["evidence_url"])
+            st.write("**Verified authors:** " + ", ".join(institution["mapped_authors"]))
+            st.write("**Research roles:** " + (", ".join(institution.get("roles", [])) or "—"))
+            if institution.get("materials"):
+                st.write("**Materials represented:** " + ", ".join(institution["materials"]))
+            if institution.get("directions"):
+                st.write("**Research directions:** " + ", ".join(institution["directions"]))
+            if institution.get("contributions"):
+                st.markdown("**Evidence-backed contribution context**")
+                for contribution in institution["contributions"]:
+                    st.markdown(f"- {contribution}")
+            st.link_button("Open affiliation evidence ↗", institution["evidence_url"])
     elif active_institutions:
         st.warning(
-            "The interactive geography map is temporarily unavailable while its visualization "
-            "dependency is being installed. Author, year and collaboration analysis remains "
-            "available below."
+            "The interactive geography map is temporarily unavailable while Plotly is being "
+            "installed. Coverage statistics and all author analysis remain available."
         )
     else:
+        st.info("Verified institution markers will appear when matched authors enter the field map.")
+
+    if int(geo_coverage.get("uncovered_papers", 0) or 0):
         st.info(
-            "Verified institution markers will appear when matched authors enter the field map."
-        )
-    if geo_coverage["archive_authors"] > geo_coverage["verified_authors"]:
-        st.warning(
-            f"{geo_coverage['archive_authors'] - geo_coverage['verified_authors']} mapped authors "
-            "do not yet have a paper-verified location. They remain visible in the author analysis "
-            "below but are deliberately omitted from the geographic map."
+            "Unresolved papers stay in the author and co-authorship analysis but are omitted from "
+            "the geographic layer until a reliable paper or institutional source is recorded."
         )
 
     if not people:
