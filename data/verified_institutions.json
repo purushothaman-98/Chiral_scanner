@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "description": "Evidence-backed affiliations for authors present in scientifically mapped Chiral Scanner papers. Locations are never inferred from names.",
+  "institutions": {
+    "tokyo-tech": {
+      "name": "Tokyo Institute of Technology",
+      "short_name": "Tokyo Tech",
+      "city": "Tokyo",
+      "country": "Japan",
+      "latitude": 35.605,
+      "longitude": 139.684,
+      "institution_type": "Ultrafast chiral-phonon experiments and theory",
+      "evidence_url": "https://www.nature.com/articles/s41567-022-01790-x#author-information"
+    },
+    "osaka-metropolitan": {
+      "name": "Osaka Metropolitan University",
+      "short_name": "OMU",
+      "city": "Osaka",
+      "country": "Japan",
+      "latitude": 34.598,
+      "longitude": 135.507,
+      "institution_type": "Chiral-crystal experiments",
+      "evidence_url": "https://www.nature.com/articles/s41567-022-01790-x#author-information"
+    },
+    "okayama": {
+      "name": "Okayama University",
+      "short_name": "Okayama",
+      "city": "Okayama",
+      "country": "Japan",
+      "latitude": 34.687,
+      "longitude": 133.92,
+      "institution_type": "Crystal growth and characterization",
+      "evidence_url": "https://www.nature.com/articles/s41567-022-01790-x#author-information"
+    },
+    "ouj": {
+      "name": "Open University of Japan",
+      "short_name": "OUJ",
+      "city": "Chiba",
+      "country": "Japan",
+      "latitude": 35.647,
+      "longitude": 140.049,
+      "institution_type": "Chirality and lattice-dynamics theory",
+      "evidence_url": "https://www.nature.com/articles/s41567-022-01790-x#author-information"
+    },
+    "ims-okazaki": {
+      "name": "Institute for Molecular Science",
+      "short_name": "IMS",
+      "city": "Okazaki",
+      "country": "Japan",
+      "latitude": 34.952,
+      "longitude": 137.165,
+      "institution_type": "Molecular and lattice-dynamics theory",
+      "evidence_url": "https://www.nature.com/articles/s41567-022-01790-x#author-information"
+    }
+  },
+  "authors": {
+    "Kyosuke Ishito": {
+      "institution_ids": [
+        "tokyo-tech"
+      ],
+      "role": "ultrafast spectroscopy",
+      "contribution": "Experimental observation and characterization of truly chiral phonons in α-HgS.",
+      "evidence_url": "https://www.nature.com/articles/s41567-022-01790-x#author-information"
+    },
+    "Huiling Mao": {
+      "institution_ids": [
+        "tokyo-tech"
+      ],
+      "role": "chiral-phonon theory",
+      "contribution": "Theory and interpretation of phonon angular momentum and chirality.",
+      "evidence_url": "https://www.nature.com/articles/s41567-022-01790-x#author-information"
+    },
+    "Tiantian Zhang": {
+      "institution_ids": [
+        "tokyo-tech"
+      ],
+      "role": "first-principles theory",
+      "contribution": "First-principles analysis supporting mode assignment and chirality.",
+      "evidence_url": "https://www.nature.com/articles/s41567-022-01790-x#author-information"
+    },
+    "Shuichi Murakami": {
+      "institution_ids": [
+        "tokyo-tech"
+      ],
+      "role": "topological and chiral-phonon theory",
+      "contribution": "Theoretical framework connecting crystal chirality and phonon angular momentum.",
+      "evidence_url": "https://www.nature.com/articles/s41567-022-01790-x#author-information"
+    },
+    "Takuya Satoh": {
+      "institution_ids": [
+        "tokyo-tech"
+      ],
+      "role": "ultrafast spectroscopy",
+      "contribution": "Experimental leadership in polarization-resolved chiral-phonon measurements.",
+      "evidence_url": "https://www.nature.com/articles/s41567-022-01790-x#author-information"
+    },
+    "Yusuke Kousaka": {
+      "institution_ids": [
+        "osaka-metropolitan",
+        "okayama"
+      ],
+      "role": "chiral-crystal experiments",
+      "contribution": "Chiral-crystal preparation and experimental characterization.",
+      "evidence_url": "https://www.nature.com/articles/s41567-022-01790-x#author-information"
+    },
+    "Yoshihiko Togawa": {
+      "institution_ids": [
+        "osaka-metropolitan"
+      ],
+      "role": "chiral-materials experiments",
+      "contribution": "Experimental expertise in structurally chiral quantum materials.",
+      "evidence_url": "https://www.nature.com/articles/s41567-022-01790-x#author-information"
+    },
+    "Satoshi Iwasaki": {
+      "institution_ids": [
+        "okayama"
+      ],
+      "role": "materials characterization",
+      "contribution": "Crystal and materials characterization for α-HgS measurements.",
+      "evidence_url": "https://www.nature.com/articles/s41567-022-01790-x#author-information"
+    },
+    "Jun-ichiro Kishine": {
+      "institution_ids": [
+        "ouj",
+        "ims-okazaki"
+      ],
+      "role": "chirality theory",
+      "contribution": "Theory of structural chirality and handed collective excitations.",
+      "evidence_url": "https://www.nature.com/articles/s41567-022-01790-x#author-information"
+    }
+  },
+  "last_verified": "2026-07-24"
+}
