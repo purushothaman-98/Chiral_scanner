@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-07-26T10:12:00.062766+00:00",
+  "updated_at": "2026-07-26T10:23:17.667079+00:00",
   "papers": [
     {
       "base_arxiv_id": "2607.21525",
@@ -60037,8 +60037,63 @@
       },
       "first_seen_at": "2026-07-26T10:12:00.062135+00:00",
       "last_seen_at": "2026-07-26T10:12:00.062135+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
+      "ai_decision": {
+        "include_in_feed": true,
+        "relevance": "Core chiral-phonon paper",
+        "research_type": "Computational / theoretical",
+        "paper_nature": "Original research",
+        "materials_or_systems": [],
+        "material_or_system_family": [
+          "Other / unspecified"
+        ],
+        "research_focus": [
+          "Dynamical multiferroicity / phonomagnetism",
+          "Magnon-phonon or spin-phonon angular-momentum transfer",
+          "Nonlinear / helical phononics"
+        ],
+        "chirality_class": [
+          "Dynamically induced chirality"
+        ],
+        "phonon_character": [
+          "Not specified"
+        ],
+        "generation_mechanisms": [
+          "Theoretical eigenmode construction"
+        ],
+        "experimental_methods": [],
+        "excitation_methods": [
+          "Other / unspecified excitation"
+        ],
+        "detection_methods": [],
+        "computational_methods": [
+          "Molecular or spin-lattice dynamics",
+          "Model Hamiltonian / tight binding"
+        ],
+        "physical_properties": [
+          "Real-space circular/elliptical ionic motion",
+          "Phonon angular momentum"
+        ],
+        "evidence_level": "Indirect experimental inference plus modelling",
+        "evidence_caveats": [
+          "chirality inferred rather than directly observed"
+        ],
+        "application_directions": [
+          "Ultrafast magnetic control",
+          "Fundamental symmetry / selection rules"
+        ],
+        "confidence": 0.8,
+        "reason": "The paper theoretically studies phonon-driven multipolar dynamics in a Mott insulator, showing chiral phonon dynamics induced below an octupolar phase transition and phonon-driven control of multipolar order. This involves phonon angular momentum and dynamically induced chirality, supported by simulations of coupled spin-phonon dynamics. No direct experimental detection is reported, so evidence is indirect inference plus modelling.",
+        "supporting_phrases": [
+          "chiral phonon dynamics",
+          "phonon-driven dynamics",
+          "multipolar precession",
+          "coupled spin-phonon equations of motion"
+        ]
+      },
+      "ai_fingerprint": "e18237409f593c1f3052af430f290fea201d8450840fdb8909f2a527fdf81d7f",
+      "ai_prompt_version": "chiral-phonons-v3.0",
+      "ai_model": "openai/gpt-4.1-mini",
+      "ai_classified_at": "2026-07-26T10:21:28.025235+00:00"
     },
     {
       "base_arxiv_id": "2503.00652",
@@ -64367,8 +64422,62 @@
       },
       "first_seen_at": "2026-07-26T10:12:00.062141+00:00",
       "last_seen_at": "2026-07-26T10:12:00.062141+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
+      "ai_decision": {
+        "include_in_feed": true,
+        "relevance": "Uncertain",
+        "research_type": "Computational / theoretical",
+        "paper_nature": "Original research",
+        "materials_or_systems": [
+          "Haldane model",
+          "Kane-Mele model"
+        ],
+        "material_or_system_family": [
+          "Other / unspecified"
+        ],
+        "research_focus": [
+          "Phonon magnetic moment / Zeeman physics",
+          "Intrinsic/symmetry-defined chiral phonons"
+        ],
+        "chirality_class": [
+          "Claimed or ambiguous chirality"
+        ],
+        "phonon_character": [
+          "Zone-centre (Gamma)",
+          "Optical"
+        ],
+        "generation_mechanisms": [
+          "Intrinsic crystal symmetry"
+        ],
+        "experimental_methods": [],
+        "excitation_methods": [],
+        "detection_methods": [],
+        "computational_methods": [
+          "Model Hamiltonian / tight binding"
+        ],
+        "physical_properties": [
+          "Phonon angular momentum"
+        ],
+        "evidence_level": "Model / theory proposal",
+        "evidence_caveats": [
+          "chirality inferred rather than directly observed",
+          "phonon angular momentum not explicitly established"
+        ],
+        "application_directions": [
+          "Fundamental symmetry / selection rules"
+        ],
+        "confidence": 0.7,
+        "reason": "The paper studies phonon frequency splitting related to chiral effects at the zone center in topological models, linking Born effective charges and Berry curvature to phonon properties. However, phonon angular momentum or chirality is inferred from frequency splitting and Berry curvature rather than directly established or observed, making the chirality claim ambiguous but relevant to chiral phonon research.",
+        "supporting_phrases": [
+          "Born effective charges are nearly quantized",
+          "chiral splitting of the zone-center phonon frequencies",
+          "topological phase transition",
+          "time-reversal symmetry breaking"
+        ]
+      },
+      "ai_fingerprint": "d6c18382537d17a5fb42e5a91ba7a621109834ddcf431a34453fef4c8e31e316",
+      "ai_prompt_version": "chiral-phonons-v3.0",
+      "ai_model": "openai/gpt-4.1-mini",
+      "ai_classified_at": "2026-07-26T10:23:17.236628+00:00"
     },
     {
       "base_arxiv_id": "2407.05245",
@@ -74203,8 +74312,51 @@
       },
       "first_seen_at": "2026-07-26T10:12:00.062143+00:00",
       "last_seen_at": "2026-07-26T10:12:00.062143+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
+      "ai_decision": {
+        "include_in_feed": false,
+        "relevance": "Not relevant",
+        "research_type": "Computational / theoretical",
+        "paper_nature": "Original research",
+        "materials_or_systems": [],
+        "material_or_system_family": [
+          "Other / unspecified"
+        ],
+        "research_focus": [
+          "Topological / valley phonons"
+        ],
+        "chirality_class": [
+          "Not established"
+        ],
+        "phonon_character": [
+          "Acoustic"
+        ],
+        "generation_mechanisms": [],
+        "experimental_methods": [],
+        "excitation_methods": [],
+        "detection_methods": [],
+        "computational_methods": [],
+        "physical_properties": [],
+        "evidence_level": "Insufficient abstract evidence",
+        "evidence_caveats": [
+          "chirality not established"
+        ],
+        "application_directions": [
+          "Materials discovery / design"
+        ],
+        "confidence": 0.3,
+        "reason": "The paper focuses on topological phononic crystals and acoustic wave manipulation including rainbow trapping and energy harvesting. There is no mention or evidence of phonon chirality, phonon angular momentum, circular ionic motion, or related chiral phonon phenomena. The topological aspect relates to waveguiding and trapping, not chiral phonons.",
+        "supporting_phrases": [
+          "Topological phononic crystals",
+          "acoustic waves",
+          "gradient PC structures",
+          "topological rainbow trapping",
+          "broadband acoustic energy harvesting"
+        ]
+      },
+      "ai_fingerprint": "784b349e3214639c82699edd1494e90ab49d95fe9b0776ea5adc44272f676cc3",
+      "ai_prompt_version": "chiral-phonons-v3.0",
+      "ai_model": "openai/gpt-4.1-mini",
+      "ai_classified_at": "2026-07-26T10:21:37.321213+00:00"
     },
     {
       "base_arxiv_id": "2409.20526",
@@ -87936,8 +88088,60 @@
       },
       "first_seen_at": "2026-07-26T10:12:00.062162+00:00",
       "last_seen_at": "2026-07-26T10:12:00.062162+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
+      "ai_decision": {
+        "include_in_feed": true,
+        "relevance": "Core chiral-phonon paper",
+        "research_type": "Computational / theoretical",
+        "paper_nature": "Original research",
+        "materials_or_systems": [],
+        "material_or_system_family": [
+          "Other / unspecified"
+        ],
+        "research_focus": [
+          "Intrinsic/symmetry-defined chiral phonons"
+        ],
+        "chirality_class": [
+          "Pseudo-angular momentum / valley chirality"
+        ],
+        "phonon_character": [
+          "Finite-momentum / valley"
+        ],
+        "generation_mechanisms": [
+          "Theoretical eigenmode construction"
+        ],
+        "experimental_methods": [],
+        "excitation_methods": [
+          "Other / unspecified excitation"
+        ],
+        "detection_methods": [
+          "Other / unspecified detection"
+        ],
+        "computational_methods": [
+          "Model Hamiltonian / tight binding"
+        ],
+        "physical_properties": [
+          "Phonon pseudo-angular momentum"
+        ],
+        "evidence_level": "Model / theory proposal",
+        "evidence_caveats": [
+          "pseudo-angular momentum only",
+          "deficiencies of typical momentum-resolved electron energy loss measurements"
+        ],
+        "application_directions": [
+          "Fundamental symmetry / selection rules"
+        ],
+        "confidence": 0.8,
+        "reason": "The paper focuses on chiral phonons with valley pseudo angular momentum and proposes a theoretical method using phase-structured free electrons to detect them, addressing limitations of current momentum-resolved electron energy loss measurements. The focus is on pseudo-angular momentum rather than real-space phonon angular momentum or circular ionic motion.",
+        "supporting_phrases": [
+          "chiral phonons possessing valley pseudo angular momentum (PAM)",
+          "pinwheel free electron states with well-defined PAM",
+          "Transitions between such states generate 2D periodic arrays of in-plane field vortices with polarization textures tailored to selectively couple to desired chiral mode symmetries"
+        ]
+      },
+      "ai_fingerprint": "14a6608c05e281f59ea739b9f0aff030cf1aa9da0a998f44c6d055ec923e5d49",
+      "ai_prompt_version": "chiral-phonons-v3.0",
+      "ai_model": "openai/gpt-4.1-mini",
+      "ai_classified_at": "2026-07-26T10:21:46.642971+00:00"
     },
     {
       "base_arxiv_id": "2407.21379",
@@ -88362,8 +88566,63 @@
       },
       "first_seen_at": "2026-07-26T10:12:00.062167+00:00",
       "last_seen_at": "2026-07-26T10:12:00.062167+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
+      "ai_decision": {
+        "include_in_feed": false,
+        "relevance": "Not relevant",
+        "research_type": "Computational / theoretical",
+        "paper_nature": "Original research",
+        "materials_or_systems": [
+          "wurtzite GaN",
+          "wurtzite AlN"
+        ],
+        "material_or_system_family": [
+          "Semiconductors"
+        ],
+        "research_focus": [
+          "Topological / valley phonons"
+        ],
+        "chirality_class": [
+          "Not established"
+        ],
+        "phonon_character": [
+          "Not specified"
+        ],
+        "generation_mechanisms": [
+          "Intrinsic crystal symmetry",
+          "Theoretical eigenmode construction"
+        ],
+        "experimental_methods": [],
+        "excitation_methods": [],
+        "detection_methods": [],
+        "computational_methods": [
+          "Model Hamiltonian / tight binding",
+          "Group theory / symmetry analysis"
+        ],
+        "physical_properties": [
+          "Berry curvature / Chern topology"
+        ],
+        "evidence_level": "First-principles prediction",
+        "evidence_caveats": [
+          "topological phonons studied but no explicit phonon angular momentum or chirality"
+        ],
+        "application_directions": [
+          "Materials discovery / design",
+          "Fundamental symmetry / selection rules"
+        ],
+        "confidence": 0.7,
+        "reason": "The paper studies topological phonon phase transitions and Weyl phonons in GaN and AlN, focusing on interatomic force constants and topology. However, it does not address phonon chirality, angular momentum, or circular ionic motion, so it is not relevant to chiral phonon research.",
+        "supporting_phrases": [
+          "topological phonons",
+          "Weyl phonons",
+          "Chern number",
+          "phonon phase transitions",
+          "interatomic force constant (IFC) models"
+        ]
+      },
+      "ai_fingerprint": "7c6409c28f69f600fd67bc8d3644ced05c302a27043d6edae5df07bf56022439",
+      "ai_prompt_version": "chiral-phonons-v3.0",
+      "ai_model": "openai/gpt-4.1-mini",
+      "ai_classified_at": "2026-07-26T10:21:55.873332+00:00"
     },
     {
       "base_arxiv_id": "2407.15993",
@@ -93119,8 +93378,63 @@
       },
       "first_seen_at": "2026-07-26T10:12:00.062200+00:00",
       "last_seen_at": "2026-07-26T10:12:00.062200+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
+      "ai_decision": {
+        "include_in_feed": false,
+        "relevance": "Not relevant",
+        "research_type": "Computational / theoretical",
+        "paper_nature": "Original research",
+        "materials_or_systems": [
+          "transition metal dichalcogenides"
+        ],
+        "material_or_system_family": [
+          "Transition-metal dichalcogenides"
+        ],
+        "research_focus": [
+          "Cavity / polariton / photon-phonon coupling"
+        ],
+        "chirality_class": [
+          "Not established"
+        ],
+        "phonon_character": [
+          "Raman-active",
+          "Optical"
+        ],
+        "generation_mechanisms": [
+          "Theoretical eigenmode construction"
+        ],
+        "experimental_methods": [],
+        "excitation_methods": [
+          "Other / unspecified excitation"
+        ],
+        "detection_methods": [
+          "Other / unspecified detection"
+        ],
+        "computational_methods": [
+          "Model Hamiltonian / tight binding",
+          "Group theory / symmetry analysis"
+        ],
+        "physical_properties": [],
+        "evidence_level": "Model / theory proposal",
+        "evidence_caveats": [
+          "chirality not established",
+          "phonon angular momentum not addressed"
+        ],
+        "application_directions": [
+          "Materials discovery / design"
+        ],
+        "confidence": 0.7,
+        "reason": "The paper proposes a theoretical model for phonon-polariton condensation involving Raman-active phonon modes hybridized with cavity photons. However, it does not address phonon chirality, angular momentum, or circular ionic motion, nor does it establish chiral phonon properties. The focus is on phonon-polariton condensation and superradiant phases, not chiral phonons.",
+        "supporting_phrases": [
+          "phonon polaritons",
+          "Raman-active phonon mode",
+          "phonon-polariton condensate",
+          "transition metal dichalcogenides"
+        ]
+      },
+      "ai_fingerprint": "0e8cc13bbe9546440844cff6321b7b10e94c755251da4daa3685c3910dc9070c",
+      "ai_prompt_version": "chiral-phonons-v3.0",
+      "ai_model": "openai/gpt-4.1-mini",
+      "ai_classified_at": "2026-07-26T10:22:04.223777+00:00"
     },
     {
       "base_arxiv_id": "2405.05108",
@@ -93315,8 +93629,60 @@
       },
       "first_seen_at": "2026-07-26T10:12:00.062211+00:00",
       "last_seen_at": "2026-07-26T10:12:00.062211+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
+      "ai_decision": {
+        "include_in_feed": false,
+        "relevance": "Not relevant",
+        "research_type": "Computational / theoretical",
+        "paper_nature": "Original research",
+        "materials_or_systems": [
+          "CH3NH3PbI3"
+        ],
+        "material_or_system_family": [
+          "Perovskite oxides"
+        ],
+        "research_focus": [
+          "Nonlinear / helical phononics"
+        ],
+        "chirality_class": [
+          "Not established"
+        ],
+        "phonon_character": [
+          "Optical"
+        ],
+        "generation_mechanisms": [
+          "Theoretical eigenmode construction"
+        ],
+        "experimental_methods": [],
+        "excitation_methods": [
+          "Other / unspecified excitation"
+        ],
+        "detection_methods": [],
+        "computational_methods": [
+          "First-principles electron-phonon coupling",
+          "Molecular or spin-lattice dynamics"
+        ],
+        "physical_properties": [
+          "Nonlinear phonon coupling"
+        ],
+        "evidence_level": "First-principles prediction",
+        "evidence_caveats": [
+          "chirality not established or discussed"
+        ],
+        "application_directions": [
+          "Materials discovery / design"
+        ],
+        "confidence": 0.7,
+        "reason": "The paper studies coherent phononic coupling and entropy transfer in metal halide perovskites, focusing on nonlinear phonon interactions and anharmonicity. However, it does not discuss phonon chirality, angular momentum, or circular ionic motion, so it is not relevant to chiral phonon research.",
+        "supporting_phrases": [
+          "coherent phononic coupling pathways",
+          "bi-directional time-frequency transfer of these diverse phonon modes",
+          "dynamic anharmonicity"
+        ]
+      },
+      "ai_fingerprint": "f04407ad8f238c7c7fb2d3cafcdd08aada2c1f9f712809c5bbf5431f7a618cdb",
+      "ai_prompt_version": "chiral-phonons-v3.0",
+      "ai_model": "openai/gpt-4.1-mini",
+      "ai_classified_at": "2026-07-26T10:22:12.592262+00:00"
     },
     {
       "base_arxiv_id": "2405.01914",
@@ -93466,8 +93832,56 @@
       },
       "first_seen_at": "2026-07-26T10:12:00.062219+00:00",
       "last_seen_at": "2026-07-26T10:12:00.062219+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
+      "ai_decision": {
+        "include_in_feed": true,
+        "relevance": "Uncertain",
+        "research_type": "Computational / theoretical",
+        "paper_nature": "Uncertain",
+        "materials_or_systems": [],
+        "material_or_system_family": [
+          "Other / unspecified"
+        ],
+        "research_focus": [
+          "Dynamical multiferroicity / phonomagnetism"
+        ],
+        "chirality_class": [
+          "Claimed or ambiguous chirality"
+        ],
+        "phonon_character": [
+          "Polar / ferroelectric soft mode"
+        ],
+        "generation_mechanisms": [
+          "Circular/elliptical THz resonant drive"
+        ],
+        "experimental_methods": [],
+        "excitation_methods": [
+          "Circular/elliptical THz excitation"
+        ],
+        "detection_methods": [],
+        "computational_methods": [],
+        "physical_properties": [
+          "Effective / transient magnetic field"
+        ],
+        "evidence_level": "Model / theory proposal",
+        "evidence_caveats": [
+          "chirality inferred rather than directly observed",
+          "phonon angular momentum not established"
+        ],
+        "application_directions": [
+          "Ultrafast magnetic control"
+        ],
+        "confidence": 0.7,
+        "reason": "The paper discusses circularly polarized phonons and their role in generating effective magnetic fields via electron-phonon coupling, challenging the notion that ionic motion chirality directly causes magnetophononics. It focuses on phonon-induced magnetic activity but clarifies that phonon chirality itself is not the origin, making the chirality claim ambiguous and theoretical.",
+        "supporting_phrases": [
+          "coherent state of circularly polarized phonons",
+          "effective field can reach magnitudes as high as 100 T",
+          "chirality the photons transferred to the ions plays no role in magnetophononics"
+        ]
+      },
+      "ai_fingerprint": "ec97ae43691490b92e86b1d97043a208e6896d4722fa31c8079409be231c759d",
+      "ai_prompt_version": "chiral-phonons-v3.0",
+      "ai_model": "openai/gpt-4.1-mini",
+      "ai_classified_at": "2026-07-26T10:22:20.612536+00:00"
     },
     {
       "base_arxiv_id": "2404.19436",
@@ -93522,8 +93936,66 @@
       },
       "first_seen_at": "2026-07-26T10:12:00.062224+00:00",
       "last_seen_at": "2026-07-26T10:12:00.062224+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
+      "ai_decision": {
+        "include_in_feed": true,
+        "relevance": "Core chiral-phonon paper",
+        "research_type": "Computational / theoretical",
+        "paper_nature": "Original research",
+        "materials_or_systems": [],
+        "material_or_system_family": [
+          "Other / unspecified"
+        ],
+        "research_focus": [
+          "Dynamical multiferroicity / phonomagnetism",
+          "Nonlinear / helical phononics",
+          "Magnon-phonon or spin-phonon angular-momentum transfer"
+        ],
+        "chirality_class": [
+          "Dynamically induced chirality"
+        ],
+        "phonon_character": [
+          "Infrared-active"
+        ],
+        "generation_mechanisms": [
+          "Mid-infrared resonant drive",
+          "Nonlinear phonon-phonon coupling",
+          "Magnetic-order / magnon hybridization"
+        ],
+        "experimental_methods": [],
+        "excitation_methods": [
+          "Optical pump excitation"
+        ],
+        "detection_methods": [],
+        "computational_methods": [
+          "Model Hamiltonian / tight binding",
+          "Group theory / symmetry analysis"
+        ],
+        "physical_properties": [
+          "Real-space circular/elliptical ionic motion",
+          "Transient magnetization",
+          "Nonlinear phonon coupling",
+          "Angular-momentum transfer"
+        ],
+        "evidence_level": "Model / theory proposal",
+        "evidence_caveats": [
+          "chirality inferred rather than directly observed"
+        ],
+        "application_directions": [
+          "Ultrafast magnetic control"
+        ],
+        "confidence": 0.8,
+        "reason": "The paper theoretically studies nonlinear phononics involving coherently excited infrared-active phonons that generate nonlinear electric polarizations and magnetizations via phonon-phonon and phonon-magnon interactions. It predicts a hybrid magneto-opto-phononic inverse Faraday effect, indicating dynamical multiferroicity and angular-momentum transfer involving phonons. Although no direct experimental evidence is reported, the focus on phonon-driven magnetization and nonlinear phonon coupling,",
+        "supporting_phrases": [
+          "coherently excited infrared-active phonons",
+          "nonlinear electric polarizations and magnetizations via phonon-phonon and phonon-magnon interactions",
+          "hybrid magneto-opto-phononic inverse Faraday effect involving photon-phonon-magnon scattering",
+          "nonlinear phononics as a pathway to controlling the electric polarization and magnetization in solids"
+        ]
+      },
+      "ai_fingerprint": "adaf0a5162bcd2fb04213ab7104be42fb60b1bfce7c08e3b12c0b42de23eb977",
+      "ai_prompt_version": "chiral-phonons-v3.0",
+      "ai_model": "openai/gpt-4.1-mini",
+      "ai_classified_at": "2026-07-26T10:22:31.311527+00:00"
     },
     {
       "base_arxiv_id": "2404.19000",
@@ -93578,8 +94050,58 @@
       },
       "first_seen_at": "2026-07-26T10:12:00.062226+00:00",
       "last_seen_at": "2026-07-26T10:12:00.062226+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
+      "ai_decision": {
+        "include_in_feed": true,
+        "relevance": "Core chiral-phonon paper",
+        "research_type": "Computational / theoretical",
+        "paper_nature": "Original research",
+        "materials_or_systems": [
+          "DNA double helix"
+        ],
+        "material_or_system_family": [
+          "Other / unspecified"
+        ],
+        "research_focus": [
+          "Magnon-phonon or spin-phonon angular-momentum transfer"
+        ],
+        "chirality_class": [
+          "Phonon angular momentum",
+          "True structural/eigenmode chirality"
+        ],
+        "phonon_character": [
+          "Not specified"
+        ],
+        "generation_mechanisms": [
+          "Intrinsic crystal symmetry"
+        ],
+        "experimental_methods": [],
+        "excitation_methods": [],
+        "detection_methods": [],
+        "computational_methods": [
+          "Model Hamiltonian / tight binding"
+        ],
+        "physical_properties": [
+          "Phonon angular momentum"
+        ],
+        "evidence_level": "Model / theory proposal",
+        "evidence_caveats": [
+          "chirality inferred rather than directly observed"
+        ],
+        "application_directions": [
+          "Spintronics / orbitronics"
+        ],
+        "confidence": 0.8,
+        "reason": "The paper models electron transport along DNA mediated by chiral phonon-assisted hopping, involving coupling between electron spin and chiral phonon vorticity, indicating phonon angular momentum and true chirality. However, the chirality is inferred from the model without direct phonon observation.",
+        "supporting_phrases": [
+          "electrons are transported by chiral phonon-assisted hopping",
+          "coupling between the electron spin and the vorticity of chiral phonons",
+          "electric toroidal monopole appears in the charge-to-spin conductances as a manifestation of true chirality"
+        ]
+      },
+      "ai_fingerprint": "30ebef2e9f2c811b6ea727c48db0490346711b3c95979584766ee31bde5866de",
+      "ai_prompt_version": "chiral-phonons-v3.0",
+      "ai_model": "openai/gpt-4.1-mini",
+      "ai_classified_at": "2026-07-26T10:22:39.801003+00:00"
     },
     {
       "base_arxiv_id": "2404.18360",
@@ -93681,8 +94203,61 @@
       },
       "first_seen_at": "2026-07-26T10:12:00.062232+00:00",
       "last_seen_at": "2026-07-26T10:12:00.062232+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
+      "ai_decision": {
+        "include_in_feed": true,
+        "relevance": "Core chiral-phonon paper",
+        "research_type": "Computational / theoretical",
+        "paper_nature": "Original research",
+        "materials_or_systems": [
+          "3D hexagonal close-packed phononic crystal with screw dislocation"
+        ],
+        "material_or_system_family": [
+          "Other / unspecified"
+        ],
+        "research_focus": [
+          "Intrinsic/symmetry-defined chiral phonons"
+        ],
+        "chirality_class": [
+          "Circular/elliptical phonon polarization",
+          "Claimed or ambiguous chirality"
+        ],
+        "phonon_character": [
+          "Not specified"
+        ],
+        "generation_mechanisms": [
+          "Intrinsic crystal symmetry"
+        ],
+        "experimental_methods": [],
+        "excitation_methods": [],
+        "detection_methods": [],
+        "computational_methods": [
+          "Group theory / symmetry analysis"
+        ],
+        "physical_properties": [
+          "Real-space circular/elliptical ionic motion"
+        ],
+        "evidence_level": "Indirect experimental inference plus modelling",
+        "evidence_caveats": [
+          "chirality inferred from phase difference rather than direct ionic motion observation"
+        ],
+        "application_directions": [
+          "Nonreciprocal devices",
+          "Fundamental symmetry / selection rules"
+        ],
+        "confidence": 0.7,
+        "reason": "The paper studies helical phononic modes induced by a screw dislocation, showing orthogonal displacements out of phase by 90 degrees resulting in rotational motion, i.e., circular/elliptical phonon polarization. The chirality is linked to the screw dislocation symmetry. However, no direct measurement of phonon angular momentum or ionic trajectories is reported, so chirality is inferred rather than directly observed.",
+        "supporting_phrases": [
+          "helical modes",
+          "orthogonal x- and y-directional displacements being out of phase by 90 degrees",
+          "rotational motion",
+          "helicity of the screw dislocation",
+          "symmetry of the screw dislocation"
+        ]
+      },
+      "ai_fingerprint": "e8bc60209589006e13b1adc48449e31a7b7c6a03646f047fe47c97a39b332375",
+      "ai_prompt_version": "chiral-phonons-v3.0",
+      "ai_model": "openai/gpt-4.1-mini",
+      "ai_classified_at": "2026-07-26T10:22:48.761858+00:00"
     },
     {
       "base_arxiv_id": "2404.17505",
@@ -93879,8 +94454,64 @@
       },
       "first_seen_at": "2026-07-26T10:12:00.062243+00:00",
       "last_seen_at": "2026-07-26T10:12:00.062243+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
+      "ai_decision": {
+        "include_in_feed": true,
+        "relevance": "Core chiral-phonon paper",
+        "research_type": "Computational / theoretical",
+        "paper_nature": "Original research",
+        "materials_or_systems": [
+          "γ-LiBO2"
+        ],
+        "material_or_system_family": [
+          "Ferroelectrics and polar crystals"
+        ],
+        "research_focus": [
+          "Dynamical multiferroicity / phonomagnetism"
+        ],
+        "chirality_class": [
+          "Dynamically induced chirality"
+        ],
+        "phonon_character": [
+          "Optical"
+        ],
+        "generation_mechanisms": [
+          "Circular/elliptical THz resonant drive",
+          "Mid-infrared resonant drive"
+        ],
+        "experimental_methods": [],
+        "excitation_methods": [
+          "Circular/elliptical THz excitation",
+          "Linear THz excitation"
+        ],
+        "detection_methods": [],
+        "computational_methods": [
+          "First-principles electron-phonon coupling",
+          "Model Hamiltonian / tight binding"
+        ],
+        "physical_properties": [
+          "Real-space circular/elliptical ionic motion",
+          "Transient magnetization",
+          "Structural / ferroelectric order control"
+        ],
+        "evidence_level": "Indirect experimental inference plus modelling",
+        "evidence_caveats": [
+          "chirality inferred rather than directly observed"
+        ],
+        "application_directions": [
+          "Ultrafast magnetic control",
+          "Ferroelectric / structural switching"
+        ],
+        "confidence": 0.9,
+        "reason": "The paper studies transient induction of ferroelectric polarization and magnetization via excitation of phonon modes with different polarizations, linking phonon chirality and dynamical multiferroicity. Although direct phonon angular momentum measurement is not reported, the focus on phonon mode excitation and induced multiferroic polarization fits the scope.",
+        "supporting_phrases": [
+          "transiently induced by an ultrashort laser pulse upon linearly, circularly, or elliptically polarized excitation of phonon modes",
+          "direction and magnitude of the multiferroic polarization can be controlled by the chirality of the laser pulse and the phonon modes"
+        ]
+      },
+      "ai_fingerprint": "93f691932809ebb89839d03a20eb4303878523fbb46d68b943cb417d4550ed53",
+      "ai_prompt_version": "chiral-phonons-v3.0",
+      "ai_model": "openai/gpt-4.1-mini",
+      "ai_classified_at": "2026-07-26T10:22:58.459471+00:00"
     },
     {
       "base_arxiv_id": "2404.14876",
@@ -94438,8 +95069,57 @@
       },
       "first_seen_at": "2026-07-26T10:12:00.062273+00:00",
       "last_seen_at": "2026-07-26T10:12:00.062273+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
+      "ai_decision": {
+        "include_in_feed": false,
+        "relevance": "Not relevant",
+        "research_type": "Theory + Experiment",
+        "paper_nature": "Original research",
+        "materials_or_systems": [
+          "skyrmion qubits",
+          "nanomechanical cantilevers"
+        ],
+        "material_or_system_family": [
+          "Magnetic insulators"
+        ],
+        "research_focus": [
+          "Cavity / polariton / photon-phonon coupling"
+        ],
+        "chirality_class": [
+          "Claimed or ambiguous chirality"
+        ],
+        "phonon_character": [
+          "Not specified"
+        ],
+        "generation_mechanisms": [
+          "Theoretical eigenmode construction"
+        ],
+        "experimental_methods": [],
+        "excitation_methods": [
+          "Other / unspecified excitation"
+        ],
+        "detection_methods": [],
+        "computational_methods": [],
+        "physical_properties": [],
+        "evidence_level": "Model / theory proposal",
+        "evidence_caveats": [
+          "chirality inferred rather than directly observed",
+          "phonons as quantum interfaces rather than chiral phonons"
+        ],
+        "application_directions": [
+          "Quantum sensing / metrology"
+        ],
+        "confidence": 0.3,
+        "reason": "The paper proposes a hybrid quantum system where phonons mediate coupling between skyrmion qubits, but does not study phonon chirality, phonon angular momentum, or circular ionic motion. The focus is on phonons as quantum interfaces, not chiral phonon effects. Chirality is related to skyrmions, not phonons.",
+        "supporting_phrases": [
+          "phonons as quantum interfaces",
+          "topological phonon band structure",
+          "chiral skyrmion-skyrmion interactions"
+        ]
+      },
+      "ai_fingerprint": "6935aca376009f91de5224b5e5e82e49eec4dc0ebb694677b7c4a134c857761a",
+      "ai_prompt_version": "chiral-phonons-v3.0",
+      "ai_model": "openai/gpt-4.1-mini",
+      "ai_classified_at": "2026-07-26T10:23:07.335841+00:00"
     }
   ]
 }
