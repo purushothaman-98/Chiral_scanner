@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-07-27T18:12:22.422037+00:00",
+  "updated_at": "2026-07-27T21:22:23.231336+00:00",
   "papers": [
     {
       "base_arxiv_id": "2607.21525",
@@ -68717,6 +68717,48 @@
       "ai_fingerprint": null
     },
     {
+      "base_arxiv_id": "2401.03434",
+      "current_version": 2,
+      "versioned_arxiv_id": "2401.03434v2",
+      "title": "Ground state phase diagram and the exotic phases in the spin-1/2 square lattice J1-J2-Jx model",
+      "authors": [
+        "Jianwei Yang",
+        "Zhao Liu",
+        "Ling Wang"
+      ],
+      "abstract": "The intricate interplay between frustration and spin chirality has the potential to give rise to unprecedented phases in frustrated quantum magnets. We examine the ground state phase diagram of the spin-1/2 square lattice J1-J2-Jx model by employing critical level crossings and ground state fidelity susceptibility (FS) using exact diagonalization (ED) with full lattice symmetries. Our analysis reveals the evolution of highly symmetric energy levels as a function of J2 at fixed Jx. During a magnetic to non-magnetic phase transition, the precise identification of the phase boundary is achieved through critical level crossings between the gapless excitation of a magnetic phase and the quasi-degenerate ground state of a non-magnet phase. Conversely, a direct transition between two non-magnetic phases is characterized by a FS peak accompanied by an avoided ground state level crossing, serving as a distinctive signal. Within a substantial range of Jx, we identify an anticipated chiral spin liquid (CSL) state and an adjacent nematic spin liquid (NSL) phase with a degeneracy of two on a cylinder. These two phases are demarcated by a nearly vertical boundary line at J2 = 0.65. This critical line terminates at the lower boundary of a magnetic ordered chiral spin solid (CSS) phase. We validate the topological nature of the CSL using the modular S matrix of the minimum entangled states (MES) on a torus, along with the entanglement spectra (ES) of even and odd sectors on a cylinder, employing an SU(2)-symmetric density matrix renormalization group (DMRG) method. Furthermore, we delve into a comprehensive discussion on the nature of the NSL, exploring aspects such as ground state degeneracy, the local bond energy landscape, and the singlet and triplet gaps on various tori. These analysis provide substantial evidence supporting the nematic nature of the NSL.",
+      "initial_submission_date": "2024-01-07T09:28:34Z",
+      "latest_update_date": "2025-04-19T03:50:45Z",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2401.03434v2",
+      "pdf_url": "https://arxiv.org/pdf/2401.03434v2",
+      "versions_seen": [
+        "2401.03434v2"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230770+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230770+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
       "base_arxiv_id": "2504.11842",
       "current_version": 3,
       "versioned_arxiv_id": "2504.11842v3",
@@ -73949,6 +73991,57 @@
       "ai_fingerprint": null
     },
     {
+      "base_arxiv_id": "2401.02280",
+      "current_version": 4,
+      "versioned_arxiv_id": "2401.02280v4",
+      "title": "Nonreciprocal entanglement in cavity magnomechanics exploiting chiral cavity-magnon coupling",
+      "authors": [
+        "Zhi-Yuan Fan",
+        "Xuan Zuo",
+        "Hao-Tian Li",
+        "Jie Li"
+      ],
+      "abstract": "We propose a new mechanism to achieve nonreciprocal quantum entanglement in a cavity magnomechanical system by exploiting the chiral cavity-magnon coupling. The system consists of a magnon mode, a mechanical vibration mode, and two degenerate counter-propagating microwave cavity modes in a torus-shaped cavity. We show that nonreciprocal stationary microwave-magnon and -phonon bipartite entanglements and photon-magnon-phonon tripartite entanglement can be achieved by respectively driving different circulating cavity modes that hold a chiral coupling to the magnon mode. The nonreciprocal entanglements are shown to be robust against various experimental imperfections. We specifically show how such nonreciprocal entanglement can realize the channel multiplexing quantum teleportation from a microwave field to a solid-state magnon mode. The work may find promising applications of the cavity magnomechanical systems in noise-tolerant quantum processing, channel multiplexing quantum teleportation, and chiral magnonic quantum networks.",
+      "initial_submission_date": "2024-01-04T13:58:01Z",
+      "latest_update_date": "2025-02-17T07:54:38Z",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall",
+        "physics.optics"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2401.02280v4",
+      "pdf_url": "https://arxiv.org/pdf/2401.02280v4",
+      "versions_seen": [
+        "2401.02280v4"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [
+          "chiral magnon"
+        ],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230790+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230790+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
       "base_arxiv_id": "2409.17245",
       "current_version": 2,
       "versioned_arxiv_id": "2409.17245v2",
@@ -74666,6 +74759,61 @@
       },
       "first_seen_at": "2026-07-24T15:43:08.939326+00:00",
       "last_seen_at": "2026-07-24T21:19:45.549569+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2401.01507",
+      "current_version": 4,
+      "versioned_arxiv_id": "2401.01507v4",
+      "title": "Filling-dependent intertwined electronic and atomic orders in the flat-band state of 1T-TaS2",
+      "authors": [
+        "Yanyan Geng",
+        "Haoyu Dong",
+        "Renhong Wang",
+        "Jianfeng Guo",
+        "Shuo Mi",
+        "Le Lei",
+        "Yan Li",
+        "Li Huang",
+        "Fei Pang",
+        "Rui Xu",
+        "Weiqiang Yu",
+        "Wei Ji",
+        "Hong-Jun Gao",
+        "Weichang Zhou",
+        "Zhihai Cheng"
+      ],
+      "abstract": "The delicate interplay among the complex intra-/inter-layer electron-electron and electron-lattice interactions is the fundamental prerequisite of these exotic quantum states, such as superconductivity, nematic order, and checkerboard charge order. Here we explore the filling-dependent multiple stable intertwined electronic and atomic orders of flat-band state of 1T-TaS2 encompassing hole order, phase orders, coexisting left- and right-chiral orders and mixed phase/chiral orders via scanning tunneling microscopy (STM). Combining first-principles calculations, the emergent electronic/atomic orders can be attributed to the weakening of electron-electron correlations and stacking-dependent interlayer interactions. Moreover, achiral intermediate ring-like clusters and nematic charge density wave (CDW) states are successfully realized in intralayer chiral domain wall and interlayer heterochiral stacking regions through chiral overlap configurations. Our study not only deepens the understanding of filling-dependent electronic/atomic orders in flat-band systems, but also offers perspectives for exploring exotic quantum states in correlated electronic systems.",
+      "initial_submission_date": "2024-01-03T02:24:21Z",
+      "latest_update_date": "2025-02-08T13:29:29Z",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2401.01507v4",
+      "pdf_url": "https://arxiv.org/pdf/2401.01507v4",
+      "versions_seen": [
+        "2401.01507v4"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Review / perspective",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230795+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230795+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -85983,6 +86131,48 @@
       "ai_fingerprint": null
     },
     {
+      "base_arxiv_id": "2401.00750",
+      "current_version": 3,
+      "versioned_arxiv_id": "2401.00750v3",
+      "title": "Nematic Superconductivity and Its Critical Vestigial Phases in the Quasi-crystal",
+      "authors": [
+        "Yu-Bo Liu",
+        "Jing Zhou",
+        "Fan Yang"
+      ],
+      "abstract": "We propose a general mechanism to realize nematic superconductivity (SC) and reveal its exotic vestigial phases in the quasi-crystal (QC). Starting from a Penrose Hubbard model, our microscopic studies suggest that the Kohn-Luttinger mechanism driven SC in the QC is usually gapless due to violation of Anderson's theorem, rendering that both chiral and nematic SCs are common. The nematic SC in the QC can support novel vestigial phases driven by pairing phase fluctuations above its $T_c$. Our combined renormalization group and Monte-Carlo studies provide a phase diagram in which, besides the conventional charge-4e SC, two critical vestigial phases emerge, i.e. the quasi-nematic (Q-N) SC and Q-N metal. In the two Q-N phases, the discrete lattice rotation symmetry is counter-intuitively ``quasi-broken'' with power-law decaying orientation correlation. They separate the phase diagram into various phases connected via Berezinskii-Kosterlitz-Thouless (BKT) transitions. These remarkable critical vestigial phases, which resemble the intermediate BKT phase in the $q$-state ($q\\ge 5$) clock model, are consequence of the five- (or higher-) fold anisotropy field brought about by the unique QC symmetry, which are absent in conventional crystalline materials.",
+      "initial_submission_date": "2024-01-01T13:23:17Z",
+      "latest_update_date": "2024-09-25T10:55:07Z",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2401.00750v3",
+      "pdf_url": "https://arxiv.org/pdf/2401.00750v3",
+      "versions_seen": [
+        "2401.00750v3"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230798+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230798+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
       "base_arxiv_id": "2406.11807",
       "current_version": 2,
       "versioned_arxiv_id": "2406.11807v2",
@@ -89880,6 +90070,59 @@
       "ai_fingerprint": null
     },
     {
+      "base_arxiv_id": "2401.05789",
+      "current_version": 4,
+      "versioned_arxiv_id": "2401.05789v4",
+      "title": "Giant piezoelectric effects of topological structures in stretched ferroelectric membranes",
+      "authors": [
+        "Yihao Hu",
+        "Jiyuan Yang",
+        "Shi Liu"
+      ],
+      "abstract": "Freestanding ferroelectric oxide membranes emerge as a promising platform for exploring the interplay between topological polar ordering and dipolar interactions that are continuously tunable by strain. Our investigations combining density functional theory (DFT) and deep-learning-assisted molecular dynamics simulations demonstrate that DFT-predicted strain-driven morphotropic phase boundary involving monoclinic phases manifest as diverse domain structures at room temperatures, featuring continuous distributions of dipole orientations and mobile domain walls. Detailed analysis of dynamic structures reveals that the enhanced piezoelectric response observed in stretched PbTiO$_3$ membranes results from small-angle rotations of dipoles at domain walls, distinct from conventional polarization rotation mechanism and adaptive phase theory inferred from static structures. We identify a ferroelectric topological structure, termed \"dipole spiral,\" which exhibits a giant intrinsic piezoelectric response ($>$320 pC/N). This helical structure, possessing a rotational zero-energy mode, unlocks new possibilities for exploring chiral phonon dynamics and dipolar Dzyaloshinskii-Moriya-like interactions.",
+      "initial_submission_date": "2024-01-11T09:49:37Z",
+      "latest_update_date": "2024-07-30T16:03:59Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2401.05789v4",
+      "pdf_url": "https://arxiv.org/pdf/2401.05789v4",
+      "versions_seen": [
+        "2401.05789v4"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "ferroelectric"
+      ],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [
+        "chiral phonon"
+      ],
+      "matched_keywords": [
+        "chiral phonon",
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [
+          "chiral phonon"
+        ],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230801+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230801+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
       "base_arxiv_id": "2407.20629",
       "current_version": 1,
       "versioned_arxiv_id": "2407.20629v1",
@@ -91641,6 +91884,53 @@
       },
       "first_seen_at": "2026-07-25T09:59:25.610995+00:00",
       "last_seen_at": "2026-07-25T15:18:24.368555+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2312.14244",
+      "current_version": 2,
+      "versioned_arxiv_id": "2312.14244v2",
+      "title": "Absence of quantization in the circular photogalvanic effect in disordered chiral Weyl semimetals",
+      "authors": [
+        "Ang-Kun Wu",
+        "Daniele Guerci",
+        "Yixing Fu",
+        "Justin H. Wilson",
+        "J. H. Pixley"
+      ],
+      "abstract": "The circularly polarized photogalvanic effect (CPGE) is studied in chiral Weyl semimetals with short-ranged quenched disorder. Without disorder, the topological properties of chiral Weyl semimetals lead to the quantization of the CPGE, which is a second-order optical response. Using a combination of diagrammatic perturbation theory in the continuum and exact numerical calculations via the kernel polynomial method on a lattice model we show that disorder perturbatively destabilizes the quantization of the CPGE.",
+      "initial_submission_date": "2023-12-21T19:00:30Z",
+      "latest_update_date": "2024-07-10T15:47:53Z",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.dis-nn"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2312.14244v2",
+      "pdf_url": "https://arxiv.org/pdf/2312.14244v2",
+      "versions_seen": [
+        "2312.14244v2"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "Weyl semimetal"
+      ],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230804+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230804+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -95687,6 +95977,51 @@
       "ai_fingerprint": null
     },
     {
+      "base_arxiv_id": "2312.10473",
+      "current_version": 2,
+      "versioned_arxiv_id": "2312.10473v2",
+      "title": "Topological phase transitions and thermal Hall effect in a noncollinear spin texture",
+      "authors": [
+        "Ken Chen",
+        "Qiang Luo",
+        "Bin Xi",
+        "Hong-Gang Luo",
+        "Jize Zhao"
+      ],
+      "abstract": "The noncollinear spin textures provide promising avenues to stabilize exotic magnetic phases and excitations. They have attracted vast attention owning to their nontrivial band topology in the past decades. Distinct from the conventional route of involving the Dzyaloshinskii-Moriya interaction in a honeycomb magnet, the interplay of bond-dependent Kitaev and $Γ$ interactions, originating from the spin-orbit coupling and octahedra crystal field in real materials, has demonstrated to be another source to generate noncollinear spin textures with multiple spins in a magnetic unit cell. Notably, earlier works have revealed a triple-meron crystal (TmX) consisting of eighteen spins in the frustrated Kitaev-$Γ$ model. Aligning with previous efforts, here we attempt to identify that the TmX hosts several peculiar features with the help of the linear spin-wave theory. To begin with, the symmetric anisotropic exchanges are beneficial for the existence of nonreciprocal magnons, which are stabilized by an external magnetic field. Further, within the regime of TmX, successive topological phase transitions occur, accompanied by the changes of Chern number in value and thermal Hall conductivity in sign. In addition, topological nature of magnons is also verified by the onset of chiral edge modes in a nanoribbon geometry. Our findings pave the way to study topological phenomena of noncollinear spin textures in potential Kitaev materials.",
+      "initial_submission_date": "2023-12-16T15:06:40Z",
+      "latest_update_date": "2024-05-09T00:26:28Z",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2312.10473v2",
+      "pdf_url": "https://arxiv.org/pdf/2312.10473v2",
+      "versions_seen": [
+        "2312.10473v2"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230807+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230807+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
       "base_arxiv_id": "2405.05322",
       "current_version": 1,
       "versioned_arxiv_id": "2405.05322v1",
@@ -99109,6 +99444,56 @@
       "ai_fingerprint": null
     },
     {
+      "base_arxiv_id": "2401.05130",
+      "current_version": 3,
+      "versioned_arxiv_id": "2401.05130v3",
+      "title": "Laser induced ultrafast Gd 4f spin dynamics at the surface of amorphous CoxGd100-x ferrimagnetic alloys",
+      "authors": [
+        "Matthias Pacé",
+        "Deeksha Gupta",
+        "Tom Ferté",
+        "Matthias Riepp",
+        "Gregory Malinowski",
+        "Michel Hehn",
+        "Federico Pressacco",
+        "Matthieu Silly",
+        "Fausto Sirotti",
+        "Christine Boeglin",
+        "Nicolas Bergeard"
+      ],
+      "abstract": "We have investigated the laser induced ultrafast dynamics of Gd 4f spins at the surface of CoxGd100-x alloys by means of surface-sensitive and time-resolved dichroic resonant Auger spectroscopy. We have observed that the laser induced quenching of Gd 4f magnetic order at the surface of the CoxGd100-x alloys occur on a much longer time scale than that previously reported in bulk sensitive time-resolved experiments. In parallel, we have characterized the static structural and magnetic properties at the surface and in the bulk of these alloys by combining Physical Property Measurement System (PPMS) magnetometry with X-ray Magnetic Circular Dichroism in absorption spectroscopy (XMCD) and X-Ray Photoelectron spectroscopy (XPS). The PPMS and XMCD measurements give information regarding the composition in the bulk of the alloys. The XPS measurements show non-homogeneous composition at the surface of the alloys with a strongly increased Gd content within the first layers compared to the nominal bulk values. Such larger Gd concentration results in a reduced indirect Gd 4f spin-lattice coupling. It explains the slower Gd 4f demagnetization we have observed in our surface-sensitive and time-resolved measurements compared to that previously reported by bulk-sensitive measurements.",
+      "initial_submission_date": "2024-01-10T12:53:48Z",
+      "latest_update_date": "2024-03-25T13:05:57Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2401.05130v3",
+      "pdf_url": "https://arxiv.org/pdf/2401.05130v3",
+      "versions_seen": [
+        "2401.05130v3"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230809+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230809+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
       "base_arxiv_id": "2403.02676",
       "current_version": 2,
       "versioned_arxiv_id": "2403.02676v2",
@@ -99922,6 +100307,149 @@
       "ai_classified_at": "2026-07-27T08:07:16.221637+00:00"
     },
     {
+      "base_arxiv_id": "2401.00318",
+      "current_version": 2,
+      "versioned_arxiv_id": "2401.00318v2",
+      "title": "A self-assembled periodic nanoporous framework in aqueous solutions of the DNA tetramer GCCG",
+      "authors": [
+        "Gregory P. Smith",
+        "Tommaso P. Fraccia",
+        "Chenhui Zhu",
+        "Tommaso Bellini",
+        "Noel A. Clark"
+      ],
+      "abstract": "The collective behavior of the shortest DNA oligomers in high concentration aqueous solutions is an unexplored frontier of DNA science and technology. Here we broaden the realm of DNA nanoscience by demonstrating that single-component aqueous solutions of the DNA 4-base oligomer GCCG can spontaneously organize into three-dimensional (3D) periodic mesoscale frameworks. This oligomer can form B-type double helices by Watson-Crick (WC) pairing, into tiled brickwork-like duplex strands, which arrange into mutually parallel arrays and form the nematic and columnar liquid crystal phases, as is typical for long WC chains. However, at DNA concentrations above 400mg/mL, these solutions nucleate and grow an additional mesoscale framework phase, comprising a periodic network on a three dimensional body-centered cubic (BCC) lattice. This lattice is an array of nodes (valence-8, each formed by a pair of quadruplexes of GCCG terminal Gs), connected with a separation of 6.6 nm by struts (6-GCCG-long WC duplexes). This 3D-ordered DNA framework is of low density (DNA volume fraction ~0.2), but, due to its 3D crystal structure, is osmotically incompressible over its phase range. Atomistic simulations confirm the stability of such structures, which promise to form the basis of novel families of simply and inexpensively made nanoscale frameworks for templating and selection applications.",
+      "initial_submission_date": "2023-12-30T20:40:59Z",
+      "latest_update_date": "2024-03-12T17:09:50Z",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.soft"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2401.00318v2",
+      "pdf_url": "https://arxiv.org/pdf/2401.00318v2",
+      "versions_seen": [
+        "2401.00318v2"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230812+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230812+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2401.04497",
+      "current_version": 2,
+      "versioned_arxiv_id": "2401.04497v2",
+      "title": "Electric field-induced nonreciprocal spin current due to chiral phonons in chiral-structure superconductors",
+      "authors": [
+        "Dapeng Yao",
+        "Mamoru Matsuo",
+        "Takehito Yokoyama"
+      ],
+      "abstract": "The recent experiment [R. Nakajima, et al., Nature 613, 479 (2023)] has reported a pair of oppositely polarized spins under an alternating electric current in a superconductor with a chiral structure. However, these behaviors cannot be explained by the conventional Edelstein effect and require a new mechanism. In this Letter, we propose a mechanism of spin current generation under an external electric field due to chiral phonons in a chiral-structure superconductor based on the Bogoliubov de Gennes and the Boltzmann equations. In our mechanism, chiral phonons are induced by electric field due to inversion symmetry breaking and electron-phonon interaction. They work as an effective Zeeman field and hence spin-polarize Bogoliubov quasiparticles in the superconductor. As a result, the spin current carried by quasiparticles flows along the screw axis and shows a quadratic dependence on the electric field at the low-field range, leading to a nonreciprocal spin transport. The spin current also shows a nonmonotonic temperature dependence and has a maximum at around the superconducting transition temperature.",
+      "initial_submission_date": "2024-01-09T11:18:23Z",
+      "latest_update_date": "2024-03-12T12:27:04Z",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2401.04497v2",
+      "pdf_url": "https://arxiv.org/pdf/2401.04497v2",
+      "versions_seen": [
+        "2401.04497v2"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [
+        "chiral phonon",
+        "chiral phonons"
+      ],
+      "matched_keywords": [
+        "chiral phonon",
+        "chiral phonons",
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [
+          "chiral phonon",
+          "chiral phonons"
+        ],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230815+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230815+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2401.03803",
+      "current_version": 2,
+      "versioned_arxiv_id": "2401.03803v2",
+      "title": "Cluster rearrangement by chiral charge order in lacunar spinel GaNb$_4$Se$_8$",
+      "authors": [
+        "Shunsuke Kitou",
+        "Masaki Gen",
+        "Yuiga Nakamura",
+        "Yusuke Tokunaga",
+        "Taka-hisa Arima"
+      ],
+      "abstract": "Transition-metal atoms with d electrons sometimes form clusters in crystals, which significantly affects the physical properties. Such a cluster formation frequently accompanies a change in the crystal system, leading to the presence of domains with different crystal orientations. In particular, the cubic symmetry is rarely retained after the cluster formation. Here, we identify a cubic-to-cubic phase transition in lacunar spinel GaNb$_4$Se$_8$, where the change in the lattice parameter is less than 0.0001%. Each Nb$^{3.25+}$ tetramer with seven 4d electrons is distorted into a Nb$^{3+}$ trimer and a Nb$^{4+}$ monomer induced by charge disproportionation among Nb ions. While the Nb$^{3+}$ trimer with six 4d electrons forms spin-singlets in the sigma-bonding orbitals for three Nb-Nb bonds, a localized S=1/2 spin remains on the Nb$^{4+}$ ion. Furthermore, a local electric dipole moment is induced along the three-fold rotation axis of each distorted tetramer by the cluster rearrangement. The electric dipole moments are regularly arranged to maintain the cubic symmetry, giving rise to chiral order.",
+      "initial_submission_date": "2024-01-08T10:43:17Z",
+      "latest_update_date": "2024-03-11T23:13:25Z",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2401.03803v2",
+      "pdf_url": "https://arxiv.org/pdf/2401.03803v2",
+      "versions_seen": [
+        "2401.03803v2"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230817+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230817+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
       "base_arxiv_id": "2403.06170",
       "current_version": 1,
       "versioned_arxiv_id": "2403.06170v1",
@@ -99978,6 +100506,63 @@
       },
       "first_seen_at": "2026-07-27T11:36:59.996336+00:00",
       "last_seen_at": "2026-07-27T11:36:59.996336+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2401.03064",
+      "current_version": 2,
+      "versioned_arxiv_id": "2401.03064v2",
+      "title": "Phonon thermal Hall effect in charge-compensated topological insulators",
+      "authors": [
+        "Rohit Sharma",
+        "Mahasweta Bagchi",
+        "Yongjian Wang",
+        "Yoichi Ando",
+        "Thomas Lorenz"
+      ],
+      "abstract": "From a systematic study of thermal and charge transport in various single crystals of compensated topological insulators we identify the evolution of a large low-temperature thermal Hall effect as a characteristic common feature. In order to separate phononic and electronic contributions in the measured longitudinal and transverse thermal conductivity, the electronic contributions are estimated from corresponding electrical resisivity and Hall effect measurements on the same samples by using the Wiedemann-Franz law. As may be expected for charge-compensated topological insulators the longitudinal thermal conductivity is phonon-dominated in all samples. However, we also find a pronounced field-linear thermal Hall effect that becomes most pronounced in the low-temperature range, where all samples are good electrical insulators. This indicates an underlying phononic mechanism of the thermal Hall effect and in this respect the topological insulators resemble other, mainly ionic, insulators, which have been reported to show a phonon-induced thermal Hall effect, but its underlying phononic mechanism remains to be identified. Our observation of a comparable thermal Hall ratio in topological insulators supports a theoretical scenario that explains a thermal Hall effect through skew scattering on charged impurities.",
+      "initial_submission_date": "2024-01-05T20:47:30Z",
+      "latest_update_date": "2024-03-09T11:38:45Z",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.dis-nn",
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2401.03064v2",
+      "pdf_url": "https://arxiv.org/pdf/2401.03064v2",
+      "versions_seen": [
+        "2401.03064v2"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "topological insulator"
+      ],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [
+        "phonon thermal Hall effect"
+      ],
+      "matched_keywords": [
+        "phonon thermal Hall effect",
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [
+          "phonon thermal Hall effect"
+        ],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230820+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230820+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -100927,6 +101512,92 @@
       "ai_fingerprint": null
     },
     {
+      "base_arxiv_id": "2401.05636",
+      "current_version": 2,
+      "versioned_arxiv_id": "2401.05636v2",
+      "title": "A lattice regularization of Weyl fermions in a gravitational background",
+      "authors": [
+        "Shoto Aoki",
+        "Hidenori Fukaya",
+        "Naoto Kan"
+      ],
+      "abstract": "We report on a lattice fermion formulation with a curved domain-wall mass term to nonperturbatively describe fermions in a gravitational background. In our previous work in 2022, we showed under the time-reversal symmetry that the edge-localized massless Dirac fermion appears on one and two-dimensional spherical domain-walls and the spin connection is induced on the lattice in a consistent way with continuum theory. In this work, we extend our study to the Shamir type curved domain-wall fermions without the time-reversal symmetry. We find in the free fermion case that a single Weyl fermion appears on the edge, and feels gravity through the induced spin connection. With a topologically nontrivial $U(1)$ gauge potential, however, we find an oppositely chiral zero mode at the center where the gauge field is singular.",
+      "initial_submission_date": "2024-01-11T03:15:47Z",
+      "latest_update_date": "2024-02-15T07:47:58Z",
+      "categories": [
+        "hep-lat",
+        "cond-mat.mes-hall",
+        "cond-mat.str-el",
+        "hep-th"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2401.05636v2",
+      "pdf_url": "https://arxiv.org/pdf/2401.05636v2",
+      "versions_seen": [
+        "2401.05636v2"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230822+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230822+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2401.01309",
+      "current_version": 2,
+      "versioned_arxiv_id": "2401.01309v2",
+      "title": "Effective size of a parity-time symmetric dimer",
+      "authors": [
+        "Li Ge"
+      ],
+      "abstract": "Parity-time (PT) symmetric dimers were introduced to highlight the unusual properties of non-Hermitian systems that are invariant after a combined parity and time reversal operation. They are also the building blocks of a variety of symmetry and topologically protected structures, especially on integrated photonic platforms. As the name suggests, it consists of two coupled oscillators, which can be optical, mechanical, electronic, and so on in nature. In this article, we show that its effective size, defined by the number of lattice sites inversely proportional to the lattice momentum, is surprisingly three instead of two from the perspective of energy quantization. More specifically, we show analytically that the complex energy levels of a one-dimensional concatenated chain with $N$ PT-dimers are determined by a system size of $1+2N$, which reduces to three in the case of a single PT-dimer. We note that while energy quantization conditions were established in various non-Hermitian systems, exact and explicitly quantized complex energies as reported here are still scarce. In connection, we also discuss the other symmetries of a PT-dimer and concatenated PT-dimer chain, including non-Hermitian particle-hole symmetry and chiral symmetry.",
+      "initial_submission_date": "2024-01-02T17:44:23Z",
+      "latest_update_date": "2024-02-14T22:54:37Z",
+      "categories": [
+        "physics.optics",
+        "quant-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2401.01309v2",
+      "pdf_url": "https://arxiv.org/pdf/2401.01309v2",
+      "versions_seen": [
+        "2401.01309v2"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Review / perspective",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230825+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230825+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
       "base_arxiv_id": "2402.04439",
       "current_version": 1,
       "versioned_arxiv_id": "2402.04439v1",
@@ -101181,6 +101852,52 @@
       "ai_fingerprint": null
     },
     {
+      "base_arxiv_id": "2312.15466",
+      "current_version": 2,
+      "versioned_arxiv_id": "2312.15466v2",
+      "title": "Insights into the Mechanism underlying the Chiral-Induced Spin Selectivity: The effect of an Angle-Dependent Magnetic Field and Temperature",
+      "authors": [
+        "Tapan Kumar Das",
+        "Ron Naaman",
+        "Jonas Fransson"
+      ],
+      "abstract": "Chiral oligopeptide monolayers were adsorbed on a ferromagnetic surface and their magnetoresistance was measured as a function of the angle between the magnetization of the ferromagnet and the surface normal. These measurements were conducted as a function of temperature for both enantiomers. The angle dependence was found to follow the cosine square function. Quantum simulations revealed that the angular distribution could be obtained only if the monolayer has significant effective spin orbit coupling (SOC), that includes contribution from the vibrations. The model shows that SOC only in the leads cannot reproduce the observed angular dependence. The simulation can reproduce the experiments only if it included electron-phonon interactions and dissipation.",
+      "initial_submission_date": "2023-12-24T12:18:14Z",
+      "latest_update_date": "2024-02-03T16:18:07Z",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2312.15466v2",
+      "pdf_url": "https://arxiv.org/pdf/2312.15466v2",
+      "versions_seen": [
+        "2312.15466v2"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230828+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230828+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
       "base_arxiv_id": "2402.02102",
       "current_version": 1,
       "versioned_arxiv_id": "2402.02102v1",
@@ -101274,6 +101991,50 @@
       },
       "first_seen_at": "2026-07-27T16:34:01.164255+00:00",
       "last_seen_at": "2026-07-27T16:34:01.164255+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2401.03541",
+      "current_version": 2,
+      "versioned_arxiv_id": "2401.03541v2",
+      "title": "Coexistence of 1D and 2D topology and genesis of Dirac cones in the chiral Aubry-André model",
+      "authors": [
+        "Tiago V C Antão",
+        "Daniel A Miranda",
+        "Nuno M R Peres"
+      ],
+      "abstract": "We construct a one-dimensional (1D) topological SSH-like model with chiral symmetry and a superimposed hopping modulation, which we call the chiral Aubry-André model. We show that its topological properties can be described in terms of a pair (C,W) of a two-dimensional (2D) Chern number C, stemming from a superspace description of the model, and a 1D winding number W, originating in its chiral symmetric nature. Thus, we showcase for the first time explicit coexistence of 1D and 2D topology in a model existing in 1D physical space. We detail the superspace description by showcasing how our model can be mapped to a Harper-Hofstadter model, familiar from the description of the integer quantum Hall effect, and analyze the vanishing field limit analytically. An extension of the method used for vanishing fields is provided in order to handle any finite fields, corresponding to hopping modulations both commensurate and incommensurate with the lattice. In addition, this formalism allows us to obtain certain features of the 2D superspace model, such as its number of massless Dirac nodes, purely in terms of topological quantities, computed without the need to go into momentum space.",
+      "initial_submission_date": "2024-01-07T16:54:09Z",
+      "latest_update_date": "2024-01-31T10:19:07Z",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2401.03541v2",
+      "pdf_url": "https://arxiv.org/pdf/2401.03541v2",
+      "versions_seen": [
+        "2401.03541v2"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Computational / theoretical",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [
+          "our model"
+        ],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230830+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230830+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -101774,6 +102535,51 @@
       "ai_fingerprint": null
     },
     {
+      "base_arxiv_id": "2312.13756",
+      "current_version": 2,
+      "versioned_arxiv_id": "2312.13756v2",
+      "title": "Anomalies and Persistent Order in the Chiral Gross-Neveu model",
+      "authors": [
+        "Riccardo Ciccone",
+        "Lorenzo Di Pietro",
+        "Marco Serone"
+      ],
+      "abstract": "We study the $2d$ chiral Gross-Neveu model at finite temperature $T$ and chemical potential $μ$. The analysis is performed by relating the theory to a $SU(N)\\times U(1)$ Wess-Zumino-Witten model with appropriate levels and global identifications necessary to keep track of the fermion spin structures. At $μ=0$ we show that a certain $\\mathbb{Z}_2$-valued 't Hooft anomaly forbids the system to be trivially gapped when fermions are periodic along the thermal circle for any $N$ and any $T>0$. We also study the two-point function of a certain composite fermion operator which allows us to determine the remnants for $T>0$ of the inhomogeneous chiral phase configuration found at $T=0$ for any $N$ and any $μ$. The inhomogeneous configuration decays exponentially at large distances for anti-periodic fermions while it persists for $T>0$ and any $μ$ for periodic fermions, as expected from anomaly considerations. A large $N$ analysis confirms the above findings.",
+      "initial_submission_date": "2023-12-21T11:36:24Z",
+      "latest_update_date": "2024-01-24T15:20:18Z",
+      "categories": [
+        "hep-th",
+        "cond-mat.str-el",
+        "hep-lat",
+        "hep-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2312.13756v2",
+      "pdf_url": "https://arxiv.org/pdf/2312.13756v2",
+      "versions_seen": [
+        "2312.13756v2"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230833+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230833+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
       "base_arxiv_id": "2401.13445",
       "current_version": 1,
       "versioned_arxiv_id": "2401.13445v1",
@@ -101863,6 +102669,52 @@
       },
       "first_seen_at": "2026-07-27T16:34:01.164279+00:00",
       "last_seen_at": "2026-07-27T16:34:01.164279+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2401.05719",
+      "current_version": 3,
+      "versioned_arxiv_id": "2401.05719v3",
+      "title": "High-topological-number skyrmions and phase transition in two-dimensional frustrated $J_1$-$J_2$ magnets",
+      "authors": [
+        "Hongliang Hu",
+        "Zhong Shen",
+        "Zheng Chen",
+        "Xiaoping Wu",
+        "Tingting Zhong",
+        "Changsheng Song"
+      ],
+      "abstract": "With the rapidly expanded field of two-dimensional(2D) magnetic materials, the frustrated magnetic skyrmions are attracting growing interest recently. Here, based on hexagonal close-packed (HCP) lattice of $J_1$-$J_2$ Heisenberg spins model, we systematically investigate the frustrated skyrmions and phase transition by micromagnetic simulations and first-principles calculations. The results show that four spin phases of antiferromagnetic, labyrinth domain, skyrmion and ferromagnetic textures are determined by the identified ranges of $J_1$-$J_2$. Importantly, skyrmion phase with an increasing topological number ($Q$) covers a wider $J_1$-$J_2$ area. Then, the diameter of skyrmions can be tuned by the frustration strength ($|J_2/J_1|$) or external magnetic field. Besides, a phase transition from N$\\acute{e}$el to Bloch type skyrmion is observed due to the change of the helicity with the variation of $|J_2/J_1|$. Furthermore, as increasing magnetic field, the skyrmions with high $Q$ ($\\ge 3$) tend to split into the ones with $Q=1$, thereby achieving a lower systematic energy. Additionally, we find that the CoCl$_2$ monolayer satisfies the requirement of the frustrated $J_1$-$J_2$ magnet, and the related magnetic behaviors agree with the above conclusions. The frustration-induced skyrmions are stable without the manipulation of temperature and magnetic field. Our results may open a possible way toward spintronic applications based on High-topological-number and nanoscale topological spin textures of skyrmions.",
+      "initial_submission_date": "2024-01-11T07:49:49Z",
+      "latest_update_date": "2024-01-20T14:19:26Z",
+      "categories": [
+        "physics.comp-ph",
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2401.05719v3",
+      "pdf_url": "https://arxiv.org/pdf/2401.05719v3",
+      "versions_seen": [
+        "2401.05719v3"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230835+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230835+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -102351,6 +103203,1284 @@
       },
       "first_seen_at": "2026-07-27T16:34:01.164299+00:00",
       "last_seen_at": "2026-07-27T16:34:01.164299+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2401.04719",
+      "current_version": 2,
+      "versioned_arxiv_id": "2401.04719v2",
+      "title": "Inelastic electron scattering at large angles: the phonon polariton contribution",
+      "authors": [
+        "Hongbin Yang",
+        "Paul Zeiger",
+        "Andrea Konečná",
+        "Lu Han",
+        "Guangyao Miao",
+        "Yinong Zhou",
+        "Yifeng Huang",
+        "Xingxu Yan",
+        "Weihua Wang",
+        "Jiandong Guo",
+        "Yuefeng Nie",
+        "Ruqian Wu",
+        "Jan Rusz",
+        "Xiaoqing Pan"
+      ],
+      "abstract": "We explore the inelastic electron scattering in SrTiO3, PbTiO3, and SiC in their phonon energy range, challenging the assumption that phonon polaritons are excluded at large angles in high-resolution transmission electron energy-loss spectroscopy. We demonstrate that through multiple scattering, the electron beam can excite both phonons and phonon polaritons, and the relative proportion of each varies depending on the structure factor and scattering angle. Integrating dielectric theory, density functional theory, and multi-slice simulations, we provide a comprehensive framework for understanding these interactions in materials with polar optical phonons.",
+      "initial_submission_date": "2024-01-09T18:46:50Z",
+      "latest_update_date": "2024-01-10T02:46:13Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2401.04719v2",
+      "pdf_url": "https://arxiv.org/pdf/2401.04719v2",
+      "versions_seen": [
+        "2401.04719v2"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "SrTiO3"
+      ],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230838+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230838+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2401.04624",
+      "current_version": 1,
+      "versioned_arxiv_id": "2401.04624v1",
+      "title": "Signatures of novel magnon-phonon coupling in frustrated double perovskite square lattices",
+      "authors": [
+        "Shalini Badola",
+        "Aprajita Joshi",
+        "Akriti Singh",
+        "Surajit Saha"
+      ],
+      "abstract": "Low-dimensional frustrated magnetic square networks feature a variety of unconventional phases with novel emergent excitations. Often these excitations are intertwined and manifest into intriguing phenomena, an area that has remained largely unexplored in square-lattice systems, especially, double perovskites (A2BB'O6). In this study, we explore these interactions between the fundamental excitations such as phonons and magnons in square-lattice Sr2CuTeO6, Sr2CuWO6, and Ba2CuWO6 isostructural double perovskites that exhibit both short-ranged (TS) as well as long-ranged Neel antiferromagnetic (TN) transitions. Our Raman measurements at variable temperatures reveal an intriguing broad peak (identified as 2-magnon (2M)) surviving beyond TS for W-based compositions contrary to the Te-based system, suggesting a key role of diamagnetic B'-site cation on their magnetism. The thermal response of 2M intriguingly shows signatures of correlation with phonons and control over their anharmonicity, depicting magnon-phonon interaction. Further, a few phonons exhibit anomalies across the magnetic transitions implying the presence of spin-phonon coupling. In particular, the phonon modes at ~ 194 cm-1 of Sr2CuTeO6 and ~ 168 cm-1 of Sr2CuWO6, that show a strong correlation with the 2M, exhibit the strongest spin-phonon coupling suggesting their roles in mediating magnon-phonon interactions in these systems.",
+      "initial_submission_date": "2024-01-09T15:50:28Z",
+      "latest_update_date": "2024-01-09T15:50:28Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2401.04624v1",
+      "pdf_url": "https://arxiv.org/pdf/2401.04624v1",
+      "versions_seen": [
+        "2401.04624v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230841+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230841+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2401.03612",
+      "current_version": 1,
+      "versioned_arxiv_id": "2401.03612v1",
+      "title": "Chiral Dynamics of Ultracold Atoms under a Tunable SU(2) Synthetic Gauge Field",
+      "authors": [
+        "Qian Liang",
+        "Zhaoli Dong",
+        "Hongru Wang",
+        "Hang Li",
+        "Zhaoju Yang",
+        "Jian-Song Pan",
+        "Wei Yi",
+        "Bo Yan"
+      ],
+      "abstract": "Surface currents emerge in superconductors exposed to magnetic fields, and are a key signature of the Meissner effect. Analogously, chiral dynamics were observed in quantum simulators under synthetic Abelian gauge fields. The flexible control of these simulators also facilitates the engineering of non-Abelian gauge fields, but their impact on the chiral dynamics remains elusive. Here, by employing the cutting-edge momentum-lattice technique, we implement a synthetic SU(2) gauge field in a spinful 1D ladder and study the rich chiral dynamics therein. We confirm the non-Abelian nature of the synthetic potential by observing the non-Abelian Aharonov-Bohm effect on a single plaquette. More importantly, the chiral current along the two legs of the ladder is observed to be spin-dependent and highly tunable through the parameters of the gauge potential. We experimentally map out different dynamic regimes of the chiral current, and reveal the underlying competition between overlaying flux ladders with distinct spin compositions. Our experiment demonstrates the dramatic impact of non-Abelian gauge fields on the system dynamics, paving the way for future studies of exotic synthetic gauge fields on the versatile platform of momentum lattices.",
+      "initial_submission_date": "2024-01-08T00:01:44Z",
+      "latest_update_date": "2024-01-08T00:01:44Z",
+      "categories": [
+        "cond-mat.quant-gas",
+        "cond-mat.mes-hall",
+        "physics.atom-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2401.03612v1",
+      "pdf_url": "https://arxiv.org/pdf/2401.03612v1",
+      "versions_seen": [
+        "2401.03612v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Experimental",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [
+          "Our experiment"
+        ],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230843+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230843+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2401.03611",
+      "current_version": 1,
+      "versioned_arxiv_id": "2401.03611v1",
+      "title": "Engineering topological chiral transport in a flat-band lattice of ultracold atoms",
+      "authors": [
+        "Hang Li",
+        "Qian Liang",
+        "Zhaoli Dong",
+        "Hongru Wang",
+        "Wei Yi",
+        "Jian-Song Pan",
+        "Bo Yan"
+      ],
+      "abstract": "The manipulation of particle transport in synthetic quantum matter is an active research frontier for its theoretical importance and potential applications. Here we experimentally demonstrate an engineered topological transport in a synthetic flat-band lattice of ultracold $^{87}$Rb atoms. We implement a quasi-one-dimensional rhombic chain with staggered flux in the momentum space of the atomic condensate and observe biased local oscillations that originate from the interplay of the staggered flux and flat-band localization under the mechanism of Aharonov-Bohm caging. Based on these features, we design and experimentally confirm a state-dependent chiral transport under the periodic modulation of the synthetic flux. We show that the phenomenon is topologically protected by the winding of the Floquet Bloch bands of a coarse-grained effective Hamiltonian. The observed chiral transport offers a strategy for efficient quantum device design where topological robustness is ensured by fast Floquet driving and flat-band localization.",
+      "initial_submission_date": "2024-01-07T23:55:42Z",
+      "latest_update_date": "2024-01-07T23:55:42Z",
+      "categories": [
+        "cond-mat.quant-gas",
+        "cond-mat.mes-hall",
+        "physics.atom-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2401.03611v1",
+      "pdf_url": "https://arxiv.org/pdf/2401.03611v1",
+      "versions_seen": [
+        "2401.03611v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230846+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230846+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2401.02808",
+      "current_version": 1,
+      "versioned_arxiv_id": "2401.02808v1",
+      "title": "Two Displacive Ferroelectric Phase Transitions in Multiferroic Quadruple Perovskite $BiMn_{7}O_{12}$",
+      "authors": [
+        "A. Maia",
+        "M. Kempa",
+        "V. Bovtun",
+        "R. Vilarinho",
+        "C. Kadlec",
+        "J. Agostinho Moreira",
+        "A. A. Belik",
+        "P. Proschek",
+        "S. Kamba"
+      ],
+      "abstract": "We report on the microwave, terahertz (THz), infrared and Raman spectroscopic studies of $BiMn_{7}O_{12}$ ceramics, shedding more light into the nature of two structural phase transitions and their possible relation with ferroelectricity in this compound. We observed a softening of one polar phonon in the THz range on cooling towards 460 and 300 K, i.e., temperatures at which $BiMn_{7}O_{12}$ undergoes subsequent structural phase transitions from monoclinic $\\textit{I2/m}$ to polar monoclinic $\\textit{Im}$ and triclinic $\\textit{P1}$ phases. The soft phonon causes dielectric anomalies typical for displacive ferroelectric phase transitions. Microwave measurements performed at 5.8 GHz up to 400 K qualitatively confirmed not only the dielectric anomaly at 300 K, but also revealed two other weak dielectric anomalies near the magnetic phase transitions at 60 K and 28 K. This evidences the multiferroic nature of the low-temperature phases, although the relatively high conductivity in the kHz and Hz spectral range prevented us from directly measuring the permittivity and ferroelectric polarization. Some Raman modes sense the magnetic phase transitions occurring near 60 and 25 K, showing that spin-phonon coupling is relevant in this compound and in this temperature range. The deviation of the Mn-O stretching mode frequency from the anharmonic temperature behavior was successfully explained by the spin correlation function calculated from the magnetic contribution to the specific heat.",
+      "initial_submission_date": "2024-01-05T13:42:44Z",
+      "latest_update_date": "2024-01-05T13:42:44Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2401.02808v1",
+      "pdf_url": "https://arxiv.org/pdf/2401.02808v1",
+      "versions_seen": [
+        "2401.02808v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Experimental",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "ferroelectric",
+        "multiferroic"
+      ],
+      "detected_experimental_methods": [
+        "terahertz",
+        "THz",
+        "Raman spectroscopy"
+      ],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon",
+        "Raman mode"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [
+          "We observed"
+        ],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon",
+          "Raman mode"
+        ]
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230851+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230851+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2401.02224",
+      "current_version": 1,
+      "versioned_arxiv_id": "2401.02224v1",
+      "title": "Topological transmission in Suzuki phase sonic crystals",
+      "authors": [
+        "Zhen Huang",
+        "Francisco Cervera",
+        "Jiu Hui Wu",
+        "Martin Ibarias",
+        "Chongrui Liu",
+        "Victor M. Garcia-Chocano",
+        "Fuyin Ma",
+        "Jose Sanchez-Dehesa"
+      ],
+      "abstract": "This work reports topological extraordinary properties of sound transmission through topological states in sonic crystals denominated Suzuki phase, consisting of a rectangular lattice of vacancies created in a triangular lattice. These low-symmetry crystals exhibit unique properties due to the embedded lattice of vacancies. A generalized folding method explains the band structure and the quasi-type-II Dirac point in the Suzuki phase, which is related to the underlying triangular lattice. In analogy to the acoustic valley Hall effect, the Suzuki phase contains three types of topological edge states on the four possible interfaces separating two Suzuki phase crystals with distinct topological phases. The edge states have defined symmetries with inherent directionality, which affect the topological sound transmission and are different from chirality, valley vorticity or helicity. Particularly, the existence of topological deaf bands is here reported. The propagation of topological eigenmodes on the same interface is also different, which is quantified using the acoustic Shannon entropy, making the topological transport dependent on the frequency of the edge states. Based on the abundant topological edge states of Suzuki phase crystals, a multifunctional device with acoustic diodes, multi-channel transmission, and selective acoustic transmission can be designed. Numerical simulations and measurements demonstrate the topological transmission. Our work extends the research platform of acoustic topological states to lattices with low symmetry, which opens new avenues for enriching topological states with broad engineering applications.",
+      "initial_submission_date": "2024-01-04T12:20:42Z",
+      "latest_update_date": "2024-01-04T12:20:42Z",
+      "categories": [
+        "physics.app-ph",
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2401.02224v1",
+      "pdf_url": "https://arxiv.org/pdf/2401.02224v1",
+      "versions_seen": [
+        "2401.02224v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230854+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230854+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2401.01602",
+      "current_version": 1,
+      "versioned_arxiv_id": "2401.01602v1",
+      "title": "Exotic Topological Phenomena in Chiral Superconducting States on Doped Quantum Spin Hall Insulators with Honeycomb Lattices",
+      "authors": [
+        "Junkang Huang",
+        "Tao Zhou",
+        "Z. D. Wang"
+      ],
+      "abstract": "We have conducted a theoretical investigation of the topological phenomena associated with chiral superconducting pairing states induced in a doped Kane-Mele model on a honeycomb lattice. Through numerical analysis, we have obtained exotic phase diagrams for both the $d+id$ and $p+ip$ superconducting states. In the case of the $d+id$ pairing state, higher Chern number states with $\\left| C \\right| = \\pm 4$ emerge. The Chern number decreases as the spin-orbit coupling is introduced. For the $p+ip$ pairing state, additional phase transition lines are present in the overdoped region near the Van Hove singularity point, leading to the emergence of higher Chern number phases with $\\left| C \\right| = \\pm 6$. These higher Chern number phases are further verified through the bulk-edge correspondence. To understand the origin of the exotic topological phase diagrams in the chiral superconducting state, we have examined the electronic structure at the phase transition lines. This investigation provides insight into the complex interplay between chiral superconductivity and topological properties, potentially paving the way for the discovery of new materials with unique topological properties.",
+      "initial_submission_date": "2024-01-03T08:13:55Z",
+      "latest_update_date": "2024-01-03T08:13:55Z",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mes-hall",
+        "cond-mat.quant-gas",
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2401.01602v1",
+      "pdf_url": "https://arxiv.org/pdf/2401.01602v1",
+      "versions_seen": [
+        "2401.01602v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230856+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230856+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2401.01431",
+      "current_version": 1,
+      "versioned_arxiv_id": "2401.01431v1",
+      "title": "A study of the magnetocaloric behavior of Dy-substituted YMn$_2$O$_5$ compounds",
+      "authors": [
+        "H. Chouaibi",
+        "S. Mansouri",
+        "S. Aitjmal",
+        "M. Balli",
+        "O. Chdil",
+        "M. Abbasi Eskandari",
+        "S. H. Bukhari",
+        "P. Fournier"
+      ],
+      "abstract": "In this paper, we report on the magnetic and magnetocaloric features of Dy-substituted YMn$_2$O$_5$ (Y$_{1-x}$Dy$_x$Mn$_2$O$_5$) with $x=$ 0.6, 0.8, and 1 series elaborated by sol-gel method. X-ray diffraction and Raman measurements attest well the high quality of our polycrystalline samples that crystallize in an orthorhombic structure with the Pbam space group. The Raman phonon frequencies were carried out and compared with the lattice dynamics calculations to identify the vibrational properties of all detected modes at room temperature. As expected, our magnetic study reveals that the magnetization was enhanced by the substitution of Y$^{3+}$ by Dy$^{3+}$. The Dy-substituted YMn$_2$O$_5$ sets the Néel transition [TN (Mn)] in the temperature range going from 40 to 45 K favoring the emergence of a transition at a very low temperature due to the long-range ordering of the Dy3+ magnetic moments below 13K [TN (Dy)]. Dual peaks in the magnetic entropy change curve are also observed being in good agreement with magnetization data, which enlarges the range of application of these materials. On the other hand, a large magnetocaloric effect is observed close to 13 K which is mainly due the ordering of Dy$^{3+}$ magnetic moments. Also, the incommensurate antiferromagnetic transition of Mn magnetic moment taking place around 40 K affects slightly the entropy change. Our refrigerant capacity (RC) findings are higher compared to the average of RC for a, b, c axis of single crystal samples as HoMn$_2$O$_5$ and TbMn$_2$O$_5$, which confirms that our polycrystalline materials stand for promising magnetic refrigerant candidates that can be invested in space technology, hydrogen and helium liquefaction at cryogenic temperature.",
+      "initial_submission_date": "2024-01-02T20:49:59Z",
+      "latest_update_date": "2024-01-02T20:49:59Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2401.01431v1",
+      "pdf_url": "https://arxiv.org/pdf/2401.01431v1",
+      "versions_seen": [
+        "2401.01431v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230859+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230859+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2401.01115",
+      "current_version": 1,
+      "versioned_arxiv_id": "2401.01115v1",
+      "title": "Squeezed Josephson plasmons in driven YBa$_2$Cu$_3$O$_{6+x}$",
+      "authors": [
+        "N. Taherian",
+        "M. Först",
+        "A. Liu",
+        "M. Fechner",
+        "D. Pavicevic",
+        "A. von Hoegen",
+        "E. Rowe",
+        "Y. Liu",
+        "S. Nakata",
+        "B. Keimer",
+        "E. Demler",
+        "M. H. Michael",
+        "A. Cavalleri"
+      ],
+      "abstract": "The physics of driven collective modes in quantum materials underpin a number of striking non-equilibrium functional responses, which include enhanced magnetism, ferroelectricity and superconductivity. However, the coherent coupling between multiple modes at once are difficult to capture by single-pump probe (one-dimensional) spectroscopy, and often remain poorly understood. One example is phonon-mediated amplification of Josephson plasmons in YBa$_2$Cu$_3$O$_{6+x}$, in which at least three normal modes of the solid are coherently mixed as a source of enhanced superconductivity. Here, we go beyond previous pump-probe experiments in this system and acquire two-dimensional frequency maps using pairs of mutually delayed, carrier envelope phase stable mid-infrared pump pulses, combined with measurements of the time-modulated second-order nonlinear optical susceptibility. We find that the driven zone-center phonons amplify coherent pairs of opposite-momentum Josephson plasma polaritons, generating a squeezed state of interlayer phase fluctuations. The squeezed state is a potentially important ingredient in the microscopic physics of photo-induced superconductivity in this and other materials.",
+      "initial_submission_date": "2024-01-02T09:10:20Z",
+      "latest_update_date": "2024-01-02T09:10:20Z",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2401.01115v1",
+      "pdf_url": "https://arxiv.org/pdf/2401.01115v1",
+      "versions_seen": [
+        "2401.01115v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "ferroelectric"
+      ],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230861+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230861+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2401.00410",
+      "current_version": 1,
+      "versioned_arxiv_id": "2401.00410v1",
+      "title": "Electrical and thermal transport properties of kagome metals AV$_3$Sb$_5$ (A=K, Rb, Cs)",
+      "authors": [
+        "Xinrun Mi",
+        "Kunya Yang",
+        "Yuhan Gan",
+        "Long Zhang",
+        "Aifeng Wang",
+        "Yisheng Chai",
+        "Xiaoyuan Zhou",
+        "Mingquan He"
+      ],
+      "abstract": "The interplay between lattice geometry, band topology and electronic correlations in the newly discovered kagome compounds AV$_3$Sb$_5$ (A=K, Rb, Cs) makes this family a novel playground to investigate emergent quantum phenomena, such as unconventional superconductivity, chiral charge density wave and electronic nematicity. These exotic quantum phases naturally leave nontrivial fingerprints in transport properties of AV$_3$Sb$_5$, both in electrical and thermal channels, which are prominent probes to uncover the underlying mechanisms. In this brief review, we highlight the unusual electrical and thermal transport properties observed in the unconventional charge ordered state of AV3Sb5, including giant anomalous Hall, anomalous Nernst, ambipolar Nernst and anomalous thermal Hall effects. Connections of these anomalous transport properties to time-reversal symmetry breaking, topological and multiband fermiology, as well as electronic nematicity, are also discussed. Finally, a perspective together with challenges of this rapid growing field are given.",
+      "initial_submission_date": "2023-12-31T06:48:14Z",
+      "latest_update_date": "2023-12-31T06:48:14Z",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.supr-con"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2401.00410v1",
+      "pdf_url": "https://arxiv.org/pdf/2401.00410v1",
+      "versions_seen": [
+        "2401.00410v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Review / perspective",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230864+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230864+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2312.17083",
+      "current_version": 1,
+      "versioned_arxiv_id": "2312.17083v1",
+      "title": "Magneto-Crystalline Composite Topological Defects and Half-Hopfions",
+      "authors": [
+        "Sahal Kaushik",
+        "Filipp N. Rybakov",
+        "Egor Babaev"
+      ],
+      "abstract": "We consider a new class of topological defects in chiral magnetic crystals such as FeGe and MnSi. These are composite topological defects that arise when skyrmions in the magnetic order intersect with twin boundaries in the underlying crystalline lattice. We show that the resulting stable configurations are a new type of defect that can be viewed as half-hopfions.",
+      "initial_submission_date": "2023-12-28T15:56:33Z",
+      "latest_update_date": "2023-12-28T15:56:33Z",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2312.17083v1",
+      "pdf_url": "https://arxiv.org/pdf/2312.17083v1",
+      "versions_seen": [
+        "2312.17083v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230867+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230867+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2312.16952",
+      "current_version": 1,
+      "versioned_arxiv_id": "2312.16952v1",
+      "title": "Topological Edge and Corner States in Biphenylene Photonic Crystal",
+      "authors": [
+        "Huyen Thanh Phan",
+        "Keiki Koizumi",
+        "Feng Liu",
+        "Katsunori Wakabayashi"
+      ],
+      "abstract": "The biphenylene network (BPN) has a unique two-dimensional atomic structure, where hexagonal unit cells are arranged on a square lattice. Inspired by such a BPN structure, we design a counterpart in the fashion of photonic crystals (PhCs), which we refer to as the BPN PhC. We study the photonic band structure using the finite element method and characterize the topological properties of the BPN PhC through the use of the Wilson loop. Our findings reveal the emergence of topological edge states in the BPN PhC, specifically in the zigzag edge and the chiral edge, as a consequence of the nontrivial Zak phase in the corresponding directions. In addition, we find the localization of electromagnetic waves at the corners formed by the chiral edges, which can be considered as second-order topological states, i.e., topological corner states.",
+      "initial_submission_date": "2023-12-28T10:52:57Z",
+      "latest_update_date": "2023-12-28T10:52:57Z",
+      "categories": [
+        "physics.optics",
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2312.16952v1",
+      "pdf_url": "https://arxiv.org/pdf/2312.16952v1",
+      "versions_seen": [
+        "2312.16952v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230869+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230869+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2312.16484",
+      "current_version": 1,
+      "versioned_arxiv_id": "2312.16484v1",
+      "title": "Emergence of superconductivity near 11 K by suppressing the 3-fold helical-chain structure in noncentrosymmetric HgS",
+      "authors": [
+        "He Zhang",
+        "Wei Zhong",
+        "Yanghao Meng",
+        "Bowen Tang",
+        "Binbin Yue",
+        "Xiaohui Yu",
+        "Fang Hong"
+      ],
+      "abstract": "The trigonal $α$-HgS has a 3-fold helical chain structure, and is in form of a noncentrosymmetric $P3_121$ phase, known as the cinnabar phase. However, under pressure, the helical chains gradually approach and connect with each other, finally reconstructing into a centrosymmetric NaCl structure at 21 GPa. Superconductivity emerges just after this helical-nonhelical structural transition. The maximum critical temperature ($T_c$) reaches 11 K at 25.4 GPa, $T_c$ decreases with further compression, and is still 3.5 K at 44.8 GPa. Furthermore, the $T_c$-critical magnetic field ($B_{c2}$) relation exhibits multi-band features, with a $B_{c2}$ of 5.65 T at 0 K by two-band fitting. Raman spectra analysis demonstrates that phonon softening plays a key role in structural transition and the emergence of superconductivity. It is noted that HgS is the first reported IIB group metal sulfide superconductor and the only NaCl-type metal sulfide superconductor with a $T_c$ above 10 K. This work will inspire the exploration of superconductivity in other chiral systems and will extend our understanding of the versatile behavior in such kinds of materials.",
+      "initial_submission_date": "2023-12-27T09:18:33Z",
+      "latest_update_date": "2023-12-27T09:18:33Z",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2312.16484v1",
+      "pdf_url": "https://arxiv.org/pdf/2312.16484v1",
+      "versions_seen": [
+        "2312.16484v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "cinnabar"
+      ],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230872+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230872+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2312.16050",
+      "current_version": 1,
+      "versioned_arxiv_id": "2312.16050v1",
+      "title": "Intrinsic and extrinsic anomalous transport properties in noncollinear antiferromagnetic Mn$_3$Sn from first-principle calculations",
+      "authors": [
+        "Xiuxian Yang",
+        "Wanxiang Feng",
+        "Xiaodong Zhou",
+        "Yuriy Mokrousov",
+        "Yugui Yao"
+      ],
+      "abstract": "Mn$_3$Sn has garnered significant attention due to its kagome lattice, 120$^\\circ$ noncollinear antiferromagnetic order, and substantial anomalous Hall effect. In this study, we comprehensively explore intrinsic and extrinsic contributions to anomalous Hall, anomalous Nernst, and anomalous thermal Hall effects, employing first-principle calculations and group theory analysis. Comparative analysis between our theoretical results and available experimental data underscores the predominance of intrinsic mechanism in shaping anomalous transport properties at low temperatures. Specifically, Weyl fermions are identified as the primary contributors to intrinsic anomalous Hall conductivity. The significance of extrinsic mechanisms becomes evident at high temperatures, especially when the longitudinal charge conductivity falls into the dirty regime, where the side jump mechanism plays a vital role. Extrinsic contributions to anomalous transport properties are primarily influenced by the electronic states residing at the Fermi surfaces. Furthermore, anomalous transport properties exhibit periodic variations when subjected to spin rotations within the kagome plane, achievable by applying an external magnetic field. Our findings advance the understanding of anomalous transport phenomena in Mn$_3$Sn and offer insights into potential applications of noncollinear antiferromagnetic materials in spintronics and spin caloritronics.",
+      "initial_submission_date": "2023-12-26T13:34:26Z",
+      "latest_update_date": "2023-12-26T13:34:26Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2312.16050v1",
+      "pdf_url": "https://arxiv.org/pdf/2312.16050v1",
+      "versions_seen": [
+        "2312.16050v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "spintronics"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230875+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230875+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2312.14928",
+      "current_version": 1,
+      "versioned_arxiv_id": "2312.14928v1",
+      "title": "Family Puzzle, Framing Topology, $c_-=24$ and 3(E8)$_1$ Conformal Field Theories: 48/16 = 45/15 = 24/8 =3",
+      "authors": [
+        "Juven Wang"
+      ],
+      "abstract": "Family Puzzle or Generation Problem demands an explanation of why there are 3 families or generations of quarks and leptons in the Standard Model of particle physics. Here we propose a novel solution -- the multiple of 3 families of 16 Weyl fermions (namely $(N_f=3) \\times 16$) in the 3+1d spacetime dimensions are topologically robust due to constraints rooted in profound mathematics (such as Hirzebruch signature and Rokhlin theorems, and cobordism) and derivable in physics (such as chiral edge states, quantized thermal Hall conductance, and gravitational Chern-Simons theory), which holds true even forgetting or getting rid of any global symmetry or gauge structure of the Standard Model. By the dimensional reduction through a sequence of sign-reversing mass domain wall of domain wall and so on, we reduce the Standard Model fermions to obtain the $(N_f=3) \\times 16$ multiple of 1+1d Majorana-Weyl fermion with a total chiral central charge $c_-=24$. Effectively via the fermionization-bosonization, the 1+1d theory becomes 3 copies of $c_-=8$ of (E$_8)_1$ conformal field theory, living on the boundary of 3 copies of 2+1d E$_8$ quantum Hall states. Based on the framing anomaly-free $c_- = 0 \\mod 24$ modular invariance, the framed bordism and string bordism $\\mathbb{Z}_{24}$ class, the 2-framing and $p_1$-structure, the $w_1$-$p_1$ bordism $\\mathbb{Z}_3$ class constraints, we derive the family number constraint $N_f \\in (\\frac{48}{16} =\\frac{24}{8}=3) \\mathbb{Z}$. The dimensional reduction process, although not necessary, is sufficiently supported by the $\\mathbb{Z}_{16}$ class Smith homomorphism. We also comment on the $\\frac{45}{15}=3$ relation: the 3 families of 15 Weyl-fermion Standard Model vacuum where the absence of some sterile right-handed neutrinos is fulfilled by additional topological field theories or conformal field theories in Ultra Unification.",
+      "initial_submission_date": "2023-12-22T18:59:46Z",
+      "latest_update_date": "2023-12-22T18:59:46Z",
+      "categories": [
+        "hep-th",
+        "cond-mat.str-el",
+        "hep-lat",
+        "hep-ph",
+        "math-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2312.14928v1",
+      "pdf_url": "https://arxiv.org/pdf/2312.14928v1",
+      "versions_seen": [
+        "2312.14928v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Computational / theoretical",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [
+          "we derive"
+        ],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230877+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230877+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2312.14811",
+      "current_version": 1,
+      "versioned_arxiv_id": "2312.14811v1",
+      "title": "Local site behavior of the 5d and 4f ions in the frustrated pyrochlore Ho2Os2O7",
+      "authors": [
+        "S. Calder",
+        "Z. Y. Zhao",
+        "M. H. Upton",
+        "J. -Q. Yan"
+      ],
+      "abstract": "The pyrochlore osmate Ho2Os2O7 is a candidate material for a fragile J=0 local singlet ground state, however little is known regarding the single-ion behavior of either the Os or Ho ions. To address this we present polarized neutron powder diffraction (PNPD) and resonant inelastic x-ray scattering (RIXS) measurements that separately probe the local site behavior of the Os and Ho ions. The PNPD results are dominated by Ho3+ scattering and the analysis reveals local site susceptibility behavior consistent with spin ice materials. Complimentary unpolarized neutron powder diffraction show an ordered spin ice ground state in an applied magnetic field. To isolate the Os4+ single-ion behavior we present resonant inelastic x-ray scattering (RIXS) measurements at the osmium L-edge. Analysis of the RIXS spectra parameterize the spin-orbit coupling (0.35 eV), Hund's coupling (0.27 eV) and trigonal distortion (-0.17 eV). The results are considered within the context of a J=0 model and possible departures from this through structural distortions, excitonic interactions and 5d-4f interactions between the Os ion and the surrounding Ho lattice. The experimental methodology employed highlights the complimentary information available in rare earth based 5d pyrochlores from distinct neutron and x-ray scattering techniques that allow for the isolation and determination of the behavior of the different ions.",
+      "initial_submission_date": "2023-12-22T16:33:34Z",
+      "latest_update_date": "2023-12-22T16:33:34Z",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2312.14811v1",
+      "pdf_url": "https://arxiv.org/pdf/2312.14811v1",
+      "versions_seen": [
+        "2312.14811v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Methods / software",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230880+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230880+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2312.14093",
+      "current_version": 1,
+      "versioned_arxiv_id": "2312.14093v1",
+      "title": "Nano-Imaging of Landau-Phonon Polaritons in Dirac Heterostructures",
+      "authors": [
+        "Lukas Wehmeier",
+        "Suheng Xu",
+        "Rafael A. Mayer",
+        "Brian Vermilyea",
+        "Makoto Tsuneto",
+        "Michael Dapolito",
+        "Rui Pu",
+        "Zengyi Du",
+        "Xinzhong Chen",
+        "Wenjun Zheng",
+        "Ran Jing",
+        "Zijian Zhou",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Adrian Gozar",
+        "Qiang Li",
+        "Alexey B. Kuzmenko",
+        "G. Lawrence Carr",
+        "Xu Du",
+        "Michael M. Fogler",
+        "D. N. Basov",
+        "Mengkun Liu"
+      ],
+      "abstract": "Polaritons are light-matter quasiparticles that govern the optical response of quantum materials and enable their nanophotonic applications. We have studied a new type of polaritons arising in magnetized graphene encapsulated in hexagonal boron nitride (hBN). These polaritons stem from hybridization of Dirac magnetoexciton modes of graphene with waveguide phonon modes of hBN crystals. We refer to these quasiparticles as the Landau-phonon polaritons (LPPs). Using infrared magneto nanoscopy, we imaged LPPs and controlled their real-space propagation by varying the magnetic field. These LLPs have large in-plane momenta and are not bound by the conventional optical selection rules, granting us access to the \"forbidden\" inter-Landau level transitions (ILTs). We observed avoided crossings in the LPP dispersion - a hallmark of the strong coupling regime - occurring when the magnetoexciton and hBN phonon frequencies matched. Our LPP-based nanoscopy also enabled us to resolve two fundamental many-body effects: the graphene Fermi velocity renormalization and ILT-dependent magnetoexciton binding energies. These results indicate that magnetic-field-tuned Dirac heterostructures are promising platforms for precise nanoscale control and sensing of light-matter interaction.",
+      "initial_submission_date": "2023-12-21T18:12:56Z",
+      "latest_update_date": "2023-12-21T18:12:56Z",
+      "categories": [
+        "physics.optics",
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2312.14093v1",
+      "pdf_url": "https://arxiv.org/pdf/2312.14093v1",
+      "versions_seen": [
+        "2312.14093v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Experimental",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [
+          "We observed"
+        ],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230882+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230882+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2312.13857",
+      "current_version": 1,
+      "versioned_arxiv_id": "2312.13857v1",
+      "title": "Superconducting diodes from magnetization gradients",
+      "authors": [
+        "Mercè Roig",
+        "Panagiotis Kotetes",
+        "Brian M. Andersen"
+      ],
+      "abstract": "The superconducting diode effect may exist in bulk systems as well as in junctions when time-reversal and inversion symmetries are simultaneously broken. Magnetization gradients and textures satisfy both requirements and therefore also allow for superconducting diodes. We concretely demonstrate such possibilities in two-dimensional superconductors. We first consider superconducting Rashba metals in the presence of an inhomogeneous out-of-plane exchange field. Using analytical arguments, we reveal that such magnetization gradients stabilize a helical superconducting ground state, similar to homogeneous in-plane magnetic fields. Our predictions are confirmed by employing self-consistent real-space numerical lattice simulations exemplified through the cases of a uniform magnetization gradient or a ferromagnetic domain wall. Furthermore, by considering a phase difference, we determine the nonreciprocal current-phase relations and explore their parameter dependence. Our calculations show that planar devices with out-of-plane magnetization gradients may be as efficient supercurrent rectifiers as their analogs induced by uniform in-plane fields. In addition, they feature the advantage that by means of tailoring the spatial profile of the out-of-plane magnetization, one may optimize and spatially control the diode effect. Finally, we show that superconducting diodes may become also accessible even in the absence of spin-orbit coupling by means of suitable spatially-varying magnetization fields.",
+      "initial_submission_date": "2023-12-21T13:53:42Z",
+      "latest_update_date": "2023-12-21T13:53:42Z",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2312.13857v1",
+      "pdf_url": "https://arxiv.org/pdf/2312.13857v1",
+      "versions_seen": [
+        "2312.13857v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Computational / theoretical",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [
+          "Our calculations"
+        ],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230885+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230885+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2312.13088",
+      "current_version": 1,
+      "versioned_arxiv_id": "2312.13088v1",
+      "title": "Resonant Raman Scattering of Few Layers CrBr$_3$",
+      "authors": [
+        "Łucja Kipczak",
+        "Arka Karmakar",
+        "Magdalena Grzeszczyk",
+        "Róża Janiszewska",
+        "Tomasz Woźniak",
+        "Zhaolong Chen",
+        "Jan Pawłowski",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Adam Babiński",
+        "Maciej Koperski",
+        "Maciej R. Molas"
+      ],
+      "abstract": "We investigate the vibrational and magnetic properties of thin layers of chromium tribromide (CrBr$_3$) with a thickness ranging from three to twenty layers (3~L to 20~L) revealed by the Raman scattering (RS) technique. Systematic dependence of the RS process efficiency on the energy of the laser excitation is explored for four different excitation energies: 1.96 eV, 2.21 eV, 2.41 eV, and 3.06 eV. Our characterization demonstrates that for 12 L CrBr$_3$, 3.06~eV excitation could be considered resonant with interband electronic transitions due to the enhanced intensity of the Raman-active scattering resonances and the qualitative change in the Raman spectra. Polarization-resolved RS measurements for 12 L CrBr$_3$ and first-principles calculations allow us to identify five observable phonon modes characterized by distinct symmetries, classified as the A$_\\textrm{g}$ and E$_\\textrm{g}$ modes. The evolution of phonon modes with temperature for a 20 L CrBr$_3$ encapsulated in hexagonal boron nitride flakes demonstrates alterations of phonon energies and/or linewidths of resonances indicative of a transition between the paramagnetic and ferromagnetic state at Curie temperature ($T_\\textrm{C} \\approx 50$ K). The exploration of the effects of thickness on the phonon energies demonstrated small variations pronounces exclusively for the thinnest layers in the vicinity of 3 - 5 L. This observation is attributed to strong localization in the real space of interband electronic excitations, limiting the effects of confinement for resonantly excited Raman modes to atomically thin layers.",
+      "initial_submission_date": "2023-12-20T15:09:32Z",
+      "latest_update_date": "2023-12-20T15:09:32Z",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2312.13088v1",
+      "pdf_url": "https://arxiv.org/pdf/2312.13088v1",
+      "versions_seen": [
+        "2312.13088v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon",
+        "Raman mode"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon",
+          "Raman mode"
+        ]
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230888+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230888+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2312.12607",
+      "current_version": 1,
+      "versioned_arxiv_id": "2312.12607v1",
+      "title": "Graph Theorem for Chiral Exact Flat Bands at Charge Neutrality",
+      "authors": [
+        "Gurjyot Sethi",
+        "Bowen Xia",
+        "Dongwook Kim",
+        "Hang Liu",
+        "Xiaoyin Li",
+        "Feng Liu"
+      ],
+      "abstract": "Chiral exact flat bands (FBs) at charge neutrality have attracted much recent interest, presenting an intriguing condensed-matter system to realize exact many-body phenomena, as specifically shown in \"magic angle\" twisted bilayer graphene for superconductivity and triangulene-based superatomic graphene for excitonic condensation. Yet, no generic physical model to realize such FBs has been developed. Here we present a new mathematical theorem, called bipartite double cover (BDC) theorem, and prove that the BDC of line-graph (LG) lattices hosts at least two chiral exact FBs of opposite chirality, i.e., yin-yang FBs, centered-around/at charge neutrality (E = 0) akin to the \"chiral limit\" of twisted bilayer graphene. We illustrate this theorem by mapping it exactly onto tight-binding lattice models of the BDC of LGs of hexagonal lattice for strong topological and of triangular lattice for fragile topological FBs, respectively. Moreover, we use orbital design principle to realize such exotic yin-yang FBs in non-BDC lattices to instigate their real material discovery. This work not only enables the search for exact chiral FBs at zero energy beyond moiré heterostructures, but also opens the door to discovering quantum semiconductor features with FB-enabled strongly correlated carriers.",
+      "initial_submission_date": "2023-12-19T21:22:18Z",
+      "latest_update_date": "2023-12-19T21:22:18Z",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2312.12607v1",
+      "pdf_url": "https://arxiv.org/pdf/2312.12607v1",
+      "versions_seen": [
+        "2312.12607v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230890+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230890+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2312.12374",
+      "current_version": 1,
+      "versioned_arxiv_id": "2312.12374v1",
+      "title": "Thermal rectification with topological edge states",
+      "authors": [
+        "Abdulla Alseiari",
+        "Michael Hilke"
+      ],
+      "abstract": "Thermal rectification devices can be important for various thermal management applications. For oscillator chains, thermal rectification was observed when masses are distributed non-uniformly. Leaning on the importance of topological materials, we consider here a simple vibrational topological system, the binary isotope superlattice (BISL). We show that the BISL can be mapped exactly onto the Su-Schrieffer-Heeger (SSH) model, which has different topological phases, including topological edge sates. For the case, where there is a single topological edge state, we show that the BISL exhibits thermal rectification in the presence of a small nonlinear term. Thermal transport is computed using temperature reservoirs connected to both extremities. These results have implications for other classes of topological phonon systems.",
+      "initial_submission_date": "2023-12-19T18:05:48Z",
+      "latest_update_date": "2023-12-19T18:05:48Z",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2312.12374v1",
+      "pdf_url": "https://arxiv.org/pdf/2312.12374v1",
+      "versions_seen": [
+        "2312.12374v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [
+        "topological phonon"
+      ],
+      "matched_keywords": [
+        "topological phonon",
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [
+          "topological phonon"
+        ],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230893+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230893+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2312.12060",
+      "current_version": 1,
+      "versioned_arxiv_id": "2312.12060v1",
+      "title": "Spin-dependent localization of helical edge states in a non-Hermitian phononic crystal",
+      "authors": [
+        "Junpeng Wu",
+        "Riyi Zheng",
+        "Jialuo Liang",
+        "Manzhu Ke",
+        "Jiuyang Lu",
+        "Weiyin Deng",
+        "Xueqin Huang",
+        "Zhengyou Liu"
+      ],
+      "abstract": "As a distinctive feature unique to non-Hermitian systems, non-Hermitian skin effect displays fruitful exotic phenomena in one or higher dimensions, especially when conventional topological phases are involved. Among them, hybrid skin-topological effect is theoretically proposed recently, which exhibits anomalous localization of topological boundary states at lower-dimensional boundaries accompanied by extended bulk states. Here we experimentally realize the hybrid skin-topological effect in a non-Hermitian phononic crystal. The phononic crystal, before tuning to be non-Hermitian, is an ideal acoustic realization of the Kane-Mele model, which hosts gapless helical edge states at the boundaries. By introducing a staggered distribution of loss, the spin-dependent edge modes pile up to opposite corners, leading to a direct observation of the spin-dependent hybrid skin-topological effect. Our work highlights the interplay between topology and non-Hermiticity and opens new routes to non-Hermitian wave manipulations.",
+      "initial_submission_date": "2023-12-19T11:24:39Z",
+      "latest_update_date": "2023-12-19T11:24:39Z",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2312.12060v1",
+      "pdf_url": "https://arxiv.org/pdf/2312.12060v1",
+      "versions_seen": [
+        "2312.12060v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230896+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230896+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2312.11979",
+      "current_version": 1,
+      "versioned_arxiv_id": "2312.11979v1",
+      "title": "Origin of chirality in transition-metal dichalcogenides",
+      "authors": [
+        "Kwangrae Kim",
+        "Hyun-Woo J. Kim",
+        "Seunghyeok Ha",
+        "Hoon Kim",
+        "Jin-Kwang Kim",
+        "Jaehwon Kim",
+        "Hyunsung Kim",
+        "Junyoung Kwon",
+        "Jihoon Seol",
+        "Saegyeol Jung",
+        "Changyoung Kim",
+        "Ahmet Alatas",
+        "Ayman Said",
+        "Michael Merz",
+        "Matthieu Le Tacon",
+        "Jin Mo Bok",
+        "Ki-Seok Kim",
+        "B. J. Kim"
+      ],
+      "abstract": "Chirality is a ubiquitous phenomenon in which a symmetry between left- and right-handed objects is broken, examples in nature ranging from subatomic particles and molecules to living organisms. In particle physics, the weak force is responsible for the symmetry breaking and parity violation in beta decay, but in condensed matter systems interactions that lead to chirality remain poorly understood. Here, we unravel the mechanism of chiral charge density wave formation in the transition-metal dichalcogenide 1T-TiSe2. Using representation analysis, we show that charge density modulations and ionic displacements, which transform as a continuous scalar field and a vector field on a discrete lattice, respectively, follow different irreducible representations of the space group, despite the fact that they propagate with the same wave-vectors and are strongly coupled to each other. This charge-lattice symmetry frustration is resolved by further breaking of all symmetries not common to both sectors through induced lattice distortions, thus leading to chirality. Our theory is verified using Raman spectroscopy and inelastic x-ray scattering, which reveal that all but translation symmetries are broken at a level not resolved by state-of-the-art diffraction techniques.",
+      "initial_submission_date": "2023-12-19T09:21:00Z",
+      "latest_update_date": "2023-12-19T09:21:00Z",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2312.11979v1",
+      "pdf_url": "https://arxiv.org/pdf/2312.11979v1",
+      "versions_seen": [
+        "2312.11979v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Computational / theoretical",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [
+        "Raman spectroscopy"
+      ],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [
+          "Our theory"
+        ],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230898+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230898+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2312.10453",
+      "current_version": 1,
+      "versioned_arxiv_id": "2312.10453v1",
+      "title": "Intrinsic chiral topological superconductor thin films",
+      "authors": [
+        "Xi Luo",
+        "Yu-Ge Chen",
+        "Ziqiang Wang",
+        "Yue Yu"
+      ],
+      "abstract": "Superconductors (SCs) with nontrivial topological band structures in the normal state have been discovered recently in bulk materials. When such SCs are made into thin films, quantum tunneling and Cooper pairing take place between the topological surface states (TSSs) on the opposing surfaces. Here, we find that chiral topological superconductivity with spontaneous time-reversal symmetry breaking emerges on the surface of such thin film SCs. There is a mirror symmetry that protects a novel nonunitary orbital and spin triplet pairing of the TSS. In the mirror diagonal space, the chiral topological SC manifests as two independent chiral $p$-wave spin-triplet pairing states, in which each is a two-dimensional superconducting analog of the Anderson-Brinkman-Morel state in superfluid $^3$He with in-plane exchange fields. A rich topological phase diagram governed by the nontrivial $\\mathbb{Z}\\oplus\\mathbb{Z}$ topological invariant is obtained with gapless chiral Majorana edge modes and anyonic Majorana vortices. We further construct a three dimensional lattice model with a topological band structure and SC pairings, which is motivated by Fe-based SCs such as Fe(Te,Se). We demonstrate the realization of the proposed intrinsic chiral topological superconductor in the quasi-two-dimensional thin-film limit. Our findings enable thin-film SCs with nontrivial $Z_2$ band structures as a single-material platform for intrinsic chiral topological superconductivity with both vortex and boundary Majorana excitations for topological quantum device making.",
+      "initial_submission_date": "2023-12-16T13:56:57Z",
+      "latest_update_date": "2023-12-16T13:56:57Z",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2312.10453v1",
+      "pdf_url": "https://arxiv.org/pdf/2312.10453v1",
+      "versions_seen": [
+        "2312.10453v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230901+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230901+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2312.09055",
+      "current_version": 1,
+      "versioned_arxiv_id": "2312.09055v1",
+      "title": "Exploration of magnetoelastic deformations in spin-chain compound CuBr$_2$",
+      "authors": [
+        "Biaoyan Hu",
+        "Yingying Peng",
+        "Xiaoqiang Liu",
+        "Qizhi Li",
+        "Qiangqiang Gu",
+        "Matthew J. Krogstad",
+        "Raymond Osborn",
+        "Takashi Honda",
+        "Ji Feng",
+        "Yuan Li"
+      ],
+      "abstract": "We investigate a spin-$\\frac{1}{2}$ antiferromagnet, CuBr$_2$, which has quasi-one-dimensional structural motifs. The system has previously been observed to exhibit unusual Raman modes possibly due to a locally deformed crystal structure driven by the low-dimensional magnetism. Using hard X-ray scattering and neutron total scattering, here we aim to verify a specific form of tetramerized lattice deformation proposed in the previous study. Apart from diffuse scattering signals which we can reproduce by performing a thorough modeling of the lattice's thermal vibrations, we do not observe evidence for a tetramerized lattice structure within our detection sensitivity. As a result, it is more likely that the unusual Raman modes in CuBr$_2$ arise from classical magnon-phonon hybridization, rather than from quantum spin-singlet-driven lattice deformation.",
+      "initial_submission_date": "2023-12-14T15:53:06Z",
+      "latest_update_date": "2023-12-14T15:53:06Z",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2312.09055v1",
+      "pdf_url": "https://arxiv.org/pdf/2312.09055v1",
+      "versions_seen": [
+        "2312.09055v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [
+        "magnon-phonon hybridization"
+      ],
+      "matched_keywords": [
+        "magnon-phonon hybridization",
+        "phonon",
+        "Raman mode"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [
+          "magnon-phonon hybridization"
+        ],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon",
+          "Raman mode"
+        ]
+      },
+      "first_seen_at": "2026-07-27T21:22:23.230903+00:00",
+      "last_seen_at": "2026-07-27T21:22:23.230903+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     }
