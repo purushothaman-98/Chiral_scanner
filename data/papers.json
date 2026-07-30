@@ -1,8 +1,488 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-07-30T05:17:58.132436+00:00",
+  "updated_at": "2026-07-30T06:23:16.165339+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2607.19470",
+      "current_version": 2,
+      "versioned_arxiv_id": "2607.19470v2",
+      "title": "Coloring in anyon superconductivity",
+      "authors": [
+        "Umang Mehta",
+        "Yuto Nakajima",
+        "Hart Goldman"
+      ],
+      "abstract": "The recently observed signatures of superconductivity proximate to a fractional quantum anomalous Hall (FQAH) state in a twisted MoTe$_2$ bilayer has revitalized interest in quantum phases of matter induced by anyon dynamics. Here we show how a panoply of anyon-driven phases associated with doping the lattice ${ν=2/3}$ FQAH state can be realized as competing instabilities of a Fermi surface of charge-$e/3$ ``quarks'' coupled to a $\\mathrm{SU}(3)_{-1}$ Chern-Simons gauge field, which is dual to the more conventional $\\mathrm{U}(1)_3$ Chern-Simons-Ginzburg-Landau theory of quasiholes. For example, a range of electronic superconductors emerge from \\emph{color superconductivity}, under which the Fermi surface experiences a pairing instability mediated by gauge fluctuations. These include SC$\\star$ phases -- where superconductivity coexists with topological order -- as well as topological superconductors displaying half-integer chiral central charges when the quarks are weakly paired. One example is a $p+ip$ ``color-valley-locked'' superconductor, a topological analogue of the color superconductor familiar in quantum chromodynamics. On the other hand, both superconducting and non-Fermi liquid phases can emerge when the quarks form an itinerant ferromagnet, polarizing the Fermi surface to a particular combination of colors. Finally, our framework naturally accommodates the possibility of anyonic bound state formation, allowing access to phases induced by doping anyons of charge $2e/3$ as opposed to $e/3$ within the same model. Our work unifies many earlier proposed anyonic phases as instabilities of a single parent \\emph{quark metal} phase, distilling their emergence into a competition between superconductivity and itinerant color ferromagnetism.",
+      "initial_submission_date": "2026-07-21T18:00:03Z",
+      "latest_update_date": "2026-07-29T17:55:42Z",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall",
+        "hep-th"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2607.19470v2",
+      "pdf_url": "https://arxiv.org/pdf/2607.19470v2",
+      "versions_seen": [
+        "2607.19470v1",
+        "2607.19470v2"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-23T06:27:08.558898+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164605+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2607.26986",
+      "current_version": 1,
+      "versioned_arxiv_id": "2607.26986v1",
+      "title": "Theory of phonon-magnon hybridization and angular momentum in CrI$_3$ and CrBr$_3$",
+      "authors": [
+        "Maxime Mignolet",
+        "Miquel Royo",
+        "Massimiliano Stengel",
+        "Matthieu J. Verstreate"
+      ],
+      "abstract": "In magnetic materials angular momentum can be mediated by different carriers, including electrons, magnons, and phonons. The magnons can interact with circularly polarized phonons which are close in energy, provided specific symmetry conditions are met. If the interaction is strong enough the phonons and magnons shift in frequency and start to mix to form hybrid magneto-elastic quasi-particles. In this paper, we develop a constrained Hamiltonian framework which incorporates hybrid stiffness matrices and Berry curvatures. We quantify the degree of hybridization between phonons and magnons (up to 8% in CrI$_3$ and 25% in CrBr$_3$) using a decomposition of the total energy, which is a generalization of the norm decomposition for atomic contributions to phonons used in the literature. We also explore how the total angular momentum is conserved but shared between the phononic and magnonic subsystems upon hybridization.",
+      "initial_submission_date": "2026-07-29T14:43:44Z",
+      "latest_update_date": "2026-07-29T14:43:44Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2607.26986v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.26986v1",
+      "versions_seen": [
+        "2607.26986v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [
+        "circularly polarized phonon"
+      ],
+      "matched_keywords": [
+        "circularly polarized phonon",
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [
+          "circularly polarized phonon"
+        ],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-07-30T06:23:16.164625+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164625+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2607.26601",
+      "current_version": 1,
+      "versioned_arxiv_id": "2607.26601v1",
+      "title": "Signature of Magnon-Raman Phonon-Polariton Condensation in a Cavity via Transverse Pumping",
+      "authors": [
+        "Subrata Chakraborty",
+        "Shishir Kumar Pandey"
+      ],
+      "abstract": "Polaritons---hybrid light-matter quasiparticles---provide a versatile platform for dynamically controlling a wide range of condensed matter systems. While conventional polaritonic platforms rely on direct dipole coupling, controlling dipole-forbidden or Raman-active lattice and spin excitations remains challenging due to optical selection rules and the limitations of THz cavities. Here, we propose a theoretical platform for realizing a continuous-wave magnon--Raman phonon--polariton condensate. By embedding a magnetic medium hosting strongly coupled magnon and Raman-active phonon (MRP) modes inside an optical microcavity under continuous-wave transverse laser pumping, we derive the stationary-state phase diagram and demonstrate the emerging signature of distinct MRP condensation phases under critical conditions. Furthermore, since the bare magnon frequency is tunable via an external magnetic field, we show that the transverse pump frequency and the external magnetic field-dependent magnon simultaneously as highly flexible control parameters for exploring and controlling macroscopic quantum phenomena at the interface of cavity quantum optics, lattice dynamics, and quantum magnetism.",
+      "initial_submission_date": "2026-07-29T08:24:08Z",
+      "latest_update_date": "2026-07-29T08:24:08Z",
+      "categories": [
+        "physics.optics",
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2607.26601v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.26601v1",
+      "versions_seen": [
+        "2607.26601v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Computational / theoretical",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [
+        "Raman spectroscopy"
+      ],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [
+          "we derive"
+        ],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-07-30T06:23:16.164630+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164630+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2607.26132",
+      "current_version": 1,
+      "versioned_arxiv_id": "2607.26132v1",
+      "title": "Quantum Phase Diagram of the $2+1$D Untruncated SU$(2)$ Lattice Gauge Theory with Dynamical Fermions",
+      "authors": [
+        "Gabriel Rouxinol",
+        "Julian Bender",
+        "Patrick Emonts",
+        "Michele Grossi",
+        "Jad C. Halimeh"
+      ],
+      "abstract": "Non-Abelian gauge theories with dynamical matter govern the strong interaction and a broad class of strongly correlated quantum systems, yet their ground-state properties remain difficult to obtain from first principles. Using a continuous-group variational Monte Carlo approach that retains the full SU$(2)$ gauge field without truncation, we determine the ground-state behavior of the SU$(2)$ lattice gauge theory with staggered fermions on an $L\\times L$ square lattice. Treating the magnetic and electric couplings $λ$ and $g^2$ independently, we find a magnetic-flux transition at $λ^\\ast=-0.040\\pm 0.005$, with no resolvable drift of the transition point as the electric coupling is varied. Along the physical coupling line $λ=4/g^2$, for $L=4,6,8$, we uncover a gauge-matter delocalization crossover from a flux-disordered regime at strong electric coupling to an ordered unity-flux regime at weak coupling. The chiral condensate, a gauge-invariant Wilson-line meson correlator, and the local color density consistently reveal the emergence of coherent gauge-assisted matter dynamics. Together, these results provide a unified physical picture of how magnetic-flux ordering and fermionic coherence develop in an untruncated non-Abelian lattice gauge theory.",
+      "initial_submission_date": "2026-07-28T18:00:01Z",
+      "latest_update_date": "2026-07-28T18:00:01Z",
+      "categories": [
+        "hep-lat",
+        "cond-mat.quant-gas",
+        "cond-mat.str-el",
+        "hep-ph",
+        "quant-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2607.26132v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.26132v1",
+      "versions_seen": [
+        "2607.26132v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-30T06:23:16.164634+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164634+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2607.25983",
+      "current_version": 1,
+      "versioned_arxiv_id": "2607.25983v1",
+      "title": "Superfluidity without charge order in the attractive Hubbard model on the kagome lattice",
+      "authors": [
+        "Xiaodong Jin",
+        "Yingping Mou",
+        "Rubem Mondaini"
+      ],
+      "abstract": "Using auxiliary-field quantum Monte Carlo simulations, we study the zero-temperature attractive Hubbard model on the kagome lattice at various relevant electronic fillings. The low-energy physics at $2/3$-density is influenced by the Dirac point at the Fermi energy, wherein we unveil a superfluid transition at a critical attractive interaction $U_c/t=-4.58(3)$, which belongs to the chiral-XY universality class. This U(1) symmetry-breaking is not accompanied by charge order, even for substantially large interaction strengths, in a regime where a description in terms of hardcore bosons becomes increasingly suitable. An investigation of the latter shows that charge ordering at $1/3$-filling only occurs at interaction strengths much larger than those corresponding to the mapping to the original fermionic model. Additionally, for densities exhibiting van Hove singularities in the non-interacting density of states, our results show that any attractive interaction gives rise to superfluidity, yet again without charge ordering, contrary to recent studies employing mean-field theory.",
+      "initial_submission_date": "2026-07-28T17:05:04Z",
+      "latest_update_date": "2026-07-28T17:05:04Z",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2607.25983v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25983v1",
+      "versions_seen": [
+        "2607.25983v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-30T06:23:16.164636+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164636+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2607.25909",
+      "current_version": 1,
+      "versioned_arxiv_id": "2607.25909v1",
+      "title": "Charge-6e superconductivity from doping SU(3) spin liquids",
+      "authors": [
+        "Yan-Qi Wang",
+        "Boran Zhou",
+        "Hui Yang",
+        "Zhi-Qiang Gao"
+      ],
+      "abstract": "We propose doping $SU(3)$-symmetric spin liquids as a route toward charge-$6e$ superconductivity. This generalizes the idea of constructing charge-$4e$ superconductivity from doped $SU(4)$-symmetric phases. As a concrete platform, we study a bilayer triangular-lattice Hubbard model with $SU(3)$ spin symmetry and interlayer antiferromagnetic exchange. Using complementary parton constructions, we analyze doped $\\mathbb{Z}_3$ quantum spin liquid and $SU(3)$-related chiral spin liquids. Doping a $\\mathbb{Z}_3$ quantum spin liquid can produce an orthogonal metal with a gauge invariant fermi surface of charge-$3e$ fermionic trions. Pairing these trions gives a time-reversal-symmetric charge-$6e$ superconductor. Doping Abelian $SU(3)_1$ and $SU(6)_1$ chiral spin liquids yields chiral charge-$6e$ superconductors with and without residual Abelian topological order, respectively. Doping a non-Abelian $SU(3)_2$ chiral spin liquid leads to a non-Abelian chiral charge-$6e$ superconductor intertwined with $SO(3)_{-3}$ topological order and supporting non-Abelian $h/(6e)$ superconducting vortices. We also identify several other phases, including $\\mathbb{Z}_3$ orthogonal metal, quantum anomalous Hall (crystal) phases enriched by $\\mathbb{Z}_3$ or $\\mathbb{Z}_2$ topological order, $SU(3)$-breaking charge-$2e$ superconductors, composite fermi liquid coupled to non-Abelian gauge field, and descendant chiral spin liquids. Our results identify doped $SU(3)$ spin liquids as a natural setting where symmetry, fractionalization, and topology cooperate to produce charge-$6e$ superconductivity.",
+      "initial_submission_date": "2026-07-28T16:02:19Z",
+      "latest_update_date": "2026-07-28T16:02:19Z",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall",
+        "cond-mat.supr-con"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2607.25909v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25909v1",
+      "versions_seen": [
+        "2607.25909v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-30T06:23:16.164639+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164639+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2607.25769",
+      "current_version": 1,
+      "versioned_arxiv_id": "2607.25769v1",
+      "title": "Time-Reversal Invariant Topological Photonic Alloy",
+      "authors": [
+        "Feng Ruili",
+        "Qu Tiantao",
+        "Wu Xianbin",
+        "Shi Xiaoxuan",
+        "He Mujun",
+        "Zhang Lei",
+        "Chen Jun"
+      ],
+      "abstract": "Conventional approaches generate quantum spin Hall (QSH) and quantum valley Hall (QVH) effects by breaking spatial inversion symmetry across the entire photonic crystal. Consequently, modulating the bulk transmission gaps within these periodic frameworks typically requires global modification of structural parameters throughout the lattice, severely limiting device reconfigurability and post-fabrication adaptability. In this work, we demonstrate that global inversion symmetry breaking is not a prerequisite for inducing topological phases. Instead, local and minimal symmetry breaking is sufficient. Using a photonic alloy platform based on random substitutional disorder in a parallel-plate waveguide, we show that a disorder-driven local breaking of z-direction mirror symmetry and a local breaking of in-plane symmetry are capable of opening topological gaps to trigger QSH and QVH phase transitions, respectively, thereby supporting robust helical edge states and valley kink states. Rigorous topological characterization via the reflection-phase winding method reveals a striking size-dependent scaling behavior in both configurations, where the threshold doping concentration required to trigger the topological phase transition asymptotically vanishes in the thermodynamic limit. By enabling flexible, on-demand bulk gap engineering simply through random doping tuning rather than global structural reconfigurations, this photonic alloy platform not only deepens understanding of disorder induced topological physics but also offers a scalable, highly efficient design strategy for integrated topological optical communications.",
+      "initial_submission_date": "2026-07-28T14:23:11Z",
+      "latest_update_date": "2026-07-28T14:23:11Z",
+      "categories": [
+        "physics.optics",
+        "cond-mat.dis-nn"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2607.25769v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25769v1",
+      "versions_seen": [
+        "2607.25769v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-30T06:23:16.164642+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164642+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2607.25767",
+      "current_version": 1,
+      "versioned_arxiv_id": "2607.25767v1",
+      "title": "Critical Ripples and Dirac Fermions in Crystalline Membranes",
+      "authors": [
+        "Sebastián Bahamondes",
+        "Rodrigo Soto-Garrido",
+        "Enrique Muñoz",
+        "Vladimir Juričić"
+      ],
+      "abstract": "Crystalline membranes hosting Dirac fermions, with graphene as the paradigmatic example, combine two low-energy sectors with sharply different dynamics: nonrelativistic flexural phonons and relativistic-like Dirac quasiparticles. We develop the low-energy field theory of this coupled system at charge neutrality and determine how this dynamical mismatch controls the coupling between the two sectors. In the long-wavelength flat phase, rotational symmetry ties the renormalization of the leading local scalar strain--density coupling to the scale-dependent bending rigidity, causing its dimensionless strength to decrease logarithmically. At the same time, flexural modes become parametrically slower than the Dirac fermions, so the resulting fermionic feedback vanishes as a power law.The flat phase is therefore stable against this perturbation. The physics changes when elastic interactions or electronic softening destabilize the membrane at a finite wavelength, selecting a ripple pattern formed by modes at $\\pm\\mathbf{Q}$. For an isolated pair of ordering wavevectors, provided that commensurability-induced phase pinning is irrelevant, the transition is governed by the bosonic Wilson--Fisher fixed point, while the Dirac fermions remain spectators. A genuinely hybrid electronic--structural critical point arises instead when symmetry permits a mass-type Dirac bilinear to share the ripple's momentum and quantum numbers, including horizontal-reflection parity. The transition is then described by the chiral-XY Gross--Neveu--Yukawa universality class. Using the known one-loop critical exponents, we characterize this transition, determine the induced secondary elastic distortion, and show that the fermionic and bosonic velocities lock in the isotropic continuum limit.",
+      "initial_submission_date": "2026-07-28T14:20:24Z",
+      "latest_update_date": "2026-07-28T14:20:24Z",
+      "categories": [
+        "cond-mat.other",
+        "cond-mat.stat-mech"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2607.25767v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25767v1",
+      "versions_seen": [
+        "2607.25767v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-07-30T06:23:16.164644+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164644+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2607.23490",
+      "current_version": 2,
+      "versioned_arxiv_id": "2607.23490v2",
+      "title": "Interplay of Spin Waves, Crystal-Field Excitations, and Phonons in Multiferroic Ba3HoRu2O9 revealed by Inelastic Neutron Scattering, Crystal-Field Analysis, and Machine-Learned Phonon Calculations",
+      "authors": [
+        "Ekta Kushwaha",
+        "Sayan Ghosh",
+        "Gourab Roy",
+        "Mohit Kumar",
+        "Manh Duc Le",
+        "Jhuma Shannigrahi",
+        "Som Datta Kaushik",
+        "Devashibhai T. Adroja",
+        "Tathamay Basu"
+      ],
+      "abstract": "Understanding the microscopic origin of spin-dipole coupling and high-energy excitations in correlated 4d-4f multiferroic oxides is challenging because magnetic, crystal-field, and lattice excitations frequently overlap in energy. The hexagonal 6H perovskite Ba3HoRu2O9 provides an ideal platform to investigate this interplay owing to the coexistence of Ru2O9 molecular units and localized Ho3+ moments. To identify the contributions from these different excitations, we combine inelastic neutron scattering (INS) with linear spin-wave calculations, crystal-field analysis, Raman spectroscopy, and machine-learned force field (MLFF) phonon calculations. A dispersive magnetic excitation below 6.2 meV is accurately reproduced by linear spin-wave theory, establishing its origin as a collective spin-wave excitation of the coupled Ru-Ho magnetic network. At higher energies, broad excitations centered near 20, 39, 70, and 90 meV is observed that are present far above magnetic ordering temperature. Crystal-field calculations based on the Stevens formalism place the strongest Ho3+ transitions within the experimentally observed energy window, while Raman spectroscopy and MLFF phonon calculations identify optical phonons with comparable energies. Together, these complementary results show that the broad INS feature near 39 meV is consistent with overlapping contributions from Ho3+ crystal-field excitations, lattice vibrations, and previously reported Ru2O9 molecular magnetic excitations. These findings establish a microscopic framework for understanding the interplay between spin, crystal-field, and lattice degrees of freedom in this multiferroic 4d-4f compound.",
+      "initial_submission_date": "2026-07-26T06:32:14Z",
+      "latest_update_date": "2026-07-28T11:20:25Z",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2607.23490v2",
+      "pdf_url": "https://arxiv.org/pdf/2607.23490v2",
+      "versions_seen": [
+        "2607.23490v1",
+        "2607.23490v2"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "multiferroic"
+      ],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon",
+        "lattice vibration"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon",
+          "lattice vibration"
+        ]
+      },
+      "first_seen_at": "2026-07-28T06:22:48.915753+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164651+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null,
+      "ai_prompt_version": "chiral-phonons-v3.0",
+      "ai_model": "openai/gpt-4.1-mini",
+      "ai_classified_at": "2026-07-28T07:22:14.133484+00:00"
+    },
+    {
+      "base_arxiv_id": "2607.25483",
+      "current_version": 1,
+      "versioned_arxiv_id": "2607.25483v1",
+      "title": "Anisotropic bond-current susceptibilities and real-space current topology in correlated electron systems",
+      "authors": [
+        "Worapon Phatcharasirinawakun",
+        "Hiroyuki Yamase"
+      ],
+      "abstract": "We derive all symmetry-allowed bond-current form factors generated by nearest-neighbor bond-charge interactions on square, triangular, and kagome lattices. We find that the anisotropy of the bond-current susceptibility systematically favors ordering wave vectors that support closed loop-current states, whereas symmetry-related wave vectors with weaker susceptibility generate noncirculating current textures. Near van Hove filling, this correspondence is robust across all lattice geometries considered, producing staggered flux phases on the square lattice, diamond-shaped current patterns on the triangular lattice and both chiral and nonchiral loop-current states on the kagome lattice. Our results establish a direct link between bond-current form factors, susceptibility anisotropy, and real-space current topology, providing a general framework for identifying loop-current orders and interpreting signatures of time-reversal symmetry breaking in correlated electron materials.",
+      "initial_submission_date": "2026-07-28T09:20:03Z",
+      "latest_update_date": "2026-07-28T09:20:03Z",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2607.25483v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25483v1",
+      "versions_seen": [
+        "2607.25483v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Computational / theoretical",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [
+          "We derive"
+        ],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-30T06:23:16.164654+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164654+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2607.23764",
       "current_version": 1,
@@ -45,120 +525,9 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-28T06:22:48.915730+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915730+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164661+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
-    },
-    {
-      "base_arxiv_id": "2607.23490",
-      "current_version": 1,
-      "versioned_arxiv_id": "2607.23490v1",
-      "title": "Interplay of Spin Waves, Crystal-Field Excitations, and Phonons in Multiferroic Ba3HoRu2O9 revealed by Inelastic Neutron Scattering, Crystal-Field Analysis, and Machine-Learned Phonon Calculations",
-      "authors": [
-        "Ekta Kushwaha",
-        "Sayan Ghosh",
-        "Gourab Roy",
-        "Mohit Kumar",
-        "Manh Duc Le",
-        "Jhuma Shannigrahi",
-        "Som Datta Kaushik",
-        "Devashibhai T. Adroja",
-        "Tathamay Basu"
-      ],
-      "abstract": "Understanding the microscopic origin of spin-dipole coupling and high-energy excitations in correlated 4d-4f multiferroic oxides is challenging because magnetic, crystal-field, and lattice excitations frequently overlap in energy. The hexagonal 6H perovskite Ba3HoRu2O9 provides an ideal platform to investigate this interplay owing to the coexistence of Ru2O9 molecular units and localized Ho3+ moments. To identify the contributions from these different excitations, we combine inelastic neutron scattering (INS) with linear spin-wave calculations, crystal-field analysis, Raman spectroscopy, and machine-learned force field (MLFF) phonon calculations. A dispersive magnetic excitation below 6.2 meV is accurately reproduced by linear spin-wave theory, establishing its origin as a collective spin-wave excitation of the coupled Ru-Ho magnetic network. At higher energies, broad excitations centered near 20, 39, 70, and 90 meV is observed that are present far above magnetic ordering temperature. Crystal-field calculations based on the Stevens formalism place the strongest Ho3+ transitions within the experimentally observed energy window, while Raman spectroscopy and MLFF phonon calculations identify optical phonons with comparable energies. Together, these complementary results show that the broad INS feature near 39 meV is consistent with overlapping contributions from Ho3+ crystal-field excitations, lattice vibrations, and previously reported Ru2O9 molecular magnetic excitations. These findings establish a microscopic framework for understanding the interplay between spin, crystal-field, and lattice degrees of freedom in this multiferroic 4d-4f compound.",
-      "initial_submission_date": "2026-07-26T06:32:14Z",
-      "latest_update_date": "2026-07-26T06:32:14Z",
-      "categories": [
-        "cond-mat.str-el"
-      ],
-      "abstract_url": "https://arxiv.org/abs/2607.23490v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.23490v1",
-      "versions_seen": [
-        "2607.23490v1"
-      ],
-      "preliminary_include": true,
-      "preliminary_research_type": "Unclassified",
-      "preliminary_paper_nature": "Original research",
-      "detected_materials_or_systems": [
-        "multiferroic"
-      ],
-      "detected_experimental_methods": [],
-      "detected_computational_methods": [],
-      "detected_physical_properties": [],
-      "matched_keywords": [
-        "phonon",
-        "lattice vibration"
-      ],
-      "classification_evidence": {
-        "primary_terms": [],
-        "related_terms": [],
-        "author_experimental_actions": [],
-        "author_computational_actions": [],
-        "false_positive_terms": [],
-        "lattice_anchors": [
-          "phonon",
-          "lattice vibration"
-        ]
-      },
-      "first_seen_at": "2026-07-28T06:22:48.915753+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915753+00:00",
-      "ai_decision": {
-        "include_in_feed": false,
-        "relevance": "Not relevant",
-        "research_type": "Theory + Experiment",
-        "paper_nature": "Original research",
-        "materials_or_systems": [
-          "Ba3HoRu2O9"
-        ],
-        "material_or_system_family": [
-          "Perovskite oxides"
-        ],
-        "research_focus": [
-          "Methods or materials discovery"
-        ],
-        "chirality_class": [
-          "Not established"
-        ],
-        "phonon_character": [
-          "Optical"
-        ],
-        "generation_mechanisms": [
-          "Thermal gradient / population imbalance"
-        ],
-        "experimental_methods": [
-          "Neutron scattering",
-          "Raman optical activity / vibrational circular dichroism"
-        ],
-        "excitation_methods": [
-          "Thermal excitation"
-        ],
-        "detection_methods": [
-          "Neutron scattering",
-          "Raman spectroscopy"
-        ],
-        "computational_methods": [
-          "Machine learning"
-        ],
-        "physical_properties": [],
-        "evidence_level": "Insufficient abstract evidence",
-        "evidence_caveats": [
-          "chirality not established",
-          "phonon angular momentum or circular motion not reported"
-        ],
-        "application_directions": [],
-        "confidence": 0.7,
-        "reason": "The paper studies phonons and lattice vibrations in a multiferroic perovskite oxide, but does not report or analyze any chirality, phonon angular momentum, circular ionic motion, or related chiral phonon effects. The focus is on interplay of spin waves, crystal-field excitations, and phonons without establishing phonon chirality or angular momentum.",
-        "supporting_phrases": [
-          "machine-learned force field (MLFF) phonon calculations",
-          "Raman spectroscopy",
-          "optical phonons",
-          "lattice vibrations"
-        ]
-      },
-      "ai_fingerprint": "ad5f3c6c94594de78aef3f38fba9e31e93a97e4f9ac1c1a02c54f2cdb87eed18",
-      "ai_prompt_version": "chiral-phonons-v3.0",
-      "ai_model": "openai/gpt-4.1-mini",
-      "ai_classified_at": "2026-07-28T07:22:14.133484+00:00"
     },
     {
       "base_arxiv_id": "2607.23252",
@@ -197,7 +566,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-28T06:22:48.915759+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915759+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164665+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -239,7 +608,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-28T06:22:48.915762+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915762+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164670+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -282,7 +651,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-28T06:22:48.915765+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915765+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164673+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -331,7 +700,7 @@
         ]
       },
       "first_seen_at": "2026-07-28T06:22:48.915768+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915768+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164678+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -375,7 +744,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-28T06:22:48.915771+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915771+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164682+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -423,7 +792,7 @@
         ]
       },
       "first_seen_at": "2026-07-28T06:22:48.915774+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915774+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164686+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -482,7 +851,7 @@
         ]
       },
       "first_seen_at": "2026-07-28T06:22:48.915777+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915777+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164689+00:00",
       "ai_decision": {
         "include_in_feed": true,
         "relevance": "Uncertain",
@@ -577,7 +946,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-24T06:22:23.602150+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915788+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164693+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -637,7 +1006,7 @@
         ]
       },
       "first_seen_at": "2026-07-24T06:22:23.602170+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915796+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164696+00:00",
       "ai_decision": {
         "include_in_feed": false,
         "relevance": "Not relevant",
@@ -751,7 +1120,7 @@
         ]
       },
       "first_seen_at": "2026-07-22T06:24:44.484836+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915803+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164700+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -838,7 +1207,7 @@
         ]
       },
       "first_seen_at": "2026-07-23T06:27:08.558862+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915809+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164703+00:00",
       "ai_decision": {
         "include_in_feed": true,
         "relevance": "Core chiral-phonon paper",
@@ -933,7 +1302,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-23T06:27:08.558886+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915814+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164707+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -974,7 +1343,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-23T06:27:08.558891+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915819+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164710+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1040,7 +1409,7 @@
         ]
       },
       "first_seen_at": "2026-07-23T06:27:08.558895+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915823+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164714+00:00",
       "ai_decision": {
         "include_in_feed": true,
         "relevance": "Core chiral-phonon paper",
@@ -1108,50 +1477,6 @@
       "ai_classified_at": "2026-07-23T07:16:26.056053+00:00"
     },
     {
-      "base_arxiv_id": "2607.19470",
-      "current_version": 1,
-      "versioned_arxiv_id": "2607.19470v1",
-      "title": "Coloring in anyon superconductivity",
-      "authors": [
-        "Umang Mehta",
-        "Yuto Nakajima",
-        "Hart Goldman"
-      ],
-      "abstract": "The recently observed signatures of superconductivity proximate to a fractional quantum anomalous Hall (FQAH) state in a twisted MoTe$_2$ bilayer has revitalized interest in quantum phases of matter induced by anyon dynamics. Here we show how a panoply of anyon-driven phases associated with doping the lattice ${ν=2/3}$ FQAH state can be realized as competing instabilities of a Fermi surface of charge-$e/3$ \"quarks\" coupled to a $\\mathrm{SU}(3)_{-1}$ Chern-Simons gauge field, which is dual to the more conventional $\\mathrm{U}(1)_3$ Chern-Simons-Ginzburg-Landau theory of quasiholes. For example, a range of electronic superconductors emerge from color superconductivity, under which the Fermi surface experiences a pairing instability mediated by gauge fluctuations. These include SC$\\star$ phases -- where superconductivity coexists with topological order -- as well as topological superconductors displaying half-integer chiral central charges when the quarks are weakly paired. One example is a topological superconductor arising from a $p+ip$ \"color-valley-locked\" pairing mechanism with chiral central charge $c_-=-1/2$. On the other hand, both superconducting and non-Fermi liquid phases can emerge when the quarks form an itinerant ferromagnet, polarizing the Fermi surface to a particular combination of colors. Finally, our framework naturally accommodates the possibility of anyonic bound state formation, allowing access to phases induced by doping anyons of charge $2e/3$ as opposed to $e/3$ within the same model. Our work unifies many earlier proposed anyonic phases as instabilities of a single parent quark metal phase, distilling their emergence into a competition between superconductivity and itinerant color ferromagnetism.",
-      "initial_submission_date": "2026-07-21T18:00:03Z",
-      "latest_update_date": "2026-07-21T18:00:03Z",
-      "categories": [
-        "cond-mat.str-el",
-        "cond-mat.mes-hall",
-        "hep-th"
-      ],
-      "abstract_url": "https://arxiv.org/abs/2607.19470v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.19470v1",
-      "versions_seen": [
-        "2607.19470v1"
-      ],
-      "preliminary_include": false,
-      "preliminary_research_type": "Unclassified",
-      "preliminary_paper_nature": "Original research",
-      "detected_materials_or_systems": [],
-      "detected_experimental_methods": [],
-      "detected_computational_methods": [],
-      "detected_physical_properties": [],
-      "matched_keywords": [],
-      "classification_evidence": {
-        "primary_terms": [],
-        "related_terms": [],
-        "author_experimental_actions": [],
-        "author_computational_actions": [],
-        "false_positive_terms": [],
-        "lattice_anchors": []
-      },
-      "first_seen_at": "2026-07-23T06:27:08.558898+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915828+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
-    },
-    {
       "base_arxiv_id": "2607.19265",
       "current_version": 1,
       "versioned_arxiv_id": "2607.19265v1",
@@ -1189,7 +1514,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-22T06:24:44.484852+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915832+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164717+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1230,7 +1555,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-22T06:24:44.484855+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915837+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164721+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1290,7 +1615,7 @@
         ]
       },
       "first_seen_at": "2026-07-22T06:24:44.484857+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915841+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164724+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1336,7 +1661,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-22T06:24:44.484859+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915846+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164729+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1430,7 +1755,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-22T06:24:44.484869+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915851+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164733+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1482,7 +1807,7 @@
         ]
       },
       "first_seen_at": "2026-07-22T06:24:44.484871+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915856+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164736+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1534,7 +1859,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-22T06:24:44.484872+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915860+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164739+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1577,7 +1902,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-22T06:24:44.484874+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915867+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164742+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1622,7 +1947,7 @@
         ]
       },
       "first_seen_at": "2026-07-20T06:42:25.363512+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915872+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164745+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1773,7 +2098,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-18T16:33:15.298788+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915877+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164749+00:00",
       "ai_decision": {
         "include_in_feed": false,
         "relevance": "Not relevant",
@@ -1853,7 +2178,7 @@
         ]
       },
       "first_seen_at": "2026-07-18T16:33:15.298807+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915882+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164752+00:00",
       "ai_decision": {
         "include_in_feed": true,
         "relevance": "Core chiral-phonon paper",
@@ -1949,7 +2274,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-18T16:33:15.298812+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915886+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164756+00:00",
       "ai_decision": {
         "include_in_feed": false,
         "relevance": "Not relevant",
@@ -2030,7 +2355,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-18T16:33:15.298816+00:00",
-      "last_seen_at": "2026-07-28T06:22:48.915890+00:00",
+      "last_seen_at": "2026-07-30T06:23:16.164759+00:00",
       "ai_decision": {
         "include_in_feed": false,
         "relevance": "Not relevant",
