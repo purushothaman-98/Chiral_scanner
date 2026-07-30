@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-07-30T06:23:16.165339+00:00",
+  "updated_at": "2026-07-30T07:20:29.287882+00:00",
   "papers": [
     {
       "base_arxiv_id": "2607.19470",
@@ -97,8 +97,66 @@
       },
       "first_seen_at": "2026-07-30T06:23:16.164625+00:00",
       "last_seen_at": "2026-07-30T06:23:16.164625+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
+      "ai_decision": {
+        "include_in_feed": true,
+        "relevance": "Core chiral-phonon paper",
+        "research_type": "Computational / theoretical",
+        "paper_nature": "Original research",
+        "materials_or_systems": [
+          "CrI3",
+          "CrBr3"
+        ],
+        "material_or_system_family": [
+          "Magnetic insulators"
+        ],
+        "research_focus": [
+          "Magnon-phonon or spin-phonon angular-momentum transfer"
+        ],
+        "chirality_class": [
+          "Phonon angular momentum",
+          "Chirality transferred by magnon/spin coupling"
+        ],
+        "phonon_character": [
+          "Optical",
+          "Nondegenerate circular mode"
+        ],
+        "generation_mechanisms": [
+          "Magnetic-order / magnon hybridization",
+          "Theoretical eigenmode construction"
+        ],
+        "experimental_methods": [],
+        "excitation_methods": [],
+        "detection_methods": [],
+        "computational_methods": [
+          "Model Hamiltonian / tight binding",
+          "Group theory / symmetry analysis"
+        ],
+        "physical_properties": [
+          "Phonon angular momentum",
+          "Magnon-phonon hybridization",
+          "Angular-momentum transfer"
+        ],
+        "evidence_level": "Model / theory proposal",
+        "evidence_caveats": [
+          "phonon angular momentum inferred from hybridization rather than directly measured"
+        ],
+        "application_directions": [
+          "Ultrafast magnetic control",
+          "Spintronics / orbitronics"
+        ],
+        "confidence": 0.9,
+        "reason": "The paper develops a theoretical framework for phonon-magnon hybridization in CrI3 and CrBr3, quantifying hybridization and discussing angular momentum sharing between phonons and magnons, directly addressing phonon angular momentum and angular-momentum transfer via magnon coupling.",
+        "supporting_phrases": [
+          "magnons can interact with circularly polarized phonons",
+          "phonons and magnons shift in frequency and start to mix to form hybrid magneto-elastic quasi-particles",
+          "quantify the degree of hybridization between phonons and magnons",
+          "total angular momentum is conserved but shared between the phononic and magnonic subsystems upon hybridization"
+        ]
+      },
+      "ai_fingerprint": "5f8308714cb130a2a8a5fe771b75ce0a3b56c1441f82f781f0b38fdc70e06737",
+      "ai_prompt_version": "chiral-phonons-v3.0",
+      "ai_model": "openai/gpt-4.1-mini",
+      "ai_classified_at": "2026-07-30T07:18:37.703792+00:00"
     },
     {
       "base_arxiv_id": "2607.26601",
@@ -434,11 +492,63 @@
       },
       "first_seen_at": "2026-07-28T06:22:48.915753+00:00",
       "last_seen_at": "2026-07-30T06:23:16.164651+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null,
+      "ai_decision": {
+        "include_in_feed": false,
+        "relevance": "Not relevant",
+        "research_type": "Theory + Experiment",
+        "paper_nature": "Original research",
+        "materials_or_systems": [
+          "Ba3HoRu2O9"
+        ],
+        "material_or_system_family": [
+          "Perovskite oxides"
+        ],
+        "research_focus": [
+          "Methods or materials discovery"
+        ],
+        "chirality_class": [
+          "Not established"
+        ],
+        "phonon_character": [
+          "Optical"
+        ],
+        "generation_mechanisms": [
+          "Thermal gradient / population imbalance"
+        ],
+        "experimental_methods": [
+          "Neutron scattering",
+          "Raman optical activity / vibrational circular dichroism"
+        ],
+        "excitation_methods": [
+          "Thermal excitation"
+        ],
+        "detection_methods": [
+          "Neutron scattering",
+          "Raman spectroscopy"
+        ],
+        "computational_methods": [
+          "Machine learning",
+          "Group theory / symmetry analysis"
+        ],
+        "physical_properties": [],
+        "evidence_level": "Insufficient abstract evidence",
+        "evidence_caveats": [
+          "chirality not established; phonon angular momentum or circular motion not reported"
+        ],
+        "application_directions": [],
+        "confidence": 0.7,
+        "reason": "The paper studies phonons and lattice vibrations in a multiferroic perovskite oxide, but does not report or analyze any chirality, phonon angular momentum, circular ionic motion, or related chiral phonon effects. The focus is on interplay of spin waves, crystal-field excitations, and phonons without establishing phonon chirality or angular momentum.",
+        "supporting_phrases": [
+          "machine-learned force field (MLFF) phonon calculations",
+          "Raman spectroscopy",
+          "optical phonons",
+          "lattice vibrations"
+        ]
+      },
+      "ai_fingerprint": "b2673f435ae366e37fd9649ae4dbfcfaed7b03500380d671ed8bd196b589d8c0",
       "ai_prompt_version": "chiral-phonons-v3.0",
       "ai_model": "openai/gpt-4.1-mini",
-      "ai_classified_at": "2026-07-28T07:22:14.133484+00:00"
+      "ai_classified_at": "2026-07-30T07:18:50.662809+00:00"
     },
     {
       "base_arxiv_id": "2607.25483",
@@ -126151,8 +126261,65 @@
       },
       "first_seen_at": "2026-07-30T05:17:58.131888+00:00",
       "last_seen_at": "2026-07-30T05:17:58.131888+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
+      "ai_decision": {
+        "include_in_feed": true,
+        "relevance": "Core chiral-phonon paper",
+        "research_type": "Computational / theoretical",
+        "paper_nature": "Original research",
+        "materials_or_systems": [
+          "Zr3O",
+          "NaPH2NO3"
+        ],
+        "material_or_system_family": [
+          "Other / unspecified"
+        ],
+        "research_focus": [
+          "Intrinsic/symmetry-defined chiral phonons",
+          "Topological / valley phonons"
+        ],
+        "chirality_class": [
+          "Phonon angular momentum"
+        ],
+        "phonon_character": [
+          "Finite-momentum / valley",
+          "Optical"
+        ],
+        "generation_mechanisms": [
+          "Intrinsic crystal symmetry",
+          "Theoretical eigenmode construction"
+        ],
+        "experimental_methods": [],
+        "excitation_methods": [],
+        "detection_methods": [],
+        "computational_methods": [
+          "DFT / DFPT phonons",
+          "Group theory / symmetry analysis"
+        ],
+        "physical_properties": [
+          "Phonon angular momentum"
+        ],
+        "evidence_level": "First-principles prediction",
+        "evidence_caveats": [
+          "chirality inferred from topological chiral charges rather than direct ionic motion"
+        ],
+        "application_directions": [
+          "Materials discovery / design",
+          "Fundamental symmetry / selection rules"
+        ],
+        "confidence": 0.8,
+        "reason": "The paper predicts single-pair Weyl points in phonon spectra with chiral charges, indicating phonon angular momentum and intrinsic crystal symmetry effects. Although no direct experimental observation is reported, the theoretical prediction of chiral phonon Weyl points is central to the study.",
+        "supporting_phrases": [
+          "single-pair-Weyl-points (SP-WPs)",
+          "phonon spectra",
+          "chiral charges",
+          "nonmagnetic spinless systems",
+          "space groups (SGs)"
+        ]
+      },
+      "ai_fingerprint": "75fd2c888e69199adcc5da37b7bc4dc4a35ccf87f92f08df73a635bc8be1ae59",
+      "ai_prompt_version": "chiral-phonons-v3.0",
+      "ai_model": "openai/gpt-4.1-mini",
+      "ai_classified_at": "2026-07-30T07:20:28.799637+00:00"
     },
     {
       "base_arxiv_id": "2304.02149",
@@ -126564,8 +126731,55 @@
       },
       "first_seen_at": "2026-07-30T05:17:58.131909+00:00",
       "last_seen_at": "2026-07-30T05:17:58.131909+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
+      "ai_decision": {
+        "include_in_feed": false,
+        "relevance": "Not relevant",
+        "research_type": "Experimental",
+        "paper_nature": "Original research",
+        "materials_or_systems": [
+          "HoFeO3"
+        ],
+        "material_or_system_family": [
+          "Magnetic insulators"
+        ],
+        "research_focus": [],
+        "chirality_class": [
+          "Not established"
+        ],
+        "phonon_character": [
+          "Not specified"
+        ],
+        "generation_mechanisms": [
+          "Direct observation without generation"
+        ],
+        "experimental_methods": [
+          "Kerr/Faraday polarimetry"
+        ],
+        "excitation_methods": [
+          "Other / unspecified excitation"
+        ],
+        "detection_methods": [
+          "Kerr/Faraday polarimetry"
+        ],
+        "computational_methods": [],
+        "physical_properties": [],
+        "evidence_level": "Insufficient abstract evidence",
+        "evidence_caveats": [
+          "phonons not mentioned or studied"
+        ],
+        "application_directions": [],
+        "confidence": 0.9,
+        "reason": "The paper studies nonlinear spin dynamics and magnetization oscillations induced by strong THz magnetic near fields in HoFeO3, focusing on spin vectors M and L. There is no mention or study of phonons, phonon angular momentum, or chiral phonon effects, so it is not relevant to chiral phonon research.",
+        "supporting_phrases": [
+          "time-resolved change in the Faraday ellipticity",
+          "second- and third-order harmonics of the magnetization oscillation",
+          "nonlinear dynamics of spin systems far from equilibrium"
+        ]
+      },
+      "ai_fingerprint": "95ff61212538ed72cbd2b1e6de812170c40e88836cbf45eb7f2c065513898447",
+      "ai_prompt_version": "chiral-phonons-v3.0",
+      "ai_model": "openai/gpt-4.1-mini",
+      "ai_classified_at": "2026-07-30T07:19:02.881874+00:00"
     },
     {
       "base_arxiv_id": "2303.15551",
@@ -126757,8 +126971,67 @@
       },
       "first_seen_at": "2026-07-30T05:17:58.131921+00:00",
       "last_seen_at": "2026-07-30T05:17:58.131921+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
+      "ai_decision": {
+        "include_in_feed": true,
+        "relevance": "Core chiral-phonon paper",
+        "research_type": "Computational / theoretical",
+        "paper_nature": "Original research",
+        "materials_or_systems": [
+          "Pd3Pb2S2",
+          "Pd3Pb2Se2",
+          "Pt3Pb2S2"
+        ],
+        "material_or_system_family": [
+          "Other / unspecified"
+        ],
+        "research_focus": [
+          "Intrinsic/symmetry-defined chiral phonons",
+          "Topological / valley phonons"
+        ],
+        "chirality_class": [
+          "Circular/elliptical phonon polarization"
+        ],
+        "phonon_character": [
+          "Optical",
+          "Zone-centre (Gamma)"
+        ],
+        "generation_mechanisms": [
+          "Intrinsic crystal symmetry",
+          "Theoretical eigenmode construction"
+        ],
+        "experimental_methods": [],
+        "excitation_methods": [],
+        "detection_methods": [],
+        "computational_methods": [
+          "DFT / DFPT phonons",
+          "Group theory / symmetry analysis"
+        ],
+        "physical_properties": [
+          "Real-space circular/elliptical ionic motion",
+          "Phonon angular momentum"
+        ],
+        "evidence_level": "First-principles prediction",
+        "evidence_caveats": [
+          "chirality inferred from circular motion of Pb atoms rather than direct measurement"
+        ],
+        "application_directions": [
+          "Materials discovery / design",
+          "Fundamental symmetry / selection rules"
+        ],
+        "confidence": 0.9,
+        "reason": "The paper theoretically investigates phonon properties including phonon nodal lines, surface states, and explicitly mentions chiral phonons with circular motion of Pb atoms, indicating circular/elliptical phonon polarization and phonon angular momentum. No direct experimental detection is reported, but the focus is on chiral phonon properties in the kagome lattice structure.",
+        "supporting_phrases": [
+          "chiral phonons with circular motion of the Pb atoms around the equilibrium position",
+          "phonon nodal lines",
+          "phonon surface states",
+          "soft mode",
+          "structural phase transition from R-3m to R-3c symmetry"
+        ]
+      },
+      "ai_fingerprint": "246b33c9a8cf720e78d2245f0167a8861c810ddbb948cc5a8c18a06a7190a3d0",
+      "ai_prompt_version": "chiral-phonons-v3.0",
+      "ai_model": "openai/gpt-4.1-mini",
+      "ai_classified_at": "2026-07-30T07:20:17.195923+00:00"
     },
     {
       "base_arxiv_id": "2303.12661",
