@@ -1,8 +1,318 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-07-31T05:45:41.900398+00:00",
+  "updated_at": "2026-07-31T06:40:20.621820+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2607.28524",
+      "current_version": 1,
+      "versioned_arxiv_id": "2607.28524v1",
+      "title": "Exact chiral symmetry with quantum signal processing",
+      "authors": [
+        "Henry Lamm",
+        "Alessandro Roggero",
+        "Hersh Singh",
+        "Luca Spagnoli"
+      ],
+      "abstract": "We give a quantum signal processing (QSP) algorithm for the overlap fermion Hamiltonian which preserves the Ginsparg-Wilson relation up to a controllable error $ε_e$. Quantum simulations of Dirac fermions with exact chiral symmetry are thus nearly free: applying the overlap Hamiltonian costs only a factor logarithmic in $ε_e$ more than the Wilson-Dirac Hamiltonian. Comparing to domain-wall fermions, a mild overhead is found in circuit complexity while reducing qubit costs. We show how QSP effectively constructs an extra dimension when simulating the overlap operator, illustrating that the scaling of quantum algorithms reflects the deeper physics of overlap fermions arising at the boundary of domain-wall fermions.",
+      "initial_submission_date": "2026-07-30T17:00:58Z",
+      "latest_update_date": "2026-07-30T17:00:58Z",
+      "categories": [
+        "hep-lat",
+        "nucl-th",
+        "quant-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2607.28524v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28524v1",
+      "versions_seen": [
+        "2607.28524v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-31T06:40:20.617476+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.617476+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2607.28458",
+      "current_version": 1,
+      "versioned_arxiv_id": "2607.28458v1",
+      "title": "Field-Selected Topological Buffering in a Disordered Skyrmion Crystal",
+      "authors": [
+        "Wenyu Su",
+        "Nvsen Ma",
+        "Chen Cheng",
+        "Hong-Gang Luo"
+      ],
+      "abstract": "Quenched disorder can disrupt crystalline order without immediately destroying the topology of its constituent textures, but the relation between these processes in skyrmion crystals remains unclear. Using large-scale simulations of a triangular-lattice chiral magnet with random DM interactions, we show that the magnetic field selects between two disordering routes. At high fields, global translational coherence is lost at a weak-disorder scale, while sixfold bond-orientational order survives to a larger disorder strength and the total topological charge remains nearly locked up to a substantially larger scale. The resulting interval defines a topological buffer containing a Bragg-glass- like skyrmion regime followed by a skyrmion-glass regime. Finite-size scaling, spatial correlations, defect statistics, and spin autocorrelations support their distinct structural and glassy character. At lower fields, bond-orientational disordering nearly coincides with topological reconstruction, eliminating the skyrmion-glass window and contracting the buffer. These results identify the magnetic field as a control knob for separating crystalline disordering from topological-charge loss and establish topological buffering as a mechanism by which topological textures can remain robust in structurally disordered media.",
+      "initial_submission_date": "2026-07-30T16:21:05Z",
+      "latest_update_date": "2026-07-30T16:21:05Z",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2607.28458v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28458v1",
+      "versions_seen": [
+        "2607.28458v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-31T06:40:20.617498+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.617498+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2607.25767",
+      "current_version": 2,
+      "versioned_arxiv_id": "2607.25767v2",
+      "title": "Critical Ripples and Dirac Fermions in Crystalline Membranes",
+      "authors": [
+        "Sebastián Bahamondes",
+        "Rodrigo Soto-Garrido",
+        "Enrique Muñoz",
+        "Vladimir Juričić"
+      ],
+      "abstract": "Crystalline membranes hosting Dirac fermions, with graphene as the paradigmatic example, combine two low-energy sectors with sharply different dynamics: nonrelativistic flexural phonons and relativistic-like Dirac quasiparticles. We develop the low-energy field theory of this coupled system at charge neutrality and determine how this dynamical mismatch controls the coupling between the two sectors. In the long-wavelength flat phase, rotational symmetry ties the renormalization of the leading local scalar strain--density coupling to the scale-dependent bending rigidity, causing its dimensionless strength to decrease logarithmically. At the same time, flexural modes become parametrically slower than the Dirac fermions, so the resulting fermionic feedback vanishes as a power law.The flat phase is therefore stable against this perturbation. The physics changes when elastic interactions or electronic softening destabilize the membrane at a finite wavelength, selecting a ripple pattern formed by modes at $\\pm\\mathbf{Q}$. For an isolated pair of ordering wavevectors, provided that commensurability-induced phase pinning is irrelevant, the transition is governed by the bosonic Wilson--Fisher fixed point, while the Dirac fermions remain spectators. A genuinely hybrid electronic--structural critical point arises instead when symmetry permits a mass-type Dirac bilinear to share the ripple's momentum and quantum numbers, including horizontal-reflection parity. The transition is then described by the chiral-XY Gross--Neveu--Yukawa universality class. Using the known one-loop critical exponents, we characterize this transition, determine the induced secondary elastic distortion, and show that the fermionic and bosonic velocities lock in the isotropic continuum limit.",
+      "initial_submission_date": "2026-07-28T14:20:24Z",
+      "latest_update_date": "2026-07-30T12:55:31Z",
+      "categories": [
+        "cond-mat.other",
+        "cond-mat.stat-mech"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2607.25767v2",
+      "pdf_url": "https://arxiv.org/pdf/2607.25767v2",
+      "versions_seen": [
+        "2607.25767v1",
+        "2607.25767v2"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-07-30T06:23:16.164644+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.617510+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2607.26986",
+      "current_version": 2,
+      "versioned_arxiv_id": "2607.26986v2",
+      "title": "Theory of phonon-magnon hybridization and angular momentum in CrI$_3$ and CrBr$_3$",
+      "authors": [
+        "Maxime Mignolet",
+        "Miquel Royo",
+        "Massimiliano Stengel",
+        "Matthieu J. Verstraete"
+      ],
+      "abstract": "In magnetic materials angular momentum can be mediated by different carriers, including electrons, magnons, and phonons. The magnons can interact with circularly polarized phonons which are close in energy, provided specific symmetry conditions are met. If the interaction is strong enough the phonons and magnons shift in frequency and start to mix to form hybrid magneto-elastic quasi-particles. In this paper, we develop a constrained Hamiltonian framework which incorporates hybrid stiffness matrices and Berry curvatures. We quantify the degree of hybridization between phonons and magnons (up to 8% in CrI$_3$ and 25% in CrBr$_3$) using a decomposition of the total energy, which is a generalization of the norm decomposition for atomic contributions to phonons used in the literature. We also explore how the total angular momentum is conserved but shared between the phononic and magnonic subsystems upon hybridization.",
+      "initial_submission_date": "2026-07-29T14:43:44Z",
+      "latest_update_date": "2026-07-30T10:04:08Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2607.26986v2",
+      "pdf_url": "https://arxiv.org/pdf/2607.26986v2",
+      "versions_seen": [
+        "2607.26986v1",
+        "2607.26986v2"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [
+        "circularly polarized phonon"
+      ],
+      "matched_keywords": [
+        "circularly polarized phonon",
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [
+          "circularly polarized phonon"
+        ],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-07-30T06:23:16.164625+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.617519+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null,
+      "ai_prompt_version": "chiral-phonons-v3.0",
+      "ai_model": "openai/gpt-4.1-mini",
+      "ai_classified_at": "2026-07-30T07:18:37.703792+00:00"
+    },
+    {
+      "base_arxiv_id": "2607.27833",
+      "current_version": 1,
+      "versioned_arxiv_id": "2607.27833v1",
+      "title": "Scalar-spin-chirality-driven fractional Chern insulator on a kagome lattice",
+      "authors": [
+        "Shinnosuke Tsutsumi",
+        "Koji Kudo",
+        "Kentaro Nomura"
+      ],
+      "abstract": "Fractional Chern insulators (FCIs) are the lattice analogs of the fractional quantum Hall states, emerging even without an external magnetic field. In this work, we demonstrate the emergence of the FCI states in a kagome magnet with a noncoplanar magnetic order that induces a finite scalar spin chirality. By incorporating in our model both electron-electron interactions and the effect of band dispersion, we find that stronger interactions relative to the band dispersion stabilize the FCI state over a broader range of scalar spin chirality. We characterize the emergent FCI state by calculating overlap with representative states, identifying the ground-state degeneracy and the finite energy gap in the thermodynamic limit, and tracking the spectral flow under multiple flux-quantum insertions. Our results suggest that kagome magnets with scalar spin chirality can be promising platforms for realizing FCIs.",
+      "initial_submission_date": "2026-07-30T08:13:48Z",
+      "latest_update_date": "2026-07-30T08:13:48Z",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2607.27833v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.27833v1",
+      "versions_seen": [
+        "2607.27833v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Computational / theoretical",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [
+          "our model"
+        ],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-31T06:40:20.617523+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.617523+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2607.27695",
+      "current_version": 1,
+      "versioned_arxiv_id": "2607.27695v1",
+      "title": "Unconventional and Fragile Magnetic Exciton in a van der Waals Quantum Magnet",
+      "authors": [
+        "Kai-Xuan Zhang",
+        "Min Zhang",
+        "Minjae Kim",
+        "Yong-Hyun Kim",
+        "Junghyun Kim",
+        "Heejun Yang",
+        "Pyeongjae Park",
+        "Chaebin Kim",
+        "Mangesh Diware",
+        "Junik Hwang",
+        "Youjin Lee",
+        "Byeong-Gwan Cho",
+        "Hyeong-Do Kim",
+        "Tae-Yeong Koo",
+        "Chunhua Chen",
+        "Mingtao Li",
+        "Xujie Lü",
+        "Wenge Yang",
+        "Kee-Hoon Kim",
+        "Seung-Ho Baek",
+        "Hyeonsik Cheong",
+        "Sung-Keun Lee",
+        "Beom Hyun Kim",
+        "Christopher Lane",
+        "Jian-Xin Zhu",
+        "Zhaorong Yang",
+        "Young-Woo Son",
+        "Je-Geun Park"
+      ],
+      "abstract": "The recently discovered magnetic exciton in the van der Waals (vdW) antiferromagnet NiPS3 exemplifies these phenomena, exhibiting several distinctive characteristics. Despite extensive investigation, much of its physics remains unresolved, with key questions about why the NiPS3 magnetic exciton is so sharp and optically bright despite the nominally spin-forbidden transition, posing significant challenges to a proper understanding and practical manipulation of the exciton. An urgent question is to what extent it is due to chemical disorder, magnetic weakening, lattice modification, or intrinsic instability of the bright exciton itself: answers to which will put stringent constraints on possible theoretical models. Here we address these questions using hydrostatic pressure as a clean, continuous, reversible, and in-situ tuning parameter. We find that the sharp photoluminescence peak is drastically suppressed by as little as 0.4 GPa and completely quenched by 1.5 GPa, with demonstrating its reversibility. Crucially, this bright-to-dark conversion occurs without magnetic, crystallographic, or electronic reconstruction despite an increase in the Neel temperature, as established by Raman, X-ray absorption, nuclear magnetic resonance spectroscopy, and first-principles many-body calculations. Our results demonstrate that the optical brightness of the magnetic exciton is independent of chemical disorder, lattice expansion, and weakening of magnetic order, indicating that a higher-order correlated mechanism governs the bright exciton. We further propose experimentally constrained microscopic scenarios involving exciton pairing, crystal-field-controlled spin-orbit mixing, and symmetry breaking, providing a framework for future tests of entangled magnetic exciton in correlated quantum magnets.",
+      "initial_submission_date": "2026-07-30T05:26:56Z",
+      "latest_update_date": "2026-07-30T05:26:56Z",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.str-el",
+        "physics.app-ph",
+        "quant-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2607.27695v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.27695v1",
+      "versions_seen": [
+        "2607.27695v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "NiPS3"
+      ],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-07-31T06:40:20.621067+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621067+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2607.19470",
       "current_version": 2,
@@ -44,119 +354,9 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-23T06:27:08.558898+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164605+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621079+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
-    },
-    {
-      "base_arxiv_id": "2607.26986",
-      "current_version": 1,
-      "versioned_arxiv_id": "2607.26986v1",
-      "title": "Theory of phonon-magnon hybridization and angular momentum in CrI$_3$ and CrBr$_3$",
-      "authors": [
-        "Maxime Mignolet",
-        "Miquel Royo",
-        "Massimiliano Stengel",
-        "Matthieu J. Verstreate"
-      ],
-      "abstract": "In magnetic materials angular momentum can be mediated by different carriers, including electrons, magnons, and phonons. The magnons can interact with circularly polarized phonons which are close in energy, provided specific symmetry conditions are met. If the interaction is strong enough the phonons and magnons shift in frequency and start to mix to form hybrid magneto-elastic quasi-particles. In this paper, we develop a constrained Hamiltonian framework which incorporates hybrid stiffness matrices and Berry curvatures. We quantify the degree of hybridization between phonons and magnons (up to 8% in CrI$_3$ and 25% in CrBr$_3$) using a decomposition of the total energy, which is a generalization of the norm decomposition for atomic contributions to phonons used in the literature. We also explore how the total angular momentum is conserved but shared between the phononic and magnonic subsystems upon hybridization.",
-      "initial_submission_date": "2026-07-29T14:43:44Z",
-      "latest_update_date": "2026-07-29T14:43:44Z",
-      "categories": [
-        "cond-mat.mtrl-sci"
-      ],
-      "abstract_url": "https://arxiv.org/abs/2607.26986v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.26986v1",
-      "versions_seen": [
-        "2607.26986v1"
-      ],
-      "preliminary_include": true,
-      "preliminary_research_type": "Unclassified",
-      "preliminary_paper_nature": "Original research",
-      "detected_materials_or_systems": [],
-      "detected_experimental_methods": [],
-      "detected_computational_methods": [],
-      "detected_physical_properties": [
-        "circularly polarized phonon"
-      ],
-      "matched_keywords": [
-        "circularly polarized phonon",
-        "phonon"
-      ],
-      "classification_evidence": {
-        "primary_terms": [
-          "circularly polarized phonon"
-        ],
-        "related_terms": [],
-        "author_experimental_actions": [],
-        "author_computational_actions": [],
-        "false_positive_terms": [],
-        "lattice_anchors": [
-          "phonon"
-        ]
-      },
-      "first_seen_at": "2026-07-30T06:23:16.164625+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164625+00:00",
-      "ai_decision": {
-        "include_in_feed": true,
-        "relevance": "Core chiral-phonon paper",
-        "research_type": "Computational / theoretical",
-        "paper_nature": "Original research",
-        "materials_or_systems": [
-          "CrI3",
-          "CrBr3"
-        ],
-        "material_or_system_family": [
-          "Magnetic insulators"
-        ],
-        "research_focus": [
-          "Magnon-phonon or spin-phonon angular-momentum transfer"
-        ],
-        "chirality_class": [
-          "Phonon angular momentum",
-          "Chirality transferred by magnon/spin coupling"
-        ],
-        "phonon_character": [
-          "Optical",
-          "Nondegenerate circular mode"
-        ],
-        "generation_mechanisms": [
-          "Magnetic-order / magnon hybridization",
-          "Theoretical eigenmode construction"
-        ],
-        "experimental_methods": [],
-        "excitation_methods": [],
-        "detection_methods": [],
-        "computational_methods": [
-          "Model Hamiltonian / tight binding",
-          "Group theory / symmetry analysis"
-        ],
-        "physical_properties": [
-          "Phonon angular momentum",
-          "Magnon-phonon hybridization",
-          "Angular-momentum transfer"
-        ],
-        "evidence_level": "Model / theory proposal",
-        "evidence_caveats": [
-          "phonon angular momentum inferred from hybridization rather than directly measured"
-        ],
-        "application_directions": [
-          "Ultrafast magnetic control",
-          "Spintronics / orbitronics"
-        ],
-        "confidence": 0.9,
-        "reason": "The paper develops a theoretical framework for phonon-magnon hybridization in CrI3 and CrBr3, quantifying hybridization and discussing angular momentum sharing between phonons and magnons, directly addressing phonon angular momentum and angular-momentum transfer via magnon coupling.",
-        "supporting_phrases": [
-          "magnons can interact with circularly polarized phonons",
-          "phonons and magnons shift in frequency and start to mix to form hybrid magneto-elastic quasi-particles",
-          "quantify the degree of hybridization between phonons and magnons",
-          "total angular momentum is conserved but shared between the phononic and magnonic subsystems upon hybridization"
-        ]
-      },
-      "ai_fingerprint": "5f8308714cb130a2a8a5fe771b75ce0a3b56c1441f82f781f0b38fdc70e06737",
-      "ai_prompt_version": "chiral-phonons-v3.0",
-      "ai_model": "openai/gpt-4.1-mini",
-      "ai_classified_at": "2026-07-30T07:18:37.703792+00:00"
     },
     {
       "base_arxiv_id": "2607.26601",
@@ -204,7 +404,7 @@
         ]
       },
       "first_seen_at": "2026-07-30T06:23:16.164630+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164630+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621086+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -252,7 +452,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-30T06:23:16.164634+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164634+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621095+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -294,7 +494,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-30T06:23:16.164636+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164636+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621100+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -339,7 +539,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-30T06:23:16.164639+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164639+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621104+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -386,55 +586,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-30T06:23:16.164642+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164642+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
-    },
-    {
-      "base_arxiv_id": "2607.25767",
-      "current_version": 1,
-      "versioned_arxiv_id": "2607.25767v1",
-      "title": "Critical Ripples and Dirac Fermions in Crystalline Membranes",
-      "authors": [
-        "Sebastián Bahamondes",
-        "Rodrigo Soto-Garrido",
-        "Enrique Muñoz",
-        "Vladimir Juričić"
-      ],
-      "abstract": "Crystalline membranes hosting Dirac fermions, with graphene as the paradigmatic example, combine two low-energy sectors with sharply different dynamics: nonrelativistic flexural phonons and relativistic-like Dirac quasiparticles. We develop the low-energy field theory of this coupled system at charge neutrality and determine how this dynamical mismatch controls the coupling between the two sectors. In the long-wavelength flat phase, rotational symmetry ties the renormalization of the leading local scalar strain--density coupling to the scale-dependent bending rigidity, causing its dimensionless strength to decrease logarithmically. At the same time, flexural modes become parametrically slower than the Dirac fermions, so the resulting fermionic feedback vanishes as a power law.The flat phase is therefore stable against this perturbation. The physics changes when elastic interactions or electronic softening destabilize the membrane at a finite wavelength, selecting a ripple pattern formed by modes at $\\pm\\mathbf{Q}$. For an isolated pair of ordering wavevectors, provided that commensurability-induced phase pinning is irrelevant, the transition is governed by the bosonic Wilson--Fisher fixed point, while the Dirac fermions remain spectators. A genuinely hybrid electronic--structural critical point arises instead when symmetry permits a mass-type Dirac bilinear to share the ripple's momentum and quantum numbers, including horizontal-reflection parity. The transition is then described by the chiral-XY Gross--Neveu--Yukawa universality class. Using the known one-loop critical exponents, we characterize this transition, determine the induced secondary elastic distortion, and show that the fermionic and bosonic velocities lock in the isotropic continuum limit.",
-      "initial_submission_date": "2026-07-28T14:20:24Z",
-      "latest_update_date": "2026-07-28T14:20:24Z",
-      "categories": [
-        "cond-mat.other",
-        "cond-mat.stat-mech"
-      ],
-      "abstract_url": "https://arxiv.org/abs/2607.25767v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.25767v1",
-      "versions_seen": [
-        "2607.25767v1"
-      ],
-      "preliminary_include": false,
-      "preliminary_research_type": "Unclassified",
-      "preliminary_paper_nature": "Original research",
-      "detected_materials_or_systems": [],
-      "detected_experimental_methods": [],
-      "detected_computational_methods": [],
-      "detected_physical_properties": [],
-      "matched_keywords": [
-        "phonon"
-      ],
-      "classification_evidence": {
-        "primary_terms": [],
-        "related_terms": [],
-        "author_experimental_actions": [],
-        "author_computational_actions": [],
-        "false_positive_terms": [],
-        "lattice_anchors": [
-          "phonon"
-        ]
-      },
-      "first_seen_at": "2026-07-30T06:23:16.164644+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164644+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621109+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -491,7 +643,7 @@
         ]
       },
       "first_seen_at": "2026-07-28T06:22:48.915753+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164651+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621117+00:00",
       "ai_decision": {
         "include_in_feed": false,
         "relevance": "Not relevant",
@@ -589,7 +741,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-30T06:23:16.164654+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164654+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621124+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -635,7 +787,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-28T06:22:48.915730+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164661+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621131+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -676,7 +828,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-28T06:22:48.915759+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164665+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621135+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -718,7 +870,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-28T06:22:48.915762+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164670+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621140+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -761,7 +913,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-28T06:22:48.915765+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164673+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621144+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -810,7 +962,7 @@
         ]
       },
       "first_seen_at": "2026-07-28T06:22:48.915768+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164678+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621148+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -854,7 +1006,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-28T06:22:48.915771+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164682+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621153+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -902,7 +1054,7 @@
         ]
       },
       "first_seen_at": "2026-07-28T06:22:48.915774+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164686+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621157+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -961,7 +1113,7 @@
         ]
       },
       "first_seen_at": "2026-07-28T06:22:48.915777+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164689+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621161+00:00",
       "ai_decision": {
         "include_in_feed": true,
         "relevance": "Uncertain",
@@ -1056,7 +1208,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-24T06:22:23.602150+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164693+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621166+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1116,7 +1268,7 @@
         ]
       },
       "first_seen_at": "2026-07-24T06:22:23.602170+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164696+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621170+00:00",
       "ai_decision": {
         "include_in_feed": false,
         "relevance": "Not relevant",
@@ -1230,7 +1382,7 @@
         ]
       },
       "first_seen_at": "2026-07-22T06:24:44.484836+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164700+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621174+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1317,7 +1469,7 @@
         ]
       },
       "first_seen_at": "2026-07-23T06:27:08.558862+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164703+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621178+00:00",
       "ai_decision": {
         "include_in_feed": true,
         "relevance": "Core chiral-phonon paper",
@@ -1412,7 +1564,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-23T06:27:08.558886+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164707+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621183+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1453,7 +1605,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-23T06:27:08.558891+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164710+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621187+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1519,7 +1671,7 @@
         ]
       },
       "first_seen_at": "2026-07-23T06:27:08.558895+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164714+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621191+00:00",
       "ai_decision": {
         "include_in_feed": true,
         "relevance": "Core chiral-phonon paper",
@@ -1624,7 +1776,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-22T06:24:44.484852+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164717+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621195+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1665,7 +1817,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-22T06:24:44.484855+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164721+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621199+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1725,7 +1877,7 @@
         ]
       },
       "first_seen_at": "2026-07-22T06:24:44.484857+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164724+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621204+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1771,7 +1923,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-22T06:24:44.484859+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164729+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621208+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1865,7 +2017,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-22T06:24:44.484869+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164733+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621214+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1917,7 +2069,7 @@
         ]
       },
       "first_seen_at": "2026-07-22T06:24:44.484871+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164736+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621219+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1969,7 +2121,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-22T06:24:44.484872+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164739+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621223+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2012,7 +2164,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-22T06:24:44.484874+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164742+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621227+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2057,7 +2209,7 @@
         ]
       },
       "first_seen_at": "2026-07-20T06:42:25.363512+00:00",
-      "last_seen_at": "2026-07-30T06:23:16.164745+00:00",
+      "last_seen_at": "2026-07-31T06:40:20.621231+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
