@@ -5,7 +5,6 @@ from chiral_scanner.affiliation_enrichment import (
 )
 from chiral_scanner.research_geography import institution_activity
 
-
 ARXIV_XML = """<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:arxiv="http://arxiv.org/schemas/atom">
   <entry>
