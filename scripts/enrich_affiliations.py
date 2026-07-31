@@ -3,6 +3,5 @@
 
 from chiral_scanner.affiliation_enrichment import main
 
-
 if __name__ == "__main__":
     main()
