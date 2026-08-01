@@ -32,7 +32,9 @@ permissions:
 concurrency:
   # Share the archive write lock with scanning/classification so data commits cannot collide.
   group: chiral-archive-writes
-  cancel-in-progress: false
+  # A commit tagged [restart-affiliation] may cancel only the currently active
+  # archive writer for a controlled recovery. Normal runs always wait.
+  cancel-in-progress: ${{ github.event_name == 'push' && contains(github.event.head_commit.message, '[restart-affiliation]') }}
 
 jobs:
   enrich:
@@ -62,7 +64,11 @@ jobs:
           INPUT_LIMIT: ${{ inputs.limit }}
           INPUT_RETRY_DAYS: ${{ inputs.retry_days }}
         run: |
-          LIMIT="${INPUT_LIMIT:-60}"
+          if [[ "$GITHUB_EVENT_NAME" == "push" ]]; then
+            LIMIT="${INPUT_LIMIT:-20}"
+          else
+            LIMIT="${INPUT_LIMIT:-60}"
+          fi
           RETRY_DAYS="${INPUT_RETRY_DAYS:-14}"
           python scripts/enrich_affiliations.py \
             --input data/papers.json \
