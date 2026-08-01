@@ -458,9 +458,10 @@ def run_enrichment(
             and existing.get("author_scope") == AUTHOR_SCOPE
         ):
             continue
+        needs_scope_migration = bool(existing) and existing.get("author_scope") != AUTHOR_SCOPE
         attempt = state["attempts"].get(pid, {})
         if (
-            existing.get("author_scope") == AUTHOR_SCOPE
+            not needs_scope_migration
             and attempt.get("status") != "error"
             and attempt.get("last_attempted_at")
         ):
