@@ -1,0 +1,34 @@
+{
+  "attempts": {
+    "2607.22257": {
+      "attempt_count": 1,
+      "last_attempted_at": "2026-08-01T00:33:41.545095+00:00",
+      "status": "unresolved",
+      "reason": "no_conservative_match_or_resolved_affiliation"
+    },
+    "2607.19872": {
+      "attempt_count": 1,
+      "last_attempted_at": "2026-08-01T00:33:45.322603+00:00",
+      "status": "resolved",
+      "reason": null
+    },
+    "2607.19663": {
+      "attempt_count": 1,
+      "last_attempted_at": "2026-08-01T00:33:49.066734+00:00",
+      "status": "resolved",
+      "reason": null
+    }
+  },
+  "schema_version": 1,
+  "last_run_at": "2026-08-01T00:33:53.675940+00:00",
+  "selected": 3,
+  "succeeded": 2,
+  "unresolved": 1,
+  "errors": 0,
+  "runner_status": "success",
+  "runner_exit_code": 0,
+  "runner_event": "push",
+  "runner_commit": "fc17df979355b705f107447b0e53111fd80514f2",
+  "runner_recorded_at": "2026-08-01T00:33:53.719800+00:00",
+  "runner_log_tail": "{\n  \"selected\": 3,\n  \"succeeded\": 2,\n  \"unresolved\": 1,\n  \"errors\": 0\n}\n"
+}
