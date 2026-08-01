@@ -89,6 +89,51 @@
       "ror_id": "https://ror.org/026v1ze26",
       "evidence_url": "https://ror.org/026v1ze26",
       "source": "ROR"
+    },
+    "ror:04k0ww995": {
+      "name": "Shirak State University",
+      "short_name": "Shirak State University",
+      "city": "Gyumri",
+      "region": "Shirak",
+      "country_code": "AM",
+      "country": "Armenia",
+      "latitude": 40.7942,
+      "longitude": 43.84528,
+      "institution_type": "education",
+      "openalex_id": null,
+      "ror_id": "https://ror.org/04k0ww995",
+      "evidence_url": "https://ror.org/04k0ww995",
+      "source": "ROR"
+    },
+    "ror:02e16g702": {
+      "name": "Hokkaido University",
+      "short_name": "Hokkaido University",
+      "city": "Sapporo",
+      "region": "Hokkaido",
+      "country_code": "JP",
+      "country": "Japan",
+      "latitude": 43.06667,
+      "longitude": 141.35,
+      "institution_type": "education",
+      "openalex_id": null,
+      "ror_id": "https://ror.org/02e16g702",
+      "evidence_url": "https://ror.org/02e16g702",
+      "source": "ROR"
+    },
+    "ror:05dqf9946": {
+      "name": "Institute of Science Tokyo",
+      "short_name": "Institute of Science Tokyo",
+      "city": "Tokyo",
+      "region": "Tokyo",
+      "country_code": "JP",
+      "country": "Japan",
+      "latitude": 35.6895,
+      "longitude": 139.69171,
+      "institution_type": "education",
+      "openalex_id": null,
+      "ror_id": "https://ror.org/05dqf9946",
+      "evidence_url": "https://ror.org/05dqf9946",
+      "source": "ROR"
     }
   },
   "papers": {
@@ -102,24 +147,18 @@
       "metadata_provider": "Crossref",
       "match_method": "crossref_title_author_year",
       "match_score": 1.0,
+      "author_scope": "first_and_corresponding",
       "authors": [
         {
           "paper_author_name": "Yao Dong",
           "name": "Yao Dong",
           "openalex_author_id": null,
           "orcid": null,
-          "institution_ids": [
-            "ror:00wk2mp56"
+          "author_position": "first",
+          "is_corresponding": false,
+          "author_roles": [
+            "first"
           ],
-          "affiliation_labels": [
-            "Beihang University"
-          ]
-        },
-        {
-          "paper_author_name": "Guo-Feng Zhang",
-          "name": "Guo-Feng Zhang",
-          "openalex_author_id": null,
-          "orcid": "https://orcid.org/0000-0001-8869-4868",
           "institution_ids": [
             "ror:00wk2mp56"
           ],
@@ -128,7 +167,7 @@
           ]
         }
       ],
-      "enriched_at": "2026-08-01T00:33:49.066686+00:00",
+      "enriched_at": "2026-08-01T01:12:21.339606+00:00",
       "sources": [
         "Crossref",
         "ROR",
@@ -145,141 +184,18 @@
       "metadata_provider": "Crossref",
       "match_method": "crossref_doi",
       "match_score": 0.98,
+      "author_scope": "first_and_corresponding",
       "authors": [
         {
           "paper_author_name": "Nan Jiang",
           "name": "Nan Jiang",
           "openalex_author_id": null,
           "orcid": "https://orcid.org/0000-0002-5489-7410",
-          "institution_ids": [
-            "ror:035t8zc32"
+          "author_position": "first",
+          "is_corresponding": false,
+          "author_roles": [
+            "first"
           ],
-          "affiliation_labels": [
-            "University of Osaka, Toyonaka",
-            "The University of Osaka"
-          ]
-        },
-        {
-          "paper_author_name": "Yijin Zhang",
-          "name": "Yijin Zhang",
-          "openalex_author_id": null,
-          "orcid": "https://orcid.org/0000-0003-1127-1124",
-          "institution_ids": [
-            "ror:057zh3y96"
-          ],
-          "affiliation_labels": [
-            "The University of Tokyo"
-          ]
-        },
-        {
-          "paper_author_name": "Yujie Xia",
-          "name": "Yujie Xia",
-          "openalex_author_id": null,
-          "orcid": null,
-          "institution_ids": [
-            "ror:034t30j35"
-          ],
-          "affiliation_labels": [
-            "Chinese Academy of Sciences"
-          ]
-        },
-        {
-          "paper_author_name": "Tomo Higashihara",
-          "name": "Tomo Higashihara",
-          "openalex_author_id": null,
-          "orcid": "https://orcid.org/0009-0007-6718-6566",
-          "institution_ids": [
-            "ror:035t8zc32"
-          ],
-          "affiliation_labels": [
-            "University of Osaka, Toyonaka"
-          ]
-        },
-        {
-          "paper_author_name": "Ryutaro Okuma",
-          "name": "Ryutaro Okuma",
-          "openalex_author_id": null,
-          "orcid": "https://orcid.org/0000-0002-4231-3190",
-          "institution_ids": [],
-          "affiliation_labels": [
-            "University of Tokyo"
-          ]
-        },
-        {
-          "paper_author_name": "Jun-ichi Yamaura",
-          "name": "Jun-ichi Yamaura",
-          "openalex_author_id": null,
-          "orcid": "https://orcid.org/0000-0002-8992-9099",
-          "institution_ids": [],
-          "affiliation_labels": [
-            "University of Tokyo"
-          ]
-        },
-        {
-          "paper_author_name": "Yoshinori Okada",
-          "name": "Yoshinori Okada",
-          "openalex_author_id": null,
-          "orcid": "https://orcid.org/0000-0001-9172-0844",
-          "institution_ids": [
-            "ror:02qg15b79"
-          ],
-          "affiliation_labels": [
-            "Okinawa Institute of Science and Technology Graduate University"
-          ]
-        },
-        {
-          "paper_author_name": "Kenji Watanabe",
-          "name": "Kenji Watanabe",
-          "openalex_author_id": null,
-          "orcid": "https://orcid.org/0000-0003-3701-8119",
-          "institution_ids": [
-            "ror:026v1ze26"
-          ],
-          "affiliation_labels": [
-            "National Institute for Materials Science"
-          ]
-        },
-        {
-          "paper_author_name": "Takashi Taniguchi",
-          "name": "Takashi Taniguchi",
-          "openalex_author_id": null,
-          "orcid": "https://orcid.org/0000-0002-1467-3105",
-          "institution_ids": [
-            "ror:026v1ze26"
-          ],
-          "affiliation_labels": [
-            "National Institute for Materials Science"
-          ]
-        },
-        {
-          "paper_author_name": "Tiantian Zhang",
-          "name": "Tiantian Zhang",
-          "openalex_author_id": null,
-          "orcid": "https://orcid.org/0000-0002-8591-2652",
-          "institution_ids": [
-            "ror:034t30j35"
-          ],
-          "affiliation_labels": [
-            "Chinese Academy of Sciences"
-          ]
-        },
-        {
-          "paper_author_name": "Tomoki Machida",
-          "name": "Tomoki Machida",
-          "openalex_author_id": null,
-          "orcid": "https://orcid.org/0000-0002-1938-7415",
-          "institution_ids": [
-            "ror:057zh3y96"
-          ],
-          "affiliation_labels": [
-            "The University of Tokyo"
-          ]
-        },
-        {
-          "paper_author_name": "Yasuhiro Niimi",
-          "name": "Yasuhiro Niimi",
-          "openalex_author_id": null,
-          "orcid": "https://orcid.org/0000-0003-1659-0634",
           "institution_ids": [
             "ror:035t8zc32"
           ],
@@ -289,7 +205,118 @@
           ]
         }
       ],
-      "enriched_at": "2026-08-01T00:33:53.675915+00:00",
+      "enriched_at": "2026-08-01T01:12:24.865697+00:00",
+      "sources": [
+        "Crossref",
+        "ROR",
+        "arXiv"
+      ]
+    },
+    "2605.19686": {
+      "paper_id": "2605.19686",
+      "paper_version": 1,
+      "title": "Polar optical scattering in ellipsoidal nanoclusters",
+      "doi": "10.1088/1402-4896/ae7671",
+      "metadata_work_id": "https://doi.org/10.1088/1402-4896/ae7671",
+      "openalex_work_id": null,
+      "metadata_provider": "Crossref",
+      "match_method": "crossref_doi",
+      "match_score": 1.0,
+      "author_scope": "first_and_corresponding",
+      "authors": [
+        {
+          "paper_author_name": "Hrach Nikoghosyan",
+          "name": "Hrach S Nikoghosyan",
+          "openalex_author_id": null,
+          "orcid": "https://orcid.org/0000-0001-5422-2889",
+          "author_position": "first",
+          "is_corresponding": false,
+          "author_roles": [
+            "first"
+          ],
+          "institution_ids": [
+            "ror:04k0ww995"
+          ],
+          "affiliation_labels": [
+            "Shirak State University"
+          ]
+        }
+      ],
+      "enriched_at": "2026-08-01T01:12:52.900999+00:00",
+      "sources": [
+        "Crossref",
+        "ROR",
+        "arXiv"
+      ]
+    },
+    "2604.23109": {
+      "paper_id": "2604.23109",
+      "paper_version": 1,
+      "title": "Effective phonon models based on symmetry-adapted multipole basis -- Hidden chiral phonon angular momentum splitting in ferroaxial systems",
+      "doi": null,
+      "metadata_work_id": "https://doi.org/10.7566/jpsj.95.083601",
+      "openalex_work_id": null,
+      "metadata_provider": "Crossref",
+      "match_method": "crossref_title_author_year",
+      "match_score": 1.0,
+      "author_scope": "first_and_corresponding",
+      "authors": [
+        {
+          "paper_author_name": "Yu Xie",
+          "name": "Yu Xie",
+          "openalex_author_id": null,
+          "orcid": "https://orcid.org/0009-0009-0458-676X",
+          "author_position": "first",
+          "is_corresponding": false,
+          "author_roles": [
+            "first"
+          ],
+          "institution_ids": [
+            "ror:02e16g702"
+          ],
+          "affiliation_labels": [
+            "Graduate School of Science, Hokkaido University, Sapporo 060-0810, Japan"
+          ]
+        }
+      ],
+      "enriched_at": "2026-08-01T01:13:21.231921+00:00",
+      "sources": [
+        "Crossref",
+        "ROR",
+        "arXiv"
+      ]
+    },
+    "2604.12701": {
+      "paper_id": "2604.12701",
+      "paper_version": 1,
+      "title": "Supercurrent-induced phonon angular momentum",
+      "doi": "10.1103/mz1s-9z7k",
+      "metadata_work_id": "https://doi.org/10.1103/mz1s-9z7k",
+      "openalex_work_id": null,
+      "metadata_provider": "Crossref",
+      "match_method": "crossref_doi",
+      "match_score": 1.0,
+      "author_scope": "first_and_corresponding",
+      "authors": [
+        {
+          "paper_author_name": "Takehito Yokoyama",
+          "name": "Takehito Yokoyama",
+          "openalex_author_id": null,
+          "orcid": "https://orcid.org/0000-0003-3496-0125",
+          "author_position": "first",
+          "is_corresponding": false,
+          "author_roles": [
+            "first"
+          ],
+          "institution_ids": [
+            "ror:05dqf9946"
+          ],
+          "affiliation_labels": [
+            "Institute of Science Tokyo"
+          ]
+        }
+      ],
+      "enriched_at": "2026-08-01T01:13:28.289368+00:00",
       "sources": [
         "Crossref",
         "ROR",
@@ -423,12 +450,103 @@
       "title": "Microscopic Theory of the Phonon Thermal Hall Effect in Chiral Mott Insulators",
       "reason": "no_conservative_match_or_resolved_affiliation",
       "last_attempted_at": "2026-08-01T00:41:54.190861+00:00"
+    },
+    "2606.00546": {
+      "paper_id": "2606.00546",
+      "title": "Giant Thermal-Conductivity Enhancement from Chiral-Phonon Pseudo-Angular Momentum Conservation",
+      "reason": "no_conservative_match_or_resolved_affiliation",
+      "last_attempted_at": "2026-08-01T01:12:24.865758+00:00"
+    },
+    "2605.28425": {
+      "paper_id": "2605.28425",
+      "title": "Symmetry-Selective Topological Magnon Engineering by Phonon Angular Momentum",
+      "reason": "no_conservative_match_or_resolved_affiliation",
+      "last_attempted_at": "2026-08-01T01:12:28.391008+00:00"
+    },
+    "2605.27812": {
+      "paper_id": "2605.27812",
+      "title": "Order parameter scaling of chirality in structural phase transitions",
+      "reason": "no_conservative_match_or_resolved_affiliation",
+      "last_attempted_at": "2026-08-01T01:12:31.931292+00:00"
+    },
+    "2605.27053": {
+      "paper_id": "2605.27053",
+      "title": "Electronic Structure in a Phase Space, non-Born-Oppenheimer Framework: Geometric Forces and Moody-Shapere-Wilzcek Revisited",
+      "reason": "no_conservative_match_or_resolved_affiliation",
+      "last_attempted_at": "2026-08-01T01:12:35.420537+00:00"
+    },
+    "2605.26794": {
+      "paper_id": "2605.26794",
+      "title": "Superconductivity-enhanced phonon angular momentum",
+      "reason": "no_conservative_match_or_resolved_affiliation",
+      "last_attempted_at": "2026-08-01T01:12:39.025648+00:00"
+    },
+    "2605.26073": {
+      "paper_id": "2605.26073",
+      "title": "Magneto-optic phonon resonances in magnetic topological EuCd2As2 via helical Raman spectroscopy",
+      "reason": "no_conservative_match_or_resolved_affiliation",
+      "last_attempted_at": "2026-08-01T01:12:42.442983+00:00"
+    },
+    "2605.20631": {
+      "paper_id": "2605.20631",
+      "title": "Probing Lattice Dynamics in Real-Space and Real-Time",
+      "reason": "no_conservative_match_or_resolved_affiliation",
+      "last_attempted_at": "2026-08-01T01:12:45.898710+00:00"
+    },
+    "2605.17241": {
+      "paper_id": "2605.17241",
+      "title": "Frequency renormalization and its effects in nonlinear phononics with $Q_RQ_{IR}^{2}$-type coupling",
+      "reason": "no_conservative_match_or_resolved_affiliation",
+      "last_attempted_at": "2026-08-01T01:12:52.901040+00:00"
+    },
+    "2605.13249": {
+      "paper_id": "2605.13249",
+      "title": "Acoustic Chirality",
+      "reason": "no_conservative_match_or_resolved_affiliation",
+      "last_attempted_at": "2026-08-01T01:12:56.453056+00:00"
+    },
+    "2605.08490": {
+      "paper_id": "2605.08490",
+      "title": "Antiferro-Chiral Phonons in $\\mathcal{P}\\mathcal{T}$-Symmetric Antiferromagnets",
+      "reason": "no_conservative_match_or_resolved_affiliation",
+      "last_attempted_at": "2026-08-01T01:12:59.872503+00:00"
+    },
+    "2605.03486": {
+      "paper_id": "2605.03486",
+      "title": "First-principles prediction of chiral-phonon-induced orbital accumulation",
+      "reason": "no_conservative_match_or_resolved_affiliation",
+      "last_attempted_at": "2026-08-01T01:13:03.266911+00:00"
+    },
+    "2605.01678": {
+      "paper_id": "2605.01678",
+      "title": "Generalized continuum theory of phonon angular momentum in crystals",
+      "reason": "no_conservative_match_or_resolved_affiliation",
+      "last_attempted_at": "2026-08-01T01:13:06.836057+00:00"
+    },
+    "2604.25210": {
+      "paper_id": "2604.25210",
+      "title": "Probing phonon chirality and circular lattice motion with symmetry-selective nonlinear optical spectroscopy",
+      "reason": "no_conservative_match_or_resolved_affiliation",
+      "last_attempted_at": "2026-08-01T01:13:10.250322+00:00"
+    },
+    "2604.23111": {
+      "paper_id": "2604.23111",
+      "title": "Spin Seebeck Effect in Normal-Metal--Chiral-Insulator Heterostructure",
+      "reason": "no_conservative_match_or_resolved_affiliation",
+      "last_attempted_at": "2026-08-01T01:13:13.714052+00:00"
+    },
+    "2604.13429": {
+      "paper_id": "2604.13429",
+      "title": "Extreme Terahertz Nonlinear Phononics by Coherence-Imprinted Control of Hybrid Order",
+      "reason": "no_conservative_match_or_resolved_affiliation",
+      "last_attempted_at": "2026-08-01T01:13:21.232013+00:00"
     }
   },
-  "schema_version": 1,
-  "description": "Paper-specific arXiv/OpenAlex/Crossref/ROR affiliations; uncertain identities remain unresolved.",
-  "generated_at": "2026-08-01T00:41:57.522473+00:00",
+  "schema_version": 2,
+  "description": "Paper-specific first-author and explicitly identified corresponding-author affiliations from arXiv/OpenAlex/Crossref/ROR; uncertain identities remain unresolved.",
+  "generated_at": "2026-08-01T01:13:28.289399+00:00",
   "eligible_field_papers": 241,
-  "resolved_papers": 2,
-  "unresolved_papers": 21
+  "resolved_papers": 5,
+  "unresolved_papers": 36,
+  "author_scope": "first_and_corresponding"
 }
