@@ -11,6 +11,8 @@ on:
       - "src/chiral_scanner/research_geography.py"
       - "tests/test_affiliation_enrichment.py"
       - "tests/test_affiliation_enrichment_resilient.py"
+      - "tests/test_first_corresponding_author_map.py"
+      - "tests/test_research_geography.py"
   schedule:
     - cron: "25 5,17 * * *"
   workflow_dispatch:
@@ -52,19 +54,24 @@ jobs:
         run: pip install -r requirements.txt
       - name: Update checkout before enrichment
         run: git pull --rebase origin main
-      - name: Enrich mapped papers from arXiv, OpenAlex, Crossref, and ROR
+      - name: Enrich first and corresponding author institutions
         id: enrich
         env:
-          # OpenAlex currently requires an API key. The key is optional here because
-          # Crossref + ROR provide a conservative, non-AI fallback.
+          # Store this only at Settings -> Secrets and variables -> Actions -> Secrets.
+          # GitHub masks the value and exposes it only to this step.
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
-          OPENALEX_API_KEY_VAR: ${{ vars.OPENALEX_API_KEY }}
           OPENALEX_MAILTO: ${{ vars.OPENALEX_MAILTO }}
           METADATA_CONTACT_EMAIL: ${{ vars.METADATA_CONTACT_EMAIL }}
           ROR_CLIENT_ID: ${{ vars.ROR_CLIENT_ID }}
           INPUT_LIMIT: ${{ inputs.limit }}
           INPUT_RETRY_DAYS: ${{ inputs.retry_days }}
         run: |
+          if [[ -n "$OPENALEX_API_KEY" ]]; then
+            echo "OpenAlex API key is configured for this run."
+          else
+            echo "::warning::OPENALEX_API_KEY is missing; Crossref and ROR fallback will be used."
+          fi
+
           if [[ "$GITHUB_EVENT_NAME" == "push" ]]; then
             # A code-change push can safely advance a moderate batch. Scheduled/manual
             # runs remain the main bulk-enrichment path.
@@ -104,14 +111,16 @@ jobs:
               return value if isinstance(value, dict) else fallback
 
           generated = datetime.now(UTC).isoformat()
+          scoped_description = (
+              "Paper-specific first-author and explicitly identified corresponding-author "
+              "affiliations from arXiv/OpenAlex/Crossref/ROR; uncertain identities remain unresolved."
+          )
           output = read(
               output_path,
               {
-                  "schema_version": 1,
-                  "description": (
-                      "Paper-specific arXiv/OpenAlex/Crossref/ROR affiliations; "
-                      "uncertain identities remain unresolved."
-                  ),
+                  "schema_version": 2,
+                  "description": scoped_description,
+                  "author_scope": "first_and_corresponding",
                   "generated_at": generated,
                   "eligible_field_papers": 0,
                   "resolved_papers": 0,
@@ -121,20 +130,21 @@ jobs:
                   "unresolved": {},
               },
           )
-          output["description"] = (
-              "Paper-specific arXiv/OpenAlex/Crossref/ROR affiliations; "
-              "uncertain identities remain unresolved."
-          )
-          state = read(state_path, {"schema_version": 1, "attempts": {}})
+          exit_code = int(os.environ["ENRICH_EXIT_CODE"])
+          if exit_code == 0:
+              output["schema_version"] = 2
+              output["description"] = scoped_description
+              output["author_scope"] = "first_and_corresponding"
+
+          state = read(state_path, {"schema_version": 2, "attempts": {}})
           log_tail = ""
           try:
               log_tail = log_path.read_text(encoding="utf-8", errors="replace")[-12000:]
           except OSError:
               pass
-          exit_code = int(os.environ["ENRICH_EXIT_CODE"])
           state.update(
               {
-                  "schema_version": 1,
+                  "schema_version": 2,
                   "runner_status": "success" if exit_code == 0 else "failed",
                   "runner_exit_code": exit_code,
                   "runner_event": os.environ.get("GITHUB_EVENT_NAME"),
@@ -163,19 +173,25 @@ jobs:
           from pathlib import Path
 
           affiliations = json.loads(Path("data/paper_affiliations.json").read_text())
-          assert affiliations["schema_version"] == 1
+          assert affiliations["schema_version"] == 2
+          assert affiliations["author_scope"] == "first_and_corresponding"
           assert isinstance(affiliations["institutions"], dict)
           assert isinstance(affiliations["papers"], dict)
           assert isinstance(affiliations["unresolved"], dict)
           for paper_id, paper in affiliations["papers"].items():
               assert paper_id == paper["paper_id"]
+              assert paper.get("author_scope") == "first_and_corresponding"
               assert paper["authors"]
               for author in paper["authors"]:
+                  roles = set(author.get("author_roles", []))
+                  assert roles
+                  assert roles <= {"first", "corresponding"}
                   assert isinstance(author.get("institution_ids", []), list)
           PY
           pytest -q \
             tests/test_affiliation_enrichment.py \
             tests/test_affiliation_enrichment_resilient.py \
+            tests/test_first_corresponding_author_map.py \
             tests/test_research_geography.py
           python scripts/validate_data.py
       - name: Commit affiliation data and retry diagnostics
