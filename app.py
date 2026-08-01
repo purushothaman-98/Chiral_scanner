@@ -89,86 +89,95 @@ st.set_page_config(
 st.markdown(
     """
 <style>
-:root {--violet:#8b5cf6; --cyan:#22d3ee; --ink:#f8fafc; --muted:#94a3b8;
---panel:rgba(15,23,42,.72); --line:rgba(148,163,184,.16);}
-.block-container {padding-top:1rem; padding-bottom:2.5rem; max-width:1280px;}
-.stApp {background:
-radial-gradient(circle at 8% 0%,rgba(34,211,238,.055),transparent 24rem),
-radial-gradient(circle at 92% 8%,rgba(139,92,246,.07),transparent 28rem);}
-.hero {padding:1.25rem 1.45rem; border:1px solid rgba(139,92,246,.34); border-radius:22px;
-background:radial-gradient(circle at 88% 10%,rgba(34,211,238,.12),transparent 25%),
-radial-gradient(circle at 72% 0%,rgba(124,58,237,.25),transparent 38%),
-linear-gradient(135deg,rgba(15,23,42,.98),rgba(20,14,44,.97)); margin-bottom:.8rem;
-box-shadow:0 18px 55px rgba(2,6,23,.22);}
-.hero-kicker {display:flex; align-items:center; gap:.45rem; color:#c4b5fd; font-size:.72rem;
-font-weight:750; letter-spacing:.11em; text-transform:uppercase; margin-bottom:.55rem;}
-.live-dot {width:.48rem; height:.48rem; border-radius:999px; background:#34d399;
-box-shadow:0 0 0 4px rgba(52,211,153,.12); display:inline-block;}
-.hero h1 {margin:0; font-size:2.12rem; letter-spacing:-.045em; line-height:1.08;}
-.hero p {max-width:850px; color:#cbd5e1; font-size:.95rem; line-height:1.55; margin:.55rem 0 .75rem;}
+:root {
+  --accent:#2563eb;
+  --accent-strong:#1d4ed8;
+  --teal:#0f766e;
+  --ink:#172033;
+  --muted:#5f6b7a;
+  --surface:#ffffff;
+  --soft:#f3f6fa;
+  --line:#dbe3ec;
+  --success:#047857;
+  --warning:#a16207;
+  --danger:#be123c;
+}
+html {color-scheme:light;}
+.block-container {padding-top:1.25rem; padding-bottom:3rem; max-width:1180px;}
+.stApp {background:#f7f9fc; color:var(--ink);}
+header[data-testid="stHeader"] {background:rgba(247,249,252,.94);}
+.hero {padding:1.15rem 0 1rem; border-bottom:1px solid var(--line); margin-bottom:1rem;}
+.hero-kicker {display:flex; align-items:center; gap:.45rem; color:var(--accent); font-size:.72rem;
+font-weight:760; letter-spacing:.09em; text-transform:uppercase; margin-bottom:.45rem;}
+.live-dot {width:.46rem; height:.46rem; border-radius:999px; background:#10b981;
+box-shadow:0 0 0 4px rgba(16,185,129,.12); display:inline-block;}
+.hero h1 {margin:0; color:var(--ink); font-size:2.15rem; letter-spacing:-.045em; line-height:1.08;}
+.hero p {max-width:820px; color:var(--muted); font-size:.98rem; line-height:1.58; margin:.55rem 0 .7rem;}
 .hero-tags {display:flex; flex-wrap:wrap; gap:.4rem;}
-.hero-tag {padding:.22rem .55rem; border:1px solid rgba(196,181,253,.2); border-radius:999px;
-color:#ddd6fe; background:rgba(139,92,246,.08); font-size:.72rem;}
-.coverage {display:flex; flex-wrap:wrap; gap:.45rem 1.15rem; padding:.65rem .85rem;
-border-radius:12px; background:rgba(15,23,42,.62); border:1px solid var(--line);
-color:#cbd5e1; font-size:.8rem; margin:.45rem 0 .9rem;}
-.coverage strong {color:#f8fafc; font-weight:650;}
-.section-kicker {color:#a78bfa; font-size:.7rem; font-weight:750; letter-spacing:.1em;
-text-transform:uppercase; margin-bottom:.2rem;}
-.section-intro {color:#94a3b8; max-width:850px; font-size:.88rem; line-height:1.55;
+.hero-tag {padding:.24rem .58rem; border:1px solid #cbd9ea; border-radius:999px;
+color:#29415f; background:#fff; font-size:.72rem;}
+.coverage {display:flex; flex-wrap:wrap; gap:.4rem 1rem; padding:.62rem .78rem;
+border-radius:10px; background:#fff; border:1px solid var(--line); color:var(--muted);
+font-size:.79rem; margin:.45rem 0 1rem; box-shadow:0 1px 2px rgba(15,23,42,.03);}
+.coverage strong {color:var(--ink); font-weight:680;}
+.section-kicker {color:var(--accent); font-size:.69rem; font-weight:760; letter-spacing:.09em;
+text-transform:uppercase; margin-bottom:.18rem;}
+.section-intro {color:var(--muted); max-width:850px; font-size:.89rem; line-height:1.56;
 margin-top:-.25rem; margin-bottom:.9rem;}
-.material-strip {padding:.65rem .8rem; border:1px solid var(--line); border-radius:12px;
-background:rgba(15,23,42,.45); color:#cbd5e1; font-size:.82rem; margin:.45rem 0 .75rem;}
-.date-row {display:flex; align-items:center; gap:.7rem; margin:1.2rem 0 .2rem;}
-.date-row h2 {font-size:1.08rem; margin:0;}
-.count-pill {font-size:.7rem; color:#c4b5fd; padding:.13rem .44rem; border-radius:999px;
-background:rgba(139,92,246,.12); border:1px solid rgba(139,92,246,.24);}
-.paper-title {font-size:1.04rem; font-weight:720; line-height:1.4; margin-bottom:.18rem;}
-.paper-title a {color:var(--ink); text-decoration:none;}
-.paper-title a:hover {color:#a78bfa;}
-.meta {color:#94a3b8; font-size:.78rem; margin:.18rem 0 .38rem;}
-.badge {display:inline-block; padding:.16rem .44rem; margin:.1rem .16rem .1rem 0;
-border-radius:999px; background:rgba(124,58,237,.1); border:1px solid rgba(139,92,246,.24);
-font-size:.68rem; color:#ddd6fe;}
-.status-approved {background:rgba(16,185,129,.1); border-color:rgba(16,185,129,.3); color:#a7f3d0;}
-.status-pending {background:rgba(245,158,11,.1); border-color:rgba(245,158,11,.3); color:#fde68a;}
-.status-review {background:rgba(244,63,94,.1); border-color:rgba(244,63,94,.28); color:#fecdd3;}
-.paper-signal {border-left:2px solid rgba(34,211,238,.55); padding:.35rem .65rem;
-margin:.55rem 0 .35rem; color:#cbd5e1; font-size:.82rem; line-height:1.5;
-background:rgba(34,211,238,.035);}
-.brief {padding:.85rem 1rem; border:1px solid rgba(34,211,238,.2); border-radius:14px;
-background:linear-gradient(135deg,rgba(34,211,238,.055),rgba(139,92,246,.055));
-color:#cbd5e1; line-height:1.55; margin:.65rem 0 1rem;}
-.brief strong {color:#f8fafc;}
-.journey-card {height:100%; padding:.9rem 1rem; border:1px solid var(--line); border-radius:14px;
-background:linear-gradient(145deg,rgba(15,23,42,.72),rgba(30,41,59,.38));}
-.journey-card .number {color:#67e8f9; font-size:.72rem; font-weight:750; letter-spacing:.08em;
+.material-strip {padding:.62rem .76rem; border:1px solid var(--line); border-radius:9px;
+background:#fff; color:#435166; font-size:.82rem; margin:.45rem 0 .75rem;}
+.date-row {display:flex; align-items:center; gap:.7rem; margin:1.15rem 0 .28rem;}
+.date-row h2 {font-size:1.05rem; color:var(--ink); margin:0;}
+.count-pill {font-size:.7rem; color:#1d4ed8; padding:.13rem .44rem; border-radius:999px;
+background:#eff6ff; border:1px solid #bfdbfe;}
+.paper-title {font-size:1.03rem; font-weight:735; line-height:1.42; margin-bottom:.18rem;}
+.paper-title a {color:#123b70; text-decoration:none;}
+.paper-title a:hover {color:var(--accent); text-decoration:underline; text-underline-offset:3px;}
+.meta {color:#667386; font-size:.77rem; margin:.18rem 0 .34rem;}
+.badge {display:inline-block; padding:.16rem .43rem; margin:.08rem .14rem .08rem 0;
+border-radius:999px; background:#f1f5f9; border:1px solid #d7e0ea; font-size:.67rem; color:#334155;}
+.status-approved {background:#ecfdf5; border-color:#a7f3d0; color:#047857;}
+.status-pending {background:#fffbeb; border-color:#fde68a; color:#92400e;}
+.status-review {background:#fff1f2; border-color:#fecdd3; color:#be123c;}
+.paper-signal {border-left:3px solid #60a5fa; padding:.42rem .68rem; margin:.48rem 0 .34rem;
+color:#334155; font-size:.82rem; line-height:1.48; background:#f4f8ff;}
+.brief {padding:.82rem .95rem; border:1px solid #cfe0f5; border-radius:10px;
+background:#f8fbff; color:#334155; line-height:1.55; margin:.65rem 0 1rem;}
+.brief strong {color:var(--ink);}
+.journey-card {height:100%; padding:.88rem .95rem; border:1px solid var(--line); border-radius:10px;
+background:#fff;}
+.journey-card .number {color:var(--accent); font-size:.71rem; font-weight:760; letter-spacing:.07em;
 text-transform:uppercase;}
-.journey-card h3 {font-size:1rem; margin:.25rem 0;}
-.journey-card p {color:#aeb9c8; font-size:.82rem; line-height:1.48; margin:0;}
-.insight-row {padding:.68rem .8rem; margin:.38rem 0; border-left:3px solid #22d3ee;
-border-radius:0 10px 10px 0; background:rgba(15,23,42,.5); color:#cbd5e1; font-size:.86rem;}
-.abstract {color:#b8c1cf; line-height:1.5; margin:.4rem 0; font-size:.86rem;}
-div[data-testid="stMetric"] {padding:.72rem .82rem; background:rgba(15,23,42,.52);
-border:1px solid var(--line); border-radius:14px; min-height:92px;}
-div[data-testid="stMetricLabel"] {font-size:.76rem; color:#94a3b8;}
-div[data-testid="stMetricValue"] {font-size:1.65rem;}
-div[data-baseweb="tab-list"] {gap:.25rem; padding:.28rem; border:1px solid var(--line);
-border-radius:14px; background:rgba(15,23,42,.5); overflow-x:auto;}
-button[data-baseweb="tab"] {border-radius:10px; padding:.45rem .75rem;}
+.journey-card h3 {color:var(--ink); font-size:1rem; margin:.25rem 0;}
+.journey-card p {color:var(--muted); font-size:.82rem; line-height:1.48; margin:0;}
+.insight-row {padding:.68rem .78rem; margin:.38rem 0; border-left:3px solid var(--accent);
+border-radius:0 8px 8px 0; background:#fff; color:#334155; font-size:.85rem;
+box-shadow:0 1px 2px rgba(15,23,42,.03);}
+.abstract {color:#465468; line-height:1.5; margin:.4rem 0; font-size:.86rem;}
+div[data-testid="stMetric"] {padding:.7rem .8rem; background:#fff; border:1px solid var(--line);
+border-radius:10px; min-height:86px; box-shadow:0 1px 2px rgba(15,23,42,.035);}
+div[data-testid="stMetricLabel"] {font-size:.75rem; color:#68758a;}
+div[data-testid="stMetricValue"] {font-size:1.52rem; color:var(--ink);}
+div[data-baseweb="tab-list"] {gap:.16rem; padding:0; border-bottom:1px solid var(--line);
+background:transparent; overflow-x:auto;}
+button[data-baseweb="tab"] {border-radius:8px 8px 0 0; padding:.48rem .7rem; color:#526176;}
+button[data-baseweb="tab"][aria-selected="true"] {color:var(--accent-strong); background:#eef5ff;}
 button[data-baseweb="tab"]:focus-visible, .stButton > button:focus-visible,
-.stLinkButton > a:focus-visible {outline:3px solid rgba(34,211,238,.65); outline-offset:2px;}
-div[data-testid="stExpander"] {border-color:var(--line); border-radius:12px;}
-div[data-testid="stVerticalBlockBorderWrapper"] {border-color:var(--line); border-radius:14px;}
-.stButton > button, .stLinkButton > a {border-radius:10px;}
+.stLinkButton > a:focus-visible {outline:3px solid rgba(37,99,235,.38); outline-offset:2px;}
+div[data-testid="stExpander"] {border-color:var(--line); border-radius:9px; background:#fff;}
+div[data-testid="stVerticalBlockBorderWrapper"] {border-color:var(--line); border-radius:10px; background:#fff;}
+.stButton > button, .stLinkButton > a {border-radius:8px;}
+.stLinkButton > a {text-decoration:none;}
+[data-testid="stDataFrame"] {border:1px solid var(--line); border-radius:9px; overflow:hidden;}
+hr {border-color:var(--line);}
 @media (max-width:700px) {
-  .block-container {padding:.65rem .75rem 2rem;}
-  .hero {padding:1rem; border-radius:17px;}
-  .hero h1 {font-size:1.65rem;}
-  .hero p {font-size:.86rem;}
-  .coverage {display:block; line-height:1.65;}
-  div[data-testid="stMetric"] {min-height:82px; padding:.55rem .6rem;}
-  button[data-baseweb="tab"] {padding:.38rem .55rem; font-size:.78rem;}
+  .block-container {padding:.75rem .72rem 2rem;}
+  .hero {padding:.8rem 0 .75rem;}
+  .hero h1 {font-size:1.72rem;}
+  .hero p {font-size:.88rem;}
+  .coverage {display:block; line-height:1.7;}
+  div[data-testid="stMetric"] {min-height:78px; padding:.54rem .58rem;}
+  button[data-baseweb="tab"] {padding:.4rem .52rem; font-size:.77rem;}
 }
 </style>
 """,
@@ -255,15 +264,16 @@ def badges(values: list[str], status: str | None = None) -> str:
 
 
 def paper_card(paper: dict) -> None:
+    """Render a scan-friendly paper summary with full evidence on demand."""
     decision = paper.get("ai_decision") or {}
     status = feed_status(paper)
     title = html.escape(str(paper.get("title", "Untitled")))
     url = html.escape(str(paper.get("abstract_url", "https://arxiv.org")))
-    author_names = ", ".join(str(author) for author in paper.get("authors", [])[:5])
-    if len(paper.get("authors", [])) > 5:
+    authors = [str(author) for author in paper.get("authors", [])]
+    author_names = ", ".join(authors[:3])
+    if len(authors) > 3:
         author_names += " et al."
-    abstract = str(paper.get("abstract", ""))
-    preview = abstract if len(abstract) <= 300 else abstract[:297].rstrip() + "…"
+    abstract = str(paper.get("abstract", "")).strip()
     systems = decision.get("material_or_system_family", []) + decision.get(
         "materials_or_systems", []
     )
@@ -273,89 +283,82 @@ def paper_card(paper: dict) -> None:
         + decision.get("detection_methods", [])
         + decision.get("computational_methods", [])
     )
-    scientific_identity = (
-        decision.get("research_focus", [])
-        + decision.get("chirality_class", [])
-        + decision.get("phonon_character", [])
-    )
     field_areas = ecosystem_areas(paper) if decision else []
     tier = signal_tier(paper)
-    tags = [tier]
-    if decision:
-        tags.extend([evidence_stage(paper), decision.get("research_type")])
-    visible_science_tags = (field_areas + scientific_identity + systems)[:3]
+    evidence = evidence_stage(paper) if decision else status
+    visible_tags = [tier, evidence, decision.get("research_type")]
+    if systems:
+        visible_tags.append(systems[0])
     reason = str(decision.get("reason", "")).strip()
-    signal = reason if len(reason) <= 260 else reason[:257].rstrip() + "…"
-    signal_html = (
-        f'<div class="paper-signal"><strong>Research signal</strong> · {html.escape(signal)}</div>'
-        if signal
-        else ""
-    )
+    if not reason and abstract:
+        reason = abstract
+    signal = reason if len(reason) <= 190 else reason[:187].rstrip() + "…"
 
     with st.container(border=True):
         st.markdown(
             f'<div class="paper-title"><a href="{url}" target="_blank">{title}</a></div>'
-            f'<div class="meta">{html.escape(author_names)} · Submitted '
+            f'<div class="meta">{html.escape(author_names)} · '
             f"{short_date(paper.get('initial_submission_date'))} · "
             f"arXiv:{html.escape(str(paper.get('base_arxiv_id', '')))}</div>"
-            f"<div>{badges(tags, status)}{badges(visible_science_tags)}</div>"
-            f"{signal_html}"
-            f'<div class="abstract">{html.escape(preview)}</div>',
+            f"<div>{badges(visible_tags, status)}</div>"
+            + (
+                f'<div class="paper-signal"><strong>Why it matters</strong> · '
+                f"{html.escape(signal)}</div>"
+                if signal
+                else ""
+            ),
             unsafe_allow_html=True,
         )
-        links = st.columns([1, 1, 4])
-        links[0].link_button("arXiv page ↗", paper.get("abstract_url", "https://arxiv.org"))
-        links[1].link_button("PDF ↗", paper.get("pdf_url", "https://arxiv.org"))
-        label_count = len(field_areas + scientific_identity + systems + methods)
-        if label_count > len(visible_science_tags):
-            links[2].caption(
-                f"{label_count - len(visible_science_tags)} more labels in the evidence panel"
-            )
+        actions = st.columns([1, 1, 5])
+        actions[0].link_button("arXiv ↗", paper.get("abstract_url", "https://arxiv.org"))
+        actions[1].link_button("PDF ↗", paper.get("pdf_url", "https://arxiv.org"))
+        actions[2].caption(
+            "Open the evidence panel for the abstract, classification basis, methods and caveats."
+        )
 
-        with st.expander("Evidence, methods and complete metadata"):
-            st.write(abstract)
+        with st.expander("Abstract, evidence and methods"):
+            if abstract:
+                st.write(abstract)
             if decision:
-                st.markdown(f"**Classification reason:** {decision.get('reason', '—')}")
-                st.markdown("**Field ecosystem:** " + ", ".join(field_areas))
-                st.markdown(f"**Research maturity:** {evidence_stage(paper)}")
+                evidence_columns = st.columns(2)
+                with evidence_columns[0]:
+                    st.markdown(f"**Evidence maturity:** {evidence_stage(paper)}")
+                    st.markdown(
+                        "**Research focus:** "
+                        + ", ".join(decision.get("research_focus", []) or ["Not specified"])
+                    )
+                    st.markdown(
+                        "**Material/system:** " + ", ".join(systems or ["Not specified"])
+                    )
+                    st.markdown(
+                        "**Field ecosystem:** " + ", ".join(field_areas or ["Not specified"])
+                    )
+                with evidence_columns[1]:
+                    st.markdown(
+                        "**Methods performed:** " + ", ".join(methods or ["Not specified"])
+                    )
+                    st.markdown(
+                        "**Generation mechanism:** "
+                        + ", ".join(decision.get("generation_mechanisms", []) or ["Not specified"])
+                    )
+                    st.markdown(
+                        "**Physical properties:** "
+                        + ", ".join(decision.get("physical_properties", []) or ["Not specified"])
+                    )
+                    st.markdown(
+                        "**Application direction:** "
+                        + ", ".join(decision.get("application_directions", []) or ["Not claimed"])
+                    )
                 phrases = decision.get("supporting_phrases", [])
                 if phrases:
-                    st.markdown("**Evidence from abstract:** " + " · ".join(phrases))
-                st.markdown("**Material/system:** " + ", ".join(systems or ["Not specified"]))
-                st.markdown(
-                    "**Research focus:** "
-                    + ", ".join(decision.get("research_focus", []) or ["Not specified"])
-                )
-                st.markdown(
-                    "**Meaning of chirality:** "
-                    + ", ".join(decision.get("chirality_class", []) or ["Not established"])
-                )
-                st.markdown(
-                    "**Phonon character:** "
-                    + ", ".join(decision.get("phonon_character", []) or ["Not specified"])
-                )
-                st.markdown(
-                    "**Generation mechanism:** "
-                    + ", ".join(decision.get("generation_mechanisms", []) or ["Not specified"])
-                )
-                st.markdown(
-                    "**Methods actually performed:** " + ", ".join(methods or ["Not specified"])
-                )
-                st.markdown(
-                    "**Properties:** "
-                    + ", ".join(decision.get("physical_properties", []) or ["Not specified"])
-                )
-                st.markdown(f"**Evidence level:** {decision.get('evidence_level', 'Not assessed')}")
+                    st.caption("Evidence phrases · " + " · ".join(phrases))
                 caveats = decision.get("evidence_caveats", [])
                 if caveats:
                     st.warning("Evidence caveats: " + " · ".join(caveats))
-                st.markdown(
-                    "**Research/application direction:** "
-                    + ", ".join(decision.get("application_directions", []) or ["Not claimed"])
-                )
+                st.caption("Classification basis · " + str(decision.get("reason", "—")))
             else:
-                st.info("This paper is stored safely but has not completed AI review.")
-            st.caption("arXiv categories: " + ", ".join(paper.get("categories", [])))
+                st.info("This paper is stored safely but has not completed scientific review.")
+            st.caption("arXiv categories · " + ", ".join(paper.get("categories", [])))
 
 
 archive, history, events, tools = load_all()
@@ -433,104 +436,101 @@ st.markdown(
 
 (
     overview_tab,
-    history_tab,
     paper_tab,
+    history_tab,
     analysis_tab,
+    people_tab,
     news_tab,
     ecosystem_tab,
     admin_tab,
-    people_tab,
 ) = st.tabs(
     [
-        "Overview",
-        "History & materials",
-        "Latest papers",
-        "Field analysis",
-        "Breakthroughs",
-        "Ecosystem",
-        "Pipeline",
-        "People & connections",
+        "Brief",
+        "Papers",
+        "Evidence atlas",
+        "Trends",
+        "Community",
+        "Signals",
+        "Opportunities",
+        "Methods & pipeline",
     ]
 )
 
+
 with overview_tab:
-    st.markdown('<div class="section-kicker">Research briefing</div>', unsafe_allow_html=True)
-    st.subheader("Understand the field before opening the archive")
+    st.markdown('<div class="section-kicker">Field brief</div>', unsafe_allow_html=True)
+    st.subheader("What changed, what is established, and what needs attention")
     st.markdown(
-        '<div class="section-intro">A concise view of the evidence, momentum and research gaps. '
-        "Use this page for orientation; open History & materials for the full scientific record "
-        "or Latest papers for the daily arXiv feed.</div>",
+        '<div class="section-intro">A decision-ready starting point for researchers and R&D teams. '
+        "Open Papers for daily discovery, Evidence atlas for landmark results, Trends for the "
+        "scientific landscape, and Community for institutions and collaborators.</div>",
         unsafe_allow_html=True,
     )
     evidence_gap = max(brief["strong"] - brief["experimental"], 0)
-    briefing = st.columns(4)
-    briefing[0].metric("Mapped research", len(approved))
-    briefing[1].metric("Experimental studies", brief["experimental"])
-    briefing[2].metric("Direct measurements", brief["direct"])
-    briefing[3].metric("Theory / evidence gap", evidence_gap)
+    evidence_metrics = st.columns(4)
+    evidence_metrics[0].metric("Experimental studies", brief["experimental"])
+    evidence_metrics[1].metric("Direct measurements", brief["direct"])
+    evidence_metrics[2].metric("Theory / evidence gap", evidence_gap)
+    evidence_metrics[3].metric("Needs interpretation", brief["needs_interpretation"])
 
-    st.markdown("### The field in four steps")
-    journey = [
-        (
-            "01 · Discover",
-            "New research",
-            "Daily arXiv scans identify emerging papers and connections.",
-        ),
-        (
-            "02 · Verify",
-            "Evidence",
-            "Experiments, direct measurements and predictions remain distinct.",
-        ),
-        (
-            "03 · Connect",
-            "Mechanisms",
-            "Track how lattice angular momentum couples to spins, electrons and transport.",
-        ),
-        (
-            "04 · Apply",
-            "Frontier",
-            "Follow coherent control, quantum materials and device-relevant directions.",
-        ),
-    ]
-    for column, (number, title, description) in zip(st.columns(4), journey, strict=True):
-        column.markdown(
-            f'<div class="journey-card"><div class="number">{number}</div>'
-            f"<h3>{title}</h3><p>{description}</p></div>",
-            unsafe_allow_html=True,
-        )
-
-    st.markdown("### What the archive says now")
-    overview_columns = st.columns([3, 2])
-    with overview_columns[0]:
+    brief_columns = st.columns([3, 2])
+    with brief_columns[0]:
+        st.markdown("### Current field signals")
         st.markdown(
-            f'<div class="insight-row"><strong>{brief["recent"]} mapped papers</strong> were '
-            "submitted in the latest 30-day research window.</div>",
+            f'<div class="insight-row"><strong>{brief["recent"]} mapped papers</strong> entered '
+            "the latest 30-day research window.</div>",
             unsafe_allow_html=True,
         )
         st.markdown(
             f'<div class="insight-row"><strong>{brief["experimental"]} experimental records</strong> '
-            f"sit against {evidence_gap} theory, prediction or non-direct records.</div>",
+            f"are currently balanced against {evidence_gap} theory, prediction or non-direct records.</div>",
             unsafe_allow_html=True,
         )
         st.markdown(
-            f'<div class="insight-row"><strong>{brief["needs_interpretation"]} papers</strong> need '
-            "human interpretation before they should be treated as field evidence.</div>",
+            f'<div class="insight-row"><strong>{brief["needs_interpretation"]} records</strong> remain '
+            "visible but are not promoted as established evidence.</div>",
             unsafe_allow_html=True,
         )
-    with overview_columns[1]:
+
+        st.markdown("### Latest mapped papers")
+        latest_mapped = sorted(
+            approved,
+            key=lambda paper: paper.get("initial_submission_date", ""),
+            reverse=True,
+        )[:4]
+        if latest_mapped:
+            for paper in latest_mapped:
+                title = html.escape(str(paper.get("title", "Untitled")))
+                url = html.escape(str(paper.get("abstract_url", "https://arxiv.org")))
+                signal = signal_tier(paper)
+                st.markdown(
+                    f'<div class="insight-row"><strong>{short_date(paper.get("initial_submission_date"))}</strong> · '
+                    f'<a href="{url}" target="_blank">{title}</a><br><span class="meta">{html.escape(signal)}</span></div>',
+                    unsafe_allow_html=True,
+                )
+        else:
+            st.info("Mapped papers will appear here after scientific review.")
+
+    with brief_columns[1]:
         with st.container(border=True):
-            st.markdown("#### Leading directions")
+            st.markdown("#### Leading research directions")
             if brief["top_focus"]:
                 for label, count in brief["top_focus"][:5]:
                     st.markdown(f"**{count}** · {label}")
             else:
                 st.caption("More classified evidence is needed.")
 
-    st.markdown("### Where to go next")
-    st.caption(
-        "**History & materials** for landmark evidence · **Latest papers** for new work · "
-        "**Field analysis** for trends · **Ecosystem** for projects and opportunities"
-    )
+        with st.container(border=True):
+            st.markdown("#### Use the tracker by task")
+            st.markdown("**Discover** · Open Papers for the newest mapped work.")
+            st.markdown("**Verify** · Use Evidence atlas to inspect landmark claims and caveats.")
+            st.markdown("**Compare** · Use Trends for materials, methods and evidence maturity.")
+            st.markdown("**Connect** · Use Community for institutions, authors and collaborations.")
+
+        st.info(
+            "Evidence rule: circular polarization, phonon angular momentum and true dynamical "
+            "chirality remain related but distinct scientific claims."
+        )
 
 with history_tab:
     st.markdown('<div class="section-kicker">History & materials</div>', unsafe_allow_html=True)
@@ -1434,7 +1434,7 @@ with people_tab:
                                 mode="lines",
                                 line={
                                     "width": 0.7 + min(link["joint_papers"], 4) * 0.45,
-                                    "color": "rgba(103,232,249,.55)",
+                                    "color": "rgba(37,99,235,.34)",
                                 },
                                 opacity=0.32,
                                 hoverinfo="text",
@@ -1462,10 +1462,10 @@ with people_tab:
                             ],
                             "color": [item["paper_count"] for item in visible_institutions],
                             "colorscale": [
-                                [0.0, "#fde68a"],
-                                [0.4, "#fb923c"],
-                                [0.72, "#a78bfa"],
-                                [1.0, "#22d3ee"],
+                                [0.0, "#dbeafe"],
+                                [0.4, "#93c5fd"],
+                                [0.72, "#3b82f6"],
+                                [1.0, "#0f766e"],
                             ],
                             "line": {"color": "#f8fafc", "width": 0.9},
                             "opacity": 0.88,
@@ -1508,14 +1508,14 @@ with people_tab:
                 map_figure.update_geos(
                     projection_type=projection,
                     showland=True,
-                    landcolor="#243248",
+                    landcolor="#e8eef5",
                     showocean=True,
-                    oceancolor="#071525",
+                    oceancolor="#f8fbff",
                     showlakes=True,
-                    lakecolor="#0b2035",
+                    lakecolor="#edf5fb",
                     showcountries=True,
-                    countrycolor="#64748b",
-                    coastlinecolor="#94a3b8",
+                    countrycolor="#a7b4c2",
+                    coastlinecolor="#8190a5",
                     coastlinewidth=0.7,
                     bgcolor="rgba(0,0,0,0)",
                 )
@@ -1523,7 +1523,7 @@ with people_tab:
                     height=500,
                     margin={"l": 0, "r": 0, "t": 4, "b": 0},
                     paper_bgcolor="rgba(0,0,0,0)",
-                    font={"color": "#e2e8f0"},
+                    font={"color": "#172033"},
                 )
                 st.plotly_chart(
                     map_figure,
