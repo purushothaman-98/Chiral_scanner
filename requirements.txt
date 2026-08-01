@@ -1,5 +1,6 @@
 # Keep visualization dependencies in this file so Streamlit Cloud rebuilds them together.
-# Full deployment refresh: automatic schema-v2 affiliation geography, 2026-08-01T02:20Z.
+# Deployment refresh: load the schema-v2 automatic affiliation geography on 2026-08-01.
+# Live geography build: 2026-08-01-automatic-affiliations-v2
 streamlit>=1.46,<2
 pandas>=2.2,<3
 plotly>=6,<7
