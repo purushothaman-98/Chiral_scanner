@@ -51,7 +51,9 @@ jobs:
           python-version: "3.12"
           cache: pip
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          python -m pip install -r requirements.txt
+          python -m pip install "pytest>=8,<9"
       - name: Update checkout before enrichment
         run: git pull --rebase origin main
       - name: Enrich first and corresponding author institutions
@@ -73,9 +75,9 @@ jobs:
           fi
 
           if [[ "$GITHUB_EVENT_NAME" == "push" ]]; then
-            # A code-change push can safely advance a moderate batch. Scheduled/manual
-            # runs remain the main bulk-enrichment path.
-            LIMIT="${INPUT_LIMIT:-20}"
+            # A workflow/code repair push should catch up the already-collected archive.
+            # Previously attempted papers are skipped, so this remains bounded on later pushes.
+            LIMIT="${INPUT_LIMIT:-140}"
           else
             LIMIT="${INPUT_LIMIT:-60}"
           fi
@@ -188,7 +190,7 @@ jobs:
                   assert roles <= {"first", "corresponding"}
                   assert isinstance(author.get("institution_ids", []), list)
           PY
-          pytest -q \
+          python -m pytest -q \
             tests/test_affiliation_enrichment.py \
             tests/test_affiliation_enrichment_resilient.py \
             tests/test_first_corresponding_author_map.py \
