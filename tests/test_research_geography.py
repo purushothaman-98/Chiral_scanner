@@ -102,6 +102,62 @@ def test_paper_coverage_leaves_unresolved_papers_visible():
     assert coverage["uncovered_papers"] == 1
 
 
+def test_paper_specific_affiliation_prevents_stale_manual_mobility_link():
+    registry = {
+        "institutions": {
+            "old": {
+                "name": "Old Institute",
+                "country": "Oldland",
+                "latitude": 1.0,
+                "longitude": 2.0,
+                "evidence_url": "https://example.org/old",
+            }
+        },
+        "authors": {
+            "Ada A": {
+                "institution_ids": ["old"],
+                "role": "historical role",
+            }
+        },
+    }
+    automatic = {
+        "generated_at": "2026-08-01T00:00:00+00:00",
+        "institutions": {
+            "ror:new": {
+                "name": "New Institute",
+                "country": "Newland",
+                "latitude": 3.0,
+                "longitude": 4.0,
+                "evidence_url": "https://ror.org/new",
+            }
+        },
+        "papers": {
+            "1": {
+                "authors": [
+                    {
+                        "paper_author_name": "Ada A",
+                        "institution_ids": ["ror:new"],
+                        "affiliation_labels": ["New Institute"],
+                    }
+                ]
+            }
+        },
+        "unresolved": {},
+    }
+
+    institutions, links, coverage = institution_activity(
+        [{"base_arxiv_id": "1", "authors": ["Ada A"]}],
+        registry,
+        automatic,
+    )
+    by_id = {row["id"]: row for row in institutions}
+
+    assert set(by_id) == {"ror:new"}
+    assert by_id["ror:new"]["mapped_authors"] == ["Ada A"]
+    assert links == []
+    assert coverage["automatically_covered_papers"] == 1
+
+
 def test_registry_loader_has_safe_schema_for_invalid_json(tmp_path):
     path = tmp_path / "registry.json"
     path.write_text("{broken", encoding="utf-8")
