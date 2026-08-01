@@ -137,7 +137,7 @@ def institution_activity(
     registry: dict | None = None,
     paper_affiliations: dict | None = None,
 ) -> tuple[list[dict], list[dict], dict[str, int | str | None]]:
-    """Join cited and OpenAlex affiliations to papers without inferring identities."""
+    """Join cited and verified paper-specific affiliations without inferring identities."""
     registry = registry or load_affiliation_registry()
     paper_affiliations = (
         paper_affiliations if paper_affiliations is not None else load_paper_affiliations()
@@ -169,6 +169,7 @@ def institution_activity(
     for paper in field_papers:
         paper_id = _paper_id(paper)
         paper_institutions: set[str] = set()
+        automatically_mapped_authors: set[str] = set()
         automatic_record = paper_records.get(paper_id, {})
         if isinstance(automatic_record, dict):
             for author_record in automatic_record.get("authors", []) or []:
@@ -195,7 +196,7 @@ def institution_activity(
                         {
                             "role": "research",
                             "contribution": None,
-                            "source": "OpenAlex/arXiv paper affiliation",
+                            "source": "Verified paper-specific affiliation",
                         },
                     )
                     institution_affiliation_labels[institution_id].update(
@@ -204,11 +205,17 @@ def institution_activity(
                         if str(label).strip()
                     )
                 if accepted:
+                    automatically_mapped_authors.add(author_name)
                     mapped_authors.add(author_name)
                     automatically_covered.add(paper_id)
 
         for author in paper.get("authors", []):
             author_name = str(author).strip()
+            # A paper-specific affiliation is stronger than a static author registry.
+            # Use the manual registry only as a fallback for this paper so author
+            # mobility cannot create a false institution or collaboration link.
+            if author_name in automatically_mapped_authors:
+                continue
             record = manual_authors.get(author_name, {})
             ids = record.get("institution_ids")
             if ids is None:
