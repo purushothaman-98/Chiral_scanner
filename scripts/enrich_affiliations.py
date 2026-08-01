@@ -55,24 +55,52 @@ Reference patterns reviewed:
 This change is presentation-only. Collection, classification, enrichment, validation, scheduling and repository data formats remain unchanged.
 '''
 
+STATIC_HERO = '''st.markdown(
+    """
+<div class="hero">
+<div class="hero-kicker"><span class="live-dot"></span> Evidence-first field intelligence · updated daily</div>
+<h1>Chiral phonon research intelligence</h1>
+<p>Track new papers, evidence maturity, materials, methods, institutions and unresolved questions
+without mixing observation, interpretation and prediction.</p>
+<div class="hero-tags">
+<span class="hero-tag">Daily arXiv scan</span>
+<span class="hero-tag">Evidence separated</span>
+<span class="hero-tag">Materials &amp; methods</span>
+<span class="hero-tag">Global research map</span>
+</div>
+</div>
+""",
+    unsafe_allow_html=True,
+)
+'''
+
 
 def run(*args: str) -> None:
     subprocess.run(args, cwd=ROOT, check=True)
 
 
 def repair_patch_source() -> None:
-    """Replace the malformed temporary UX-note writer before executing the migration."""
+    """Repair temporary source generators before executing the migration."""
     source = PATCH.read_text(encoding="utf-8")
-    start = source.find("DOC_PATH.write_text(")
-    end = source.find('\n\nprint("Applied light research-intelligence UI")', start)
-    if start < 0 or end < 0:
+
+    doc_start = source.find("DOC_PATH.write_text(")
+    doc_end = source.find('\n\nprint("Applied light research-intelligence UI")', doc_start)
+    if doc_start < 0 or doc_end < 0:
         raise RuntimeError("Unable to locate the temporary UX-note writer")
-    replacement = (
-        "DOC_PATH.write_text(UX_NOTE, encoding=\"utf-8\")"
-        if "UX_NOTE =" in source
-        else "DOC_PATH.write_text(" + repr(UX_NOTE) + ", encoding=\"utf-8\")"
+    doc_replacement = "DOC_PATH.write_text(" + repr(UX_NOTE) + ", encoding=\"utf-8\")"
+    source = source[:doc_start] + doc_replacement + source[doc_end:]
+
+    hero_start = source.find("hero_block = '''")
+    hero_end = source.find(
+        "\ntext = replace_section(text, hero_start, hero_end, hero_block)",
+        hero_start,
     )
-    PATCH.write_text(source[:start] + replacement + source[end:], encoding="utf-8")
+    if hero_start < 0 or hero_end < 0:
+        raise RuntimeError("Unable to locate the temporary hero generator")
+    hero_replacement = "hero_block = " + repr(STATIC_HERO)
+    source = source[:hero_start] + hero_replacement + source[hero_end:]
+
+    PATCH.write_text(source, encoding="utf-8")
 
 
 def smoke_test() -> None:
@@ -120,6 +148,7 @@ def apply_ui_once() -> None:
         return
 
     repair_patch_source()
+    run(sys.executable, "-m", "py_compile", str(PATCH))
     run(sys.executable, str(PATCH))
     (ROOT / ".streamlit" / "config.toml").write_text(FINAL_THEME, encoding="utf-8")
 
