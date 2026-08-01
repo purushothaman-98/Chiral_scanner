@@ -48,7 +48,7 @@ def _crossref_work(record: dict[str, Any]) -> dict[str, Any] | None:
         return None
 
     authorships = []
-    for contributor in record.get("author", []) or []:
+    for index, contributor in enumerate(record.get("author", []) or []):
         if not isinstance(contributor, dict):
             continue
         name = " ".join(
@@ -67,10 +67,15 @@ def _crossref_work(record: dict[str, Any]) -> dict[str, Any] | None:
             for item in contributor.get("affiliation", []) or []
             if isinstance(item, dict) and str(item.get("name") or "").strip()
         ]
+        sequence = str(contributor.get("sequence") or "").strip().casefold()
         authorships.append(
             {
                 "raw_author_name": name,
                 "raw_affiliation_strings": labels,
+                "author_position": "first" if index == 0 or sequence == "first" else "middle",
+                "is_corresponding": bool(
+                    contributor.get("is_corresponding") or contributor.get("corresponding")
+                ),
                 "author": {
                     "display_name": name,
                     "id": None,
@@ -405,9 +410,7 @@ def enrich_paper(
         used_sources.add(provider)
 
     source_authors = work.get("authorships", []) if work else metadata.get("authors", [])
-    for item in source_authors or []:
-        if not isinstance(item, dict):
-            continue
+    for item, roles in base.target_authorships(source_authors):
         author = item.get("author", {}) if isinstance(item.get("author"), dict) else {}
         name = str(
             item.get("raw_author_name")
@@ -466,6 +469,9 @@ def enrich_paper(
                     author.get("id") if provider == "OpenAlex" else None
                 ),
                 "orcid": author.get("orcid"),
+                "author_position": item.get("author_position") or ("first" if "first" in roles else None),
+                "is_corresponding": "corresponding" in roles,
+                "author_roles": roles,
                 "institution_ids": sorted(set(institution_ids)),
                 "affiliation_labels": labels,
             }
@@ -488,6 +494,7 @@ def enrich_paper(
             "metadata_provider": provider or "arXiv",
             "match_method": f"{provider_prefix}_{method}" if method else "arxiv_affiliation",
             "match_score": score if work else 1.0,
+            "author_scope": base.AUTHOR_SCOPE,
             "authors": authors,
             "enriched_at": base.now(),
             "sources": sorted(used_sources),
