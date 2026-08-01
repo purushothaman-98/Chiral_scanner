@@ -1,10 +1,9 @@
 name: Repair Streamlit geography runtime
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - ".github/workflows/repair-streamlit-geography-runtime.yml"
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
 
 permissions:
   contents: write
