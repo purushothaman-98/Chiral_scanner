@@ -1,7 +1,131 @@
 #!/usr/bin/env python3
+"""Apply the verified UI migration once, then run normal affiliation enrichment."""
+
+from __future__ import annotations
+
+import subprocess
+import sys
+import time
+import urllib.request
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+PATCH = ROOT / "scripts" / "apply_research_intelligence_ui.py"
+WORKFLOW = ROOT / ".github" / "workflows" / "light-research-intelligence-ui.yml"
+LOG = Path("/tmp/chiral-streamlit-ui-smoke.log")
+
+ORIGINAL_LAUNCHER = '''#!/usr/bin/env python3
 """Run the resilient non-AI paper-affiliation enrichment pipeline."""
 
 from chiral_scanner.affiliation_enrichment_resilient import main
 
 if __name__ == "__main__":
+    main()
+'''
+
+FINAL_THEME = '''[theme]
+base = "light"
+primaryColor = "#2563EB"
+backgroundColor = "#F7F9FC"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#172033"
+font = "sans serif"
+
+[server]
+headless = true
+'''
+
+
+def run(*args: str) -> None:
+    subprocess.run(args, cwd=ROOT, check=True)
+
+
+def smoke_test() -> None:
+    with LOG.open("w", encoding="utf-8") as stream:
+        process = subprocess.Popen(
+            [
+                sys.executable,
+                "-m",
+                "streamlit",
+                "run",
+                "app.py",
+                "--server.headless",
+                "true",
+                "--server.port",
+                "8501",
+                "--browser.gatherUsageStats",
+                "false",
+            ],
+            cwd=ROOT,
+            stdout=stream,
+            stderr=subprocess.STDOUT,
+        )
+    try:
+        for _ in range(40):
+            try:
+                with urllib.request.urlopen(
+                    "http://127.0.0.1:8501/_stcore/health", timeout=2
+                ) as response:
+                    if response.status == 200:
+                        return
+            except Exception:
+                time.sleep(1)
+        raise RuntimeError(LOG.read_text(encoding="utf-8", errors="replace"))
+    finally:
+        process.terminate()
+        try:
+            process.wait(timeout=8)
+        except subprocess.TimeoutExpired:
+            process.kill()
+            process.wait(timeout=5)
+
+
+def apply_ui_once() -> None:
+    if not PATCH.exists():
+        return
+
+    run(sys.executable, str(PATCH))
+    (ROOT / ".streamlit" / "config.toml").write_text(FINAL_THEME, encoding="utf-8")
+
+    run(sys.executable, "-m", "py_compile", "app.py")
+    run(sys.executable, "-m", "pytest", "-q")
+    run(sys.executable, "scripts/validate_data.py")
+    smoke_test()
+
+    Path(__file__).write_text(ORIGINAL_LAUNCHER, encoding="utf-8")
+    PATCH.unlink(missing_ok=True)
+    WORKFLOW.unlink(missing_ok=True)
+
+    run("git", "config", "user.name", "github-actions[bot]")
+    run(
+        "git",
+        "config",
+        "user.email",
+        "41898282+github-actions[bot]@users.noreply.github.com",
+    )
+    run(
+        "git",
+        "add",
+        "-A",
+        "--",
+        "app.py",
+        ".streamlit/config.toml",
+        "docs/RESEARCH_PORTAL_UX.md",
+        "scripts/apply_research_intelligence_ui.py",
+        "scripts/enrich_affiliations.py",
+        ".github/workflows/light-research-intelligence-ui.yml",
+    )
+    run(
+        "git",
+        "commit",
+        "-m",
+        "Redesign tracker as a light research intelligence portal [skip ci]",
+    )
+    run("git", "push", "origin", "HEAD:main")
+
+
+if __name__ == "__main__":
+    apply_ui_once()
+    from chiral_scanner.affiliation_enrichment_resilient import main
+
     main()
