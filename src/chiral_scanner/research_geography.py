@@ -266,10 +266,7 @@ def institution_activity(
                 accepted = True
                 paper_institutions.add(institution_id)
                 institution_authors[institution_id].add(author_name)
-                institution_author_records[institution_id][author_name] = {
-                    **record,
-                    "role": " / ".join(sorted(map_roles)),
-                }
+                institution_author_records[institution_id][author_name] = record
             if accepted:
                 mapped_authors.add(author_name)
 
