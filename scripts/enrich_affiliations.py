@@ -71,6 +71,15 @@ def repair_patch_source() -> None:
     doc_replacement = "DOC_PATH.write_text(" + repr(UX_NOTE) + ", encoding=\"utf-8\")"
     source = source[:doc_start] + doc_replacement + source[doc_end:]
 
+    css_call = "text = replace_section(text, css_start, css_end, css_block)"
+    if css_call not in source:
+        raise RuntimeError("Unable to locate the CSS migration call")
+    source = source.replace(
+        css_call,
+        "text = replace_section(text, css_start, css_end, css_block.removesuffix(css_end))",
+        1,
+    )
+
     hero_start = source.find("hero_start = ")
     hero_marker = "text = replace_section(text, hero_start, hero_end, hero_block)"
     hero_marker_start = source.find(hero_marker, hero_start)
