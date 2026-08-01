@@ -6,7 +6,7 @@ from chiral_scanner.research_geography import (
 )
 
 
-def test_institution_activity_counts_unique_papers_and_never_guesses_authors():
+def test_institution_activity_counts_first_author_papers_without_guessing_others():
     registry = {
         "last_verified": "2026-07-24",
         "institutions": {
@@ -60,21 +60,20 @@ def test_institution_activity_counts_unique_papers_and_never_guesses_authors():
     institutions, links, coverage = institution_activity(papers, registry)
     by_id = {row["id"]: row for row in institutions}
 
+    assert set(by_id) == {"a"}
     assert by_id["a"]["paper_count"] == 2
     assert by_id["a"]["years"] == [2025, 2026]
     assert by_id["a"]["roles"] == ["spectroscopy"]
-    assert "Unmapped C" not in by_id["a"]["mapped_authors"]
-    assert links[0]["institution_1"] == "a"
-    assert links[0]["institution_2"] == "b"
-    assert links[0]["joint_papers"] == 1
-    assert links[0]["materials"] == ["alpha-HgS"]
+    assert by_id["a"]["mapped_authors"] == ["Ada A"]
+    assert links == []
     assert coverage["archive_authors"] == 3
-    assert coverage["verified_authors"] == 2
-    assert coverage["verified_institutions"] == 2
+    assert coverage["verified_authors"] == 1
+    assert coverage["verified_institutions"] == 1
     assert coverage["covered_papers"] == 2
     assert coverage["total_papers"] == 2
     assert coverage["uncovered_papers"] == 0
-    assert coverage["countries"] == 2
+    assert coverage["countries"] == 1
+    assert coverage["author_scope"] == "first_and_corresponding"
 
 
 def test_paper_coverage_leaves_unresolved_papers_visible():
