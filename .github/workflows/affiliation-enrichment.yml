@@ -53,6 +53,7 @@ jobs:
       - name: Update checkout before enrichment
         run: git pull --rebase origin main
       - name: Enrich mapped papers from arXiv, OpenAlex, Crossref, and ROR
+        id: enrich
         env:
           # OpenAlex currently requires an API key. The key is optional here because
           # Crossref + ROR provide a conservative, non-AI fallback.
@@ -65,18 +66,92 @@ jobs:
           INPUT_RETRY_DAYS: ${{ inputs.retry_days }}
         run: |
           if [[ "$GITHUB_EVENT_NAME" == "push" ]]; then
-            LIMIT="${INPUT_LIMIT:-20}"
+            # Push runs are a fast operational bootstrap. Scheduled/manual runs do the bulk work.
+            LIMIT="${INPUT_LIMIT:-3}"
           else
             LIMIT="${INPUT_LIMIT:-60}"
           fi
           RETRY_DAYS="${INPUT_RETRY_DAYS:-14}"
-          python scripts/enrich_affiliations.py \
+
+          set +e
+          timeout --signal=TERM 20m python scripts/enrich_affiliations.py \
             --input data/papers.json \
             --output data/paper_affiliations.json \
             --state data/affiliation_enrichment_state.json \
             --limit "$LIMIT" \
-            --retry-days "$RETRY_DAYS"
+            --retry-days "$RETRY_DAYS" \
+            2>&1 | tee /tmp/affiliation-enrichment.log
+          STATUS=${PIPESTATUS[0]}
+          set -e
+
+          export ENRICH_EXIT_CODE="$STATUS"
+          python - <<'PY'
+          import json
+          import os
+          from datetime import UTC, datetime
+          from pathlib import Path
+
+          output_path = Path("data/paper_affiliations.json")
+          state_path = Path("data/affiliation_enrichment_state.json")
+          log_path = Path("/tmp/affiliation-enrichment.log")
+
+          def read(path, fallback):
+              try:
+                  value = json.loads(path.read_text(encoding="utf-8"))
+              except (OSError, json.JSONDecodeError):
+                  return fallback
+              return value if isinstance(value, dict) else fallback
+
+          generated = datetime.now(UTC).isoformat()
+          output = read(
+              output_path,
+              {
+                  "schema_version": 1,
+                  "description": (
+                      "Paper-specific arXiv/OpenAlex/Crossref/ROR affiliations; "
+                      "uncertain identities remain unresolved."
+                  ),
+                  "generated_at": generated,
+                  "eligible_field_papers": 0,
+                  "resolved_papers": 0,
+                  "unresolved_papers": 0,
+                  "institutions": {},
+                  "papers": {},
+                  "unresolved": {},
+              },
+          )
+          state = read(state_path, {"schema_version": 1, "attempts": {}})
+          log_tail = ""
+          try:
+              log_tail = log_path.read_text(encoding="utf-8", errors="replace")[-12000:]
+          except OSError:
+              pass
+          exit_code = int(os.environ["ENRICH_EXIT_CODE"])
+          state.update(
+              {
+                  "schema_version": 1,
+                  "runner_status": "success" if exit_code == 0 else "failed",
+                  "runner_exit_code": exit_code,
+                  "runner_event": os.environ.get("GITHUB_EVENT_NAME"),
+                  "runner_commit": os.environ.get("GITHUB_SHA"),
+                  "runner_recorded_at": generated,
+                  "runner_log_tail": log_tail,
+              }
+          )
+          output_path.parent.mkdir(parents=True, exist_ok=True)
+          output_path.write_text(
+              json.dumps(output, indent=2, ensure_ascii=False) + "\n",
+              encoding="utf-8",
+          )
+          state_path.write_text(
+              json.dumps(state, indent=2, ensure_ascii=False) + "\n",
+              encoding="utf-8",
+          )
+          PY
+          echo "exit_code=$STATUS" >> "$GITHUB_OUTPUT"
       - name: Validate affiliation output and geography integration
+        id: validate
+        if: steps.enrich.outputs.exit_code == '0'
         run: |
           python - <<'PY'
           import json
@@ -99,6 +174,7 @@ jobs:
             tests/test_research_geography.py
           python scripts/validate_data.py
       - name: Commit affiliation data and retry diagnostics
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -109,15 +185,30 @@ jobs:
             git commit -m "Update paper affiliation metadata"
             git push origin HEAD:main
           fi
-      - name: Report a complete metadata-service outage
+      - name: Report enrichment or validation failure after diagnostics are saved
+        if: always()
+        env:
+          ENRICH_EXIT_CODE: ${{ steps.enrich.outputs.exit_code }}
+          VALIDATION_OUTCOME: ${{ steps.validate.outcome }}
         run: |
           python - <<'PY'
           import json
+          import os
           from pathlib import Path
 
           state = json.loads(Path("data/affiliation_enrichment_state.json").read_text())
+          exit_code = str(os.environ.get("ENRICH_EXIT_CODE") or "")
+          validation = str(os.environ.get("VALIDATION_OUTCOME") or "")
           selected = int(state.get("selected", 0))
           errors = int(state.get("errors", 0))
+          if exit_code != "0":
+              raise SystemExit(
+                  f"Affiliation runner exited with code {exit_code}; diagnostics were committed."
+              )
+          if validation != "success":
+              raise SystemExit(
+                  f"Affiliation validation outcome was {validation}; diagnostics were committed."
+              )
           if selected and errors == selected:
               raise SystemExit(
                   "All selected affiliation lookups failed. "
