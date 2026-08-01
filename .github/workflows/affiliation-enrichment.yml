@@ -7,7 +7,10 @@ on:
       - ".github/workflows/affiliation-enrichment.yml"
       - "scripts/enrich_affiliations.py"
       - "src/chiral_scanner/affiliation_enrichment.py"
+      - "src/chiral_scanner/affiliation_enrichment_resilient.py"
       - "src/chiral_scanner/research_geography.py"
+      - "tests/test_affiliation_enrichment.py"
+      - "tests/test_affiliation_enrichment_resilient.py"
   schedule:
     - cron: "25 5,17 * * *"
   workflow_dispatch:
@@ -47,9 +50,15 @@ jobs:
         run: pip install -r requirements.txt
       - name: Update checkout before enrichment
         run: git pull --rebase origin main
-      - name: Enrich mapped papers from arXiv and OpenAlex
+      - name: Enrich mapped papers from arXiv, OpenAlex, Crossref, and ROR
         env:
+          # OpenAlex currently requires an API key. The key is optional here because
+          # Crossref + ROR provide a conservative, non-AI fallback.
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          OPENALEX_API_KEY_VAR: ${{ vars.OPENALEX_API_KEY }}
           OPENALEX_MAILTO: ${{ vars.OPENALEX_MAILTO }}
+          METADATA_CONTACT_EMAIL: ${{ vars.METADATA_CONTACT_EMAIL }}
+          ROR_CLIENT_ID: ${{ vars.ROR_CLIENT_ID }}
           INPUT_LIMIT: ${{ inputs.limit }}
           INPUT_RETRY_DAYS: ${{ inputs.retry_days }}
         run: |
@@ -78,9 +87,12 @@ jobs:
               for author in paper["authors"]:
                   assert isinstance(author.get("institution_ids", []), list)
           PY
-          pytest -q tests/test_affiliation_enrichment.py tests/test_research_geography.py
+          pytest -q \
+            tests/test_affiliation_enrichment.py \
+            tests/test_affiliation_enrichment_resilient.py \
+            tests/test_research_geography.py
           python scripts/validate_data.py
-      - name: Commit affiliation data only
+      - name: Commit affiliation data and retry diagnostics
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -91,3 +103,18 @@ jobs:
             git commit -m "Update paper affiliation metadata"
             git push origin HEAD:main
           fi
+      - name: Report a complete metadata-service outage
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          state = json.loads(Path("data/affiliation_enrichment_state.json").read_text())
+          selected = int(state.get("selected", 0))
+          errors = int(state.get("errors", 0))
+          if selected and errors == selected:
+              raise SystemExit(
+                  "All selected affiliation lookups failed. "
+                  "Diagnostics were committed and the papers remain retryable."
+              )
+          PY
