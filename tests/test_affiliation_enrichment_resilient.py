@@ -1,4 +1,8 @@
+import pytest
+
 from chiral_scanner.affiliation_enrichment_resilient import (
+    CROSSREF_API,
+    ResilientMetadataClient,
     _crossref_work,
     _ror_institution,
     enrich_paper,
@@ -158,3 +162,33 @@ def test_crossref_ror_fallback_enriches_without_openalex():
         "Ultrafast Physics Group, Institute A"
     ]
     assert institutions["ror:012345678"]["country"] == "Belgium"
+
+
+class ForbiddenResponse:
+    status_code = 403
+    text = "forbidden"
+
+    def raise_for_status(self):
+        raise AssertionError("Non-transient 4xx responses must fail before raise_for_status")
+
+    def json(self):
+        raise AssertionError("A 403 response must not be decoded")
+
+
+class CountingSession:
+    def __init__(self):
+        self.calls = 0
+
+    def get(self, *args, **kwargs):
+        self.calls += 1
+        return ForbiddenResponse()
+
+
+def test_non_transient_http_error_fails_without_retry_storm():
+    session = CountingSession()
+    client = ResilientMetadataClient(session=session)
+
+    with pytest.raises(RuntimeError, match="http_403"):
+        client.get(f"{CROSSREF_API}/works/10.1000%2Fexample")
+
+    assert session.calls == 1

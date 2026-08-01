@@ -234,8 +234,12 @@ class ResilientMetadataClient(base.MetadataClient):
                 if response.status_code == 429 or response.status_code >= 500:
                     time.sleep(min(2**attempt, 20))
                     continue
+                if 400 <= response.status_code < 500:
+                    raise RuntimeError(f"http_{response.status_code}:{url}")
                 response.raise_for_status()
                 return response.json() if json_data else response.text
+            except RuntimeError:
+                raise
             except (requests.RequestException, ValueError) as exc:
                 last_error = exc
                 time.sleep(min(2**attempt, 20))
