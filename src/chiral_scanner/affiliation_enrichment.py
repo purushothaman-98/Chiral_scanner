@@ -143,7 +143,7 @@ def parse_arxiv_atom(xml: str, expected_id: str) -> dict[str, Any]:
     if entry is None:
         return {"arxiv_id": expected_id, "authors": [], "doi": None}
     authors = []
-    for index, item in enumerate(entry.findall("atom:author", NS)):
+    for item in entry.findall("atom:author", NS):
         name = (item.findtext("atom:name", "", NS) or "").strip()
         labels = [
             (node.text or "").strip()
@@ -151,14 +151,7 @@ def parse_arxiv_atom(xml: str, expected_id: str) -> dict[str, Any]:
             if (node.text or "").strip()
         ]
         if name:
-            authors.append(
-                {
-                    "name": name,
-                    "affiliation_labels": labels,
-                    "author_position": "first" if index == 0 else "middle",
-                    "is_corresponding": False,
-                }
-            )
+            authors.append({"name": name, "affiliation_labels": labels})
     doi = (entry.findtext("arxiv:doi", "", NS) or "").strip().casefold()
     doi = re.sub(r"^(?:doi:|https?://(?:dx\.)?doi\.org/)", "", doi) or None
     return {
