@@ -97,6 +97,32 @@ def _is_mappable(institution: dict[str, Any]) -> bool:
     )
 
 
+def _author_map_roles(author_record: dict[str, Any], index: int) -> set[str]:
+    """Select first and explicitly marked corresponding authors without guessing."""
+    roles: set[str] = set()
+    raw_roles = author_record.get("author_roles", [])
+    if isinstance(raw_roles, str):
+        raw_roles = [raw_roles]
+    if isinstance(raw_roles, list):
+        for value in raw_roles:
+            token = str(value).strip().casefold()
+            if token == "first":
+                roles.add("first")
+            if "correspond" in token:
+                roles.add("corresponding")
+
+    position = str(author_record.get("author_position") or "").strip().casefold()
+    if index == 0 or position == "first":
+        roles.add("first")
+    if author_record.get("is_corresponding") is True:
+        roles.add("corresponding")
+
+    manual_role = str(author_record.get("role") or "").strip().casefold()
+    if "correspond" in manual_role:
+        roles.add("corresponding")
+    return roles
+
+
 def _merge_institutions(
     manual: dict[str, dict], automatic: dict[str, dict]
 ) -> tuple[dict[str, dict], dict[str, str]]:
@@ -137,7 +163,7 @@ def institution_activity(
     registry: dict | None = None,
     paper_affiliations: dict | None = None,
 ) -> tuple[list[dict], list[dict], dict[str, int | str | None]]:
-    """Join cited and verified paper-specific affiliations without inferring identities."""
+    """Join first/corresponding-author affiliations without inferring identities."""
     registry = registry or load_affiliation_registry()
     paper_affiliations = (
         paper_affiliations if paper_affiliations is not None else load_paper_affiliations()
@@ -172,8 +198,13 @@ def institution_activity(
         automatically_mapped_authors: set[str] = set()
         automatic_record = paper_records.get(paper_id, {})
         if isinstance(automatic_record, dict):
-            for author_record in automatic_record.get("authors", []) or []:
+            for author_index, author_record in enumerate(
+                automatic_record.get("authors", []) or []
+            ):
                 if not isinstance(author_record, dict):
+                    continue
+                map_roles = _author_map_roles(author_record, author_index)
+                if not map_roles:
                     continue
                 author_name = str(
                     author_record.get("paper_author_name")
@@ -194,7 +225,7 @@ def institution_activity(
                     institution_author_records[institution_id].setdefault(
                         author_name,
                         {
-                            "role": "research",
+                            "role": " / ".join(sorted(map_roles)),
                             "contribution": None,
                             "source": "Verified paper-specific affiliation",
                         },
@@ -209,14 +240,19 @@ def institution_activity(
                     mapped_authors.add(author_name)
                     automatically_covered.add(paper_id)
 
-        for author in paper.get("authors", []):
+        for author_index, author in enumerate(paper.get("authors", [])):
             author_name = str(author).strip()
             # A paper-specific affiliation is stronger than a static author registry.
-            # Use the manual registry only as a fallback for this paper so author
-            # mobility cannot create a false institution or collaboration link.
+            # Use the manual registry only as a fallback for the same first or
+            # explicitly corresponding author, so mobility cannot create a false link.
             if author_name in automatically_mapped_authors:
                 continue
             record = manual_authors.get(author_name, {})
+            if not isinstance(record, dict):
+                record = {}
+            map_roles = _author_map_roles(record, author_index)
+            if not map_roles:
+                continue
             ids = record.get("institution_ids")
             if ids is None:
                 single = record.get("institution_id")
@@ -230,7 +266,10 @@ def institution_activity(
                 accepted = True
                 paper_institutions.add(institution_id)
                 institution_authors[institution_id].add(author_name)
-                institution_author_records[institution_id][author_name] = record
+                institution_author_records[institution_id][author_name] = {
+                    **record,
+                    "role": " / ".join(sorted(map_roles)),
+                }
             if accepted:
                 mapped_authors.add(author_name)
 
@@ -318,5 +357,6 @@ def institution_activity(
         "manual_registry_updated": registry.get("last_verified"),
         "automatic_registry_updated": paper_affiliations.get("generated_at"),
         "automatic_unresolved_papers": len(paper_affiliations.get("unresolved", {})),
+        "author_scope": "first_and_corresponding",
     }
     return rows, link_rows, coverage
