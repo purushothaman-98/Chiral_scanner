@@ -66,8 +66,9 @@ jobs:
           INPUT_RETRY_DAYS: ${{ inputs.retry_days }}
         run: |
           if [[ "$GITHUB_EVENT_NAME" == "push" ]]; then
-            # Push runs are a fast operational bootstrap. Scheduled/manual runs do the bulk work.
-            LIMIT="${INPUT_LIMIT:-3}"
+            # A code-change push can safely advance a moderate batch. Scheduled/manual
+            # runs remain the main bulk-enrichment path.
+            LIMIT="${INPUT_LIMIT:-20}"
           else
             LIMIT="${INPUT_LIMIT:-60}"
           fi
@@ -119,6 +120,10 @@ jobs:
                   "papers": {},
                   "unresolved": {},
               },
+          )
+          output["description"] = (
+              "Paper-specific arXiv/OpenAlex/Crossref/ROR affiliations; "
+              "uncertain identities remain unresolved."
           )
           state = read(state_path, {"schema_version": 1, "attempts": {}})
           log_tail = ""
