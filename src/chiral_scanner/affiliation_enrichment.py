@@ -23,6 +23,7 @@ OPENALEX_API = "https://api.openalex.org"
 NS = {"atom": "http://www.w3.org/2005/Atom", "arxiv": "http://arxiv.org/schemas/atom"}
 ARXIV_URL_RE = re.compile(r"arxiv\.org/(?:abs|pdf)/([^?#]+?)(?:v\d+)?(?:\.pdf)?$", re.I)
 USER_AGENT = "ChiralScanner/0.1 affiliation-enrichment"
+AUTHOR_SCOPE = "first_and_corresponding"
 
 
 def now() -> str:
@@ -142,7 +143,7 @@ def parse_arxiv_atom(xml: str, expected_id: str) -> dict[str, Any]:
     if entry is None:
         return {"arxiv_id": expected_id, "authors": [], "doi": None}
     authors = []
-    for item in entry.findall("atom:author", NS):
+    for index, item in enumerate(entry.findall("atom:author", NS)):
         name = (item.findtext("atom:name", "", NS) or "").strip()
         labels = [
             (node.text or "").strip()
@@ -150,7 +151,14 @@ def parse_arxiv_atom(xml: str, expected_id: str) -> dict[str, Any]:
             if (node.text or "").strip()
         ]
         if name:
-            authors.append({"name": name, "affiliation_labels": labels})
+            authors.append(
+                {
+                    "name": name,
+                    "affiliation_labels": labels,
+                    "author_position": "first" if index == 0 else "middle",
+                    "is_corresponding": False,
+                }
+            )
     doi = (entry.findtext("arxiv:doi", "", NS) or "").strip().casefold()
     doi = re.sub(r"^(?:doi:|https?://(?:dx\.)?doi\.org/)", "", doi) or None
     return {
@@ -184,6 +192,29 @@ def work_authors(work: dict[str, Any]) -> list[str]:
         if name:
             names.append(str(name))
     return names
+
+
+def authorship_roles(item: dict[str, Any], index: int) -> list[str]:
+    """Return only roles that are safe for the public institution map."""
+    roles: list[str] = []
+    position = str(item.get("author_position") or "").strip().casefold()
+    if index == 0 or position == "first":
+        roles.append("first")
+    if item.get("is_corresponding") is True:
+        roles.append("corresponding")
+    return roles
+
+
+def target_authorships(items: list[dict[str, Any]] | Any) -> list[tuple[dict[str, Any], list[str]]]:
+    """Select the first author and explicitly identified corresponding authors only."""
+    selected: list[tuple[dict[str, Any], list[str]]] = []
+    for index, item in enumerate(items or []):
+        if not isinstance(item, dict):
+            continue
+        roles = authorship_roles(item, index)
+        if roles:
+            selected.append((item, roles))
+    return selected
 
 
 def select_openalex_work(
@@ -320,9 +351,7 @@ def enrich_paper(
     institutions: dict[str, dict[str, Any]] = {}
     authors = []
     source_authors = work.get("authorships", []) if work else metadata.get("authors", [])
-    for item in source_authors or []:
-        if not isinstance(item, dict):
-            continue
+    for item, roles in target_authorships(source_authors):
         author = item.get("author", {}) if isinstance(item.get("author"), dict) else {}
         name = str(
             item.get("raw_author_name")
@@ -362,6 +391,9 @@ def enrich_paper(
                 "name": name,
                 "openalex_author_id": author.get("id"),
                 "orcid": author.get("orcid"),
+                "author_position": item.get("author_position") or ("first" if "first" in roles else None),
+                "is_corresponding": "corresponding" in roles,
+                "author_roles": roles,
                 "institution_ids": sorted(set(institution_ids)),
                 "affiliation_labels": [str(label) for label in labels if str(label).strip()],
             }
@@ -377,6 +409,7 @@ def enrich_paper(
             "openalex_work_id": work.get("id") if work else None,
             "match_method": method or "arxiv_affiliation",
             "match_score": score if work else 1.0,
+            "author_scope": AUTHOR_SCOPE,
             "authors": authors,
             "enriched_at": now(),
             "sources": ["arXiv", "OpenAlex"],
@@ -420,10 +453,17 @@ def run_enrichment(
     for paper in eligible_papers(archive):
         pid = paper_id(paper)
         existing = output["papers"].get(pid, {})
-        if existing.get("paper_version") == paper.get("current_version"):
+        if (
+            existing.get("paper_version") == paper.get("current_version")
+            and existing.get("author_scope") == AUTHOR_SCOPE
+        ):
             continue
         attempt = state["attempts"].get(pid, {})
-        if attempt.get("status") != "error" and attempt.get("last_attempted_at"):
+        if (
+            existing.get("author_scope") == AUTHOR_SCOPE
+            and attempt.get("status") != "error"
+            and attempt.get("last_attempted_at")
+        ):
             previous = datetime.fromisoformat(
                 attempt["last_attempted_at"].replace("Z", "+00:00")
             )
@@ -453,6 +493,7 @@ def run_enrichment(
             attempt.update({"status": "error", "reason": reason})
             counts["errors"] += 1
         else:
+            output["papers"].pop(pid, None)
             output["unresolved"][pid] = {
                 "paper_id": pid,
                 "title": paper.get("title"),
@@ -464,17 +505,19 @@ def run_enrichment(
     generated = now()
     output.update(
         {
-            "schema_version": 1,
+            "schema_version": 2,
             "description": (
-                "Paper-specific arXiv/OpenAlex affiliations; uncertain identities remain unresolved."
+                "Paper-specific first-author and explicitly identified corresponding-author "
+                "affiliations from arXiv/OpenAlex; uncertain identities remain unresolved."
             ),
+            "author_scope": AUTHOR_SCOPE,
             "generated_at": generated,
             "eligible_field_papers": len(eligible_papers(archive)),
             "resolved_papers": len(output["papers"]),
             "unresolved_papers": len(output["unresolved"]),
         }
     )
-    state.update({"schema_version": 1, "last_run_at": generated, **counts})
+    state.update({"schema_version": 2, "last_run_at": generated, **counts})
     write_json(output_path, output)
     write_json(state_path, state)
     return counts
