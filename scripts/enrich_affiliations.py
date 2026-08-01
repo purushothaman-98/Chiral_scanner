@@ -168,6 +168,7 @@ def apply_ui_once() -> None:
         "app.py",
         ".streamlit/config.toml",
         "docs/RESEARCH_PORTAL_UX.md",
+        "tests/test_app_smoke.py",
         "scripts/apply_research_intelligence_ui.py",
         "scripts/enrich_affiliations.py",
         ".github/workflows/light-research-intelligence-ui.yml",
