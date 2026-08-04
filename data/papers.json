@@ -1,8 +1,359 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-08-04T05:24:17.242242+00:00",
+  "updated_at": "2026-08-04T06:23:46.361691+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2608.02260",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.02260v1",
+      "title": "Valley-controlled chiral magnetism in transition metal dichalcogenide monolayers",
+      "authors": [
+        "Igor S. Krivenko",
+        "Vladimir N. Mantsevich",
+        "Dmitry S. Smirnov"
+      ],
+      "abstract": "We put forward the Ruderman-Kittel-Kasuya-Yosida (RKKY) interaction in transition metal dichalcogenide monolayers as a tool to create and control a chiral magnetic texture. We show that in the spin-valley locking regime, the RKKY interaction acts as a Dzyaloshinskii-Moriya coupling with an effective spin rotation period exactly equal to the tripled lattice constant. Using mean field theory and classical Monte Carlo simulations, we demonstrate that this interaction qualitatively reshapes the phase diagram of atomically thin antiferromagnets. It destroys the chirality-related phase transition by selecting a single chirality value even when the RKKY interaction is small. At the same time, it shifts the Berezinskii-Kosterlitz-Thouless transition associated with spins orientation to higher temperatures. We argue that the valley degree of freedom of electrons mediating the RKKY interaction provides a powerful control knob for exploring non-universal phase transitions and quantum spin liquid states in two-dimensional van der Waals heterostructures.",
+      "initial_submission_date": "2026-08-03T14:05:25Z",
+      "latest_update_date": "2026-08-03T14:05:25Z",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.02260v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02260v1",
+      "versions_seen": [
+        "2608.02260v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "transition metal dichalcogenide"
+      ],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-08-04T06:23:46.360496+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360496+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.02152",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.02152v1",
+      "title": "Time reversal symmetry broken quantum spin hall effect in pseudospin-1 Dirac-Rashba system",
+      "authors": [
+        "Puspita Parui",
+        "Bheema Lingam Chittari"
+      ],
+      "abstract": "The Quantum spin Hall (QSH) phase is conventionally understood to be protected by time-reversal symmetry (TRS). Here, we theoretically investigated the fate of the QSH phase in a pseudospin-1 fermionic $α-\\mathcal{T}_3$ system in the presence of a TRS-breaking ferromagnetic exchange field and spin-nonconserving Rashba spin-orbit coupling. Despite broken TRS, the QSH phase survives over a finite parameter regime and is characterised by a non-zero projected spin-Chern number $C_σ(σ= \\uparrow, \\downarrow)$, protected by a spin-spectral gap. In the absence of Rashba coupling, the QSH phase remains robust up to an $α$-dependent critical exchange field. Rashba SOC qualitatively reshapes the phase diagram by driving transitions into two distinct quantum anomalous Hall (QAH) phases: a $C=2$ phase, irrespective of $α$-values, and a $C=1$ phase for $α\\neq 0,1$, which is further identified as a valley-polarized QAH phase arising from a single valley. Rotating the magnetization to in-plane gaps out the first-order helical edge states and gives rise to second-order topological insulator (SOTI) phases that host localized corner states in suitable finite geometry. We further identify a topological phase transition between two different SOTI phases, mediated by nanoribbon edge states at an exchange field equal to $α$. These results establish spin-resolved topology in a higher pseudospin system as well as the $α-\\mathcal{T}_3$ lattice as a versatile platform for engineering and controlling multiple topological phases through magnetic exchange and spin-orbit coupling.",
+      "initial_submission_date": "2026-08-03T12:35:23Z",
+      "latest_update_date": "2026-08-03T12:35:23Z",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.02152v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02152v1",
+      "versions_seen": [
+        "2608.02152v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "topological insulator"
+      ],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-08-04T06:23:46.360527+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360527+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.02010",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.02010v1",
+      "title": "Exciton-induced magnons carrying orbital angular momentum in CrI3",
+      "authors": [
+        "Martin Pavelka",
+        "Vishal Shokeen",
+        "Ruslan Chulkov",
+        "Soma Dutta",
+        "David Muradas Belinchón",
+        "Ulrich Noumbe",
+        "Mahmoud Abdel-Hafiez",
+        "M. Venkata Kamalakar",
+        "Mathias Augustin",
+        "Vitaliy Goryashko",
+        "Torstein Hegstad",
+        "Johan H. Mentink",
+        "Jamal Berakdar",
+        "Oscar Grånäs",
+        "Anders Bergman",
+        "Olle Eriksson",
+        "Anna Delin",
+        "Hermann A. Durr"
+      ],
+      "abstract": "Magnons are collective spin excitations that contain and transport spin angular momentum in magnetic materials. It has been suggested that they can also carry orbital angular momentum in analogy to the electronic motion around the nucleus. We explore the real-space topology of magnon wave-packets emanating from atomic-like excitons in the ferromagnetic insulator CrI3 and demonstrate the existence of orbital angular momentum in such wave-packets. We reveal that orbital angular momentum of magnons is nearly equal to their spin angular momentum and compensates the latter. This illustrates the existence of an unexplored internal angular momentum balance and demonstrates that the magnetization can be quenched without the need of angular momentum exchange with the lattice.",
+      "initial_submission_date": "2026-08-03T10:09:11Z",
+      "latest_update_date": "2026-08-03T10:09:11Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.02010v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02010v1",
+      "versions_seen": [
+        "2608.02010v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "CrI3"
+      ],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-08-04T06:23:46.360533+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360533+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.01838",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.01838v1",
+      "title": "Topological Defects in Triple-$Q$ Magnetic Orders: A Fixed-Lattice Homotopy Classification",
+      "authors": [
+        "Jin-Tao Jin",
+        "Yi Zhou"
+      ],
+      "abstract": "Multiple-$Q$ magnetic orders combine continuous spin rotations with discrete crystalline sectors associated with translations and point-group transformations, producing a richer defect structure than conventional single-$Q$ magnets. We classify the bulk defects of all seven stable phases for $N=2$ and $3$ in the $M$-point triple-$Q$ Ginzburg--Landau theory with $(\\Vfour\\rtimes\\Dthree)\\times\\OO(N)$ symmetry, where $\\Vfour$ is the translation-generated Klein four-group. The atomic lattice is treated as a prescribed background, with lattice dislocations and disclinations excluded and the three Fourier fields retaining their physical $M$-point labels. The parent-group transformations continuously connected to the identity form $G_0=\\{e\\}\\times\\SO(N)$. For a reference-state stabilizer $H$, the connected component containing the reference state is $G_0/(H\\cap G_0)$, not the quotient obtained by projecting $H$ onto spin space. This distinction gives the orthogonal triple-$Q$ phase the full manifold $\\OO(3)$, with chirality walls and Abelian $\\ZZ_2$ frame vortices rather than non-Abelian binary-polyhedral vortices. Every connected component of the $\\OO(2)$ phases supports an integer $2π$ vortex, whereas fractional windings close only when attached to a discrete-domain wall and are linearly confined at nonzero wall tension. Translation symmetry further forbids cross-gradient bilinears, reducing the quadratic elastic sector to an isotropic and an $M$-point-locked anisotropic stiffness. The classification separates free internal defects, crystalline domain walls, and wall-bound composites in triple-$Q$ magnets.",
+      "initial_submission_date": "2026-08-03T07:49:11Z",
+      "latest_update_date": "2026-08-03T07:49:11Z",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.01838v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.01838v1",
+      "versions_seen": [
+        "2608.01838v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-08-04T06:23:46.360536+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360536+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.01062",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.01062v1",
+      "title": "Magnetic circular dichroism of THz modes and selection rules of Raman-active optical phonons in the polar altermagnet candidate \\ce{Mn2Mo3O8}",
+      "authors": [
+        "F. Schilberth",
+        "K. Vasin",
+        "M. Knauft",
+        "M. Kondákor",
+        "M. Vuckovic",
+        "N. Herrmann",
+        "K. Penc",
+        "M. Minola",
+        "B. Keimer",
+        "V. A. Martinez",
+        "K. Panda",
+        "A. A. Sirenko",
+        "L. Prodan",
+        "V. Tsurkan",
+        "A. A. Tsirlin",
+        "I. Kézsmárki",
+        "J. Deisenhofer"
+      ],
+      "abstract": "We investigated the magnetic and vibrational excitations in the collinear altermagnet candidate \\ce{Mn2Mo3O8} by temperature dependent Raman scattering and magneto-optical THz time-domain transmission spectroscopy. By comparison to \\textit{ab initio} calculations accurately capturing the eigenfrequencies of the vibrational eigenmodes, we identify all optical phonons, including the lowest-lying Raman modes of $A_1$ and $E_2$ type, which had remained elusive in a previous Raman study. Moreover, we compare the selection rules for optically active phonons in the paramagnetic and the magnetically ordered phases of \\ce{Mn2Mo3O8} and analyze the Raman selection rules with respect to pseudo-angular momentum conservation. No evidence of the expected splitting of the degenerate paramagnetic $E_2$ optical phonons into modes with circular polarization upon magnetic ordering could be resolved, likely due to weak spin-orbit coupling typical for Mn$^{2+}$. In contrast, we observe strong magnetic circular dichroism at a broad THz excitation band, emerging in the magnetically ordered state. This band, potentially originating from two-magnon excitations, is only electric-dipole active and features a field-dependent two-component fine structure. Its magnetic circular dichroism vanishes above the spin-flop transition at 4~T.",
+      "initial_submission_date": "2026-08-02T07:54:50Z",
+      "latest_update_date": "2026-08-02T07:54:50Z",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.01062v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.01062v1",
+      "versions_seen": [
+        "2608.01062v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Experimental",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [
+        "THz",
+        "Raman spectroscopy"
+      ],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon",
+        "Raman mode"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [
+          "we observe"
+        ],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon",
+          "Raman mode"
+        ]
+      },
+      "first_seen_at": "2026-08-04T06:23:46.360539+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360539+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.00469",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.00469v1",
+      "title": "Negative thermal expansion, lattice dynamics, and complex magnetism in TbFeO$_3$",
+      "authors": [
+        "Shubham Farswan",
+        "Reshma Kumawat",
+        "Dipankar Sarkar",
+        "Deeksha Singh",
+        "Md. Atif Hasan",
+        "Devajyoti Mukherjee",
+        "Kaushik Sen"
+      ],
+      "abstract": "We report a temperature-dependent investigation of orthoferrite TbFeO$_3$ using x-ray diffraction, DC magnetization, and Raman scattering, complemented by room-temperature x-ray photoelectron spectroscopy. X-ray diffraction reveals negative thermal expansion over 5-300 K, with a small but systematic increase in unit-cell volume upon cooling in the absence of any structural phase transition. Raman scattering measurements identify the Raman-active phonon modes and show clear deviations from the conventional Klemens anharmonic decay model, particularly in phonon frequencies, indicating the presence of spin-phonon coupling. Two modes of $A_g$ and $B_{1g}$ symmetry exhibit a crossover from Gaussian-dominated line shapes at low temperatures to mixed Gaussian-Lorentzian profiles at higher temperatures, reflecting a transition from inhomogeneous broadening to lifetime-driven dynamics. High-energy Raman spectra reveal two-magnon excitations associated with the Fe sublattice, consistent with linear spin-wave theory, whose spectral weight shows only weak temperature dependence. In addition, a broad Raman mode emerging below $\\sim 175$ K exhibits an order-parameter-like temperature evolution and coincides with the onset of phonon anomalies, while no corresponding strong anomaly is observed in the two-magnon response. Taken together, these results establish TbFeO$_3$ as a system with pronounced interplay among lattice dynamics, spin correlations, and emergent local magnetic-lattice anomalies.",
+      "initial_submission_date": "2026-08-01T06:29:49Z",
+      "latest_update_date": "2026-08-01T06:29:49Z",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.00469v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.00469v1",
+      "versions_seen": [
+        "2608.00469v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon",
+        "Raman mode"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon",
+          "Raman mode"
+        ]
+      },
+      "first_seen_at": "2026-08-04T06:23:46.360542+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360542+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.00167",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.00167v1",
+      "title": "Rhombohedral Graphene: A Tale of Many Crystals",
+      "authors": [
+        "Ahmed Abouelkomsan",
+        "Filippo Gaggioli",
+        "Daniele Guerci",
+        "Liang Fu"
+      ],
+      "abstract": "Experiments on rhombohedral graphene have uncovered an extraordinary wealth of correlated quantum phases - from chiral superconductors to electronic crystals - all within a single family of atomically thin materials. Here, we introduce a simple indicator, derived from the noninteracting band dispersion, that identifies strongly correlated regions in the phase diagram of rhombohedral graphene as a function of carrier density and displacement field. We develop a neural-network variational Monte Carlo method, combined with Hartree-Fock theory, to solve the interacting ground states. Our calculation reveals a variety of electron crystals with no classical analog. These include, at increasing density: Wigner crystal, self-doped Wiger crystal, as well as ''anticrystal'', a lattice of holes in an electron liquid. We discuss their experimental manifestations and possible connection to superconductivity.",
+      "initial_submission_date": "2026-07-31T18:00:01Z",
+      "latest_update_date": "2026-07-31T18:00:01Z",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.00167v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.00167v1",
+      "versions_seen": [
+        "2608.00167v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-08-04T06:23:46.360545+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360545+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2607.28719",
       "current_version": 1,
@@ -44,7 +395,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-03T06:55:39.723050+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723050+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360561+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -89,7 +440,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-31T06:40:20.617476+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723078+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360570+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -133,7 +484,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-31T06:40:20.617498+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723087+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360576+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -182,7 +533,7 @@
         ]
       },
       "first_seen_at": "2026-07-30T06:23:16.164644+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723094+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360585+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -235,7 +586,7 @@
         ]
       },
       "first_seen_at": "2026-07-30T06:23:16.164625+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723102+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360591+00:00",
       "ai_decision": null,
       "ai_fingerprint": null,
       "ai_prompt_version": "chiral-phonons-v3.0",
@@ -282,7 +633,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-31T06:40:20.617523+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723107+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360596+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -354,7 +705,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-31T06:40:20.621067+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723112+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360601+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -399,7 +750,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-23T06:27:08.558898+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723117+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360606+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -449,7 +800,7 @@
         ]
       },
       "first_seen_at": "2026-07-30T06:23:16.164630+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723122+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360610+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -497,7 +848,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-30T06:23:16.164634+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723126+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360615+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -539,7 +890,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-30T06:23:16.164636+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723130+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360619+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -584,7 +935,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-30T06:23:16.164639+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723134+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360624+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -631,7 +982,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-30T06:23:16.164642+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723139+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360629+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -688,7 +1039,7 @@
         ]
       },
       "first_seen_at": "2026-07-28T06:22:48.915753+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723144+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360633+00:00",
       "ai_decision": {
         "include_in_feed": false,
         "relevance": "Not relevant",
@@ -786,7 +1137,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-30T06:23:16.164654+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723148+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360638+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -832,7 +1183,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-28T06:22:48.915730+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723154+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360642+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -873,7 +1224,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-28T06:22:48.915759+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723159+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360647+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -915,7 +1266,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-28T06:22:48.915762+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723163+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360651+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -958,7 +1309,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-28T06:22:48.915765+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723167+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360656+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1007,7 +1358,7 @@
         ]
       },
       "first_seen_at": "2026-07-28T06:22:48.915768+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723171+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360660+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1051,7 +1402,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-28T06:22:48.915771+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723176+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360665+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1099,7 +1450,7 @@
         ]
       },
       "first_seen_at": "2026-07-28T06:22:48.915774+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723180+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360669+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1158,7 +1509,7 @@
         ]
       },
       "first_seen_at": "2026-07-28T06:22:48.915777+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723184+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360673+00:00",
       "ai_decision": {
         "include_in_feed": true,
         "relevance": "Uncertain",
@@ -1253,7 +1604,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-24T06:22:23.602150+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723188+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360678+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1313,7 +1664,7 @@
         ]
       },
       "first_seen_at": "2026-07-24T06:22:23.602170+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723192+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360686+00:00",
       "ai_decision": {
         "include_in_feed": false,
         "relevance": "Not relevant",
@@ -1427,7 +1778,7 @@
         ]
       },
       "first_seen_at": "2026-07-22T06:24:44.484836+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723197+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360691+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1514,7 +1865,7 @@
         ]
       },
       "first_seen_at": "2026-07-23T06:27:08.558862+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723201+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360696+00:00",
       "ai_decision": {
         "include_in_feed": true,
         "relevance": "Core chiral-phonon paper",
@@ -1609,7 +1960,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-23T06:27:08.558886+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723205+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360700+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1650,7 +2001,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-23T06:27:08.558891+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723210+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360705+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1716,7 +2067,7 @@
         ]
       },
       "first_seen_at": "2026-07-23T06:27:08.558895+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723214+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360709+00:00",
       "ai_decision": {
         "include_in_feed": true,
         "relevance": "Core chiral-phonon paper",
@@ -1821,7 +2172,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-22T06:24:44.484852+00:00",
-      "last_seen_at": "2026-08-03T06:55:39.723218+00:00",
+      "last_seen_at": "2026-08-04T06:23:46.360713+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
