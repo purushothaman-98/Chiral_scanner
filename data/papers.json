@@ -1,8 +1,492 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-08-05T05:24:17.752842+00:00",
+  "updated_at": "2026-08-05T06:23:57.313661+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2608.03714",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.03714v1",
+      "title": "Cavity control of quantum phase transitions in a two-dimensional kondo lattice",
+      "authors": [
+        "Jun Mochida",
+        "Atac Imamoglu",
+        "Yuto Ashida"
+      ],
+      "abstract": "Cavity quantum electrodynamics offers a route to control quantum phases by using vacuum fluctuations of confined electromagnetic fields. In particular, planar cavities based on polar van der Waals materials can generate strongly confined modes and are promising for controlling two-dimensional correlated materials. Recently, moiré materials have become central platforms for studying two-dimensional heavy-fermion systems and their quantum phase transitions. Kondo lattices provide a prototypical model for studying quantum phase boundaries, driven by competition between Kondo screening and the ordering of local magnetic moments. We show that a cavity-induced interaction can shift the quantum phase transitions between a heavy-fermion phase and an antiferromagnetic phase in a two-dimensional Kondo lattice through a momentum-dependent self-energy of the conduction bands. For the longitudinal projected field motivated by h-BN hyperbolic phonon polaritons, the self-energy favors Kondo hybridization and expands the heavy-fermion region. Transverse and circular in-plane model structures give distinct effects, with the transverse case relatively favoring the magnetically ordered phase and the circular case lying between the longitudinal and transverse cases. These results indicate that electromagnetic vacuum fluctuations can effectively modify the control parameters of strongly correlated two-dimensional Kondo materials.",
+      "initial_submission_date": "2026-08-04T14:17:24Z",
+      "latest_update_date": "2026-08-04T14:17:24Z",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.03714v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.03714v1",
+      "versions_seen": [
+        "2608.03714v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "cavity control",
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-08-05T06:23:57.311124+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311124+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.03621",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.03621v1",
+      "title": "Enhancement of far-field thermal emission via polaritonic cavity modes",
+      "authors": [
+        "Maelie Coral",
+        "Jose Ordonez-Miranda",
+        "Georges Hamaoui",
+        "Roman Anufriev",
+        "Laurent Jalabert",
+        "Masahiro Nomura",
+        "Yannick De Wilde",
+        "Sebastian Volz"
+      ],
+      "abstract": "Controlling thermal emission is crucial for applications involving thermophotovoltaics, thermal sensing, imaging, and camouflage. While prior studies focused on the emission of thermally excited guided modes (TEGMs) inside cavities, their contribution to the far-field radiation outside cavities has remained unexplored. Here, we demonstrate a tunable far-field thermal channel enabled by TEGMs arising from the coupling of surface phonon-polaritons and cavity resonances. By combining infrared emissivity experiments with fluctuational electrodynamics simulations, we identify distinct spectral features marking the conversion of two-dimensionally confined polaritonic modes into three-dimensional radiative channels. We find that silicon cavities covered with SiO2 enhance the emissivity by up to 200% near the polaritonic spectral resonance, whereas bare silicon cavities yield only broadband enhancement. These findings provide experimental evidence of TEGMs and establish a simple cavity architecture as an effective and scalable platform for tailoring thermal radiation without complex nanofabrication.",
+      "initial_submission_date": "2026-08-04T13:10:24Z",
+      "latest_update_date": "2026-08-04T13:10:24Z",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.03621v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.03621v1",
+      "versions_seen": [
+        "2608.03621v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-08-05T06:23:57.311164+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311164+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.03347",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.03347v1",
+      "title": "Alloy engineering of excitonic properties in TMD monolayers",
+      "authors": [
+        "Eirini Katsipoulaki",
+        "Adlen Smiri",
+        "Panagiotis Spiliotakis",
+        "Konstantinos Mourzidis",
+        "Danae Katrisioti",
+        "Takashi Taniguchi",
+        "Kenji Watanabe",
+        "Georgios Kopidakis",
+        "Zdenek Sofer",
+        "Gang Wang",
+        "Emmanuel Stratakis",
+        "George Kioseoglou",
+        "Iann C. Gerber",
+        "Xavier Marie",
+        "Ioannis Paradisanos"
+      ],
+      "abstract": "We investigate monolayer MoS$_{2x}$Se$_{2(1-x)}$ alloys across the full composition range using optical spectroscopy. We demonstrate continuous tuning of the optical gap over $\\sim$0.35 eV, accompanied by a systematic reduction of the B--A exciton splitting, in agreement with density functional theory calculations. Temperature-dependent measurements reveal a progressive increase of the average phonon energy from Se-rich to S-rich alloys that follows a simple reduced-mass scaling model. Polarization-resolved spectroscopy further shows a monotonic increase of the circular polarization from nearly zero in MoSe$_2$ to $\\sim$15\\% in MoS$_2$ at 78 K. The observed evolution of the polarization is attributed to alloy-induced modifications of the electronic structure that modify bright--dark exciton mixing and the associated valley depolarization. These findings establish alloy engineering as an effective strategy for controlling excitonic properties in TMD monolayers.",
+      "initial_submission_date": "2026-08-04T08:56:29Z",
+      "latest_update_date": "2026-08-04T08:56:29Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.03347v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.03347v1",
+      "versions_seen": [
+        "2608.03347v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-08-05T06:23:57.311173+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311173+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.03287",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.03287v1",
+      "title": "A Unified Graph Neural Network Framework for Non-Equilibrium Carrier and Lattice Dynamics Driven by Electric Fields",
+      "authors": [
+        "Jia-Wen Li",
+        "Sheng Meng",
+        "Xinghua Shi",
+        "Jin Zhang",
+        "Wei-Hai Fang"
+      ],
+      "abstract": "Finite-temperature simulations of electric-field-driven dynamics need a unified description of interatomic interactions, local electronic states, and configuration-dependent electric responses. First-principles simulations remain scale-limited, whereas conventional machine-learning potentials lack electric-field effects. Recent machine-learning frameworks have incorporated electric-field response or atom-resolved electronic-state information, but rarely both within a single framework. Here, we develop an electric-field-response graph neural network (EFR-GNN) that predicts energies, forces, Born effective charge tensors, atom-resolved charges and magnetic moments, and supports long-time field-driven molecular dynamics with atom-resolved tracking of localized electronic states. In hole-doped MgO, static fields rectify thermally activated hole-polaron hopping through a forward--backward asymmetry quantified by a nearest-neighbor model. In GaAs, resonant terahertz excitation generates a coherent $Γ$-point transverse-optical phonon with dephasing consistent with experiment, while opposite helicities reverse its rotation. In superionic $α$-AgI, it reproduces temperature-dependent Ag$^+$ mobility and collective field-driven ionic drift. Together, EFR-GNN offers an approach to finite-temperature simulations of field-driven atomic and localized-carrier dynamics.",
+      "initial_submission_date": "2026-08-04T08:01:12Z",
+      "latest_update_date": "2026-08-04T08:01:12Z",
+      "categories": [
+        "physics.comp-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.03287v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.03287v1",
+      "versions_seen": [
+        "2608.03287v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-08-05T06:23:57.311179+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311179+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.03242",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.03242v1",
+      "title": "Valley polarization driven by two-color circular fields: a rotating frame and strong-field perspective",
+      "authors": [
+        "Rui E. F. Silva",
+        "Olga Smirnova",
+        "Misha Ivanov",
+        "Álvaro Jiménez-Galán"
+      ],
+      "abstract": "Valley polarization in hexagonal materials driven by the form of the lightwave and its orientation relative to the lattice, rather than solely by the helicity of the driver, has recently been demonstrated both theoretically and experimentally. This has extended valley control to the non-resonant, sub-cycle regime and to inversion-symmetric materials. One interpretation of this field-orientation-dependent valley polarization is that the laser-dressed, cycle-averaged band structure obtained from a Floquet-type approach is modified so as to lift the degeneracy between the valleys. Here, we derive a complementary explanation based on strong-field tunneling dynamics. We show that the effective valley gap at the dominant injection times depends on the orientation of the field relative to the lattice through the trigonal-warping term of the low-energy dispersion. We derive general expressions for co- and counter-rotating $ω+Nω$ fields and show that the leading orientation-dependent contribution survives the cycle average only for field configurations compatible with the threefold lattice symmetry, most notably counter-rotating $ω+2ω$ and co-rotating $ω+4ω$ fields. As a complementary weak-field result, we show that, for counter-rotating bicircular fields, the one-photon valley selection rules can be represented as valley-dependent energy detunings in a rotating frame where both colors acquire the same frequency.",
+      "initial_submission_date": "2026-08-04T07:12:46Z",
+      "latest_update_date": "2026-08-04T07:12:46Z",
+      "categories": [
+        "physics.optics"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.03242v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.03242v1",
+      "versions_seen": [
+        "2608.03242v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Computational / theoretical",
+      "preliminary_paper_nature": "Review / perspective",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [
+          "we derive",
+          "We derive"
+        ],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-08-05T06:23:57.311184+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311184+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.03193",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.03193v1",
+      "title": "Contrasting anisotropic electron-phonon-spin coupling in Fe$_{3}$GeTe$_{2}$ and Fe$_{5}$GeTe$_{2}$: A helicity-resolved Raman study",
+      "authors": [
+        "Smrutiranjan Mekap",
+        "Jyoti Saini",
+        "Andrzej Ptok",
+        "Pawan Kumar Srivastava",
+        "Changgu Lee",
+        "Subhasis Ghosh",
+        "Anushree Roy"
+      ],
+      "abstract": "Two-dimensional van der Waals ferromagnets Fe$_3$GeTe$ _2$ (F3GT) and Fe$_5$GeTe$_2$ (F5GT) exhibit pronounced magneto-optical responses, which open promising platforms for investigating the interplay among lattice, electronic, and magnetic degrees of freedom. Here, we present a comparative study of optical resonance-induced anisotropic electron-phonon coupling and its association with magnetic ordering in these systems using wavelength- and temperature-dependent helicity-resolved Raman spectroscopy. By resolving the doubly degenerate E modes under left- and right-circularly polarized excitations, we demonstrate that the temperature evolution of the chiral mode splitting ($Δf$) does not track the magnetization behavior, indicating that the helicity-dependent Raman response arises not solely from time-reversal symmetry breaking due to magnetic order, but also from spin-orbit-coupled electronic interactions. Notably, in F3GT, the out-of-plane magnetization indirectly governs the in-plane anisotropic electron-phonon coupling under optical resonance, whereas F5GT exhibits static anisotropic interactions. The Fano asymmetry parameter $1/q$ reveals mode- and temperature-dependent coupling strengths between phonons and the electronic continuum, with pronounced angular anisotropy in F3GT but isotropic behavior in F5GT--- a consequence of its multiple Fe sites and enhanced interlayer hybridization in the latter. Our results demonstrate the role of crystal structure and magnetic anisotropy in shaping the anisotropically coupled electron-phonon-spin dynamics in these layered metallic ferromagnets, and highlight Fe$_x$GeTe$_2$ as a versatile platform for microscopic insight into chiral light-matter interactions in layered metallic ferromagnets.",
+      "initial_submission_date": "2026-08-04T06:35:11Z",
+      "latest_update_date": "2026-08-04T06:35:11Z",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.03193v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.03193v1",
+      "versions_seen": [
+        "2608.03193v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-08-05T06:23:57.311189+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311189+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.02832",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.02832v1",
+      "title": "Tunable Skyrmions in a Topological Wigner Crystal",
+      "authors": [
+        "David A. Dahlbom",
+        "Daniel Kaplan",
+        "Premala Chandra",
+        "Cristian D. Batista"
+      ],
+      "abstract": "In low density systems with strong interactions electrons are expected to crystallize into a Wigner solid. Recently, advances in two-dimensional systems where electrons carry Berry curvature have added a topological dimension to Wigner crystallization. Using a model for pseudospin interactions in a topological Wigner crystal, here we show that the competition between ferromagnetic Heisenberg exchange $J$ and the chiral interaction $γ$ on the triangular lattice stabilizes a zero-field skyrmion crystal whose density is continuously tunable through the ratio $γ/J$. The chiral interaction originates from finite Berry curvature in an underlying time-reversal broken Wigner crystal. In the continuum limit, the chiral interaction acts as a chemical potential for skyrmions, while higher-order gradient terms beyond the nonlinear sigma model select the skyrmion density. At large chiral coupling, we uncover a 24-site tetra-skyrmion crystal carrying four units of topological charge per magnetic unit cell, which becomes degenerate with four-sublattice tetrahedral order as $J \\to 0$. We characterize the magnon structure for these phases and discuss the transition between the tunable skyrmion crystal to these states at large $γ/J$. Our results establish the phase diagram of ferromagnetic topological Wigner crystals.",
+      "initial_submission_date": "2026-08-03T19:47:23Z",
+      "latest_update_date": "2026-08-03T19:47:23Z",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.02832v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02832v1",
+      "versions_seen": [
+        "2608.02832v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-08-05T06:23:57.311194+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311194+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.02753",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.02753v1",
+      "title": "Large scale neural quantum states reveal the interplay between superconductivity and quantum criticality in the Hofstadter-Hubbard model",
+      "authors": [
+        "Christopher Roth",
+        "Andrew Millis",
+        "Tomohiro Soejima"
+      ],
+      "abstract": "Understanding how a parent insulating state shapes the superconductivity that emerges upon doping is a long-standing problem dating back to Anderson's resonating-valence-bond proposal. The triangular-lattice Hofstadter-Hubbard model with $π/2$ flux per plaquette offers an ideal setting for this question: at half filling it hosts two distinct parent states---an integer quantum Hall insulator at weak coupling and a chiral spin liquid at intermediate coupling---separated by a topological phase transition. Using neural quantum states on tori of up to $432$ sites, we present strong evidence that the transition is continuous, with a vanishing $2e$ charge gap and critical charge fluctuations. Upon doping, we find a topological superconductor with off-diagonal long-range order consistent with $d+id$ pairing on either side of the transition. The two ingredients of superconductivity, pair formation and phase coherence, respond to the parent state in sharply different ways: while the pairing order parameter remains nearly unchanged across the transition, the superfluid stiffness is strongly enhanced near the critical point. The energy scale of the superconductor is therefore set not by which parent state is doped, but by proximity to the transition between them. Our results establish neural quantum states as a powerful tool for understanding the delicate interplay between long-ranged electronic correlations and superconductivity.",
+      "initial_submission_date": "2026-08-03T18:01:16Z",
+      "latest_update_date": "2026-08-03T18:01:16Z",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.dis-nn",
+        "cond-mat.supr-con"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.02753v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02753v1",
+      "versions_seen": [
+        "2608.02753v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-08-05T06:23:57.311205+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311205+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.02727",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.02727v1",
+      "title": "Spin-charge separation in the triangular-lattice Hofstadter-Hubbard model",
+      "authors": [
+        "Yuntian Gu",
+        "Hui Yang",
+        "Zhehao Dai",
+        "Yantao Wu"
+      ],
+      "abstract": "Recent experiments in moiré materials have enabled the realization of a variety of exotic quantum phases. In this context, the Hofstadter-Hubbard model has been proposed as a possible setting for hosting chiral spin liquid. Concurrently, significant progress has been recently made in the computational methods for two-dimensional many-body fermion systems, which makes numerically studying this challenging model a real possibility in genuine 2D geometry. Motivated by these advances, we investigate the putative chiral spin liquid phase in the triangular-lattice Hofstadter-Hubbard model using variational Monte Carlo with neural quantum states (NQS) and projected entangled pair states (PEPS). We observe spin-charge separation directly in real space through numerical spin-pumping simulation and real-time spin and charge motion. In addition, in the context of anyonic superconductivity conjectured in this model, we find a positive two-electron binding energy on small systems, but it decreases below our numerical resolution as the system size increases. Our work demonstrates NQS and PEPS as powerful tools, capable of cross-checking each other, for diagnosing topological order and fractionalized excitations in strongly correlated electronic systems.",
+      "initial_submission_date": "2026-08-03T18:00:02Z",
+      "latest_update_date": "2026-08-03T18:00:02Z",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall",
+        "cond-mat.quant-gas",
+        "cond-mat.supr-con"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.02727v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02727v1",
+      "versions_seen": [
+        "2608.02727v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Experimental",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [
+          "We observe"
+        ],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-08-05T06:23:57.311211+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311211+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.02728",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.02728v1",
+      "title": "Fermionic Villain model with exact lattice chiral symmetries",
+      "authors": [
+        "Zhiyao Lu",
+        "Shu-Heng Shao"
+      ],
+      "abstract": "We present a fermionic lattice Hamiltonian that exactly realizes the $\\mathrm{U(1)}_\\mathrm{L}\\times \\mathrm{U(1)}_\\mathrm{R}$ global symmetry and the associated chiral anomalies of a massless Dirac fermion in 1+1 dimensions. The construction couples Villain bosons to a Kitaev chain of Majorana fermions, where the bosonic fields are essential for evading Nielsen-Ninomiya-type no-go theorems. For two copies of our model, we realize the anomaly-free $\\mathrm{U(1)}_{3450}$ global symmetry and construct symmetric boundary conditions. We analytically demonstrate symmetric mass generation by mapping the symmetry-preserving six-fermion interactions to fermion bilinear terms using fermionic T-duality. Finally, by gauging general anomaly-free global symmetries, we obtain a broad class of lattice chiral gauge theories. As nontrivial applications, we compute the mass spectra of the lattice Schwinger model and the 3450 gauge theory, finding agreement with the corresponding continuum results.",
+      "initial_submission_date": "2026-08-03T18:00:02Z",
+      "latest_update_date": "2026-08-03T18:00:02Z",
+      "categories": [
+        "hep-th",
+        "cond-mat.str-el",
+        "hep-lat"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.02728v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02728v1",
+      "versions_seen": [
+        "2608.02728v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Computational / theoretical",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [
+          "we compute",
+          "our model"
+        ],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-08-05T06:23:57.311216+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311216+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2608.02260",
       "current_version": 1,
@@ -43,7 +527,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-04T06:23:46.360496+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360496+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311235+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -86,7 +570,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-04T06:23:46.360527+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360527+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311247+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -145,7 +629,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-04T06:23:46.360533+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360533+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311257+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -186,7 +670,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-04T06:23:46.360536+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360536+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311266+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -254,7 +738,7 @@
         ]
       },
       "first_seen_at": "2026-08-04T06:23:46.360539+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360539+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311275+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -307,7 +791,7 @@
         ]
       },
       "first_seen_at": "2026-08-04T06:23:46.360542+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360542+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311284+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -350,7 +834,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-04T06:23:46.360545+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360545+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311293+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -395,7 +879,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-03T06:55:39.723050+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360561+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311303+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -440,7 +924,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-31T06:40:20.617476+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360570+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311312+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -484,7 +968,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-31T06:40:20.617498+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360576+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311322+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -533,7 +1017,7 @@
         ]
       },
       "first_seen_at": "2026-07-30T06:23:16.164644+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360585+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311332+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -586,7 +1070,7 @@
         ]
       },
       "first_seen_at": "2026-07-30T06:23:16.164625+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360591+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311343+00:00",
       "ai_decision": null,
       "ai_fingerprint": null,
       "ai_prompt_version": "chiral-phonons-v3.0",
@@ -633,7 +1117,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-31T06:40:20.617523+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360596+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311353+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -705,7 +1189,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-31T06:40:20.621067+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360601+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311363+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -800,7 +1284,7 @@
         ]
       },
       "first_seen_at": "2026-07-30T06:23:16.164630+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360610+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311372+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -848,7 +1332,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-30T06:23:16.164634+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360615+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311381+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -890,7 +1374,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-30T06:23:16.164636+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360619+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311391+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -935,7 +1419,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-30T06:23:16.164639+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360624+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311399+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -982,7 +1466,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-30T06:23:16.164642+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360629+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311407+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1039,7 +1523,7 @@
         ]
       },
       "first_seen_at": "2026-07-28T06:22:48.915753+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360633+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311416+00:00",
       "ai_decision": {
         "include_in_feed": false,
         "relevance": "Not relevant",
@@ -1137,7 +1621,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-30T06:23:16.164654+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360638+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311424+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1183,7 +1667,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-28T06:22:48.915730+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360642+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311433+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1224,7 +1708,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-28T06:22:48.915759+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360647+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311441+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1266,7 +1750,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-28T06:22:48.915762+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360651+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311449+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1309,7 +1793,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-28T06:22:48.915765+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360656+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311457+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1358,7 +1842,7 @@
         ]
       },
       "first_seen_at": "2026-07-28T06:22:48.915768+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360660+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311466+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1402,7 +1886,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-28T06:22:48.915771+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360665+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311475+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1450,7 +1934,7 @@
         ]
       },
       "first_seen_at": "2026-07-28T06:22:48.915774+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360669+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311487+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1509,7 +1993,7 @@
         ]
       },
       "first_seen_at": "2026-07-28T06:22:48.915777+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360673+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311495+00:00",
       "ai_decision": {
         "include_in_feed": true,
         "relevance": "Uncertain",
@@ -1604,7 +2088,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-24T06:22:23.602150+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360678+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311507+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1664,7 +2148,7 @@
         ]
       },
       "first_seen_at": "2026-07-24T06:22:23.602170+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360686+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311516+00:00",
       "ai_decision": {
         "include_in_feed": false,
         "relevance": "Not relevant",
@@ -1865,7 +2349,7 @@
         ]
       },
       "first_seen_at": "2026-07-23T06:27:08.558862+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360696+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311525+00:00",
       "ai_decision": {
         "include_in_feed": true,
         "relevance": "Core chiral-phonon paper",
@@ -1960,7 +2444,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-23T06:27:08.558886+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360700+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311534+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2001,7 +2485,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-23T06:27:08.558891+00:00",
-      "last_seen_at": "2026-08-04T06:23:46.360705+00:00",
+      "last_seen_at": "2026-08-05T06:23:57.311543+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
