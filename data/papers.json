@@ -1,13 +1,71 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-08-06T05:26:38.581461+00:00",
+  "updated_at": "2026-08-06T06:26:23.012659+00:00",
   "papers": [
     {
-      "base_arxiv_id": "2608.03714",
+      "base_arxiv_id": "2608.04754",
       "current_version": 1,
-      "versioned_arxiv_id": "2608.03714v1",
-      "title": "Cavity control of quantum phase transitions in a two-dimensional kondo lattice",
+      "versioned_arxiv_id": "2608.04754v1",
+      "title": "Unifying microscopic theories for the phono-magnetic effect",
+      "authors": [
+        "Natalia Shabala",
+        "Finja Tietjen",
+        "Ylva Liljegren",
+        "R. Matthias Geilhufe"
+      ],
+      "abstract": "Phonon angular momentum induces an effective magnetic field, a phenomenon called phono-magnetic effect, which has been measured to vary significantly in size. Here, we compare three approaches for deriving the effective magnetic field of a phonon, using electron-phonon coupling and orbital magnetism. The adiabatic approach assumes a slow ionic motion, keeping electrons in the ground state. The perturbative approach treats the electron-phonon interaction as a perturbation to the electronic ground state, and the Floquet approach is based on the time-periodicity of the circular ionic motion. We show that all three approaches lead to the same effective Hamiltonian in the low-frequency limit, which moves us closer towards a unified theory of the phono-magnetic effect. Furthermore, we identify two phononic contributions to the sample magnetization, spontaneous and induced. Thus, we clarify the role of the effective magnetic field in the phonon-induced magnetization. We conclude by providing a numerical estimate for the effective magnetic field in SrTiO$_3$.",
+      "initial_submission_date": "2026-08-05T12:23:15Z",
+      "latest_update_date": "2026-08-05T12:23:15Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.04754v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.04754v1",
+      "versions_seen": [
+        "2608.04754v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [
+        "phonon angular momentum",
+        "phonon-induced magnetization"
+      ],
+      "matched_keywords": [
+        "phonon angular momentum",
+        "phonon-induced magnetization",
+        "phonon",
+        "ionic motion"
+      ],
+      "classification_evidence": {
+        "primary_terms": [
+          "phonon angular momentum"
+        ],
+        "related_terms": [
+          "phonon-induced magnetization"
+        ],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon",
+          "ionic motion"
+        ]
+      },
+      "first_seen_at": "2026-08-06T06:26:23.011692+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011692+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.03714",
+      "current_version": 2,
+      "versioned_arxiv_id": "2608.03714v2",
+      "title": "Cavity control of quantum phase transitions in a two-dimensional Kondo lattice",
       "authors": [
         "Jun Mochida",
         "Atac Imamoglu",
@@ -15,16 +73,17 @@
       ],
       "abstract": "Cavity quantum electrodynamics offers a route to control quantum phases by using vacuum fluctuations of confined electromagnetic fields. In particular, planar cavities based on polar van der Waals materials can generate strongly confined modes and are promising for controlling two-dimensional correlated materials. Recently, moiré materials have become central platforms for studying two-dimensional heavy-fermion systems and their quantum phase transitions. Kondo lattices provide a prototypical model for studying quantum phase boundaries, driven by competition between Kondo screening and the ordering of local magnetic moments. We show that a cavity-induced interaction can shift the quantum phase transitions between a heavy-fermion phase and an antiferromagnetic phase in a two-dimensional Kondo lattice through a momentum-dependent self-energy of the conduction bands. For the longitudinal projected field motivated by h-BN hyperbolic phonon polaritons, the self-energy favors Kondo hybridization and expands the heavy-fermion region. Transverse and circular in-plane model structures give distinct effects, with the transverse case relatively favoring the magnetically ordered phase and the circular case lying between the longitudinal and transverse cases. These results indicate that electromagnetic vacuum fluctuations can effectively modify the control parameters of strongly correlated two-dimensional Kondo materials.",
       "initial_submission_date": "2026-08-04T14:17:24Z",
-      "latest_update_date": "2026-08-04T14:17:24Z",
+      "latest_update_date": "2026-08-05T02:56:55Z",
       "categories": [
         "cond-mat.str-el",
         "cond-mat.mes-hall",
         "quant-ph"
       ],
-      "abstract_url": "https://arxiv.org/abs/2608.03714v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.03714v1",
+      "abstract_url": "https://arxiv.org/abs/2608.03714v2",
+      "pdf_url": "https://arxiv.org/pdf/2608.03714v2",
       "versions_seen": [
-        "2608.03714v1"
+        "2608.03714v1",
+        "2608.03714v2"
       ],
       "preliminary_include": true,
       "preliminary_research_type": "Unclassified",
@@ -48,7 +107,7 @@
         ]
       },
       "first_seen_at": "2026-08-05T06:23:57.311124+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311124+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011722+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -99,7 +158,7 @@
         ]
       },
       "first_seen_at": "2026-08-05T06:23:57.311164+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311164+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011731+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -157,7 +216,7 @@
         ]
       },
       "first_seen_at": "2026-08-05T06:23:57.311173+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311173+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011737+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -205,7 +264,7 @@
         ]
       },
       "first_seen_at": "2026-08-05T06:23:57.311179+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311179+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011741+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -251,7 +310,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-05T06:23:57.311184+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311184+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011745+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -301,7 +360,7 @@
         ]
       },
       "first_seen_at": "2026-08-05T06:23:57.311189+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311189+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011749+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -345,7 +404,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-05T06:23:57.311194+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311194+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011753+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -389,7 +448,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-05T06:23:57.311205+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311205+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011757+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -437,7 +496,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-05T06:23:57.311211+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311211+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011760+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -483,7 +542,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-05T06:23:57.311216+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311216+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011764+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -527,7 +586,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-04T06:23:46.360496+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311235+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011767+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -570,7 +629,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-04T06:23:46.360527+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311247+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011771+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -629,7 +688,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-04T06:23:46.360533+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311257+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011774+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -670,7 +729,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-04T06:23:46.360536+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311266+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011778+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -738,7 +797,7 @@
         ]
       },
       "first_seen_at": "2026-08-04T06:23:46.360539+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311275+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011781+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -791,7 +850,7 @@
         ]
       },
       "first_seen_at": "2026-08-04T06:23:46.360542+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311284+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011785+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -834,7 +893,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-04T06:23:46.360545+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311293+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011788+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -879,7 +938,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-03T06:55:39.723050+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311303+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011792+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -924,7 +983,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-31T06:40:20.617476+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311312+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011796+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -968,7 +1027,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-31T06:40:20.617498+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311322+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011800+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1017,7 +1076,7 @@
         ]
       },
       "first_seen_at": "2026-07-30T06:23:16.164644+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311332+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011803+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1070,7 +1129,7 @@
         ]
       },
       "first_seen_at": "2026-07-30T06:23:16.164625+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311343+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011807+00:00",
       "ai_decision": null,
       "ai_fingerprint": null,
       "ai_prompt_version": "chiral-phonons-v3.0",
@@ -1117,7 +1176,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-31T06:40:20.617523+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311353+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011810+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1189,7 +1248,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-31T06:40:20.621067+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311363+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011816+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1284,7 +1343,7 @@
         ]
       },
       "first_seen_at": "2026-07-30T06:23:16.164630+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311372+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011820+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1332,7 +1391,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-30T06:23:16.164634+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311381+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011823+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1374,7 +1433,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-30T06:23:16.164636+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311391+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011827+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1419,7 +1478,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-30T06:23:16.164639+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311399+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011831+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1466,7 +1525,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-30T06:23:16.164642+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311407+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011835+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1523,7 +1582,7 @@
         ]
       },
       "first_seen_at": "2026-07-28T06:22:48.915753+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311416+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011840+00:00",
       "ai_decision": {
         "include_in_feed": false,
         "relevance": "Not relevant",
@@ -1621,7 +1680,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-30T06:23:16.164654+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311424+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011844+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1667,7 +1726,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-28T06:22:48.915730+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311433+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011847+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1708,7 +1767,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-28T06:22:48.915759+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311441+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011851+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1750,7 +1809,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-28T06:22:48.915762+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311449+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011854+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1793,7 +1852,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-28T06:22:48.915765+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311457+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011857+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1842,7 +1901,7 @@
         ]
       },
       "first_seen_at": "2026-07-28T06:22:48.915768+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311466+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011861+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1886,7 +1945,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-28T06:22:48.915771+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311475+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011864+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1934,7 +1993,7 @@
         ]
       },
       "first_seen_at": "2026-07-28T06:22:48.915774+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311487+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011867+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1993,7 +2052,7 @@
         ]
       },
       "first_seen_at": "2026-07-28T06:22:48.915777+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311495+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011871+00:00",
       "ai_decision": {
         "include_in_feed": true,
         "relevance": "Uncertain",
@@ -2088,7 +2147,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-07-24T06:22:23.602150+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311507+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011874+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2148,7 +2207,7 @@
         ]
       },
       "first_seen_at": "2026-07-24T06:22:23.602170+00:00",
-      "last_seen_at": "2026-08-05T06:23:57.311516+00:00",
+      "last_seen_at": "2026-08-06T06:26:23.011877+00:00",
       "ai_decision": {
         "include_in_feed": false,
         "relevance": "Not relevant",
