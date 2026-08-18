@@ -1,8 +1,270 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-08-18T03:07:41.793233+00:00",
+  "updated_at": "2026-08-18T04:31:04.951973+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2608.16660",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.16660v1",
+      "title": "Topological insulator realization induced by fermionic interaction through BF mediators",
+      "authors": [
+        "G. B. de Gracia",
+        "R. da Rocha",
+        "A. A. Nogueira",
+        "M. A. C. de Barcelos"
+      ],
+      "abstract": "This paper demonstrates that ordinary fermions, interacting via a BF mediator, form a renormalized structure with non-trivial topological properties. We explore the analogy between the renormalized fermion and a subset of real three-dimensional topological insulators (TIs) in the vicinity of their single Dirac cones. Using the typical magnitude of TI lattice and gaps, we constrain model parameters. The topological structure induced by radiative corrections enters a class of modified Dirac equations, ensuring the existence of helical gapless near-boundary modes. We derive an effective potential for inter-quasi-particle interactions that incorporates finite-size effects in the axial direction, revealing signatures of spin-orbit coupling and time-reversal invariance. Remarkably, particles with different spins do not interact via the characteristic spin-orbit coupling, and a non-central spin-dependent force arises. We also address the behavior of the system in the phase transition associated with the thin-film limit.",
+      "initial_submission_date": "2026-08-17T14:53:55Z",
+      "latest_update_date": "2026-08-17T14:53:55Z",
+      "categories": [
+        "cond-mat.mes-hall",
+        "hep-th"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.16660v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16660v1",
+      "versions_seen": [
+        "2608.16660v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Computational / theoretical",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "topological insulator"
+      ],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [
+          "We derive"
+        ],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-08-18T04:31:04.950225+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950225+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.16138",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.16138v1",
+      "title": "Nanocavity Confinement by Orthogonal Valley- and SSH- Topological Interfaces In Glide-Symmetric Photonic Crystal Structures",
+      "authors": [
+        "Takahiro Uemura",
+        "Wei Dai",
+        "Yuto Moritake",
+        "Masaaki Ono",
+        "Eiichi Kuramochi",
+        "Masaya Notomi"
+      ],
+      "abstract": "Valley photonic crystals enable valley-dependent transport and chirality-selective emission, but incorporating wavelength-scale localization remains challenging. Existing valley-photonic-crystal cavities rely on finite defects or local lattice modifications that require structure-specific optimization and offer limited continuous control. Here, we theoretically and experimentally demonstrate two-dimensional nanocavity confinement using two orthogonal domain walls in a glide-symmetric valley photonic crystal. A valley domain wall confines the guided interface mode transversely, while an SSH-like domain wall localizes it longitudinally. Starting from a glide-symmetry-protected Dirac point in a bearded-interface waveguide, controlled displacements of adjacent triangular holes open a topological gap in the continuous guided-mode dispersion. The displacement amplitude $ΔR$ tunes the gap, mode volume, and intrinsic radiative $Q$ factor. Implemented in a silicon photonic-crystal slab, the structure exhibits localized resonances within the topological mode gap and systematic spectral tuning with $ΔR$. The maximum measured loaded $Q$ factor is $1.2\\times10^{4}$. This approach enables continuously tunable, high-$Q$ nanocavities integrated into topological waveguide networks for compact resonant devices and enhanced light--matter interactions.",
+      "initial_submission_date": "2026-08-17T05:45:30Z",
+      "latest_update_date": "2026-08-17T05:45:30Z",
+      "categories": [
+        "physics.optics"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.16138v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16138v1",
+      "versions_seen": [
+        "2608.16138v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-08-18T04:31:04.950252+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950252+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.16065",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.16065v1",
+      "title": "Helical Magnon Frequency Comb in Synthetic Antiferromagnetic Skyrmion Lattices",
+      "authors": [
+        "Liu Xuejuan",
+        "Zheng Xingen",
+        "Li Zhixiong",
+        "Li Xiaoguang",
+        "Zhou Cangtao",
+        "Li Hui",
+        "Sun Haipeng",
+        "Yan Peng"
+      ],
+      "abstract": "Synthetic antiferromagnetic skyrmion lattices (SAF-SkLs), consisting of two ferromagnetic SkLs coupled antiferromagnetically with compensated magnetization, provide a promising platform for robust nonlinear magnonics. Here, we investigate helical magnon frequency comb (HMFC) generation in a SAF-SkL by combining analytical modeling with micromagnetic simulations. We show that nonlinear coupling between helical magnon edge states and the skyrmion gyration produces frequency combs with pronounced edge localization. The HMFC exhibits strong enhancement exclusively when the driving frequency lies within the helical edge-state band, whereas the interior response remains negligible. This frequency selectivity confirms the essential role of helical edge modes in localized nonlinear frequency conversion. We further demonstrate that the interlayer antiferromagnetic coupling reconstructs the magnon spectrum, thereby tuning the comb spacing and the number of comb teeth while also redistributing modal energy. Our results establish SAF-SkLs as a tunable platform for edge-localized HMFCs and suggest a route toward robust coherent magnonic signal processing.",
+      "initial_submission_date": "2026-08-17T03:58:00Z",
+      "latest_update_date": "2026-08-17T03:58:00Z",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.16065v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16065v1",
+      "versions_seen": [
+        "2608.16065v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-08-18T04:31:04.950258+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950258+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.15771",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.15771v1",
+      "title": "Infrared light scattering and emission from epsilon near-zero hyperbolic phonon-polaritons in two-dimensional crystals",
+      "authors": [
+        "Flavio Henrique Feres",
+        "Martin Bearzatto",
+        "Adrien Debacq",
+        "Gergely Nemeth",
+        "Rafael A. Mayer",
+        "Yuri B. Marcal",
+        "Marcus V. de Paiva",
+        "Maximilian Obst",
+        "Felix Kaps",
+        "Jakob Wetzel",
+        "Osama Hatem",
+        "Wenjun Zhou",
+        "Ran Jing",
+        "Heng Whang",
+        "Adrian Cernescu",
+        "Stephan Winnerl",
+        "J. Michael Klopf",
+        "Mengkun Liu",
+        "Ferenc Borondics",
+        "Ingrid D. Barcelos",
+        "Raul O. Freitas",
+        "Ana I. F. Tresguerres-Mata",
+        "Yannick De Wilde",
+        "Lukas M. Eng",
+        "Michaël Lobet",
+        "Susanne C. Kehr",
+        "Francisco C. B. Maia"
+      ],
+      "abstract": "This work presents the near-field super-scattering and the near-field thermal emission from 2D hyperbolic crystals as general optical phenomena that link near-field nanophotonics to far-field photonics.",
+      "initial_submission_date": "2026-08-16T14:47:24Z",
+      "latest_update_date": "2026-08-16T14:47:24Z",
+      "categories": [
+        "physics.optics"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.15771v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15771v1",
+      "versions_seen": [
+        "2608.15771v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-08-18T04:31:04.950262+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950262+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.15331",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.15331v1",
+      "title": "Barium Hexaferrite Thin Films as a Scalable Magnetic-Insulator Platform for Proximity-Engineered Spintronics",
+      "authors": [
+        "Shyam Sundar Poriah",
+        "Sanjana D. S.",
+        "Agrim Sharma",
+        "Sreelakshmi M. Nair",
+        "Pankaj Bhardwaj",
+        "Laxmipriya Nanda",
+        "Aryaman Das",
+        "Jagadish Rajendran",
+        "R. S. Patel",
+        "Manish Jain",
+        "Dhavala Suri"
+      ],
+      "abstract": "Rare-earth iron garnets, such as yttrium iron garnet (YIG) and thulium iron garnet (TmIG), are the benchmark magnetic insulators for spintronic and magnonic devices, but achieving usable perpendicular magnetic anisotropy (PMA) in these materials typically relies on substrate strain- engineering, requiring careful lattice-matching and specific growth conditions that constrain ma- terial accessibility. Here we establish sputter grown barium hexaferrite (BaFe12O19, BaM) as a magnetic-insulator alternative with strong intrinsic perpendicular anisotropy, requiring no strain engineering. X-ray diffraction, transmission electron microscopy and Raman spectroscopy confirm stoichiometric films with atomically smooth surfaces, while first-principles calculations corroborate a robust ferrimagnetic ground state. The films exhibit square out-of-plane hysteresis with a coercive field of nearly 0.1 T. Unlike rare-earth garnets, the perpendicular anisotropy in BaM is intrinsic to its magnetoplumbite crystal structure, arising independent of highly ordered strain. Interfaced with Pt and with exfoliated BiSbTeSe2 (BSTS), BaM induces proximity induced anomalous Hall trans- port, confirming efficient interfacial exchange coupling, while the BSTS/BaM heterostructure shows an additional Hall contribution suggestive of non-collinear interfacial spin textures. These results position BaM thin films as a scalable magnetic-insulator platform for spintronic and topological heterostructure devices beyond the constraints of garnet chemistry.",
+      "initial_submission_date": "2026-08-15T17:26:43Z",
+      "latest_update_date": "2026-08-15T17:26:43Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.15331v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15331v1",
+      "versions_seen": [
+        "2608.15331v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "spintronics"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-08-18T04:31:04.950265+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950265+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2608.14503",
       "current_version": 1,
@@ -43,7 +305,50 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-17T04:36:04.227280+00:00",
-      "last_seen_at": "2026-08-17T04:36:04.227280+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950278+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.14775",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.14775v1",
+      "title": "Spectral preservation under momentum-dependent similarity transformations in non-Hermitian lattice systems",
+      "authors": [
+        "Ye Ma"
+      ],
+      "abstract": "We investigate the conditions under which momentum-dependent similarity transformations preserve spectral properties of lattice Hamiltonians with open boundary conditions (OBC). While such transformations exactly preserve spectra in infinite systems, their application to finite systems introduces subtleties due to the long-range nature of the inverse transformation in real space. For general traceless $2\\times 2$ Hamiltonians, we derive necessary and sufficient conditions for reduction to skew-diagonal form via constant similarity transforms, providing explicit transformation matrices for all cases. We then establish rigorous conditions for bulk spectral preservation under momentum-dependent transformations: the generalized Brillouin zone of $H$ must lie inside the smallest zero of $\\det S(z)$ (the two-radius condition $r_{\\mathrm{GBZ}}^{\\max}<z_{\\min}$), together with a spectral-stability (no critical non-Hermitian skin effect) condition on $H$. Two-sidedness of $S(z)$ governs only the modification of a finite number of boundary eigenvalues, not the bulk. Our results establish when bulk topological invariants computed in transformed coordinates reliably predict boundary physics, with implications for non-Hermitian systems, photonic crystals, and other platforms where chiral or hidden symmetries emerge only after appropriate basis changes.",
+      "initial_submission_date": "2026-08-14T16:25:27Z",
+      "latest_update_date": "2026-08-14T16:25:27Z",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.other"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.14775v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14775v1",
+      "versions_seen": [
+        "2608.14775v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Computational / theoretical",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [
+          "we derive"
+        ],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-08-18T04:31:04.950282+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950282+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -83,7 +388,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-17T04:36:04.227299+00:00",
-      "last_seen_at": "2026-08-17T04:36:04.227299+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950290+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -126,7 +431,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-17T04:36:04.227303+00:00",
-      "last_seen_at": "2026-08-17T04:36:04.227303+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950297+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -172,7 +477,7 @@
         ]
       },
       "first_seen_at": "2026-08-14T05:28:58.224720+00:00",
-      "last_seen_at": "2026-08-17T04:36:04.227325+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950302+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -214,7 +519,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-14T05:28:58.224750+00:00",
-      "last_seen_at": "2026-08-17T04:36:04.227332+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950308+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -258,7 +563,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-13T05:37:14.670055+00:00",
-      "last_seen_at": "2026-08-17T04:36:04.227337+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950313+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -310,7 +615,7 @@
         ]
       },
       "first_seen_at": "2026-08-13T05:37:14.670078+00:00",
-      "last_seen_at": "2026-08-17T04:36:04.227342+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950318+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -352,7 +657,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-13T05:37:14.670083+00:00",
-      "last_seen_at": "2026-08-17T04:36:04.227345+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950323+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -418,7 +723,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-13T05:37:14.670085+00:00",
-      "last_seen_at": "2026-08-17T04:36:04.227349+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950328+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -473,7 +778,7 @@
         ]
       },
       "first_seen_at": "2026-08-13T05:37:14.670088+00:00",
-      "last_seen_at": "2026-08-17T04:36:04.227352+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950332+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -516,7 +821,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-13T05:37:14.670090+00:00",
-      "last_seen_at": "2026-08-17T04:36:04.227355+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950337+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -562,7 +867,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-12T05:28:17.700355+00:00",
-      "last_seen_at": "2026-08-17T04:36:04.227359+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950341+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -612,7 +917,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-12T05:28:17.700378+00:00",
-      "last_seen_at": "2026-08-17T04:36:04.227362+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950346+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -664,7 +969,7 @@
         ]
       },
       "first_seen_at": "2026-08-12T05:28:17.700382+00:00",
-      "last_seen_at": "2026-08-17T04:36:04.227365+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950350+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -753,7 +1058,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-11T05:03:36.534889+00:00",
-      "last_seen_at": "2026-08-17T04:36:04.227372+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950355+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -796,7 +1101,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-10T05:21:51.872700+00:00",
-      "last_seen_at": "2026-08-17T04:36:04.227377+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950362+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -839,7 +1144,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-10T05:21:51.872726+00:00",
-      "last_seen_at": "2026-08-17T04:36:04.227380+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950367+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -885,7 +1190,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-10T05:21:51.872732+00:00",
-      "last_seen_at": "2026-08-17T04:36:04.227384+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950371+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -933,7 +1238,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-07T05:36:49.600213+00:00",
-      "last_seen_at": "2026-08-17T04:36:04.227387+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950376+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -980,7 +1285,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-07T05:36:49.600238+00:00",
-      "last_seen_at": "2026-08-17T04:36:04.227390+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950380+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1024,7 +1329,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-07T05:36:49.600242+00:00",
-      "last_seen_at": "2026-08-17T04:36:04.227393+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950385+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1082,7 +1387,7 @@
         ]
       },
       "first_seen_at": "2026-08-06T06:26:23.011692+00:00",
-      "last_seen_at": "2026-08-17T04:36:04.227396+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950389+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1132,7 +1437,7 @@
         ]
       },
       "first_seen_at": "2026-08-05T06:23:57.311124+00:00",
-      "last_seen_at": "2026-08-17T04:36:04.227399+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950394+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1183,7 +1488,7 @@
         ]
       },
       "first_seen_at": "2026-08-05T06:23:57.311164+00:00",
-      "last_seen_at": "2026-08-17T04:36:04.227403+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950399+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1241,7 +1546,7 @@
         ]
       },
       "first_seen_at": "2026-08-05T06:23:57.311173+00:00",
-      "last_seen_at": "2026-08-17T04:36:04.227406+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950404+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1289,7 +1594,7 @@
         ]
       },
       "first_seen_at": "2026-08-05T06:23:57.311179+00:00",
-      "last_seen_at": "2026-08-17T04:36:04.227409+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950409+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1335,7 +1640,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-05T06:23:57.311184+00:00",
-      "last_seen_at": "2026-08-17T04:36:04.227412+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950413+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1385,7 +1690,7 @@
         ]
       },
       "first_seen_at": "2026-08-05T06:23:57.311189+00:00",
-      "last_seen_at": "2026-08-17T04:36:04.227415+00:00",
+      "last_seen_at": "2026-08-18T04:31:04.950418+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
