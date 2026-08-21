@@ -1,8 +1,62 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-08-21T02:16:26.177787+00:00",
+  "updated_at": "2026-08-21T04:32:42.188692+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2608.19352",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.19352v1",
+      "title": "Hysteresis without coexistence: disorder-rounded first-order transitions in a van der Waals magnet",
+      "authors": [
+        "Xiaoyu Guo",
+        "Abby N. Neill",
+        "Christopher M. Pasco",
+        "Tyrel M. McQueen",
+        "N. P. Armitage"
+      ],
+      "abstract": "Quenched disorder can profoundly modify phase transitions. In low-dimensional systems, theory predicts that even weak quenched disorder can round the thermodynamic discontinuities associated with a first-order phase transition. Here, we employ time-domain terahertz spectroscopy to investigate the quasi-two-dimensional trimerized kagome van der Waals magnet family Nb$_3$Cl$_{8-x}$Br$_x$ ($x=0$, 1 and 8). We observe the emergence of an additional phonon branch upon Br substitution, whose spectral weight increases and frequency softens with increasing Br concentration. The temperature evolution of the phonon frequencies reveals a clean first-order transition in Nb$_3$Cl$_8$ characterized by macroscopic phase coexistence and thermal hysteresis. In contrast, the transition in the substitutionally disordered compound Nb$_3$Cl$_7$Br retains its hysteresis while exhibiting a substantially broadened transition with no resolvable macroscopic phase coexistence. These observations reveal disorder-induced fragmentation of the transition into locally favored domains instead of well-defined bulk phases separated by stable phase boundaries. The behavior is consistent with the Imry-Wortis and the Aizenman-Wehr scenarios for the effect of quenched disorder in low-dimensional systems, which destabilizes macroscopic phase coexistence and rounds the thermodynamic discontinuities associated with first-order transitions. Thermal hysteresis persists in the disordered compound despite the lack of resolvable coexistence, indicating that the two features often treated as a single hallmark of first-order character arise distinctly and can be separated by disorder. Moreover, our results establish Nb$_3$Cl$_{8-x}$Br$_x$ as a promising platform for investigating the effects of disorder on first-order transitions in low-dimensional systems.",
+      "initial_submission_date": "2026-08-19T18:14:05Z",
+      "latest_update_date": "2026-08-19T18:14:05Z",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.19352v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19352v1",
+      "versions_seen": [
+        "2608.19352v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Experimental",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "van der Waals magnet"
+      ],
+      "detected_experimental_methods": [
+        "terahertz"
+      ],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [
+          "We observe"
+        ],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-08-21T04:32:42.187176+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187176+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2608.19185",
       "current_version": 1,
@@ -41,7 +95,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-20T04:32:30.272734+00:00",
-      "last_seen_at": "2026-08-20T04:32:30.272734+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187205+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -94,7 +148,49 @@
         ]
       },
       "first_seen_at": "2026-08-12T05:28:17.700382+00:00",
-      "last_seen_at": "2026-08-20T04:32:30.272773+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187215+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.19287",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.19287v1",
+      "title": "On trace invariance and energy-dependent entanglement in muon decay",
+      "authors": [
+        "Saulo Carneiro",
+        "Fernando César Sobrinho"
+      ],
+      "abstract": "We revisit a proposed correction to the muon magnetic anomaly measurement and compare it with energy-binned scans reported by the Fermilab $g-2$ collaboration. The central point is that, for a relativistic three-body decay inferred from an ensemble of detected positrons, the relevant neutrino partial trace is defined on the asymptotic state at the detector, not on an idealised state at the decay vertex. Because the fitted positron sample mixes events with different decay times, flight times, energies and acceptances, tracing over the unobserved neutrino helicities leaves a time-dependent mixed state in the observed sector. Using angular-momentum balance, we obtain an energy-dependent correction in the positron energy interval $E_p \\in (1.5,2.9)$ GeV. The corrected experimental interval for the muon anomaly moves towards the BaBar- and $τ$-based determinations, while remaining compatible at the $1σ$ level with both data-driven and lattice-based Standard Model evaluations. We then fit digitised public $R(E_p)$ scans for Fermilab's runs $1$ to $6$, with two one-parameter hypotheses: a constant shift and the entanglement-motivated energy-dependent shift. Within digitisation accuracy, the differences in $χ^2$ remain modest and the current binned data do not provide decisive discrimination between them.",
+      "initial_submission_date": "2026-08-19T12:06:54Z",
+      "latest_update_date": "2026-08-19T12:06:54Z",
+      "categories": [
+        "hep-ph",
+        "quant-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.19287v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19287v1",
+      "versions_seen": [
+        "2608.19287v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-08-21T04:32:42.187220+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187220+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -140,7 +236,7 @@
         ]
       },
       "first_seen_at": "2026-08-20T04:32:30.272779+00:00",
-      "last_seen_at": "2026-08-20T04:32:30.272779+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187227+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -191,7 +287,7 @@
         ]
       },
       "first_seen_at": "2026-08-20T04:32:30.272783+00:00",
-      "last_seen_at": "2026-08-20T04:32:30.272783+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187232+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -233,7 +329,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-20T04:32:30.272786+00:00",
-      "last_seen_at": "2026-08-20T04:32:30.272786+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187237+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -276,7 +372,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-19T04:32:28.031338+00:00",
-      "last_seen_at": "2026-08-20T04:32:30.272795+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187242+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -323,7 +419,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-19T04:32:28.031368+00:00",
-      "last_seen_at": "2026-08-20T04:32:30.272805+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187249+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -371,7 +467,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-18T04:31:04.950225+00:00",
-      "last_seen_at": "2026-08-20T04:32:30.272810+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187254+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -416,7 +512,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-18T04:31:04.950252+00:00",
-      "last_seen_at": "2026-08-20T04:32:30.272815+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187258+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -463,7 +559,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-18T04:31:04.950258+00:00",
-      "last_seen_at": "2026-08-20T04:32:30.272820+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187264+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -533,7 +629,7 @@
         ]
       },
       "first_seen_at": "2026-08-18T04:31:04.950262+00:00",
-      "last_seen_at": "2026-08-20T04:32:30.272824+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187269+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -585,7 +681,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-18T04:31:04.950265+00:00",
-      "last_seen_at": "2026-08-20T04:32:30.272829+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187273+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -629,7 +725,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-17T04:36:04.227280+00:00",
-      "last_seen_at": "2026-08-20T04:32:30.272833+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187278+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -672,7 +768,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-18T04:31:04.950282+00:00",
-      "last_seen_at": "2026-08-20T04:32:30.272837+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187283+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -712,7 +808,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-17T04:36:04.227299+00:00",
-      "last_seen_at": "2026-08-20T04:32:30.272842+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187287+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -755,7 +851,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-17T04:36:04.227303+00:00",
-      "last_seen_at": "2026-08-20T04:32:30.272846+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187291+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -801,7 +897,7 @@
         ]
       },
       "first_seen_at": "2026-08-14T05:28:58.224720+00:00",
-      "last_seen_at": "2026-08-20T04:32:30.272851+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187295+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -843,7 +939,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-14T05:28:58.224750+00:00",
-      "last_seen_at": "2026-08-20T04:32:30.272855+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187300+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -887,7 +983,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-13T05:37:14.670055+00:00",
-      "last_seen_at": "2026-08-20T04:32:30.272861+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187304+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -939,7 +1035,7 @@
         ]
       },
       "first_seen_at": "2026-08-13T05:37:14.670078+00:00",
-      "last_seen_at": "2026-08-20T04:32:30.272867+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187309+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -981,7 +1077,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-13T05:37:14.670083+00:00",
-      "last_seen_at": "2026-08-20T04:32:30.272872+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187313+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1047,7 +1143,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-13T05:37:14.670085+00:00",
-      "last_seen_at": "2026-08-20T04:32:30.272876+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187317+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1102,7 +1198,7 @@
         ]
       },
       "first_seen_at": "2026-08-13T05:37:14.670088+00:00",
-      "last_seen_at": "2026-08-20T04:32:30.272880+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187321+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1145,7 +1241,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-13T05:37:14.670090+00:00",
-      "last_seen_at": "2026-08-20T04:32:30.272884+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187325+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1191,7 +1287,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-12T05:28:17.700355+00:00",
-      "last_seen_at": "2026-08-20T04:32:30.272889+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187330+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1241,7 +1337,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-12T05:28:17.700378+00:00",
-      "last_seen_at": "2026-08-20T04:32:30.272893+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187334+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1330,7 +1426,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-11T05:03:36.534889+00:00",
-      "last_seen_at": "2026-08-20T04:32:30.272898+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187338+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1373,7 +1469,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-10T05:21:51.872700+00:00",
-      "last_seen_at": "2026-08-20T04:32:30.272903+00:00",
+      "last_seen_at": "2026-08-21T04:32:42.187343+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
