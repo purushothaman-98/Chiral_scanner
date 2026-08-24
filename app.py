@@ -90,94 +90,110 @@ st.markdown(
     """
 <style>
 :root {
-  --accent:#2563eb;
-  --accent-strong:#1d4ed8;
-  --teal:#0f766e;
-  --ink:#172033;
-  --muted:#5f6b7a;
+  --accent:#4f46e5;
+  --accent-strong:#4338ca;
+  --accent-soft:#eef1ff;
+  --teal:#0d9488;
+  --amber:#d97706;
+  --ink:#161b2b;
+  --muted:#5c6472;
   --surface:#ffffff;
-  --soft:#f3f6fa;
-  --line:#dbe3ec;
+  --soft:#f3f4fa;
+  --line:#e4e7f0;
   --success:#047857;
-  --warning:#a16207;
+  --warning:#b45309;
   --danger:#be123c;
+  --radius:12px;
+  --shadow:0 1px 2px rgba(23,26,50,.04), 0 6px 16px rgba(23,26,50,.05);
 }
 html {color-scheme:light;}
-.block-container {padding-top:1.25rem; padding-bottom:3rem; max-width:1180px;}
-.stApp {background:#f7f9fc; color:var(--ink);}
-header[data-testid="stHeader"] {background:rgba(247,249,252,.94);}
-.hero {padding:1.15rem 0 1rem; border-bottom:1px solid var(--line); margin-bottom:1rem;}
-.hero-kicker {display:flex; align-items:center; gap:.45rem; color:var(--accent); font-size:.72rem;
-font-weight:760; letter-spacing:.09em; text-transform:uppercase; margin-bottom:.45rem;}
+* {scrollbar-color:#c7cbdc transparent;}
+.block-container {padding-top:1.1rem; padding-bottom:3rem; max-width:1160px;}
+.stApp {background:#f5f6fb; color:var(--ink); font-feature-settings:"ss01";}
+header[data-testid="stHeader"] {background:rgba(245,246,251,.92); backdrop-filter:blur(6px);}
+.hero {padding:1.35rem 1.5rem; border-radius:16px; margin-bottom:1rem;
+background:linear-gradient(135deg,#fff 0%,#f2f1ff 100%); border:1px solid var(--line); box-shadow:var(--shadow);}
+.hero-kicker {display:flex; align-items:center; gap:.45rem; color:var(--accent-strong); font-size:.71rem;
+font-weight:750; letter-spacing:.08em; text-transform:uppercase; margin-bottom:.5rem;}
 .live-dot {width:.46rem; height:.46rem; border-radius:999px; background:#10b981;
-box-shadow:0 0 0 4px rgba(16,185,129,.12); display:inline-block;}
-.hero h1 {margin:0; color:var(--ink); font-size:2.15rem; letter-spacing:-.045em; line-height:1.08;}
-.hero p {max-width:820px; color:var(--muted); font-size:.98rem; line-height:1.58; margin:.55rem 0 .7rem;}
+box-shadow:0 0 0 4px rgba(16,185,129,.14); display:inline-block;}
+.hero h1 {margin:0; color:var(--ink); font-size:2.05rem; letter-spacing:-.04em; line-height:1.1;}
+.hero p {max-width:800px; color:var(--muted); font-size:.94rem; line-height:1.55; margin:.5rem 0 .65rem;}
 .hero-tags {display:flex; flex-wrap:wrap; gap:.4rem;}
-.hero-tag {padding:.24rem .58rem; border:1px solid #cbd9ea; border-radius:999px;
-color:#29415f; background:#fff; font-size:.72rem;}
-.coverage {display:flex; flex-wrap:wrap; gap:.4rem 1rem; padding:.62rem .78rem;
+.hero-tag {padding:.22rem .58rem; border:1px solid #d9dcf5; border-radius:999px;
+color:var(--accent-strong); background:#fff; font-size:.71rem; font-weight:560;}
+.coverage {display:flex; flex-wrap:wrap; gap:.35rem 1.1rem; padding:.55rem .8rem;
 border-radius:10px; background:#fff; border:1px solid var(--line); color:var(--muted);
-font-size:.79rem; margin:.45rem 0 1rem; box-shadow:0 1px 2px rgba(15,23,42,.03);}
-.coverage strong {color:var(--ink); font-weight:680;}
-.section-kicker {color:var(--accent); font-size:.69rem; font-weight:760; letter-spacing:.09em;
-text-transform:uppercase; margin-bottom:.18rem;}
-.section-intro {color:var(--muted); max-width:850px; font-size:.89rem; line-height:1.56;
-margin-top:-.25rem; margin-bottom:.9rem;}
-.material-strip {padding:.62rem .76rem; border:1px solid var(--line); border-radius:9px;
-background:#fff; color:#435166; font-size:.82rem; margin:.45rem 0 .75rem;}
-.date-row {display:flex; align-items:center; gap:.7rem; margin:1.15rem 0 .28rem;}
-.date-row h2 {font-size:1.05rem; color:var(--ink); margin:0;}
-.count-pill {font-size:.7rem; color:#1d4ed8; padding:.13rem .44rem; border-radius:999px;
-background:#eff6ff; border:1px solid #bfdbfe;}
-.paper-title {font-size:1.03rem; font-weight:735; line-height:1.42; margin-bottom:.18rem;}
-.paper-title a {color:#123b70; text-decoration:none;}
-.paper-title a:hover {color:var(--accent); text-decoration:underline; text-underline-offset:3px;}
-.meta {color:#667386; font-size:.77rem; margin:.18rem 0 .34rem;}
-.badge {display:inline-block; padding:.16rem .43rem; margin:.08rem .14rem .08rem 0;
-border-radius:999px; background:#f1f5f9; border:1px solid #d7e0ea; font-size:.67rem; color:#334155;}
+font-size:.78rem; margin:.6rem 0 1.1rem;}
+.coverage strong {color:var(--ink); font-weight:640;}
+.section-kicker {color:var(--accent-strong); font-size:.68rem; font-weight:750; letter-spacing:.08em;
+text-transform:uppercase; margin-bottom:.15rem;}
+.section-intro {color:var(--muted); max-width:820px; font-size:.86rem; line-height:1.5;
+margin-top:-.2rem; margin-bottom:.75rem;}
+.material-strip {padding:.55rem .74rem; border:1px solid var(--line); border-radius:9px;
+background:#fff; color:#43485a; font-size:.8rem; margin:.4rem 0 .7rem;}
+.date-row {display:flex; align-items:center; gap:.65rem; margin:1.05rem 0 .26rem;}
+.date-row h2 {font-size:1rem; color:var(--ink); margin:0; font-weight:650;}
+.count-pill {font-size:.68rem; color:var(--accent-strong); padding:.12rem .42rem; border-radius:999px;
+background:var(--accent-soft); border:1px solid #d9dcf5;}
+.paper-title {font-size:1rem; font-weight:660; line-height:1.4; margin-bottom:.16rem;}
+.paper-title a {color:#1c2542; text-decoration:none;}
+.paper-title a:hover {color:var(--accent-strong); text-decoration:underline; text-underline-offset:3px;}
+.meta {color:#6a7180; font-size:.75rem; margin:.16rem 0 .32rem;}
+.badge {display:inline-block; padding:.15rem .42rem; margin:.07rem .12rem .07rem 0;
+border-radius:999px; background:#f1f2f7; border:1px solid #dfe1ec; font-size:.65rem; color:#3a3f4f; font-weight:540;}
 .status-approved {background:#ecfdf5; border-color:#a7f3d0; color:#047857;}
 .status-pending {background:#fffbeb; border-color:#fde68a; color:#92400e;}
 .status-review {background:#fff1f2; border-color:#fecdd3; color:#be123c;}
-.paper-signal {border-left:3px solid #60a5fa; padding:.42rem .68rem; margin:.48rem 0 .34rem;
-color:#334155; font-size:.82rem; line-height:1.48; background:#f4f8ff;}
-.brief {padding:.82rem .95rem; border:1px solid #cfe0f5; border-radius:10px;
-background:#f8fbff; color:#334155; line-height:1.55; margin:.65rem 0 1rem;}
+.paper-signal {border-left:3px solid var(--accent); padding:.4rem .65rem; margin:.44rem 0 .3rem;
+color:#3a3f52; font-size:.8rem; line-height:1.46; background:var(--accent-soft);}
+.brief {padding:.75rem .9rem; border:1px solid #d9dcf5; border-radius:10px;
+background:var(--accent-soft); color:#333a52; line-height:1.52; margin:.6rem 0 1rem; font-size:.87rem;}
 .brief strong {color:var(--ink);}
-.journey-card {height:100%; padding:.88rem .95rem; border:1px solid var(--line); border-radius:10px;
+.journey-card {height:100%; padding:.85rem .92rem; border:1px solid var(--line); border-radius:10px;
 background:#fff;}
-.journey-card .number {color:var(--accent); font-size:.71rem; font-weight:760; letter-spacing:.07em;
+.journey-card .number {color:var(--accent-strong); font-size:.7rem; font-weight:750; letter-spacing:.06em;
 text-transform:uppercase;}
-.journey-card h3 {color:var(--ink); font-size:1rem; margin:.25rem 0;}
-.journey-card p {color:var(--muted); font-size:.82rem; line-height:1.48; margin:0;}
-.insight-row {padding:.68rem .78rem; margin:.38rem 0; border-left:3px solid var(--accent);
-border-radius:0 8px 8px 0; background:#fff; color:#334155; font-size:.85rem;
-box-shadow:0 1px 2px rgba(15,23,42,.03);}
-.abstract {color:#465468; line-height:1.5; margin:.4rem 0; font-size:.86rem;}
-div[data-testid="stMetric"] {padding:.7rem .8rem; background:#fff; border:1px solid var(--line);
-border-radius:10px; min-height:86px; box-shadow:0 1px 2px rgba(15,23,42,.035);}
-div[data-testid="stMetricLabel"] {font-size:.75rem; color:#68758a;}
-div[data-testid="stMetricValue"] {font-size:1.52rem; color:var(--ink);}
-div[data-baseweb="tab-list"] {gap:.16rem; padding:0; border-bottom:1px solid var(--line);
+.journey-card h3 {color:var(--ink); font-size:.98rem; margin:.22rem 0;}
+.journey-card p {color:var(--muted); font-size:.8rem; line-height:1.46; margin:0;}
+.insight-row {padding:.6rem .75rem; margin:.34rem 0; border-left:3px solid var(--accent);
+border-radius:0 8px 8px 0; background:#fff; color:#333a52; font-size:.83rem; border:1px solid var(--line);
+border-left-width:3px;}
+.abstract {color:#454b5e; line-height:1.5; margin:.4rem 0; font-size:.85rem;}
+div[data-testid="stMetric"] {padding:.65rem .78rem; background:#fff; border:1px solid var(--line);
+border-radius:11px; min-height:80px; box-shadow:var(--shadow);}
+div[data-testid="stMetricLabel"] {font-size:.72rem; color:#6a7180;}
+div[data-testid="stMetricValue"] {font-size:1.42rem; color:var(--ink); font-weight:650;}
+div[data-baseweb="tab-list"] {gap:.14rem; padding:0; border-bottom:1px solid var(--line);
 background:transparent; overflow-x:auto;}
-button[data-baseweb="tab"] {border-radius:8px 8px 0 0; padding:.48rem .7rem; color:#526176;}
-button[data-baseweb="tab"][aria-selected="true"] {color:var(--accent-strong); background:#eef5ff;}
+button[data-baseweb="tab"] {border-radius:8px 8px 0 0; padding:.45rem .68rem; color:#5c6472; font-size:.85rem;}
+button[data-baseweb="tab"][aria-selected="true"] {color:var(--accent-strong); background:var(--accent-soft); font-weight:600;}
 button[data-baseweb="tab"]:focus-visible, .stButton > button:focus-visible,
-.stLinkButton > a:focus-visible {outline:3px solid rgba(37,99,235,.38); outline-offset:2px;}
-div[data-testid="stExpander"] {border-color:var(--line); border-radius:9px; background:#fff;}
-div[data-testid="stVerticalBlockBorderWrapper"] {border-color:var(--line); border-radius:10px; background:#fff;}
+.stLinkButton > a:focus-visible {outline:3px solid rgba(79,70,229,.35); outline-offset:2px;}
+div[data-testid="stExpander"] {border-color:var(--line); border-radius:10px; background:#fff;}
+div[data-testid="stVerticalBlockBorderWrapper"] {border-color:var(--line); border-radius:11px; background:#fff;}
 .stButton > button, .stLinkButton > a {border-radius:8px;}
+.stButton > button[kind="primary"] {background:var(--accent); border-color:var(--accent);}
 .stLinkButton > a {text-decoration:none;}
-[data-testid="stDataFrame"] {border:1px solid var(--line); border-radius:9px; overflow:hidden;}
+[data-testid="stDataFrame"] {border:1px solid var(--line); border-radius:10px; overflow:hidden;}
 hr {border-color:var(--line);}
+.tracker-card {padding:1rem 1.1rem; border-radius:12px; background:#fff;
+border:1px solid var(--line); box-shadow:var(--shadow); margin:.5rem 0 1rem;}
+.tracker-card h4 {margin:0 0 .3rem; color:var(--ink); font-size:1.05rem;}
+.tracker-empty {padding:.85rem 1rem; border:1px dashed #c9cce0; border-radius:10px;
+background:#fafafe; color:var(--muted); font-size:.84rem; margin:.5rem 0 1rem;}
+.geo-chip {display:inline-flex; align-items:center; gap:.3rem; padding:.22rem .6rem; margin:.15rem .25rem .15rem 0;
+border-radius:999px; background:#fff7ed; border:1px solid #fdba74; color:#9a3412; font-size:.73rem; font-weight:560;}
+.map-note {display:flex; flex-wrap:wrap; gap:.3rem 1rem; color:var(--muted); font-size:.74rem; margin:.35rem 0 .1rem;}
+.legend-dot {display:inline-block; width:.6rem; height:.6rem; border-radius:999px; margin-right:.3rem; vertical-align:middle;}
 @media (max-width:700px) {
-  .block-container {padding:.75rem .72rem 2rem;}
-  .hero {padding:.8rem 0 .75rem;}
-  .hero h1 {font-size:1.72rem;}
-  .hero p {font-size:.88rem;}
-  .coverage {display:block; line-height:1.7;}
-  div[data-testid="stMetric"] {min-height:78px; padding:.54rem .58rem;}
-  button[data-baseweb="tab"] {padding:.4rem .52rem; font-size:.77rem;}
+  .block-container {padding:.7rem .65rem 2rem;}
+  .hero {padding:1rem 1rem;}
+  .hero h1 {font-size:1.6rem;}
+  .hero p {font-size:.85rem;}
+  .coverage {display:block; line-height:1.65;}
+  div[data-testid="stMetric"] {min-height:74px; padding:.5rem .55rem;}
+  button[data-baseweb="tab"] {padding:.38rem .5rem; font-size:.76rem;}
 }
 </style>
 """,
@@ -1269,12 +1285,11 @@ with admin_tab:
 
 with people_tab:
     st.markdown('<div class="section-kicker">Research community</div>', unsafe_allow_html=True)
-    st.subheader("Authors, years and collaboration connections")
+    st.subheader("Researchers, institutions and where the field is being built")
     st.markdown(
-        '<div class="section-intro">Explore who appears in the scientifically mapped archive, '
-        "when their work entered the record, and which researchers repeatedly publish together. "
-        "Connections below mean verified co-authorship in the stored papers—not inferred influence, "
-        "institutional affiliation or citation.</div>",
+        '<div class="section-intro">Search a researcher to see their papers, active span and '
+        "verified institution highlighted on the map. Connections below mean verified "
+        "co-authorship in the stored papers—not inferred influence or citation.</div>",
         unsafe_allow_html=True,
     )
     people, collaboration_links = author_connections(approved)
@@ -1285,18 +1300,6 @@ with people_tab:
             for paper in approved
             if (parsed := parse_date(paper.get("initial_submission_date"))) is not None
         }
-    )
-    people_metrics = st.columns(4)
-    people_metrics[0].metric("Mapped authors", len(people))
-    people_metrics[1].metric("Repeated collaborations", len(repeat_links))
-    people_metrics[2].metric("Active years", len(active_years))
-    people_metrics[3].metric("Most recent year", max(active_years) if active_years else "—")
-
-    st.markdown("### Evidence-backed research geography")
-    st.caption(
-        "This map answers where the mapped research is being produced and what each centre "
-        "contributes. Locations and roles come only from cited affiliation evidence; paper "
-        "activity, materials, years and collaboration links are recalculated from the live archive."
     )
     institutions, institution_links, geo_coverage = institution_activity(approved)
     active_institutions = [item for item in institutions if item.get("paper_count", 0)]
@@ -1310,20 +1313,124 @@ with people_tab:
         or 0
     )
     paper_coverage = covered_papers / total_geo_papers if total_geo_papers else 0.0
-    geo_metrics = st.columns(4)
-    geo_metrics[0].metric("Represented papers", f"{covered_papers} / {total_geo_papers}")
-    geo_metrics[1].metric("Verified institutions", len(active_institutions))
-    geo_metrics[2].metric("Verified authors", int(geo_coverage.get("verified_authors", 0) or 0))
-    geo_metrics[3].metric("Countries", country_count)
+
+    community_metrics = st.columns(5)
+    community_metrics[0].metric("Mapped authors", len(people))
+    community_metrics[1].metric(
+        "Verified authors", int(geo_coverage.get("verified_authors", 0) or 0)
+    )
+    community_metrics[2].metric("Verified institutions", len(active_institutions))
+    community_metrics[3].metric("Countries", country_count)
+    community_metrics[4].metric("Repeated collaborations", len(repeat_links))
     st.progress(
         paper_coverage,
-        text=f"{paper_coverage:.1%} of scientifically mapped papers have at least one verified institution",
+        text=(
+            f"{paper_coverage:.1%} of mapped papers ({covered_papers}/{total_geo_papers}) have a "
+            "verified institution"
+        ),
     )
     registry_timestamp = geo_coverage.get("registry_updated")
     registry_label = short_date(str(registry_timestamp)) if registry_timestamp else "date unavailable"
     st.caption(
         f"Affiliations updated {registry_label} · "
         f"{int(geo_coverage.get('uncovered_papers', 0) or 0)} papers remain unresolved."
+    )
+
+    author_institutions: dict[str, list[dict]] = defaultdict(list)
+    for institution in active_institutions:
+        for author_name in institution.get("mapped_authors", []):
+            author_institutions[author_name].append(institution)
+
+    st.markdown("### Track a researcher")
+    st.caption(
+        "Type a name to jump to it. The profile below and the map in the Geography section both "
+        "follow your selection."
+    )
+    tracker_placeholder = "Select a researcher…"
+    tracked_author = st.selectbox(
+        "Researcher",
+        [tracker_placeholder] + [item["author"] for item in people],
+        key="tracked_author",
+        label_visibility="collapsed",
+    )
+    tracked_institutions: list[dict] = []
+    if tracked_author != tracker_placeholder:
+        profile = next(item for item in people if item["author"] == tracked_author)
+        tracked_institutions = author_institutions.get(tracked_author, [])
+        with st.container(border=True):
+            profile_columns = st.columns([3, 2])
+            with profile_columns[0]:
+                st.markdown(f"#### {html.escape(tracked_author)}")
+                span = (
+                    str(profile["first_year"])
+                    if profile["first_year"] == profile["latest_year"]
+                    else f"{profile['first_year']}–{profile['latest_year']}"
+                )
+                st.caption(
+                    f"{profile['papers']} mapped papers · active {span} · "
+                    f"{len(profile['years'])} active years"
+                )
+                if profile["materials"]:
+                    st.caption("Leading materials · " + " · ".join(profile["materials"]))
+            with profile_columns[1]:
+                st.markdown("**Verified institution**")
+                if tracked_institutions:
+                    st.markdown(
+                        "".join(
+                            f'<span class="geo-chip">📍 {html.escape(institution["institution"])}'
+                            + (
+                                f' · {html.escape(", ".join(v for v in [institution.get("city"), institution.get("country")] if v))}'
+                                if institution.get("city") or institution.get("country")
+                                else ""
+                            )
+                            + "</span>"
+                            for institution in tracked_institutions
+                        ),
+                        unsafe_allow_html=True,
+                    )
+                    st.caption("Shown as an orange marker on the map below.")
+                else:
+                    st.caption(
+                        "No verified institution on record yet — this researcher stays in the "
+                        "collaboration data only."
+                    )
+            st.markdown("**Papers**")
+            record_list = profile["records"]
+            for record in record_list[:6]:
+                title = html.escape(str(record.get("title", "Untitled")))
+                url = html.escape(str(record.get("abstract_url", "https://arxiv.org")))
+                year = short_date(record.get("initial_submission_date"))
+                focus = ecosystem_areas(record)[:2]
+                st.markdown(
+                    f'<div class="insight-row"><strong>{year}</strong> · '
+                    f'<a href="{url}" target="_blank">{title}</a>'
+                    f"{' · ' + html.escape(' / '.join(focus)) if focus else ''}</div>",
+                    unsafe_allow_html=True,
+                )
+            if len(record_list) > 6:
+                with st.expander(f"Show {len(record_list) - 6} more papers"):
+                    for record in record_list[6:]:
+                        title = html.escape(str(record.get("title", "Untitled")))
+                        url = html.escape(str(record.get("abstract_url", "https://arxiv.org")))
+                        year = short_date(record.get("initial_submission_date"))
+                        st.markdown(
+                            f'<div class="insight-row"><strong>{year}</strong> · '
+                            f'<a href="{url}" target="_blank">{title}</a></div>',
+                            unsafe_allow_html=True,
+                        )
+    else:
+        st.markdown(
+            '<div class="tracker-empty">Choose a researcher above to open their profile and '
+            "highlight their institution on the map.</div>",
+            unsafe_allow_html=True,
+        )
+
+    tracked_institution_ids = {item["id"] for item in tracked_institutions}
+
+    st.markdown("### Research geography")
+    st.caption(
+        "Locations and roles come only from cited affiliation evidence. Paper activity, "
+        "materials and collaboration links are recalculated from the live archive."
     )
 
     if active_institutions:
@@ -1362,6 +1469,15 @@ with people_tab:
                 "The default map emphasizes established centres. One-paper records and repeated "
                 "collaboration links remain available through the controls."
             )
+            if tracked_author != tracker_placeholder:
+                if tracked_institutions:
+                    st.markdown(
+                        f'<div class="map-note">📍 <strong>{html.escape(tracked_author)}</strong> is '
+                        "highlighted in orange below, regardless of the filters.</div>",
+                        unsafe_allow_html=True,
+                    )
+                else:
+                    st.caption(f"{tracked_author} has no verified institution to place on the map.")
             map_controls = st.columns([2, 2, 2, 2])
             country_filter = map_controls[0].selectbox(
                 "Country",
@@ -1399,7 +1515,7 @@ with people_tab:
                 f"Showing {len(visible_institutions)} of {len(active_institutions)} verified institutions."
             )
 
-            if not visible_institutions:
+            if not visible_institutions and not tracked_institution_ids:
                 st.info("No institution matches the current country and paper-count filters.")
             elif go is None:
                 st.warning(
@@ -1450,6 +1566,34 @@ with people_tab:
                             "No repeated institution-level collaboration is present in this view."
                         )
 
+                def hover_fields(item: dict) -> list:
+                    return [
+                        item["institution"],
+                        ", ".join(
+                            value for value in [item.get("city"), item.get("country")] if value
+                        ),
+                        item["paper_count"],
+                        item["author_count"],
+                        ", ".join(item.get("mapped_authors", [])[:4]) or "—",
+                        (
+                            "—"
+                            if not item["years"]
+                            else (
+                                str(item["years"][0])
+                                if len(item["years"]) == 1
+                                else f"{item['years'][0]}–{item['years'][-1]}"
+                            )
+                        ),
+                    ]
+
+                hover_template = (
+                    "<b>%{customdata[0]}</b><br>%{customdata[1]}<br>"
+                    "Mapped papers: %{customdata[2]}<br>"
+                    "Verified authors: %{customdata[3]}<br>"
+                    "Leading authors: %{customdata[4]}<br>"
+                    "Active years: %{customdata[5]}<extra></extra>"
+                )
+
                 map_figure.add_trace(
                     go.Scattergeo(
                         lon=[item["longitude"] for item in visible_institutions],
@@ -1457,78 +1601,91 @@ with people_tab:
                         mode="markers",
                         marker={
                             "size": [
-                                9 + 5 * min(item["paper_count"] ** 0.5, 3.5)
+                                10 + 5 * min(item["paper_count"] ** 0.5, 3.5)
                                 for item in visible_institutions
                             ],
                             "color": [item["paper_count"] for item in visible_institutions],
                             "colorscale": [
-                                [0.0, "#dbeafe"],
-                                [0.4, "#93c5fd"],
-                                [0.72, "#3b82f6"],
-                                [1.0, "#0f766e"],
+                                [0.0, "#a5b4fc"],
+                                [0.35, "#818cf8"],
+                                [0.65, "#4f46e5"],
+                                [1.0, "#1e1b4b"],
                             ],
-                            "line": {"color": "#f8fafc", "width": 0.9},
-                            "opacity": 0.88,
-                            "colorbar": {"title": "Papers", "thickness": 10},
+                            "line": {"color": "#ffffff", "width": 1.1},
+                            "opacity": 0.92,
+                            "colorbar": {
+                                "title": {"text": "Mapped papers", "side": "right"},
+                                "thickness": 12,
+                                "len": 0.62,
+                                "outlinewidth": 0,
+                                "tickfont": {"color": "#3a3f52", "size": 11},
+                            },
                             "cmin": 1,
                         },
-                        customdata=[
-                            [
-                                item["institution"],
-                                ", ".join(
-                                    value
-                                    for value in [item.get("city"), item.get("country")]
-                                    if value
-                                ),
-                                item["paper_count"],
-                                item["author_count"],
-                                ", ".join(item.get("mapped_authors", [])[:4]) or "—",
-                                (
-                                    "—"
-                                    if not item["years"]
-                                    else (
-                                        str(item["years"][0])
-                                        if len(item["years"]) == 1
-                                        else f"{item['years'][0]}–{item['years'][-1]}"
-                                    )
-                                ),
-                            ]
-                            for item in visible_institutions
-                        ],
-                        hovertemplate=(
-                            "<b>%{customdata[0]}</b><br>%{customdata[1]}<br>"
-                            "Mapped papers: %{customdata[2]}<br>"
-                            "Verified authors: %{customdata[3]}<br>"
-                            "Leading authors: %{customdata[4]}<br>"
-                            "Active years: %{customdata[5]}<extra></extra>"
-                        ),
+                        customdata=[hover_fields(item) for item in visible_institutions],
+                        hovertemplate=hover_template,
+                        name="Verified institutions",
                         showlegend=False,
                     )
                 )
+
+                highlight_items = [
+                    item for item in active_institutions if item["id"] in tracked_institution_ids
+                ]
+                if highlight_items:
+                    map_figure.add_trace(
+                        go.Scattergeo(
+                            lon=[item["longitude"] for item in highlight_items],
+                            lat=[item["latitude"] for item in highlight_items],
+                            mode="markers",
+                            marker={
+                                "size": 22,
+                                "symbol": "star",
+                                "color": "#f97316",
+                                "line": {"color": "#7c2d12", "width": 1.4},
+                                "opacity": 1,
+                            },
+                            customdata=[hover_fields(item) for item in highlight_items],
+                            hovertemplate=(
+                                f"<b>{html.escape(tracked_author)}</b><br>" + hover_template
+                            ),
+                            name=tracked_author,
+                            showlegend=False,
+                        )
+                    )
+
                 map_figure.update_geos(
                     projection_type=projection,
                     showland=True,
-                    landcolor="#e8eef5",
+                    landcolor="#e9ecf3",
                     showocean=True,
-                    oceancolor="#f8fbff",
+                    oceancolor="#f7f8fc",
                     showlakes=True,
-                    lakecolor="#edf5fb",
+                    lakecolor="#f7f8fc",
                     showcountries=True,
-                    countrycolor="#a7b4c2",
-                    coastlinecolor="#8190a5",
-                    coastlinewidth=0.7,
+                    countrycolor="#b7bcd0",
+                    coastlinecolor="#9aa0b8",
+                    coastlinewidth=0.6,
                     bgcolor="rgba(0,0,0,0)",
                 )
                 map_figure.update_layout(
                     height=500,
                     margin={"l": 0, "r": 0, "t": 4, "b": 0},
                     paper_bgcolor="rgba(0,0,0,0)",
-                    font={"color": "#172033"},
+                    font={"color": "#161b2b"},
                 )
                 st.plotly_chart(
                     map_figure,
                     use_container_width=True,
                     config={"displaylogo": False, "scrollZoom": False},
+                )
+                st.markdown(
+                    '<div class="map-note">'
+                    '<span><span class="legend-dot" style="background:#a5b4fc;"></span>Fewer papers</span>'
+                    '<span><span class="legend-dot" style="background:#1e1b4b;"></span>More papers</span>'
+                    '<span><span class="legend-dot" style="background:#f97316;"></span>Tracked researcher</span>'
+                    "</div>",
+                    unsafe_allow_html=True,
                 )
 
         with countries_view:
@@ -1683,100 +1840,66 @@ with people_tab:
     if not people:
         st.info("Author connections will appear as papers complete scientific review.")
     else:
-        st.markdown("### Community map")
-        map_columns = st.columns([3, 2])
-        with map_columns[0]:
-            top_people = pd.DataFrame(
-                [
-                    {
-                        "Author": item["author"],
-                        "Mapped papers": item["papers"],
-                        "Active span": (
-                            str(item["first_year"])
-                            if item["first_year"] == item["latest_year"]
-                            else f"{item['first_year']}–{item['latest_year']}"
-                        ),
-                    }
-                    for item in people[:20]
-                ]
+        with st.expander("Field-wide community stats · top authors, yearly trend, repeated pairs"):
+            map_columns = st.columns([3, 2])
+            with map_columns[0]:
+                st.markdown("**Most active authors**")
+                top_people = pd.DataFrame(
+                    [
+                        {
+                            "Author": item["author"],
+                            "Mapped papers": item["papers"],
+                            "Active span": (
+                                str(item["first_year"])
+                                if item["first_year"] == item["latest_year"]
+                                else f"{item['first_year']}–{item['latest_year']}"
+                            ),
+                        }
+                        for item in people[:20]
+                    ]
+                )
+                st.dataframe(
+                    top_people,
+                    hide_index=True,
+                    use_container_width=True,
+                    column_config={
+                        "Mapped papers": st.column_config.ProgressColumn(
+                            "Mapped papers",
+                            min_value=0,
+                            max_value=max(item["papers"] for item in people),
+                        )
+                    },
+                )
+            with map_columns[1]:
+                yearly_counts = Counter(
+                    parsed.year
+                    for paper in approved
+                    if (parsed := parse_date(paper.get("initial_submission_date"))) is not None
+                )
+                st.markdown("**Papers by year**")
+                st.bar_chart(
+                    pd.Series(yearly_counts, dtype="int64").sort_index(),
+                    x_label="Year",
+                    y_label="Mapped papers",
+                )
+            st.markdown("**Repeated co-author pairs**")
+            st.caption(
+                "Ranked by joint mapped papers. Single-paper links are hidden to keep this useful."
             )
-            st.dataframe(
-                top_people,
-                hide_index=True,
-                use_container_width=True,
-                column_config={
-                    "Mapped papers": st.column_config.ProgressColumn(
-                        "Mapped papers",
-                        min_value=0,
-                        max_value=max(item["papers"] for item in people),
-                    )
-                },
-            )
-        with map_columns[1]:
-            yearly_counts = Counter(
-                parsed.year
-                for paper in approved
-                if (parsed := parse_date(paper.get("initial_submission_date"))) is not None
-            )
-            st.markdown("#### Papers by year")
-            st.bar_chart(
-                pd.Series(yearly_counts, dtype="int64").sort_index(),
-                x_label="Year",
-                y_label="Mapped papers",
-            )
-
-    st.markdown("### Repeated co-author connections")
-    st.caption(
-        "Pairs are ranked by joint mapped papers. Single-paper links are hidden to keep the map useful."
-    )
-    if repeat_links:
-        st.dataframe(
-            pd.DataFrame(repeat_links[:30]).rename(
-                columns={
-                    "author_1": "Author",
-                    "author_2": "Collaborator",
-                    "joint_papers": "Joint mapped papers",
-                }
-            ),
-            hide_index=True,
-            use_container_width=True,
-        )
-    else:
-        st.info("No repeated co-author pair is present in the currently mapped archive.")
-
-    st.markdown("### Follow an author through the field")
-    selected_author = st.selectbox(
-        "Choose an author",
-        [item["author"] for item in people],
-        key="people_author",
-        disabled=not people,
-    )
-    if people and selected_author:
-        profile = next(item for item in people if item["author"] == selected_author)
-        profile_columns = st.columns(3)
-        profile_columns[0].metric("Mapped papers", profile["papers"])
-        profile_columns[1].metric(
-            "Active span",
-            (
-                str(profile["first_year"])
-                if profile["first_year"] == profile["latest_year"]
-                else f"{profile['first_year']}–{profile['latest_year']}"
-            ),
-        )
-        profile_columns[2].metric("Active years", len(profile["years"]))
-        if profile["materials"]:
-            st.caption("Leading material families · " + " · ".join(profile["materials"]))
-        for record in profile["records"]:
-            title = html.escape(str(record.get("title", "Untitled")))
-            url = html.escape(str(record.get("abstract_url", "https://arxiv.org")))
-            year = short_date(record.get("initial_submission_date"))
-            focus = ecosystem_areas(record)[:2]
-            st.markdown(
-                f'<div class="insight-row"><strong>{year}</strong> · '
-                f'<a href="{url}" target="_blank">{title}</a>'
-                f"{' · ' + html.escape(' / '.join(focus)) if focus else ''}</div>",
-                unsafe_allow_html=True,
-            )
+            if repeat_links:
+                st.dataframe(
+                    pd.DataFrame(repeat_links[:30]).rename(
+                        columns={
+                            "author_1": "Author",
+                            "author_2": "Collaborator",
+                            "joint_papers": "Joint mapped papers",
+                        }
+                    ),
+                    hide_index=True,
+                    use_container_width=True,
+                )
+            else:
+                st.info("No repeated co-author pair is present in the currently mapped archive.")
 
 st.divider()
 st.caption(
