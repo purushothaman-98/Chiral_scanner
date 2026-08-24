@@ -25,10 +25,10 @@ def main() -> None:
     if args.limit < 0 or args.max_limit < 1:
         raise SystemExit("--limit must be non-negative and --max-limit must be positive")
 
-    token = os.getenv("GITHUB_TOKEN") or os.getenv("GITHUB_MODELS_TOKEN")
+    token = os.getenv("ANTHROPIC_API_KEY")
     if not token:
-        raise SystemExit("GITHUB_TOKEN or GITHUB_MODELS_TOKEN is required")
-    model = os.getenv("GITHUB_MODELS_MODEL", DEFAULT_AI_MODEL)
+        raise SystemExit("ANTHROPIC_API_KEY is required")
+    model = os.getenv("ANTHROPIC_MODEL", DEFAULT_AI_MODEL)
     archive = load_json(args.archive, {"papers": []})
     eligible = [
         paper

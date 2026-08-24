@@ -29,7 +29,13 @@ from .scope import has_chiral_phonon_scope
 from .storage import fingerprint
 
 LOGGER = logging.getLogger(__name__)
-ENDPOINT = "https://models.github.ai/inference/chat/completions"
+# GitHub Models (the previous provider, called with the repo's own GITHUB_TOKEN) was fully
+# retired on 2026-07-30 -- https://github.blog/changelog/2026-07-30-github-models-is-now-retired/
+# Classification now runs on the Anthropic Messages API instead, using forced tool-use for the
+# same structured, schema-validated output the field taxonomy depends on.
+ENDPOINT = "https://api.anthropic.com/v1/messages"
+ANTHROPIC_VERSION = "2023-06-01"
+TOOL_NAME = "record_chiral_phonon_classification"
 MAX_RATE_LIMIT_WAIT_SECONDS = 90.0
 
 
@@ -57,8 +63,10 @@ def retry_after_seconds(response: requests.Response) -> float | None:
     return None
 
 
-def parse_decision(content: str) -> AIDecision:
-    payload = json.loads(content)
+def parse_decision(content: str | dict) -> AIDecision:
+    # A provider that returns a JSON string (chat-completions style) and one that returns an
+    # already-parsed object (Anthropic tool-use `input`) both land here.
+    payload = json.loads(content) if isinstance(content, str) else dict(content)
     # Length is presentation metadata, not scientific content. Normalize it locally
     # so an otherwise valid classification never consumes another model request.
     if isinstance(payload, dict) and isinstance(payload.get("reason"), str):
@@ -280,33 +288,33 @@ def classify_paper(
     }
     request_body = {
         "model": model,
+        "max_tokens": 1200,
+        "temperature": 0,
+        "system": build_system_prompt(),
         "messages": [
-            {"role": "system", "content": build_system_prompt()},
             {"role": "user", "content": json.dumps(user_payload, ensure_ascii=False)},
         ],
-        "temperature": 0,
-        "max_tokens": 1200,
-        "response_format": {
-            "type": "json_schema",
-            "json_schema": decision_schema(),
-        },
+        # Forcing tool use is Anthropic's equivalent of OpenAI's json_schema strict mode: the
+        # model must call this one tool, whose input_schema is the same canonical taxonomy.
+        "tools": [
+            {
+                "name": TOOL_NAME,
+                "description": "Record the structured scientific classification for this paper.",
+                "input_schema": decision_schema()["schema"],
+            }
+        ],
+        "tool_choice": {"type": "tool", "name": TOOL_NAME},
     }
     headers = {
-        "Accept": "application/vnd.github+json",
-        "Authorization": f"Bearer {token}",
-        "Content-Type": "application/json",
-        "X-GitHub-Api-Version": "2026-03-10",
+        "x-api-key": token,
+        "anthropic-version": ANTHROPIC_VERSION,
+        "content-type": "application/json",
     }
 
     last_error: Exception | None = None
     for attempt in range(retries):
         try:
             response = requests.post(ENDPOINT, headers=headers, json=request_body, timeout=timeout)
-            if response.status_code in {400, 422} and attempt == 0:
-                request_body["response_format"] = {"type": "json_object"}
-                response = requests.post(
-                    ENDPOINT, headers=headers, json=request_body, timeout=timeout
-                )
             if response.status_code == 429:
                 retry_after = retry_after_seconds(response)
                 if (
@@ -319,12 +327,20 @@ def classify_paper(
                     time.sleep(wait)
                     continue
                 raise RateLimitError(
-                    "GitHub Models rate limit reached; resume in the next checkpoint",
+                    "Anthropic rate limit reached; resume in the next checkpoint",
                     retry_after=retry_after,
                 )
             response.raise_for_status()
-            content = response.json()["choices"][0]["message"]["content"]
-            parsed = parse_decision(content)
+            body = response.json()
+            tool_call = next(
+                (block for block in body.get("content", []) if block.get("type") == "tool_use"),
+                None,
+            )
+            if tool_call is None:
+                raise ValueError(
+                    f"No tool_use block in Anthropic response (stop_reason={body.get('stop_reason')})"
+                )
+            parsed = parse_decision(tool_call["input"])
             if parsed.include_in_feed and not has_chiral_phonon_scope(
                 paper.get("title", ""), paper.get("abstract", "")
             ):

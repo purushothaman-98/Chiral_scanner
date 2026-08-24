@@ -8,7 +8,7 @@ TOPIC_DESCRIPTION = (
 PROMPT_VERSION = "chiral-phonons-v3.0"
 DEFAULT_INITIAL_DATE = "2017-01-01"
 DEFAULT_SCAN_OVERLAP_DAYS = 14
-DEFAULT_AI_MODEL = "openai/gpt-4.1-mini"
+DEFAULT_AI_MODEL = "claude-haiku-4-5-20251001"
 
 # Verified arXiv records anchoring the field map. These are documentation/seeding references;
 # the date-window collector remains unchanged and continues to deduplicate them normally when
