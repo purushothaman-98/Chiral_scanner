@@ -1445,18 +1445,48 @@
       "last_attempted_at": "2026-08-16T05:53:01.854037+00:00",
       "status": "unresolved",
       "reason": "no_conservative_match_or_resolved_affiliation"
+    },
+    "2608.21025": {
+      "attempt_count": 1,
+      "last_attempted_at": "2026-08-24T17:56:28.305150+00:00",
+      "status": "unresolved",
+      "reason": "no_conservative_match_or_resolved_affiliation"
+    },
+    "2608.13055": {
+      "attempt_count": 1,
+      "last_attempted_at": "2026-08-24T17:56:32.727914+00:00",
+      "status": "unresolved",
+      "reason": "no_conservative_match_or_resolved_affiliation"
+    },
+    "2608.04754": {
+      "attempt_count": 1,
+      "last_attempted_at": "2026-08-24T17:56:36.464468+00:00",
+      "status": "resolved",
+      "reason": null
+    },
+    "2608.01062": {
+      "attempt_count": 1,
+      "last_attempted_at": "2026-08-24T17:56:50.701229+00:00",
+      "status": "resolved",
+      "reason": null
+    },
+    "2607.26986": {
+      "attempt_count": 1,
+      "last_attempted_at": "2026-08-24T17:56:54.765274+00:00",
+      "status": "unresolved",
+      "reason": "no_conservative_match_or_resolved_affiliation"
     }
   },
   "schema_version": 2,
-  "last_run_at": "2026-08-24T06:01:55.490794+00:00",
-  "selected": 0,
-  "succeeded": 0,
-  "unresolved": 0,
+  "last_run_at": "2026-08-24T17:56:58.545194+00:00",
+  "selected": 5,
+  "succeeded": 2,
+  "unresolved": 3,
   "errors": 0,
   "runner_status": "success",
   "runner_exit_code": 0,
   "runner_event": "schedule",
-  "runner_commit": "4e37d026740b5a3af32fbcf5514bbe2f9a5fa1e4",
-  "runner_recorded_at": "2026-08-24T06:01:55.560967+00:00",
-  "runner_log_tail": "{\n  \"selected\": 0,\n  \"succeeded\": 0,\n  \"unresolved\": 0,\n  \"errors\": 0\n}\n"
+  "runner_commit": "d4de2289bc4bd098076caa0ba76325ca627b1912",
+  "runner_recorded_at": "2026-08-24T17:56:58.613814+00:00",
+  "runner_log_tail": "{\n  \"selected\": 5,\n  \"succeeded\": 2,\n  \"unresolved\": 3,\n  \"errors\": 0\n}\n"
 }

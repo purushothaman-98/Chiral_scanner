@@ -2324,6 +2324,21 @@
       "ror_id": "https://ror.org/042aqky30",
       "evidence_url": "https://openalex.org/I78650965",
       "source": "OpenAlex"
+    },
+    "openalex:I4210091658": {
+      "name": "Institute of Experimental Physics of the Slovak Academy of Sciences",
+      "short_name": "Institute of Experimental Physics of the Slovak Academy of Sciences",
+      "city": "Košice",
+      "region": null,
+      "country_code": "SK",
+      "country": "Slovakia",
+      "latitude": 48.713951110839844,
+      "longitude": 21.258079528808594,
+      "institution_type": "facility",
+      "openalex_id": "https://openalex.org/I4210091658",
+      "ror_id": "https://ror.org/0046rz373",
+      "evidence_url": "https://openalex.org/I4210091658",
+      "source": "OpenAlex"
     }
   },
   "papers": {
@@ -7725,6 +7740,78 @@
         "OpenAlex",
         "arXiv"
       ]
+    },
+    "2608.04754": {
+      "paper_id": "2608.04754",
+      "paper_version": 1,
+      "title": "Unifying microscopic theories for the phono-magnetic effect",
+      "doi": null,
+      "metadata_work_id": "https://openalex.org/W7201914033",
+      "openalex_work_id": "https://openalex.org/W7201914033",
+      "metadata_provider": "OpenAlex",
+      "match_method": "openalex_arxiv_url",
+      "match_score": 0.99,
+      "author_scope": "first_and_corresponding",
+      "authors": [
+        {
+          "paper_author_name": "Shabala, Natalia",
+          "name": "Shabala, Natalia",
+          "openalex_author_id": "https://openalex.org/A5098672759",
+          "orcid": null,
+          "author_position": "first",
+          "is_corresponding": false,
+          "author_roles": [
+            "first"
+          ],
+          "institution_ids": [
+            "openalex:I66862912"
+          ],
+          "affiliation_labels": [
+            "Department of Physics and Astronomy , Chalmers University of Technology , 412 96 Göteborg , Sweden"
+          ]
+        }
+      ],
+      "enriched_at": "2026-08-24T17:56:50.701014+00:00",
+      "sources": [
+        "OpenAlex",
+        "arXiv"
+      ]
+    },
+    "2608.01062": {
+      "paper_id": "2608.01062",
+      "paper_version": 1,
+      "title": "Magnetic circular dichroism of THz modes and selection rules of Raman-active optical phonons in the polar altermagnet candidate \\ce{Mn2Mo3O8}",
+      "doi": null,
+      "metadata_work_id": "https://openalex.org/W7172558748",
+      "openalex_work_id": "https://openalex.org/W7172558748",
+      "metadata_provider": "OpenAlex",
+      "match_method": "openalex_arxiv_url",
+      "match_score": 0.99,
+      "author_scope": "first_and_corresponding",
+      "authors": [
+        {
+          "paper_author_name": "Schilberth, F.",
+          "name": "Schilberth, F.",
+          "openalex_author_id": "https://openalex.org/A5144332712",
+          "orcid": null,
+          "author_position": "first",
+          "is_corresponding": false,
+          "author_roles": [
+            "first"
+          ],
+          "institution_ids": [
+            "openalex:I4210091658"
+          ],
+          "affiliation_labels": [
+            "Experimental Physics V , Center for Electronic Correlations and Magnetism ,"
+          ]
+        }
+      ],
+      "enriched_at": "2026-08-24T17:56:54.765138+00:00",
+      "sources": [
+        "OpenAlex",
+        "arXiv"
+      ]
     }
   },
   "unresolved": {
@@ -8471,13 +8558,31 @@
       "title": "Magnons, Phonons, and Thermal Hall Effect in Candidate Kitaev Magnet $α$-RuCl$_3$",
       "reason": "no_conservative_match_or_resolved_affiliation",
       "last_attempted_at": "2026-08-16T05:53:01.854037+00:00"
+    },
+    "2608.21025": {
+      "paper_id": "2608.21025",
+      "title": "Soft and chiral phonons in chiral phase of K3NiO2",
+      "reason": "no_conservative_match_or_resolved_affiliation",
+      "last_attempted_at": "2026-08-24T17:56:28.305150+00:00"
+    },
+    "2608.13055": {
+      "paper_id": "2608.13055",
+      "title": "Acoustic Tweezers for Magnetic Skyrmions",
+      "reason": "no_conservative_match_or_resolved_affiliation",
+      "last_attempted_at": "2026-08-24T17:56:32.727914+00:00"
+    },
+    "2607.26986": {
+      "paper_id": "2607.26986",
+      "title": "Theory of phonon-magnon hybridization and angular momentum in CrI$_3$ and CrBr$_3$",
+      "reason": "no_conservative_match_or_resolved_affiliation",
+      "last_attempted_at": "2026-08-24T17:56:54.765274+00:00"
     }
   },
   "schema_version": 2,
   "description": "Paper-specific first-author and explicitly identified corresponding-author affiliations from arXiv/OpenAlex/Crossref/ROR; uncertain identities remain unresolved.",
-  "generated_at": "2026-08-24T06:01:55.490794+00:00",
-  "eligible_field_papers": 241,
-  "resolved_papers": 117,
-  "unresolved_papers": 124,
+  "generated_at": "2026-08-24T17:56:58.545194+00:00",
+  "eligible_field_papers": 246,
+  "resolved_papers": 119,
+  "unresolved_papers": 127,
   "author_scope": "first_and_corresponding"
 }
