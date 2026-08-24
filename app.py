@@ -126,6 +126,11 @@ color:var(--accent-strong); background:#fff; font-size:.71rem; font-weight:560;}
 border-radius:10px; background:#fff; border:1px solid var(--line); color:var(--muted);
 font-size:.78rem; margin:.6rem 0 1.1rem;}
 .coverage strong {color:var(--ink); font-weight:640;}
+.coverage-alert {color:var(--warning) !important; font-weight:600;}
+.coverage-alert strong {color:var(--warning) !important;}
+.pipeline-alert {padding:.7rem .9rem; border-radius:10px; background:#fffbeb;
+border:1px solid #fcd34d; color:#78350f; font-size:.86rem; line-height:1.52; margin:.5rem 0 1rem;}
+.pipeline-alert strong {color:#78350f;}
 .section-kicker {color:var(--accent-strong); font-size:.68rem; font-weight:750; letter-spacing:.08em;
 text-transform:uppercase; margin-bottom:.15rem;}
 .section-intro {color:var(--muted); max-width:820px; font-size:.86rem; line-height:1.5;
@@ -261,6 +266,34 @@ def feed_status(paper: dict) -> str:
     return "Outside current field map"
 
 
+def classification_health(review_history: list[dict], *, stall_threshold: int = 4) -> dict:
+    """Read the scientific-review run log to detect a silently stuck AI pipeline.
+
+    The classify workflow catches every per-paper error and always exits 0, so a broken
+    provider never shows up as a failed GitHub Actions run — only as `succeeded: 0` on every
+    entry here. This looks at the tail of the log rather than trusting workflow status.
+    """
+    if not review_history:
+        return {"status": "unknown", "stalled_runs": 0, "last_success": None, "backlog": 0}
+    stalled_runs = 0
+    for run in reversed(review_history):
+        if run.get("selected", 0) > 0 and run.get("succeeded", 0) == 0:
+            stalled_runs += 1
+        else:
+            break
+    last_success = next(
+        (run for run in reversed(review_history) if run.get("succeeded", 0) > 0), None
+    )
+    latest = review_history[-1]
+    return {
+        "status": "stalled" if stalled_runs >= stall_threshold else "ok",
+        "stalled_runs": stalled_runs,
+        "last_success": last_success.get("review_timestamp") if last_success else None,
+        "backlog": int(latest.get("eligible_pending_after_run", 0) or 0),
+        "latest_timestamp": latest.get("review_timestamp"),
+    }
+
+
 def is_experimental_study(paper: dict) -> bool:
     return is_field_paper(paper) and is_experimental_evidence(paper)
 
@@ -380,6 +413,7 @@ def paper_card(paper: dict) -> None:
 archive, history, events, tools = load_all()
 review_history = load_json(DATA / "review_history.json", [])
 backfill_state = load_json(DATA / "backfill_state.json", {})
+review_health = classification_health(review_history)
 papers = archive.get("papers", [])
 statuses = {paper["base_arxiv_id"]: feed_status(paper) for paper in papers}
 approved = [p for p in papers if is_field_paper(p)]
@@ -441,9 +475,20 @@ coverage = (
     else "Archive coverage unavailable"
 )
 last_scan = history[-1].get("scan_timestamp") if history else archive.get("updated_at")
+if review_health["status"] == "stalled":
+    review_status_html = (
+        '<span class="coverage-alert">⚠ <strong>AI review</strong> · stalled since '
+        f"{short_date(review_health['last_success'])}"
+        f" ({review_health['backlog']} papers waiting)</span>"
+    )
+else:
+    review_status_html = (
+        f'<span><strong>AI review</strong> · current · {review_health["backlog"]} papers waiting</span>'
+    )
 st.markdown(
     f'<div class="coverage"><span><strong>Coverage</strong> · {coverage.removeprefix("Archive coverage: ")}</span>'
     f"<span><strong>Last scan</strong> · {short_date(last_scan)}</span>"
+    f"{review_status_html}"
     f"<span><strong>Open interpretation</strong> · {len(review_queue)}</span>"
     f"<span><strong>Backfill checkpoint</strong> · "
     f"{html.escape(str(backfill_state.get('next_until', 'not started')))}</span></div>",
@@ -482,6 +527,17 @@ with overview_tab:
         "scientific landscape, and Community for institutions and collaborators.</div>",
         unsafe_allow_html=True,
     )
+    if review_health["status"] == "stalled":
+        st.markdown(
+            '<div class="pipeline-alert">⚠ <strong>Scientific review is currently stalled.</strong> '
+            f"The daily arXiv scan is still running normally, but automated classification has not "
+            f"completed successfully since <strong>{short_date(review_health['last_success'])}</strong> "
+            f"({review_health['stalled_runs']} consecutive failed runs). "
+            f"<strong>{review_health['backlog']} scope-matching papers</strong> are queued and will be "
+            "classified as soon as the AI review provider is restored — see Methods & pipeline for the "
+            "run-by-run detail. Papers already in the field map below are unaffected.</div>",
+            unsafe_allow_html=True,
+        )
     evidence_gap = max(brief["strong"] - brief["experimental"], 0)
     evidence_metrics = st.columns(4)
     evidence_metrics[0].metric("Experimental studies", brief["experimental"])
@@ -1242,12 +1298,33 @@ with admin_tab:
             st.caption("Historical backfill")
             st.write("02:10 · 08:10 · 14:10 · 20:10 UTC")
 
-    status_columns = st.columns(2)
+    status_columns = st.columns(3)
     status_columns[0].metric("Backfill next date", backfill_state.get("next_until", "—"))
     status_columns[1].metric(
-        "Last review succeeded",
-        review_history[-1].get("succeeded", 0) if review_history else 0,
+        "Last review run", review_history[-1].get("succeeded", 0) if review_history else 0,
+        help="Papers successfully classified in the most recent scheduled run.",
     )
+    status_columns[2].metric("Classification backlog", review_health["backlog"])
+
+    if review_health["status"] == "stalled":
+        st.error(
+            f"**Scientific review is stalled.** The last {review_health['stalled_runs']} "
+            "consecutive runs classified 0 papers each, even though the workflow itself reports "
+            "success — the classify script defers failures instead of crashing the job, so this "
+            "never shows up as a red run in GitHub Actions. "
+            f"Last successful classification: **{short_date(review_health['last_success'])}**. "
+            f"**{review_health['backlog']} papers** are queued behind this. The daily metadata scan "
+            "and historical backfill are unaffected and continue on schedule.\n\n"
+            "This needs a fix in `src/chiral_scanner/ai_classifier.py` / `scripts/classify_ai.py` — "
+            "check the latest **AI classify arXiv papers** workflow run's logs on GitHub for the "
+            "exact error before changing the provider or endpoint."
+        )
+    elif review_history:
+        st.success(
+            f"Scientific review is current. Last successful run: "
+            f"{short_date(review_health['latest_timestamp'])} · "
+            f"{review_health['backlog']} papers in the backlog."
+        )
 
     with st.expander("Owner controls · run a metadata scan"):
         st.caption(
