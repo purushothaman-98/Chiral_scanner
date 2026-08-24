@@ -9,6 +9,7 @@ import sys
 from collections import Counter, defaultdict
 from datetime import date, datetime, timezone
 from pathlib import Path
+from urllib.parse import quote
 
 # Streamlit Cloud can retain an older editable package between rapid redeploys. Ensure the
 # checked-out source tree wins over any stale site-packages copy before project imports.
@@ -83,9 +84,21 @@ st.set_page_config(
     page_title="Chiral Phonon Research Scanner",
     page_icon="◉",
     layout="wide",
-    initial_sidebar_state="collapsed",
+    initial_sidebar_state="auto",
 )
 
+st.markdown(
+    """
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+""",
+    unsafe_allow_html=True,
+)
+
+# A single st.markdown mixing the font <link> tags above with this much CSS in one <style> block
+# breaks Streamlit's HTML sanitizer (the whole block falls back to rendering as visible text) --
+# verified empirically against this pinned Streamlit version. Keeping them in separate calls avoids it.
 st.markdown(
     """
 <style>
@@ -105,23 +118,61 @@ st.markdown(
   --danger:#be123c;
   --radius:12px;
   --shadow:0 1px 2px rgba(23,26,50,.04), 0 6px 16px rgba(23,26,50,.05);
+  --shadow-lg:0 8px 28px rgba(30,27,75,.10), 0 2px 6px rgba(30,27,75,.06);
+  --font-body:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display:'Manrope', 'Inter', -apple-system, sans-serif;
 }
 html {color-scheme:light;}
 * {scrollbar-color:#c7cbdc transparent;}
-.block-container {padding-top:1.1rem; padding-bottom:3rem; max-width:1160px;}
-.stApp {background:#f5f6fb; color:var(--ink); font-feature-settings:"ss01";}
+html, body, [class*="css"] {font-family:var(--font-body);}
+.block-container {padding-top:1.2rem; padding-bottom:3.5rem; max-width:1240px;}
+.stApp {background:#f5f6fb; color:var(--ink); font-feature-settings:"ss01"; font-family:var(--font-body);}
 header[data-testid="stHeader"] {background:rgba(245,246,251,.92); backdrop-filter:blur(6px);}
-.hero {padding:1.35rem 1.5rem; border-radius:16px; margin-bottom:1rem;
-background:linear-gradient(135deg,#fff 0%,#f2f1ff 100%); border:1px solid var(--line); box-shadow:var(--shadow);}
+h1, h2, h3, h4, h5, .hero h1, .journey-card h3 {font-family:var(--font-display); letter-spacing:-.02em;}
+
+/* Sidebar app-shell */
+section[data-testid="stSidebar"] {background:#fff; border-right:1px solid var(--line);}
+section[data-testid="stSidebar"] .block-container {padding-top:1.4rem;}
+.brand {display:flex; align-items:center; gap:.6rem; margin-bottom:.15rem;}
+.brand-mark {width:2.3rem; height:2.3rem; border-radius:10px; display:flex; align-items:center;
+justify-content:center; background:linear-gradient(135deg,var(--accent) 0%,#7c3aed 100%);
+color:#fff; font-size:1.15rem; box-shadow:var(--shadow);}
+.brand-name {font-family:var(--font-display); font-weight:800; font-size:1.02rem; color:var(--ink);
+line-height:1.15;}
+.brand-sub {color:var(--muted); font-size:.72rem; margin:0;}
+.sidebar-status {display:flex; align-items:center; gap:.4rem; padding:.45rem .6rem; border-radius:9px;
+background:var(--accent-soft); font-size:.76rem; color:var(--accent-strong); font-weight:600; margin:.85rem 0 .6rem;}
+.sidebar-status.warn {background:#fffbeb; color:#92400e;}
+.sidebar-status .dot {width:.42rem; height:.42rem; border-radius:999px; background:#10b981; flex-shrink:0;}
+.sidebar-status.warn .dot {background:#d97706;}
+.sidebar-stats {display:grid; grid-template-columns:1fr 1fr; gap:.5rem; margin:.7rem 0 .3rem;}
+.sidebar-stat {padding:.5rem .6rem; border-radius:9px; background:var(--soft); border:1px solid var(--line);}
+.sidebar-stat b {display:block; font-family:var(--font-display); font-size:1.08rem; color:var(--ink);}
+.sidebar-stat span {font-size:.66rem; color:var(--muted); text-transform:uppercase; letter-spacing:.04em;}
+.sidebar-tool-link {display:block; padding:.4rem .55rem; margin:.18rem 0; border-radius:8px;
+color:#374057; font-size:.8rem; text-decoration:none; border:1px solid transparent;}
+.sidebar-tool-link:hover {background:var(--accent-soft); border-color:#d9dcf5; color:var(--accent-strong);}
+.sidebar-tool-link .arrow {float:right; opacity:.5;}
+
+.hero {position:relative; overflow:hidden; padding:1.7rem 1.9rem; border-radius:18px; margin-bottom:1.1rem;
+background:linear-gradient(135deg,#fff 0%,#f2f1ff 60%,#eef4ff 100%); border:1px solid var(--line);
+box-shadow:var(--shadow-lg);}
+.hero::before {content:""; position:absolute; top:-40%; right:-10%; width:22rem; height:22rem;
+border-radius:999px; background:radial-gradient(circle,rgba(124,58,237,.10) 0%,rgba(124,58,237,0) 70%);
+pointer-events:none;}
+.hero::after {content:""; position:absolute; bottom:-50%; left:-8%; width:18rem; height:18rem;
+border-radius:999px; background:radial-gradient(circle,rgba(37,99,235,.08) 0%,rgba(37,99,235,0) 70%);
+pointer-events:none;}
+.hero-inner {position:relative; z-index:1;}
 .hero-kicker {display:flex; align-items:center; gap:.45rem; color:var(--accent-strong); font-size:.71rem;
-font-weight:750; letter-spacing:.08em; text-transform:uppercase; margin-bottom:.5rem;}
+font-weight:750; letter-spacing:.08em; text-transform:uppercase; margin-bottom:.55rem;}
 .live-dot {width:.46rem; height:.46rem; border-radius:999px; background:#10b981;
 box-shadow:0 0 0 4px rgba(16,185,129,.14); display:inline-block;}
-.hero h1 {margin:0; color:var(--ink); font-size:2.05rem; letter-spacing:-.04em; line-height:1.1;}
-.hero p {max-width:800px; color:var(--muted); font-size:.94rem; line-height:1.55; margin:.5rem 0 .65rem;}
+.hero h1 {margin:0; color:var(--ink); font-size:2.35rem; font-weight:800; letter-spacing:-.03em; line-height:1.08;}
+.hero p {max-width:760px; color:var(--muted); font-size:.97rem; line-height:1.6; margin:.65rem 0 .8rem;}
 .hero-tags {display:flex; flex-wrap:wrap; gap:.4rem;}
-.hero-tag {padding:.22rem .58rem; border:1px solid #d9dcf5; border-radius:999px;
-color:var(--accent-strong); background:#fff; font-size:.71rem; font-weight:560;}
+.hero-tag {padding:.24rem .62rem; border:1px solid #d9dcf5; border-radius:999px;
+color:var(--accent-strong); background:#fff; font-size:.72rem; font-weight:560;}
 .coverage {display:flex; flex-wrap:wrap; gap:.35rem 1.1rem; padding:.55rem .8rem;
 border-radius:10px; background:#fff; border:1px solid var(--line); color:var(--muted);
 font-size:.78rem; margin:.6rem 0 1.1rem;}
@@ -169,11 +220,24 @@ div[data-testid="stMetric"] {padding:.65rem .78rem; background:#fff; border:1px 
 border-radius:11px; min-height:80px; box-shadow:var(--shadow);}
 div[data-testid="stMetricLabel"] {font-size:.72rem; color:#6a7180;}
 div[data-testid="stMetricValue"] {font-size:1.42rem; color:var(--ink); font-weight:650;}
-div[data-baseweb="tab-list"] {gap:.14rem; padding:0; border-bottom:1px solid var(--line);
-background:transparent; overflow-x:auto;}
-button[data-baseweb="tab"] {border-radius:8px 8px 0 0; padding:.45rem .68rem; color:#5c6472; font-size:.85rem;}
-button[data-baseweb="tab"][aria-selected="true"] {color:var(--accent-strong); background:var(--accent-soft); font-weight:600;}
-button[data-baseweb="tab"]:focus-visible, .stButton > button:focus-visible,
+/* Streamlit's Tabs markup has changed across versions (BaseWeb <button data-baseweb="tab"> in
+older releases, a React Aria <div data-testid="stTab" role="tab"> in newer ones) -- both
+selector families are targeted together so this survives an upgrade either way. */
+div[data-baseweb="tab-list"], [role="tablist"] {gap:.22rem; padding:.3rem; border-radius:12px;
+border-bottom:none; background:#fff; border:1px solid var(--line); box-shadow:var(--shadow);
+overflow-x:auto; margin-bottom:.3rem;}
+button[data-baseweb="tab"], [data-testid="stTab"] {border-radius:9px; padding:.5rem .85rem;
+color:#5c6472; font-size:.86rem; font-weight:560; cursor:pointer;
+transition:background .12s ease, color .12s ease;}
+button[data-baseweb="tab"]:hover, [data-testid="stTab"]:hover {background:#f4f5fb; color:var(--ink);}
+button[data-baseweb="tab"][aria-selected="true"], [data-testid="stTab"][aria-selected="true"] {
+color:#fff !important; font-weight:650;
+background:linear-gradient(135deg,var(--accent) 0%,var(--accent-strong) 100%) !important;
+box-shadow:0 2px 8px rgba(79,70,229,.28);}
+[data-testid="stTab"][aria-selected="true"] p {color:#fff !important;}
+div[data-baseweb="tab-highlight"], .react-aria-SelectionIndicator {display:none;}
+button[data-baseweb="tab"]:focus-visible, [data-testid="stTab"]:focus-visible,
+.stButton > button:focus-visible,
 .stLinkButton > a:focus-visible {outline:3px solid rgba(79,70,229,.35); outline-offset:2px;}
 div[data-testid="stExpander"] {border-color:var(--line); border-radius:10px; background:#fff;}
 div[data-testid="stVerticalBlockBorderWrapper"] {border-color:var(--line); border-radius:11px; background:#fff;}
@@ -191,14 +255,19 @@ background:#fafafe; color:var(--muted); font-size:.84rem; margin:.5rem 0 1rem;}
 border-radius:999px; background:#fff7ed; border:1px solid #fdba74; color:#9a3412; font-size:.73rem; font-weight:560;}
 .map-note {display:flex; flex-wrap:wrap; gap:.3rem 1rem; color:var(--muted); font-size:.74rem; margin:.35rem 0 .1rem;}
 .legend-dot {display:inline-block; width:.6rem; height:.6rem; border-radius:999px; margin-right:.3rem; vertical-align:middle;}
+.tool-row {display:flex; flex-wrap:wrap; gap:.35rem; margin:.5rem 0 .1rem;}
+.tool-chip {padding:.24rem .58rem; border-radius:999px; border:1px solid var(--line); background:#fff;
+color:#3a4256; font-size:.71rem; font-weight:560; text-decoration:none; transition:all .12s ease;}
+.tool-chip:hover {border-color:var(--accent); color:var(--accent-strong); background:var(--accent-soft);}
 @media (max-width:700px) {
   .block-container {padding:.7rem .65rem 2rem;}
-  .hero {padding:1rem 1rem;}
-  .hero h1 {font-size:1.6rem;}
+  .hero {padding:1.1rem 1.1rem;}
+  .hero h1 {font-size:1.65rem;}
   .hero p {font-size:.85rem;}
   .coverage {display:block; line-height:1.65;}
   div[data-testid="stMetric"] {min-height:74px; padding:.5rem .55rem;}
-  button[data-baseweb="tab"] {padding:.38rem .5rem; font-size:.76rem;}
+  button[data-baseweb="tab"], [data-testid="stTab"] {padding:.38rem .5rem; font-size:.76rem;}
+  .sidebar-stats {grid-template-columns:1fr 1fr;}
 }
 </style>
 """,
@@ -312,6 +381,47 @@ def badges(values: list[str], status: str | None = None) -> str:
     return "".join(result)
 
 
+def bibtex_citation(paper: dict) -> str:
+    """Build a standard arXiv BibTeX entry from stored metadata — no extra API call needed."""
+    arxiv_id = str(paper.get("base_arxiv_id", "")).strip()
+    authors = [str(author) for author in paper.get("authors", []) if author]
+    year = (parse_date(paper.get("initial_submission_date")) or datetime.now(timezone.utc)).year
+    first_author_surname = authors[0].split()[-1] if authors else "anon"
+    key = f"{first_author_surname}{year}{arxiv_id.split('.')[0] if arxiv_id else ''}"
+    key = "".join(ch for ch in key if ch.isalnum())
+    categories = paper.get("categories") or []
+    lines = [
+        f"@misc{{{key},",
+        f"  title={{ {paper.get('title', 'Untitled')} }},",
+    ]
+    if authors:
+        lines.append(f"  author={{ {' and '.join(authors)} }},")
+    lines.append(f"  year={{ {year} }},")
+    lines.append(f"  eprint={{ {arxiv_id} }},")
+    lines.append("  archivePrefix={arXiv},")
+    if categories:
+        lines.append(f"  primaryClass={{ {categories[0]} }},")
+    lines.append(f"  url={{ https://arxiv.org/abs/{arxiv_id} }},")
+    lines.append("}")
+    return "\n".join(lines)
+
+
+def external_tool_links(paper: dict) -> str:
+    """arXiv-adjacent research tools, built from stored metadata only — no extra API calls."""
+    arxiv_id = str(paper.get("base_arxiv_id", "")).strip()
+    title_query = quote(str(paper.get("title", "")))
+    links = [
+        ("Semantic Scholar", f"https://www.semanticscholar.org/arxiv/{arxiv_id}"),
+        ("alphaXiv (discuss)", f"https://www.alphaxiv.org/abs/{arxiv_id}"),
+        ("Google Scholar", f"https://scholar.google.com/scholar?q={title_query}"),
+        ("arXiv export", f"https://arxiv.org/format/{arxiv_id}"),
+    ]
+    return "".join(
+        f'<a class="tool-chip" href="{link_url}" target="_blank">{html.escape(label)} ↗</a>'
+        for label, link_url in links
+    )
+
+
 def paper_card(paper: dict) -> None:
     """Render a scan-friendly paper summary with full evidence on demand."""
     decision = paper.get("ai_decision") or {}
@@ -408,6 +518,13 @@ def paper_card(paper: dict) -> None:
             else:
                 st.info("This paper is stored safely but has not completed scientific review.")
             st.caption("arXiv categories · " + ", ".join(paper.get("categories", [])))
+            st.markdown(
+                f'<div class="tool-row">{external_tool_links(paper)}</div>',
+                unsafe_allow_html=True,
+            )
+            with st.popover("Cite ↗"):
+                st.caption("BibTeX, built from this paper's stored arXiv metadata.")
+                st.code(bibtex_citation(paper), language="bibtex")
 
 
 archive, history, events, tools = load_all()
@@ -428,9 +545,54 @@ direct_evidence = [
 ]
 brief = field_brief(papers)
 
+with st.sidebar:
+    st.markdown(
+        '<div class="brand"><div class="brand-mark">◉</div><div>'
+        '<div class="brand-name">Chiral Phonon<br>Scanner</div>'
+        '<p class="brand-sub">Field intelligence, daily</p></div></div>',
+        unsafe_allow_html=True,
+    )
+    if review_health["status"] == "stalled":
+        st.markdown(
+            '<div class="sidebar-status warn"><span class="dot"></span>AI review stalled</div>',
+            unsafe_allow_html=True,
+        )
+    else:
+        st.markdown(
+            '<div class="sidebar-status"><span class="dot"></span>Pipeline current</div>',
+            unsafe_allow_html=True,
+        )
+    st.markdown(
+        f'<div class="sidebar-stats">'
+        f'<div class="sidebar-stat"><b>{len(papers):,}</b><span>Archive</span></div>'
+        f'<div class="sidebar-stat"><b>{len(approved):,}</b><span>Field ecosystem</span></div>'
+        f"</div>",
+        unsafe_allow_html=True,
+    )
+    st.divider()
+    st.markdown("**Explore arXiv directly**")
+    for label, tool_url in [
+        ("arXiv advanced search", "https://arxiv.org/search/?searchtype=all&query=chiral+phonon"),
+        ("New · cond-mat.mtrl-sci", "https://arxiv.org/list/cond-mat.mtrl-sci/recent"),
+        ("New · cond-mat.mes-hall", "https://arxiv.org/list/cond-mat.mes-hall/recent"),
+        ("arXiv API documentation", "https://info.arxiv.org/help/api/index.html"),
+        ("Semantic Scholar search", "https://www.semanticscholar.org/search?q=chiral%20phonon&sort=relevance"),
+        ("Google Scholar search", "https://scholar.google.com/scholar?q=chiral+phonon"),
+    ]:
+        st.markdown(
+            f'<a class="sidebar-tool-link" href="{tool_url}" target="_blank">{html.escape(label)}'
+            f'<span class="arrow">↗</span></a>',
+            unsafe_allow_html=True,
+        )
+    st.divider()
+    st.caption(
+        "Independent research tool using the official arXiv API. Not affiliated with or "
+        "endorsed by arXiv."
+    )
+
 st.markdown(
     """
-<div class="hero">
+<div class="hero"><div class="hero-inner">
 <div class="hero-kicker"><span class="live-dot"></span> Daily arXiv intelligence · 04:00 UTC</div>
 <h1>Chiral phonon field tracker</h1>
 <p>A researcher-first map of how the field is changing—from phonon angular momentum and
@@ -440,7 +602,7 @@ interpretation and prediction remain visibly distinct.</p>
 <span class="hero-tag">Field history</span><span class="hero-tag">Latest papers</span>
 <span class="hero-tag">Materials & methods</span><span class="hero-tag">THz frontier</span>
 </div>
-</div>
+</div></div>
 """,
     unsafe_allow_html=True,
 )
@@ -505,13 +667,13 @@ st.markdown(
     admin_tab,
 ) = st.tabs(
     [
-        "Brief",
-        "Papers",
-        "Evidence atlas",
-        "Trends",
-        "Community",
-        "Ecosystem",
-        "Methods & pipeline",
+        "🏠 Brief",
+        "📄 Papers",
+        "🧭 Evidence atlas",
+        "📈 Trends",
+        "🌍 Community",
+        "🧪 Ecosystem",
+        "⚙️ Methods & pipeline",
     ]
 )
 
