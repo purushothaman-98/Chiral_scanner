@@ -16,11 +16,12 @@ def test_all_dashboard_tabs_render_without_an_exception():
         "Evidence atlas",
         "Trends",
         "Community",
-        "Signals",
-        "Opportunities",
+        "Ecosystem",
         "Methods & pipeline",
     ]:
         assert label in labels
+    # Breakthroughs (formerly the standalone "Signals" tab) now lives inside Ecosystem.
+    assert "Breakthroughs" in labels
 
 
 def test_legacy_industry_record_does_not_break_later_tabs(monkeypatch):

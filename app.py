@@ -501,7 +501,6 @@ st.markdown(
     history_tab,
     analysis_tab,
     people_tab,
-    news_tab,
     ecosystem_tab,
     admin_tab,
 ) = st.tabs(
@@ -511,8 +510,7 @@ st.markdown(
         "Evidence atlas",
         "Trends",
         "Community",
-        "Signals",
-        "Opportunities",
+        "Ecosystem",
         "Methods & pipeline",
     ]
 )
@@ -946,27 +944,20 @@ with analysis_tab:
     st.markdown('<div class="section-kicker">Research landscape</div>', unsafe_allow_html=True)
     st.subheader("How the field is evolving")
     st.markdown(
-        '<div class="section-intro">The dashboard follows one unifying question—<strong>how '
-        "lattice motion carries, generates or transfers angular momentum</strong>—without "
-        "collapsing true eigenmode chirality, driven circular motion and pseudo-angular "
-        "momentum into one label.</div>",
+        '<div class="section-intro">One unifying question — <strong>how lattice motion carries, '
+        "generates or transfers angular momentum</strong> — tracked without collapsing true "
+        "eigenmode chirality, driven circular motion and pseudo-angular momentum into one label.</div>",
         unsafe_allow_html=True,
     )
-    evidence_gap = max(brief["strong"] - brief["experimental"], 0)
-    st.markdown(
-        f'<div class="brief"><strong>Field brief</strong> · The archive contains '
-        f"{brief['strong']} strong scientific signals. {brief['experimental']} have original "
-        f"experimental evidence and {brief['direct']} are classified as direct measurements. "
-        f"The remaining evidence gap is {evidence_gap} prediction, theory or non-direct records. "
-        f"{brief['needs_interpretation']} mapped records need careful interpretation rather than "
-        "automatic promotion as core results.</div>",
-        unsafe_allow_html=True,
+    landscape_metrics = st.columns(4)
+    landscape_metrics[0].metric("Field-map papers", len(approved))
+    landscape_metrics[1].metric("Experimental", brief["experimental"])
+    landscape_metrics[2].metric("Direct evidence", len(direct_evidence))
+    landscape_metrics[3].metric("THz & ultrafast", len(thz_frontier))
+    st.caption(
+        "A paper may belong to several overlapping research communities at once — these figures "
+        "are not mutually exclusive categories."
     )
-    snapshot = st.columns(4)
-    snapshot[0].metric("Strong signals", brief["strong"])
-    snapshot[1].metric("Experimental", brief["experimental"])
-    snapshot[2].metric("Direct measurement", brief["direct"])
-    snapshot[3].metric("Needs interpretation", brief["needs_interpretation"])
 
     st.markdown("### What the collected literature is concentrating on")
     trend_columns = st.columns(3)
@@ -983,44 +974,34 @@ with analysis_tab:
                         st.markdown(f"**{count}** · {label}")
                 else:
                     st.caption("Not enough classified evidence yet.")
-    guide = st.columns(4)
-    with guide[0]:
-        with st.container(border=True):
-            st.markdown("#### 1 · Identify")
-            st.write(
+
+    with st.expander("Research framework · identify → generate → detect → use"):
+        guide = st.columns(4)
+        with guide[0]:
+            st.markdown("**1 · Identify**")
+            st.caption(
                 "Resolve symmetry, handedness, circular ionic motion and phonon angular momentum."
             )
-    with guide[1]:
-        with st.container(border=True):
-            st.markdown("#### 2 · Generate")
-            st.write(
+        with guide[1]:
+            st.markdown("**2 · Generate**")
+            st.caption(
                 "Use THz/mid-IR pulses, nonlinear coupling, magnetic order or thermal imbalance."
             )
-    with guide[2]:
-        with st.container(border=True):
-            st.markdown("#### 3 · Detect")
-            st.write(
+        with guide[2]:
+            st.markdown("**3 · Detect**")
+            st.caption(
                 "Distinguish direct motion or torque from selection rules and magneto-optical inference."
             )
-    with guide[3]:
-        with st.container(border=True):
-            st.markdown("#### 4 · Use")
-            st.write(
+        with guide[3]:
+            st.markdown("**4 · Use**")
+            st.caption(
                 "Track transfer into spins, electrons, excitons, orbital currents and heat transport."
             )
-    st.link_button(
-        "Community field map · CECAM ↗",
-        "https://www.cecam.org/workshop-details/chiral-phonons-in-quantum-materials-1202",
-    )
-    pipeline_metrics = st.columns(4)
-    pipeline_metrics[0].metric("Field-map papers", len(approved))
-    pipeline_metrics[1].metric("THz & ultrafast", len(thz_frontier))
-    pipeline_metrics[2].metric("Experimental", len(experimental))
-    pipeline_metrics[3].metric("Direct evidence", len(direct_evidence))
-    st.caption(
-        "The map follows overlapping research communities rather than forcing one definition "
-        "of a chiral phonon. A paper may belong to several areas at once."
-    )
+        st.link_button(
+            "Community field map · CECAM ↗",
+            "https://www.cecam.org/workshop-details/chiral-phonons-in-quantum-materials-1202",
+        )
+
     if not approved:
         st.info("Analysis will appear as current AI classifications are completed.")
     else:
@@ -1094,48 +1075,57 @@ with analysis_tab:
                 ]
             )
 
-with news_tab:
-    st.markdown('<div class="section-kicker">Breakthroughs</div>', unsafe_allow_html=True)
-    st.subheader("Breakthrough coverage")
-    st.markdown(
-        '<div class="section-intro">A concise editorial layer for major experimental and '
-        "conceptual milestones. It is curated separately from the automated arXiv feed so "
-        "coverage never becomes classification evidence.</div>",
-        unsafe_allow_html=True,
-    )
-    news_columns = st.columns(2)
-    for index, item in enumerate(
-        sorted(NEWS, key=lambda value: str(value.get("year", "")), reverse=True)
-    ):
-        with news_columns[index % 2]:
-            with st.container(border=True):
-                st.caption(
-                    " · ".join(
-                        [
-                            record_text(item, "outlet", default="Source not specified"),
-                            record_text(item, "year", default="Date not specified"),
-                            record_text(item, "kind", default="Coverage"),
-                        ]
-                    )
-                )
-                st.markdown(f"#### {record_text(item, 'title', default='Untitled coverage')}")
-                st.write(record_text(item, "summary", default="Summary pending."))
-                if url := source_url(item):
-                    st.link_button("Read primary source ↗", url)
-
 with ecosystem_tab:
     st.markdown('<div class="section-kicker">Research ecosystem</div>', unsafe_allow_html=True)
-    st.subheader("Projects, opportunities and enabling infrastructure")
+    st.subheader("Breakthroughs, projects and enabling infrastructure")
     st.markdown(
-        '<div class="section-intro">Verified projects, open funding portals, community events and '
-        "industry-adjacent capabilities are kept in separate views so researchers can distinguish "
-        "a funded chiral-phonon programme from a general opportunity or market signal.</div>",
+        '<div class="section-intro">Editorial breakthroughs, verified projects, funding portals, '
+        "community events and industry-adjacent signals are kept in separate views so a funded "
+        "chiral-phonon programme is never confused with a general opportunity or market signal.</div>",
         unsafe_allow_html=True,
     )
 
-    projects_view, funding_view, industry_view, community_view, resources_view = st.tabs(
-        ["Verified projects", "Funding watch", "Industry signals", "Community", "Resources"]
+    (
+        breakthroughs_view,
+        projects_view,
+        funding_view,
+        industry_view,
+        community_view,
+        resources_view,
+    ) = st.tabs(
+        [
+            "Breakthroughs",
+            "Verified projects",
+            "Funding watch",
+            "Industry signals",
+            "Community",
+            "Resources",
+        ]
     )
+    with breakthroughs_view:
+        st.caption(
+            "A concise editorial layer for major experimental and conceptual milestones — curated "
+            "separately from the automated arXiv feed so coverage never becomes classification evidence."
+        )
+        news_columns = st.columns(2)
+        for index, item in enumerate(
+            sorted(NEWS, key=lambda value: str(value.get("year", "")), reverse=True)
+        ):
+            with news_columns[index % 2]:
+                with st.container(border=True):
+                    st.caption(
+                        " · ".join(
+                            [
+                                record_text(item, "outlet", default="Source not specified"),
+                                record_text(item, "year", default="Date not specified"),
+                                record_text(item, "kind", default="Coverage"),
+                            ]
+                        )
+                    )
+                    st.markdown(f"#### {record_text(item, 'title', default='Untitled coverage')}")
+                    st.write(record_text(item, "summary", default="Summary pending."))
+                    if url := source_url(item):
+                        st.link_button("Read primary source ↗", url)
     with projects_view:
         st.caption("Named projects and networks with an official record.")
         project_columns = st.columns(2)
@@ -1280,32 +1270,6 @@ with admin_tab:
     st.progress(classified_fraction)
     st.caption(f"Scientific classification coverage · {classified_fraction:.0%} of the archive")
 
-    st.markdown("### Automation cadence")
-    schedule_columns = st.columns(3)
-    with schedule_columns[0]:
-        with st.container(border=True):
-            st.markdown("#### 04:00 UTC")
-            st.caption("Daily metadata scan")
-            st.write("Collect and deduplicate the newest arXiv metadata.")
-    with schedule_columns[1]:
-        with st.container(border=True):
-            st.markdown("#### Every 4 hours · :40")
-            st.caption("Scientific review")
-            st.write("Resume pending classifications with checkpoint preservation.")
-    with schedule_columns[2]:
-        with st.container(border=True):
-            st.markdown("#### 4 windows / day")
-            st.caption("Historical backfill")
-            st.write("02:10 · 08:10 · 14:10 · 20:10 UTC")
-
-    status_columns = st.columns(3)
-    status_columns[0].metric("Backfill next date", backfill_state.get("next_until", "—"))
-    status_columns[1].metric(
-        "Last review run", review_history[-1].get("succeeded", 0) if review_history else 0,
-        help="Papers successfully classified in the most recent scheduled run.",
-    )
-    status_columns[2].metric("Classification backlog", review_health["backlog"])
-
     if review_health["status"] == "stalled":
         st.error(
             f"**Scientific review is stalled.** The last {review_health['stalled_runs']} "
@@ -1325,6 +1289,25 @@ with admin_tab:
             f"{short_date(review_health['latest_timestamp'])} · "
             f"{review_health['backlog']} papers in the backlog."
         )
+
+    st.markdown("### Automation cadence")
+    schedule_columns = st.columns(3)
+    with schedule_columns[0]:
+        with st.container(border=True):
+            st.markdown("#### 04:00 UTC")
+            st.caption("Daily metadata scan")
+            st.write("Collect and deduplicate the newest arXiv metadata.")
+    with schedule_columns[1]:
+        with st.container(border=True):
+            st.markdown("#### Every 4 hours · :40")
+            st.caption("Scientific review")
+            st.write("Resume pending classifications with checkpoint preservation.")
+    with schedule_columns[2]:
+        with st.container(border=True):
+            st.markdown("#### 4 windows / day")
+            st.caption("Historical backfill")
+            st.write("02:10 · 08:10 · 14:10 · 20:10 UTC")
+    st.caption(f"Backfill checkpoint · next date {backfill_state.get('next_until', '—')}")
 
     with st.expander("Owner controls · run a metadata scan"):
         st.caption(
