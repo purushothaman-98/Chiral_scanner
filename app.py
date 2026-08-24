@@ -491,23 +491,6 @@ with overview_tab:
 
     brief_columns = st.columns([3, 2])
     with brief_columns[0]:
-        st.markdown("### Current field signals")
-        st.markdown(
-            f'<div class="insight-row"><strong>{brief["recent"]} mapped papers</strong> entered '
-            "the latest 30-day research window.</div>",
-            unsafe_allow_html=True,
-        )
-        st.markdown(
-            f'<div class="insight-row"><strong>{brief["experimental"]} experimental records</strong> '
-            f"are currently balanced against {evidence_gap} theory, prediction or non-direct records.</div>",
-            unsafe_allow_html=True,
-        )
-        st.markdown(
-            f'<div class="insight-row"><strong>{brief["needs_interpretation"]} records</strong> remain '
-            "visible but are not promoted as established evidence.</div>",
-            unsafe_allow_html=True,
-        )
-
         st.markdown("### Latest mapped papers")
         latest_mapped = sorted(
             approved,
@@ -1218,6 +1201,16 @@ with admin_tab:
         "quality judgements.</div>",
         unsafe_allow_html=True,
     )
+    refresh_columns = st.columns([1, 3])
+    with refresh_columns[0]:
+        if st.button("🔄 Refresh cached data", help="Clears this app's short-lived data cache and reloads the archive immediately, without affecting the scan, review or backfill pipeline."):
+            st.cache_data.clear()
+            st.rerun()
+    with refresh_columns[1]:
+        st.caption(
+            "The archive is cached for up to 120 seconds for speed. Use this after a scan or "
+            "review run completes if the numbers below still look stale."
+        )
     health = st.columns(4)
     health[0].metric("Retrieved", len(papers))
     health[1].metric("Classified", len(reviewed))
