@@ -1,8 +1,325 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-08-26T04:35:17.571349+00:00",
+  "updated_at": "2026-08-27T14:56:32.611982+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2608.26078",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.26078v1",
+      "title": "Parity Anomaly as Modular Commutator with Massless Dirac Fermion",
+      "authors": [
+        "Meng Zeng"
+      ],
+      "abstract": "The modular commutator $J(A,B,C) = i\\langle[K_{AB},K_{BC}]\\rangle$ extracts the chiral central charge $c_-$ from a single bulk wavefunction of a \\emph{gapped} 2d state, where $3J/π=c_-$. Inspired by the recent developments in the field of gapless symmetry-protected topological phases, we ask: what does the modular commutator measure, if it is well-defined at all, when the 2d bulk becomes \\textit{gapless}? Several interesting new insights can already be obtained using the simple Haldane honeycomb model. For the critical point hosting an isolated Dirac node we find that $J$ remains sharp: it converges to a \\textit{half-quantized} value, with corrections that decay as a power law in the subsystem size rather than exponentially, mirroring the power-law correlations in gapless systems. We prove the half-quantization using an emergent reflection symmetry of the massless Dirac cone, and show that the half-quantized contribution comes from the other gapped cone (the massive partner of the massless one). This massive partner can be interpreted as the physical incarnation of the Pauli-Villars regulator, which is the origin of the parity-breaking level-$\\frac{1}{2}$ Chern-Simons term (with half-quantized Hall conductance) and the parity anomaly. When protected chiral edge modes coexist with a bulk Dirac node we obtain $3J/π= c_-+\\frac{1}{2}$. The half-quantization is also shown to be robust against tripartition deformation, tuning Dirac velocity and Dirac cone anisotropy. We further investigate other types of gaplessness---quadratic nodes (in contrast to linear Dirac) and the case with Fermi surface---and show that the robust half-quantization of $J$ is lost in such non-Dirac cases. These results generalize the modular commutator beyond gapped phases, and at the same time provide an information-theoretic measurement of the parity anomaly.",
+      "initial_submission_date": "2026-08-26T17:43:50Z",
+      "latest_update_date": "2026-08-26T17:43:50Z",
+      "categories": [
+        "cond-mat.str-el",
+        "hep-lat",
+        "quant-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.26078v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.26078v1",
+      "versions_seen": [
+        "2608.26078v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-08-27T14:56:32.610208+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610208+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.26055",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.26055v1",
+      "title": "Topology of Fluctuation Bands in Chiral Active Matter",
+      "authors": [
+        "Raphaël Maire"
+      ],
+      "abstract": "While band topology is usually associated with the deterministic dynamics of a system, we show that it can instead reside in its fluctuations. Using a reciprocal lattice driven by nonequilibrium chiral active noise, we find that the displacement spectrum---which quantifies displacement fluctuations---admits bands with nonzero Chern numbers despite a Chern-trivial deterministic mechanics. A Haldane-like effective coupling in the correlation spectrum explains this topology and produces topological transitions controlled by both the stochastic driving and the observation frequency. Through the bulk--boundary correspondence, we find boundary-localized fluctuation modes that are distinct from the usual propagating mechanical edge states.",
+      "initial_submission_date": "2026-08-26T17:25:58Z",
+      "latest_update_date": "2026-08-26T17:25:58Z",
+      "categories": [
+        "cond-mat.stat-mech",
+        "cond-mat.mes-hall",
+        "cond-mat.other",
+        "cond-mat.soft"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.26055v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.26055v1",
+      "versions_seen": [
+        "2608.26055v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-08-27T14:56:32.610229+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610229+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.25726",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.25726v1",
+      "title": "Observation of thermal Hall effect in diamond",
+      "authors": [
+        "Marcin Matusiak",
+        "Andrzej Ptok",
+        "Maria Szlawska",
+        "Kamran Behnia"
+      ],
+      "abstract": "Numerous insulators, including non-magnetic ones, have been unexpectedly found to display a finite thermal Hall signal, which has stimulated debate about its origin. Here, we report on a study of the thermal Hall effect in two diamond single crystals. The transverse thermal conductivity (kappa_xy) was found to peak at a temperature close to that at which the longitudinal thermal conductivity (kappa_xx) reaches its maximum. The measured kappa_xy, with an amplitude of 340 W/(m K) at B = 10 T, is the largest ever observed, while the kappa_xy/kappa_xx ratio follows the phenomenological trend identified in other insulators. Our observation implies the existence of an intrinsic thermal Hall effect in a generic phonon gas. We argue that the rough amplitude of both the thermal Hall angle and the thermal Hall resistivity can be accounted for by simple arguments invoking fundamental constants and quantum-mechanical constraints on solid state cohesion.",
+      "initial_submission_date": "2026-08-26T12:41:32Z",
+      "latest_update_date": "2026-08-26T12:41:32Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.25726v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25726v1",
+      "versions_seen": [
+        "2608.25726v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-08-27T14:56:32.610234+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610234+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.25708",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.25708v1",
+      "title": "Robust Unidirectional Edge States in the Continuum in non-Topological Floquet Photonic Crystals",
+      "authors": [
+        "Hairong Huo",
+        "Yongyou Zhang",
+        "Bingsuo Zou"
+      ],
+      "abstract": "Robust unidirectional edge propagation is conventionally attributed to topological protection. Whether edge states in the continuum (EICs) can exhibit such robustness in non-topological systems remains an open question. Here we demonstrate robust unidirectional EICs in Floquet photonic crystals (PhCs) composed of a honeycomb lattice of helical waveguides, where both time-reversal and spatial inversion symmetries are broken. Within a topologically trivial parameter regime of this system, where the Chern, valley Chern, and winding numbers all vanish, the EIC robustness is decoupled from topology. Instead, the robustness originates from a z-periodic Floquet artificial gauge field geometrically locked to the helical lattice. Numerical simulations show that the EIC survives 120 bent edges, 6% on-site potential noise, and 27% hopping phase noise. This work establishes a paradigm for robust light propagation in non topological systems and broadens the physical basis for unidirectional EICs.",
+      "initial_submission_date": "2026-08-26T12:26:22Z",
+      "latest_update_date": "2026-08-26T12:26:22Z",
+      "categories": [
+        "physics.optics"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.25708v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25708v1",
+      "versions_seen": [
+        "2608.25708v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-08-27T14:56:32.610237+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610237+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.25684",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.25684v1",
+      "title": "Chirality-Selective Phonon Pumping by Ferroelectric Dynamics",
+      "authors": [
+        "Dapeng Yao",
+        "Ping Tang"
+      ],
+      "abstract": "The discovery of chiral phonons has expanded the conventional view of lattice vibrations as passive heat carriers, opening new opportunities for phononic spintronic devices. However, their realization has been largely limited to chiral crystals or to specific regions of momentum space in certain achiral materials. Here, we propose a generic mechanism for generating propagating chiral phonons in an ordinary dielectric through the precession of the electric polarization in an adjacent ferroelectric. The polarization dynamics transfers its intrinsic angular momentum to the lattice via electrostrictive coupling, thereby pumping chirality-selective phonons whose handedness is dictated by that of the polarization precession. For a typical LiNbO$_{3}$$|$Y$_{3}$Al$_{5}$O$_{12}$ bilayer, we find that the pumping efficiency quantified by an interfacial convertance substantially exceeds those of thermally induced chiral-phonon generation in chiral crystals, owing to the strong electrostrictive coupling in ferroelectrics. Our work establishes ferroelectric dynamics as a versatile electrical source of chiral phonons and provides a general route toward electrically programmable chiral-phononic and spintronic functionalities.",
+      "initial_submission_date": "2026-08-26T12:01:23Z",
+      "latest_update_date": "2026-08-26T12:01:23Z",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.25684v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25684v1",
+      "versions_seen": [
+        "2608.25684v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "ferroelectric",
+        "chiral crystal"
+      ],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [
+        "chiral phonon",
+        "chiral phonons"
+      ],
+      "matched_keywords": [
+        "chiral phonon",
+        "chiral phonons",
+        "phonon",
+        "lattice vibration"
+      ],
+      "classification_evidence": {
+        "primary_terms": [
+          "chiral phonon",
+          "chiral phonons"
+        ],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon",
+          "lattice vibration"
+        ]
+      },
+      "first_seen_at": "2026-08-27T14:56:32.610240+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610240+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.25224",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.25224v1",
+      "title": "Dynamical splitting and a nodal Bose liquid in 2d chiral XYZ model",
+      "authors": [
+        "Tarun Grover"
+      ],
+      "abstract": "We study a class of Hamiltonians with a structure that we call \"dynamical splitting\": the Hamiltonian terms can be divided into two sets acting on the same degrees of freedom such that every term in one set commutes with every term in the other, although terms within either set do not all commute. This structure yields an algebraic duality to effective degrees of freedom on which the two parts of the Hamiltonian act disjointly, enabling exact diagonalization on lattices with approximately twice as many spins as usually accessible. We exploit it in the \"chiral XYZ model\", a geometrically frustrated spin-$1/2$ model on the triangular lattice which was previously introduced as a special limit of a Majorana-Hubbard model. This model also possesses anticommuting noncontractible line symmetries, which enforce an exact, topology-dependent degeneracy between locally indistinguishable states. We first study a $\\mathbb{Z}_N$ clock generalization and find, at large $N$, a gapless ground state with three subsystem-symmetry-protected nodal lines. Exploiting dynamical splitting and the subsystem symmetries, we carry out exact diagonalization of the $N=2$ model on lattices up to $9\\times9$ spins. The many-body gap and bipartite entanglement provide strong evidence for a gapless state consistent with the large-$N$ nodal structure: the entanglement scales as $L\\log L$ and exhibits $1+1$-dimensional CFT-like chord scaling on cylinders. Finally, we study instabilities and proximate phases. In particular, we find evidence that a subsystem-symmetry-preserving deformation drives a finite coupling transition to a gapped phase with $\\mathbb Z_2 \\times \\mathbb Z_2$ topological order.",
+      "initial_submission_date": "2026-08-25T23:28:30Z",
+      "latest_update_date": "2026-08-25T23:28:30Z",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.stat-mech",
+        "quant-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.25224v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25224v1",
+      "versions_seen": [
+        "2608.25224v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-08-27T14:56:32.610243+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610243+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.24984",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.24984v1",
+      "title": "High-harmonic fingerprints of sharp spin twists in a chiral soliton lattice",
+      "authors": [
+        "Atsushi Ono"
+      ],
+      "abstract": "A magnetic field applied perpendicular to the helical axis of a monoaxial chiral helimagnet compresses the spin helix into a coplanar chiral soliton lattice (CSL). We show that optically driven high-harmonic generation from itinerant electrons coupled to a frozen CSL resolves the lattice-scale structure of the localized twist, rather than the continuum soliton shape. High-order harmonics remain perturbative for the uniform helix. As the winding localizes at fixed magnetic period, they grow by many orders of magnitude and acquire a nonperturbative dependence on the drive amplitude. The growth originates from a spatially nonuniform effective hopping that turns each soliton into a localized dip in the hopping amplitude. When the degree of winding localization is held fixed, high-order intensities fall by many orders of magnitude as the magnetic period increases toward the continuum limit, where the hopping modulation is spatially smoothed. High-order harmonics thus resolve a real-space characteristic of the coplanar CSL, even in the absence of scalar chirality and an emergent magnetic field.",
+      "initial_submission_date": "2026-08-25T17:00:00Z",
+      "latest_update_date": "2026-08-25T17:00:00Z",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall",
+        "physics.optics"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.24984v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24984v1",
+      "versions_seen": [
+        "2608.24984v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-08-27T14:56:32.610246+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610246+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2608.24344",
       "current_version": 1,
@@ -49,7 +366,7 @@
         ]
       },
       "first_seen_at": "2026-08-26T04:35:17.568895+00:00",
-      "last_seen_at": "2026-08-26T04:35:17.568895+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610258+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -106,7 +423,7 @@
         ]
       },
       "first_seen_at": "2026-08-26T04:35:17.568924+00:00",
-      "last_seen_at": "2026-08-26T04:35:17.568924+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610266+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -154,7 +471,7 @@
         ]
       },
       "first_seen_at": "2026-08-26T04:35:17.568930+00:00",
-      "last_seen_at": "2026-08-26T04:35:17.568930+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610271+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -224,7 +541,7 @@
         ]
       },
       "first_seen_at": "2026-08-25T04:34:07.082479+00:00",
-      "last_seen_at": "2026-08-26T04:35:17.568946+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610277+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -276,7 +593,7 @@
         ]
       },
       "first_seen_at": "2026-08-25T04:34:07.082511+00:00",
-      "last_seen_at": "2026-08-26T04:35:17.568955+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610282+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -319,7 +636,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-25T04:34:07.082515+00:00",
-      "last_seen_at": "2026-08-26T04:35:17.568962+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610287+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -361,7 +678,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-17T04:36:04.227299+00:00",
-      "last_seen_at": "2026-08-26T04:35:17.568968+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610291+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -412,7 +729,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-25T04:34:07.082533+00:00",
-      "last_seen_at": "2026-08-26T04:35:17.568973+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610296+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -456,7 +773,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-19T04:32:28.031338+00:00",
-      "last_seen_at": "2026-08-26T04:35:17.568979+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610301+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -521,7 +838,7 @@
         ]
       },
       "first_seen_at": "2026-08-24T04:39:43.309932+00:00",
-      "last_seen_at": "2026-08-26T04:35:17.568984+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610306+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -566,7 +883,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-24T04:39:43.309965+00:00",
-      "last_seen_at": "2026-08-26T04:35:17.568989+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610310+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -630,7 +947,7 @@
         ]
       },
       "first_seen_at": "2026-08-24T04:39:43.309971+00:00",
-      "last_seen_at": "2026-08-26T04:35:17.568994+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610315+00:00",
       "ai_decision": {
         "include_in_feed": true,
         "relevance": "Core chiral-phonon paper",
@@ -741,7 +1058,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-18T04:31:04.950252+00:00",
-      "last_seen_at": "2026-08-26T04:35:17.569000+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610320+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -795,7 +1112,7 @@
         ]
       },
       "first_seen_at": "2026-08-21T04:32:42.187176+00:00",
-      "last_seen_at": "2026-08-26T04:35:17.569004+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610325+00:00",
       "ai_decision": {
         "include_in_feed": false,
         "relevance": "Not relevant",
@@ -880,7 +1197,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-20T04:32:30.272734+00:00",
-      "last_seen_at": "2026-08-26T04:35:17.569009+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610329+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1018,7 +1335,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-21T04:32:42.187220+00:00",
-      "last_seen_at": "2026-08-26T04:35:17.569014+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610334+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1064,7 +1381,7 @@
         ]
       },
       "first_seen_at": "2026-08-20T04:32:30.272779+00:00",
-      "last_seen_at": "2026-08-26T04:35:17.569019+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610339+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1115,7 +1432,7 @@
         ]
       },
       "first_seen_at": "2026-08-20T04:32:30.272783+00:00",
-      "last_seen_at": "2026-08-26T04:35:17.569024+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610343+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1157,7 +1474,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-20T04:32:30.272786+00:00",
-      "last_seen_at": "2026-08-26T04:35:17.569028+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610348+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1204,7 +1521,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-19T04:32:28.031368+00:00",
-      "last_seen_at": "2026-08-26T04:35:17.569036+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610352+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1252,7 +1569,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-18T04:31:04.950225+00:00",
-      "last_seen_at": "2026-08-26T04:35:17.569043+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610356+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1299,7 +1616,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-18T04:31:04.950258+00:00",
-      "last_seen_at": "2026-08-26T04:35:17.569048+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610361+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1369,7 +1686,7 @@
         ]
       },
       "first_seen_at": "2026-08-18T04:31:04.950262+00:00",
-      "last_seen_at": "2026-08-26T04:35:17.569053+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610365+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1421,7 +1738,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-18T04:31:04.950265+00:00",
-      "last_seen_at": "2026-08-26T04:35:17.569058+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610370+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1465,7 +1782,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-17T04:36:04.227280+00:00",
-      "last_seen_at": "2026-08-26T04:35:17.569063+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610377+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1508,7 +1825,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-18T04:31:04.950282+00:00",
-      "last_seen_at": "2026-08-26T04:35:17.569068+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610382+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1551,7 +1868,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-17T04:36:04.227303+00:00",
-      "last_seen_at": "2026-08-26T04:35:17.569073+00:00",
+      "last_seen_at": "2026-08-27T14:56:32.610387+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
