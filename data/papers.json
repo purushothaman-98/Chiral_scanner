@@ -1,8 +1,274 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-08-27T14:56:32.611982+00:00",
+  "updated_at": "2026-08-28T15:52:05.769118+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2608.27060",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.27060v1",
+      "title": "THz-induced phonomagnetism in diamagnetic quantum paraelectric KTaO$_3$",
+      "authors": [
+        "C. Kadlec",
+        "F. Kadlec",
+        "D. Repček",
+        "P. Kužel",
+        "M. Basini",
+        "J. -C. Deinert",
+        "S. Kovalev",
+        "T. Tadano",
+        "M. Udina",
+        "I. Ilyakov",
+        "T. V. A. G. de Oliveira",
+        "A. Ponomaryov",
+        "A. Arshad",
+        "A. Maia",
+        "S. Bonetti",
+        "S. Kamba"
+      ],
+      "abstract": "The current efforts striving to develop new ways of data manipulation are aimed at ultrafast control of magnetization in magnetic materials, as well as at inducing magnetic moments in diamagnetics. We demonstrate that in the diamagnetic quantum paraelectric KTaO$_3$, the electric field of circularly polarized THz pulses with an amplitude of $\\sim 300\\,$kV/cm induces a transient magnetic-like response by resonantly exciting its degenerate soft polar phonon. This phonon-mediated response was measured using the THz pump---optical probe technique via the time-resolved magneto-optic Faraday effect. Our detection scheme was set up to cancel out the major part of the electro-optic Kerr effect which also usually significantly contributes to the transient response. The Kerr-effect-related signal was further suppressed by subtracting the experimental data related to oppositely circularly polarized THz radiation. Thus, we were able to unambiguously identify a temperature-dependent magnetic-like behavior of the KTaO$_3$ crystal manifested by the extracted Faraday rotation. We developed a theoretical model describing well quantitatively the measured curves of the transient Faraday effect signal. However, their amplitudes exhibit an unexpected temperature dependence, which might be a key to a deeper understanding of the observed phonomagnetic effect.",
+      "initial_submission_date": "2026-08-27T12:48:00Z",
+      "latest_update_date": "2026-08-27T12:48:00Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.27060v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27060v1",
+      "versions_seen": [
+        "2608.27060v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "quantum paraelectric"
+      ],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [
+        "phonomagnetism"
+      ],
+      "matched_keywords": [
+        "phonomagnetism",
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [
+          "phonomagnetism"
+        ],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-08-28T15:52:05.766957+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.766957+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.27011",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.27011v1",
+      "title": "Magnon-induced phononic Chern insulator",
+      "authors": [
+        "Rui-Chang Shen",
+        "Yihao Yang",
+        "Haoran Xue"
+      ],
+      "abstract": "High-frequency artificial phononic crystals offer a low-loss platform compatible with on-chip integration, yet realizing Chern phononic phases at GHz frequencies remains challenging. Here, we propose a magnon-induced phononic Chern insulator in a honeycomb phononic crystal hybridized with ferromagnetic islands at the hexagon centers. A circularly polarized Kittel mode couples to the surrounding phonons with a phase winding, which breaks time-reversal symmetry and opens a full Chern gap. In the large-detuning regime, this mechanism leads to an effective Haldane-type phononic model with magnon-induced complex hopping. By tuning the magnon-phonon interaction, the full hybrid system accesses Chern phases with tunable Chern numbers |C|=1 and |C|=2. The predicted gaps can exceed realistic phonon and magnon linewidths, enabling their observation in GHz acoustic devices. Our work establishes chiral magnon--phonon hybridization as a route to magnetically reconfigurable topological phononics.",
+      "initial_submission_date": "2026-08-27T11:55:52Z",
+      "latest_update_date": "2026-08-27T11:55:52Z",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cs.AI",
+        "physics.app-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.27011v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27011v1",
+      "versions_seen": [
+        "2608.27011v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [
+        "topological phonon"
+      ],
+      "matched_keywords": [
+        "topological phonon",
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [
+          "topological phonon"
+        ],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [
+          "chiral magnon"
+        ],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-08-28T15:52:05.766988+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.766988+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.26705",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.26705v1",
+      "title": "Non-Hermitian Skin Effect from Radiative Coupling in a Reciprocal Chiral Medium",
+      "authors": [
+        "Kin Hung Fung",
+        "Changhao Meng",
+        "Yixin Xiao",
+        "C. T. Chan"
+      ],
+      "abstract": "We find that long-range radiative coupling through a passive reciprocal chiral medium produces an unusual non-Hermitian skin effect in a chain of electric dipoles. Although the system is reciprocal, the chirality generates polarization-dependent phase accumulation and attenuation, leading to degenerate pairs of skin modes localized at opposite boundaries. We find that the skin mode profile consists of an exponential contribution from an isolated complex-$β$ pole and a longer-range tail proportional to $1/[n(\\ln n)^2]$, where $n$ is the distance from the occupied boundary measured in lattice sites. Finite-chain calculations show that part of the OBC spectrum contracts toward the Bloch spectrum, whereas the number of boundary-localized modes remains extensive.",
+      "initial_submission_date": "2026-08-27T07:01:19Z",
+      "latest_update_date": "2026-08-27T07:01:19Z",
+      "categories": [
+        "cond-mat.other",
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.26705v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.26705v1",
+      "versions_seen": [
+        "2608.26705v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-08-28T15:52:05.766994+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.766994+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.26456",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.26456v1",
+      "title": "Quantum cellular automata and invertible phases of matter",
+      "authors": [
+        "Corey Jones",
+        "Nikita Sopenko",
+        "Ryan Thorngren"
+      ],
+      "abstract": "We introduce and study (fermionic and bosonic) invertible quasi-local algebras over uniformly locally finite metric spaces $X$ with infinite-dimensional local von Neumann algebras. We show that the group of Brauer equivalence classes of such algebras is isomorphic to both the group of phases of invertible states and the group of stable equivalence classes of quantum cellular automata over $X\\times \\mathbb{Z}$. Using K-theory of the symmetric monoidal category of invertible quasi-local algebras and bounded spread isomorphisms, we propose a definition of an $Ω$-spectrum of invertible phases as conjectured by Kitaev. We then show that the $c=\\frac{1}{2}$ chiral Majorana fermion net and the $(E_{8})_{1}$ conformal net provide Brauer non-trivial invertible quasi-local algebras, thus providing explicit constructions of non-trivial invertible states and quantum cellular automata on $\\mathbb{Z}^{2}$. In addition, we show that the time-slice nets of rational diagonal conformal field theories admit lattice degrees of freedom, which implies the discretization of any holomorphic conformal net is invertible.",
+      "initial_submission_date": "2026-08-26T23:15:46Z",
+      "latest_update_date": "2026-08-26T23:15:46Z",
+      "categories": [
+        "math-ph",
+        "cond-mat.str-el",
+        "hep-th",
+        "math.OA",
+        "quant-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.26456v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.26456v1",
+      "versions_seen": [
+        "2608.26456v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-08-28T15:52:05.766997+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.766997+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.26405",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.26405v1",
+      "title": "Magnetic permeability and zone-folded phonons in layered NiPS$_3$",
+      "authors": [
+        "André A. A. Silva",
+        "Eduardo D. Stefanato",
+        "Nicolas M. Kawahala",
+        "Flávio H. Feres",
+        "João Vítor T. P. Vital",
+        "Bernardo R. A. Neves",
+        "Jan Plutnar",
+        "Zdenek Sofer",
+        "Ana C. F. Brito",
+        "Felix G. G. Hernandez",
+        "Raul O. Freitas"
+      ],
+      "abstract": "Nickel phosphorus trisulfide (NiPS$_3$) stands out as a Mott insulator exhibiting XY-type antiferromagnetic order. In this work, we investigate the electrodynamic response of single-crystalline NiPS$_3$ using Terahertz Time-Domain Spectroscopy (THz-TDS) as a function of temperature. In cases where the magnetic permeability cannot be approximated to unity, conventional THz transmission analysis is often restricted to the complex refractive index, hindering the distinction between magnetic and dielectric contributions. To overcome this limitation, we demonstrate an extraction methodology capable of decoupling the magnetic permeability from the electric permittivity. Assuming that the dielectric contribution remains invariant below the N'eel temperature (TN), we used data from the paramagnetic phase to isolate the intrinsic magnetic component at 13 K. The angular and thermal dependence of the spectra revealed a magnon mode near 1 THz (for 0$^\\circ$ orientation) and, distinctively, a zone-folded phonon activated by symmetry breaking (at 90$^\\circ$). The isolated magnetic permeability was successfully modeled using Drude-Lorentz oscillators, enabling the extraction of fundamental spin dynamics parameters in this material.",
+      "initial_submission_date": "2026-08-26T21:18:21Z",
+      "latest_update_date": "2026-08-26T21:18:21Z",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.other"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.26405v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.26405v1",
+      "versions_seen": [
+        "2608.26405v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Methods / software",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-08-28T15:52:05.767001+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767001+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2608.26078",
       "current_version": 1,
@@ -41,7 +307,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-27T14:56:32.610208+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610208+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767015+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -84,7 +350,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-27T14:56:32.610229+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610229+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767023+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -131,7 +397,7 @@
         ]
       },
       "first_seen_at": "2026-08-27T14:56:32.610234+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610234+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767029+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -173,7 +439,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-27T14:56:32.610237+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610237+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767033+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -232,7 +498,7 @@
         ]
       },
       "first_seen_at": "2026-08-27T14:56:32.610240+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610240+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767039+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -274,7 +540,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-27T14:56:32.610243+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610243+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767044+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -316,7 +582,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-27T14:56:32.610246+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610246+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767048+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -366,7 +632,7 @@
         ]
       },
       "first_seen_at": "2026-08-26T04:35:17.568895+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610258+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767055+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -423,7 +689,7 @@
         ]
       },
       "first_seen_at": "2026-08-26T04:35:17.568924+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610266+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767060+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -471,7 +737,7 @@
         ]
       },
       "first_seen_at": "2026-08-26T04:35:17.568930+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610271+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767066+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -541,7 +807,7 @@
         ]
       },
       "first_seen_at": "2026-08-25T04:34:07.082479+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610277+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767070+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -593,7 +859,7 @@
         ]
       },
       "first_seen_at": "2026-08-25T04:34:07.082511+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610282+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767075+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -636,7 +902,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-25T04:34:07.082515+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610287+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767080+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -729,7 +995,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-25T04:34:07.082533+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610296+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767085+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -773,7 +1039,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-19T04:32:28.031338+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610301+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767090+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -838,7 +1104,7 @@
         ]
       },
       "first_seen_at": "2026-08-24T04:39:43.309932+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610306+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767095+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -883,7 +1149,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-24T04:39:43.309965+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610310+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767100+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -947,7 +1213,7 @@
         ]
       },
       "first_seen_at": "2026-08-24T04:39:43.309971+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610315+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767105+00:00",
       "ai_decision": {
         "include_in_feed": true,
         "relevance": "Core chiral-phonon paper",
@@ -1058,7 +1324,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-18T04:31:04.950252+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610320+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767109+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1112,7 +1378,7 @@
         ]
       },
       "first_seen_at": "2026-08-21T04:32:42.187176+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610325+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767114+00:00",
       "ai_decision": {
         "include_in_feed": false,
         "relevance": "Not relevant",
@@ -1197,7 +1463,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-20T04:32:30.272734+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610329+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767118+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1335,7 +1601,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-21T04:32:42.187220+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610334+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767123+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1381,7 +1647,7 @@
         ]
       },
       "first_seen_at": "2026-08-20T04:32:30.272779+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610339+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767128+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1432,7 +1698,7 @@
         ]
       },
       "first_seen_at": "2026-08-20T04:32:30.272783+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610343+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767133+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1474,7 +1740,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-20T04:32:30.272786+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610348+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767138+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1521,7 +1787,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-19T04:32:28.031368+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610352+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767145+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1569,7 +1835,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-18T04:31:04.950225+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610356+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767150+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1616,7 +1882,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-18T04:31:04.950258+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610361+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767154+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1686,7 +1952,7 @@
         ]
       },
       "first_seen_at": "2026-08-18T04:31:04.950262+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610365+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767158+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1738,7 +2004,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-18T04:31:04.950265+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610370+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767163+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1782,7 +2048,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-17T04:36:04.227280+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610377+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767168+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1825,7 +2091,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-18T04:31:04.950282+00:00",
-      "last_seen_at": "2026-08-27T14:56:32.610382+00:00",
+      "last_seen_at": "2026-08-28T15:52:05.767172+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
