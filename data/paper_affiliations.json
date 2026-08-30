@@ -574,11 +574,11 @@
       "name": "Indian Institute of Science Bangalore",
       "short_name": "Indian Institute of Science Bangalore",
       "city": "Bengaluru",
-      "region": null,
+      "region": "Karnataka",
       "country_code": "IN",
       "country": "India",
-      "latitude": 13.02127456665039,
-      "longitude": 77.56576538085938,
+      "latitude": 12.97194,
+      "longitude": 77.59369,
       "institution_type": "education",
       "openalex_id": "https://openalex.org/I59270414",
       "ror_id": "https://ror.org/04dese585",
@@ -9417,6 +9417,59 @@
         "OpenAlex",
         "arXiv"
       ]
+    },
+    "2308.08637": {
+      "paper_id": "2308.08637",
+      "paper_version": 1,
+      "title": "Polarized and narrow excitonic emission from graphene-capped monolayer WS$_2$ through resonant phonon relaxation",
+      "doi": "10.1103/physrevb.108.075436",
+      "metadata_work_id": "https://openalex.org/W4386284647",
+      "openalex_work_id": "https://openalex.org/W4386284647",
+      "metadata_provider": "OpenAlex",
+      "match_method": "openalex_doi",
+      "match_score": 0.9971,
+      "author_scope": "first_and_corresponding",
+      "authors": [
+        {
+          "paper_author_name": "Garima Gupta",
+          "name": "Garima Gupta",
+          "openalex_author_id": "https://openalex.org/A5054084181",
+          "orcid": "https://orcid.org/0000-0002-1324-4413",
+          "author_position": "first",
+          "is_corresponding": false,
+          "author_roles": [
+            "first"
+          ],
+          "institution_ids": [
+            "openalex:I59270414"
+          ],
+          "affiliation_labels": [
+            "Department of Electrical Communication Engineering, Indian Institute of Science, Bangalore 560012, India"
+          ]
+        },
+        {
+          "paper_author_name": "Kausik Majumdar",
+          "name": "Kausik Majumdar",
+          "openalex_author_id": "https://openalex.org/A5080586830",
+          "orcid": "https://orcid.org/0000-0002-6544-7829",
+          "author_position": "last",
+          "is_corresponding": true,
+          "author_roles": [
+            "corresponding"
+          ],
+          "institution_ids": [
+            "openalex:I59270414"
+          ],
+          "affiliation_labels": [
+            "Department of Electrical Communication Engineering, Indian Institute of Science, Bangalore 560012, India"
+          ]
+        }
+      ],
+      "enriched_at": "2026-08-30T10:35:21.555576+00:00",
+      "sources": [
+        "OpenAlex",
+        "arXiv"
+      ]
     }
   },
   "unresolved": {
@@ -9910,67 +9963,61 @@
       "paper_id": "2401.09155",
       "title": "Frequency conversion of vortex states by chiral forward Brillouin scattering in twisted photonic crystal fibre",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-16T05:52:19.224915+00:00"
+      "last_attempted_at": "2026-08-30T10:34:56.023228+00:00"
     },
     "2401.08373": {
       "paper_id": "2401.08373",
       "title": "Active Control of Ballistic Orbital Transport",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-16T05:52:24.297419+00:00"
+      "last_attempted_at": "2026-08-30T10:35:00.994378+00:00"
     },
     "2311.14466": {
       "paper_id": "2311.14466",
       "title": "Ferroelectricity and chirality in the Pb$_5$Ge$_3$O$_{11}$ crystal",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-16T05:52:28.230345+00:00"
+      "last_attempted_at": "2026-08-30T10:35:05.077959+00:00"
     },
     "2310.04008": {
       "paper_id": "2310.04008",
       "title": "Evanescently coupled topological ring-waveguide systems for chip-scale ultrahigh frequency phononic circuits",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-16T05:52:32.241209+00:00"
+      "last_attempted_at": "2026-08-30T10:35:09.117440+00:00"
     },
     "2308.16779": {
       "paper_id": "2308.16779",
       "title": "Interlayer vibrational hybrid normal mode enabling molecular chiral phonons",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-16T05:52:36.488691+00:00"
-    },
-    "2308.08637": {
-      "paper_id": "2308.08637",
-      "title": "Polarized and narrow excitonic emission from graphene-capped monolayer WS$_2$ through resonant phonon relaxation",
-      "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-16T05:52:40.398522+00:00"
+      "last_attempted_at": "2026-08-30T10:35:13.407651+00:00"
     },
     "2306.17227": {
       "paper_id": "2306.17227",
       "title": "Negative refraction of Weyl phonons at twin quartz interfaces",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-16T05:52:44.782000+00:00"
+      "last_attempted_at": "2026-08-30T10:35:21.555662+00:00"
     },
     "2305.18656": {
       "paper_id": "2305.18656",
       "title": "Light-induced weak ferromagnetism through nonlinear magnonic rectification",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-16T05:52:49.127293+00:00"
+      "last_attempted_at": "2026-08-30T10:35:25.517463+00:00"
     },
     "2305.18182": {
       "paper_id": "2305.18182",
       "title": "Dynamics of an Exciton-phonon Triangle under Photoirradiation",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-16T05:52:52.997666+00:00"
+      "last_attempted_at": "2026-08-30T10:35:29.533972+00:00"
     },
     "2303.13328": {
       "paper_id": "2303.13328",
       "title": "$T_{3}$Pb$_{2}Ch_{2}$ ($T$=Pd,Pt and $Ch$=S,Se) with transition metal kagome net: Dynamical properties, phonon nodal line, phonon surface states, and chiral phonons",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-16T05:52:56.888248+00:00"
+      "last_attempted_at": "2026-08-30T10:35:33.412584+00:00"
     },
     "2301.07401": {
       "paper_id": "2301.07401",
       "title": "Magnons, Phonons, and Thermal Hall Effect in Candidate Kitaev Magnet $α$-RuCl$_3$",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-16T05:53:01.854037+00:00"
+      "last_attempted_at": "2026-08-30T10:35:37.760476+00:00"
     },
     "2608.21025": {
       "paper_id": "2608.21025",
@@ -9993,9 +10040,9 @@
   },
   "schema_version": 2,
   "description": "Paper-specific first-author and explicitly identified corresponding-author affiliations from arXiv/OpenAlex/Crossref/ROR; uncertain identities remain unresolved.",
-  "generated_at": "2026-08-29T19:55:34.474369+00:00",
+  "generated_at": "2026-08-30T10:35:41.769446+00:00",
   "eligible_field_papers": 246,
-  "resolved_papers": 151,
-  "unresolved_papers": 95,
+  "resolved_papers": 152,
+  "unresolved_papers": 94,
   "author_scope": "first_and_corresponding"
 }
