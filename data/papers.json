@@ -1,8 +1,379 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-08-31T10:24:17.680245+00:00",
+  "updated_at": "2026-09-01T09:06:50.190363+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2608.30813",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.30813v1",
+      "title": "Supermoiré Reconstruction and Topological Mosaics in Twisted Trilayer WSe$_2$ and MoTe$_2$",
+      "authors": [
+        "Hai Meng",
+        "Yang Xu",
+        "Fengcheng Wu"
+      ],
+      "abstract": "We investigate lattice relaxation and band structures of helical and alternating twisted trilayer WSe$_2$ and MoTe$_2$ using machine-learning force fields and large-scale ab initio calculations. Interference between the two bilayer moiré lattices generates a supermoiré lattice that, upon relaxation, reconstructs into a few dominant domain types with locally commensurate bilayer moiré lattices. Because the systems lack $C_{2z}$ symmetry, domains otherwise related by this symmetry become energetically and topologically distinct, unlike in twisted trilayer graphene. Band structure calculations show that the topmost valence bands originate from the $K$ ($K'$) valleys and carry domain-dependent valley Chern numbers. The resulting supermoiré lattice hosts a mosaic of topologically inequivalent domains, offering a platform for exploring correlated and topological physics.",
+      "initial_submission_date": "2026-08-31T13:59:12Z",
+      "latest_update_date": "2026-08-31T13:59:12Z",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.30813v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.30813v1",
+      "versions_seen": [
+        "2608.30813v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-09-01T09:06:50.187859+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.187859+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.30802",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.30802v1",
+      "title": "Chiral Color Ice: Exact Local Handedness Constraints and Möbius Zero Modes in Frustrated Magnets",
+      "authors": [
+        "Péter Kránitz",
+        "Yasir Iqbal",
+        "Karlo Penc"
+      ],
+      "abstract": "Local constraints govern the low-energy physics of frustrated matter, but familiar ice-type rules constrain flux-like quantities and are insensitive to handedness. Here we show that handedness itself can be imposed as an exact local quantum constraint without selecting an axis in spin space. We construct positive-semidefinite, SU(2)-invariant parent Hamiltonians whose complete zero-energy space on a tetrahedron has a prescribed chirality sign, rather than selecting a particular chiral wave function. For spin-1/2 the local term is a rank-one projector onto a chiral tetrahedral singlet, while for arbitrary spin it factorizes as $B^\\dagger B$ through a singlet-annihilation operator, with a completely characterized kernel given by the span of the globally rotated chiral color-ice states. For coherent states, the same zero-energy condition becomes an $S$-independent nonlinear constraint in which three spin directions determine the fourth through a Möbius transformation; compositions of these maps define constraint holonomies on extended lattices. Connecting the same local constraint in different ways produces qualitatively different collective regimes: corner-sharing lattices retain exponentially large quantum ground-state kernels, with rigorous lower bounds exceeding conventional ice benchmarks; edge-sharing lattices support subdimensional plane or line zero modes; while triangular constructions suppress nonuniform coherent deformations and contain the complete Anderson tower of tetrahedral magnetic order at exactly zero energy. Two inequivalent triangular coverings further show that harmonic zero-mode counting does not determine the size of the quantum kernel. These results establish a tractable setting in which local handedness, nonlinear constraint geometry, and quantum degeneracy can be disentangled and related directly to the connectivity of the constraint network.",
+      "initial_submission_date": "2026-08-31T13:54:02Z",
+      "latest_update_date": "2026-08-31T13:54:02Z",
+      "categories": [
+        "cond-mat.str-el",
+        "math-ph",
+        "quant-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.30802v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.30802v1",
+      "versions_seen": [
+        "2608.30802v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-09-01T09:06:50.187890+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.187890+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.30600",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.30600v1",
+      "title": "Layer Axial Phonons and Dipolar Thermal Response in Centrosymmetric Thin Films",
+      "authors": [
+        "Madhubanti Mukherjee",
+        "Kapil Gope",
+        "Barun Ghosh"
+      ],
+      "abstract": "In nonmagnetic centrosymmetric materials, $\\mathcal{PT}$ symmetry enforces vanishing total phonon angular momentum (phonon AM) at every wave vector, making them appear unsuitable as hosts of axial phonons. Here, using first-principles calculations for BaAgAs and representative van der Waal's layered materials, we show that centrosymmetric slabs can still host large hidden layer-resolved phonon AM with both chiral and cycloidal modes. This hidden phonon AM texture produces layer resolved phonon thermal Edelstein-like responses and a real-space phonon AM dipole response, both tunable by strain. Our results establish centrosymmetric layered materials as an exciting platform for hidden axial phonon and multipolar phonon thermal response.",
+      "initial_submission_date": "2026-08-31T11:12:13Z",
+      "latest_update_date": "2026-08-31T11:12:13Z",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.30600v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.30600v1",
+      "versions_seen": [
+        "2608.30600v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [
+        "axial phonon",
+        "phonon angular momentum"
+      ],
+      "matched_keywords": [
+        "axial phonon",
+        "phonon angular momentum",
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [
+          "axial phonon",
+          "phonon angular momentum"
+        ],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-09-01T09:06:50.187895+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.187895+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.29795",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.29795v1",
+      "title": "Localization in microcavities revealed by phase-space non-Hermitian skin effect",
+      "authors": [
+        "Jung-Wan Ryu",
+        "Yong-Hoon Lee",
+        "Muhan Choi",
+        "Chang-Hwan Yi",
+        "Martina Hentschel"
+      ],
+      "abstract": "Contrary to the semiclassical expectation for fully chaotic systems, localization of resonances is found to be a common feature in open microcavities. In spiral-shaped dielectric microcavities, a substantial fraction of resonances localize on polygonal patterns in real space, are chiral, and their momentum distributions accumulate near the critical line for total internal reflection. Despite the extensive investigation, the physical mechanism responsible for their remarkable abundance has remained a long-standing question. Addressing this, we reveal a physical correspondence between an inhomogeneous-loss Hatano-Nelson model and the dielectric phase space of a spiral microcavity. We show that the combination of geometry-induced momentum drift and refractive escape yields a generalized non-Hermitian skin effect in the phase space momentum. We identify this mechanism as the origin of the critical-line localization of resonances in open chaotic spiral microcavities, extending the skin-effect concept beyond nonreciprocal lattices to phase space and to open chaotic wave systems.",
+      "initial_submission_date": "2026-08-30T13:43:23Z",
+      "latest_update_date": "2026-08-30T13:43:23Z",
+      "categories": [
+        "physics.optics",
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.29795v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.29795v1",
+      "versions_seen": [
+        "2608.29795v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-09-01T09:06:50.187899+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.187899+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.29792",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.29792v1",
+      "title": "Thermal Hall Signatures of Distinct Schwinger-Boson Flux Sectors on the Honeycomb Lattice",
+      "authors": [
+        "Daiki Sasamoto"
+      ],
+      "abstract": "Thermal transport offers a bulk probe of charge-neutral excitations in frustrated magnets. It remains challenging, however, to determine whether such transport can distinguish different parton mean-field structures of the same spin system. This question is particularly relevant on the honeycomb lattice, where distinct $0$-flux, $π$-flux, and chiral $π/2$-flux sectors have been proposed. In this paper, we compare self-consistent saddle-point solutions in these three sectors for a frustrated $J_1-J_2$ Heisenberg model with a next-nearest-neighbor Dzyaloshinskii-Moriya interaction and a perpendicular magnetic field. Using finite-temperature Schwinger-boson mean-field theory and the Kubo formula for bosonic Bogoliubov-de Gennes systems, we evaluate the intrinsic spinon thermal Hall conductivity. At a common parameter point where all three branches remain gapped, the $0$-flux response is positive and the $π$-flux response is negative for $D>0$ and $h>0$ under the sign conventions used in this paper, whereas the $π/2$-flux response changes sign with increasing temperature. We further show that a projective symmetry combining a sixfold rotation with time reversal forces the zero-field response of a fixed chiral $π/2$-flux domain to vanish. Within the mean-field regime examined in this paper, the sign and temperature dependence of $κ_{xy}/T$ therefore provide a flux-sensitive transport signature.",
+      "initial_submission_date": "2026-08-30T13:38:29Z",
+      "latest_update_date": "2026-08-30T13:38:29Z",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.29792v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.29792v1",
+      "versions_seen": [
+        "2608.29792v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Computational / theoretical",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [
+          "we evaluate"
+        ],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-09-01T09:06:50.187902+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.187902+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.29778",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.29778v1",
+      "title": "Phonon-Localization-Driven Decoupling of Dual-Channel Transport for Record-Low Intrinsic Lattice Thermal Conductivity",
+      "authors": [
+        "Zhunyun Tang",
+        "Xiaoxia Wang",
+        "Jin Li",
+        "Chaoyu He",
+        "Chao Tang",
+        "Mingxing Chen",
+        "Tao Ouyang"
+      ],
+      "abstract": "A fundamental bottleneck in pushing the intrinsic lattice thermal conductivity of inorganic crystalline solids to its lowest limit arises from the inherent competition between the particle-like propagation (\\(κ_{\\mathrm{L}}^{\\mathrm{P}}\\)) and wave-like tunneling (\\(κ_{\\mathrm{L}}^{\\mathrm{C}}\\)) channels. Herein, we demonstrate that phonon localization provides a robust pathway to decouple the dual-channel transport, achieving record-low \\(κ_{\\mathrm{L}}\\) in quasi-1D ternary helical crystals. Despite the structural complexity leading to densely populated phonon branches and thus inducing abundant coherent phonons, the weak interchain interactions and heavy elements compress numerous branches into highly localized, nearly dispersionless flat bands. Such strong localization simultaneously suppresses both the diagonal and off-diagonal components of the group velocity, thereby synergistically suppressing \\(κ_{\\mathrm{L}}^{\\mathrm{P}}\\) and \\(κ_{\\mathrm{L}}^{\\mathrm{C}}\\). Taking InSeI as an example, the interchain room-temperature \\(κ_{\\mathrm{L}}^{\\mathrm{P}}\\) and \\(κ_{\\mathrm{L}}^{\\mathrm{C}}\\) are 0.145 and 0.053 W/mK, respectively, yielding an ultralow total \\(κ_{\\mathrm{L}}\\) of 0.198 W/mK. Weaker interchain interactions further drive the room-temperature \\(κ_{\\mathrm{L}}\\) of GaSeI and AlSeI to record lows of 0.086 and 0.089 W/mK, respectively; these values even drop to 0.058 and 0.059 W/mK at 900 K. These findings provide useful insights into exploring the thermal conductivity limit in crystals.",
+      "initial_submission_date": "2026-08-30T13:13:36Z",
+      "latest_update_date": "2026-08-30T13:13:36Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.29778v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.29778v1",
+      "versions_seen": [
+        "2608.29778v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-09-01T09:06:50.187905+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.187905+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.29245",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.29245v1",
+      "title": "Single-pulse strain-induced precessional dynamics of magnetization in Co-doped iron garnet",
+      "authors": [
+        "Héloïse Damas",
+        "Carl S. Davies",
+        "Tomasz Zalewski",
+        "Petr M. Vetoshko",
+        "Vladimir I. Belotelov",
+        "Andrzej Stupakiewicz",
+        "Andrei Kirilyuk"
+      ],
+      "abstract": "Ultrafast control of magnetization through lattice excitation provides a route to manipulating magnetic order on short timescales, yet the role of transient strain in driving magnetization dynamics remains poorly understood. Here, single-shot pump-probe magneto-optical microscopy is used to resolve the structural and magnetic responses of cobalt-doped yttrium iron garnet to individual 5-ps mid-infrared pulses. The excitation generates a localized strain field together with an outward-propagating elastic wave. Concurrently, the magnetic contrast decreases following excitation and subsequently reverses on a timescale of approximately 1.5-2 ns before recovering to its initial state. The structural and magnetic responses exhibit closely correlated wavelength and pulse-energy dependences, indicating a common excitation pathway. Micromagnetic simulations incorporating transient strain reproduce the precessional reorientation of the magnetization within individual domains while largely preserving the labyrinthine domain morphology. These results identify transient lattice deformation as the link between single-pulse mid-infrared excitation and reversible precessional magnetization dynamics in Co-doped yttrium iron garnet.",
+      "initial_submission_date": "2026-08-29T13:02:00Z",
+      "latest_update_date": "2026-08-29T13:02:00Z",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.29245v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.29245v1",
+      "versions_seen": [
+        "2608.29245v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-09-01T09:06:50.187908+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.187908+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2608.29156",
+      "current_version": 1,
+      "versioned_arxiv_id": "2608.29156v1",
+      "title": "Topological pair density waves in kagome superconductors",
+      "authors": [
+        "Jia-Xin Yin",
+        "Xianxin Wu",
+        "Mark H. Fischer",
+        "Xiao-Yu Yan",
+        "Yigui Zhong",
+        "Kozo Okazaki"
+      ],
+      "abstract": "The pair density wave (PDW) is an unconventional superconducting state exhibiting periodic pairing modulations due to pairing with finite momentum Q. In two dimensions, multiple Q components of the PDW can have a non-trivial relative phase, breaking time-reversal symmetry and resulting in a topological electronic structure. Here we review progress on exploring such topological PDWs (TPDWs) and discuss their potential realization in kagome superconductors. We first introduce the concept of a TPDW starting from the Fulde-Ferrell-Larkin-Ovchinnikov (FFLO) state and examine the challenges toward its realization. We then discuss the possibility of a TPDW in the kagome lattice, which intertwines with chiral superconductivity and loop currents, thus connecting to models describing the quantum anomalous Hall effect. Furthermore, we review the experimental signatures of a TPDW in AV3Sb5 (A = Cs, Rb, K) superconductors and highlight related quantum effects, including switchable chiral pairing modulations, Bogoliubov Fermi states, the superconducting diode effect, and the anomalous thermal Hall effect. Finally, we project the future research opportunities of this correlated topological quantum phase and discuss its broad implications for finite-momentum pairing, topological matter, and chiral superconductivity.",
+      "initial_submission_date": "2026-08-29T09:08:47Z",
+      "latest_update_date": "2026-08-29T09:08:47Z",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2608.29156v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.29156v1",
+      "versions_seen": [
+        "2608.29156v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Review / perspective",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-09-01T09:06:50.187910+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.187910+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2608.27733",
       "current_version": 1,
@@ -49,7 +420,7 @@
         ]
       },
       "first_seen_at": "2026-08-31T10:24:17.677922+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.677922+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.187925+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -92,7 +463,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-31T10:24:17.677954+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.677954+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.187934+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -158,7 +529,7 @@
         ]
       },
       "first_seen_at": "2026-08-28T15:52:05.766957+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.677971+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.187941+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -213,7 +584,7 @@
         ]
       },
       "first_seen_at": "2026-08-28T15:52:05.766988+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.677987+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.187946+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -257,7 +628,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-28T15:52:05.766994+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.677993+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.187952+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -303,7 +674,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-28T15:52:05.766997+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.677998+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.187957+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -358,7 +729,7 @@
         ]
       },
       "first_seen_at": "2026-08-28T15:52:05.767001+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.678004+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.187963+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -400,7 +771,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-27T14:56:32.610208+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.678009+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.187968+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -443,7 +814,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-27T14:56:32.610229+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.678014+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.187973+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -490,7 +861,7 @@
         ]
       },
       "first_seen_at": "2026-08-27T14:56:32.610234+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.678018+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.187978+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -532,7 +903,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-27T14:56:32.610237+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.678023+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.187983+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -591,7 +962,7 @@
         ]
       },
       "first_seen_at": "2026-08-27T14:56:32.610240+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.678027+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.187991+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -633,7 +1004,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-27T14:56:32.610243+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.678033+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.187996+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -675,7 +1046,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-27T14:56:32.610246+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.678038+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.188001+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -725,7 +1096,7 @@
         ]
       },
       "first_seen_at": "2026-08-26T04:35:17.568895+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.678042+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.188006+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -782,7 +1153,7 @@
         ]
       },
       "first_seen_at": "2026-08-26T04:35:17.568924+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.678047+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.188011+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -830,7 +1201,7 @@
         ]
       },
       "first_seen_at": "2026-08-26T04:35:17.568930+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.678051+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.188017+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -900,7 +1271,7 @@
         ]
       },
       "first_seen_at": "2026-08-25T04:34:07.082479+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.678056+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.188022+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -952,7 +1323,7 @@
         ]
       },
       "first_seen_at": "2026-08-25T04:34:07.082511+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.678061+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.188027+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -995,7 +1366,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-25T04:34:07.082515+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.678065+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.188031+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1088,7 +1459,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-25T04:34:07.082533+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.678070+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.188036+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1132,7 +1503,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-19T04:32:28.031338+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.678075+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.188042+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1197,7 +1568,7 @@
         ]
       },
       "first_seen_at": "2026-08-24T04:39:43.309932+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.678080+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.188047+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1242,7 +1613,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-24T04:39:43.309965+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.678085+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.188052+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1306,7 +1677,7 @@
         ]
       },
       "first_seen_at": "2026-08-24T04:39:43.309971+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.678090+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.188056+00:00",
       "ai_decision": {
         "include_in_feed": true,
         "relevance": "Core chiral-phonon paper",
@@ -1471,7 +1842,7 @@
         ]
       },
       "first_seen_at": "2026-08-21T04:32:42.187176+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.678095+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.188062+00:00",
       "ai_decision": {
         "include_in_feed": false,
         "relevance": "Not relevant",
@@ -1556,7 +1927,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-20T04:32:30.272734+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.678099+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.188067+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1694,7 +2065,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-21T04:32:42.187220+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.678104+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.188072+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1740,7 +2111,7 @@
         ]
       },
       "first_seen_at": "2026-08-20T04:32:30.272779+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.678109+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.188077+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1791,7 +2162,7 @@
         ]
       },
       "first_seen_at": "2026-08-20T04:32:30.272783+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.678114+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.188082+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1833,7 +2204,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-20T04:32:30.272786+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.678118+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.188087+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1881,7 +2252,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-31T10:24:17.678121+00:00",
-      "last_seen_at": "2026-08-31T10:24:17.678121+00:00",
+      "last_seen_at": "2026-09-01T09:06:50.188092+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
