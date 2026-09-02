@@ -1,8 +1,266 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-09-01T09:06:50.190363+00:00",
+  "updated_at": "2026-09-02T08:19:57.294110+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2609.01069",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.01069v1",
+      "title": "Exchange striction determines how fast antiferromagnetic insulators demagnetize",
+      "authors": [
+        "Aleksandr Buzdakov",
+        "Ravi Kaushik",
+        "Nikolai Khokhlov",
+        "Sergey Artyukhin",
+        "Alexey Kimel"
+      ],
+      "abstract": "Antiferromagnets combine terahertz spin dynamics with insensitivity to stray fields, and how quickly their order can be manipulated sets the speed limit on device operation. Femtosecond optical pulses demagnetize antiferromagnetic insulators on timescales that span picoseconds to nanoseconds across compounds, and no material parameter is known that accounts for the spread or predicts where a new compound will fall. In a compensated antiferromagnet, no angular momentum needs to leave the spin system, so the rate is set by energy flow from the lattice into the spins. Time-resolved second-harmonic generation experiments show that Cr2O3 demagnetizes within 2 ps once the lattice is driven above the Neel temperature, two orders of magnitude faster than the structurally similar FeBO3. First-principles calculations trace the disparity to exchange striction: short Cr-Cr contacts make the exchange coupling tenfold more sensitive to atomic displacements and widen the phase space for phonon decay into magnon pairs. Spin-lattice simulations with ab initio parameters reproduce the order of magnitude of the measured ratio. The derivative of the exchange coupling with respect to the ionic displacement thus emerges as a computable parameter that predicts how fast an insulating antiferromagnet can be demagnetized. The results advance our understanding of ultrafast control in insulating antiferromagnets, and suggest a practical pathway to screen candidate materials for thermally assisted antiferromagnetic memory before synthesis.",
+      "initial_submission_date": "2026-09-01T11:01:50Z",
+      "latest_update_date": "2026-09-01T11:01:50Z",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.01069v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.01069v1",
+      "versions_seen": [
+        "2609.01069v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon",
+        "atomic displacement"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon",
+          "atomic displacement"
+        ]
+      },
+      "first_seen_at": "2026-09-02T08:19:57.292530+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292530+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2609.00887",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.00887v1",
+      "title": "Large Exchange Magnetostriction in a Kagome Antiferromagnet at Room Temperature",
+      "authors": [
+        "Jie Du",
+        "Liang Yao",
+        "Hang Li",
+        "Xiaodong Zhou",
+        "Yuan Yao",
+        "Xuekui Xi",
+        "Yong-Chang Lau",
+        "Wenhong Wang"
+      ],
+      "abstract": "The pursuit of high-performance magnetostrictive materials is crucial for advancing technologies in sensing, actuation, and microelectromechanical systems. Although pronounced magnetostrictive effects have been observed in a few ferromagnets, a systematic exploration of magnetostriction across a broader range of antiferromagnets remains limited. Here, we report the observation of large magnetostriction in the kagome antiferromagnet YMn6Sn6. Under a magnetic field, the system undergoes a field-induced evolution from a helical magnetic ground state toward a collinear field-polarized state, accompanied by a large anisotropic lattice strain and a substantial volume magnetostriction exceeding 400 ppm at room temperature. Remarkably, the magnetostrictive response remains nearly fully reversible up to 9 T with nearly hysteresis-free behavior, effectively minimizing the energy dissipation commonly associated with domain-wall pinning. Combined experimental measurements and theoretical calculations reveal that the large, nearly hysteresis-free magnetostriction originates from the competition between intralayer ferromagnetic and interlayer exchange interactions. This exchange-driven magnetoelastic coupling further gives rise to a strongly direction-dependent lattice distortion pathway. This work establishes kagome helimagnets as a tunable platform for low-dissipation magnetoelastic functionalities and responsive magnetomechanical applications.",
+      "initial_submission_date": "2026-09-01T08:19:24Z",
+      "latest_update_date": "2026-09-01T08:19:24Z",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.00887v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.00887v1",
+      "versions_seen": [
+        "2609.00887v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Experimental",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [
+          "we report the observation"
+        ],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-09-02T08:19:57.292547+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292547+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2609.00368",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.00368v1",
+      "title": "Chiral phonons driven by chiral cavities",
+      "authors": [
+        "V. A. S. V. Bittencourt",
+        "N. Shabala",
+        "R. M. Geilhufe",
+        "A. Metelmann"
+      ],
+      "abstract": "Lattice vibrations carrying angular momentum give rise to fundamental phenomena such as the phonon Hall effect and the Einstein-de Haas effect, offering new opportunities for manipulating angular momentum in condensed-matter systems. Generating such circularly polarized phonons requires either the use of an external magnetic field, or of polarized light pulses. The latter approach does not require the use of any magnetic response of the material, but it has limitations, in particular regarding the duration of the pulse. Consequently, any effect stemming from phonons generated by light pulses is transient. In this paper, we propose the use of a driven electromagnetic cavity as a route to generate a steady-state population of chiral phonons. We derive a general description of cavity-chiral phonon interaction, with a particular focus on modes of chiral cavities. We show that, under optimized conditions, a significant effective phonon-induced magnetic field can be generated by means of an external drive with realistic power. Our approach is specially tailored for Gamma point phonons with THz frequencies, and opens a new route for investigating chiral phonons with electromagnetic cavities.",
+      "initial_submission_date": "2026-08-31T21:01:58Z",
+      "latest_update_date": "2026-08-31T21:01:58Z",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.00368v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.00368v1",
+      "versions_seen": [
+        "2609.00368v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Computational / theoretical",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [
+        "chiral phonon",
+        "chiral phonons",
+        "circularly polarized phonon",
+        "phonon Hall effect"
+      ],
+      "matched_keywords": [
+        "chiral phonon",
+        "chiral phonons",
+        "circularly polarized phonon",
+        "phonon Hall effect",
+        "phonon",
+        "lattice vibration"
+      ],
+      "classification_evidence": {
+        "primary_terms": [
+          "chiral phonon",
+          "chiral phonons",
+          "circularly polarized phonon"
+        ],
+        "related_terms": [
+          "phonon Hall effect"
+        ],
+        "author_experimental_actions": [],
+        "author_computational_actions": [
+          "We derive"
+        ],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon",
+          "lattice vibration"
+        ]
+      },
+      "first_seen_at": "2026-09-02T08:19:57.292551+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292551+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2609.00277",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.00277v1",
+      "title": "Engineering tunable $p$-wave magnetism in antiferromagnetic bilayers",
+      "authors": [
+        "Yu-Han Lin",
+        "Jin-Wei Dong",
+        "Ziqiang Wang",
+        "Sen Zhou"
+      ],
+      "abstract": "We propose a symmetry-guided route to engineer tunable $p$-wave magnetism in a bilayer system composed of two AB-stacked antiferromagnetic square lattices with their collinear moments nonparallel to each other. We show that an in-plane relative shift between the two layers selectively breaks the symmetries protecting spin degeneracy while preserving time-reversal-related constraints, thereby generating odd-parity spin splitting in a fully compensated magnetic state without spin-orbit coupling. The direction and the magnitude of the resulting $p$-wave spin-splitting, together with the associated spin responses, can be continuously tuned by the in-plane displacement, providing a potential knob for control. We further map the bilayer system onto an effective bond-modulated square lattice and investigate the corresponding Hubbard model within a mean-field framework. The calculated phase diagram reveals extended regions where $p$-wave magnetism with coplanar or chiral spin textures emerges spontaneously. Our results establish a minimal equilibrium platform for realizing and manipulating $p$-wave magnetism in two-dimensional systems.",
+      "initial_submission_date": "2026-08-31T19:23:24Z",
+      "latest_update_date": "2026-08-31T19:23:24Z",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.00277v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.00277v1",
+      "versions_seen": [
+        "2609.00277v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [
+          "chiral spin texture"
+        ],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-09-02T08:19:57.292554+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292554+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2609.00122",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.00122v1",
+      "title": "Classification of Rational $c=1$ Vertex Operator Algebras and Vertex Operator Superalgebras",
+      "authors": [
+        "Terry Gannon",
+        "Brandon C. Rayhaun"
+      ],
+      "abstract": "For mathematicians: In this first in a series of two papers, we give a mathematically rigorous classification of (sufficiently nice) $c=1$ vertex operator algebras (VOAs) and vertex operator superalgebras (VOSAs). We confirm the lore that any such VO(S)A is either a lattice VO(S)A $V_L$ associated to a rank-1 integral lattice $L$, or can be obtained as an orbifold thereof, i.e. a $G$-invariant subalgebra $V_L^G$ for some finite group $G$ of automorphisms. All such $G$ are known, allowing for an explicit enumeration of nice $c=1$ VO(S)As. A key ingredient in our approach is to establish a general criterion for nice VOAs, requiring knowledge only of the vacuum character, for testing when the simple modules with integer conformal dimension span a symmetric fusion subcategory which is braided tensor equivalent to $Rep(G)$. In our companion paper, we calculate the ribbon auto-equivalences of the representation categories of the nice $c=1$ VOAs, and leverage this to obtain the classification of nice bosonic and fermionic $c=1$ full conformal field theories. For physicists: We rigorously classify the chiral algebras that can arise in the holomorphic sector of a bosonic or fermionic rational $c=1$ conformal field theory (CFT) whose non-identity primaries all have positive conformal dimension. Thinking of chiral algebras as gapless boundary conditions of 3D topological quantum field theories (TQFTs), our result says that any such chiral algebra is either a holomorphic boundary of $U(1)_k$ Chern-Simons theory, or can be obtained by passing to the $G$-invariant states thereof for some finite group $G$ of symmetries. We explicitly enumerate these chiral algebras and also discuss their non-invertible symmetries. In a companion paper, we build on these results using techniques from the study of 3D TQFTs to classify full bosonic and fermionic rational $c=1$ CFTs.",
+      "initial_submission_date": "2026-08-31T18:00:00Z",
+      "latest_update_date": "2026-08-31T18:00:00Z",
+      "categories": [
+        "hep-th",
+        "cond-mat.str-el",
+        "math.QA"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.00122v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.00122v1",
+      "versions_seen": [
+        "2609.00122v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Computational / theoretical",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [
+          "we calculate"
+        ],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-09-02T08:19:57.292556+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292556+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2608.30813",
       "current_version": 1,
@@ -41,7 +299,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-01T09:06:50.187859+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.187859+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292566+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -85,7 +343,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-01T09:06:50.187890+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.187890+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292573+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -140,7 +398,7 @@
         ]
       },
       "first_seen_at": "2026-09-01T09:06:50.187895+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.187895+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292577+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -186,7 +444,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-01T09:06:50.187899+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.187899+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292580+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -228,7 +486,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-01T09:06:50.187902+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.187902+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292584+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -278,7 +536,7 @@
         ]
       },
       "first_seen_at": "2026-09-01T09:06:50.187905+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.187905+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292587+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -325,7 +583,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-01T09:06:50.187908+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.187908+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292591+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -370,7 +628,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-01T09:06:50.187910+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.187910+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292594+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -420,7 +678,7 @@
         ]
       },
       "first_seen_at": "2026-08-31T10:24:17.677922+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.187925+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292597+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -463,7 +721,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-31T10:24:17.677954+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.187934+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292600+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -529,7 +787,7 @@
         ]
       },
       "first_seen_at": "2026-08-28T15:52:05.766957+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.187941+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292603+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -584,7 +842,7 @@
         ]
       },
       "first_seen_at": "2026-08-28T15:52:05.766988+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.187946+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292607+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -628,7 +886,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-28T15:52:05.766994+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.187952+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292610+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -674,7 +932,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-28T15:52:05.766997+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.187957+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292615+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -729,7 +987,7 @@
         ]
       },
       "first_seen_at": "2026-08-28T15:52:05.767001+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.187963+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292618+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -771,7 +1029,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-27T14:56:32.610208+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.187968+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292621+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -814,7 +1072,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-27T14:56:32.610229+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.187973+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292624+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -861,7 +1119,7 @@
         ]
       },
       "first_seen_at": "2026-08-27T14:56:32.610234+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.187978+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292627+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -903,7 +1161,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-27T14:56:32.610237+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.187983+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292630+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -962,7 +1220,7 @@
         ]
       },
       "first_seen_at": "2026-08-27T14:56:32.610240+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.187991+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292633+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1004,7 +1262,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-27T14:56:32.610243+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.187996+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292636+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1046,7 +1304,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-27T14:56:32.610246+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.188001+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292639+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1096,7 +1354,7 @@
         ]
       },
       "first_seen_at": "2026-08-26T04:35:17.568895+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.188006+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292642+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1153,7 +1411,7 @@
         ]
       },
       "first_seen_at": "2026-08-26T04:35:17.568924+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.188011+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292646+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1201,7 +1459,7 @@
         ]
       },
       "first_seen_at": "2026-08-26T04:35:17.568930+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.188017+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292648+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1271,7 +1529,7 @@
         ]
       },
       "first_seen_at": "2026-08-25T04:34:07.082479+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.188022+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292653+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1323,7 +1581,7 @@
         ]
       },
       "first_seen_at": "2026-08-25T04:34:07.082511+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.188027+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292657+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1366,7 +1624,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-25T04:34:07.082515+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.188031+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292660+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1459,7 +1717,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-25T04:34:07.082533+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.188036+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292663+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1568,7 +1826,7 @@
         ]
       },
       "first_seen_at": "2026-08-24T04:39:43.309932+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.188047+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292666+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1613,7 +1871,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-24T04:39:43.309965+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.188052+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292669+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1677,7 +1935,7 @@
         ]
       },
       "first_seen_at": "2026-08-24T04:39:43.309971+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.188056+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292672+00:00",
       "ai_decision": {
         "include_in_feed": true,
         "relevance": "Core chiral-phonon paper",
@@ -1842,7 +2100,7 @@
         ]
       },
       "first_seen_at": "2026-08-21T04:32:42.187176+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.188062+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292675+00:00",
       "ai_decision": {
         "include_in_feed": false,
         "relevance": "Not relevant",
@@ -1927,7 +2185,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-20T04:32:30.272734+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.188067+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292678+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2065,7 +2323,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-21T04:32:42.187220+00:00",
-      "last_seen_at": "2026-09-01T09:06:50.188072+00:00",
+      "last_seen_at": "2026-09-02T08:19:57.292681+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
