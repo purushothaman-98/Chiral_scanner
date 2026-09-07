@@ -1,8 +1,169 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-09-06T08:18:44.843738+00:00",
+  "updated_at": "2026-09-07T08:51:31.378299+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2609.05219",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.05219v1",
+      "title": "Robustness of RKKY interactions across a Weyl node-annihilation transition",
+      "authors": [
+        "João V. F. Alves",
+        "Joelson F. Silva",
+        "Luis G. G. V. Dias da Silva"
+      ],
+      "abstract": "Weyl semimetals (WSMs), with their unique topological properties and distinct electronic structure, exhibit intriguing properties when either time-reversal or inversion symmetries are broken. In this work, we consider the Ruderman-Kittel-Kasuya-Yosida (RKKY) interaction between magnetic impurities in time-reversal symmetry-breaking WSMs. We derive analytical expressions for the full RKKY exchange tensor in arbitrary two-band spinful lattice systems. Our approach reveals both Heisenberg, anisotropic Ising and Dzyaloshinsky-Moriya terms, which can be calculated by energy-integrating real-space Green's functions across the entire Brillouin zone, with the band edge acting as a natural energy cutoff. We apply this framework to study a two-band tight-binding model for a time-reversal symmetry-breaking WSM that interpolates between a Weyl phase with well-separated chiral nodes and a quadratic band-touching semimetal phase. Remarkably, the spatial profile, magnitude, and anisotropic tensor structure of the exchange couplings remain persistent across the node-annihilation transition. This topological robustness reveals that short- and intermediate-range RKKY interactions are mediated by the global, Brillouin-zone-integrated quantum metric of the full valence band rather than being strictly dictated by local low-energy Berry curvature monopoles. These findings demonstrate the necessity of full-band tight-binding formulations when predicting real-space magnetic interactions, providing key insights for electric-field tuning of magnetic anisotropy and constructing realistic models of heavy-fermion and Weyl-Kondo semimetals.",
+      "initial_submission_date": "2026-09-04T14:50:50Z",
+      "latest_update_date": "2026-09-04T14:50:50Z",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.05219v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.05219v1",
+      "versions_seen": [
+        "2609.05219v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Computational / theoretical",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "Weyl semimetal"
+      ],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [
+        "tight-binding",
+        "Berry curvature"
+      ],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [
+          "We derive"
+        ],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-09-07T08:51:31.375218+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375218+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2609.05064",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.05064v1",
+      "title": "Generalized Helicity-Dependent Magnetization Switching via Substrate Phonons",
+      "authors": [
+        "F. G. N. Fennema",
+        "H. Damas",
+        "H. Yoshikawa",
+        "A. Tsukamoto",
+        "C. S. Davies",
+        "A. Kirilyuk"
+      ],
+      "abstract": "Coherent excitation of circularly-polarized substrate phonons can drive deterministic reversal of magnetization in an adjacent magnetic layer. However, the extent to which this substrate-mediated mechanism can be generalized across different materials remains unresolved. Here, we measure and compare the spectral dependence of helicity-dependent magnetization reversal in magnetic GdFeCo layers grown on a diverse set of diamagnetic substrates. Switching is observed for all investigated substrates, spanning six point groups and several infrared-active transverse-optical phonon symmetries. While the switching spectra broadly overlap with the Reststrahlen bands, their maxima are systematically shifted to wavelengths shorter than the corresponding transverse-optical phonon resonances. This spectral mismatch shows that substrate absorption alone does not determine the switching efficiency. Transfer-matrix calculations show that strong absorption concentrates energy deposition near the substrate interface, providing a possible source of local heating that could suppress magnetization reversal. Our results reveal the broad applicability of substrate-mediated phononic switching while showing that its efficiency is governed by the full optical response of the heterostructure rather than substrate absorption alone.",
+      "initial_submission_date": "2026-09-04T12:26:28Z",
+      "latest_update_date": "2026-09-04T12:26:28Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.05064v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.05064v1",
+      "versions_seen": [
+        "2609.05064v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Experimental",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [
+          "we measure"
+        ],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-09-07T08:51:31.375248+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375248+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2609.04532",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.04532v1",
+      "title": "Layer Architecture Shapes Electronic, Magnetic, and Lattice Interactions in Ruddlesden-Popper Nickelates",
+      "authors": [
+        "W. He",
+        "X. Guo",
+        "X. Luo",
+        "J. Thomas",
+        "J. Sears",
+        "Sophia F. R. TenHuisen",
+        "Ziqiang Guan",
+        "Xinglong Chen",
+        "D. A. Dahlbom",
+        "B. Zager",
+        "J. Pelliciari",
+        "Yi-Feng Zhao",
+        "H. LaBollita",
+        "Hong Zheng",
+        "M. K. Lajer",
+        "J. F. Mitchell",
+        "V. Bisogni",
+        "A. S. Botana",
+        "M. Mitrano",
+        "S. Johnston",
+        "M. P. M. Dean"
+      ],
+      "abstract": "The discovery of superconductivity in Ruddlesden-Popper nickelates has raised a central question: how does layer architecture shape the electronic, magnetic, and lattice interactions relevant to pairing? Here, we report a detailed comparative study of the two polymorphs of La3Ni2O7--the alternating monolayer-trilayer (LNO-1313) and bilayer (LNO-2222) structures--and the related trilayer compound La4Ni3O10, using both Ni L3- and O K-edge RIXS. We find that LNO-1313 and La4Ni3O10 share strikingly similar electronic, magnetic, and lattice excitations, whereas bilayer LNO-2222 exhibits distinct features. Compared to LNO-2222, LNO-1313 and La4Ni3O10 have weaker orbital polarization, enhanced 3d8L character, a reduced out-of-plane magnetic-exchange scale, and stronger EPC. Within an effective local-moment framework, an entangled-dimer scenario provides a natural description of the spin excitations generated by strong antiferromagnetic interlayer coupling. Its advantage over conventional spin-wave theory is clearest in bilayer LNO-2222, where the interlayer coupling dominates the intralayer interactions. These findings provide critical experimental constraints for future theoretical models for the low-energy physics relevant to superconductivity in these layered nickelates.",
+      "initial_submission_date": "2026-09-03T22:43:51Z",
+      "latest_update_date": "2026-09-03T22:43:51Z",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.04532v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.04532v1",
+      "versions_seen": [
+        "2609.04532v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-09-07T08:51:31.375253+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375253+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2609.03717",
       "current_version": 1,
@@ -41,7 +202,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-04T08:25:24.604868+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841723+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375269+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -85,7 +246,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-04T08:25:24.604896+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841751+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375279+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -128,7 +289,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-01T09:06:50.187859+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841758+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375287+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -179,7 +340,7 @@
         ]
       },
       "first_seen_at": "2026-09-02T08:19:57.292530+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841764+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375294+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -229,7 +390,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-02T08:19:57.292547+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841769+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375300+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -296,7 +457,7 @@
         ]
       },
       "first_seen_at": "2026-09-02T08:19:57.292551+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841774+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375312+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -341,7 +502,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-02T08:19:57.292554+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841779+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375318+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -386,7 +547,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-02T08:19:57.292556+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841784+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375323+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -430,7 +591,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-01T09:06:50.187890+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841789+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375328+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -485,7 +646,7 @@
         ]
       },
       "first_seen_at": "2026-09-01T09:06:50.187895+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841793+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375333+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -531,7 +692,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-01T09:06:50.187899+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841798+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375339+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -573,7 +734,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-01T09:06:50.187902+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841802+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375344+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -623,7 +784,7 @@
         ]
       },
       "first_seen_at": "2026-09-01T09:06:50.187905+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841810+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375349+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -670,7 +831,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-01T09:06:50.187908+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841817+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375355+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -715,7 +876,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-01T09:06:50.187910+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841821+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375359+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -765,7 +926,7 @@
         ]
       },
       "first_seen_at": "2026-08-31T10:24:17.677922+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841826+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375365+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -808,7 +969,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-31T10:24:17.677954+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841831+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375370+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -874,7 +1035,7 @@
         ]
       },
       "first_seen_at": "2026-08-28T15:52:05.766957+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841836+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375376+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -929,7 +1090,7 @@
         ]
       },
       "first_seen_at": "2026-08-28T15:52:05.766988+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841840+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375381+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -973,7 +1134,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-28T15:52:05.766994+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841844+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375386+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1019,7 +1180,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-28T15:52:05.766997+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841849+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375390+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1074,7 +1235,7 @@
         ]
       },
       "first_seen_at": "2026-08-28T15:52:05.767001+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841853+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375396+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1116,7 +1277,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-27T14:56:32.610208+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841858+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375401+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1159,7 +1320,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-27T14:56:32.610229+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841863+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375406+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1206,7 +1367,7 @@
         ]
       },
       "first_seen_at": "2026-08-27T14:56:32.610234+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841867+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375412+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1248,7 +1409,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-27T14:56:32.610237+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841871+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375417+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1307,7 +1468,7 @@
         ]
       },
       "first_seen_at": "2026-08-27T14:56:32.610240+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841876+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375422+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1349,7 +1510,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-27T14:56:32.610243+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841880+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375430+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1391,7 +1552,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-27T14:56:32.610246+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841884+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375435+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1441,7 +1602,7 @@
         ]
       },
       "first_seen_at": "2026-08-26T04:35:17.568895+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841888+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375440+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1498,7 +1659,7 @@
         ]
       },
       "first_seen_at": "2026-08-26T04:35:17.568924+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841893+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375445+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1546,7 +1707,7 @@
         ]
       },
       "first_seen_at": "2026-08-26T04:35:17.568930+00:00",
-      "last_seen_at": "2026-09-06T08:18:44.841897+00:00",
+      "last_seen_at": "2026-09-07T08:51:31.375450+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
