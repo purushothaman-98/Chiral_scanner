@@ -1,8 +1,424 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-09-08T08:31:39.286452+00:00",
+  "updated_at": "2026-09-09T08:33:55.121606+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2609.09118",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.09118v1",
+      "title": "Topological Impurity Bands",
+      "authors": [
+        "Arnab Seth",
+        "Itamar Kimchi"
+      ],
+      "abstract": "The effects of disorder on topological phases of matter are typically either preservation of topology or its destruction. For example, the quantum Hall effect's quantization and chiral edge mode remain robust until a strong-disorder percolation transition exits the topological phase. Disorder can also enlarge a preexisting topological phase, yielding a topological Anderson insulator (TAI). However, the reliance of TAI and other theoretical treatments on perturbatively averaging out long-wavelength randomness suggests that additional effects might appear when the disorder involves localized defects. Here we show that a finite density of randomly distributed defects can generate various new topological phase transitions. This route to disorder-induced topology can be viewed as the formation of topological impurity bands (TIB) and is applicable even if the initial clean model is a trivial band insulator. The theory relies on an orbital-dependent vorticity of impurity bound states, which we derive analytically near a generic Dirac cone phase transition as well as using the Chern insulator lattice models of Qi-Wu-Zhang and Haldane. Their numerically computed phase diagrams at 3% defect density show robust topological transitions in distinct TIB and TAI regimes, suggesting a local route to topological phases.",
+      "initial_submission_date": "2026-09-08T17:47:29Z",
+      "latest_update_date": "2026-09-08T17:47:29Z",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.dis-nn",
+        "cond-mat.mtrl-sci",
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.09118v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.09118v1",
+      "versions_seen": [
+        "2609.09118v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Computational / theoretical",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [
+          "we derive"
+        ],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-09-09T08:33:55.119866+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.119866+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2609.08347",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.08347v1",
+      "title": "The First Magic Angle Beyond the Chiral Limit in Twisted Bilayer Graphene",
+      "authors": [
+        "Leonardo A. Navarro-Labastida",
+        "Pierre A. Pantaleon",
+        "Francisco Guinea",
+        "Gerardo G. Naumis"
+      ],
+      "abstract": "We develop a squared-Hamiltonian description of twisted bilayer graphene beyond the chiral limit to explain why the first magic angle remains robust under lattice relaxation, while higher-order magic angles are strongly destabilized. Starting from the non-chiral Bistritzer--MacDonald model with finite same-sublattice tunneling, we show that lattice relaxation reshapes the effective confinement landscape rather than acting as a simple perturbation of the chiral theory. A central result is that the realistic relaxation-renormalized tunneling ratio lies close to a special confinement point where the oscillatory part of the symmetric confinement potential nearly cancels. This places realistic twisted bilayer graphene near a nearly uniform confinement regime. At the same time, finite same-sublattice tunneling activates an additional inter-sublattice current-like channel that competes with the chiral orbital channel. The first magic angle survives because these confinement and current-like contributions remain balanced, whereas higher-order magic angles lose this balance through stronger remote-band hybridization and enhanced real-space localization around AA regions. Our results provide a single-particle mechanism for the breakdown of the chiral magic-angle hierarchy and clarify why the experimentally relevant first magic angle remains the most stable remnant of the chiral flat-band structure.",
+      "initial_submission_date": "2026-09-08T07:18:10Z",
+      "latest_update_date": "2026-09-08T07:18:10Z",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.08347v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.08347v1",
+      "versions_seen": [
+        "2609.08347v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-09-09T08:33:55.119890+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.119890+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2609.08344",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.08344v1",
+      "title": "Thresholdless corner vortex solitons in fractal Sierpiński topological insulators",
+      "authors": [
+        "Yiqi Zhang",
+        "Alexander V. Kireev",
+        "Victor O. Kompanets",
+        "Sergey Y. Alyatkin",
+        "Nikita S. Kostyuchenko",
+        "Sergei A. Zhuravitskii",
+        "Nikolay N. Skryabin",
+        "Khalil Sabour",
+        "Alexander A. Kalinkin",
+        "Yongdong Li",
+        "Sergei P. Kulik",
+        "Pavlos G. Lagoudakis",
+        "Sergey V. Chekalin",
+        "Yaroslav V. Kartashov",
+        "Victor N. Zadkov"
+      ],
+      "abstract": "Quantized vortices are ubiquitous in physics, spanning superconductivity, astrophysics, superfluid condensed matter systems, and nonlinear optics. Yet embedding vorticity into topologically protected nonlinear states has remained a major challenge, with all previously observed corner solitons in higher-order topological insulators (HOTIs) exhibiting only trivial phase distributions. Here, we report on the first realization of stable topological corner vortex solitons in a photonic fractal HOTI. Using an array of laser-written waveguides in the shape of Sierpiński gasket with a controllable distortion, we design linear topological vortex modes, from which nonlinear corner vortex solitons bifurcate. Moreover, we demonstrate that these solitons exhibit exceptional robustness across a broad power range and, unlike vortex solitons in topologically trivial lattices, form without a power threshold. Our results introduce the angular momentum degree of freedom into the physics of topological corner modes, opening prospects for topologically protected vortex-based photonics.",
+      "initial_submission_date": "2026-09-08T07:14:59Z",
+      "latest_update_date": "2026-09-08T07:14:59Z",
+      "categories": [
+        "physics.optics",
+        "nlin.PS"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.08344v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.08344v1",
+      "versions_seen": [
+        "2609.08344v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "topological insulator"
+      ],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-09-09T08:33:55.119895+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.119895+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2609.08223",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.08223v1",
+      "title": "Large-Chern-number flat bands, anomalous Dirac cones, and unconventional superfluidity in square-lattice systems with SU(N) non-Abelian gauge fields",
+      "authors": [
+        "Wentao Zhong",
+        "Zhongbo Yan"
+      ],
+      "abstract": "We study topological band structures and superfluid phases in two-dimensional square-lattice systems with homogeneous SU($N$) non-Abelian gauge fields. Starting from an SU(4) gauge-field model related to the Hofstadter model with flux $α=1/4$, we show that the lowest and highest bands are isolated Chern bands that carry Chern numbers $C=-4$ and give rise to four chiral edge modes in a strip geometry. Remarkably, although the two middle bands touch and form $16$ gapless Dirac cones, their combined Chern number is $C=8$. We then generalize the construction to SU($N$) systems and reveal an even--odd structure of the band topology: when $N$ is odd, all bands are isolated and carry nonzero Chern numbers; when $N$ is even, the two middle bands touch at $N^{2}$ Dirac points, while all other bands remain isolated and topologically nontrivial. We find that the uppermost and lowermost bands become increasingly flat and their Berry curvature becomes more uniform as $N$ increases, providing a promising platform for realizing fractional Chern insulating phases. We further examine the spin-$3/2$ SU(4) model with on-site attractive Hubbard interactions, exploring its superfluid phases at partial filling. We find that the non-Abelian gauge field breaks the hidden SO(5) degeneracy of the quintet pairing and selects distinct nematic superfluid states. For fillings in the middle-band regime, the resulting spectrum can host topologically protected Bogoliubov Fermi surfaces. Our results provide a starting point for exploring both topological band physics and unconventional superfluidity in synthetic SU($N$) cold-atom systems.",
+      "initial_submission_date": "2026-09-08T04:14:19Z",
+      "latest_update_date": "2026-09-08T04:14:19Z",
+      "categories": [
+        "cond-mat.quant-gas",
+        "cond-mat.str-el",
+        "cond-mat.supr-con"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.08223v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.08223v1",
+      "versions_seen": [
+        "2609.08223v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-09-09T08:33:55.119899+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.119899+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2609.08100",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.08100v1",
+      "title": "Electronic Orbital Angular Momentum Driven by Finite-Momentum Phonons: Beyond Chiral and Axial Phonons",
+      "authors": [
+        "Yongho Park",
+        "Jeonghun Sohn",
+        "Sejoong Kim",
+        "Kyoung-Whan Kim"
+      ],
+      "abstract": "We show that finite-momentum phonons generate electronic orbital angular momentum (OAM) even without phonon axiality or chirality, with the response controlled by the phonon wave vector $q$ and frequency $ω$. We develop a general gauge-field theory in which a unitary transformation absorbs the phonon displacement into emergent vector and scalar potentials acting on the electrons, providing a perturbative classification of the OAM response in $q$ and $ω$. We derive $q$- and $ω$-scaling laws for AC and DC responses. Notably, AC OAM arises even for linearly polarized phonons, with its magnitude and sign tunable by $q$. Its generation is governed by the matching between the phonon geometry and the electronic orbital texture rather than solely by the phonon angular momentum. The connection of the DC response to the electronic Berry curvature further supports that phonon angular momentum is not the only degree of freedom governing electronic OAM generation. Time-dependent tight-binding simulations under acoustic-phonon driving independently confirm the core predictions. Our results extend phonon-driven OAM beyond chiral and axial phonons and establish a wave-vector-tunable route to orbitronics, accessible with surface acoustic waves.",
+      "initial_submission_date": "2026-09-08T01:18:58Z",
+      "latest_update_date": "2026-09-08T01:18:58Z",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.08100v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.08100v1",
+      "versions_seen": [
+        "2609.08100v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Computational / theoretical",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [
+        "tight-binding",
+        "Berry curvature"
+      ],
+      "detected_physical_properties": [
+        "axial phonon",
+        "phonon angular momentum"
+      ],
+      "matched_keywords": [
+        "axial phonon",
+        "phonon angular momentum",
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [
+          "axial phonon",
+          "phonon angular momentum"
+        ],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [
+          "We derive"
+        ],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-09-09T08:33:55.119902+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.119902+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2609.07565",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.07565v1",
+      "title": "Raman signatures of a non-reciprocal magnetic phase transition in Ca$_2$RuO$_4$",
+      "authors": [
+        "Giacomo Jarc",
+        "Giovanni Tartaglia",
+        "Francesco Gabriele",
+        "Filomena Forte",
+        "Anita Guarino",
+        "Angela Montanaro",
+        "Enrico Maria Rigoni",
+        "Nitesh Khatiwada",
+        "Costanza Lincetto",
+        "Gabriele Bartolini",
+        "Antonio Mastropasqua",
+        "Shahla Yasmin Mathengattil",
+        "Marco Malvestuto",
+        "Muhammad Waqee Ur Rehman",
+        "Rosalba Fittipaldi",
+        "Joachim Deisenhofer",
+        "Alexander A. Tsirlin",
+        "Antonio Vecchione",
+        "Mario Cuoco",
+        "Daniele Fausti"
+      ],
+      "abstract": "The magnetic behavior of Ca$_2$RuO$_4$ represents a unique puzzle due to the interplay of strong electronic correlations, magneto-elastic interactions, and large spin-orbit coupling. At low temperatures, an anomalous Mott insulating state emerges, characterized by a complex antiferromagnetic order with a collective amplitude excitation of the magnetic moment which has been discussed in analogy with the Higgs mode. We report here evidence of a magnetic first-order phase transition driven by an out-of-plane magnetic field along the crystallographic $c$-axis of Ca$_2$RuO$_4$. Raman measurements in magnetic field reveal the emergence of mode of magnetic origin and a concomitant modification of the coupling between a phonon and the Higgs amplitude mode. Both the Raman features are characterized by a non-reciprocal hysteresis in magnetic field. Surprisingly, the observed phase transition does not affect the Raman scattering from the in-plane magnons, indicating that the dipolar antiferromagnetic order is preserved. This is consistent with the onset of a new quadrupolar field-controlled state, whose fluctuations structure can trigger an hybridization between the lattice and the magnetic Higgs mode resulting in the observed Raman features.",
+      "initial_submission_date": "2026-09-07T14:43:57Z",
+      "latest_update_date": "2026-09-07T14:43:57Z",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.07565v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.07565v1",
+      "versions_seen": [
+        "2609.07565v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-09-09T08:33:55.119905+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.119905+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2609.06752",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.06752v1",
+      "title": "Symmetry-selective field-induced triplet superconductivity in Ising-superconductor monolayer NbSe$_2$",
+      "authors": [
+        "Sudipta Biswas",
+        "Sudhansu S. Mandal",
+        "A. Taraphder"
+      ],
+      "abstract": "We investigate superconductivity in monolayer NbSe$_2$, an Ising superconductor, under an in-plane Zeeman field $h_x$, focusing on the emergence of symmetry selected equal-spin triplet pairing. Using a self-consistent Bogoliubov--de Gennes approach with realistic hopping parameters for monolayer NbSe$_2$ on a triangular lattice, we determine the energetically favored singlet pairing states in a range of chemical potentials $μ$ for onsite, nearest-neighbor, and next-nearest-neighbor pairing channels, and map the resulting phase diagram in $(h_x,μ)$ plane. A momentum-resolved analysis reveals distinct dominant contributions in order parameters arise from the surroundings of $Γ$, $K$, and $K'$ points of the Brillouin zone. We find that an in-plane magnetic field helps to induce a triplet pairing whose symmetry is determined by the parent singlet state, upon opening the triplet interaction channel. For the nonlocal pairing channels, chiral-$d$ pairing is energetically favored and it induces chiral-$p$ equal-spin triplet component with opposite chirality. We further find that Rashba spin-orbit coupling, relevant to substrate coupling and electrostatic gating, suppresses the superconducting orders and reduces the critical field. Our results establish a direct link between the symmetry of the parent singlet condensate and the emergent triplet superconductivity, highlighting monolayer NbSe$_2$ as a promising platform for field-tunable mixed-parity superconducting states.",
+      "initial_submission_date": "2026-09-06T17:51:24Z",
+      "latest_update_date": "2026-09-06T17:51:24Z",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.06752v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.06752v1",
+      "versions_seen": [
+        "2609.06752v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-09-09T08:33:55.119908+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.119908+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2609.06246",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.06246v1",
+      "title": "Magnetization processes and spin dynamics across field-induced phase transitions in the quasi-two-dimensional quantum magnet Cu$_2$(OH)$_3$Br",
+      "authors": [
+        "Anneke Reinold",
+        "Dirk Wulferding",
+        "Laur Peedu",
+        "Kirill Amelin",
+        "Urmas Nagel",
+        "Toomas Rõõm",
+        "Zhiying Zhao",
+        "Patrick Pilch",
+        "Changqing Zhu",
+        "Hans Engelkamp",
+        "Lucas Berger",
+        "Denis I. Gorbunov",
+        "Yurii Skourski",
+        "Kwang-Yong Choi",
+        "Thomas Lorenz",
+        "Zhe Wang"
+      ],
+      "abstract": "We present magnetic-field-dependent evolution of magnetization and spin dynamics in the quasi-two-dimensional spin-$1/2$ magnet $\\mathrm{Cu_2(OH)_3Br}$, consisting of alternately coupled ferromagnetic Cu1 and antiferromagnetic Cu2 spin chains. Terahertz spectroscopy reveals a pronounced field-direction dependence of the low-energy magnetic excitation spectrum. For magnetic fields applied perpendicular to the spin chains, $B\\parallel a$ and $B\\parallel c^*$, the spectra undergo abrupt reconstructions at the spin-flop transitions identified independently by high-field magnetization measurements. For $B\\parallel b$, by contrast, no spin-flop occurs; instead, the excitation spectrum evolves continuously with field and exhibits a strong terahertz radiation polarization dependence as the ferromagnetic Cu1 subsystem becomes progressively polarized. At higher fields, the complex low-field spectrum is replaced by a reduced set of broad excitations, consistent with a weakening of the coupling between the ferromagnetic and antiferromagnetic chain subsystems. Complementary Raman spectroscopy resolves magnon and spinon excitations alongside several phonon modes and traces the characteristic temperature- and magnetic-field-dependent evolution of the magnetic excitations. The combined spectroscopic and magnetization results map out how a magnetic field reorganizes the coupled ferromagnetic and antiferromagnetic subsystems in $\\mathrm{Cu_2(OH)_3Br}$ across field-induced phase transitions.",
+      "initial_submission_date": "2026-09-05T20:20:31Z",
+      "latest_update_date": "2026-09-05T20:20:31Z",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.06246v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.06246v1",
+      "versions_seen": [
+        "2609.06246v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-09-09T08:33:55.119912+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.119912+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2609.05219",
       "current_version": 1,
@@ -49,7 +465,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-07T08:51:31.375218+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282682+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.119938+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -100,7 +516,7 @@
         ]
       },
       "first_seen_at": "2026-09-07T08:51:31.375248+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282727+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.119947+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -160,7 +576,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-07T08:51:31.375253+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282739+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.119952+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -202,7 +618,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-04T08:25:24.604868+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282748+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.119957+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -246,7 +662,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-04T08:25:24.604896+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282756+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.119962+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -289,7 +705,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-01T09:06:50.187859+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282765+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.119967+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -340,7 +756,7 @@
         ]
       },
       "first_seen_at": "2026-09-02T08:19:57.292530+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282773+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.119973+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -390,7 +806,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-02T08:19:57.292547+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282781+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.119977+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -457,7 +873,7 @@
         ]
       },
       "first_seen_at": "2026-09-02T08:19:57.292551+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282788+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.119982+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -502,7 +918,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-02T08:19:57.292554+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282795+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.119986+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -547,7 +963,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-02T08:19:57.292556+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282803+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.119990+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -591,7 +1007,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-01T09:06:50.187890+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282814+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.119995+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -646,7 +1062,7 @@
         ]
       },
       "first_seen_at": "2026-09-01T09:06:50.187895+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282847+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.120000+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -692,7 +1108,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-01T09:06:50.187899+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282854+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.120004+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -734,7 +1150,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-01T09:06:50.187902+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282862+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.120009+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -784,7 +1200,7 @@
         ]
       },
       "first_seen_at": "2026-09-01T09:06:50.187905+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282870+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.120013+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -831,7 +1247,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-01T09:06:50.187908+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282878+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.120017+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -876,7 +1292,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-01T09:06:50.187910+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282885+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.120021+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -926,7 +1342,7 @@
         ]
       },
       "first_seen_at": "2026-08-31T10:24:17.677922+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282893+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.120026+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -969,7 +1385,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-31T10:24:17.677954+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282900+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.120030+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1035,7 +1451,7 @@
         ]
       },
       "first_seen_at": "2026-08-28T15:52:05.766957+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282908+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.120034+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1090,7 +1506,7 @@
         ]
       },
       "first_seen_at": "2026-08-28T15:52:05.766988+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282915+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.120038+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1134,7 +1550,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-28T15:52:05.766994+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282923+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.120043+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1180,7 +1596,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-28T15:52:05.766997+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282931+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.120047+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1235,7 +1651,7 @@
         ]
       },
       "first_seen_at": "2026-08-28T15:52:05.767001+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282939+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.120051+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1277,7 +1693,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-27T14:56:32.610208+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282947+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.120055+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1320,7 +1736,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-27T14:56:32.610229+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282954+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.120060+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1367,7 +1783,7 @@
         ]
       },
       "first_seen_at": "2026-08-27T14:56:32.610234+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282961+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.120067+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1409,7 +1825,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-08-27T14:56:32.610237+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282970+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.120072+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1468,7 +1884,7 @@
         ]
       },
       "first_seen_at": "2026-08-27T14:56:32.610240+00:00",
-      "last_seen_at": "2026-09-08T08:31:39.282977+00:00",
+      "last_seen_at": "2026-09-09T08:33:55.120076+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
