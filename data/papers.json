@@ -1,8 +1,232 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-09-10T08:35:52.676840+00:00",
+  "updated_at": "2026-09-11T08:30:41.451555+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2609.11684",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.11684v1",
+      "title": "Bridging steady-state and time-domain descriptions of molecular electron transport",
+      "authors": [
+        "Thibaut Lacroix",
+        "Namgee Cho",
+        "Clemens Vittmann",
+        "James Lim",
+        "Susana F. Huelga",
+        "Martin B. Plenio"
+      ],
+      "abstract": "Electron transmission from an input electrode, through a molecular system, to an output electrode has been widely studied using the steady-state non-equilibrium Green's function (NEGF) method. Recently, the wave packet method, which provides access to the transient dynamics of electrons as well as internal molecular degrees of freedom, has been employed to investigate enantiospecific electron transport through chiral molecules. In this work, we derive the quantitative relation between the transmission of a finite-size wave packet and the energy-resolved NEGF transmission, showing that the former corresponds to a spectral average of the latter weighted by the wave packet energy distribution. Exploiting this correspondence, we construct non-Gaussian auxiliary wave packets whose spectral weight encodes the Landauer energy-window, allowing current-voltage characteristics to be obtained directly from time propagation. We further show that the correspondence extends to spin-resolved transport in a spin-phonon model of chirality-induced spin selectivity.",
+      "initial_submission_date": "2026-09-10T15:13:24Z",
+      "latest_update_date": "2026-09-10T15:13:24Z",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.11684v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.11684v1",
+      "versions_seen": [
+        "2609.11684v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Computational / theoretical",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [
+          "we derive"
+        ],
+        "false_positive_terms": [
+          "chiral molecule"
+        ],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-09-11T08:30:41.449610+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449610+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2609.11203",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.11203v1",
+      "title": "Interplay of spin-lattice and electronic coupling far above Neel ordering in 2D antiferromagnetic CrPS4 and its interface manifestation",
+      "authors": [
+        "Divya Jangra",
+        "Binoy Krishna De",
+        "Mukesh Kumar Dasoundhi",
+        "Sourav Chowdhury",
+        "Pragati Sharma",
+        "Kartick Biswas",
+        "Arup Basak",
+        "Dheeraj Kumar Gupta",
+        "Koushik chakraborty",
+        "Praveen Kumar Velpula",
+        "Pavan Nukala",
+        "U. Chandni",
+        "Arvind Kumar yogi",
+        "Mukul Gupta",
+        "Markus Hucker",
+        "Vasant G. Sathe"
+      ],
+      "abstract": "A short-range spin correlation driven, strongly intercoupled spin-phonon-electronic state far above TN (~38K) is identified in the low dimensional van der Waals antiferromagnet CrPS4. Temperature-dependent Raman spectroscopy reveals spin-phonon coupling persisting up to T*~120K, concomitant with local lattice distortion. The setting of vibronic progression in photoluminescence spectra suggests the strengthening of electron-phonon coupling around T*. Furthermore, both the electrical transport and optoelectronic response also change significantly at T*. The results indicate that spin-phonon coupling above TN in CrPS4 originates from local lattice distortion induced by short range magnetic correlations which in turn enhances the electron-phonon interaction. Furthermore, using a CrPS4/In2Se3 heterostructure, we demonstrate that the anomaly associated with the coupled degrees of freedom in CrPS4 also influences the adjacent In2Se3 layer. The lattice dynamics of In2Se3 is significantly modified across the magnetic anomaly of CrPS4, and the coupled dynamics is observed at T*. These interfacial manifestation opens up new possibilities for achieving correlated multifunctionalities in artificially designed heterostructure.",
+      "initial_submission_date": "2026-09-10T08:11:32Z",
+      "latest_update_date": "2026-09-10T08:11:32Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.11203v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.11203v1",
+      "versions_seen": [
+        "2609.11203v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-09-11T08:30:41.449637+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449637+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2609.10973",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.10973v1",
+      "title": "Measuring chiral phonons",
+      "authors": [
+        "Rahul Rao",
+        "Hanyu Zhu",
+        "Nicholas Kotov",
+        "Thuc T. Mai",
+        "Maria F. Muñoz",
+        "Dali Sun",
+        "Jun Liu",
+        "Wonjin Choi",
+        "Renee R. Frontiera",
+        "Angela R. H. Hight Walker"
+      ],
+      "abstract": "Chiral phonons are quantized vibrations where the atomic motion in a solid breaks improper rotation symmetries. In many cases, chiral phonons possess angular momenta and are therefore selective to circularly polarized light. Both fundamental and applied research efforts on chiral phonons have been gaining increasing attention owing to their importance in a variety of fields including spintronics, spin-selective chemical reactions, thermal transport, quantum information processing and biosensing, where the bi-directional spin-lattice coupling enabled by chiral phonons can be harnessed in new ways, and potentially lead to new functionalities. Thus far, the studies of chiral phonons across diverse materials platforms have evolved largely independently within these fields, but the experimental techniques are often interrelated. In this perspective, we present a detailed description, as well as advantages and disadvantages of the current approaches for experimentally measuring chiral phonons in chiral and achiral materials. We conclude with a discussion of new methods for measuring chiral phonons. Ultimately, this work seeks to offer an experimental guide for systematically investigating the properties of chiral phonons in various materials systems and applications.",
+      "initial_submission_date": "2026-09-10T01:47:43Z",
+      "latest_update_date": "2026-09-10T01:47:43Z",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "physics.ins-det",
+        "physics.optics",
+        "quant-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.10973v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.10973v1",
+      "versions_seen": [
+        "2609.10973v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Review / perspective",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [
+        "chiral phonon",
+        "chiral phonons"
+      ],
+      "matched_keywords": [
+        "chiral phonon",
+        "chiral phonons",
+        "spintronics",
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [
+          "chiral phonon",
+          "chiral phonons"
+        ],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-09-11T08:30:41.449642+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449642+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2609.10708",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.10708v1",
+      "title": "A Unified Theory of Collective Magnon and Orbiton Excitations in Altermagnets",
+      "authors": [
+        "Bishal Das",
+        "Chanchal K. Barman",
+        "Aftab Alam"
+      ],
+      "abstract": "Altermagnetism has recently emerged as a distinct collinear magnetic phase exhibiting momentum-dependent spin-splitting despite vanishing net magnetization, as a consequence of inequivalent non-magnetic environments. Lately, it has been proposed that strong electronic correlations may yield spontaneous altermagnetism due to orbital ordering even for equivalent non-magnetic environments. While previous studies have largely focused on the electronic structure, a unified understanding of the collective excitations associated with these two different microscopic mechanisms stabilizing altermagnetism remains absent. Here, we develop an extended Kugel'-Khomskiĭ spin-orbital model on a decorated square lattice that simultaneously incorporates inequivalent non-magnetic environments and correlation-driven orbital ordering within a common theoretical framework. Employing a self-consistent mean-field spin-wave orbital-wave formalism, we demonstrate the emergence of mutually unhybridized but interdependent magnon and orbiton excitations exhibiting characteristic chiral-splitting. We show that the splitting originates from two distinct microscopic contributions: a lattice-dependent term arising from inequivalent non-magnetic environments and an orbital-order-induced exchange-anisotropy term that survives even for equivalent non-magnetic environments. The proposed framework therefore unifies the collective excitations associated with both types of altermagnetism. We further investigate the finite-temperature evolution of the coupled spin-orbital system, revealing the breakdown of spin-wave and orbital-wave approximations through spurious 1st-order transitions, while complementary classical Monte Carlo simulations recover the expected continuous 2nd-order behaviour. Our work establishes a unified microscopic framework for understanding collective magnon and orbiton excitations in altermagnets.",
+      "initial_submission_date": "2026-09-09T18:04:00Z",
+      "latest_update_date": "2026-09-09T18:04:00Z",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.other",
+        "cond-mat.quant-gas",
+        "math-ph",
+        "quant-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.10708v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.10708v1",
+      "versions_seen": [
+        "2609.10708v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-09-11T08:30:41.449646+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449646+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2609.10081",
       "current_version": 1,
@@ -57,7 +281,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-10T08:35:52.675036+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675036+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449659+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -102,7 +326,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-10T08:35:52.675060+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675060+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449667+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -147,7 +371,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-09T08:33:55.119890+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675075+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449674+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -197,7 +421,7 @@
         ]
       },
       "first_seen_at": "2026-09-10T08:35:52.675081+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675081+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449680+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -243,7 +467,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-09T08:33:55.119866+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675091+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449684+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -300,7 +524,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-09T08:33:55.119895+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675098+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449689+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -343,7 +567,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-09T08:33:55.119899+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675103+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449695+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -404,7 +628,7 @@
         ]
       },
       "first_seen_at": "2026-09-09T08:33:55.119902+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675110+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449699+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -468,7 +692,7 @@
         ]
       },
       "first_seen_at": "2026-09-09T08:33:55.119905+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675114+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449704+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -510,7 +734,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-09T08:33:55.119908+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675119+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449711+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -569,7 +793,7 @@
         ]
       },
       "first_seen_at": "2026-09-09T08:33:55.119912+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675123+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449716+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -619,7 +843,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-07T08:51:31.375218+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675128+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449721+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -670,7 +894,7 @@
         ]
       },
       "first_seen_at": "2026-09-07T08:51:31.375248+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675132+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449725+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -730,7 +954,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-07T08:51:31.375253+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675137+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449730+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -772,7 +996,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-04T08:25:24.604868+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675141+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449734+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -816,7 +1040,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-04T08:25:24.604896+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675145+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449738+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -859,7 +1083,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-01T09:06:50.187859+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675150+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449743+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -910,7 +1134,7 @@
         ]
       },
       "first_seen_at": "2026-09-02T08:19:57.292530+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675154+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449747+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -960,7 +1184,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-02T08:19:57.292547+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675158+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449751+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1027,7 +1251,7 @@
         ]
       },
       "first_seen_at": "2026-09-02T08:19:57.292551+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675163+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449755+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1072,7 +1296,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-02T08:19:57.292554+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675167+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449760+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1117,7 +1341,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-02T08:19:57.292556+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675171+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449764+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1161,7 +1385,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-01T09:06:50.187890+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675175+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449768+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1216,7 +1440,7 @@
         ]
       },
       "first_seen_at": "2026-09-01T09:06:50.187895+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675179+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449773+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1262,7 +1486,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-01T09:06:50.187899+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675183+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449777+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1304,7 +1528,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-01T09:06:50.187902+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675187+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449782+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1354,7 +1578,7 @@
         ]
       },
       "first_seen_at": "2026-09-01T09:06:50.187905+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675192+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449787+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1401,7 +1625,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-01T09:06:50.187908+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675196+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449792+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1446,7 +1670,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-01T09:06:50.187910+00:00",
-      "last_seen_at": "2026-09-10T08:35:52.675200+00:00",
+      "last_seen_at": "2026-09-11T08:30:41.449796+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
