@@ -2729,6 +2729,21 @@
       "ror_id": "https://ror.org/0405mnx93",
       "evidence_url": "https://openalex.org/I12315562",
       "source": "OpenAlex"
+    },
+    "openalex:I130769515": {
+      "name": "Pennsylvania State University",
+      "short_name": "Pennsylvania State University",
+      "city": "State College",
+      "region": "Pennsylvania",
+      "country_code": "US",
+      "country": "United States",
+      "latitude": 40.79339,
+      "longitude": -77.86,
+      "institution_type": "education",
+      "openalex_id": "https://openalex.org/I130769515",
+      "ror_id": "https://ror.org/04p491231",
+      "evidence_url": "https://openalex.org/I130769515",
+      "source": "OpenAlex"
     }
   },
   "papers": {
@@ -9470,6 +9485,60 @@
         "OpenAlex",
         "arXiv"
       ]
+    },
+    "2601.13283": {
+      "paper_id": "2601.13283",
+      "paper_version": 2,
+      "title": "Surface Phonon Hall Viscosity Induced Phonon Chirality and Nonreciprocity in Magnetic Topological Insulator Films",
+      "doi": null,
+      "metadata_work_id": "https://openalex.org/W7208808006",
+      "openalex_work_id": "https://openalex.org/W7208808006",
+      "metadata_provider": "OpenAlex",
+      "match_method": "openalex_title_author_year",
+      "match_score": 1.0,
+      "author_scope": "first_and_corresponding",
+      "authors": [
+        {
+          "paper_author_name": "Abhinava Chatterjee",
+          "name": "Abhinava Chatterjee",
+          "openalex_author_id": "https://openalex.org/A5150294512",
+          "orcid": null,
+          "author_position": "first",
+          "is_corresponding": false,
+          "author_roles": [
+            "first"
+          ],
+          "institution_ids": [
+            "openalex:I130769515"
+          ],
+          "affiliation_labels": [
+            "Department of Physics, The Pennsylvania State University, University Park, PA, USA"
+          ]
+        },
+        {
+          "paper_author_name": "Chao-Xing Liu",
+          "name": "Chao-Xing Liu",
+          "openalex_author_id": "https://openalex.org/A5103224942",
+          "orcid": "https://orcid.org/0000-0003-1881-1365",
+          "author_position": "last",
+          "is_corresponding": true,
+          "author_roles": [
+            "corresponding"
+          ],
+          "institution_ids": [
+            "openalex:I130769515"
+          ],
+          "affiliation_labels": [
+            "Center for Theory of Emergent Quantum Matter, The Pennsylvania State University, University Park, PA, USA",
+            "Department of Physics, The Pennsylvania State University, University Park, PA, USA"
+          ]
+        }
+      ],
+      "enriched_at": "2026-09-12T19:44:26.164003+00:00",
+      "sources": [
+        "OpenAlex",
+        "arXiv"
+      ]
     }
   },
   "unresolved": {
@@ -9477,97 +9546,97 @@
       "paper_id": "2607.22257",
       "title": "Chiral vibrational modes and vibrational circular dichroism",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-29T11:43:42.083480+00:00"
+      "last_attempted_at": "2026-09-12T19:32:21.626222+00:00"
     },
     "2607.10320": {
       "paper_id": "2607.10320",
       "title": "Retarded interaction between opposite chiral edges in anomalous Hall crystals",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-29T11:43:52.585410+00:00"
+      "last_attempted_at": "2026-09-12T19:32:26.711472+00:00"
     },
     "2607.04802": {
       "paper_id": "2607.04802",
       "title": "Chiral Phonons Coupled to Spin-Split Bands in Altermagnetic CrSb and MnTe",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-29T11:44:06.264836+00:00"
+      "last_attempted_at": "2026-09-12T19:32:30.827322+00:00"
     },
     "2607.01841": {
       "paper_id": "2607.01841",
       "title": "Quantifying angular momentum of coherently driven circular phonons",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-29T11:44:31.366675+00:00"
+      "last_attempted_at": "2026-09-12T19:32:34.798676+00:00"
     },
     "2606.31356": {
       "paper_id": "2606.31356",
       "title": "Three-phonon mixing as a source of light-induced chirality",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-29T11:44:35.601156+00:00"
+      "last_attempted_at": "2026-09-12T19:32:38.929515+00:00"
     },
     "2606.13874": {
       "paper_id": "2606.13874",
       "title": "Dynamical multiferroicity in framework materials",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-29T11:45:05.738404+00:00"
+      "last_attempted_at": "2026-09-12T19:32:43.371109+00:00"
     },
     "2606.08820": {
       "paper_id": "2606.08820",
       "title": "Chiral Surface Phonons",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-29T11:45:19.127001+00:00"
+      "last_attempted_at": "2026-09-12T19:32:47.629966+00:00"
     },
     "2606.01876": {
       "paper_id": "2606.01876",
       "title": "Microscopic Theory of the Phonon Thermal Hall Effect in Chiral Mott Insulators",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-29T11:45:40.683105+00:00"
+      "last_attempted_at": "2026-09-12T19:32:51.812859+00:00"
     },
     "2605.28425": {
       "paper_id": "2605.28425",
       "title": "Symmetry-Selective Topological Magnon Engineering by Phonon Angular Momentum",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-29T11:46:05.699619+00:00"
+      "last_attempted_at": "2026-09-12T19:32:56.017232+00:00"
     },
     "2605.27812": {
       "paper_id": "2605.27812",
       "title": "Order parameter scaling of chirality in structural phase transitions",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-29T11:46:10.031565+00:00"
+      "last_attempted_at": "2026-09-12T19:33:00.244741+00:00"
     },
     "2605.26794": {
       "paper_id": "2605.26794",
       "title": "Superconductivity-enhanced phonon angular momentum",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-29T11:46:18.894822+00:00"
+      "last_attempted_at": "2026-09-12T19:33:04.547136+00:00"
     },
     "2605.20631": {
       "paper_id": "2605.20631",
       "title": "Probing Lattice Dynamics in Real-Space and Real-Time",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-29T11:46:43.124817+00:00"
+      "last_attempted_at": "2026-09-12T19:33:08.534831+00:00"
     },
     "2605.13249": {
       "paper_id": "2605.13249",
       "title": "Acoustic Chirality",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-29T11:46:51.713784+00:00"
+      "last_attempted_at": "2026-09-12T19:33:12.505926+00:00"
     },
     "2605.08490": {
       "paper_id": "2605.08490",
       "title": "Antiferro-Chiral Phonons in $\\mathcal{P}\\mathcal{T}$-Symmetric Antiferromagnets",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-29T11:46:55.824269+00:00"
+      "last_attempted_at": "2026-09-12T19:33:19.814608+00:00"
     },
     "2605.03486": {
       "paper_id": "2605.03486",
       "title": "First-principles prediction of chiral-phonon-induced orbital accumulation",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-29T11:46:59.940105+00:00"
+      "last_attempted_at": "2026-09-12T19:33:27.515186+00:00"
     },
     "2605.01678": {
       "paper_id": "2605.01678",
       "title": "Generalized continuum theory of phonon angular momentum in crystals",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-29T11:47:04.130922+00:00"
+      "last_attempted_at": "2026-09-12T19:33:38.602725+00:00"
     },
     "2604.25210": {
       "paper_id": "2604.25210",
@@ -9621,43 +9690,37 @@
       "paper_id": "2601.18584",
       "title": "Boundary condition for phonon distribution functions at a smooth crystal interface and interfacial angular momentum transfer",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-29T11:48:52.752794+00:00"
+      "last_attempted_at": "2026-09-12T19:41:57.160272+00:00"
     },
     "2601.17474": {
       "paper_id": "2601.17474",
       "title": "Anisotropic Gyromagnetic Ratio and Orthogonal Einstein-de Haas Effect",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-29T11:48:57.135602+00:00"
-    },
-    "2601.13283": {
-      "paper_id": "2601.13283",
-      "title": "Surface Phonon Hall Viscosity Induced Phonon Chirality and Nonreciprocity in Magnetic Topological Insulator Films",
-      "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-29T11:49:01.787006+00:00"
+      "last_attempted_at": "2026-09-12T19:43:23.174729+00:00"
     },
     "2601.12763": {
       "paper_id": "2601.12763",
       "title": "Inverse Chiral Phonon Zeeman Effect in Noncentrosymmetric Crystals",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-29T11:49:05.950383+00:00"
+      "last_attempted_at": "2026-09-12T19:44:26.164393+00:00"
     },
     "2512.11417": {
       "paper_id": "2512.11417",
       "title": "Spontaneous spin-selective structural phase transition in chiral crystals",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-29T11:49:18.709279+00:00"
+      "last_attempted_at": "2026-09-12T19:44:32.120617+00:00"
     },
     "2512.08385": {
       "paper_id": "2512.08385",
       "title": "Chiral-phonon generation of orbital currents in light transition metals",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-29T11:49:23.024820+00:00"
+      "last_attempted_at": "2026-09-12T19:44:51.656554+00:00"
     },
     "2512.07518": {
       "paper_id": "2512.07518",
       "title": "Alteraxial Phonons in Collinear Magnets",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-08-29T11:49:27.256584+00:00"
+      "last_attempted_at": "2026-09-12T19:44:56.968288+00:00"
     },
     "2512.04041": {
       "paper_id": "2512.04041",
@@ -10040,9 +10103,9 @@
   },
   "schema_version": 2,
   "description": "Paper-specific first-author and explicitly identified corresponding-author affiliations from arXiv/OpenAlex/Crossref/ROR; uncertain identities remain unresolved.",
-  "generated_at": "2026-09-12T09:29:24.853486+00:00",
+  "generated_at": "2026-09-12T19:45:13.153472+00:00",
   "eligible_field_papers": 246,
-  "resolved_papers": 152,
-  "unresolved_papers": 94,
+  "resolved_papers": 153,
+  "unresolved_papers": 93,
   "author_scope": "first_and_corresponding"
 }
