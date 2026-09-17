@@ -1,8 +1,135 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-09-16T09:00:44.552724+00:00",
+  "updated_at": "2026-09-17T09:07:37.443685+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2609.18485",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.18485v1",
+      "title": "Chiral classical and quantum acoustics with hole-spin qubits",
+      "authors": [
+        "Zhanning Wang",
+        "Yongtao Li",
+        "Nelson E. Rivas",
+        "Gonzalo García",
+        "Irene Castro",
+        "Rubén Seoane Souto",
+        "Daniel Ramos",
+        "José C. Abadillo-Uriel"
+      ],
+      "abstract": "Gate-defined hole spins combine strong spin-orbit coupling with exceptional strain sensitivity, making surface acoustic waves a natural route to remote, phase-coherent control. We show that counterpropagating surface acoustic waves can differ in coupling strength and in whether they predominantly drive spin rotations or modulate the qubit frequency. We call the transverse transition-strength imbalance spin-acoustic chirality and show that it is tunable through gate-controlled reshaping of the dot confinement. Combining a multiband Luttinger-Kohn Hamiltonian with the Bir-Pikus description of strain and 3D piezoelectric finite-element simulations, we obtain the acoustic g-matrix modulation governing coherent SAW driving. Quantizing the same strain-mediated interaction yields the corresponding single-phonon coupling, and a generalized anisotropic Rabi interaction with co-rotating, counter-rotating, and longitudinal components, linking classical chirality to quantum anisotropy and directional one-phonon emission. Magnetic field orientation and dot shape tune the acoustic chirality and operator selectivity. We illustrate this framework through bichromatic coherence protection and phonon-mediated heralded Bell-state initialization.",
+      "initial_submission_date": "2026-09-16T11:17:37Z",
+      "latest_update_date": "2026-09-16T11:17:37Z",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.18485v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.18485v1",
+      "versions_seen": [
+        "2609.18485v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-09-17T09:07:37.440444+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440444+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2609.18332",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.18332v1",
+      "title": "Direct observation of phonon mode with an antisymmetric Raman tensor",
+      "authors": [
+        "Shangfei Wu",
+        "Shang Ren",
+        "Kai Du",
+        "Xianghan Xu",
+        "Sang-Wook Cheong",
+        "David Vanderbilt",
+        "Girsh Blumberg"
+      ],
+      "abstract": "Phonon angular momentum, characterized by circular or elliptical motion of atoms, plays a decisive role in diverse phenomena, ranging from the phonon Hall effect, phonon magnetic moment, Einstein-de Haas effect, Weyl phonons, and driven chiral phonons. The phonon modes with an antisymmetric Raman tensor, which carry an intrinsic phonon angular momentum in a pseudovector symmetry channel, have been overlooked in the past in the chiral phonon community. Here, we report the detection of this type of phonon mode using polarization-resolved Raman spectroscopy. We observe a phonon at 266cm$^{-1}$ in the antiferromagnetic chiral phase of Cr$_2$O$_3$ in the $A_2$-pseudovector symmetry channel. This $A_2$ mode's frequency and the elliptical motion are captured by first-principles phonon calculations, which treat both lattice and spins on an equal footing as 'slow' degrees of freedom. This mode gets Raman activity due to the presence of Cr vacancies in Cr$_2$O$_3$ that locally break the twofold rotational symmetry perpendicular to the threefold axis. Our results provide a new way to detect the novel symmetry-forbidden $A_2$ phonon modes with an antisymmetric Raman tensor in a pseudovector symmetry channel.",
+      "initial_submission_date": "2026-09-16T08:55:36Z",
+      "latest_update_date": "2026-09-16T08:55:36Z",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.18332v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.18332v1",
+      "versions_seen": [
+        "2609.18332v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Experimental",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [
+        "Raman spectroscopy"
+      ],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [
+        "chiral phonon",
+        "chiral phonons",
+        "phonon angular momentum",
+        "phonon magnetic moment",
+        "Weyl phonon",
+        "phonon Hall effect"
+      ],
+      "matched_keywords": [
+        "chiral phonon",
+        "chiral phonons",
+        "phonon angular momentum",
+        "phonon magnetic moment",
+        "Weyl phonon",
+        "phonon Hall effect",
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [
+          "chiral phonon",
+          "chiral phonons",
+          "phonon angular momentum"
+        ],
+        "related_terms": [
+          "phonon magnetic moment",
+          "Weyl phonon",
+          "phonon Hall effect"
+        ],
+        "author_experimental_actions": [
+          "We observe"
+        ],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-09-17T09:07:37.440473+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440473+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2609.16821",
       "current_version": 1,
@@ -41,7 +168,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-16T09:00:44.551056+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551056+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440490+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -101,7 +228,7 @@
         ]
       },
       "first_seen_at": "2026-09-11T08:30:41.449637+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551094+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440500+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -141,7 +268,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-16T09:00:44.551099+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551099+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440508+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -189,7 +316,7 @@
         ]
       },
       "first_seen_at": "2026-09-16T09:00:44.551103+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551103+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440514+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -232,7 +359,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-16T09:00:44.551105+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551105+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440520+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -274,7 +401,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-16T09:00:44.551107+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551107+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440526+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -315,7 +442,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-16T09:00:44.551110+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551110+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440531+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -367,7 +494,7 @@
         ]
       },
       "first_seen_at": "2026-09-16T09:00:44.551113+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551113+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440537+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -439,7 +566,7 @@
         ]
       },
       "first_seen_at": "2026-09-16T09:00:44.551115+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551115+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440542+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -482,7 +609,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-16T09:00:44.551117+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551117+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440548+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -535,7 +662,7 @@
         ]
       },
       "first_seen_at": "2026-09-16T09:00:44.551118+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551118+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440553+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -586,7 +713,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-16T09:00:44.551120+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551120+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440559+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -629,7 +756,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-16T09:00:44.551122+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551122+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440564+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -670,7 +797,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-16T09:00:44.551123+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551123+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440569+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -725,7 +852,7 @@
         ]
       },
       "first_seen_at": "2026-09-16T09:00:44.551125+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551125+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440577+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -776,7 +903,7 @@
         ]
       },
       "first_seen_at": "2026-09-16T09:00:44.551126+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551126+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440583+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -837,7 +964,7 @@
         ]
       },
       "first_seen_at": "2026-09-16T09:00:44.551128+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551128+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440588+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -902,7 +1029,7 @@
         ]
       },
       "first_seen_at": "2026-09-16T09:00:44.551130+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551130+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440594+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -949,7 +1076,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-16T09:00:44.551131+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551131+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440599+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -995,7 +1122,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-16T09:00:44.551133+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551133+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440604+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1049,7 +1176,7 @@
         ]
       },
       "first_seen_at": "2026-09-11T08:30:41.449610+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551140+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440609+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1114,7 +1241,7 @@
         ]
       },
       "first_seen_at": "2026-09-11T08:30:41.449642+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551144+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440614+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1160,7 +1287,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-11T08:30:41.449646+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551148+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440620+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1218,7 +1345,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-10T08:35:52.675036+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551152+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440625+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1263,7 +1390,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-10T08:35:52.675060+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551154+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440630+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1308,7 +1435,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-09T08:33:55.119890+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551158+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440637+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1358,7 +1485,7 @@
         ]
       },
       "first_seen_at": "2026-09-10T08:35:52.675081+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551161+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440642+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1404,7 +1531,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-09T08:33:55.119866+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551164+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440647+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1461,7 +1588,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-09T08:33:55.119895+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551166+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440652+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1504,7 +1631,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-09T08:33:55.119899+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551169+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440657+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1565,7 +1692,7 @@
         ]
       },
       "first_seen_at": "2026-09-09T08:33:55.119902+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551172+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440662+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1629,7 +1756,7 @@
         ]
       },
       "first_seen_at": "2026-09-09T08:33:55.119905+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551176+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440668+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1671,7 +1798,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-09T08:33:55.119908+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551179+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440673+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1730,7 +1857,7 @@
         ]
       },
       "first_seen_at": "2026-09-09T08:33:55.119912+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551182+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440678+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1780,7 +1907,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-07T08:51:31.375218+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551185+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440683+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1831,7 +1958,7 @@
         ]
       },
       "first_seen_at": "2026-09-07T08:51:31.375248+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551188+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440688+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1891,7 +2018,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-07T08:51:31.375253+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551190+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440694+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1933,7 +2060,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-04T08:25:24.604868+00:00",
-      "last_seen_at": "2026-09-16T09:00:44.551193+00:00",
+      "last_seen_at": "2026-09-17T09:07:37.440699+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
