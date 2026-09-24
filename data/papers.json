@@ -1,8 +1,345 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-09-23T09:01:21.521446+00:00",
+  "updated_at": "2026-09-24T08:57:19.358340+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2609.14172",
+      "current_version": 2,
+      "versioned_arxiv_id": "2609.14172v2",
+      "title": "Exact admissibility radii for the lattice topological charge of quantum spin textures",
+      "authors": [
+        "Raúl Sánchez Galán",
+        "Robert Wieser"
+      ],
+      "abstract": "How much can a magnetic field change before a quantum spin texture loses its skyrmion charge? For a triangulated spin-$s$ texture on $N$ quantum sites, we determine the smallest change in its local moments that makes the reconstructed topological charge ill-defined, allowing unequal error bounds and fixed boundary moments. Combined with spectral perturbation theory, this geometric threshold yields explicit magnetic-field intervals that preserve the ground-state charge, scaling as $1/N$ when the gap and geometric margin have positive limits. We apply the bounds to finite spin-$1/2$ systems with exchange and Dzyaloshinskii-Moriya interactions. In a rigorously verified seven-spin example the charge changes at a single certified field, while the excitation gap and all local spin polarizations remain bounded away from zero; there the geometric margin vanishes linearly.",
+      "initial_submission_date": "2026-09-12T22:13:56Z",
+      "latest_update_date": "2026-09-23T16:23:58Z",
+      "categories": [
+        "math-ph",
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.14172v2",
+      "pdf_url": "https://arxiv.org/pdf/2609.14172v2",
+      "versions_seen": [
+        "2609.14172v2"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-09-24T08:57:19.356402+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356402+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2609.28214",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.28214v1",
+      "title": "Disentangling spin polarization from driven circular ionic motion in EuTiO$_3$",
+      "authors": [
+        "Clifford J. Allington",
+        "Matthew J. Lutz",
+        "Enoch",
+        "Ho",
+        "Fabian Graf",
+        "Martina Basini",
+        "Hiroki Ueda",
+        "Michael Grimes",
+        "Alexander B. Elliott",
+        "Megan F. Biggs",
+        "Ravi Finn",
+        "Shih-Wen Huang",
+        "Merideth A. Henstridge",
+        "Matthias C. Hoffmann",
+        "Takahiro Sato",
+        "Roberto Alonso-Mori",
+        "Diling Zhu",
+        "Quynh L. Nguyen",
+        "Vincent Esposito",
+        "Jeffrey T. Babicz",
+        "Elizabeth Skoropata",
+        "Biaolong Liu",
+        "Eugenio Paris",
+        "Arnau Romaguera Camps",
+        "Elia Razzoli",
+        "Roman Mankowsky",
+        "Flavio Capotondi",
+        "Nicolas Jaouen",
+        "Daniele Pergolesi",
+        "Milan Radovic",
+        "Matteo Savoini",
+        "Steven L. Johnson",
+        "Jeremy A. Johnson",
+        "Urs Staub"
+      ],
+      "abstract": "Coherently driven circular ionic motion has been reported to produce large helicity-dependent optical responses attributed to transient magnetization. However, the microscopic nature and magnitude of this phenomenon, sometimes referred to as dynamical multiferroicity, remain strongly debated. Here, we directly study the connection between ionic circulation induced by a high-field circular terahertz (THz) drive and its effect on the spin system of EuTiO$_3$ using X-rays. This material exhibits an optical response consistent with the putative magnetic signal observed in related non-magnetic materials. Furthermore, the presence of Eu$^{2+}$ ions enables the use of X-ray magnetic circular dichroism (XMCD) to test for the creation of transient spin polarization. Simultaneously, ultrafast X-ray diffraction (XRD) measures the circular ionic motion from which we determine the mechanical angular momentum. We find a classical ionic contribution of $3\\times10^{-8}~μ_B$ from XRD and upper limits of $0.03~μ_B$ and $0.11~μ_B$ from the sensitivity of XMCD at the europium $M_5$ and $L_2$ edges, probing the $4f$ and $5d$ shells of Eu$^{2+}$, respectively. These observations show that large-amplitude circular ionic motion in this system is not accompanied by a detectable spin polarization despite the clear signature in the optical data, with the XMCD upper bounds and classical contribution differing by many orders of magnitude.",
+      "initial_submission_date": "2026-09-23T14:49:39Z",
+      "latest_update_date": "2026-09-23T14:49:39Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.28214v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.28214v1",
+      "versions_seen": [
+        "2609.28214v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "multiferroic"
+      ],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [
+        "dynamical multiferroicity"
+      ],
+      "matched_keywords": [
+        "dynamical multiferroicity",
+        "ionic motion"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [
+          "dynamical multiferroicity"
+        ],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "ionic motion"
+        ]
+      },
+      "first_seen_at": "2026-09-24T08:57:19.356425+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356425+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2609.28125",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.28125v1",
+      "title": "Helical Anomaly from Concurrent $\\mathbb{Z}$ and $\\mathbb{Z}_2$ Topology in an Acoustic Semimetal",
+      "authors": [
+        "Hou-Yin Li",
+        "Hua-Shan Lai",
+        "Jian-Lan Xie",
+        "Xiao-Chen Sun",
+        "Yan-Feng Chen",
+        "Cheng He"
+      ],
+      "abstract": "Topological classification constitutes a cornerstone of modern condensed-matter physics. Historically, topological systems have been predominantly characterized by invariants confined to a single topological class, such as topological insulators with a $\\mathbb{Z}_2$ invariant and Weyl semimetals with an integer ($\\mathbb{Z}$) topological charge. While such classification frameworks in principle permit gapless phases in which bulk and boundary degeneracies are protected by distinct invariants, this regime has received limited focused attention, as coordinating the requisite symmetries within a single band structure is highly nontrivial. Here, we realize such concurrent $\\mathbb{Z}$ and $\\mathbb{Z}_2$ topology in a two-dimensional acoustic semimetal, revealing pseudospin-selective topological bulk modes arising from the interplay between these distinct invariants, termed helical anomaly bulk states (HABSs). Our lattice design exploits layer, sublattice, and gauge-staggered degrees of freedom, enabling modular control of effective time-reversal, chiral, and particle-hole symmetries. The resulting system exhibits bulk degeneracies protected by an integer $\\mathbb{Z}$ invariant and Kramers-like boundary degeneracies protected by a $\\mathbb{Z}_2$ invariant, forming twisted boundary arcs. Crucially, finite-size systems manifest helical or anti-helical edge states coexisting with HABSs, a distinctive signature absent in single-invariant topologies. Our results establish HABSs as a characteristic signature of concurrent topology and demonstrate a new regime where bulk and boundary invariants jointly govern topological transport beyond conventional single-class frameworks.",
+      "initial_submission_date": "2026-09-23T13:52:02Z",
+      "latest_update_date": "2026-09-23T13:52:02Z",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.28125v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.28125v1",
+      "versions_seen": [
+        "2609.28125v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "Weyl semimetal",
+        "topological insulator"
+      ],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-09-24T08:57:19.356430+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356430+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2609.27721",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.27721v1",
+      "title": "Resonantly Enhanced Multiphonon Scattering and Local Orbital-Phonon Coupling in Bulk and Thin Flakes of 2D Single Crystals of Antiferromagnetic (NixFe1-x)2P2S6",
+      "authors": [
+        "Nasaru Khan",
+        "Miłosz Rybak",
+        "Yuliia Shemerliuk",
+        "Sebastian Selter",
+        "Bernd Büchner",
+        "Saicharan Aswartham",
+        "Krzysztof Wohlfeld",
+        "Pradeep Kumar"
+      ],
+      "abstract": "Orbital degrees of freedom play a pivotal role in shaping the physical properties of two-dimensional (2D) van der Waals magnetic systems, strongly influencing electron-phonon coupling and intermediate-state dynamics. In this study, we present a comprehensive temperature and thickness-dependent Raman investigation of the single crystals of 2D van der Waals antiferromagnetic series (NixFe1-x)2P2S6. Utilizing Raman spectroscopy, we explore the interplay between local orbital excitations and lattice vibrations, observing higher-order phonon modes extending up to the fourth order. We observe an anomalously high and weakly temperature-dependent intensity ratio of these higher-order modes relative to low-energy first-order phonons. Theoretical cluster calculations and Franck-Condon modelling reveal that these features originate from resonantly enhanced multiphonon scattering mediated by localized intermediate Ni 3d8 multiplet excitations. The local orbital occupancy of these intermediate states couples strongly to lattice coordinates, providing a selective enhancement mechanism for specific phonon channels. Notably, these higher-order features are absent in the end-member Fe2P2S6. This distinction reflects the charge-transfer character of Ni2P2S6, which places optical transitions in resonance with local multiplet states, contrasted with the Mott-Hubbard insulator regime in Fe-rich analogues. Our findings clarify the microscopic origin of high-frequency Raman scattering in transition metal thiophosphates and underscore the central role of local orbital-phonon interactions in 2D correlated magnets.",
+      "initial_submission_date": "2026-09-23T11:39:18Z",
+      "latest_update_date": "2026-09-23T11:39:18Z",
+      "categories": [
+        "cond-mat.other",
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.27721v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.27721v1",
+      "versions_seen": [
+        "2609.27721v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Experimental",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "van der Waals magnet"
+      ],
+      "detected_experimental_methods": [
+        "Raman spectroscopy"
+      ],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon",
+        "lattice vibration"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [
+          "We observe"
+        ],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon",
+          "lattice vibration"
+        ]
+      },
+      "first_seen_at": "2026-09-24T08:57:19.356433+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356433+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2609.27592",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.27592v1",
+      "title": "Emergence of Chiral Dynamical Multiferroicity in a Ferroelectric Lattice Nonadiabatically Driven by Ultrafast Achiral Electric Fields",
+      "authors": [
+        "Chuanbao Zhang",
+        "Zhizhong Ding",
+        "Ping Cui",
+        "Zhenyu Zhang"
+      ],
+      "abstract": "It has been shown recently that chiral dynamical multiferroicity can be generated on a ferroelectric lattice whose electric dipoles respond masslessly under chiral optical pumping. Here we demonstrate that, when driven by ultrafast electric pulses, chiral dynamical multiferroicity can also emerge even in situations where the external field is achiral. We reveal this striking phenomenon using a prototypical system of a BaTiO$_3$ moiré ferroelectric lattice, emphasizing the key factor that its chiral electric dipoles inevitably behave massively upon ultrafast driving. At a deeper level, the massive nature is attributed to the anisotropic and nonadiabatic dipolar responses, as captured by the phase difference between the faster longitudinal and slower transverse components of the ferroelectric polarization. Crucially, such a phase difference naturally also gives rise to dynamical magnetization, which exhibits chiral magnetic textures with monopole-like topology coexisting with the ferroelectric chirality. These findings establish the dipolar mass as an enabling and tunable degree of freedom in inducing chiral dynamical multiferroicity, offering new avenues for ultrafast, non-contact magnetic control using pure electric probes.",
+      "initial_submission_date": "2026-09-23T09:09:33Z",
+      "latest_update_date": "2026-09-23T09:09:33Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.27592v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.27592v1",
+      "versions_seen": [
+        "2609.27592v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "ferroelectric",
+        "multiferroic"
+      ],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [
+        "dynamical multiferroicity"
+      ],
+      "matched_keywords": [
+        "dynamical multiferroicity"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [
+          "dynamical multiferroicity"
+        ],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-09-24T08:57:19.356435+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356435+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2609.26869",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.26869v1",
+      "title": "Easy-plane anisotropy of magnetic fluctuations in UTe2",
+      "authors": [
+        "Zehao Wang",
+        "Ewan Scott",
+        "David W. Tam",
+        "Philippe Bourges",
+        "Keke Feng",
+        "Tyler W. Wannamaker",
+        "Paul Steffens",
+        "Arno Hiess",
+        "Ryan E. Baumbach",
+        "M. Brian Maple",
+        "Michal P. Kwasigroch",
+        "Pengcheng Dai"
+      ],
+      "abstract": "The large directional anisotropy of superconducting UTe2 along the lattice a, b, c directions in magnetic susceptibility, upper critical fields, and Knight shift suggests spin-triplet Cooper pairing. If spin fluctuations bind the Cooper pair, one needs to determine their anisotropy in spin space to characterize the superconducting state. Here we use polarised and unpolarised inelastic neutron scattering (INS) experiments to show that antiferromagnetic (AFM) spin fluctuations at the Y point are highly isotropic within the ac-plane but have no observable magnitude along the b-axis. Our results rule out the assumed Ising anisotropy and constrain the possible pairing channels. AFM exchange is no longer pair forming in the triplet channel and the d vector along b is strongly favoured. We capture the experimental observations within a microscopic framework that encompasses the dual nature of 5f electrons. We include itinerant and localized 5f-moments in a tight-binding model fitted to quantum oscillations data. In congruence with INS, the exchange between localized moments generically consists of a strong FM intra-dimer interaction, maxima close to the Y and T points, mediated by 5p_y and 6d_{3z^2-r^2} orbitals respectively, and magnetically decoupled ab-planes. We find that anisotropy and dimerization of the moments can lead to gapped excitations that, in combination with Landau damping, can produce the observed overdamped response at the Y point. We suggest that enhancement of the response and its observed near-O(2)-symmetry could both be driven by proximity to a quantum critical point where the dimer excitation gap closes and gives place to incommensurate helical order. Analysis of the linearized gap equation for a nearest-neighbour pairing interaction favours the B1u triplet with a dominant d-vector component along b, although the possibility of spin singlet pairing cannot be ruled out.",
+      "initial_submission_date": "2026-09-22T17:21:29Z",
+      "latest_update_date": "2026-09-22T17:21:29Z",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.26869v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.26869v1",
+      "versions_seen": [
+        "2609.26869v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-09-24T08:57:19.356438+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356438+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2609.26628",
       "current_version": 1,
@@ -55,7 +392,7 @@
         ]
       },
       "first_seen_at": "2026-09-23T09:01:21.519487+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519487+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356610+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -98,7 +435,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-23T09:01:21.519516+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519516+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356621+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -141,7 +478,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-23T09:01:21.519521+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519521+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356626+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -188,7 +525,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-23T09:01:21.519524+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519524+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356631+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -232,7 +569,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-23T09:01:21.519527+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519527+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356636+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -304,7 +641,7 @@
         ]
       },
       "first_seen_at": "2026-09-22T08:58:47.673642+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519554+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356641+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -359,7 +696,7 @@
         ]
       },
       "first_seen_at": "2026-09-22T08:58:47.673672+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519562+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356645+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -406,7 +743,7 @@
         ]
       },
       "first_seen_at": "2026-09-22T08:58:47.673677+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519567+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356649+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -454,7 +791,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-22T08:58:47.673681+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519573+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356654+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -497,7 +834,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-22T08:58:47.673684+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519577+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356658+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -544,7 +881,7 @@
         ]
       },
       "first_seen_at": "2026-09-22T08:58:47.673687+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519581+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356662+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -588,7 +925,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-22T08:58:47.673690+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519585+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356667+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -628,7 +965,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-22T08:58:47.673693+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519696+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356671+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -686,7 +1023,7 @@
         ]
       },
       "first_seen_at": "2026-09-22T08:58:47.673696+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519702+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356678+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -743,7 +1080,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-21T09:32:04.404321+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519705+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356683+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -788,7 +1125,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-21T09:32:04.404347+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519709+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356687+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -840,7 +1177,7 @@
         ]
       },
       "first_seen_at": "2026-09-21T09:32:04.404352+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519713+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356694+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -902,7 +1239,7 @@
         ]
       },
       "first_seen_at": "2026-09-21T09:32:04.404358+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519717+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356698+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -945,7 +1282,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-21T09:32:04.404361+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519721+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356703+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -998,7 +1335,7 @@
         ]
       },
       "first_seen_at": "2026-09-18T08:41:43.732777+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519724+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356707+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1052,7 +1389,7 @@
         ]
       },
       "first_seen_at": "2026-09-18T08:41:43.732804+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519728+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356711+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1097,7 +1434,7 @@
         ]
       },
       "first_seen_at": "2026-09-18T08:41:43.732810+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519732+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356715+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1139,7 +1476,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-18T08:41:43.732814+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519735+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356720+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1179,7 +1516,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-22T08:58:47.673876+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519739+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356724+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1230,7 +1567,7 @@
         ]
       },
       "first_seen_at": "2026-09-17T09:07:37.440444+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519742+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356728+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1306,7 +1643,7 @@
         ]
       },
       "first_seen_at": "2026-09-17T09:07:37.440473+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519746+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356733+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1348,7 +1685,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-22T08:58:47.673892+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519749+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356737+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1390,7 +1727,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-16T09:00:44.551056+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519753+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356741+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1490,7 +1827,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-16T09:00:44.551099+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519760+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356745+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1538,7 +1875,7 @@
         ]
       },
       "first_seen_at": "2026-09-16T09:00:44.551103+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519764+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356749+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1581,7 +1918,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-16T09:00:44.551105+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519767+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356754+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1623,7 +1960,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-16T09:00:44.551107+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519771+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356758+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1664,7 +2001,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-16T09:00:44.551110+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519774+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356762+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1716,7 +2053,7 @@
         ]
       },
       "first_seen_at": "2026-09-16T09:00:44.551113+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519777+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356767+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1788,7 +2125,7 @@
         ]
       },
       "first_seen_at": "2026-09-16T09:00:44.551115+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519781+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356771+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1831,7 +2168,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-16T09:00:44.551117+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519784+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356775+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1884,7 +2221,7 @@
         ]
       },
       "first_seen_at": "2026-09-16T09:00:44.551118+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519788+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356779+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1935,7 +2272,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-16T09:00:44.551120+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519791+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356783+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1978,7 +2315,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-16T09:00:44.551122+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519794+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356787+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2019,7 +2356,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-16T09:00:44.551123+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519800+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356791+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2074,7 +2411,7 @@
         ]
       },
       "first_seen_at": "2026-09-16T09:00:44.551125+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519803+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356795+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2125,7 +2462,7 @@
         ]
       },
       "first_seen_at": "2026-09-16T09:00:44.551126+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519807+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356799+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2186,7 +2523,7 @@
         ]
       },
       "first_seen_at": "2026-09-16T09:00:44.551128+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519810+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356803+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2251,7 +2588,7 @@
         ]
       },
       "first_seen_at": "2026-09-16T09:00:44.551130+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519814+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356807+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2298,7 +2635,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-16T09:00:44.551131+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519818+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356812+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2344,7 +2681,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-16T09:00:44.551133+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519821+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356817+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2398,7 +2735,7 @@
         ]
       },
       "first_seen_at": "2026-09-11T08:30:41.449610+00:00",
-      "last_seen_at": "2026-09-23T09:01:21.519825+00:00",
+      "last_seen_at": "2026-09-24T08:57:19.356821+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
