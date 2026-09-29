@@ -1,8 +1,359 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-09-28T10:26:25.352814+00:00",
+  "updated_at": "2026-09-29T10:21:07.207069+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2609.35754",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.35754v1",
+      "title": "Perfect Born Sampling of Symmetric Thermal Tensor Network for Quantum Lattice Models",
+      "authors": [
+        "Jianxin Gao",
+        "Qiaoyi Li",
+        "Yuan Gao",
+        "Chuanshu Xu",
+        "Guoliang Wu",
+        "Su Yi",
+        "Bin-Bin Chen",
+        "Wei Li"
+      ],
+      "abstract": "Accurate calculations of quantum lattice models at low temperatures constitute a major challenge in many-body physics. Stochastic sampling of tensor-network states offers a promising route to tackle this problem; however, existing schemes have long faced a fundamental dilemma---sampling efficiency and symmetry acceleration \\textit{cannot} be achieved simultaneously. Here we propose a perfect Born sampling approach for thermal tensor networks, which performs importance sampling directly from the purified density matrix via the Born rule and incorporates Abelian and non-Abelian symmetries by sampling symmetry quantum numbers. We benchmark the method, realized as both stochastic matrix product states (stoMPS) and stochastic projected entangled pair states (stoPEPS), on large-scale quantum lattice models. Using stoMPS, we accurately simulate the square-lattice Hubbard model on cylinders up to width $W=10$, and study the triangular-lattice Hubbard model down to $T/t = 1/64$, revealing scalar chiral order at half filling and kinetic ferromagnetism upon electron doping. We further extend the stoMPS method to compute finite-temperature quantum dynamics, as demonstrated by the optical conductivity of the Hubbard model, and generalize it to stoPEPS, as showcased on the $20\\times20$ square-lattice quantum Ising model at its quantum critical point. Our method combines high sampling efficiency with full symmetry acceleration, and can be used as a state-of-the-art framework for studying both equilibrium and dynamical properties down to ultralow temperatures.",
+      "initial_submission_date": "2026-09-28T17:58:21Z",
+      "latest_update_date": "2026-09-28T17:58:21Z",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.35754v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.35754v1",
+      "versions_seen": [
+        "2609.35754v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-09-29T10:21:07.205421+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205421+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2609.35602",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.35602v1",
+      "title": "Chiral Weyl--Kondo semimetal and circular photogalvanic effect in a prototype Kondo lattice system",
+      "authors": [
+        "Yuan Fang",
+        "Kuan-Sen Lin",
+        "Mounica Mahankali",
+        "Arushi",
+        "Kevin Allen",
+        "Sanu Mishra",
+        "Emilia Morosan",
+        "Qimiao Si"
+      ],
+      "abstract": "Chiral Weyl--Kondo semimetals (cWKSM) provide a setting in which chiral Weyl quasiparticles emerge in the immediate vicinity of the Fermi energy from a Kondo-driven reconstruction of the strongly correlated electronic states in chiral heavy fermion systems (K.-S. Lin et al., arXiv:2602.22185). A defining characteristic of this strongly correlated topological state is the Kramers chiral Weyl fermions in the low-energy quasiparticle states. Recently, experiments in CeGaGe have emerged as a concrete realization of the proposed effect (Arushi et al., preprint). Motivated by these findings, here we go beyond the materials-specific effects by constructing a prototype Kondo lattice model; it incorporates only the essential couplings that respect the associated tetragonal crystalline symmetries. This simplification allows us to robustly demonstrate the symmetry-enforced Kramers Weyl fermions and related topological nodal states in the spectrum of heavy quasiparticles. Furthermore, the simplification provides a tractable setting to determine the salient features in the system's nonlinear optical response, the circular photogalvanic effect, in chiral Weyl--Kondo semimetals. Both analytical and numerical calculations identify sharp peaks in the frequency domain as signatures of the Kondo-driven chiral Weyl nodes; the sharpness of the spectrum reflects the resonant nature of the underlying strongly correlated electronic excitations. Thus, cWKSM provides a unique setting to spectroscopically identify topological fermions that are induced by strong electron correlations. As such, our results are expected to bring about much needed new insights into the understanding of strongly correlated gapless topological matter.",
+      "initial_submission_date": "2026-09-28T16:51:00Z",
+      "latest_update_date": "2026-09-28T16:51:00Z",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.35602v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.35602v1",
+      "versions_seen": [
+        "2609.35602v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-09-29T10:21:07.205449+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205449+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2609.35556",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.35556v1",
+      "title": "Ultra-high vacuum Raman platform for in situ characterization of graphene nanoribbons",
+      "authors": [
+        "Jeong Ha Hwang",
+        "Amogh Kinikar",
+        "Lukas Rotach",
+        "Andres Ortega-Guerrero",
+        "Carlo A. Pignedoli",
+        "Klaus Muellen",
+        "Thorsten G. Englmann",
+        "Xinliang Feng",
+        "Pascal Ruffieux",
+        "Roman Fasel",
+        "Mickael L. Perrin",
+        "Gabriela Borin Barin"
+      ],
+      "abstract": "Atomically precise graphene nanoribbons (GNRs) exhibit tunable electronic and magnetic properties governed by edge topology and finite-size effects, which make them versatile platforms for next-generation electronic and spintronic applications. However, the unpaired pi-electrons responsible for their magnetic properties simultaneously make them highly susceptible to chemical degradation under ambient conditions. This intrinsic reactivity poses a central experimental challenge: accessing vibrational and electronic signatures of air-sensitive GNRs during synthesis and under controlled environments without breaking vacuum. Once the material has been exposed to air, standard characterization techniques would probe oxidized or chemically modified species rather than the pristine form. Here, we overcome this limitation by developing a home-built ultra-high vacuum (UHV) Raman platform designed to preserve sample integrity by preventing air exposure and to enable in situ investigation of material properties. The portable Raman vacuum suitcase (RVS) integrates temperature control and precise gas dosing, allowing direct monitoring of growth kinetics, lattice dynamics, and reactive-edge responses under well-defined thermal and chemical environments. Using this platform, we monitor the on-surface synthesis of 7- and 9-atom-wide armchair GNRs (7- and 9-AGNRs), quantify the evolution of 7-AGNR Raman modes over a wide temperature range (162-748 K), and resolve chemical changes upon controlled O2 exposure that are consistent with oxidation at the reactive zigzag sites. These results establish UHV Raman spectroscopy with the RVS as a route to accessing the intrinsic vibrational signatures of low-dimensional quantum materials under controlled environments.",
+      "initial_submission_date": "2026-09-28T16:27:15Z",
+      "latest_update_date": "2026-09-28T16:27:15Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.35556v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.35556v1",
+      "versions_seen": [
+        "2609.35556v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "Raman mode"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "Raman mode"
+        ]
+      },
+      "first_seen_at": "2026-09-29T10:21:07.205454+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205454+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2609.34332",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.34332v1",
+      "title": "Observation of a topological edge state among localized bulk states in the anisotropic quantum Rabi model",
+      "authors": [
+        "Sungjoo Lim",
+        "Chanyang Im",
+        "Christopher G. Yale",
+        "Brian K. McFarland",
+        "Edward C. Tortorici",
+        "Daniel S. Lobser",
+        "Melissa C. Revelle",
+        "Susan M. Clark",
+        "Mahn-Soo Choi",
+        "Junki Kim"
+      ],
+      "abstract": "Topological phases are governed by discrete symmetries that protect boundary modes against local perturbations. When translational periodicity is absent, the bulk states also become localized, so that a topological edge state can no longer be distinguished from them by spatial localization alone. Here, we investigate the topological edge state (TES) and bulk eigenstates of the anisotropic quantum Rabi model (AQRM) in a trapped-ion quantum simulator. The AQRM hosts a topological phase in a one-dimensional synthetic lattice, whose translational symmetry is broken by the non-uniform couplings scaling with the site index. While both the TES and bulk states show localized distributions, we find that the TES exhibits well-defined chirality and near-complete spin--boson separability as signatures of the topological phase, in contrast to the bulk states. Phase-space tomography further reveals that the bosonic component of the TES is a squeezed vacuum state, with squeezing up to 6.45 dB. These results identify the TES through its intrinsic topological signatures and establish eigenstate-level characterization as a route to probing topological phenomena.",
+      "initial_submission_date": "2026-09-28T05:09:33Z",
+      "latest_update_date": "2026-09-28T05:09:33Z",
+      "categories": [
+        "quant-ph",
+        "physics.atom-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.34332v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.34332v1",
+      "versions_seen": [
+        "2609.34332v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-09-29T10:21:07.205458+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205458+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2609.34000",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.34000v1",
+      "title": "Topological chiral edge modes in the continuum of a trivial bulk",
+      "authors": [
+        "Li Ge"
+      ],
+      "abstract": "Chiral edge modes in topological states of matter are routinely found inside band gaps, which may be deformed and shifted as a function of the lattice momentum. Here we show that they can exist inside a bulk band instead, i.e., in the continuum. These chiral edge modes in the continuum (CEMICs) are induced by introducing an imaginary magnetic flux to an otherwise topologically trivial two-dimensional system, realized by imposing asymmetric couplings along the edge. While the stronger couplings provide a preferred circulation direction, we find that the edge localization of CEMICs does \\textit{not} originate from the non-Hermitian skin effect, which is typically associated with systems featuring asymmetric couplings and the open boundary condition. Instead, this edge localization is due to the energy exchange between the system and the environment at the asymmetric coupling junctions, which leads to a parity-time (PT) transition in the Brillouin zone. Intriguingly, the onset of CEMICs is independent of the system size in the macroscopic limit, which is given by the golden ratio between the asymmetric couplings and their geometric average.",
+      "initial_submission_date": "2026-09-27T22:55:37Z",
+      "latest_update_date": "2026-09-27T22:55:37Z",
+      "categories": [
+        "cond-mat.mes-hall",
+        "physics.optics"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.34000v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.34000v1",
+      "versions_seen": [
+        "2609.34000v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-09-29T10:21:07.205461+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205461+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2609.33116",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.33116v1",
+      "title": "Unveiling Lattice Dynamics and a Hidden Structural Transition in the 2D Ferromagnet AgVP$_2$Se$_6$ via Raman Spectroscopy",
+      "authors": [
+        "Thi Hai Yen Pham",
+        "Po-hao Chang",
+        "Aidan C. Malloy",
+        "Seng Huat Lee",
+        "Zhiqiang Mao",
+        "Maria F. Munoz",
+        "Riccardo Torsi",
+        "Angela R. Hight Walker",
+        "Igor Mazin",
+        "Patrick M. Vora"
+      ],
+      "abstract": "Transition-metal chalcophosphates (TMCs) are two-dimensional (2D) van der Waals materials supporting a broad range of electronic and magnetic properties. Among quaternary TMCs, AgVP$_2$Se$_6$ is a rare ferromagnet (FM) with a triangular V sublattice, in contrast to the antiferromagnetic (AFM) zigzag chains of the sulfide AgVP$_2$S$_6$. Prior Raman studies of AgVP$_2$Se$_6$ have been performed far above the Curie temperature ($T_C$), preventing studies of spin-phonon coupling. Here, we report polarization-resolved, temperature-dependent Raman and magneto-Raman spectroscopy of AgVP$_2$Se$_6$ single crystals grown by chemical vapor transport (CVT) and flux methods, across the FM transition, complemented by density functional theory (DFT) calculations of phonon, optical and magnetic properties. Cryogenic Raman spectra resolve up to thirty peaks, while angle-resolved measurements enable their symmetry assignment. Spectral differences between CVT- and flux-grown crystals are traced back to the presence of different interlayer stacking domains in these samples. Temperature- and field-dependent Raman spectra remain largely unchanged across $T_C$, suggesting weak spin-phonon coupling. However, pronounced spectral alterations near 100 K suggest a potential structural phase transition. Our DFT calculations further reconcile the large discrepancy between the transport activation gap ($\\approx$ 0.325 eV) and optical absorption edge ($\\approx$ 2.14 eV), attributing the former to a transition to the V-d upper Hubbard band that is optically dark but thermally accessible. We also suggest a theoretical explanation of the qualitative difference (reproduced by DFT calculations) between the magnetic properties of the sulfide and selenide. These results provide key information regarding the lattice dynamics of AgVP$_2$Se$_6$ and will guide future applications in spin-based electronics.",
+      "initial_submission_date": "2026-09-27T02:38:01Z",
+      "latest_update_date": "2026-09-27T02:38:01Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.33116v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.33116v1",
+      "versions_seen": [
+        "2609.33116v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-09-29T10:21:07.205464+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205464+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2609.32575",
+      "current_version": 1,
+      "versioned_arxiv_id": "2609.32575v1",
+      "title": "Phonon angular momentum transfer torque",
+      "authors": [
+        "Verena Brehm",
+        "Daniel A. Bustamante Lopez",
+        "Shu Zhang",
+        "Dominik Juraschek"
+      ],
+      "abstract": "Angular momentum in solids is carried by (quasi)particles such as magnons, plasmons, and phonons, and coupling between these reservoirs enables diverse hybrid phenomena. Here, we introduce the transfer of angular momentum from lattice vibrations to magnetic order through the phonon angular momentum transfer torque (PAMTT), generated by a polarized phonon bath. We identify thermal routes for generating phonon angular momentum: a phonon Edelstein accumulation in noncentrosymmetric crystals and temperature-gradient-induced PAM currents with longitudinal Seebeck-like and transverse Hall components. Using realistic order-of-magnitude estimates, we find that PAMTT could produce measurable ferromagnetic-resonance frequency shifts and, for favorable interfacial coupling, drive magnetization reversal on nanosecond timescales.",
+      "initial_submission_date": "2026-09-26T12:49:49Z",
+      "latest_update_date": "2026-09-26T12:49:49Z",
+      "categories": [
+        "cond-mat.other",
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2609.32575v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.32575v1",
+      "versions_seen": [
+        "2609.32575v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "noncentrosymmetric crystal"
+      ],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [
+        "phonon angular momentum"
+      ],
+      "matched_keywords": [
+        "phonon angular momentum",
+        "angular momentum transfer",
+        "phonon",
+        "lattice vibration"
+      ],
+      "classification_evidence": {
+        "primary_terms": [
+          "phonon angular momentum"
+        ],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon",
+          "lattice vibration"
+        ]
+      },
+      "first_seen_at": "2026-09-29T10:21:07.205467+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205467+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2609.31616",
       "current_version": 1,
@@ -41,7 +392,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-28T10:26:25.349088+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349088+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205479+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -82,7 +433,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-28T10:26:25.349118+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349118+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205487+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -127,7 +478,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-28T10:26:25.349123+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349123+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205493+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -174,7 +525,7 @@
         ]
       },
       "first_seen_at": "2026-09-28T10:26:25.349127+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349127+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205511+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -219,7 +570,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-28T10:26:25.349131+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349131+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205517+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -264,7 +615,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-22T08:58:47.673690+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349147+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205522+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -322,7 +673,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-21T09:32:04.404321+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349157+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205527+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -448,7 +799,7 @@
         ]
       },
       "first_seen_at": "2026-09-24T08:57:19.356425+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349165+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205532+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -496,7 +847,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-24T08:57:19.356430+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349172+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205537+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -556,7 +907,7 @@
         ]
       },
       "first_seen_at": "2026-09-24T08:57:19.356433+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349179+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205541+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -608,7 +959,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-24T08:57:19.356435+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349185+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205545+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -660,7 +1011,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-24T08:57:19.356438+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349191+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205550+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -716,7 +1067,7 @@
         ]
       },
       "first_seen_at": "2026-09-23T09:01:21.519487+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349197+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205555+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -759,7 +1110,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-23T09:01:21.519516+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349203+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205559+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -802,7 +1153,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-23T09:01:21.519521+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349208+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205564+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -849,7 +1200,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-23T09:01:21.519524+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349213+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205568+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -893,7 +1244,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-23T09:01:21.519527+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349219+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205572+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -965,7 +1316,7 @@
         ]
       },
       "first_seen_at": "2026-09-22T08:58:47.673642+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349224+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205577+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1020,7 +1371,7 @@
         ]
       },
       "first_seen_at": "2026-09-22T08:58:47.673672+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349230+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205581+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1067,7 +1418,7 @@
         ]
       },
       "first_seen_at": "2026-09-22T08:58:47.673677+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349236+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205585+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1115,7 +1466,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-22T08:58:47.673681+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349245+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205590+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1158,7 +1509,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-22T08:58:47.673684+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349250+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205594+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1205,7 +1556,7 @@
         ]
       },
       "first_seen_at": "2026-09-22T08:58:47.673687+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349255+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205598+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1245,7 +1596,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-22T08:58:47.673693+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349260+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205602+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1303,7 +1654,7 @@
         ]
       },
       "first_seen_at": "2026-09-22T08:58:47.673696+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349265+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205609+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1348,7 +1699,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-21T09:32:04.404347+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349271+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205614+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1400,7 +1751,7 @@
         ]
       },
       "first_seen_at": "2026-09-21T09:32:04.404352+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349277+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205618+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1462,7 +1813,7 @@
         ]
       },
       "first_seen_at": "2026-09-21T09:32:04.404358+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349285+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205623+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1505,7 +1856,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-21T09:32:04.404361+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349292+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205627+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1558,7 +1909,7 @@
         ]
       },
       "first_seen_at": "2026-09-18T08:41:43.732777+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349298+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205632+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1612,7 +1963,7 @@
         ]
       },
       "first_seen_at": "2026-09-18T08:41:43.732804+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349304+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205636+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1657,7 +2008,7 @@
         ]
       },
       "first_seen_at": "2026-09-18T08:41:43.732810+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349309+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205641+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1699,7 +2050,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-18T08:41:43.732814+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349315+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205645+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1739,7 +2090,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-22T08:58:47.673876+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349320+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205649+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1790,7 +2141,7 @@
         ]
       },
       "first_seen_at": "2026-09-17T09:07:37.440444+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349325+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205653+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1866,7 +2217,7 @@
         ]
       },
       "first_seen_at": "2026-09-17T09:07:37.440473+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349331+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205658+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1908,7 +2259,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-22T08:58:47.673892+00:00",
-      "last_seen_at": "2026-09-28T10:26:25.349337+00:00",
+      "last_seen_at": "2026-09-29T10:21:07.205662+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
