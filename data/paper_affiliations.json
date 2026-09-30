@@ -2849,6 +2849,51 @@
       "ror_id": "https://ror.org/01e41cf67",
       "evidence_url": "https://ror.org/01e41cf67",
       "source": "ROR"
+    },
+    "openalex:I129877168": {
+      "name": "Carl von Ossietzky Universität Oldenburg",
+      "short_name": "Carl von Ossietzky Universität Oldenburg",
+      "city": "Oldenburg",
+      "region": "Lower Saxony",
+      "country_code": "DE",
+      "country": "Germany",
+      "latitude": 53.14039,
+      "longitude": 8.21479,
+      "institution_type": "education",
+      "openalex_id": "https://openalex.org/I129877168",
+      "ror_id": "https://ror.org/033n9gh91",
+      "evidence_url": "https://openalex.org/I129877168",
+      "source": "OpenAlex"
+    },
+    "openalex:I39343248": {
+      "name": "Humboldt-Universität zu Berlin",
+      "short_name": "Humboldt-Universität zu Berlin",
+      "city": "Berlin",
+      "region": "State of Berlin",
+      "country_code": "DE",
+      "country": "Germany",
+      "latitude": 52.52437,
+      "longitude": 13.41053,
+      "institution_type": "education",
+      "openalex_id": "https://openalex.org/I39343248",
+      "ror_id": "https://ror.org/01hcx6992",
+      "evidence_url": "https://openalex.org/I39343248",
+      "source": "OpenAlex"
+    },
+    "openalex:I207399273": {
+      "name": "Utsunomiya University",
+      "short_name": "Utsunomiya University",
+      "city": "Utsunomiya",
+      "region": null,
+      "country_code": "JP",
+      "country": "Japan",
+      "latitude": 36.55109786987305,
+      "longitude": 139.93045043945312,
+      "institution_type": "education",
+      "openalex_id": "https://openalex.org/I207399273",
+      "ror_id": "https://ror.org/05bx1gz93",
+      "evidence_url": "https://openalex.org/I207399273",
+      "source": "OpenAlex"
     }
   },
   "papers": {
@@ -9920,6 +9965,152 @@
         "ROR",
         "arXiv"
       ]
+    },
+    "2311.14466": {
+      "paper_id": "2311.14466",
+      "paper_version": 2,
+      "title": "Ferroelectricity and chirality in the Pb$_5$Ge$_3$O$_{11}$ crystal",
+      "doi": null,
+      "metadata_work_id": "https://openalex.org/W4389072564",
+      "openalex_work_id": "https://openalex.org/W4389072564",
+      "metadata_provider": "OpenAlex",
+      "match_method": "openalex_arxiv_url",
+      "match_score": 0.99,
+      "author_scope": "first_and_corresponding",
+      "authors": [
+        {
+          "paper_author_name": "Fava, Mauro",
+          "name": "Fava, Mauro",
+          "openalex_author_id": "https://openalex.org/A5044959958",
+          "orcid": "https://orcid.org/0000-0002-3461-1585",
+          "author_position": "first",
+          "is_corresponding": false,
+          "author_roles": [
+            "first"
+          ],
+          "institution_ids": [
+            "openalex:I157674565"
+          ],
+          "affiliation_labels": [
+            "Physique Théorique des Matériaux , QMAT, CESAM , Université de Liège , B-4000 Sart-Tilman , Belgium"
+          ]
+        }
+      ],
+      "enriched_at": "2026-09-30T11:16:15.222266+00:00",
+      "sources": [
+        "OpenAlex",
+        "arXiv"
+      ]
+    },
+    "2308.16779": {
+      "paper_id": "2308.16779",
+      "paper_version": 1,
+      "title": "Interlayer vibrational hybrid normal mode enabling molecular chiral phonons",
+      "doi": null,
+      "metadata_work_id": "https://openalex.org/W4386384792",
+      "openalex_work_id": "https://openalex.org/W4386384792",
+      "metadata_provider": "OpenAlex",
+      "match_method": "openalex_arxiv_url",
+      "match_score": 0.99,
+      "author_scope": "first_and_corresponding",
+      "authors": [
+        {
+          "paper_author_name": "Hamdi, Hanen",
+          "name": "Hamdi, Hanen",
+          "openalex_author_id": "https://openalex.org/A5069135927",
+          "orcid": "https://orcid.org/0000-0002-1665-3124",
+          "author_position": "first",
+          "is_corresponding": false,
+          "author_roles": [
+            "first"
+          ],
+          "institution_ids": [
+            "openalex:I129877168",
+            "openalex:I39343248"
+          ],
+          "affiliation_labels": [
+            "Institute of Physics , Carl von Ossietzky Universität Oldenburg , 26129 Oldenburg , Germany",
+            "Physics Department and IRIS Adlershof , Humboldt-Universität zu Berlin , 12489 Berlin , Germany"
+          ]
+        }
+      ],
+      "enriched_at": "2026-09-30T11:16:23.427533+00:00",
+      "sources": [
+        "OpenAlex",
+        "arXiv"
+      ]
+    },
+    "2305.18182": {
+      "paper_id": "2305.18182",
+      "paper_version": 1,
+      "title": "Dynamics of an Exciton-phonon Triangle under Photoirradiation",
+      "doi": null,
+      "metadata_work_id": "https://openalex.org/W4378771318",
+      "openalex_work_id": "https://openalex.org/W4378771318",
+      "metadata_provider": "OpenAlex",
+      "match_method": "openalex_arxiv_url",
+      "match_score": 0.99,
+      "author_scope": "first_and_corresponding",
+      "authors": [
+        {
+          "paper_author_name": "Aoyagi, Noriyuki",
+          "name": "Aoyagi, Noriyuki",
+          "openalex_author_id": null,
+          "orcid": null,
+          "author_position": "first",
+          "is_corresponding": false,
+          "author_roles": [
+            "first"
+          ],
+          "institution_ids": [
+            "openalex:I207399273"
+          ],
+          "affiliation_labels": [
+            "Graduate School of Regional Development and Creativity , Utsunomiya University , Utsunomiya , Tochigi 321-8585 , Japan"
+          ]
+        }
+      ],
+      "enriched_at": "2026-09-30T11:16:35.067510+00:00",
+      "sources": [
+        "OpenAlex",
+        "arXiv"
+      ]
+    },
+    "2301.07401": {
+      "paper_id": "2301.07401",
+      "paper_version": 2,
+      "title": "Magnons, Phonons, and Thermal Hall Effect in Candidate Kitaev Magnet $α$-RuCl$_3$",
+      "doi": null,
+      "metadata_work_id": "https://openalex.org/W4317550504",
+      "openalex_work_id": "https://openalex.org/W4317550504",
+      "metadata_provider": "OpenAlex",
+      "match_method": "openalex_arxiv_url",
+      "match_score": 0.99,
+      "author_scope": "first_and_corresponding",
+      "authors": [
+        {
+          "paper_author_name": "Li, Shuyi",
+          "name": "Li, Shuyi",
+          "openalex_author_id": "https://openalex.org/A5100638589",
+          "orcid": "https://orcid.org/0000-0001-9842-1935",
+          "author_position": "first",
+          "is_corresponding": false,
+          "author_roles": [
+            "first"
+          ],
+          "institution_ids": [
+            "openalex:I74775410"
+          ],
+          "affiliation_labels": [
+            "Department of Physics and Astronomy , Rice University , Houston , TX 77005 , USA"
+          ]
+        }
+      ],
+      "enriched_at": "2026-09-30T11:16:44.101293+00:00",
+      "sources": [
+        "OpenAlex",
+        "arXiv"
+      ]
     }
   },
   "unresolved": {
@@ -10385,53 +10576,29 @@
       "reason": "no_conservative_match_or_resolved_affiliation",
       "last_attempted_at": "2026-09-29T21:33:13.338888+00:00"
     },
-    "2311.14466": {
-      "paper_id": "2311.14466",
-      "title": "Ferroelectricity and chirality in the Pb$_5$Ge$_3$O$_{11}$ crystal",
-      "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-09-16T10:08:41.264435+00:00"
-    },
     "2310.04008": {
       "paper_id": "2310.04008",
       "title": "Evanescently coupled topological ring-waveguide systems for chip-scale ultrahigh frequency phononic circuits",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-09-16T10:08:48.718713+00:00"
-    },
-    "2308.16779": {
-      "paper_id": "2308.16779",
-      "title": "Interlayer vibrational hybrid normal mode enabling molecular chiral phonons",
-      "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-09-16T10:08:54.019367+00:00"
+      "last_attempted_at": "2026-09-30T11:16:15.222407+00:00"
     },
     "2306.17227": {
       "paper_id": "2306.17227",
       "title": "Negative refraction of Weyl phonons at twin quartz interfaces",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-09-16T10:08:59.723041+00:00"
+      "last_attempted_at": "2026-09-30T11:16:23.428068+00:00"
     },
     "2305.18656": {
       "paper_id": "2305.18656",
       "title": "Light-induced weak ferromagnetism through nonlinear magnonic rectification",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-09-16T10:09:06.058612+00:00"
-    },
-    "2305.18182": {
-      "paper_id": "2305.18182",
-      "title": "Dynamics of an Exciton-phonon Triangle under Photoirradiation",
-      "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-09-16T10:09:11.448677+00:00"
+      "last_attempted_at": "2026-09-30T11:16:27.038034+00:00"
     },
     "2303.13328": {
       "paper_id": "2303.13328",
       "title": "$T_{3}$Pb$_{2}Ch_{2}$ ($T$=Pd,Pt and $Ch$=S,Se) with transition metal kagome net: Dynamical properties, phonon nodal line, phonon surface states, and chiral phonons",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-09-16T10:09:27.872430+00:00"
-    },
-    "2301.07401": {
-      "paper_id": "2301.07401",
-      "title": "Magnons, Phonons, and Thermal Hall Effect in Candidate Kitaev Magnet $α$-RuCl$_3$",
-      "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-09-16T10:09:33.776486+00:00"
+      "last_attempted_at": "2026-09-30T11:16:35.067836+00:00"
     },
     "2608.21025": {
       "paper_id": "2608.21025",
@@ -10454,9 +10621,9 @@
   },
   "schema_version": 2,
   "description": "Paper-specific first-author and explicitly identified corresponding-author affiliations from arXiv/OpenAlex/Crossref/ROR; uncertain identities remain unresolved.",
-  "generated_at": "2026-09-29T21:33:17.360799+00:00",
+  "generated_at": "2026-09-30T11:16:44.101599+00:00",
   "eligible_field_papers": 246,
-  "resolved_papers": 158,
-  "unresolved_papers": 88,
+  "resolved_papers": 162,
+  "unresolved_papers": 84,
   "author_scope": "first_and_corresponding"
 }
