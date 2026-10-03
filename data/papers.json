@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-10-01T10:40:26.469811+00:00",
+  "updated_at": "2026-10-03T09:37:14.517679+00:00",
   "papers": [
     {
       "base_arxiv_id": "2609.40109",
-      "current_version": 1,
-      "versioned_arxiv_id": "2609.40109v1",
+      "current_version": 2,
+      "versioned_arxiv_id": "2609.40109v2",
       "title": "Probing Collective and Individual Kondo Screening: Multi-Stage, Multi-Channel Kondo Effects in a $C_3$-Symmetric Four-Impurity Model",
       "authors": [
         "Danqing Hu",
@@ -16,14 +16,15 @@
       ],
       "abstract": "Collective screening has been proposed to underlie the basic physics of multi-impurity and lattice Kondo systems. But how to establish this picture and distinguish it from individual (local) Kondo screening remains a grand challenge. The recently developed auxiliary-bath numerical renormalization group (AUNRG) method provides a key step towards resolving this issue. Its application to the $C_3$-symmetric three-impurity Kondo (3IK) model with a shared electron bath reveals fully screened Fermi liquid ground states arising from collective screening of cluster spin degrees of freedom at small Kondo coupling $J_{\\rm K}$ and individual (local) screening of local impurities at large $J_{\\rm K}$. Here we design a four-impurity Kondo (4IK) model where the probe impurity couples only to the original three Kondo impurities to detect the nature of the screened states. We show that the collective and individual Kondo screenings give rise to emergent multi-stage, two-channel Kondo effect and unstable three-channel Kondo effect, respectively. This suggests a special helicity structure of the screened states and confirms the idea of collective screening in multi-impurity Kondo systems. Our work also demonstrates that the same auxiliary-bath construction can be readily extended to models with additional impurities to explore novel many-body quantum states with emergent cluster degrees of freedom.",
       "initial_submission_date": "2026-09-30T16:39:51Z",
-      "latest_update_date": "2026-09-30T16:39:51Z",
+      "latest_update_date": "2026-10-01T13:51:40Z",
       "categories": [
         "cond-mat.str-el"
       ],
-      "abstract_url": "https://arxiv.org/abs/2609.40109v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40109v1",
+      "abstract_url": "https://arxiv.org/abs/2609.40109v2",
+      "pdf_url": "https://arxiv.org/pdf/2609.40109v2",
       "versions_seen": [
-        "2609.40109v1"
+        "2609.40109v1",
+        "2609.40109v2"
       ],
       "preliminary_include": false,
       "preliminary_research_type": "Unclassified",
@@ -42,7 +43,51 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-01T10:40:26.467940+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.467940+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514661+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.00472",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.00472v1",
+      "title": "Fractional anomalous determinants and the chiral phase transition",
+      "authors": [
+        "Robert D. Pisarski"
+      ],
+      "abstract": "At high temperature instantons form a dilute gas, so in QCD-like theories the breaking of the anomalous $U(1)_A$ symmetry is given by integral powers of the anomalous determinant, $\\sim (\\det Φ)^{Q}$, where $Φ\\sim \\overline{q}_L q_R$ is bilinear in the quark fields, and with untwisted boundary conditions, the topological charge, $Q$, is an integer. A syncretic model is constructed, which is manifestly \"beyond Landau\". In the chiral limit, at temperatures above the chiral phase transition, $T > T_χ$, only integral powers of the anomalous determinant appear. Below $T_χ$, following 't Hooft et al. I assume that the topological charge $Q$ is fractional, as an integer times $1/N_c$, where $N_c$ is the number of colors. I suggest that consequently, fractional powers of the anomalous determinant appear in the chiral effective Lagrangian. For $N_f$ degenerate flavors, this generalizes the Witten-Veneziano term, valid for small $N_f/N_c$, to arbitrary $N_f/N_c$. In this model the chiral phase transition is generically of second order. The two exceptions are for one flavor, where it is probably crossover, and three flavors, where it could well be weakly first order. This can be tested in lattice QCD with $2+1$ flavors by comparing the (known) temperature dependence of the difference of the $π^a$ and $a_0^a$ propagators, to the chiral condensate of the strange quark, between $T_χ$ and $\\sim 2 \\, T_χ$. Analogous measurements are possible for one to four degenerate flavors about $T_χ$. Lastly, I propose an operator for baryon number in the symmetric phase.",
+      "initial_submission_date": "2026-09-30T18:00:05Z",
+      "latest_update_date": "2026-09-30T18:00:05Z",
+      "categories": [
+        "hep-ph",
+        "cond-mat.str-el",
+        "hep-lat",
+        "hep-th",
+        "nucl-th"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.00472v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.00472v1",
+      "versions_seen": [
+        "2610.00472v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-10-03T09:37:14.514703+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514703+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -101,7 +146,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-01T10:40:26.467964+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.467964+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514718+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -147,7 +192,7 @@
         ]
       },
       "first_seen_at": "2026-10-01T10:40:26.467970+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.467970+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514725+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -195,7 +240,7 @@
         ]
       },
       "first_seen_at": "2026-09-30T10:14:36.772391+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.467982+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514731+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -236,7 +281,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-22T08:58:47.673693+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.467991+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514737+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -284,7 +329,7 @@
         ]
       },
       "first_seen_at": "2026-09-30T10:14:36.772433+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.467997+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514742+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -330,7 +375,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-30T10:14:36.772440+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468002+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514748+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -378,7 +423,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-30T10:14:36.772444+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468006+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514752+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -425,7 +470,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-29T10:21:07.205421+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468011+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514757+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -472,7 +517,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-29T10:21:07.205449+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468015+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514763+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -527,7 +572,7 @@
         ]
       },
       "first_seen_at": "2026-09-29T10:21:07.205454+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468020+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514768+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -577,7 +622,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-29T10:21:07.205458+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468024+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514774+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -618,7 +663,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-29T10:21:07.205461+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468028+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514778+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -671,7 +716,7 @@
         ]
       },
       "first_seen_at": "2026-09-29T10:21:07.205464+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468032+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514783+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -729,7 +774,7 @@
         ]
       },
       "first_seen_at": "2026-09-29T10:21:07.205467+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468037+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514788+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -771,7 +816,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-28T10:26:25.349088+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468041+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514792+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -812,7 +857,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-28T10:26:25.349118+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468046+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514797+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -857,7 +902,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-28T10:26:25.349123+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468050+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514801+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -904,7 +949,7 @@
         ]
       },
       "first_seen_at": "2026-09-28T10:26:25.349127+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468054+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514806+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -949,7 +994,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-28T10:26:25.349131+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468059+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514810+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -994,7 +1039,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-22T08:58:47.673690+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468064+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514815+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1178,7 +1223,7 @@
         ]
       },
       "first_seen_at": "2026-09-24T08:57:19.356425+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468076+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514821+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1226,7 +1271,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-24T08:57:19.356430+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468080+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514827+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1286,7 +1331,7 @@
         ]
       },
       "first_seen_at": "2026-09-24T08:57:19.356433+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468085+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514833+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1338,7 +1383,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-24T08:57:19.356435+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468089+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514838+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1390,7 +1435,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-24T08:57:19.356438+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468094+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514843+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1446,7 +1491,7 @@
         ]
       },
       "first_seen_at": "2026-09-23T09:01:21.519487+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468098+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514848+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1489,7 +1534,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-23T09:01:21.519516+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468103+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514853+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1532,7 +1577,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-23T09:01:21.519521+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468108+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514861+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1579,7 +1624,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-23T09:01:21.519524+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468112+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514866+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1623,7 +1668,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-23T09:01:21.519527+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468116+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514870+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1695,7 +1740,7 @@
         ]
       },
       "first_seen_at": "2026-09-22T08:58:47.673642+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468121+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514875+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1750,7 +1795,7 @@
         ]
       },
       "first_seen_at": "2026-09-22T08:58:47.673672+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468126+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514880+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1797,7 +1842,7 @@
         ]
       },
       "first_seen_at": "2026-09-22T08:58:47.673677+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468130+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514884+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1845,7 +1890,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-22T08:58:47.673681+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468134+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514889+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1888,7 +1933,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-22T08:58:47.673684+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468139+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514893+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1935,7 +1980,7 @@
         ]
       },
       "first_seen_at": "2026-09-22T08:58:47.673687+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468143+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514898+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1993,7 +2038,7 @@
         ]
       },
       "first_seen_at": "2026-09-22T08:58:47.673696+00:00",
-      "last_seen_at": "2026-10-01T10:40:26.468148+00:00",
+      "last_seen_at": "2026-10-03T09:37:14.514902+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
