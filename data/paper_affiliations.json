@@ -2894,6 +2894,51 @@
       "ror_id": "https://ror.org/05bx1gz93",
       "evidence_url": "https://openalex.org/I207399273",
       "source": "OpenAlex"
+    },
+    "openalex:I202391551": {
+      "name": "Czech Academy of Sciences",
+      "short_name": "Czech Academy of Sciences",
+      "city": "Prague",
+      "region": "Prague",
+      "country_code": "CZ",
+      "country": "Czechia",
+      "latitude": 50.08804,
+      "longitude": 14.42076,
+      "institution_type": "government",
+      "openalex_id": "https://openalex.org/I202391551",
+      "ror_id": "https://ror.org/053avzc18",
+      "evidence_url": "https://openalex.org/I202391551",
+      "source": "OpenAlex"
+    },
+    "openalex:I4210122644": {
+      "name": "FZU ‒ Institute of Physics of the Academy of Sciences of the Czech Republic",
+      "short_name": "FZU ‒ Institute of Physics of the Academy of Sciences of the Czech Republic",
+      "city": "Prague",
+      "region": "Prague",
+      "country_code": "CZ",
+      "country": "Czechia",
+      "latitude": 50.08804,
+      "longitude": 14.42076,
+      "institution_type": "facility",
+      "openalex_id": "https://openalex.org/I4210122644",
+      "ror_id": "https://ror.org/02yhj4v17",
+      "evidence_url": "https://openalex.org/I4210122644",
+      "source": "OpenAlex"
+    },
+    "openalex:I44504214": {
+      "name": "Czech Technical University in Prague",
+      "short_name": "Czech Technical University in Prague",
+      "city": "Prague",
+      "region": "Prague",
+      "country_code": "CZ",
+      "country": "Czechia",
+      "latitude": 50.08804,
+      "longitude": 14.42076,
+      "institution_type": "education",
+      "openalex_id": "https://openalex.org/I44504214",
+      "ror_id": "https://ror.org/03kqpb082",
+      "evidence_url": "https://openalex.org/I44504214",
+      "source": "OpenAlex"
     }
   },
   "papers": {
@@ -10111,6 +10156,83 @@
         "OpenAlex",
         "arXiv"
       ]
+    },
+    "2608.21025": {
+      "paper_id": "2608.21025",
+      "paper_version": 1,
+      "title": "Soft and chiral phonons in chiral phase of K3NiO2",
+      "doi": null,
+      "metadata_work_id": "https://openalex.org/W7204091795",
+      "openalex_work_id": "https://openalex.org/W7204091795",
+      "metadata_provider": "OpenAlex",
+      "match_method": "openalex_arxiv_url",
+      "match_score": 0.99,
+      "author_scope": "first_and_corresponding",
+      "authors": [
+        {
+          "paper_author_name": "Nguyen, Hong Dang",
+          "name": "Nguyen, Hong Dang",
+          "openalex_author_id": "https://openalex.org/A5087748674",
+          "orcid": "https://orcid.org/0000-0002-6114-6893",
+          "author_position": "first",
+          "is_corresponding": false,
+          "author_roles": [
+            "first"
+          ],
+          "institution_ids": [
+            "openalex:I202391551",
+            "openalex:I4210122644",
+            "openalex:I44504214"
+          ],
+          "affiliation_labels": [
+            "Faculty of Nuclear Sciences and Physical Engineering , Czech Technical University in Prague , Trojanova 13 , 120 00 , Prague 2 , Czech Republic",
+            "Institute of Physics , Czech Academy of Sciences , Na Slovance 2 , 182 00 Prague 8 , Czech Republic"
+          ]
+        }
+      ],
+      "enriched_at": "2026-10-05T23:15:41.132385+00:00",
+      "sources": [
+        "OpenAlex",
+        "arXiv"
+      ]
+    },
+    "2608.13055": {
+      "paper_id": "2608.13055",
+      "paper_version": 1,
+      "title": "Acoustic Tweezers for Magnetic Skyrmions",
+      "doi": null,
+      "metadata_work_id": "https://openalex.org/W7203477459",
+      "openalex_work_id": "https://openalex.org/W7203477459",
+      "metadata_provider": "OpenAlex",
+      "match_method": "openalex_arxiv_url",
+      "match_score": 0.99,
+      "author_scope": "first_and_corresponding",
+      "authors": [
+        {
+          "paper_author_name": "Wang, Chongzhou",
+          "name": "Wang, Chongzhou",
+          "openalex_author_id": "https://openalex.org/A5125702040",
+          "orcid": null,
+          "author_position": "first",
+          "is_corresponding": false,
+          "author_roles": [
+            "first"
+          ],
+          "institution_ids": [
+            "openalex:I24943067",
+            "openalex:I4391768224"
+          ],
+          "affiliation_labels": [
+            "Department of Physics , Fudan University , Shanghai 200433 , China",
+            "State Key Laboratory of Surface Physics and Institute for Nanoelectronic Devices and Quantum Computing , Fudan University , Shanghai 200433 , China"
+          ]
+        }
+      ],
+      "enriched_at": "2026-10-05T23:15:45.126833+00:00",
+      "sources": [
+        "OpenAlex",
+        "arXiv"
+      ]
     }
   },
   "unresolved": {
@@ -10600,30 +10722,18 @@
       "reason": "no_conservative_match_or_resolved_affiliation",
       "last_attempted_at": "2026-09-30T11:16:35.067836+00:00"
     },
-    "2608.21025": {
-      "paper_id": "2608.21025",
-      "title": "Soft and chiral phonons in chiral phase of K3NiO2",
-      "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-09-21T21:10:20.073749+00:00"
-    },
-    "2608.13055": {
-      "paper_id": "2608.13055",
-      "title": "Acoustic Tweezers for Magnetic Skyrmions",
-      "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-09-21T21:10:26.019772+00:00"
-    },
     "2607.26986": {
       "paper_id": "2607.26986",
       "title": "Theory of phonon-magnon hybridization and angular momentum in CrI$_3$ and CrBr$_3$",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-09-21T21:10:30.898718+00:00"
+      "last_attempted_at": "2026-10-05T23:15:45.127149+00:00"
     }
   },
   "schema_version": 2,
   "description": "Paper-specific first-author and explicitly identified corresponding-author affiliations from arXiv/OpenAlex/Crossref/ROR; uncertain identities remain unresolved.",
-  "generated_at": "2026-10-05T12:27:43.239044+00:00",
+  "generated_at": "2026-10-05T23:15:48.815849+00:00",
   "eligible_field_papers": 246,
-  "resolved_papers": 162,
-  "unresolved_papers": 84,
+  "resolved_papers": 164,
+  "unresolved_papers": 82,
   "author_scope": "first_and_corresponding"
 }
