@@ -1,8 +1,371 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-10-05T11:07:19.762324+00:00",
+  "updated_at": "2026-10-06T10:59:04.040875+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2610.06395",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.06395v1",
+      "title": "The phonomagnet: Spontaneous order of phonon angular momentum",
+      "authors": [
+        "Maike Fahrensohn",
+        "R. Matthias Geilhufe"
+      ],
+      "abstract": "Magnetism is a fundamental property of matter, typically arising from collective ordering of electronic spin and orbital angular momentum. Other quasiparticles interact with magnetism. However, they have not been considered its primary source. Here we show that phonons can generate a distinct form of magnetism through spontaneous ordering of their angular momentum. This phonomagnetism emerges from spin-phonon angular-momentum coupling, producing an effective exchange interaction between local ionic angular momenta. We show that the interaction strength depends on spin susceptibility, with a phonomagnetic phase predicted near a ferromagnetic critical point. Our theory also reveals phononic analogues of established spin models, including phonon Heisenberg, phonon $Γ$-model, and phonon Dzyaloshinskii-Moriya interactions. Combining first-principles phonon calculations with recent data from Raman spectroscopy, we identify VI$_3$ as a candidate phonomagnet, providing a microscopic framework for interpreting the weak magnetic anomaly reported above its bulk ferromagnetic transition. These findings open avenues for new platforms for information storage and manipulation on picosecond timescales.",
+      "initial_submission_date": "2026-10-05T14:17:59Z",
+      "latest_update_date": "2026-10-05T14:17:59Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.06395v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.06395v1",
+      "versions_seen": [
+        "2610.06395v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Computational / theoretical",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [
+        "first-principles",
+        "Raman spectroscopy"
+      ],
+      "detected_physical_properties": [
+        "phonon angular momentum",
+        "phonomagnetism"
+      ],
+      "matched_keywords": [
+        "phonon angular momentum",
+        "phonomagnetism",
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [
+          "phonon angular momentum"
+        ],
+        "related_terms": [
+          "phonomagnetism"
+        ],
+        "author_experimental_actions": [],
+        "author_computational_actions": [
+          "Our theory"
+        ],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-10-06T10:59:04.037559+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037559+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.06157",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.06157v1",
+      "title": "Two superconducting pairing models with a Kitaev spin-liquid glue: microscopic kernel and parity alternation on odd-fold bond stars",
+      "authors": [
+        "Youping Dai"
+      ],
+      "abstract": "We construct two superconducting pairing models on doped Kitaev honeycomb, whose microscopic kernels are derived rather than assumed. Both are driven by a bond-local glue neutral between the even- and odd-parity pairing channels; the chirality--parity linkage is set by bond-star geometry, not by the microscopic glue. (i) Model~1(odd-parity sector): the kernel follows from the flux-sector selection rule of the pure model, fixing its component-diagonal, nearest-neighbor separable, rank-one-per-bond form, with $w_α=J_K^2χ_α\\propto r_αm_α$, where $m_α$ follows from the Hellmann--Feynman theorem and $r_α\\simeq0.24$ is computed numerically. The spin-vertex state is a unitary triplet with a bond-locked anisotropic $\\mathbf d$ vector; its gap is a Gram sum of bond sines, so nodal directions are fixed by geometry. (ii) Model~2(even): the kernel is fixed by the $C_3$ little-group selection rule of a zone-corner chiral phonon, up to a Cooper-channel extension whose momentum constraint we state explicitly. The charge-vertex pairing is a $d+id$ singlet: the parity decomposition $f_\\pm=g_\\pm+p_\\pm$ projects onto $g_\\pm$, so chirality is slaved to the phonon polarization, with $C=\\pm4$ and $κ_{xy}/T=2κ_0$. Reversing the pump helicity reverses the Chern number, Kerr rotation, and thermal Hall sign. (iii) General theorem: on odd-fold bond stars, the angular-momentum ladder of a single-star chiral form factor alternates in parity. Every chiral state selected by such a bond-local form factor is a geometrically enforced singlet--triplet composite with universal amplitude ratios ($n=3$: $d\\oplus p$; $n=5$: $g\\oplus p$ or $d\\oplus f$); coherent doubled-star combinations can restore parity purity. The Chern number of the mixed state follows the dominant on-shell component across a topological boundary. The spin glue drives $C=\\pm2$; the charge kernel $C=\\pm4$.",
+      "initial_submission_date": "2026-10-05T11:29:01Z",
+      "latest_update_date": "2026-10-05T11:29:01Z",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci",
+        "cond-mat.str-el",
+        "quant-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.06157v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.06157v1",
+      "versions_seen": [
+        "2610.06157v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [
+        "chiral phonon"
+      ],
+      "matched_keywords": [
+        "chiral phonon",
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [
+          "chiral phonon"
+        ],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-10-06T10:59:04.037591+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037591+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.05934",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.05934v1",
+      "title": "Rotation Breaks Kibble-Zurek Universality",
+      "authors": [
+        "Shiva Dwivedi",
+        "Kenichi Kasamatsu",
+        "Adolfo Del Campo",
+        "Mithun Thudiyangal"
+      ],
+      "abstract": "We show that trap rotation overrides Kibble-Zurek (KZ) universality when a 2D Bose-Einstein condensate forms via a finite-time quench. In stochastic Gross-Pitaevskii simulations, the rotation-induced chiral bias drives the vortex number close to the Feynman-Onsager (FO) value, independent of the quench time. Ramping up rotation with the quench restores the KZ scaling at low frequencies, with vortex numbers below the FO value. The vortices form a disordered lattice that a pinning potential can order into an Abrikosov lattice, even at low rotation. Trap rotation thus offers a control knob for critical dynamics.",
+      "initial_submission_date": "2026-10-05T07:50:16Z",
+      "latest_update_date": "2026-10-05T07:50:16Z",
+      "categories": [
+        "cond-mat.quant-gas",
+        "cond-mat.stat-mech",
+        "quant-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.05934v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.05934v1",
+      "versions_seen": [
+        "2610.05934v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-10-06T10:59:04.037596+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037596+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.05714",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.05714v1",
+      "title": "Current selects the helicity of a chiral phonon",
+      "authors": [
+        "Swagata Acharya",
+        "Jerome Jackson",
+        "Mark van Schilfgaarde"
+      ],
+      "abstract": "The emergence of spin-polarized electrons from nonmagnetic chiral molecules and crystals is called Chirality-induced spin selectivity (CISS). A chiral phonon of definite wavevector $q$ can strongly enhance it, but near equilibrium the two helicities $+q$ and $-q$ are equally populated: they are time-reversal partners and their contributions cancel. We show that in a biased chiral conductor the current causes the phonon of one helicity to damp less than the other. The damping asymmetry is odd in the current, odd under $q\\rightarrow-q$, invariant under a mirror that reverses the structural handedness, and equal, mode for mode, to the current-induced nonconservative Berry force on the phonon coordinate. Closing the phonon kinetics with a rate equation turns the asymmetry into a net lattice helicity: at any finite bias one helicity is preferentially populated, with no threshold, growing linearly with the current as $V\\rightarrow0$; above a threshold that helicity becomes a self-sustained coherent travelling wave. We demonstrate this effect in elemental tellurium, treated as an open quantum system (electronic Hamiltonian, phonon bath, and electron-phonon coupling) within a quasi-ab initio framework. The electronic Hamiltonian is supplied by a vertex-corrected quasiparticle self-consistent $GW$ (QSGW) potential with spin-orbit coupling; nuclear displacements are modeled with a machine-learned interatomic potential, which yields chiral phonon modes at finite $\\pm q_z$ on the $Γ$-A line. The perturbation to the electronic Hamiltonian from a nuclear displacement is approximated by a frozen-phonon deformation potential. No optical pump is needed: a bias alone drives the current and selects the phonon helicity; reversing the current reverses the selection.",
+      "initial_submission_date": "2026-10-05T02:53:12Z",
+      "latest_update_date": "2026-10-05T02:53:12Z",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.05714v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.05714v1",
+      "versions_seen": [
+        "2610.05714v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "tellurium"
+      ],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [
+        "chiral phonon",
+        "phonon helicity"
+      ],
+      "matched_keywords": [
+        "chiral phonon",
+        "phonon helicity",
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [
+          "chiral phonon",
+          "phonon helicity"
+        ],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [
+          "chiral molecule"
+        ],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-10-06T10:59:04.037600+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037600+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.05090",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.05090v1",
+      "title": "From Nested Soliton Crystals to Skyrmion Crystals in Chiral Magnets",
+      "authors": [
+        "Sven Bjarke Gudnason",
+        "Muneto Nitta"
+      ],
+      "abstract": "We perform an exhaustive study of the parameter space of the chiral magnetic model with a Dzyaloshinskii-Moriya interaction, an in-plane anisotropy term and an out-of-plane Zeeman magnetic field. We map out the phase diagram for the model and find a chiral soliton lattice hosted on a chiral soliton lattice as the ground state in a particular corner of the phase diagram. There is a smooth crossover, as opposed to a phase transition, to the skyrmion crystal lattice phase. Finally, we also discover excited composite soliton states such as an anti-skyrmion coexisting with a bimeron or an anti-bimeron.",
+      "initial_submission_date": "2026-10-04T09:47:47Z",
+      "latest_update_date": "2026-10-04T09:47:47Z",
+      "categories": [
+        "cond-mat.mes-hall",
+        "hep-th"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.05090v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.05090v1",
+      "versions_seen": [
+        "2610.05090v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-10-06T10:59:04.037603+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037603+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.04903",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.04903v1",
+      "title": "Anisotropic mesoscale magnetic scattering across the spin-reorientation transition in TbMn6Sn6",
+      "authors": [
+        "Zhuang Xu",
+        "Fan Chen",
+        "Hui Cheng",
+        "Xinmin Wang",
+        "Taisen Zuo",
+        "He Cheng",
+        "Haitao Hu",
+        "Cuiping Zhang",
+        "Qian Zhao",
+        "Michel Kenzelmann",
+        "Jonathan S. White",
+        "Junying Shen",
+        "Xin Tong"
+      ],
+      "abstract": "TbMn6Sn6 is a centrosymmetric ferrimagnetic kagome metal that combines topological electronic states with strong magnetic anisotropy and a near-room-temperature spin-reorientation transition (SRT). Real-space imaging studies of thin specimens have revealed helical stripes, biskyrmion-like textures, and skyrmion-bubble-like structures in the spin-reorientation regime. Whether such local textures develop into a bulk long-range-ordered skyrmion lattice remains unresolved. Here we present small-angle neutron scattering (SANS) results probing the mesoscale magnetism of a bulk TbMn6Sn6 single crystal. We observe no sixfold SANS Bragg pattern indicative of a long-range-ordered skyrmion lattice under the explored conditions. Instead, the dominant magnetic response is an anisotropic twofold low-Q scattering component whose intensity distribution and field dependence evolve markedly across the spin-reorientation regime. In zero field, a broad and horizontally elongated low-Q signal develops above TSR and weakens as the system approaches the paramagnetic state. At 345 K with H || b, the signal is diffuse and is suppressed rapidly below about 700 Oe. By contrast, at 310 K with H || c, close to TSR, the response is more concentrated and line-shaped and persists to higher fields. The contrasts between these scans likely reflect the combined effects of rapidly evolving magnetic anisotropy near TSR and the field geometry. Our results therefore establish a bulk anisotropic mesoscale magnetic response across the spin-reorientation regime, consistent with stripe- or domain-related textures reported by real-space imaging, while not uniquely identifying their real-space morphology.",
+      "initial_submission_date": "2026-10-04T03:29:12Z",
+      "latest_update_date": "2026-10-04T03:29:12Z",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.04903v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.04903v1",
+      "versions_seen": [
+        "2610.04903v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Experimental",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [
+        "neutron scattering"
+      ],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [
+          "We observe"
+        ],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-10-06T10:59:04.037606+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037606+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.04684",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.04684v1",
+      "title": "Electron-phonon control of obstructed and quantum spin Hall topology in an altermagnet",
+      "authors": [
+        "Kuntal Bhattacharyya",
+        "Bilal Tanatar",
+        "Saurabh Basu"
+      ],
+      "abstract": "We theoretically demonstrate control over the interplay between obstructed atomic insulating and first-order topological phases via electron-phonon coupling (EPC) in a $d$-wave altermagnet (AM) that hosts nonrelativistic spin-split bands with zero net magnetization. By embedding a $d_{x^{2}-y^{2}}$-wave AM in a quantum spin Hall (QSH) insulator, we show that an altermagnetic order beyond a critical strength reconstructs the parent QSH state of a Bernevig-Hughes-Zhang (BHZ)-type topological insulator (TI) into an obstructed atomic insulator (OAI), characterized by nontrivial bulk polarization with quantized fractional corner charges, accompanied by characteristic in-gap boundary states, while the spin Chern number vanishes. Upon incorporating sufficiently strong EPC, the polaronic dressing reorganizes the Wannier centers and the associated effective edge topology, thereby weakening the altermagnetism-induced OAI phase and restoring the helical QSH edge modes. Further, EPC eventually drives the system into a trivial insulator. By uncovering a controllable switching mechanism between topologically distinct insulating phases in AMs, our study establishes a direct route toward phonon-tuned spintronic functionalities in unconventional magnetic platforms.",
+      "initial_submission_date": "2026-10-03T17:55:22Z",
+      "latest_update_date": "2026-10-03T17:55:22Z",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.04684v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.04684v1",
+      "versions_seen": [
+        "2610.04684v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "topological insulator"
+      ],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-10-06T10:59:04.037610+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037610+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2609.40109",
       "current_version": 2,
@@ -43,7 +406,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-01T10:40:26.467940+00:00",
-      "last_seen_at": "2026-10-05T11:07:19.760146+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037626+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -87,7 +450,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-03T09:37:14.514703+00:00",
-      "last_seen_at": "2026-10-05T11:07:19.760181+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037635+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -146,7 +509,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-01T10:40:26.467964+00:00",
-      "last_seen_at": "2026-10-05T11:07:19.760188+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037643+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -192,7 +555,7 @@
         ]
       },
       "first_seen_at": "2026-10-01T10:40:26.467970+00:00",
-      "last_seen_at": "2026-10-05T11:07:19.760192+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037648+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -240,7 +603,7 @@
         ]
       },
       "first_seen_at": "2026-09-30T10:14:36.772391+00:00",
-      "last_seen_at": "2026-10-05T11:07:19.760196+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037654+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -282,6 +645,52 @@
       },
       "first_seen_at": "2026-09-22T08:58:47.673693+00:00",
       "last_seen_at": "2026-10-03T09:37:14.514737+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.03766",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.03766v1",
+      "title": "Magnon chiral damping beyond the Dzyaloshinskii-Moriya interaction",
+      "authors": [
+        "Darpa Narayan Basu",
+        "Subhadip Ghosh",
+        "Peter M. Oppeneer",
+        "Alexander Mook",
+        "Ritwik Mondal"
+      ],
+      "abstract": "Magnon chiral damping denotes damping that is asymmetric with respect to the magnon wave vector. Such nonreciprocity has been attributed to antisymmetric Dzyaloshinskii-Moriya spin interactions. Here, we provide an alternative theoretical explanation of magnon chiral damping using linear spin-wave theory and antisymmetric Gilbert damping introduced within the Landau-Lifshitz-Gilbert equation of motion. First, employing a minimal model of a single sublattice ferromagnet on a rectangular lattice, we show that the effective magnon damping is independent of the system's energy, including contributions from Dzyaloshinskii-Moriya interactions. Considering scalar nonlocal Gilbert damping, the effective damping parameter $α_{\\rm eff}$ becomes wave-vector dependent. In the long-wavelength limit, $α_{\\rm eff}$ acquires a quadratic dependence on $\\bf{k}$. Furthermore, the antisymmetric component of the Gilbert damping tensor gives rise to asymmetric (nonreciprocal) magnon damping. We find the asymmetry to be linear in $\\bf{k}$ in the long-wavelength limit, consistent with recent experiments. Extending the analysis to a two-sublattice system, we consider cross-sublattice Gilbert damping. In the presence of only scalar Gilbert damping, broken reciprocity in magnon relaxation arises from Dzyaloshinskii-Moriya interactions. In contrast, the cross-sublattice antisymmetric component of the Gilbert damping tensor can generate nonreciprocal magnon damping even if the Dzyaloshinskii-Moriya interaction is parametrically set to zero, providing an alternative mechanism for asymmetric spin-wave relaxation. Notably, the nonreciprocity induced by antisymmetric Gilbert damping is roughly an order of magnitude larger than that arising from Dzyaloshinskii-Moriya interactions.",
+      "initial_submission_date": "2026-09-28T18:40:03Z",
+      "latest_update_date": "2026-09-28T18:40:03Z",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci",
+        "cond-mat.other"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.03766v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.03766v1",
+      "versions_seen": [
+        "2610.03766v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-10-06T10:59:04.037657+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037657+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -329,7 +738,7 @@
         ]
       },
       "first_seen_at": "2026-09-30T10:14:36.772433+00:00",
-      "last_seen_at": "2026-10-05T11:07:19.760200+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037664+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -375,7 +784,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-30T10:14:36.772440+00:00",
-      "last_seen_at": "2026-10-05T11:07:19.760204+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037670+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -423,7 +832,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-30T10:14:36.772444+00:00",
-      "last_seen_at": "2026-10-05T11:07:19.760209+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037675+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -470,7 +879,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-29T10:21:07.205421+00:00",
-      "last_seen_at": "2026-10-05T11:07:19.760212+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037681+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -517,7 +926,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-29T10:21:07.205449+00:00",
-      "last_seen_at": "2026-10-05T11:07:19.760216+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037686+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -572,7 +981,7 @@
         ]
       },
       "first_seen_at": "2026-09-29T10:21:07.205454+00:00",
-      "last_seen_at": "2026-10-05T11:07:19.760221+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037690+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -622,7 +1031,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-29T10:21:07.205458+00:00",
-      "last_seen_at": "2026-10-05T11:07:19.760225+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037695+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -663,7 +1072,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-29T10:21:07.205461+00:00",
-      "last_seen_at": "2026-10-05T11:07:19.760229+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037700+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -716,7 +1125,7 @@
         ]
       },
       "first_seen_at": "2026-09-29T10:21:07.205464+00:00",
-      "last_seen_at": "2026-10-05T11:07:19.760233+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037706+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -774,7 +1183,7 @@
         ]
       },
       "first_seen_at": "2026-09-29T10:21:07.205467+00:00",
-      "last_seen_at": "2026-10-05T11:07:19.760237+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037711+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -816,7 +1225,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-28T10:26:25.349088+00:00",
-      "last_seen_at": "2026-10-05T11:07:19.760241+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037719+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -857,7 +1266,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-28T10:26:25.349118+00:00",
-      "last_seen_at": "2026-10-05T11:07:19.760245+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037724+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -902,7 +1311,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-28T10:26:25.349123+00:00",
-      "last_seen_at": "2026-10-05T11:07:19.760249+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037729+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -949,7 +1358,7 @@
         ]
       },
       "first_seen_at": "2026-09-28T10:26:25.349127+00:00",
-      "last_seen_at": "2026-10-05T11:07:19.760253+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037734+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -994,7 +1403,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-28T10:26:25.349131+00:00",
-      "last_seen_at": "2026-10-05T11:07:19.760257+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037739+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1223,7 +1632,7 @@
         ]
       },
       "first_seen_at": "2026-09-24T08:57:19.356425+00:00",
-      "last_seen_at": "2026-10-05T11:07:19.760261+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037745+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1271,7 +1680,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-24T08:57:19.356430+00:00",
-      "last_seen_at": "2026-10-05T11:07:19.760265+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037751+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1331,7 +1740,7 @@
         ]
       },
       "first_seen_at": "2026-09-24T08:57:19.356433+00:00",
-      "last_seen_at": "2026-10-05T11:07:19.760269+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037756+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1383,7 +1792,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-24T08:57:19.356435+00:00",
-      "last_seen_at": "2026-10-05T11:07:19.760272+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037761+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1435,7 +1844,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-24T08:57:19.356438+00:00",
-      "last_seen_at": "2026-10-05T11:07:19.760276+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037766+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1491,7 +1900,7 @@
         ]
       },
       "first_seen_at": "2026-09-23T09:01:21.519487+00:00",
-      "last_seen_at": "2026-10-05T11:07:19.760280+00:00",
+      "last_seen_at": "2026-10-06T10:59:04.037771+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
