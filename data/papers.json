@@ -1,8 +1,190 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-10-06T10:59:04.040875+00:00",
+  "updated_at": "2026-10-07T10:48:42.182166+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2610.08788",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.08788v1",
+      "title": "Chiral Central Charge from Real-Space Twist Operator Correlator",
+      "authors": [
+        "Yunlong Zang"
+      ],
+      "abstract": "Recent years have witnessed substantial progress in the entanglement-based characterization of quantum phases of matter, with growing interest in real-space formulas due to their theoretical and experimental relevance. For two-dimensional gapped quantum systems, we propose a universal real-space formula for the chiral central charge based on the twist-operator correlator $Z_{g,h}=\\langleψ^{(N)}\\rvert\\mathcal{T}_A(g)\\mathcal{T}_B(h)\\mathcal{T}_C(g)\\mathcal{T}_C(h)\\lvertψ^{(N)}\\rangle$, where $\\lvertψ^{(N)}\\rangle=\\lvertψ\\rangle^{\\otimes N}$ is the $N$-copy state and $g,h\\in S_N$ are permutations. The twist operator $\\mathcal{T}_R(g)$ permutes the $N$ replicas within region $R$ according to $g$. For pairs $(g,h)$ satisfying the spherical condition, we show that the phase of the correlator is determined by the chiral central charge $\\mathfrak{c}_{-}$ through $Z_{g,h}/\\left\\lvert Z_{g,h}\\right\\rvert=(θ_gθ_h/θ_{gh})^{\\mathfrak{c}_{-}}$, where $θ_g^{\\mathfrak{c}_{-}}$ is the topological spin of the twist defect labeled by $g\\in S_N$. The construction applies to both bosonic and fermionic systems. We derive the formula within a field-theoretic framework under suitable assumptions and further test it numerically in microscopic lattice models. Our results establish a universal connection between real-space entanglement structures and the chiral central charge, providing a systematic framework for characterizing chiral topological phases directly on the lattice.",
+      "initial_submission_date": "2026-10-06T17:59:31Z",
+      "latest_update_date": "2026-10-06T17:59:31Z",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.08788v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08788v1",
+      "versions_seen": [
+        "2610.08788v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Computational / theoretical",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [
+          "We derive"
+        ],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-10-07T10:48:42.180412+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180412+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.08266",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.08266v1",
+      "title": "Gradual Localization of Itinerant Cobalt 3d Electrons in the Pyrochlore Ferromagnetic Metal LuInCo4",
+      "authors": [
+        "Taiki Shiotani",
+        "Subaru Yoshimoto",
+        "Yoshikazu Tabata",
+        "Yusuke Nambu",
+        "Katsuki Kinjo",
+        "Kazuhiro Nawa",
+        "Taku J. Sato",
+        "Takeshi Waki",
+        "Hiroyuki Nakamura"
+      ],
+      "abstract": "We investigated the microscopic magnetic state of the itinerant-electron ferromagnet LuInCo4 with a cobalt pyrochlore lattice by means of powder and single-crystal neutron diffraction measurements. The powder neutron diffraction profiles at zero field are well described by a simple q = 0 collinear ferromagnetic structure with an ordered Co moment of 0.9 uB. Single-crystal neutron diffraction experiments further suggest the absence of both antiferromagnetic order and long-period helical magnetic modulation. In addition, diffuse magnetic scattering was observed around q = 0, with its intensity distribution gradually broadened in reciprocal space upon cooling. Based on these observations, we propose a possible microscopic origin of the low-temperature metamagnetic transition in terms of a ferromagnetic instability enhanced by gradual localization of the itinerant Co-3d electrons. These results suggest that LuInCo4 provides a model system for investigating the interplay between electron localization and itinerant-electron ferromagnetism in cobalt-based metallic pyrochlore compounds.",
+      "initial_submission_date": "2026-10-06T12:41:06Z",
+      "latest_update_date": "2026-10-06T12:41:06Z",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.08266v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08266v1",
+      "versions_seen": [
+        "2610.08266v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-10-07T10:48:42.180435+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180435+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.07693",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.07693v1",
+      "title": "Spontaneous symmetry breaking at any temperature in a local one-dimensional model",
+      "authors": [
+        "Andrew Lucas"
+      ],
+      "abstract": "We present a one-dimensional classical statistical physics model on an infinite lattice with nearest-neighbor interactions and local state space $\\mathbb{Z}^2$, with a ``helical\" symmetry group $\\mathbb{Z}^2\\rtimes \\mathbb{Z}$ mixing flavor symmetry with spatial translation. For any $0<β<\\infty$, we construct an uncountable infinity of DLR (Gibbs) states parameterized by $\\mathbb{R}^2$, with a free $\\mathbb{Z}^2$ flavor symmetry group action; as such, we interpret the model as exhibiting spontaneous symmetry breaking at any temperature. The most general DLR state we construct is interpreted as an infinite sequence of localized domain walls separating a pair of asymptotic ``symmetry sectors\". Although any normalizable Gibbs state necessarily breaks a countably infinite freely-acting symmetry group, a natural regularization of the problem to (arbitrarily) large but finite systems with periodic boundary conditions has measure concentration in disjoint and far-separated symmetry-related clusters in the (now unique) Gibbs state, which justifies our interpretation of spontaneous symmetry breaking on the infinite line. A modification of the model with local state space $\\mathbb{R}^2$ must break a continuous helical symmetry at any temperature. This is not a contradiction with the Mermin-Wagner Theorem, because this continuous helical symmetry is non-compact and does not commute with translation.",
+      "initial_submission_date": "2026-10-06T03:28:37Z",
+      "latest_update_date": "2026-10-06T03:28:37Z",
+      "categories": [
+        "math-ph",
+        "cond-mat.stat-mech"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.07693v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.07693v1",
+      "versions_seen": [
+        "2610.07693v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-10-07T10:48:42.180440+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180440+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.07429",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.07429v1",
+      "title": "Direct synthesis of moiré graphene with twist-tuned hybridization",
+      "authors": [
+        "Seunghyun Park",
+        "Daniel T. Larson",
+        "Zeyu Hao",
+        "Takashi Taniguchi",
+        "Kenji Watanabe",
+        "Efthimios Kaxiras",
+        "Yuan Cao",
+        "Amir Yacoby"
+      ],
+      "abstract": "Twisted van der Waals (vdW) systems provide a powerful platform for exploring emergent correlated phenomena, including superconductivity, magnetism, and topological phases. The twist angle offers a continuous tuning parameter for modifying the underlying Hamiltonian, however, precise and reproducible control remains challenging. Existing approaches are limited by single-use device architectures, restricted angular precision, or vertical probing geometries. Here we introduce a reconfigurable graphene-based moiré platform in which two independently fabricated layers are mechanically assembled and rotated in situ using a micro-electromechanical system (MEMS). Raman spectroscopy confirms the formation and robustness of the twist-induced moiré potential and enables continuous, deterministic control of the twist angle. The moiré potential folds the electronic band structure and activates the longitudinal optical (LO) phonon mode, allowing us to map its dispersion and directly visualize the moiré momentum. Angle-dependent electronic band hybridization is resolved through the evolution of the double-resonant 2D mode. Near \\(0^\\circ\\), an emergent asymmetry of the \\(Γ\\)-point G-mode phonon reveals phonon band folding and hybridization driven by the moiré superlattice potential and interlayer relaxation. Our platform provides a reproducible Raman reference for twisted bilayer graphene while eliminating device-to-device variability. More broadly, it establishes the twist angle as a deterministically controllable parameter for systematic studies of correlated and topological phenomena in moiré quantum materials.",
+      "initial_submission_date": "2026-10-05T21:37:25Z",
+      "latest_update_date": "2026-10-05T21:37:25Z",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.07429v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.07429v1",
+      "versions_seen": [
+        "2610.07429v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-10-07T10:48:42.180443+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180443+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2610.06395",
       "current_version": 1,
@@ -58,7 +240,7 @@
         ]
       },
       "first_seen_at": "2026-10-06T10:59:04.037559+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037559+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180455+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -111,7 +293,7 @@
         ]
       },
       "first_seen_at": "2026-10-06T10:59:04.037591+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037591+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180463+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -156,7 +338,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-06T10:59:04.037596+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037596+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180469+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -215,7 +397,7 @@
         ]
       },
       "first_seen_at": "2026-10-06T10:59:04.037600+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037600+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180475+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -257,7 +439,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-06T10:59:04.037603+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037603+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180482+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -314,7 +496,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-06T10:59:04.037606+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037606+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180487+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -362,7 +544,7 @@
         ]
       },
       "first_seen_at": "2026-10-06T10:59:04.037610+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037610+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180492+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -406,7 +588,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-01T10:40:26.467940+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037626+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180497+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -450,7 +632,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-03T09:37:14.514703+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037635+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180501+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -509,7 +691,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-01T10:40:26.467964+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037643+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180506+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -555,7 +737,7 @@
         ]
       },
       "first_seen_at": "2026-10-01T10:40:26.467970+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037648+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180510+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -603,7 +785,7 @@
         ]
       },
       "first_seen_at": "2026-09-30T10:14:36.772391+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037654+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180514+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -690,7 +872,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-06T10:59:04.037657+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037657+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180519+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -738,7 +920,7 @@
         ]
       },
       "first_seen_at": "2026-09-30T10:14:36.772433+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037664+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180524+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -784,7 +966,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-30T10:14:36.772440+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037670+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180528+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -832,7 +1014,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-30T10:14:36.772444+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037675+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180532+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -879,7 +1061,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-29T10:21:07.205421+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037681+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180539+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -926,7 +1108,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-29T10:21:07.205449+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037686+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180543+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -981,7 +1163,7 @@
         ]
       },
       "first_seen_at": "2026-09-29T10:21:07.205454+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037690+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180547+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1031,7 +1213,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-29T10:21:07.205458+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037695+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180552+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1072,7 +1254,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-29T10:21:07.205461+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037700+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180556+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1125,7 +1307,7 @@
         ]
       },
       "first_seen_at": "2026-09-29T10:21:07.205464+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037706+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180560+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1183,7 +1365,7 @@
         ]
       },
       "first_seen_at": "2026-09-29T10:21:07.205467+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037711+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180565+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1225,7 +1407,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-28T10:26:25.349088+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037719+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180569+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1266,7 +1448,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-28T10:26:25.349118+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037724+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180573+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1311,7 +1493,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-28T10:26:25.349123+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037729+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180578+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1358,7 +1540,7 @@
         ]
       },
       "first_seen_at": "2026-09-28T10:26:25.349127+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037734+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180582+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1403,7 +1585,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-28T10:26:25.349131+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037739+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180587+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1632,7 +1814,7 @@
         ]
       },
       "first_seen_at": "2026-09-24T08:57:19.356425+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037745+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180591+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1680,7 +1862,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-24T08:57:19.356430+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037751+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180596+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1740,7 +1922,7 @@
         ]
       },
       "first_seen_at": "2026-09-24T08:57:19.356433+00:00",
-      "last_seen_at": "2026-10-06T10:59:04.037756+00:00",
+      "last_seen_at": "2026-10-07T10:48:42.180600+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
