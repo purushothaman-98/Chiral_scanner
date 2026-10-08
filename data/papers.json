@@ -1,8 +1,239 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-10-07T10:48:42.182166+00:00",
+  "updated_at": "2026-10-08T11:06:42.999718+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2610.10350",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.10350v1",
+      "title": "Finite-size scaling analysis of three dimensional Z(2) and O(2) spin models with non-vanishing symmetry breaking parameter",
+      "authors": [
+        "Jishnu Goswami",
+        "Frithjof Karsch",
+        "Sabarnya Mitra"
+      ],
+      "abstract": "We present results from a detailed finite-size scaling analysis of the $3$-$d$, $Z(2)$ and $O(2)$ spin models in an external field $H$. Using high statistics Monte Carlo data, we obtain the leading finite-size scaling correction to the infinite volume scaling functions. We show that these corrections are proportional to $\\widetilde{z}_L^2=1/(H L^{3/(1+1/δ))})^{2}$. This provides the parametric form for finite-size corrections to bulk thermodynamic observables as well as the pseudo-critical temperatures determined at non-vanishing $H$. In particular, it allows to eliminate systematic errors in the analysis of the chiral phase transition temperature in (2+1)-flavor QCD, that arose from the previously not well-controlled ansatz for infinite volume extrapolations. We also establish the validity range of this leading order correction and point out that there are significant differences between the $3$-$d$, $O(2)$ and $Z(2)$ universality classes.",
+      "initial_submission_date": "2026-10-07T16:27:07Z",
+      "latest_update_date": "2026-10-07T16:27:07Z",
+      "categories": [
+        "hep-lat",
+        "cond-mat.stat-mech",
+        "hep-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.10350v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10350v1",
+      "versions_seen": [
+        "2610.10350v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-10-08T11:06:42.997517+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997517+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.09925",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.09925v1",
+      "title": "Construction-Dependent Floquet Topology in Circularly Driven $N$-Stacked Su-Schrieffer-Heeger Chains",
+      "authors": [
+        "Aayushi Agrawal",
+        "Jayendra N. Bandyopadhyay"
+      ],
+      "abstract": "We investigate construction-dependent Floquet topology in a two-dimensional lattice formed by stacking Su-Schrieffer-Heeger (SSH) chains with co-located sublattice orbitals. We present two constructions in the decoupled-chain limit. Construction-I: the constituent SSH chains are topologically trivial with winding number $w=0$. Construction-II: the constituent SSH chains are topologically nontrivial with $w=1$. Although these constructions are unitarily equivalent in the static limit, circular driving distinguishes them because the hopping processes related by the transformation correspond to different physical bond vectors and therefore acquire different Peierls phases. Using the Floquet-Sambe formalism, we determine the quasienergy spectra and phase diagrams in terms of the lower-band Chern number $C_L$ and directional Zak phases $(Z_x,\\, Z_y)$. We find distinct Floquet phase structures, including low-frequency phases with $C_L = -3$ and $C_L = -4$ in the two constructions. Since the Chern number does not resolve the topology of the two quasienergy gaps separately, we further calculate the dynamical winding numbers $W_0$ and $W_π$, and verify the corresponding chiral edge states. In particular, at identical driving parameters, both constructions can have the same Chern numbers $C_L=-2$, while their gap-resolved winding numbers are $(W_0,\\, W_π)=(0,\\,+2)$ and $(-2,\\,0)$, respectively. We also calculate the time-averaged optical Hall conductivity and show that $ C_Le^2/h$ determines its dc value for ideal full-band occupation. At the same time, its finite-frequency response contains photon-assisted contributions. Our results demonstrate that the physical construction of the constituent chains, although irrelevant to the static bulk spectrum, can play a decisive role in the Floquet topological structure. We discuss possible experimental realizations of the driven model.",
+      "initial_submission_date": "2026-10-07T12:12:52Z",
+      "latest_update_date": "2026-10-07T12:12:52Z",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.09925v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.09925v1",
+      "versions_seen": [
+        "2610.09925v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-10-08T11:06:42.997545+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997545+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.09879",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.09879v1",
+      "title": "A repeating sequence of simple rules creates a universal computer",
+      "authors": [
+        "Riz Fernando Noronha"
+      ],
+      "abstract": "We show that the Turing complete rule 110 in elementary cellular automata can be emulated by alternating three simple symmetric rules in space. As the constituent rules themselves are trivial, this shows that diversity alone can generate emergent phenomena. The rules cannot distinguish left from right, and the chirality of rule 110 is created by their arrangement. Random initial conditions lock on to rule 110 over 90% of the time, explained through the motion of domain walls between desynchronized regions. Adding random noise creates errors that seed domain walls, whose fraction scales with the square root of noise strength, explained through a simple rate equation. This points to a route to complexity through repeated, perturbed units, common in biology, and shows that in cellular automaton models of quantum field theory, broken symmetries such as parity need not be present in the local rules.",
+      "initial_submission_date": "2026-10-07T11:38:37Z",
+      "latest_update_date": "2026-10-07T11:38:37Z",
+      "categories": [
+        "nlin.CG",
+        "cond-mat.stat-mech",
+        "cs.FL",
+        "nlin.AO"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.09879v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.09879v1",
+      "versions_seen": [
+        "2610.09879v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-10-08T11:06:42.997551+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997551+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.09413",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.09413v1",
+      "title": "Non-Hermitian Cooperation Induced Chern Insulator",
+      "authors": [
+        "Weiwei Zhu",
+        "Bingbing Wang",
+        "Mengxiang Xie",
+        "Hong-yu Zou",
+        "Yang Long",
+        "Hong-xiang Sun",
+        "Haoran Xue",
+        "Jie Ren"
+      ],
+      "abstract": "Conventional Chern insulators rely on breaking time-reversal symmetry via magnetic fields or synthetic gauge fields. Here we introduce a fundamentally different paradigm: a static lattice without any gauge field becomes a Chern insulator solely through the cooperation of two non-Hermitian ingredients: on-site loss and non-reciprocal coupling. Neither effect alone suffices; only their synergy opens a topological gap and gives rise to robust chiral edge states with a nonzero Chern number. The underlying mechanism originates from a non-Hermitian chiral molecule formed by the lossy sites, whose dynamically dominant mode carries an orbital angular momentum that effectively generates a synthetic flux after the fast-decaying degrees of freedom are eliminated. Our results establish non-Hermitian cooperation as a versatile resource for inducing Chern topology without external fields or temporal modulations, opening a new route to topological phases in open classical and quantum systems.",
+      "initial_submission_date": "2026-10-07T04:15:48Z",
+      "latest_update_date": "2026-10-07T04:15:48Z",
+      "categories": [
+        "quant-ph",
+        "cond-mat.other"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.09413v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.09413v1",
+      "versions_seen": [
+        "2610.09413v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [
+          "chiral molecule"
+        ],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-10-08T11:06:42.997554+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997554+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.09106",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.09106v1",
+      "title": "Angular Momentum Fluctuations Induced by Phonon-Rotation Coupling Govern Nuclear Spin Relaxation in a Molecular Rotator Phase",
+      "authors": [
+        "Yanan Li",
+        "Florin Teleanu",
+        "Alexej Jerschow"
+      ],
+      "abstract": "Nuclear spin relaxation has been widely used to probe molecular reorientation in solids, yet its interpretation has always required assuming both the relaxation mechanism and the form of the underlying correlation function. In rotator-phase solids more unknowns enter the picture: in ammonium iodide, the proton T$_1$ passes through a maximum and decreases with temperature, a behavior attributed to spin-rotation coupling. Here we model both the dipolar and the spin-rotation contributions to $^1$H relaxation in solid NH$_4$I from first principles, by combining molecular dynamics with machine-learned force fields trained on density functionals and ab initio spin-rotation coupling tensors. The computed rates reproduce the measured values above the order-disorder transition, together with their temperature dependence and frequency independence, and show that fluctuations of the NH$_4^+$ angular momentum dominate relaxation throughout the rotator phase. The orientational and angular-velocity correlation functions obtained directly from the simulations further share an oscillatory component at lattice-phonon frequencies, revealing a coupling between lattice vibrations and cation reorientation that contributes measurably to relaxation. Separating this component yields a reorientational barrier in agreement with neutron scattering. The approach makes nuclear spin relaxation a quantitative benchmark for simulated dynamics in molecular solids and provides direct access to angular-momentum correlations in the solid state.",
+      "initial_submission_date": "2026-10-06T20:56:52Z",
+      "latest_update_date": "2026-10-06T20:56:52Z",
+      "categories": [
+        "physics.chem-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.09106v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.09106v1",
+      "versions_seen": [
+        "2610.09106v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Computational / theoretical",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [
+        "ab initio",
+        "molecular dynamics"
+      ],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon",
+        "lattice vibration"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [
+          "we model"
+        ],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon",
+          "lattice vibration"
+        ]
+      },
+      "first_seen_at": "2026-10-08T11:06:42.997558+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997558+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2610.08788",
       "current_version": 1,
@@ -41,7 +272,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-07T10:48:42.180412+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180412+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997572+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -89,7 +320,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-07T10:48:42.180435+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180435+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997580+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -130,7 +361,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-07T10:48:42.180440+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180440+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997586+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -181,7 +412,7 @@
         ]
       },
       "first_seen_at": "2026-10-07T10:48:42.180443+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180443+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997595+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -240,7 +471,7 @@
         ]
       },
       "first_seen_at": "2026-10-06T10:59:04.037559+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180455+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997600+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -293,7 +524,7 @@
         ]
       },
       "first_seen_at": "2026-10-06T10:59:04.037591+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180463+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997606+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -338,7 +569,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-06T10:59:04.037596+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180469+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997611+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -397,7 +628,7 @@
         ]
       },
       "first_seen_at": "2026-10-06T10:59:04.037600+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180475+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997616+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -439,7 +670,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-06T10:59:04.037603+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180482+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997621+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -496,7 +727,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-06T10:59:04.037606+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180487+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997625+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -544,7 +775,7 @@
         ]
       },
       "first_seen_at": "2026-10-06T10:59:04.037610+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180492+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997630+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -588,7 +819,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-01T10:40:26.467940+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180497+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997636+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -632,7 +863,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-03T09:37:14.514703+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180501+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997641+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -691,7 +922,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-01T10:40:26.467964+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180506+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997646+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -737,7 +968,7 @@
         ]
       },
       "first_seen_at": "2026-10-01T10:40:26.467970+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180510+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997651+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -785,7 +1016,7 @@
         ]
       },
       "first_seen_at": "2026-09-30T10:14:36.772391+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180514+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997655+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -872,7 +1103,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-06T10:59:04.037657+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180519+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997660+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -920,7 +1151,7 @@
         ]
       },
       "first_seen_at": "2026-09-30T10:14:36.772433+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180524+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997665+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -966,7 +1197,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-30T10:14:36.772440+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180528+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997670+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1014,7 +1245,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-30T10:14:36.772444+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180532+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997674+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1061,7 +1292,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-29T10:21:07.205421+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180539+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997679+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1108,7 +1339,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-29T10:21:07.205449+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180543+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997683+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1163,7 +1394,7 @@
         ]
       },
       "first_seen_at": "2026-09-29T10:21:07.205454+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180547+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997688+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1213,7 +1444,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-29T10:21:07.205458+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180552+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997693+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1254,7 +1485,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-29T10:21:07.205461+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180556+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997697+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1307,7 +1538,7 @@
         ]
       },
       "first_seen_at": "2026-09-29T10:21:07.205464+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180560+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997702+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1365,7 +1596,7 @@
         ]
       },
       "first_seen_at": "2026-09-29T10:21:07.205467+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180565+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997707+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1407,7 +1638,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-28T10:26:25.349088+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180569+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997712+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1448,7 +1679,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-28T10:26:25.349118+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180573+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997716+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1493,7 +1724,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-28T10:26:25.349123+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180578+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997721+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1540,7 +1771,7 @@
         ]
       },
       "first_seen_at": "2026-09-28T10:26:25.349127+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180582+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997725+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1585,7 +1816,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-09-28T10:26:25.349131+00:00",
-      "last_seen_at": "2026-10-07T10:48:42.180587+00:00",
+      "last_seen_at": "2026-10-08T11:06:42.997730+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
