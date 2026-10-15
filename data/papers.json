@@ -1,8 +1,150 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-10-14T09:14:11.079282+00:00",
+  "updated_at": "2026-10-15T08:46:59.823095+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2610.20343",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.20343v1",
+      "title": "Cavity-tunable Pseudospin-Hall Topology and Edge Transport",
+      "authors": [
+        "Minghui Niu",
+        "Yan Meng",
+        "Chengle Fan",
+        "Xiaoyuan Jiao",
+        "Jidong Song",
+        "Perry Ping Shum",
+        "Zhen Gao",
+        "Mengyao Li"
+      ],
+      "abstract": "Topological edge states are a hallmark of topological phases, with their existence tied to bulk band topology through bulk-edge correspondence. In photonic pseudospin-Hall systems, these states exhibit pseudospin-momentum locking, with lattice interactions and interface geometry determining each pseudospin's propagation direction. Reversing the pseudospin-dependent propagation direction without altering the lattice configuration or excitation handedness remains a fundamental challenge in controlling topological edge transport. Here, we theoretically and experimentally demonstrate cavity-tunable topological edge transport in a microwave metasurface embedded within a metallic cavity. Varying the cavity height reshapes resonator interactions, driving band inversion and topological phase transition while preserving the lattice geometry. For a fixed domain-wall configuration, this transition reverses the propagation direction associated with each pseudospin while preserving pseudospin-momentum locking. Excitations with the same handedness are observed to launch edge waves propagating in opposite directions at their respective edge-band frequencies determined by the cavity height. These results establish cavity electrodynamics as an external means of controlling the bulk topology and reconfiguring the directional response of topological interfaces, creating new opportunities for topological wave routing in fixed photonic lattice structures.",
+      "initial_submission_date": "2026-10-14T15:24:08Z",
+      "latest_update_date": "2026-10-14T15:24:08Z",
+      "categories": [
+        "physics.optics"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.20343v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.20343v1",
+      "versions_seen": [
+        "2610.20343v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-10-15T08:46:59.819810+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.819810+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.18999",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.18999v1",
+      "title": "Electron-Mediated Phonon Polaritons in Quantum Cavities",
+      "authors": [
+        "Mattia Udina",
+        "David Hagenmüller",
+        "Indranil Paul"
+      ],
+      "abstract": "Phonon-photon coupling in quantum materials is commonly treated as an effective direct interaction, neglecting the crucial role played by electrons. Here we develop a gauge-invariant theory of cavity phonon polaritons that captures electronic screening, dissipation, and hybridization. We show that screening can suppress polariton formation in metals, severely constraining cavity control of phonon-mediated superconductivity. By contrast, interband electronic resonances in time-reversal-symmetric gapped systems can strongly enhance phonon-photon coupling, enabling robust polariton formation down to the monolayer limit despite electronic absorption. We illustrate these effects in NbSe2, hBN, and gapped graphene. Finally, we show that gauge invariance enforces photon decoupling from a critical soft phonon, establishing a general no-go mechanism for photon condensation.",
+      "initial_submission_date": "2026-10-13T18:01:53Z",
+      "latest_update_date": "2026-10-13T18:01:53Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.18999v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18999v1",
+      "versions_seen": [
+        "2610.18999v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "cavity control",
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-10-15T08:46:59.819841+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.819841+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.18953",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.18953v1",
+      "title": "Invertible subalgebras for chiral semion topological order",
+      "authors": [
+        "Yu-An Chen",
+        "Meng Sun",
+        "Nathanan Tantivasadakarn",
+        "Zongyuan Wang",
+        "Bowen Yang"
+      ],
+      "abstract": "Chiral topological order is incompatible with strictly two-dimensional local commuting-projector Hamiltonians on finite-dimensional tensor-product Hilbert spaces. Invertible subalgebras (ISAs) provide an alternative framework. We construct an ISA supporting chiral semions, together with its anti-semion commutant, on a square lattice with one qubit per edge. We give explicit non-Pauli generators for both algebras and prove that together they generate all local operators on the Hilbert space. Starting from the $\\mathbb{Z}_4$ toric code, we condense the boson $e^2m^2$ and identify the semion and anti-semion algebras. We then decompose each $\\mathbb{Z}_4$ qudit into two qubits and use a finite-depth circuit to disentangle one qubit per edge fixed by the condensation constraints. Pumping the semion ISA along the $z$ direction defines an explicit three-dimensional non-Clifford quantum cellular automaton (QCA). We show that pumping eight times is equivalent to a translation followed by a finite-depth quantum circuit with ancillary qubits. We also give an explicit finite-depth circuit relating this construction to the semion QCA previously obtained from topological quantum field theory. A similar condensation construction yields a $U(1)_4$ ISA on a square lattice. Together with the semion and earlier odd-prime ISAs, finite stacking realizes every pointed Witt class of bosonic Abelian anyon theories. Finally, we extend both constructions to all spatial dimensions $d=4k{-}2$, with one qubit or $\\mathbb{Z}_4$ qudit on each $(2k{-}1)$-cell for the semion or $U(1)_4$ ISA, respectively.",
+      "initial_submission_date": "2026-10-13T18:00:00Z",
+      "latest_update_date": "2026-10-13T18:00:00Z",
+      "categories": [
+        "quant-ph",
+        "cond-mat.str-el",
+        "hep-th",
+        "math-ph",
+        "math.QA"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.18953v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18953v1",
+      "versions_seen": [
+        "2610.18953v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-10-15T08:46:59.819847+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.819847+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2610.18527",
       "current_version": 1,
@@ -41,7 +183,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-14T09:14:11.077452+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077452+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.819863+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -82,7 +224,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-14T09:14:11.077483+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077483+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.819873+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -133,7 +275,7 @@
         ]
       },
       "first_seen_at": "2026-10-14T09:14:11.077486+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077486+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.819880+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -187,7 +329,7 @@
         ]
       },
       "first_seen_at": "2026-10-14T09:14:11.077488+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077488+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.819886+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -229,7 +371,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-14T09:14:11.077490+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077490+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.819896+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -270,7 +412,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-14T09:14:11.077492+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077492+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.819904+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -312,7 +454,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-12T11:36:34.879304+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077503+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.819910+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -360,7 +502,7 @@
         ]
       },
       "first_seen_at": "2026-10-12T11:36:34.879330+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077509+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.819915+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -417,7 +559,7 @@
         ]
       },
       "first_seen_at": "2026-10-12T11:36:34.879335+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077513+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.819921+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -480,7 +622,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-12T11:36:34.879338+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077516+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.819927+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -524,7 +666,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-12T11:36:34.879340+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077519+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.819932+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -570,7 +712,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-12T11:36:34.879343+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077522+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.819938+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -633,7 +775,7 @@
         ]
       },
       "first_seen_at": "2026-10-10T10:23:38.372042+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077524+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.819943+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -679,7 +821,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-10T10:23:38.372069+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077527+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.819948+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -722,7 +864,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-10T10:23:38.372075+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077530+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.819954+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -773,7 +915,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-10T10:23:38.372079+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077532+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.819958+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -819,7 +961,7 @@
         ]
       },
       "first_seen_at": "2026-10-10T10:23:38.372082+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077536+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.819964+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -863,7 +1005,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-08T11:06:42.997517+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077538+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.819970+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -904,7 +1046,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-08T11:06:42.997545+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077541+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.819975+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -947,7 +1089,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-08T11:06:42.997551+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077544+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.819981+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -997,7 +1139,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-08T11:06:42.997554+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077547+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.819986+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1050,7 +1192,7 @@
         ]
       },
       "first_seen_at": "2026-10-08T11:06:42.997558+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077549+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.819991+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1092,7 +1234,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-07T10:48:42.180412+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077551+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.819997+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1140,7 +1282,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-07T10:48:42.180435+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077554+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.820002+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1181,7 +1323,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-07T10:48:42.180440+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077559+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.820006+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1232,7 +1374,7 @@
         ]
       },
       "first_seen_at": "2026-10-07T10:48:42.180443+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077561+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.820012+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1291,7 +1433,7 @@
         ]
       },
       "first_seen_at": "2026-10-06T10:59:04.037559+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077564+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.820017+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1344,7 +1486,7 @@
         ]
       },
       "first_seen_at": "2026-10-06T10:59:04.037591+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077567+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.820022+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1389,7 +1531,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-06T10:59:04.037596+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077569+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.820027+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1448,7 +1590,7 @@
         ]
       },
       "first_seen_at": "2026-10-06T10:59:04.037600+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077572+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.820032+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1490,7 +1632,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-06T10:59:04.037603+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077575+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.820037+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1547,7 +1689,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-06T10:59:04.037606+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077577+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.820043+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1595,7 +1737,7 @@
         ]
       },
       "first_seen_at": "2026-10-06T10:59:04.037610+00:00",
-      "last_seen_at": "2026-10-14T09:14:11.077580+00:00",
+      "last_seen_at": "2026-10-15T08:46:59.820047+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
