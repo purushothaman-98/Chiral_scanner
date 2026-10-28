@@ -1,8 +1,412 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-10-27T09:32:31.845353+00:00",
+  "updated_at": "2026-10-28T10:16:42.389215+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2610.37575",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.37575v1",
+      "title": "Topological Criticality with Charge-\\(3e\\) Fluctuations in the \\(\\mathrm{SU}(3)\\) Triangular-Lattice Hofstadter--Hubbard Model",
+      "authors": [
+        "Yang Liu",
+        "Ya-Hui Zhang",
+        "Xue-Yang Song"
+      ],
+      "abstract": "A transition between an integer quantum Hall insulator and a chiral spin liquid can become critical without closing the single-electron gap, raising the question of which composite excitations govern the change in topological order. We investigate this question in the \\(\\mathrm{SU}(3)\\) triangular-lattice Hofstadter--Hubbard model at one particle per site and magnetic flux \\(π/3\\) per triangle. Using infinite density matrix renormalization group calculations, we identify a weak-coupling integer quantum Hall phase and an interaction-driven \\(\\mathrm{SU}(3)_1\\) chiral spin liquid. Near the transition, both the neutral and charge-\\(3e\\) correlation lengths increase substantially, whereas the single-electron correlation length remains short, providing evidence for a Chern--Simons--Higgs critical theory, where a gauge-invariant monopole carries the quantum numbers of a fermionic \\(\\mathrm{SU}(3)\\)-singlet trion. We discuss the implications for doping the system and recent experiments on doping \\(ν=-2/3\\) fractional quantum anomalous Hall in tMoTe\\(_2\\).",
+      "initial_submission_date": "2026-10-27T17:19:29Z",
+      "latest_update_date": "2026-10-27T17:19:29Z",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.37575v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37575v1",
+      "versions_seen": [
+        "2610.37575v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-10-28T10:16:42.386877+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.386877+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.37168",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.37168v1",
+      "title": "Channel-Differentiated Topological Charge Flips and Formation of Janus Bound States in the Continuum in Single-Layer Photonic Lattices",
+      "authors": [
+        "Sun-Goo Lee",
+        "Wook-Jae Lee"
+      ],
+      "abstract": "The topological charge of a bound state in the continuum (BIC) can flip when the BIC merges with other polarization singularities or, as recently shown, at band flips. Here, using a coupled-mode analysis, we derive an analytical expression for the topological charge of symmetry-protected BICs in one-dimensional single-layer photonic lattices. The expression captures both merging-induced and band-flip-induced charge flips. We find that, during a band flip, the topological charge of the BIC reverses with the formation of lines of circular polarization that cross at the $Γ$ point. In vertically symmetric lattices, each charge flip occurs simultaneously in the upward and downward radiation channels. Breaking vertical symmetry makes both kinds of charge flips channel-differentiated, creating a parameter interval in which the BIC carries opposite topological charges in the two channels and forms a Janus BIC. We show that Janus BICs also emerge in experimentally accessible one- and two-dimensional silicon-based photonic lattices. Our results link the topological charge of a BIC directly to the band structure and the channel-resolved radiation amplitudes and establish a basis for channel-selective control of polarization singularities.",
+      "initial_submission_date": "2026-10-27T12:56:32Z",
+      "latest_update_date": "2026-10-27T12:56:32Z",
+      "categories": [
+        "physics.optics"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.37168v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37168v1",
+      "versions_seen": [
+        "2610.37168v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Computational / theoretical",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [
+          "we derive"
+        ],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-10-28T10:16:42.386905+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.386905+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.37164",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.37164v1",
+      "title": "Reconstructing chiral edge states via boundary dissipation",
+      "authors": [
+        "Xin-Ran Ma",
+        "Kui Cao",
+        "Qian Du",
+        "Zheng Wei",
+        "Su-Peng Kou"
+      ],
+      "abstract": "Boundary dissipation can reshape the spatial profiles and decay properties of topological edge modes in Chern insulators. We develop a microscopic boundary-channel framework to explain their decay mechanisms and determine the effective decay rates in the weak- and strong-loss regimes. By retaining the lossy outer orbitals and a normalized edge state of the Hermitian inner system, we identify a directly coupled bright boundary channel, while incorporating the remaining inner states through a Feshbach self-energy. In the Qi--Wu--Zhang model, weak-loss decay is governed to leading order by the original edge state's probability weight on the lossy boundary, with coupling-induced corrections starting at cubic order. At strong loss, the reconstructed inner-edge state instead decays through virtual coupling to the damped bright channel, giving a rate proportional to the squared microscopic coupling and inversely proportional to the bare loss. The Haldane model shows that the same leading decay mechanism holds for a different intercell hopping structure, while additional matrix-valued self-energy feedback modifies the boundary spectrum at finite loss and shifts the exceptional-point threshold. These results provide a unified microscopic description of boundary-state reconstruction and its decay mechanisms, offering testable predictions to guide experiments in photonic crystals, phononic crystals, and topolectrical circuits.",
+      "initial_submission_date": "2026-10-27T12:55:32Z",
+      "latest_update_date": "2026-10-27T12:55:32Z",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.37164v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37164v1",
+      "versions_seen": [
+        "2610.37164v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-10-28T10:16:42.386910+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.386910+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.37003",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.37003v1",
+      "title": "Spontaneous topological diode effect induced by non-coplanar antiferromagnetic order",
+      "authors": [
+        "Nguyen Duy Khanh",
+        "Hirotaka Takagi",
+        "Rina Takagi",
+        "Susumu Minami",
+        "Tatsuto Hatanaka",
+        "Hikaru Watanabe",
+        "Michi-To Suzuki",
+        "Yuki Yanagi",
+        "Aki Kitaori",
+        "Takuya Nomoto",
+        "Ryotaro Arita",
+        "Shinichiro Seki"
+      ],
+      "abstract": "In non-centrosymmetric bulk materials, electrons flowing in the opposite directions often exhibit different properties. This diode-like effect (i.e., non-reciprocal electron transport) typically originates from relativistic spin-orbit coupling, and its amplitude scales with external magnetic field or magnetization in ferromagnets. Although such rectification is usually absent in antiferromagnets at zero field, recent theories predict that non-coplanar antiferromagnetic order can host large non-reciprocity even without spin-orbit coupling, magnetization or external magnetic fields. This phenomenon - the spontaneous topological diode effect - can potentially be used for efficient electrical readout of antiferromagnetic domains, while it has not been verified for real materials. Here, we report the observation of this effect in a chiral-lattice non-coplanar antiferromagnet CoTa3S6. Nonlinear resistivity measurements reveal the non reciprocal nature of electron transport along the [001] direction at zero field. The observed non-reciprocity exceeds that in typical ferromagnets, whose amplitude is governed by antiferromagnetic order parameter rather than magnetization. First-principles calculations show that the non-coplanar antiferromagnetic order induces asymmetric band dispersions even without spin-orbit coupling, establishing the non-relativistic origin of the observed response. The present findings demonstrate a new mechanism for efficient electrical readout of antiferromagnetic domains, and highlight non-coplanar antiferromagnets as a promising material platform for realizing ferromagnet-like functional responses without relying on spin-orbit coupling or magnetization.",
+      "initial_submission_date": "2026-10-27T10:48:17Z",
+      "latest_update_date": "2026-10-27T10:48:17Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.37003v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37003v1",
+      "versions_seen": [
+        "2610.37003v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Experimental",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [
+          "we report the observation"
+        ],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-10-28T10:16:42.386914+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.386914+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.36971",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.36971v1",
+      "title": "Local Metrics for Exact Streaming on Curvilinear Lattices: A Curvilinear D3Q27 Cumulant Lattice-Boltzmann Method",
+      "authors": [
+        "Maher Sawaf",
+        "Jonas Latt",
+        "Nikolaus A. Adams",
+        "Mostafa S. Shadloo"
+      ],
+      "abstract": "A three-dimensional curvilinear lattice-Boltzmann method is introduced for simulations on smoothly deformed grids while retaining exact one-to-one streaming on a uniform computational lattice. The coordinate transformation is represented locally through a metric-Gaussian equilibrium and a Christoffel-connection source in moment space. A dynamically reconstructed homogeneous-state perturbation streaming procedure preserves homogeneous physical states on warped meshes without interpolation in the advection step. The method is implemented on a D3Q27 lattice with a cumulant collision operator, while the geometric construction remains compatible with other local collision models. The formulation is assessed using two sets of tests. First, static non-orthogonal warped-cube cases validate the bulk curvilinear solver through a convected helical shear wave, the Taylor--Green vortex, and Arnold--Beltrami--Childress flow. These tests verify viscous decay, clean freestream preservation, vortex-breakdown dynamics, and the nonlinear inertial--pressure balance induced by geometric acceleration. Second, wall-bounded and moving-boundary demonstrations assess the boundary-compatible extension through warped plane Poiseuille flow, arbitrary Lagrangian--Eulerian (ALE) peristaltic pumping, and a two-way fluid--structure interaction (FSI) case with added-mass frequency shift. The results show that the proposed curvilinear LBM avoids interpolation-based transport, reduces geometry-locked numerical modes, preserves global mass and momentum to round-off accuracy in the tested warped periodic cases, and extends to wall-bounded ALE/FSI configurations with conservative treatment of mass and physically consistent momentum exchange.",
+      "initial_submission_date": "2026-10-27T10:26:45Z",
+      "latest_update_date": "2026-10-27T10:26:45Z",
+      "categories": [
+        "physics.flu-dyn",
+        "physics.comp-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.36971v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.36971v1",
+      "versions_seen": [
+        "2610.36971v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-10-28T10:16:42.386918+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.386918+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.36738",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.36738v1",
+      "title": "Algebraic flat bands and even central-band Chern numbers in a seven-orbital hopping model",
+      "authors": [
+        "Weizhuo Xu",
+        "Jiachen Qian",
+        "Shuaihua Zhang",
+        "Yanling Wu",
+        "Jun Li"
+      ],
+      "abstract": "Turning a flat-band parent into an isolated Chern band requires supervise of destructive interference, hopping phases, and the cell translations of the bonds. We study this connection in a seven-orbital 2 times 2 supercell honeycomb-vacancy lattice, combining analytic reductions with Bloch spectra, lattice Chern invariants, and quantum geometry. The parent lattice has three exact flat branches, a smooth periodic zero mode, and a compact localized state. A uniform gap bound shows that faint intracell-loop hopping preserves two topologically trivial insulating gaps. The intracell hopping graph also admits a staggered chiral coloring: reversing site amplitudes according to this coloring links opposite energies at momenta separated by half a reciprocal period. This constraint restricts the isolated central band to even Chern numbers and forbids a zero-energy insulating filling at every loop phase. Purely imaginary loop hopping admits a real gauge, whereas other phases allow paired band contacts connecting central bands with C3=2 and C3=4. On a specified strong-loop cut, third-order masses open the direct gaps; these gaps shrink faster than the bandwidth as the coupling grows. Changing the bond connectivity to an oriented honeycomb next-nearest-neighbor extension generates a narrower Chern band with nonuniform quantum geometry. These results distinguish individual-band topology from occupied-group topology and reveal how bond connectivity and cell translations determine which topological bands can emerge from an exactly flat parent.",
+      "initial_submission_date": "2026-10-27T06:54:14Z",
+      "latest_update_date": "2026-10-27T06:54:14Z",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.36738v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.36738v1",
+      "versions_seen": [
+        "2610.36738v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-10-28T10:16:42.386921+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.386921+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.36721",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.36721v1",
+      "title": "Magnon Super-Bloch Oscillations and Switchable Transport in Driven Magnonic Crystals",
+      "authors": [
+        "Xiang Liu",
+        "Xi-guang Wang",
+        "Zhi-xiong Li",
+        "Xiufeng Han",
+        "Guang-hua Guo"
+      ],
+      "abstract": "Super-Bloch oscillations (SBOs) offer a powerful route to control wave packet propagation in driven lattices, yet their realization in magnonic systems has remained elusive. Here, we predict SBOs of magnon wave packets in periodic magnonic crystals driven by static and ac gradients of magnetic anisotropy field. A static gradient alone induces magnon Bloch oscillation (BO) with a constant carrier frequency. Remarkably, adding a near-resonant MHz-scale ac driving gives rise to a slow large-amplitude envelope oscillation, the hallmark of SBO. At exact resonance, the ac driving enables phase-controlled directional transport with a carrier-frequency shift up to GHz scale. Consequently, the same structure can be switched among three distinct regimes: conventional BO, SBO, and directed transport. Analytical expressions for the oscillation amplitudes, superperiod, drift velocity, and frequency evolution are validated by micromagnetic simulations. Extending to antiferromagnet magnonic crystals, we further demonstrate that these effects drive opposite motions of two oppositely polarized magnon modes in THz range. Our work establishes magnon SBOs as a versatile platform, opening a new avenue for reconfigurable magnonic devices.",
+      "initial_submission_date": "2026-10-27T06:37:49Z",
+      "latest_update_date": "2026-10-27T06:37:49Z",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.36721v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.36721v1",
+      "versions_seen": [
+        "2610.36721v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Computational / theoretical",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [
+          "we predict"
+        ],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-10-28T10:16:42.386924+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.386924+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.36214",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.36214v1",
+      "title": "A cascade of orbital-field-driven phases with a Lifshitz-type transition to unidirectional spiral order",
+      "authors": [
+        "Hiroki Nakai",
+        "Hae-Young Kee"
+      ],
+      "abstract": "Frustration in magnetic systems gives rise to unconventional orders and exotic spin liquids. Here, we explore a new type of frustration arising from an intrinsic bond-dependent orbital-field that couples orbital degrees of freedom to spin correlations. Introducing this orbital-field interaction into the antiferromagnetic Heisenberg model on the honeycomb lattice, we show that local spin-orbital constraints generate a subextensive degeneracy, lifted by order-by-disorder to select distinct collinear magnets in a cascade of phases as the orbital field increases from a para-orbital liquid. At larger fields, the selected phase gives way to an incommensurate unidirectional spiral that spontaneously breaks chiral symmetry. This transition is driven by the coupling of a Goldstone mode to gapped dynamical spin-orbital fluctuations. The spin stiffness becomes negative along a particular direction, while the spiral wavevector grows as the square root of the distance from the transition, signaling a Lifshitz-type transition. We present a microscopic route to realizing this orbital field and discuss candidate materials.",
+      "initial_submission_date": "2026-10-26T19:45:37Z",
+      "latest_update_date": "2026-10-26T19:45:37Z",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.36214v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.36214v1",
+      "versions_seen": [
+        "2610.36214v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-10-28T10:16:42.386927+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.386927+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.36199",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.36199v1",
+      "title": "Three-dimensional quantum Hall insulators in magnetic pyrochlore systems",
+      "authors": [
+        "Ze-Xun Lin",
+        "Robert-Jan Slager",
+        "Claudio Castelnovo"
+      ],
+      "abstract": "We show that a class of pyrochlore materials provides a route to realize 3D Quantum Hall insulators, based on magnetic texture and flat band interference. We study itinerant electrons on a pyrochlore lattice Kondo-coupled to localized moments living on another interpenetrating pyrochlore lattice, with the moments forming a field-selected three-in/one-out texture. The noncoplanar texture generates complex spin-dependent hopping amplitudes and unequal local exchange energies, reconstructing the compact-localized parent flat bands into narrow bands separated by a global three-dimensional gap. The low-energy states are concentrated predominantly on kagome planes within the three-dimensional lattice, reflecting the combined effects of quantum interference and the texture-induced sublattice potential. When the lowest band is fully occupied, the response is characterized by a Chern triplet $\\mathbf{C}=(1,1,1)$ and reciprocal Hall vector $\\mathbf{G}_{\\mathrm{H}}=(2π/a)(1,1,1)$, giving $σ_{yz}=σ_{zx}=σ_{xy}=e^2/(ha)$. The quantized bulk Hall response enforces chiral surface spectral flow, visible as noncontractible Fermi loops at the surface. Our work opens a new direction in the search for three-dimensional quantum Hall physics in magnetic pyrochlore systems, and suggests a broad design principle based on the interplay of magnetic texture and flat-band interference.",
+      "initial_submission_date": "2026-10-26T19:38:18Z",
+      "latest_update_date": "2026-10-26T19:38:18Z",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.36199v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.36199v1",
+      "versions_seen": [
+        "2610.36199v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-10-28T10:16:42.386930+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.386930+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2610.34830",
       "current_version": 1,
@@ -53,7 +457,7 @@
         ]
       },
       "first_seen_at": "2026-10-27T09:32:31.843371+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843371+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.386945+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -109,7 +513,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-27T09:32:31.843406+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843406+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.386967+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -165,7 +569,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-27T09:32:31.843410+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843410+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.386974+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -216,7 +620,7 @@
         ]
       },
       "first_seen_at": "2026-10-27T09:32:31.843412+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843412+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.386981+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -286,7 +690,7 @@
         ]
       },
       "first_seen_at": "2026-10-26T09:36:25.759119+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843427+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.386987+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -349,7 +753,7 @@
         ]
       },
       "first_seen_at": "2026-10-26T09:36:25.759149+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843435+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.386992+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -392,7 +796,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-23T09:01:48.770242+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843439+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.386997+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -439,7 +843,7 @@
         ]
       },
       "first_seen_at": "2026-10-22T09:06:41.138854+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843444+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387003+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -492,7 +896,7 @@
         ]
       },
       "first_seen_at": "2026-10-26T09:36:25.759174+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843448+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387008+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -543,7 +947,7 @@
         ]
       },
       "first_seen_at": "2026-10-23T09:01:48.770291+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843453+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387013+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -586,7 +990,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-23T09:01:48.770295+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843457+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387018+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -628,7 +1032,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-23T09:01:48.770298+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843460+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387023+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -673,7 +1077,7 @@
         ]
       },
       "first_seen_at": "2026-10-23T09:01:48.770301+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843464+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387027+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -715,7 +1119,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138818+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843467+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387032+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -759,7 +1163,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138849+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843471+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387037+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -812,7 +1216,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138857+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843474+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387041+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -853,7 +1257,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138860+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843477+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387046+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -909,7 +1313,7 @@
         ]
       },
       "first_seen_at": "2026-10-22T09:06:41.138862+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843480+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387054+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -956,7 +1360,7 @@
         ]
       },
       "first_seen_at": "2026-10-22T09:06:41.138864+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843483+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387058+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1019,7 +1423,7 @@
         ]
       },
       "first_seen_at": "2026-10-22T09:06:41.138866+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843486+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387063+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1060,7 +1464,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138869+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843489+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387068+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1101,7 +1505,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138871+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843493+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387073+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1162,7 +1566,7 @@
         ]
       },
       "first_seen_at": "2026-10-22T09:06:41.138873+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843496+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387077+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1267,7 +1671,7 @@
         ]
       },
       "first_seen_at": "2026-10-22T09:06:41.138876+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843499+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387082+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1308,7 +1712,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138878+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843502+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387087+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1357,7 +1761,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138880+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843506+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387091+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1406,7 +1810,7 @@
         ]
       },
       "first_seen_at": "2026-10-22T09:06:41.138882+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843511+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387096+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1452,7 +1856,51 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138887+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843514+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387101+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.35931",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.35931v1",
+      "title": "An exactly solvable obstructed seam on a lattice Klein bottle: bulk-locked Majorana rings and register-dependent toric codes",
+      "authors": [
+        "Junhao",
+        "Wang"
+      ],
+      "abstract": "We study a frustrated seam produced by literal reflection gluing of Wen's plaquette model on a closed lattice Klein bottle. The seam operators anticommute along two cycles for even circumference and one cycle of twice the length for odd circumference. Their algebra reduces to free Majorana rings, while the commuting bulk stabilizers constrain the allowed ring sectors. This bulk locking yields exact ground energies, excitation gaps and degeneracies, checked by phase-aware Pauli traces and finite-size diagonalization, including two 24-qubit energy predictions. The seam degeneracy is not topological: the single-site seam fields tested split it at second order. We contrast this obstructed gluing with consistent toric-code realizations. An edge register preserves the anyon labels; a Hadamard-dressed site register has colour-dependent seam transport, with ground-state degeneracy 2 or 4 for even circumference and a sign-frustrated exception at odd circumference. For the enumerated lattice isometries and sizes, we compute logical gates and distances, distinguishing abstract qubit relabelling from local hardware depth. Finally, on three 16- and 24-qubit lattices, chiral matter selects a holonomy doublet whose electric-field splitting follows two competing tunnelling routes. These matter results remain finite-size statements. The main result is the exact obstructed-seam solution with bulk sector locking; the register, gate and matter calculations delimit its relation to topological codes.",
+      "initial_submission_date": "2026-10-19T16:08:17Z",
+      "latest_update_date": "2026-10-19T16:08:17Z",
+      "categories": [
+        "cond-mat.str-el",
+        "quant-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.35931v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.35931v1",
+      "versions_seen": [
+        "2610.35931v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Computational / theoretical",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [
+          "we compute"
+        ],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-10-28T10:16:42.387104+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387104+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1503,7 +1951,7 @@
         ]
       },
       "first_seen_at": "2026-10-22T09:06:41.138889+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843517+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387109+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1548,7 +1996,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138892+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843520+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387114+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1600,7 +2048,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138894+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843524+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387118+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1657,7 +2105,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138897+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843527+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387123+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1701,7 +2149,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138899+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843530+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387127+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1747,7 +2195,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-19T09:31:55.648163+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843533+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387131+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1792,7 +2240,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-19T09:31:55.648187+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843535+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387136+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1836,7 +2284,7 @@
         ]
       },
       "first_seen_at": "2026-10-19T09:31:55.648192+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843539+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387140+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1877,7 +2325,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-19T09:31:55.648196+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843541+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387147+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1922,7 +2370,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-19T09:31:55.648199+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843544+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387151+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1966,7 +2414,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-16T08:42:11.045190+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843548+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387156+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2013,7 +2461,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-15T08:46:59.819810+00:00",
-      "last_seen_at": "2026-10-27T09:32:31.843551+00:00",
+      "last_seen_at": "2026-10-28T10:16:42.387160+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
