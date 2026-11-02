@@ -1,8 +1,285 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-10-31T10:08:25.325189+00:00",
+  "updated_at": "2026-11-02T11:57:48.577652+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2610.42114",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.42114v1",
+      "title": "Topologically Protected Edge States in a Single Flux Qubit",
+      "authors": [
+        "Pablo Perez-Fernandez",
+        "Manuel Pino"
+      ],
+      "abstract": "We show that topological edge states can be realized in a simple superconducting circuit composed of an inductively shunted flux qubit. The Josephson potential of that qubit forms a honeycomb lattice similar to the case of graphene. The additional shunting element produces a quartic potential along one flux direction, which effectively creates a boundary in flux space. We map analytically the low-energy dynamics of the circuit to an extended Su--Schrieffer--Heeger (SSH) chain, in which a quartic potential is added to the usual SSH Hamiltonian. This mapping is confirmed by numerical simulations of the full superconducting circuit. We argue that chiral symmetry still holds for the edge states of the extended model around a chiral point in parameter space. Close to this point, we numerically find that edge states in our superconducting circuit are topologically protected against perturbations that obey chiral symmetry, as is the case for charge noise. Our results show that topological effects previously thought to occur in multi-qubit systems, such as protection against decoherence, can also be found in much simpler single superconducting qubits.",
+      "initial_submission_date": "2026-10-30T17:49:37Z",
+      "latest_update_date": "2026-10-30T17:49:37Z",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.42114v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42114v1",
+      "versions_seen": [
+        "2610.42114v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-02T11:57:48.575101+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575101+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.42103",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.42103v1",
+      "title": "Charge Pumping Leptogenesis from the Symmetric Mass Generation Phase on a Four-Leg Ladder Lattice",
+      "authors": [
+        "Runze Chi",
+        "Meng Zeng",
+        "Tao Xiang",
+        "Yi-Zhuang You",
+        "Bertrand I. Halperin",
+        "Juven Wang"
+      ],
+      "abstract": "Quantized charge pumping in quantum Hall systems is a bulk topological property, typically manifesting on gapless boundaries as spectral flow through chiral edge modes upon flux insertion. When the boundary is anomaly-free, it can be symmetrically gapped by symmetric mass generation (SMG) interactions. However, the effects on quantized charge pumping at an interacting gapped boundary are unclear. We address this using density-matrix renormalization group simulations of a four-leg ladder quasi-(2+1)d realization of the (1+1)d 3-4-5-0 lattice chiral fermion model with six-fermion interactions at one edge. We find gapless modes near the interacting edge for both weak and strong couplings, but the edge can be in a fully gapped SMG phase at intermediate coupling. We also identify spontaneous breaking of the model's $\\mathbb{Z}_2$ symmetry above a critical interaction strength. Across all three boundary phases, we find quantized charge pumping with the same pumped charge per flux quantum. The spatial distribution of the pumped charge varies between phases. Besides charge pumping, we study how a single injected fermion propagates under open boundary conditions. In the SMG phase, an interaction-induced flavor-mixing current develops at the endpoints of the gapped edge, which is absent in the weak- and strong-coupling limits. This current reveals a charge-redistribution mechanism unique to the SMG phase. Additionally, we propose an analogy between charge pumping in this model and a topological leptogenesis scenario in the (3+1)d Standard Model. The anomaly-free chiral U(1) symmetries of the 3-4-5-0 model play a role analogous to the baryon-minus-lepton symmetry of the Standard Model. In both settings, charge pumping can be associated with a continuous deformation along a classically defined but quantum-anomalous direction, while a discrete subgroup remains an exact quantum symmetry.",
+      "initial_submission_date": "2026-10-30T17:44:53Z",
+      "latest_update_date": "2026-10-30T17:44:53Z",
+      "categories": [
+        "cond-mat.str-el",
+        "quant-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.42103v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42103v1",
+      "versions_seen": [
+        "2610.42103v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [
+          "chiral fermion"
+        ],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-02T11:57:48.575129+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575129+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.41761",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.41761v1",
+      "title": "Scaling laws of entanglement entropy in fractal dimensions",
+      "authors": [
+        "Zheyu Cheng",
+        "Kailin Song",
+        "Jian-Wei Liu",
+        "Hanxi Sun",
+        "Hongyu Zou",
+        "Yuanjin Zheng",
+        "Yihao Yang",
+        "Baile Zhang"
+      ],
+      "abstract": "Entanglement entropy scaling links geometry to quantum correlations and diagnoses quantum criticality. Fractal lattices extend this link to noninteger dimensions, where boundary and bulk dimensions are independent. It remains open which dimension governs entropy scaling and how strongly gap closing can enhance it. Nonlocal occupied-state projectors and the lack of translation symmetry obstruct standard methods. We overcome these obstacles and classify free-fermion entropy scaling with bounds set by the hopping across the subsystem boundary: an upper bound from its rank and the spectral gap, and a lower bound from how much it lowers the ground-state energy. With only negative-energy states filled and this energy lowering proportional to the boundary, the entanglement entropy obeys the boundary law $S_X=Θ\\left(L_X^{d_{\\mathrm b}}\\right)$ under a uniform gap and satisfies $L_X^{d_{\\mathrm b}}\\lesssim S_X\\lesssim L_X^{d_{\\mathrm b}}\\ln L_X$ when the gap closes no faster than algebraically. Here $L_X$ is the subsystem linear size and $d_{\\mathrm b}$ the boundary dimension. Half occupation of the chiral zero modes gives a mixed-state entropy $S_X^{\\mathrm{mix}}$ with $\\max\\left\\{S_X,z_X\\ln2\\right\\}\\leqslant S_X^{\\mathrm{mix}}\\leqslant S_X+z_X\\ln2$, where $z_X$ is the local zero-mode weight; an extensive $z_X$ thus makes $S_X^{\\mathrm{mix}}$ follow the bulk dimension.",
+      "initial_submission_date": "2026-10-30T14:03:15Z",
+      "latest_update_date": "2026-10-30T14:03:15Z",
+      "categories": [
+        "quant-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.41761v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.41761v1",
+      "versions_seen": [
+        "2610.41761v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-02T11:57:48.575133+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575133+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.41017",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.41017v1",
+      "title": "Preparation of a Laughlin-like fractional Chern insulator on a superconducting quantum processor",
+      "authors": [
+        "Kamil Dutkiewicz",
+        "Bárbara Andrade",
+        "Geza Giedke",
+        "Tobias Grass"
+      ],
+      "abstract": "Fractional Chern insulators (FCIs) are lattice analogues of fractional quantum Hall states, hosting topological order and fractionalized anyonic excitations. Their realization poses a demanding target for quantum simulation. Here, we realize a bosonic FCI on an IBM Nighthawk superconducting quantum processor using classically optimized variational circuits. We target a Laughlin-like state that is an exact zero-energy ground state of a long-range parent Hamiltonian on a torus, eliminating physical edges and providing a favorable geometry for accessing fractional quantum Hall physics in a small system. On a $4\\times4$ qubit lattice, we prepare both the four-boson FCI ground state and a three-boson state hosting two quasiholes. Measurements of particle densities and correlations reproduce the characteristic structure of the target states, while reconstructed chiral magnetization currents resolve the circulating current pattern associated with the quasiholes. The preparation of these strongly correlated topological states with shallow circuits establishes a route toward the digital simulation and manipulation of fractionalized excitations, including measurements of topological invariants and anyonic braiding.",
+      "initial_submission_date": "2026-10-29T21:56:38Z",
+      "latest_update_date": "2026-10-29T21:56:38Z",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall",
+        "cond-mat.quant-gas"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.41017v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.41017v1",
+      "versions_seen": [
+        "2610.41017v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-02T11:57:48.575137+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575137+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.40968",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.40968v1",
+      "title": "Temperature Evolution of Magnon-Polarons in the van der Waals Antiferromagnet FePS$_3$",
+      "authors": [
+        "A. Krajewska",
+        "J. Kierdaszuk",
+        "M. Dub",
+        "E. Karpierz-Marczewska",
+        "M. Potemski"
+      ],
+      "abstract": "Magnon polarons, hybrid excitations arising from magnon-phonon coupling, were investigated in the van der Waals antiferromagnet FePS3 using magneto-Raman scattering measurements at temperatures ranging from 4 K to the vicinity of the Néel temperature ($T_\\mathrm{N}$ = 118 K). The lower Zeeman-split component of the magnon-like mode, tuned by the magnetic field toward the lower-energy phonon mode, exhibits an avoided crossing. The corresponding magnetic field decreases from approximately 13 T at 4 K to 5.6 T at 85 K, bringing the effect within reach of a standard laboratory magnet. A model of three coupled bosonic modes shows that the magnon-phonon coupling constant, approximately 2.7 cm$^{-1}$ at low temperatures, decreases significantly with increasing temperature, following a trend similar to the temperature-induced softening of the magnon mode. This decrease in magnon-phonon coupling is discussed in terms of a possible reduction in sublattice magnetization due to thermal fluctuations.",
+      "initial_submission_date": "2026-10-29T20:55:21Z",
+      "latest_update_date": "2026-10-29T20:55:21Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.40968v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40968v1",
+      "versions_seen": [
+        "2610.40968v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "FePS3"
+      ],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-11-02T11:57:48.575139+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575139+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.40910",
+      "current_version": 1,
+      "versioned_arxiv_id": "2610.40910v1",
+      "title": "Triplon thermal Hall response in a honeycomb-lattice $J_1$-$J_2$ Heisenberg antiferromagnet with Dzyaloshinskii--Moriya interactions",
+      "authors": [
+        "Guilherme F. Figueiredo",
+        "E. Miranda",
+        "R. L. Doretto"
+      ],
+      "abstract": "We investigate triplon topology and the thermal Hall transport in a columnar valence-bond solid of a spin-$1/2$ honeycomb-lattice $J_1$-$J_2$ Heisenberg antiferromagnet. Inequivalent triangular sublattices, modeled by $J_2^A\\neq J_2^B$, remove inversion symmetry at nearest-neighbor bond centers and allow in-plane Dzyaloshinskii--Moriya (DM) interactions. We identify the two symmetry-allowed in-plane DM vector patterns and present detailed results for the pattern parallel to the bonds including an out-of-plane magnetic field. Within a harmonic bond-operator treatment, we determine the triplon bands, their Berry curvatures and Chern numbers, and the triplon thermal Hall conductivity. The DM interaction and magnetic field generate nonzero Berry curvatures, but the numerically integrated Chern number of every isolated triplon band vanishes. Nevertheless, the energy-dependent Bose weighting of positive and negative Berry-curvature regions produces a finite thermal Hall response at nonzero low temperatures. We delimit the dilute-triplon regime in which the harmonic transport calculation is expected to be reliable. These results show that a vanishing Chern number band does not directly constrain the triplon response of a valence-bond solid. We also comment on the effects on the columnar valence-bond solid phase of a DM interaction between next-nearest-neighbor spins characterized by an out-of-plane vector pattern.",
+      "initial_submission_date": "2026-10-29T19:28:51Z",
+      "latest_update_date": "2026-10-29T19:28:51Z",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.stat-mech"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.40910v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40910v1",
+      "versions_seen": [
+        "2610.40910v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "thermal Hall transport"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-02T11:57:48.575142+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575142+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2610.40410",
       "current_version": 1,
@@ -60,7 +337,7 @@
         ]
       },
       "first_seen_at": "2026-10-30T10:41:37.104826+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323112+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575155+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -103,7 +380,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-30T10:41:37.104855+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323140+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575162+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -170,7 +447,7 @@
         ]
       },
       "first_seen_at": "2026-10-30T10:41:37.104860+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323162+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575167+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -220,7 +497,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-30T10:41:37.104864+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323168+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575172+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -266,7 +543,7 @@
         ]
       },
       "first_seen_at": "2026-10-30T10:41:37.104868+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323174+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575177+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -311,7 +588,7 @@
         ]
       },
       "first_seen_at": "2026-10-30T10:41:37.104871+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323179+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575184+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -358,7 +635,7 @@
         ]
       },
       "first_seen_at": "2026-10-30T10:41:37.104877+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323183+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575189+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -406,7 +683,7 @@
         ]
       },
       "first_seen_at": "2026-10-30T10:41:37.104880+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323188+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575192+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -448,7 +725,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386877+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323193+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575196+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -491,7 +768,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386905+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323197+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575200+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -539,7 +816,7 @@
         ]
       },
       "first_seen_at": "2026-10-28T10:16:42.386910+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323201+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575204+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -592,7 +869,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386914+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323206+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575208+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -636,7 +913,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386918+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323210+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575213+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -680,7 +957,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386921+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323214+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575216+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -726,7 +1003,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386924+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323219+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575220+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -767,7 +1044,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386927+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323223+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575224+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -810,7 +1087,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386930+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323227+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575228+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -864,7 +1141,7 @@
         ]
       },
       "first_seen_at": "2026-10-27T09:32:31.843371+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323231+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575232+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -920,7 +1197,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-27T09:32:31.843406+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323235+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575236+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -976,7 +1253,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-27T09:32:31.843410+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323247+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575239+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1027,7 +1304,7 @@
         ]
       },
       "first_seen_at": "2026-10-27T09:32:31.843412+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323253+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575243+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1097,7 +1374,7 @@
         ]
       },
       "first_seen_at": "2026-10-26T09:36:25.759119+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323258+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575248+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1160,7 +1437,7 @@
         ]
       },
       "first_seen_at": "2026-10-26T09:36:25.759149+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323263+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575252+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1203,7 +1480,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-23T09:01:48.770242+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323268+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575256+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1250,7 +1527,7 @@
         ]
       },
       "first_seen_at": "2026-10-22T09:06:41.138854+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323273+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575263+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1303,7 +1580,7 @@
         ]
       },
       "first_seen_at": "2026-10-26T09:36:25.759174+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323277+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575267+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1354,7 +1631,7 @@
         ]
       },
       "first_seen_at": "2026-10-23T09:01:48.770291+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323284+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575271+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1397,7 +1674,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-23T09:01:48.770295+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323289+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575275+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1439,7 +1716,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-23T09:01:48.770298+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323293+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575278+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1484,7 +1761,7 @@
         ]
       },
       "first_seen_at": "2026-10-23T09:01:48.770301+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323298+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575282+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1526,7 +1803,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138818+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323302+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575285+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1570,7 +1847,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138849+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323306+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575289+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1623,7 +1900,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138857+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323310+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575293+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1664,7 +1941,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138860+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323315+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575297+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1720,7 +1997,7 @@
         ]
       },
       "first_seen_at": "2026-10-22T09:06:41.138862+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323319+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575300+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1767,7 +2044,7 @@
         ]
       },
       "first_seen_at": "2026-10-22T09:06:41.138864+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323324+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575304+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1830,7 +2107,7 @@
         ]
       },
       "first_seen_at": "2026-10-22T09:06:41.138866+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323328+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575308+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1871,7 +2148,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138869+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323332+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575312+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1912,7 +2189,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138871+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323337+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575315+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1973,7 +2250,7 @@
         ]
       },
       "first_seen_at": "2026-10-22T09:06:41.138873+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323341+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575319+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2119,7 +2396,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138878+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323346+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575323+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2168,7 +2445,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138880+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323351+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575328+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2217,7 +2494,7 @@
         ]
       },
       "first_seen_at": "2026-10-22T09:06:41.138882+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323355+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575332+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2263,7 +2540,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138887+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323359+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575338+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2307,7 +2584,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.387104+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323363+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575342+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2358,7 +2635,7 @@
         ]
       },
       "first_seen_at": "2026-10-22T09:06:41.138889+00:00",
-      "last_seen_at": "2026-10-31T10:08:25.323367+00:00",
+      "last_seen_at": "2026-11-02T11:57:48.575346+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
