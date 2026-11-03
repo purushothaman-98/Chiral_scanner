@@ -1,8 +1,351 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-11-02T11:57:48.577652+00:00",
+  "updated_at": "2026-11-03T11:34:03.445163+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2611.03616",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.03616v1",
+      "title": "Inhomogeneous Synthetic Fluxes in Optical Lattices",
+      "authors": [
+        "Soujanya Datta",
+        "Kush Saha",
+        "Krishanu Roychowdhury"
+      ],
+      "abstract": "Synthetic gauge fields in optical lattices are usually engineered to realize a uniform magnetic flux. Here, we propose a scheme to generate spatially inhomogeneous fluxes and demonstrate how such fluxes reshape the single-particle spectrum. Within Wannier--Stark-assisted tunneling, onsite modulation produces a plaquette flux that depends on the orientation of the static tilt, whereas laser-assisted tunneling (LAT) does not. Using LAT, two coherent Raman processes with different momentum transfers imprint a dimerized Peierls phase that alternates the flux between neighboring plaquettes of a square lattice while keeping the mean flux fixed. A bond-selective Raman phase extends the scheme to the kagome lattice, where a parameter $ξ$ redistributes the flux between triangles and hexagons at fixed flux per unit cell. The Hofstadter--Rammal spectrum of the bipartite square lattice retains chiral symmetry for all $ξ$, whereas the kagome lattice lacks this symmetry, and its flux periodicity and reflection symmetries survive only at special values of $ξ$. As $ξ$ is reduced, the anomalous Landau levels of the kagome singular flat band are compressed toward the flat-band energy and evolve into a degenerate zero-energy manifold at $ξ=0$ with compactly localized states. The dynamical structure factor, accessible through Bragg scattering, resolves this evolution as a Rydberg-like series of peaks whose spectral span tracks the width of the anomalous-level tower and vanishes as $ξ\\to0$. We discuss the frequency resolution and temperature required for its observation.",
+      "initial_submission_date": "2026-11-02T18:50:49Z",
+      "latest_update_date": "2026-11-02T18:50:49Z",
+      "categories": [
+        "cond-mat.quant-gas",
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.03616v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03616v1",
+      "versions_seen": [
+        "2611.03616v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-03T11:34:03.441844+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.441844+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.02619",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.02619v1",
+      "title": "Phonon Angular Momentum Multipoles and Nonlinear Thermal Responses",
+      "authors": [
+        "Xun-Jiang Luo",
+        "Mingliang Tian"
+      ],
+      "abstract": "Chiral phonons carry angular momentum and couple lattice dynamics to magnetic and transport phenomena. In magnets, however, a systematic classification of momentum-space phonon angular momentum (PAM) textures and experimental signatures of the resulting thermal responses remain elusive. Here we classify the PAM textures for all 122 magnetic point groups (MPGs) using two equivalent approaches: directly solving the linear symmetry constraints on the multipole expansion coefficients and constructing the allowed textures from group-representation basis functions. Both methods yield the same fivefold classification according to the leading nonzero order: $s$-wave (monopole), $p$-wave (dipole), $d$-wave (quadrupole), $f$-wave (octupole), and $g$-wave (hexadecapole). We further show that a temperature gradient generates a nonequilibrium PAM density whose $n$th-order term in $\\nabla T$ contains an energy-weighted PAM $2^n$-pole tensor and a kinematic remainder, thereby linking the response order and partial-wave channel through exact selection rules. Because the Berry curvature obeys the same symmetry constraints, this taxonomy is in one-to-one correspondence with Berry-curvature multipoles and their nonlinear Hall responses. We propose a cantilever torque measurement whose allowed angular harmonics are fixed by the MPG, with period $2π/n$ for a pure $n$th harmonic, providing a direct probe of the partial-wave content of PAM in both nonmagnetic and magnetic materials.",
+      "initial_submission_date": "2026-11-02T06:45:38Z",
+      "latest_update_date": "2026-11-02T06:45:38Z",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.02619v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.02619v1",
+      "versions_seen": [
+        "2611.02619v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [
+        "chiral phonon",
+        "chiral phonons",
+        "phonon angular momentum"
+      ],
+      "matched_keywords": [
+        "chiral phonon",
+        "chiral phonons",
+        "phonon angular momentum",
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [
+          "chiral phonon",
+          "chiral phonons",
+          "phonon angular momentum"
+        ],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-11-03T11:34:03.441875+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.441875+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.02594",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.02594v1",
+      "title": "Chiral phonon magnetism from localized Raman excitation",
+      "authors": [
+        "Yuhan Wang",
+        "Chuanshan Tian"
+      ],
+      "abstract": "Optically driven chiral phonons can induce transient magnetism in non-magnetic crystals, yet the microscopic relationship between phonon angular momentum and the resulting magnetic response remains unresolved. Here we distinguish the roles of pseudo-angular momentum and mechanical angular momentum in tetragonal α-TeO2. Combining phase-resolved terahertz spectroscopy with magneto-optical Kerr measurements (MOKE), we reconstruct the motion of a doubly degenerate phonon and continuously control its angular momentum. The MOKE response follows the sign and magnitude of phonon angular momentum as well as its dynamics, whereas non-rotating phonons, including those with finite pseudo-angular momentum, produce no detectable magnetic signal. The MOKE rotation corresponds to an effective magnetic field of approximately 14 mT, nearly seven orders of magnitude above the estimate for spatially uniform ionic currents. Moreover, the Kerr response scales linearly with the emitted terahertz field, rather than quadratically as predicted by the uniform-current model. A localized Raman-excitation model involving Te lone-pair states accounts for this scaling and yields a comparable field magnitude with the MOKE data when electronic enhancement is included. These findings identify mechanical lattice rotation as the dominant dynamical variable for the observed magnetic response and suggest that localized Raman coupling contributes to its unexpectedly large magnitude.",
+      "initial_submission_date": "2026-11-02T06:19:14Z",
+      "latest_update_date": "2026-11-02T06:19:14Z",
+      "categories": [
+        "physics.optics",
+        "cond-mat.other"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.02594v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.02594v1",
+      "versions_seen": [
+        "2611.02594v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [
+        "chiral phonon",
+        "chiral phonons",
+        "phonon angular momentum"
+      ],
+      "matched_keywords": [
+        "chiral phonon",
+        "chiral phonons",
+        "phonon angular momentum",
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [
+          "chiral phonon",
+          "chiral phonons",
+          "phonon angular momentum"
+        ],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-11-03T11:34:03.441880+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.441880+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.02276",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.02276v1",
+      "title": "Chirality-Induced Angular-Momentum Pumping by Moving Charges",
+      "authors": [
+        "Jun-ichiro Kishine",
+        "Ron Naaman"
+      ],
+      "abstract": "Chirality-induced spin selectivity is established even in light elements at room temperature; dissipation and electron correlations are implicated, here combined in one mechanism. Injected electron wave packets coherently radiate chiral phonons; electronic absorption competing with phonon decay sets the fraction electrons receive and its temperature dependence. Spin-orbit coupling itself is not renormalized; it becomes effectively large because both the orbital and spin moments it couples are enhanced by Coulomb correlations.",
+      "initial_submission_date": "2026-11-01T22:59:13Z",
+      "latest_update_date": "2026-11-01T22:59:13Z",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.mes-hall",
+        "cond-mat.str-el",
+        "quant-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.02276v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.02276v1",
+      "versions_seen": [
+        "2611.02276v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [
+        "chiral phonon",
+        "chiral phonons"
+      ],
+      "matched_keywords": [
+        "chiral phonon",
+        "chiral phonons",
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [
+          "chiral phonon",
+          "chiral phonons"
+        ],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-11-03T11:34:03.441884+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.441884+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.02176",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.02176v1",
+      "title": "Phase behavior of a two-dimensional suspension of active pentagons",
+      "authors": [
+        "R. Fernández-Quevedo García",
+        "B. Wu-Zhang",
+        "C. M. Barriuso G.",
+        "W. Lin",
+        "M. Ruiz-García",
+        "H. Xiao",
+        "C. Valeriani"
+      ],
+      "abstract": "Applying insights acquired when studying idealized particle systems to real-world amorphous materials remains a significant challenge, primarily due to the complex interplay between particles' shape and interaction mechanisms. It is known that regular pentagons do not tessellate the two dimensional plane, making them the simplest regular polygons unable to form periodic tiling. This geometric constraint, combined with the complexity of interactions among non-spherical particles, may give rise to rich emergent behaviors, especially when dealing with self-propelled pentagons. Thus, geometry, interactions, and self-propulsion collectively lead to novel dynamical emerging phases. In this context, we investigate how activity and excluded-volume interactions affect the collective behavior of a two-dimensional suspension of active pentagon-shaped particles. Our results reveal that active pentagons not only undergo an arrested motility-induced phase separation (MIPS) but, under given conditions, they form traveling/rotating clusters exhibiting translational/chiral motion. Interestingly, both phases present an enhanced stability due to particles' activity, shape and excluded-volume interactions, forming an ice-ray lattice whose internal structure represents the densest packing fraction a two-dimensional pentagon suspension may achieve.",
+      "initial_submission_date": "2026-11-01T20:25:08Z",
+      "latest_update_date": "2026-11-01T20:25:08Z",
+      "categories": [
+        "cond-mat.soft"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.02176v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.02176v1",
+      "versions_seen": [
+        "2611.02176v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-03T11:34:03.441887+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.441887+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.00987",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.00987v1",
+      "title": "Melting noncoplanar order on the square-kagome lattice: Chiral, flat-band, and staggered spin liquids from projective symmetry",
+      "authors": [
+        "Harsh Raj",
+        "Atanu Maity",
+        "Yasir Iqbal"
+      ],
+      "abstract": "Noncoplanar magnetic orders carry a scalar spin chirality, and their melting by quantum fluctuations has been proposed as a route to chiral spin liquids. We ask what this route can produce on the square-kagome lattice, where couplings across the octagons stabilize noncoplanar cuboc and conical orders. We classify the fermionic spin liquids of this lattice by their projective symmetry groups, identify the symmetry class into which each noncoplanar order would melt, and compare candidate states with Gutzwiller-projected wave functions. A magnetic selection rule constrains the route: the chirality of every cuboc and conical order alternates in space, so a liquid that keeps the symmetry of its parent order has zero Chern number and no spontaneous thermal Hall response. A Chern state can descend only from uniformly chiral orders, and the regular ones we find need ferromagnetic bow-tie couplings. The energetics do not favor a chiral liquid either: among the projected wave functions we compare, a cuboc1-ordered state is lowest for strong cross-octagon couplings, and nonchiral states, a valence-bond crystal or a time-reversal-symmetric liquid, for weaker ones. The two inequivalent site orbits shape the spinons: a relative time-reversal sign between them pins flat bands to the Fermi level, and because the translations of $p4mm$ are not commutators, staggered chiral liquids exist, which are absent on sixfold-symmetric lattices.",
+      "initial_submission_date": "2026-10-31T14:25:14Z",
+      "latest_update_date": "2026-10-31T14:25:14Z",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.00987v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00987v1",
+      "versions_seen": [
+        "2611.00987v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-03T11:34:03.441891+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.441891+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.00954",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.00954v1",
+      "title": "Spontaneous Chirality and Collective Chern Bands in a Dipole-Conserving Bose System",
+      "authors": [
+        "Yan-Guang Yue",
+        "Jie Lou",
+        "Yan Chen"
+      ],
+      "abstract": "We demonstrate spontaneous chiral dipole order and an isolated collective Chern band in a time-reversal-symmetric microscopic bosonic lattice model with exact dipole-moment conservation. In a controlled large-occupation limit at zero temperature, frustrated dipole exchange and three-particle conversion stabilize two time-reversed chiral condensates. The two dipole Goldstone modes remain gapless, while a separate finite-frequency band carries Chern numbers $-1$ and $+1$ in the opposite domains. We trace this topology to complex mode couplings in the chiral background that gap finite-frequency Dirac crossings. Site-resolved density drives preserve dipole-moment conservation and reconstruct the band Chern number from band-resolved absorption spectra in the quadratic theory.",
+      "initial_submission_date": "2026-10-31T13:55:14Z",
+      "latest_update_date": "2026-10-31T13:55:14Z",
+      "categories": [
+        "cond-mat.quant-gas",
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.00954v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00954v1",
+      "versions_seen": [
+        "2611.00954v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-03T11:34:03.441894+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.441894+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2610.42114",
       "current_version": 1,
@@ -41,7 +384,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-02T11:57:48.575101+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575101+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.441909+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -89,7 +432,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-02T11:57:48.575129+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575129+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.441918+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -136,7 +479,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-02T11:57:48.575133+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575133+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.441925+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -181,7 +524,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-02T11:57:48.575137+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575137+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.441932+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -231,7 +574,7 @@
         ]
       },
       "first_seen_at": "2026-11-02T11:57:48.575139+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575139+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.441937+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -276,7 +619,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-02T11:57:48.575142+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575142+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.441943+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -337,7 +680,7 @@
         ]
       },
       "first_seen_at": "2026-10-30T10:41:37.104826+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575155+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.441948+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -380,7 +723,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-30T10:41:37.104855+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575162+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.441955+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -447,7 +790,7 @@
         ]
       },
       "first_seen_at": "2026-10-30T10:41:37.104860+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575167+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.441961+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -497,7 +840,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-30T10:41:37.104864+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575172+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.441966+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -543,7 +886,7 @@
         ]
       },
       "first_seen_at": "2026-10-30T10:41:37.104868+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575177+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.441971+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -588,7 +931,7 @@
         ]
       },
       "first_seen_at": "2026-10-30T10:41:37.104871+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575184+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.441978+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -635,7 +978,7 @@
         ]
       },
       "first_seen_at": "2026-10-30T10:41:37.104877+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575189+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.441983+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -683,7 +1026,7 @@
         ]
       },
       "first_seen_at": "2026-10-30T10:41:37.104880+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575192+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.441988+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -725,7 +1068,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386877+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575196+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.441994+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -768,7 +1111,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386905+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575200+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.441999+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -816,7 +1159,7 @@
         ]
       },
       "first_seen_at": "2026-10-28T10:16:42.386910+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575204+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442004+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -869,7 +1212,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386914+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575208+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442010+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -913,7 +1256,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386918+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575213+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442016+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -957,7 +1300,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386921+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575216+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442021+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1003,7 +1346,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386924+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575220+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442027+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1044,7 +1387,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386927+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575224+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442031+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1087,7 +1430,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386930+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575228+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442040+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1141,7 +1484,7 @@
         ]
       },
       "first_seen_at": "2026-10-27T09:32:31.843371+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575232+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442045+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1197,7 +1540,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-27T09:32:31.843406+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575236+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442053+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1253,7 +1596,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-27T09:32:31.843410+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575239+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442058+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1304,7 +1647,7 @@
         ]
       },
       "first_seen_at": "2026-10-27T09:32:31.843412+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575243+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442063+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1374,7 +1717,7 @@
         ]
       },
       "first_seen_at": "2026-10-26T09:36:25.759119+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575248+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442069+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1437,7 +1780,7 @@
         ]
       },
       "first_seen_at": "2026-10-26T09:36:25.759149+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575252+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442075+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1480,7 +1823,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-23T09:01:48.770242+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575256+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442080+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1527,7 +1870,7 @@
         ]
       },
       "first_seen_at": "2026-10-22T09:06:41.138854+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575263+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442085+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1580,7 +1923,7 @@
         ]
       },
       "first_seen_at": "2026-10-26T09:36:25.759174+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575267+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442092+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1631,7 +1974,7 @@
         ]
       },
       "first_seen_at": "2026-10-23T09:01:48.770291+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575271+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442097+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1674,7 +2017,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-23T09:01:48.770295+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575275+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442103+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1716,7 +2059,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-23T09:01:48.770298+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575278+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442107+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1761,7 +2104,7 @@
         ]
       },
       "first_seen_at": "2026-10-23T09:01:48.770301+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575282+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442112+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1803,7 +2146,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138818+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575285+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442118+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1847,7 +2190,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138849+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575289+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442123+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1900,7 +2243,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138857+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575293+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442128+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1941,7 +2284,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138860+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575297+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442133+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1997,7 +2340,7 @@
         ]
       },
       "first_seen_at": "2026-10-22T09:06:41.138862+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575300+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442138+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2044,7 +2387,7 @@
         ]
       },
       "first_seen_at": "2026-10-22T09:06:41.138864+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575304+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442143+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2107,7 +2450,7 @@
         ]
       },
       "first_seen_at": "2026-10-22T09:06:41.138866+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575308+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442149+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2148,7 +2491,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138869+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575312+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442154+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2189,7 +2532,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138871+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575315+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442160+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2250,7 +2593,7 @@
         ]
       },
       "first_seen_at": "2026-10-22T09:06:41.138873+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575319+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442166+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2396,7 +2739,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138878+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575323+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442172+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2445,7 +2788,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138880+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575328+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442177+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2494,7 +2837,7 @@
         ]
       },
       "first_seen_at": "2026-10-22T09:06:41.138882+00:00",
-      "last_seen_at": "2026-11-02T11:57:48.575332+00:00",
+      "last_seen_at": "2026-11-03T11:34:03.442182+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
