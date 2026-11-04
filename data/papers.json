@@ -1,8 +1,493 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-11-03T11:34:03.445163+00:00",
+  "updated_at": "2026-11-04T11:48:48.230961+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2611.05329",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.05329v1",
+      "title": "An Exact QFT/Lattice Map for Fermions",
+      "authors": [
+        "Shu-Heng Shao",
+        "Nikita Sopenko"
+      ],
+      "abstract": "We construct an exact map between continuum fermion fields and lattice fields in 1+1 dimensions. This map rewrites a continuum Hamiltonian as a lattice Hamiltonian with nearest-neighbor couplings and an infinite-dimensional local Hilbert space. The resulting lattice model reproduces exactly the energy spectrum, global operator algebra, chiral symmetries, and anomalies of the continuum QFT on any finite lattice. Unlike domain wall fermions, truncating the local Hilbert space introduces no extra massless modes, and the entanglement entropy of an interval converges as the truncation is removed. The lattice local algebras are of type I and lie between the type III continuum algebras of nested spatial regions, in accordance with the split property. We demonstrate this construction explicitly for $N$ Majorana fermions, realizing the $\\mathrm{O}(N)_\\mathrm{L}\\times\\mathrm{O}(N)_\\mathrm{R}$ lattice chiral symmetry. We also construct an exact lattice model for the Schwinger model and numerically reproduce the mass gap $e/\\sqrtπ$.",
+      "initial_submission_date": "2026-11-03T18:33:22Z",
+      "latest_update_date": "2026-11-03T18:33:22Z",
+      "categories": [
+        "hep-th",
+        "cond-mat.str-el",
+        "hep-lat",
+        "math-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.05329v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05329v1",
+      "versions_seen": [
+        "2611.05329v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-04T11:48:48.228087+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228087+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.05025",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.05025v1",
+      "title": "Ferron polariton Hall effect: Deflecting optically rectified polarization with magnetic fields",
+      "authors": [
+        "Omer Yaniv",
+        "Dominik M. Juraschek"
+      ],
+      "abstract": "Ferrons are elementary excitations of ferroelectric order that can propagate and transport polarization when excited with light. Here, we show theoretically that ferron polaritons exhibit a Hall effect: an applied magnetic field generates polarization transport perpendicular to the propagation direction of a ferron polariton excited by an incident terahertz pulse. We demonstrate this effect for the example of ferroelectric SnTe using first-principles calculations and a microscopic theory of the phonon-polariton current. The direction and magnitude of the transverse polarization transport can be controlled by the polarization of the terahertz pulse and the applied magnetic field. Our results establish a route toward light-controlled directional transport of electric polarization in ferroelectrics.",
+      "initial_submission_date": "2026-11-03T15:02:54Z",
+      "latest_update_date": "2026-11-03T15:02:54Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.05025v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05025v1",
+      "versions_seen": [
+        "2611.05025v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "ferroelectric"
+      ],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-11-04T11:48:48.228117+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228117+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.04827",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.04827v1",
+      "title": "Observation of pseudospin-locked chiral edge transport in gyromagnetic photonic crystals",
+      "authors": [
+        "Chengle Fan",
+        "Kaizhou Shi",
+        "Xiang Xi",
+        "Zhen Gao"
+      ],
+      "abstract": "Photonic pseudospins enable selective excitation and routing of light, but perturbations that mix opposite pseudospins can induce backscattering in helical edge channels. Here, we experimentally demonstrate pseudospin-locked chiral edge transport in gyromagnetic photonic crystals, combining pseudospin selectivity with nonreciprocal unidirectional propagation. By jointly engineering lattice deformation and magnetic bias, we control dipolar-quadrupolar band inversions and construct interfaces supporting pseudospin-selective chiral channels. Microwave near-field and transmission measurements reveal a single chiral edge branch that is selectively excited by only one source handedness and exhibits pronounced nonreciprocal transport. Extending this mechanism to multidomain structures, we combine two pseudospin channels into a common waveguide, separate them into distinct outputs, and route them through intersecting interfaces. These configurations realize a nonreciprocal photonic pseudospin multiplexer and demultiplexer, together with a waveguide crossing exhibiting average measured crosstalk of -14.1 and -15.8 dB for its two input channels. Our results present an experimental route to integrating pseudospin-selective channel control with chiral edge transport, providing a foundation for nonreciprocal photonic networks that use pseudospin to organize and route multiple wave channels.",
+      "initial_submission_date": "2026-11-03T12:55:58Z",
+      "latest_update_date": "2026-11-03T12:55:58Z",
+      "categories": [
+        "physics.optics"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.04827v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.04827v1",
+      "versions_seen": [
+        "2611.04827v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "nonreciprocal transport"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-04T11:48:48.228122+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228122+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.04608",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.04608v1",
+      "title": "Spin-orbit-locked symmetry and the stability of the triangular Dirac spin liquid in the ytterbium delafossites",
+      "authors": [
+        "Yasir Iqbal"
+      ],
+      "abstract": "The Yb delafossites NaYbSe$_2$, KYbSe$_2$, CsYbSe$_2$ and NaYbO$_2$ are candidates for the triangular U(1) Dirac spin liquid, QED$_3$ with $N_f=4$, but their exchange is spin-orbit coupled. Under their spin-orbit-locked space group we determine which operators the XXZ anisotropy and the bond-dependent couplings $J_{\\pm\\pm}$, $J_{z\\pm}$ induce, and at what order. Symmetry forbids every Dirac mass, density and current at any order and, assuming adiabatic continuity, any new monopole term through charge three. At linear order the couplings reach only spin-2 members of the quartic multiplets $\\mathbf{20}'$ and $\\mathbf{84}$, which share their dimensions with Heisenberg-allowed operators. At second order $J_{\\pm\\pm}$ and $J_{z\\pm}$ renormalize the anisotropy through $J_{z\\pm}^2-2J_{\\pm\\pm}^2$, and nine spin-1 quartics without Heisenberg partners appear, irrelevant at $O(1/N)$. A single layer of a stable Heisenberg spin liquid thus acquires no relevant Lorentz-scalar operator from spin-orbit coupling. The Heisenberg liquid itself allows a Lorentz-vector $\\mathbf{20}'$ quartic of large-$N$ dimension 2.92, with two-loop $ε$-expansion estimates 2.9-3.5. Rhombohedral stacking adds triplet-monopole tunneling between layers at first order. At the transition to 120$^\\circ$ order the anisotropy is relevant, with crossover exponent $y_T\\simeq0.74$-1, and exact diagonalization shows that easy-plane anisotropy selects the chiral-Ising class. The out-of-plane spectrum at the K point then stays gapless, and the spin-flip to non-spin-flip ratio grows as $ω^{-0.56}$ at leading order. Existing KYbSe$_2$ neutron data below $J$ do not fix the K-point exponent. In-plane fields induce a chiral mass and an out-of-plane moment proportional to $\\sin3\\varphi$, zero along the bonds and canceling between CsYbSe$_2$ layers, which the planar thermal Hall effect can test.",
+      "initial_submission_date": "2026-11-03T10:00:31Z",
+      "latest_update_date": "2026-11-03T10:00:31Z",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.04608v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.04608v1",
+      "versions_seen": [
+        "2611.04608v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-04T11:48:48.228129+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228129+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.04607",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.04607v1",
+      "title": "Why strong spin-orbit coupling does not destabilize the Dirac spin liquid in the Yb delafossites",
+      "authors": [
+        "Yasir Iqbal"
+      ],
+      "abstract": "The Yb delafossites NaYbSe$_2$, KYbSe$_2$, CsYbSe$_2$ and NaYbO$_2$ are candidates for the U(1) Dirac spin liquid (DSL) of the triangular lattice. Strong spin-orbit coupling gives their exchange an XXZ anisotropy $Δ$ and bond-dependent couplings $J_{\\pm\\pm}$, $J_{z\\pm}$ that lock the spin frame to the lattice. We show that, within a single layer of a stable Heisenberg DSL, these couplings generate no relevant Lorentz-scalar operator of their own. Inversion at the bond centers removes the Dzyaloshinskii-Moriya channel that gaps the kagome DSL, so the locked symmetry forbids a mass, density or current at any order and, assuming continuity, any new monopole term through charge three. Every Lorentz-scalar four-fermion operator induced by spin-orbit coupling shares an SU(4) multiplet, and hence its scaling dimension, with a Heisenberg-allowed one, and the nine non-scalar quartics without such a partner arise only at second order and are irrelevant at large $N$. The Heisenberg DSL itself allows a Lorentz-vector quartic of large-$N$ dimension 2.92, which a stable phase must also render irrelevant. Beyond a single layer, spin-orbit coupling opens an interlayer monopole channel in rhombohedral stacking. If the Heisenberg DSL is instead multicritical, an anisotropy as small as that of KYbSe$_2$ matters only below tens of mK. At the transition to 120$^\\circ$ order the anisotropy is relevant, and exact diagonalization indicates that easy-plane anisotropy selects the chiral-Ising class. Existing KYbSe$_2$ neutron data below $J$ do not yet fix the K-point exponent, and gapless out-of-plane spin fluctuations at the K point would test the chiral-Ising selection.",
+      "initial_submission_date": "2026-11-03T10:00:16Z",
+      "latest_update_date": "2026-11-03T10:00:16Z",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.04607v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.04607v1",
+      "versions_seen": [
+        "2611.04607v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-04T11:48:48.228133+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228133+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.38704",
+      "current_version": 2,
+      "versioned_arxiv_id": "2610.38704v2",
+      "title": "Gravitational anomaly spectroscopy of a Kitaev spin liquid",
+      "authors": [
+        "Kumar Ghosh"
+      ],
+      "abstract": "The chiral central charge $c$ measures the gravitational anomaly of a two-dimensional topological phase and fixes the heat current along its edge. It has been accessed through thermal transport, where phonons complicate the signal, or through wave-function probes that need a pure ground state. Here we show that a calibrated combination of directional edge absorption weights determines $c$. A modulation of the edge couplings that travels along the edge is absorbed according to the Virasoro algebra, and a static change of the same couplings measures the unknown probe normalization. Two harmonics then cancel the dependence on the edge state, so the estimator returns $c$ in any state of the ideal edge theory. A ratio of line weights with and without a vison gives the conformal spin of the Ising anyon. For the Kitaev honeycomb model, exact calculations recover $c=1/2$ and $h_σ=1/16$ to $10^{-5}$ and give $c$ within about $1\\%$ on 96 spins. Compiled into gate circuits on the physical spins of a square-lattice quantum simulator, the protocol returns $c$ within $5\\%$ on 48 qubits. For stochastic gate errors it requires two-qubit error rates of $10^{-6}$ to $10^{-5}$.",
+      "initial_submission_date": "2026-10-28T19:04:51Z",
+      "latest_update_date": "2026-11-03T08:39:47Z",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.38704v2",
+      "pdf_url": "https://arxiv.org/pdf/2610.38704v2",
+      "versions_seen": [
+        "2610.38704v1",
+        "2610.38704v2"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-10-30T10:41:37.104868+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228150+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.04229",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.04229v1",
+      "title": "Thermally enhanced magnon-phonon resonance in van der Waals antiferromagnet FePS3",
+      "authors": [
+        "Kai-Xuan Zhang",
+        "Beom Hyun Kim",
+        "Seungbok Lee",
+        "Hao Li",
+        "Eugene Park",
+        "Heejun Yang",
+        "Feng Jin",
+        "Qingming Zhang",
+        "Je-Geun Park"
+      ],
+      "abstract": "Strong coupling between collective excitations provides a route to controlling quantum states of matter, yet its evolution under thermal fluctuations remains poorly understood. In the van der Waals antiferromagnet FePS3, strong magnon-phonon coupling is established at low temperatures. At the same time, recent terahertz experiments revealed the counterintuitive stabilization of a long-lived metastable magnetic state with an exceedingly long lifetime of 5 msec at the antiferromagnetic transition, not at the base temperature. This was attributed to a strongly coupled spin-lattice scenario, challenging the conventional wisdom that increased magnetic and thermal fluctuations near TN should be detrimental to the coherent control of a metastable phase. Thus it requires an independent examination for correct understanding. Using high-field Raman spectroscopy, we systematically investigate the temperature evolution of magnon-phonon coupling in FePS3. We observe a pronounced avoided crossing between magnon and phonon modes across a wide range of temperatures and find that the coupling strength remains remarkably robust with increasing temperatures. The zero-field magnon-phonon detuning decreases progressively with warming, driving the system toward resonance and thereby enhancing their hybridization near the transition temperature. This anomalous thermal evolution provides the crucial key to understanding the unusual terahertz-driven states recently reported in FePS3. More broadly, our results highlight van der Waals magnets as a promising platform for strong coupling among collective excitations and for controlling magnetic states through light-matter interactions.",
+      "initial_submission_date": "2026-11-03T03:09:13Z",
+      "latest_update_date": "2026-11-03T03:09:13Z",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "physics.optics",
+        "quant-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.04229v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.04229v1",
+      "versions_seen": [
+        "2611.04229v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Experimental",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "van der Waals magnet",
+        "FePS3"
+      ],
+      "detected_experimental_methods": [
+        "terahertz",
+        "Raman spectroscopy"
+      ],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [
+          "We observe"
+        ],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-11-04T11:48:48.228154+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228154+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.04188",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.04188v1",
+      "title": "Orbital Hall effect from the Wannier function approach",
+      "authors": [
+        "Tapesh Gautam",
+        "S. Satpathy"
+      ],
+      "abstract": "Using the Wannier function approach, we develop a gauge-covariant formalism for the orbital angular momentum (OAM) operator and the orbital Hall conductivity (OHC). The Wannier function formulation resolves the position-operator ambiguity inherent to Bloch states, providing a transparent and rigorous theory of orbital transport. Our formalism is validated through a finite-lattice calculation of the Haldane model, where the OAM operator is evaluated exactly from its real-space definition. Our results are also relevant to other orbital phenomena in solids such as the orbital Edelstein effect, orbital torque generation, and the like, where the OAM plays a crucial role.",
+      "initial_submission_date": "2026-11-03T02:23:33Z",
+      "latest_update_date": "2026-11-03T02:23:33Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.04188v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.04188v1",
+      "versions_seen": [
+        "2611.04188v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-04T11:48:48.228157+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228157+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2610.34736",
+      "current_version": 2,
+      "versioned_arxiv_id": "2610.34736v2",
+      "title": "Optimised growth of epitaxial D019 Mn3Ge(0001) thin films via single target sputtering",
+      "authors": [
+        "Servet Ozdemir",
+        "Ping-Luen Ho",
+        "Callum Brennan-Rich",
+        "Matthew Rogers",
+        "Philippa Shepley",
+        "Ahmet Yagmur",
+        "Ismet Gelen",
+        "Sehwan Song",
+        "Zabeada Aslam",
+        "Mannan Ali",
+        "Shelly Conroy",
+        "Sandrine Heutz",
+        "Gavin Burnell",
+        "B J Hickey"
+      ],
+      "abstract": "Materials with chemical identity Mn3X, where X is Sn, Ga, or Ge, are Heusler alloys with intriguing properties that are fundamentally and technologically interesting. They have topological properties with a non-trivial band structure that identify them as Weyl semimetals in the bulk. Their magnetic properties, which give rise to the topological band structure through spin-orbit coupling, are determined by their Kagome lattice structure, making them chiral non-collinear antiferromagnets. Among these materials, Mn3Ge is particularly interesting because it has a larger Berry curvature, leading to a large anomalous Hall conductivity and motivating potential spintronic applications. The desirable properties are only obtained when Mn3Ge has the D019 crystal structure, so producing an easily reproducible growth recipe is the main objective of this paper. Here we show that ultra-high-quality thin films of Mn3Ge with D019 symmetry can be grown from a Mn5Ge target on an Al2O3(0001) substrate with a Ru(0001) seed layer. The expected non-collinear antiferromagnetic order was confirmed by the finding of weak zero-field magnetisation $\\mathrm{(0.0086 \\pm 0.0002) μ_{B}/Mn}$ that does not saturate at high magnetic fields and has a Neel temperature of $\\mathrm{(291 \\pm 2)\\, K}$.",
+      "initial_submission_date": "2026-10-26T02:38:09Z",
+      "latest_update_date": "2026-11-02T21:32:10Z",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2610.34736v2",
+      "pdf_url": "https://arxiv.org/pdf/2610.34736v2",
+      "versions_seen": [
+        "2610.34736v1",
+        "2610.34736v2"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "Weyl semimetal"
+      ],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-10-27T09:32:31.843406+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228169+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.03822",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.03822v1",
+      "title": "Coexisting Kondo and Weyl-like transport in kagome heavy-fermion metal, Yb$_y$Co$_3$G$e_{3-x}$Sn$_x$",
+      "authors": [
+        "M. P. Dubbelman",
+        "R. Meduri",
+        "T. M. Kyrk",
+        "Z. Cheng",
+        "P. Maderson",
+        "D. Pizzirani",
+        "A. Das",
+        "V. N. Vreede",
+        "X. Liu",
+        "N. Witt",
+        "S. Grytsiuk",
+        "C. M. Polley",
+        "M. Rösner",
+        "A. Grubišić-Čabo",
+        "S. Bhattacharyya",
+        "R. E. Baumbach",
+        "M. E. Kamminga",
+        "S. Wiedmann",
+        "J. Y. Chan",
+        "M. N. Ali"
+      ],
+      "abstract": "Strong electron correlations and topology offer complementary routes to controlling electrical conduction, as correlations can make electrons heavy (e.g. Kondo lattices) whereas topology can make them behave as massless particles (e.g. Dirac or Weyl systems), and having both in one material is rare. In Kondo lattice systems, Kondo hybridization between localized 4$f$ and conduction electrons strongly enhances the quasiparticle mass, where in Weyl-Kondo systems these Kondo-renormalized bands form Weyl states, and simultaneous signs of both Kondo and Weyl states in one material have not been observed in transport. Here we report signs of both in the kagome metal \\ce{Yb_yCo3Ge_{3-x}Sn_x} by combining magnetotransport, heat capacity, magnetization, angle-resolved and X-ray photoemission spectroscopy, and DFT+U calculations to reveal Yb-dependent Kondo scattering developing into lattice coherence, with extrapolated Sommerfeld coefficient of approximately 2 ~Jmol$_{\\mathrm{Yb}}^{-1}$K$^{-2}$. Transverse magnetoresistance (MR) follows single-ion Kondo scaling, whereas longitudinal transport contains an additional negative response proportional to B$^2$ and remains unsaturated up to 32 T, consistent with a chiral anomaly. These findings support a picture of Kondo and Weyl-like conduction arising from distinct electronic states without external Fermi-level tuning, suggesting a possible route to combining correlated and topological functionality in a bulk material.",
+      "initial_submission_date": "2026-11-02T19:01:26Z",
+      "latest_update_date": "2026-11-02T19:01:26Z",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.03822v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03822v1",
+      "versions_seen": [
+        "2611.03822v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-04T11:48:48.228172+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228172+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2611.03616",
       "current_version": 1,
@@ -42,7 +527,49 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-03T11:34:03.441844+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.441844+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228182+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.03760",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.03760v1",
+      "title": "Restricted triangular ice beyond the solvable manifolds: chiral ice and the critical region of dominant chiral vertices",
+      "authors": [
+        "Josep Batle"
+      ],
+      "abstract": "We study two restrictions of Baxter's symmetric twenty-vertex model on the triangular lattice, in which the three classes of vertices allowed by the ice rule carry the weights $a$, $b$ and $c$: chiral ice, in which only the twelve chiral vertices are allowed, and the model that excludes only the two alternating vertices. We show that neither model belongs to any of the known exactly solvable families of the twenty-vertex model, and we characterise chiral ice as the ice model in which every vertex has exactly one through line, a property that imposes a parity constraint along every closed lattice line. We compute the residual entropies of both models with transfer matrices on cylinders of up to twelve vertices in circumference, extrapolated with the finite-size correction predicted by conformal invariance, which we adapt to the triangular geometry and verify at two exactly solved points. The number of upward arrows crossing the cylinder is conserved, and the cost of changing it shows that both models are critical, with the long-distance behaviour of a free massless field. Chiral ice is the extreme point of a region of the phase diagram in which ordering had been suggested; along two paths through that region we find the same critical behaviour at every point, with no feature at the proposed boundary of the region. Along Baxter's exactly solved curve we obtain the corresponding exponents in closed form.",
+      "initial_submission_date": "2026-11-02T13:38:37Z",
+      "latest_update_date": "2026-11-02T13:38:37Z",
+      "categories": [
+        "cond-mat.stat-mech"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.03760v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03760v1",
+      "versions_seen": [
+        "2611.03760v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Computational / theoretical",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [
+          "We compute"
+        ],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-04T11:48:48.228185+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228185+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -98,7 +625,7 @@
         ]
       },
       "first_seen_at": "2026-11-03T11:34:03.441875+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.441875+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228191+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -155,7 +682,7 @@
         ]
       },
       "first_seen_at": "2026-11-03T11:34:03.441880+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.441880+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228197+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -211,7 +738,7 @@
         ]
       },
       "first_seen_at": "2026-11-03T11:34:03.441884+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.441884+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228203+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -257,7 +784,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-03T11:34:03.441887+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.441887+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228208+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -299,7 +826,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-03T11:34:03.441891+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.441891+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228213+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -342,7 +869,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-03T11:34:03.441894+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.441894+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228218+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -384,7 +911,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-02T11:57:48.575101+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.441909+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228223+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -432,7 +959,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-02T11:57:48.575129+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.441918+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228228+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -479,7 +1006,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-02T11:57:48.575133+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.441925+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228233+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -524,7 +1051,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-02T11:57:48.575137+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.441932+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228239+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -574,7 +1101,7 @@
         ]
       },
       "first_seen_at": "2026-11-02T11:57:48.575139+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.441937+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228243+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -619,7 +1146,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-02T11:57:48.575142+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.441943+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228248+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -680,7 +1207,7 @@
         ]
       },
       "first_seen_at": "2026-10-30T10:41:37.104826+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.441948+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228252+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -723,7 +1250,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-30T10:41:37.104855+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.441955+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228257+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -790,7 +1317,7 @@
         ]
       },
       "first_seen_at": "2026-10-30T10:41:37.104860+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.441961+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228263+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -840,53 +1367,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-30T10:41:37.104864+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.441966+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
-    },
-    {
-      "base_arxiv_id": "2610.38704",
-      "current_version": 1,
-      "versioned_arxiv_id": "2610.38704v1",
-      "title": "Gravitational anomaly spectroscopy of a Kitaev spin liquid",
-      "authors": [
-        "Kumar Ghosh"
-      ],
-      "abstract": "The chiral central charge $c$ measures the gravitational anomaly of a two-dimensional topological phase. It fixes the heat current carried along the edge. So far, it has been accessed through thermal transport, where phonons complicate the signal, or through wave-function probes that need a pure ground state. Here we show that $c$ is a spectroscopic quantity of the edge. A weak modulation of the edge couplings that travel along the edge is absorbed according to the Virasoro algebra. Normalized by the response to a static change of the same couplings, the absorbed weights obey $D_n=2n\\langle L_0\\rangle+\\frac{c}{12}(n^3-n)$, so that $\\mathcal{C}\\equiv2D_2-4D_1=c$ in any state of the ideal edge theory, thermal or not. The central charge thus appears in transition weights, although it cancels from excitation gaps. The ratio of line weights with and without a vison in the bulk, $Λ=4h_σ/c$, needs no calibration and fixes the conformal spin $h_σ$ of the non-Abelian Ising anyon. For the Kitaev honeycomb spin liquid we find $\\mathcal{C}=0.49999$ and $h_σ=0.06250$ on 7168 spins. Calibrating with the shift of the measured line itself gives $c$ within about $1\\%$ on 96 spins and within $1\\%$ under $20\\%$ random coupling errors. Interacting edge Majoranas in a fixed flux sector, treated with DMRG, keep $\\mathcal{C}$ within $1.5\\%$ while the edge velocity changes by $\\pm13\\%$. An exact simulation of a quantum-processor protocol, including the native Floquet circuit, returns $c$ within $3.5\\%$ on 96 to 600 spins.",
-      "initial_submission_date": "2026-10-28T19:04:51Z",
-      "latest_update_date": "2026-10-28T19:04:51Z",
-      "categories": [
-        "cond-mat.str-el",
-        "cond-mat.mes-hall",
-        "quant-ph"
-      ],
-      "abstract_url": "https://arxiv.org/abs/2610.38704v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.38704v1",
-      "versions_seen": [
-        "2610.38704v1"
-      ],
-      "preliminary_include": false,
-      "preliminary_research_type": "Unclassified",
-      "preliminary_paper_nature": "Original research",
-      "detected_materials_or_systems": [],
-      "detected_experimental_methods": [],
-      "detected_computational_methods": [],
-      "detected_physical_properties": [],
-      "matched_keywords": [
-        "phonon"
-      ],
-      "classification_evidence": {
-        "primary_terms": [],
-        "related_terms": [],
-        "author_experimental_actions": [],
-        "author_computational_actions": [],
-        "false_positive_terms": [],
-        "lattice_anchors": [
-          "phonon"
-        ]
-      },
-      "first_seen_at": "2026-10-30T10:41:37.104868+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.441971+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228268+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -931,7 +1412,7 @@
         ]
       },
       "first_seen_at": "2026-10-30T10:41:37.104871+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.441978+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228273+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -978,7 +1459,7 @@
         ]
       },
       "first_seen_at": "2026-10-30T10:41:37.104877+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.441983+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228278+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1026,7 +1507,7 @@
         ]
       },
       "first_seen_at": "2026-10-30T10:41:37.104880+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.441988+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228283+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1068,7 +1549,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386877+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.441994+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228288+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1111,7 +1592,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386905+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.441999+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228295+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1159,7 +1640,7 @@
         ]
       },
       "first_seen_at": "2026-10-28T10:16:42.386910+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.442004+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228300+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1212,7 +1693,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386914+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.442010+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228305+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1256,7 +1737,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386918+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.442016+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228310+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1300,7 +1781,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386921+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.442021+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228315+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1346,7 +1827,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386924+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.442027+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228319+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1387,7 +1868,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386927+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.442031+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228324+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1430,7 +1911,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386930+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.442040+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228329+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1484,63 +1965,7 @@
         ]
       },
       "first_seen_at": "2026-10-27T09:32:31.843371+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.442045+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
-    },
-    {
-      "base_arxiv_id": "2610.34736",
-      "current_version": 1,
-      "versioned_arxiv_id": "2610.34736v1",
-      "title": "Optimised growth of epitaxial D019 Mn3Ge(0001) thin films via single target sputtering",
-      "authors": [
-        "Servet Ozdemir",
-        "Ping-Luen Ho",
-        "Callum Brennan-Rich",
-        "Matthew Rogers",
-        "Philippa Shepley",
-        "Ahmet Yagmur",
-        "Ismet Gelen",
-        "Sehwan Song",
-        "Zabeada Aslam",
-        "Mannan Ali",
-        "Shelly Conroy",
-        "Sandrine Heutz",
-        "Gavin Burnell",
-        "B J Hickey"
-      ],
-      "abstract": "Materials with chemical identity Mn3X, where X is Sn, Ga, or Ge, are Heusler alloys with intriguing properties that are fundamentally and technologically interesting. They have topological properties with a non-trivial band structure that identify them as Weyl semimetals in the bulk. Their magnetic properties, which give rise to the topological band structure through spin-orbit coupling, are determined by their Kagome lattice structure, making them chiral non-collinear antiferromagnets. Among these materials, Mn3Ge is particularly interesting because it has a larger Berry curvature, leading to a large anomalous Hall conductivity and motivating potential spintronic applications. The desirable properties are only obtained when Mn3Ge has the D019 crystal structure, so producing an easily reproducible growth recipe is the main objective of this paper. Here we show that ultra-high-quality thin films of Mn3Ge with D019 symmetry can be grown from a Mn5Ge target on an Al2O3(0001) substrate with a Ru(0001) seed layer. The expected non-collinear antiferromagnetic order was confirmed by the finding of weak zero-field magnetisation (0.0086 +/- 0.0002) mu_B/Mn that does not saturate at high magnetic fields and has a Neel temperature of (291 +/- 2) K.",
-      "initial_submission_date": "2026-10-26T02:38:09Z",
-      "latest_update_date": "2026-10-26T02:38:09Z",
-      "categories": [
-        "cond-mat.mtrl-sci",
-        "cond-mat.mes-hall"
-      ],
-      "abstract_url": "https://arxiv.org/abs/2610.34736v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.34736v1",
-      "versions_seen": [
-        "2610.34736v1"
-      ],
-      "preliminary_include": false,
-      "preliminary_research_type": "Unclassified",
-      "preliminary_paper_nature": "Original research",
-      "detected_materials_or_systems": [
-        "Weyl semimetal"
-      ],
-      "detected_experimental_methods": [],
-      "detected_computational_methods": [],
-      "detected_physical_properties": [],
-      "matched_keywords": [],
-      "classification_evidence": {
-        "primary_terms": [],
-        "related_terms": [],
-        "author_experimental_actions": [],
-        "author_computational_actions": [],
-        "false_positive_terms": [],
-        "lattice_anchors": []
-      },
-      "first_seen_at": "2026-10-27T09:32:31.843406+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.442053+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228334+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1596,7 +2021,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-27T09:32:31.843410+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.442058+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228339+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1647,7 +2072,7 @@
         ]
       },
       "first_seen_at": "2026-10-27T09:32:31.843412+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.442063+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228344+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1717,7 +2142,7 @@
         ]
       },
       "first_seen_at": "2026-10-26T09:36:25.759119+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.442069+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228350+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1780,7 +2205,7 @@
         ]
       },
       "first_seen_at": "2026-10-26T09:36:25.759149+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.442075+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228355+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1823,7 +2248,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-23T09:01:48.770242+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.442080+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228360+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1870,7 +2295,7 @@
         ]
       },
       "first_seen_at": "2026-10-22T09:06:41.138854+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.442085+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228365+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1923,7 +2348,7 @@
         ]
       },
       "first_seen_at": "2026-10-26T09:36:25.759174+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.442092+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228369+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1974,7 +2399,7 @@
         ]
       },
       "first_seen_at": "2026-10-23T09:01:48.770291+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.442097+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228374+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2017,7 +2442,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-23T09:01:48.770295+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.442103+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228379+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2059,7 +2484,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-23T09:01:48.770298+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.442107+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228383+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2104,7 +2529,7 @@
         ]
       },
       "first_seen_at": "2026-10-23T09:01:48.770301+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.442112+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228388+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2146,7 +2571,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138818+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.442118+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228393+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2190,7 +2615,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138849+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.442123+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228397+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2243,7 +2668,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-22T09:06:41.138857+00:00",
-      "last_seen_at": "2026-11-03T11:34:03.442128+00:00",
+      "last_seen_at": "2026-11-04T11:48:48.228402+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
