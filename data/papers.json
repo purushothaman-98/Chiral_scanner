@@ -1,8 +1,283 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-11-04T11:48:48.230961+00:00",
+  "updated_at": "2026-11-05T11:47:55.496835+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2611.06880",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.06880v1",
+      "title": "Simulating a chiral gauge theory",
+      "authors": [
+        "Laurens Lootens",
+        "Hersh Singh"
+      ],
+      "abstract": "Chiral gauge theories underlie the Standard Model, yet none has been simulated nonperturbatively. Lattice constructions that evade the Nielsen-Ninomiya obstruction entail complex fermion measures or infinite-dimensional local Hilbert spaces. Here we provide a gauge-invariant Hamiltonian lattice regularization of 1+1-dimensional abelian chiral gauge theories built from clock-and-shift qudits with $\\mathbb{Z}_N$ gauge fields, in which the global chiral symmetry and its 't Hooft anomaly survive exactly mod $N$. Anomaly cancellation on the lattice lets the Gauss laws be imposed and solved exactly, reducing the theory to an unconstrained qudit chain. Using infinite matrix product states, we simulate the canonical 1+1-dimensional chiral gauge theory, the 34-50 model, and find excellent agreement with analytic predictions, showing that a finite-dimensional local Hilbert space at $N=6$ reproduces the expected infrared physics of the continuum 34-50 model. This provides an efficient and practical solution to the problem of simulating general abelian chiral gauge theories in 1+1 dimensions, both on classical and quantum computers.",
+      "initial_submission_date": "2026-11-04T18:36:32Z",
+      "latest_update_date": "2026-11-04T18:36:32Z",
+      "categories": [
+        "hep-lat",
+        "cond-mat.str-el",
+        "hep-th"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.06880v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.06880v1",
+      "versions_seen": [
+        "2611.06880v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Computational / theoretical",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [
+          "we simulate"
+        ],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-05T11:47:55.494086+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494086+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.06240",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.06240v1",
+      "title": "Hyperbolic Nanocavities for Single-Molecule Vibrational Strong Coupling",
+      "authors": [
+        "Stavros Athanasiou",
+        "Olivier J. F. Martin",
+        "Francisco J. García-Vidal",
+        "Johannes Feist"
+      ],
+      "abstract": "Hyperbolic phonon polaritons (HPhPs) in low-loss anisotropic materials such as hexagonal boron nitride (hBN) provide extreme sub-diffractional field confinement in the mid-infrared, making them attractive for enhancing the interaction of light with molecular vibrations. Collective vibrational strong coupling between molecular ensembles and HPhPs has already been demonstrated in extended slabs. Reaching this regime with a single molecule, however, remains a major challenge, and would provide a platform for investigating how vacuum electromagnetic fields influence molecular dynamics and chemical reactivity. Here, we show theoretically that single-molecule vibrational strong coupling can be reached in hBN nanocavities that laterally confine HPhPs within a finite volume. Combining full-wave electromagnetic simulations with the few-mode quantization approach, we find that these nanocavities support a rich set of asymmetric resonances that strongly enhance the local spectral density, with frequencies that follow from simple HPhP ray trajectories and can be tuned through the cavity aspect ratio. We identify resonances with quality factors of about $600$ and effective mode volumes of $|V_{\\mathrm{eff}}| \\sim 10^{-7}λ^{3}$, sufficient for single-molecule strong coupling with vibrational transitions with dipole moments on the order of $1\\,\\mathrm{D}$. These results establish hyperbolic nanocavities as a promising platform for single-molecule vibrational strong coupling and open new routes toward the local control of vibrational dynamics and molecular energy flow.",
+      "initial_submission_date": "2026-11-04T09:47:12Z",
+      "latest_update_date": "2026-11-04T09:47:12Z",
+      "categories": [
+        "physics.optics",
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.06240v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.06240v1",
+      "versions_seen": [
+        "2611.06240v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-11-05T11:47:55.494119+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494119+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.05944",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.05944v1",
+      "title": "Optical angular momentum and pseudospin-orbit coupling in photonic graphene",
+      "authors": [
+        "Omri Bahat-Treidel",
+        "Daniel Leykam",
+        "Anton S. Desyatnikov"
+      ],
+      "abstract": "We investigate the dynamics of structured laser beams carrying angular momentum (AM) as they undergo conical diffraction in photonic graphene. Using a combination of numerical simulations and analytical calculations, we demonstrate a surprising result: the beam's orbital AM tracks the dynamics of the lattice pseudospin rather than the AM of its slowly varying envelope. This finding provides evidence that pseudospin behaves as a genuine form of angular momentum. Furthermore, we explore beam propagation in staggered honeycomb lattices governed by the massive Dirac equation, revealing that the orbital AM is highly sensitive to both the band gap size and the envelope's initial AM. We explain our numerical results by drawing an analogy with the orbital magnetization of electrons.",
+      "initial_submission_date": "2026-11-04T04:35:11Z",
+      "latest_update_date": "2026-11-04T04:35:11Z",
+      "categories": [
+        "physics.optics"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.05944v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05944v1",
+      "versions_seen": [
+        "2611.05944v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-05T11:47:55.494124+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494124+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.05699",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.05699v1",
+      "title": "Ni ordering in the van der Waals gap of Ni-intercalated 2H-NbS$_2$: from disorder through $2\\times2$ and $\\sqrt{3}\\times\\sqrt{3}$ order to stripe order",
+      "authors": [
+        "Naveen Singh Dhami",
+        "Ricardo Guillermo Torres Ramirez",
+        "Gaurav Pransu",
+        "Ivo Batistić",
+        "Pierre Fertey",
+        "Erik Elkaim",
+        "El-Eulmi Bendeif",
+        "Bruno Gudac",
+        "Nikolina Penić",
+        "Naveen Kumar Chogondahalli Muniraju",
+        "Neven Barišić",
+        "Petar Popčević",
+        "Victor Balédent"
+      ],
+      "abstract": "We report a synchrotron x-ray diffraction study of Ni-intercalated 2H-NbS$_2$ over the range $0.18 \\le x \\le 0.57$, with Ni contents measured by energy-dispersive x-ray spectroscopy. Powder diffraction on the whole series shows that the NbS$_2$ host is preserved, while the Ni ions in the van der Waals gap evolve from a disordered arrangement to $2\\times2$ order at $x=1/4$ and $\\sqrt{3}\\times\\sqrt{3}$ order at $x=1/3$, through a range where both motifs coexist, to an orthorhombic stripe-type order at $x=0.57$. The in-plane lattice parameter increases with Ni content, whereas the interlayer spacing remains nearly constant except for a pronounced minimum at $x=1/4$, which density-functional calculations reproduce for the ordered structure. Single-crystal diffraction on the two commensurate phases shows that the $x=1/4$ structure, with Ni on a single site and a trimerized Nb lattice, is free of stacking faults, whereas the chiral $x=1/3$ structure contains Ni on the nominally empty site, inversion twins and stacking faults of the Ni layers. The comparison between powders and crystals shows that grinding mainly degrades the stacking of the Ni layers. These results establish the structural phase diagram of Ni$_x$NbS$_2$ and the intercalant disorder to be taken into account in the interpretation of its magnetic properties.",
+      "initial_submission_date": "2026-11-03T22:27:59Z",
+      "latest_update_date": "2026-11-03T22:27:59Z",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.05699v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05699v1",
+      "versions_seen": [
+        "2611.05699v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-05T11:47:55.494127+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494127+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.05663",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.05663v1",
+      "title": "Chiral edge modes from lattice Chern-Simons theory",
+      "authors": [
+        "Gordon W. Semenoff"
+      ],
+      "abstract": "It is shown that a level $k$ Abelian lattice Chern-Simons theory with continuum time and a spatial square lattice, which is a topological field theory on the latticized plane and torus, when quantized on a spatial cylinder reduces to chiral edge excitations, exactly localized on the two boundaries and carrying two commuting lattice versions of the level-$k$ $U(1)$ Kac-Moody algebra of opposite chirality. The algebras are represented on a Fock space in the noncompact theory and by a finite Weyl algebra in the compact one. We also observe that the theory has a natural framing of Wilson loops which exhibits the correct framing anomaly.",
+      "initial_submission_date": "2026-11-03T21:48:29Z",
+      "latest_update_date": "2026-11-03T21:48:29Z",
+      "categories": [
+        "hep-th",
+        "cond-mat.str-el",
+        "math-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.05663v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05663v1",
+      "versions_seen": [
+        "2611.05663v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-05T11:47:55.494130+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494130+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.05471",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.05471v1",
+      "title": "Noise-Induced Topology in Chiral Quantum Walks",
+      "authors": [
+        "Alexandre Chaduteau",
+        "Derek K. K. Lee",
+        "Frank Schindler",
+        "Abhinav Prem"
+      ],
+      "abstract": "Noise typically destroys quantum coherence and washes out transport phenomena that rely on interference. Chiral quantum walks are a case in point: a particle hopping on a lattice threaded by a magnetic flux can spread asymmetrically due to interference between paths, an asymmetry that noise is expected to erase. Remarkably, we find that the most ubiquitous noise -- random fluctuations of on-site energies (dephasing) -- instead renders this asymmetry topologically robust. The density profile develops a skewness that grows in time while its center stays fixed, and in a finite chain the late-time relaxation modes pile up at one edge: a skin effect lacking the drift of conventional non-Hermitian skin effects. With multiple sites per unit cell, the dephasing strength alone can cause a topological phase transition, reversing the asymmetry. On a flux ladder with noisy rung hopping, the noise causes a drift of rung coherences, a quantum ratchet with no classical counterpart. Underlying these effects, the noise-averaged dynamics is an interacting (generically non-integrable) Lindbladian that remains analytically tractable. The modes governing late-time relaxation are bound states of the noise-induced interaction and form a band with a point gap, absent both without noise and under postselection, whose winding number fixes the direction of the asymmetry. These effects are within reach of several experimental platforms, including synthetic lattices, superconducting qubits, and optical lattices.",
+      "initial_submission_date": "2026-11-03T19:00:01Z",
+      "latest_update_date": "2026-11-03T19:00:01Z",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall",
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.05471v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05471v1",
+      "versions_seen": [
+        "2611.05471v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-05T11:47:55.494132+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494132+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2611.05329",
       "current_version": 1,
@@ -43,7 +318,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-04T11:48:48.228087+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228087+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494146+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -90,7 +365,7 @@
         ]
       },
       "first_seen_at": "2026-11-04T11:48:48.228117+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228117+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494152+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -135,7 +410,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-04T11:48:48.228122+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228122+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494157+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -176,7 +451,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-04T11:48:48.228129+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228129+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494161+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -217,7 +492,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-04T11:48:48.228133+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228133+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494165+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -264,7 +539,7 @@
         ]
       },
       "first_seen_at": "2026-10-30T10:41:37.104868+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228150+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494169+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -326,7 +601,7 @@
         ]
       },
       "first_seen_at": "2026-11-04T11:48:48.228154+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228154+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494173+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -367,7 +642,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-04T11:48:48.228157+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228157+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494176+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -424,7 +699,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-27T09:32:31.843406+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228169+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494180+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -484,7 +759,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-04T11:48:48.228172+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228172+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494184+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -527,7 +802,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-03T11:34:03.441844+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228182+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494187+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -569,7 +844,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-04T11:48:48.228185+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228185+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494190+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -625,7 +900,7 @@
         ]
       },
       "first_seen_at": "2026-11-03T11:34:03.441875+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228191+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494194+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -682,7 +957,7 @@
         ]
       },
       "first_seen_at": "2026-11-03T11:34:03.441880+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228197+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494197+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -738,7 +1013,7 @@
         ]
       },
       "first_seen_at": "2026-11-03T11:34:03.441884+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228203+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494200+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -784,7 +1059,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-03T11:34:03.441887+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228208+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494203+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -826,7 +1101,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-03T11:34:03.441891+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228213+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494209+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -869,7 +1144,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-03T11:34:03.441894+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228218+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494212+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -911,7 +1186,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-02T11:57:48.575101+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228223+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494215+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -933,6 +1208,7 @@
       "latest_update_date": "2026-10-30T17:44:53Z",
       "categories": [
         "cond-mat.str-el",
+        "hep-ph",
         "quant-ph"
       ],
       "abstract_url": "https://arxiv.org/abs/2610.42103v1",
@@ -959,7 +1235,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-02T11:57:48.575129+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228228+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494218+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1006,7 +1282,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-02T11:57:48.575133+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228233+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494222+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1051,7 +1327,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-02T11:57:48.575137+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228239+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494225+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1101,7 +1377,7 @@
         ]
       },
       "first_seen_at": "2026-11-02T11:57:48.575139+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228243+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494228+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1146,7 +1422,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-02T11:57:48.575142+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228248+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494231+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1207,7 +1483,7 @@
         ]
       },
       "first_seen_at": "2026-10-30T10:41:37.104826+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228252+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494234+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1250,7 +1526,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-30T10:41:37.104855+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228257+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494238+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1317,7 +1593,7 @@
         ]
       },
       "first_seen_at": "2026-10-30T10:41:37.104860+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228263+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494241+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1367,7 +1643,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-30T10:41:37.104864+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228268+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494244+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1412,7 +1688,7 @@
         ]
       },
       "first_seen_at": "2026-10-30T10:41:37.104871+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228273+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494247+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1459,7 +1735,7 @@
         ]
       },
       "first_seen_at": "2026-10-30T10:41:37.104877+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228278+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494250+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1507,7 +1783,7 @@
         ]
       },
       "first_seen_at": "2026-10-30T10:41:37.104880+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228283+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494253+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1549,7 +1825,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386877+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228288+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494256+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1592,7 +1868,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386905+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228295+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494259+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1640,7 +1916,7 @@
         ]
       },
       "first_seen_at": "2026-10-28T10:16:42.386910+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228300+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494264+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1693,7 +1969,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386914+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228305+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494267+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1737,7 +2013,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386918+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228310+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494270+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1781,7 +2057,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386921+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228315+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494273+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1827,7 +2103,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386924+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228319+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494276+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1868,7 +2144,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386927+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228324+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494278+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1911,7 +2187,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-28T10:16:42.386930+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228329+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494281+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1965,7 +2241,7 @@
         ]
       },
       "first_seen_at": "2026-10-27T09:32:31.843371+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228334+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494284+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2021,7 +2297,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-27T09:32:31.843410+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228339+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494287+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2072,7 +2348,7 @@
         ]
       },
       "first_seen_at": "2026-10-27T09:32:31.843412+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228344+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494290+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2142,7 +2418,7 @@
         ]
       },
       "first_seen_at": "2026-10-26T09:36:25.759119+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228350+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494293+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2205,7 +2481,7 @@
         ]
       },
       "first_seen_at": "2026-10-26T09:36:25.759149+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228355+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494297+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2248,7 +2524,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-10-23T09:01:48.770242+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228360+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494300+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2348,7 +2624,7 @@
         ]
       },
       "first_seen_at": "2026-10-26T09:36:25.759174+00:00",
-      "last_seen_at": "2026-11-04T11:48:48.228369+00:00",
+      "last_seen_at": "2026-11-05T11:47:55.494304+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
