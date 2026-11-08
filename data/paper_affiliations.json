@@ -334,11 +334,11 @@
       "name": "Nanjing University",
       "short_name": "Nanjing University",
       "city": "Nanjing",
-      "region": null,
+      "region": "Jiangsu",
       "country_code": "CN",
       "country": "China",
-      "latitude": 32.061668395996094,
-      "longitude": 118.77777862548828,
+      "latitude": 32.06167,
+      "longitude": 118.77778,
       "institution_type": "education",
       "openalex_id": "https://openalex.org/I881766915",
       "ror_id": "https://ror.org/01rxvg760",
@@ -950,7 +950,7 @@
       "short_name": "National Laboratory of Solid State Microstructures",
       "city": "Nanjing",
       "region": null,
-      "country_code": null,
+      "country_code": "CN",
       "country": "China",
       "latitude": 32.061668395996094,
       "longitude": 118.77777862548828,
@@ -3298,6 +3298,51 @@
       "openalex_id": "https://openalex.org/I4210143371",
       "ror_id": "https://ror.org/04fme8709",
       "evidence_url": "https://openalex.org/I4210143371",
+      "source": "OpenAlex"
+    },
+    "openalex:I4210101608": {
+      "name": "Istituto Officina dei Materiali",
+      "short_name": "Istituto Officina dei Materiali",
+      "city": "Trieste",
+      "region": null,
+      "country_code": "IT",
+      "country": "Italy",
+      "latitude": 45.65843963623047,
+      "longitude": 13.827568054199219,
+      "institution_type": "facility",
+      "openalex_id": "https://openalex.org/I4210101608",
+      "ror_id": "https://ror.org/00yfw2296",
+      "evidence_url": "https://openalex.org/I4210101608",
+      "source": "OpenAlex"
+    },
+    "openalex:I69740276": {
+      "name": "Tokyo Metropolitan University",
+      "short_name": "Tokyo Metropolitan University",
+      "city": "Tokyo",
+      "region": "Tokyo",
+      "country_code": "JP",
+      "country": "Japan",
+      "latitude": 35.6895,
+      "longitude": 139.69171,
+      "institution_type": "education",
+      "openalex_id": "https://openalex.org/I69740276",
+      "ror_id": "https://ror.org/00ws30h19",
+      "evidence_url": "https://openalex.org/I69740276",
+      "source": "OpenAlex"
+    },
+    "openalex:I162827531": {
+      "name": "Indian Institute of Technology Bombay",
+      "short_name": "Indian Institute of Technology Bombay",
+      "city": "Mumbai",
+      "region": "Maharashtra",
+      "country_code": "IN",
+      "country": "India",
+      "latitude": 19.07283,
+      "longitude": 72.88261,
+      "institution_type": "education",
+      "openalex_id": "https://openalex.org/I162827531",
+      "ror_id": "https://ror.org/02qyf5152",
+      "evidence_url": "https://openalex.org/I162827531",
       "source": "OpenAlex"
     }
   },
@@ -12078,50 +12123,283 @@
         "OpenAlex",
         "arXiv"
       ]
+    },
+    "2607.04802": {
+      "paper_id": "2607.04802",
+      "paper_version": 1,
+      "title": "Chiral Phonons Coupled to Spin-Split Bands in Altermagnetic CrSb and MnTe",
+      "doi": null,
+      "metadata_work_id": "https://openalex.org/W7167585534",
+      "openalex_work_id": "https://openalex.org/W7167585534",
+      "metadata_provider": "OpenAlex",
+      "match_method": "openalex_arxiv_url",
+      "match_score": 0.99,
+      "author_scope": "first_and_corresponding",
+      "authors": [
+        {
+          "paper_author_name": "Consiglio, Armando",
+          "name": "Consiglio, Armando",
+          "openalex_author_id": "https://openalex.org/A5033692883",
+          "orcid": "https://orcid.org/0000-0001-5537-485X",
+          "author_position": "first",
+          "is_corresponding": false,
+          "author_roles": [
+            "first"
+          ],
+          "institution_ids": [
+            "openalex:I4210101608"
+          ],
+          "affiliation_labels": [
+            "CNR -Istituto Officina dei Materiali (IOM) , S.S. 14 , km 163.5 , Trieste 34149 , Italy"
+          ]
+        }
+      ],
+      "enriched_at": "2026-11-08T12:04:01.328479+00:00",
+      "sources": [
+        "OpenAlex",
+        "arXiv"
+      ]
+    },
+    "2606.13874": {
+      "paper_id": "2606.13874",
+      "paper_version": 1,
+      "title": "Dynamical multiferroicity in framework materials",
+      "doi": null,
+      "metadata_work_id": "https://openalex.org/W7164862590",
+      "openalex_work_id": "https://openalex.org/W7164862590",
+      "metadata_provider": "OpenAlex",
+      "match_method": "openalex_arxiv_url",
+      "match_score": 0.99,
+      "author_scope": "first_and_corresponding",
+      "authors": [
+        {
+          "paper_author_name": "Matas, Marek",
+          "name": "Matas, Marek",
+          "openalex_author_id": "https://openalex.org/A5055528064",
+          "orcid": "https://orcid.org/0000-0002-8250-8187",
+          "author_position": "first",
+          "is_corresponding": false,
+          "author_roles": [
+            "first"
+          ],
+          "institution_ids": [
+            "openalex:I44504214"
+          ],
+          "affiliation_labels": [
+            "Faculty of Nuclear Sciences and Physical Engineering , Czech Technical University in Prague , Czech Republic"
+          ]
+        }
+      ],
+      "enriched_at": "2026-11-08T12:04:14.002202+00:00",
+      "sources": [
+        "OpenAlex",
+        "arXiv"
+      ]
+    },
+    "2605.27812": {
+      "paper_id": "2605.27812",
+      "paper_version": 3,
+      "title": "Order parameter scaling of chirality in structural phase transitions",
+      "doi": null,
+      "metadata_work_id": "https://openalex.org/W7162658368",
+      "openalex_work_id": "https://openalex.org/W7162658368",
+      "metadata_provider": "OpenAlex",
+      "match_method": "openalex_arxiv_url",
+      "match_score": 0.99,
+      "author_scope": "first_and_corresponding",
+      "authors": [
+        {
+          "paper_author_name": "Matsubara, Keita",
+          "name": "Matsubara, Keita",
+          "openalex_author_id": "https://openalex.org/A5137254933",
+          "orcid": null,
+          "author_position": "first",
+          "is_corresponding": false,
+          "author_roles": [
+            "first"
+          ],
+          "institution_ids": [
+            "openalex:I69740276"
+          ],
+          "affiliation_labels": [
+            "Department of Physics , Tokyo Metropolitan University , 1-1 , Minami-osawa , Hachioji , Tokyo 192-0397 , Japan"
+          ]
+        }
+      ],
+      "enriched_at": "2026-11-08T12:04:19.851724+00:00",
+      "sources": [
+        "OpenAlex",
+        "arXiv"
+      ]
+    },
+    "2605.20631": {
+      "paper_id": "2605.20631",
+      "paper_version": 1,
+      "title": "Probing Lattice Dynamics in Real-Space and Real-Time",
+      "doi": null,
+      "metadata_work_id": "https://openalex.org/W7161945206",
+      "openalex_work_id": "https://openalex.org/W7161945206",
+      "metadata_provider": "OpenAlex",
+      "match_method": "openalex_arxiv_url",
+      "match_score": 0.99,
+      "author_scope": "first_and_corresponding",
+      "authors": [
+        {
+          "paper_author_name": "Rana, Navdeep",
+          "name": "Rana, Navdeep",
+          "openalex_author_id": "https://openalex.org/A5133554549",
+          "orcid": null,
+          "author_position": "first",
+          "is_corresponding": true,
+          "author_roles": [
+            "first",
+            "corresponding"
+          ],
+          "institution_ids": [
+            "openalex:I162827531"
+          ],
+          "affiliation_labels": [
+            "Department of Physics IITB"
+          ]
+        }
+      ],
+      "enriched_at": "2026-11-08T12:04:25.560591+00:00",
+      "sources": [
+        "OpenAlex",
+        "arXiv"
+      ]
+    },
+    "2601.17474": {
+      "paper_id": "2601.17474",
+      "paper_version": 1,
+      "title": "Anisotropic Gyromagnetic Ratio and Orthogonal Einstein-de Haas Effect",
+      "doi": null,
+      "metadata_work_id": "https://openalex.org/W7125769951",
+      "openalex_work_id": "https://openalex.org/W7125769951",
+      "metadata_provider": "OpenAlex",
+      "match_method": "openalex_arxiv_url",
+      "match_score": 0.99,
+      "author_scope": "first_and_corresponding",
+      "authors": [
+        {
+          "paper_author_name": "Xue, Rui",
+          "name": "Xue, Rui",
+          "openalex_author_id": "https://openalex.org/A5123919788",
+          "orcid": "https://orcid.org/0009-0009-7024-4717",
+          "author_position": "first",
+          "is_corresponding": false,
+          "author_roles": [
+            "first"
+          ],
+          "institution_ids": [
+            "openalex:I126520041"
+          ],
+          "affiliation_labels": [
+            "Hefei National Laboratory , University of Science and Technology of China , Hefei 230088 , China",
+            "International Centre for Quantum Design of Functional Materials ,"
+          ]
+        }
+      ],
+      "enriched_at": "2026-11-08T12:04:45.162542+00:00",
+      "sources": [
+        "OpenAlex",
+        "arXiv"
+      ]
+    },
+    "2601.12763": {
+      "paper_id": "2601.12763",
+      "paper_version": 1,
+      "title": "Inverse Chiral Phonon Zeeman Effect in Noncentrosymmetric Crystals",
+      "doi": null,
+      "metadata_work_id": "https://openalex.org/W7125108345",
+      "openalex_work_id": "https://openalex.org/W7125108345",
+      "metadata_provider": "OpenAlex",
+      "match_method": "openalex_arxiv_url",
+      "match_score": 0.99,
+      "author_scope": "first_and_corresponding",
+      "authors": [
+        {
+          "paper_author_name": "Kishine, Jun-ichiro",
+          "name": "Kishine, Jun-ichiro",
+          "openalex_author_id": "https://openalex.org/A5027442062",
+          "orcid": "https://orcid.org/0000-0001-6162-7067",
+          "author_position": "first",
+          "is_corresponding": false,
+          "author_roles": [
+            "first"
+          ],
+          "institution_ids": [
+            "openalex:I203189479",
+            "openalex:I4210143791"
+          ],
+          "affiliation_labels": [
+            "Division of Natural and Environmental Sciences , The Open University of Japan , Chiba 261-8586 , Japan",
+            "Quantum Research Center for Chirality , Institute for Molecular Science , Okazaki , Aichi 444-8585 , Japan"
+          ]
+        }
+      ],
+      "enriched_at": "2026-11-08T12:04:50.884074+00:00",
+      "sources": [
+        "OpenAlex",
+        "arXiv"
+      ]
+    },
+    "2512.07518": {
+      "paper_id": "2512.07518",
+      "paper_version": 3,
+      "title": "Alteraxial Phonons in Collinear Magnets",
+      "doi": null,
+      "metadata_work_id": "https://openalex.org/W7110824038",
+      "openalex_work_id": "https://openalex.org/W7110824038",
+      "metadata_provider": "OpenAlex",
+      "match_method": "openalex_arxiv_url",
+      "match_score": 0.99,
+      "author_scope": "first_and_corresponding",
+      "authors": [
+        {
+          "paper_author_name": "Wang, Fuyi",
+          "name": "Wang, Fuyi",
+          "openalex_author_id": null,
+          "orcid": null,
+          "author_position": "first",
+          "is_corresponding": false,
+          "author_roles": [
+            "first"
+          ],
+          "institution_ids": [
+            "openalex:I4391768004",
+            "openalex:I881766915"
+          ],
+          "affiliation_labels": [
+            "National Laboratory of Solid State Microstructures , School of Physics , Nanjing University , Nanjing 210093 , China"
+          ]
+        }
+      ],
+      "enriched_at": "2026-11-08T12:04:55.895233+00:00",
+      "sources": [
+        "OpenAlex",
+        "arXiv"
+      ]
     }
   },
   "unresolved": {
-    "2607.04802": {
-      "paper_id": "2607.04802",
-      "title": "Chiral Phonons Coupled to Spin-Split Bands in Altermagnetic CrSb and MnTe",
-      "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-10-25T09:58:57.278951+00:00"
-    },
     "2607.01841": {
       "paper_id": "2607.01841",
       "title": "Quantifying angular momentum of coherently driven circular phonons",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-10-25T09:59:02.661868+00:00"
-    },
-    "2606.13874": {
-      "paper_id": "2606.13874",
-      "title": "Dynamical multiferroicity in framework materials",
-      "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-10-25T09:59:06.690423+00:00"
-    },
-    "2605.27812": {
-      "paper_id": "2605.27812",
-      "title": "Order parameter scaling of chirality in structural phase transitions",
-      "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-10-25T09:59:11.017190+00:00"
-    },
-    "2605.20631": {
-      "paper_id": "2605.20631",
-      "title": "Probing Lattice Dynamics in Real-Space and Real-Time",
-      "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-10-25T09:59:15.129217+00:00"
+      "last_attempted_at": "2026-11-08T12:04:01.328704+00:00"
     },
     "2605.08490": {
       "paper_id": "2605.08490",
       "title": "Antiferro-Chiral Phonons in $\\mathcal{P}\\mathcal{T}$-Symmetric Antiferromagnets",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-10-25T09:59:19.321854+00:00"
+      "last_attempted_at": "2026-11-08T12:04:25.560934+00:00"
     },
     "2605.01678": {
       "paper_id": "2605.01678",
       "title": "Generalized continuum theory of phonon angular momentum in crystals",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-10-25T09:59:23.343044+00:00"
+      "last_attempted_at": "2026-11-08T12:04:31.982678+00:00"
     },
     "2604.10231": {
       "paper_id": "2604.10231",
@@ -12146,24 +12424,6 @@
       "title": "Spin angular momentum transfer in the Einstein-de Haas effect",
       "reason": "no_conservative_match_or_resolved_affiliation",
       "last_attempted_at": "2026-10-28T11:29:09.933148+00:00"
-    },
-    "2601.17474": {
-      "paper_id": "2601.17474",
-      "title": "Anisotropic Gyromagnetic Ratio and Orthogonal Einstein-de Haas Effect",
-      "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-10-25T09:59:28.182984+00:00"
-    },
-    "2601.12763": {
-      "paper_id": "2601.12763",
-      "title": "Inverse Chiral Phonon Zeeman Effect in Noncentrosymmetric Crystals",
-      "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-10-25T09:59:32.369152+00:00"
-    },
-    "2512.07518": {
-      "paper_id": "2512.07518",
-      "title": "Alteraxial Phonons in Collinear Magnets",
-      "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-10-25T09:59:36.555445+00:00"
     },
     "2512.00388": {
       "paper_id": "2512.00388",
@@ -12348,9 +12608,9 @@
   },
   "schema_version": 2,
   "description": "Paper-specific first-author and explicitly identified corresponding-author affiliations from arXiv/OpenAlex/Crossref/ROR; uncertain identities remain unresolved.",
-  "generated_at": "2026-11-07T21:00:36.204715+00:00",
+  "generated_at": "2026-11-08T12:04:55.895543+00:00",
   "eligible_field_papers": 246,
-  "resolved_papers": 202,
-  "unresolved_papers": 44,
+  "resolved_papers": 209,
+  "unresolved_papers": 37,
   "author_scope": "first_and_corresponding"
 }
