@@ -3494,6 +3494,21 @@
       "ror_id": "https://ror.org/021a7pw18",
       "evidence_url": "https://openalex.org/I76513827",
       "source": "OpenAlex"
+    },
+    "openalex:I241749": {
+      "name": "University of Cambridge",
+      "short_name": "University of Cambridge",
+      "city": "Cambridge",
+      "region": "England",
+      "country_code": "GB",
+      "country": "United Kingdom",
+      "latitude": 52.2,
+      "longitude": 0.11667,
+      "institution_type": "education",
+      "openalex_id": "https://openalex.org/I241749",
+      "ror_id": "https://ror.org/013meh722",
+      "evidence_url": "https://openalex.org/I241749",
+      "source": "OpenAlex"
     }
   },
   "papers": {
@@ -13209,6 +13224,77 @@
         "OpenAlex",
         "arXiv"
       ]
+    },
+    "2306.17227": {
+      "paper_id": "2306.17227",
+      "paper_version": 1,
+      "title": "Negative refraction of Weyl phonons at twin quartz interfaces",
+      "doi": null,
+      "metadata_work_id": "https://openalex.org/W4391527359",
+      "openalex_work_id": "https://openalex.org/W4391527359",
+      "metadata_provider": "OpenAlex",
+      "match_method": "openalex_arxiv_url",
+      "match_score": 0.99,
+      "author_scope": "first_and_corresponding",
+      "authors": [
+        {
+          "paper_author_name": "Gunnar F. Lange",
+          "name": "Gunnar F. Lange",
+          "openalex_author_id": "https://openalex.org/A5024508410",
+          "orcid": "https://orcid.org/0000-0003-1353-0628",
+          "author_position": "first",
+          "is_corresponding": false,
+          "author_roles": [
+            "first"
+          ],
+          "institution_ids": [
+            "openalex:I241749"
+          ],
+          "affiliation_labels": [
+            "Theory of Condensed Matter Group, Cavendish Laboratory, University of Cambridge, J. J. Thomson Avenue, Cambridge CB3 0HE, United Kingdom"
+          ]
+        },
+        {
+          "paper_author_name": "Bartomeu Monserrat",
+          "name": "Bartomeu Monserrat",
+          "openalex_author_id": "https://openalex.org/A5067635985",
+          "orcid": "https://orcid.org/0000-0002-4233-4071",
+          "author_position": "middle",
+          "is_corresponding": true,
+          "author_roles": [
+            "corresponding"
+          ],
+          "institution_ids": [
+            "openalex:I241749"
+          ],
+          "affiliation_labels": [
+            "Department of Materials Science and Metallurgy, University of Cambridge, 27 Charles Babbage Road, Cambridge CB3 0FS, United Kingdom",
+            "Theory of Condensed Matter Group, Cavendish Laboratory, University of Cambridge, J. J. Thomson Avenue, Cambridge CB3 0HE, United Kingdom"
+          ]
+        },
+        {
+          "paper_author_name": "Bo Peng",
+          "name": "Bo Peng",
+          "openalex_author_id": "https://openalex.org/A5036958520",
+          "orcid": "https://orcid.org/0000-0001-6406-663X",
+          "author_position": "last",
+          "is_corresponding": true,
+          "author_roles": [
+            "corresponding"
+          ],
+          "institution_ids": [
+            "openalex:I241749"
+          ],
+          "affiliation_labels": [
+            "Theory of Condensed Matter Group, Cavendish Laboratory, University of Cambridge, J. J. Thomson Avenue, Cambridge CB3 0HE, United Kingdom"
+          ]
+        }
+      ],
+      "enriched_at": "2026-11-11T23:35:26.890028+00:00",
+      "sources": [
+        "OpenAlex",
+        "arXiv"
+      ]
     }
   },
   "unresolved": {
@@ -13318,19 +13404,13 @@
       "paper_id": "2310.04008",
       "title": "Evanescently coupled topological ring-waveguide systems for chip-scale ultrahigh frequency phononic circuits",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-10-28T21:48:10.056496+00:00"
-    },
-    "2306.17227": {
-      "paper_id": "2306.17227",
-      "title": "Negative refraction of Weyl phonons at twin quartz interfaces",
-      "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-10-28T21:48:15.033807+00:00"
+      "last_attempted_at": "2026-11-11T23:35:17.816822+00:00"
     },
     "2303.13328": {
       "paper_id": "2303.13328",
       "title": "$T_{3}$Pb$_{2}Ch_{2}$ ($T$=Pd,Pt and $Ch$=S,Se) with transition metal kagome net: Dynamical properties, phonon nodal line, phonon surface states, and chiral phonons",
       "reason": "no_conservative_match_or_resolved_affiliation",
-      "last_attempted_at": "2026-10-28T21:48:18.761985+00:00"
+      "last_attempted_at": "2026-11-11T23:35:26.890399+00:00"
     },
     "2607.26986": {
       "paper_id": "2607.26986",
@@ -13341,9 +13421,9 @@
   },
   "schema_version": 2,
   "description": "Paper-specific first-author and explicitly identified corresponding-author affiliations from arXiv/OpenAlex/Crossref/ROR; uncertain identities remain unresolved.",
-  "generated_at": "2026-11-11T12:55:29.858249+00:00",
+  "generated_at": "2026-11-11T23:35:31.247784+00:00",
   "eligible_field_papers": 246,
-  "resolved_papers": 225,
-  "unresolved_papers": 21,
+  "resolved_papers": 226,
+  "unresolved_papers": 20,
   "author_scope": "first_and_corresponding"
 }
