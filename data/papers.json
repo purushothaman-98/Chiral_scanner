@@ -1,8 +1,325 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-11-12T12:07:06.467184+00:00",
+  "updated_at": "2026-11-13T11:48:49.053918+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2611.17335",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.17335v1",
+      "title": "Long-lived light-driven bimagnons at finite momentum in NiO",
+      "authors": [
+        "Xian P. Yang",
+        "Christopher T. Parzyck",
+        "Martin Cross",
+        "Ella Blake",
+        "Octave Duros",
+        "Yinchuan Lv",
+        "Hari Paudyal",
+        "Che-Min Lin",
+        "Sharon S. Philip",
+        "Lingjia Shen",
+        "Daniel Jost",
+        "Giacomo Coslovich",
+        "Joshua J. Turner",
+        "Choongwon Seo",
+        "Elyse Schriber",
+        "Michael E. Flatté",
+        "Xiaoqin Li",
+        "Yuri Suzuki",
+        "Durga Paudyal",
+        "Harold Y. Hwang",
+        "Georgi L. Dakovski",
+        "Matthias C. Hoffmann",
+        "Wei-Sheng Lee",
+        "Alexander H. Reid"
+      ],
+      "abstract": "Light can manipulate magnetic order and its excitations on ultrafast timescales, including through resonantly driven phonons. In antiferromagnets, light can also create correlated magnon pairs, or bimagnons. Unlike single magnons, whose damping has been measured and modeled in detail, little is known about the lifetime, interactions and decay of such correlated pairs: prior two-magnon measurements show broad linewidths or coherences that dephase within 200 fs. Here we pump the phonon-assisted two-magnon absorption of NiO with mid-infrared pulses, far below its bandgap, and probe the resulting magnetic dynamics at finite momentum with time-resolved resonant inelastic X-ray scattering (RIXS). Upon photoexcitation, the one-magnon linewidth and energy are essentially unchanged, indicating that the long-range magnetic order is preserved without the photocarrier-induced demagnetization characteristic of above-bandgap excitation. A pump-induced two-magnon signal appears on the energy-gain (anti-Stokes) side of the spectrum. Its spectral weight peaks 4 ps after the pump, well beyond our 0.5 ps time resolution, indicative of a delayed growth likely due to momentum redistribution of the light-induced magnon pairs across the Brillouin zone. This two-magnon signal decays with a time constant of $28\\pm11$ ps, exceeding the previously reported two-magnon dephasing time by more than two orders of magnitude. These results establish long-lived light-driven bimagnon correlations beyond the one-magnon state, akin to the higher-order correlations measured in ultracold gases.",
+      "initial_submission_date": "2026-11-12T18:59:55Z",
+      "latest_update_date": "2026-11-12T18:59:55Z",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mtrl-sci",
+        "physics.optics",
+        "quant-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.17335v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17335v1",
+      "versions_seen": [
+        "2611.17335v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-11-13T11:48:49.050882+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.050882+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.17222",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.17222v1",
+      "title": "Circular phonons generate negligible magnetization in insulators",
+      "authors": [
+        "C-C. Wu",
+        "M. Buzzi",
+        "A. Iudica",
+        "R. Romero",
+        "G. De Vecchi",
+        "R. Merlin",
+        "A. Cavalleri"
+      ],
+      "abstract": "The optical excitation of circular phonons has opened up non-equilibrium phenomena with no equilibrium counterparts, ranging from the generation of synthetic magnetic fields to the control of topological order or the manipulation of ferroaxial states. In this area, significant controversy has arisen on whether sizeable \"true\" magnetizations accompany circular phonons. Several confounding factors cloud the interpretation of the experiments, which are based on probing polarization rotation in the driven material. These range from the interpretation of the Faraday effect in non-equilibrium conditions to spurious nonlinear optical contributions in pump probe experiments. Here we resolve these ambiguities by measuring both polarization rotation inside the driven material and the stray magnetic field generated outside it with a proximate Faraday detector. For a 5 MV/cm mid-infrared drive, we observe a colossal polarization rotation inside a driven SiC crystal, similar to what was reported in previous work. Depending on the assumptions made, this could correspond to magnetizations as high as $μ_0 M = 0.3 T$ or as low as 4 $μT$. However, when measuring the magnetic stray field outside the driven sample we unambiguously determine that the magnetization in SiC is negligibly small ($μ_0 M \\lt 0.001 T$).",
+      "initial_submission_date": "2026-11-12T18:19:11Z",
+      "latest_update_date": "2026-11-12T18:19:11Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.17222v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17222v1",
+      "versions_seen": [
+        "2611.17222v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Experimental",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [
+        "mid-infrared",
+        "Faraday rotation"
+      ],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [
+          "we observe"
+        ],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-11-13T11:48:49.050912+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.050912+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.15761",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.15761v1",
+      "title": "Chiral-phonon-induced anomalous Hall effect in bilayer MoSe$_2$",
+      "authors": [
+        "Omer Yaniv",
+        "Swati Chaudhary",
+        "Carolina Paiva",
+        "Dominik M. Juraschek"
+      ],
+      "abstract": "We demonstrate that optically driven chiral phonons induce an anomalous Hall response in a nonmagnetic, centrosymmetric material. Using first-principles calculations to parameterize an effective $\\mathbf{k}\\cdot\\mathbf{p}$ Hamiltonian for bilayer MoSe$_2$, we show that circular excitation of an $E_u$ phonon generates a circular dynamical Rashba spin-orbit coupling. The resulting Floquet bands carry same-sign Berry curvature at the two valleys, producing a Hall response whose sign follows the phonon handedness. We obtain a range of $σ_{xy}\\sim10^{-2}-0.21$ $\\frac{e^2}{2π\\hbar}$ for experimentally accessible light pulses. Our results show that chiral phonons provide a route to controlling electronic Berry curvature and transport on ultrafast time scales.",
+      "initial_submission_date": "2026-11-11T17:37:40Z",
+      "latest_update_date": "2026-11-11T17:37:40Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.15761v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.15761v1",
+      "versions_seen": [
+        "2611.15761v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [
+        "chiral phonon",
+        "chiral phonons",
+        "phonon handedness"
+      ],
+      "matched_keywords": [
+        "chiral phonon",
+        "chiral phonons",
+        "phonon handedness",
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [
+          "chiral phonon",
+          "chiral phonons",
+          "phonon handedness"
+        ],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-11-13T11:48:49.050917+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.050917+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.14271",
+      "current_version": 2,
+      "versioned_arxiv_id": "2611.14271v2",
+      "title": "Edge quantum weight of finite Chern flakes and its topological floor",
+      "authors": [
+        "Rohit Narula"
+      ],
+      "abstract": "The zero-point energy of an $LC$ circuit measures the polarization fluctuation of an insulator coupled to it. In a crystal this fluctuation is the bulk quantum weight $K_{\\rm bulk}$, which the Chern number $C$ bounds below by $|C|$. We show that a finite Chern flake adds an edge term that survives as the flake grows. The low-frequency transitions of its chiral edge have squared dipole matrix elements that sum to an edge weight $K_{\\rm edge}\\ge |C|$ per unit area, a floor that follows from the positive absorption of both circular polarizations and the known cancellation of circular dichroism between edge and bulk. At weak coupling, which a growing flake eventually leaves, a circuit slower than the edge modes reads $K_{\\rm bulk}+K_{\\rm edge}$, averaged over two field directions, and a faster one approaches $K_{\\rm bulk}$, so the reading depends on whether the flake is made large or the circuit slow first. In exact free-fermion calculations on lattice flakes with $|C|=1$ and 2 the summed circular dichroism of the edge sector extrapolates to $|C|$ in magnitude, so that the floor is $|C|$. Above the floor, each edge channel adds a number fixed by the boundary shape and its edge velocities, which square and rectangular lattice flakes with one channel follow to within 0.003, while the circular dichroism counts only the net chirality. The avoided crossing of the circuit with the edge mode gives the edge weight in units of the Hall conductance quantum, up to a geometric factor of the capacitor.",
+      "initial_submission_date": "2026-11-10T16:14:38Z",
+      "latest_update_date": "2026-11-11T15:47:50Z",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.14271v2",
+      "pdf_url": "https://arxiv.org/pdf/2611.14271v2",
+      "versions_seen": [
+        "2611.14271v1",
+        "2611.14271v2"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-11T11:39:08.467066+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.050933+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.07434",
+      "current_version": 2,
+      "versioned_arxiv_id": "2611.07434v2",
+      "title": "Prediction of antimagnon-polarons with intrinsic momentum-space level attraction",
+      "authors": [
+        "Chongzhou Wang",
+        "Zhengda Jing",
+        "Weichao Yu"
+      ],
+      "abstract": "Propagating hybrid quasiparticles formed by magnons and phonons (magnon-polarons) or photons (magnon-polaritons) typically exhibit level repulsion in momentum space. Level attraction, by contrast, requires an anti-phase channel and has so far been restricted to zero-dimensional systems mediated by dissipative baths. Here we predict the antimagnon-polaron in a continuous magnetoelastic medium, which inherently exhibits momentum-space level attraction. The spin-orbit-torque (SOT)-stabilized antimagnon precesses with opposite handedness, directly reversing the magnetoelastic coupling without requiring an external environment. This intrinsic attraction yields a distinctive 0/π phase-locked simultaneous growth. Micromagnetic simulations confirm this picture, revealing that the SOT-controlled balance between gain and damping drives a collective instability. This ultimately enables a continuously tunable, dc-pumped, single-frequency phonon laser, establishing a novel route for coherent acoustic emission.",
+      "initial_submission_date": "2026-11-05T04:32:49Z",
+      "latest_update_date": "2026-11-11T13:31:50Z",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.07434v2",
+      "pdf_url": "https://arxiv.org/pdf/2611.07434v2",
+      "versions_seen": [
+        "2611.07434v1",
+        "2611.07434v2"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Computational / theoretical",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [
+          "we predict"
+        ],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-11-06T11:44:47.564521+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.050942+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.15354",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.15354v1",
+      "title": "Interplay of Pair Density Wave and Uniform Superconductivity on the Kagome Lattice",
+      "authors": [
+        "Ruiqing Fu",
+        "Xianxin Wu",
+        "Ziqiang Wang",
+        "Sen Zhou"
+      ],
+      "abstract": "We study the interplay between pair density wave (PDW) and uniform superconductivity on the kagome lattice within a single-orbital $t$-$W$-$J$ model near the $p$-type van Hove filling, where $W$ and $J$ denote effective pairing attractions on lattice sites and nearest-neighbor bonds, respectively. While onsite attraction favors zero-momentum pairing through the conventional BCS instability, nearest-neighbor attraction naturally promotes finite-momentum pairing due to the kagome geometry and sublattice interference. The model therefore provides a framework for exploring the competition and coexistence between uniform superconductivity and PDW order. Self-consistent mean-field calculations in a $2\\times2$ supercell reveal that the uniform component reorganizes both the amplitudes and phase structure of the three $F_1$ PDW components, giving rise to superconducting states absent in the pure bond-pairing limit. A Ginzburg--Landau analysis identifies symmetry-allowed couplings that can favor this reorganization. The resulting states exhibit distinct charge modulations and quasiparticle spectra, while the chiral PDW undergoes topological transitions as the onsite attraction increases. Our results demonstrate how uniform superconductivity reshapes the order-parameter landscape and quasiparticle topology of a PDW state.",
+      "initial_submission_date": "2026-11-11T11:36:19Z",
+      "latest_update_date": "2026-11-11T11:36:19Z",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.15354v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.15354v1",
+      "versions_seen": [
+        "2611.15354v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-13T11:48:49.050945+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.050945+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2611.14446",
       "current_version": 1,
@@ -46,48 +363,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-11T11:39:08.467035+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463589+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
-    },
-    {
-      "base_arxiv_id": "2611.14271",
-      "current_version": 1,
-      "versioned_arxiv_id": "2611.14271v1",
-      "title": "Edge quantum weight of finite Chern flakes and its topological floor",
-      "authors": [
-        "Rohit Narula"
-      ],
-      "abstract": "The zero-point energy of a circuit measures the polarization fluctuation of an insulator coupled to it. In a crystal this is the bulk quantum weight $K_\\mathrm{bulk}$, which the Chern number $C$ bounds below by $|C|$. We show that a finite Chern flake adds an edge term that survives as the flake grows. The low-frequency transitions of its chiral edge carry a dipole weight, the sum of their squared dipole matrix elements, $K_\\mathrm{edge}\\geq|C|$ per unit area, a floor that follows from the positive absorption of both circular polarizations by every transition and the known cancellation of circular dichroism between edge and bulk. A weakly coupled circuit slower than the edge modes therefore reads $K_\\mathrm{bulk}+K_\\mathrm{edge}$, averaged over two field directions, while a faster one below the bulk gap approaches $K_\\mathrm{bulk}$, so which quantum weight is measured depends on whether the flake is made large or the circuit slow first. Exact free-fermion calculations on lattice flakes bear out the floor and this dependence on the circuit frequency. The result holds at weak coupling, which a growing flake at fixed coupling eventually leaves. Above the floor, the edge weight of one channel is a number fixed by the shape of the boundary and the edge velocities, which square and rectangular lattice flakes follow to within 0.003. Each further edge channel adds its own such number, while the circular dichroism of the edge counts only the net chirality.",
-      "initial_submission_date": "2026-11-10T16:14:38Z",
-      "latest_update_date": "2026-11-10T16:14:38Z",
-      "categories": [
-        "cond-mat.mes-hall",
-        "quant-ph"
-      ],
-      "abstract_url": "https://arxiv.org/abs/2611.14271v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.14271v1",
-      "versions_seen": [
-        "2611.14271v1"
-      ],
-      "preliminary_include": false,
-      "preliminary_research_type": "Unclassified",
-      "preliminary_paper_nature": "Original research",
-      "detected_materials_or_systems": [],
-      "detected_experimental_methods": [],
-      "detected_computational_methods": [],
-      "detected_physical_properties": [],
-      "matched_keywords": [],
-      "classification_evidence": {
-        "primary_terms": [],
-        "related_terms": [],
-        "author_experimental_actions": [],
-        "author_computational_actions": [],
-        "false_positive_terms": [],
-        "lattice_anchors": []
-      },
-      "first_seen_at": "2026-11-11T11:39:08.467066+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463625+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.050954+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -132,7 +408,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-09T12:27:34.015266+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463634+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.050960+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -174,7 +450,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-11T11:39:08.467092+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463641+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.050965+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -226,7 +502,7 @@
         ]
       },
       "first_seen_at": "2026-11-11T11:39:08.467097+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463648+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.050969+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -273,7 +549,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-11T11:39:08.467100+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463655+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.050974+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -319,7 +595,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-10T12:01:58.217793+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463660+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.050979+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -364,7 +640,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-10T12:01:58.217819+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463665+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.050983+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -408,7 +684,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-10T12:01:58.217824+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463674+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.050987+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -457,7 +733,7 @@
         ]
       },
       "first_seen_at": "2026-11-10T12:01:58.217827+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463680+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.050991+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -507,7 +783,7 @@
         ]
       },
       "first_seen_at": "2026-11-11T11:39:08.467127+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463685+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.050995+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -560,7 +836,7 @@
         ]
       },
       "first_seen_at": "2026-11-10T12:01:58.217843+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463693+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051002+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -621,7 +897,7 @@
         ]
       },
       "first_seen_at": "2026-11-09T12:27:34.015294+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463699+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051007+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -667,7 +943,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-04T11:48:48.228122+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463705+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051011+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -720,7 +996,7 @@
         ]
       },
       "first_seen_at": "2026-11-06T11:44:47.564459+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463710+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051015+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -814,55 +1090,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-06T11:44:47.564517+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463721+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
-    },
-    {
-      "base_arxiv_id": "2611.07434",
-      "current_version": 1,
-      "versioned_arxiv_id": "2611.07434v1",
-      "title": "Prediction of antimagnon-polarons with intrinsic momentum-space level attraction",
-      "authors": [
-        "Chongzhou Wang",
-        "Zhengda Jing",
-        "Weichao Yu"
-      ],
-      "abstract": "Propagating hybrid quasiparticles formed by magnons and phonons (magnon-polarons) or photons (magnon-polaritons) typically exhibit level repulsion in momentum space. Level attraction, by contrast, requires an anti-phase channel and has so far been restricted to zero-dimensional systems mediated by dissipative baths. Here we predict the antimagnon-polaron in a continuous magnetoelastic medium, which inherently exhibits momentum-space level attraction. The spin-orbit-torque (SOT)-stabilized antimagnon precesses with opposite handedness, directly reversing the magnetoelastic coupling without requiring an external environment. This intrinsic attraction yields a distinctive 0/π phase-locked simultaneous growth. Micromagnetic simulations confirm this picture, revealing that the SOT-controlled balance between gain and damping drives a collective instability. This ultimately enables a continuously tunable, dc-pumped, single-frequency phonon laser, establishing a novel route for coherent acoustic emission.",
-      "initial_submission_date": "2026-11-05T04:32:49Z",
-      "latest_update_date": "2026-11-05T04:32:49Z",
-      "categories": [
-        "cond-mat.mes-hall"
-      ],
-      "abstract_url": "https://arxiv.org/abs/2611.07434v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.07434v1",
-      "versions_seen": [
-        "2611.07434v1"
-      ],
-      "preliminary_include": false,
-      "preliminary_research_type": "Computational / theoretical",
-      "preliminary_paper_nature": "Original research",
-      "detected_materials_or_systems": [],
-      "detected_experimental_methods": [],
-      "detected_computational_methods": [],
-      "detected_physical_properties": [],
-      "matched_keywords": [
-        "phonon"
-      ],
-      "classification_evidence": {
-        "primary_terms": [],
-        "related_terms": [],
-        "author_experimental_actions": [],
-        "author_computational_actions": [
-          "we predict"
-        ],
-        "false_positive_terms": [],
-        "lattice_anchors": [
-          "phonon"
-        ]
-      },
-      "first_seen_at": "2026-11-06T11:44:47.564521+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463726+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051019+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -907,7 +1135,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-06T11:44:47.564525+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463732+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051023+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -952,7 +1180,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-05T11:47:55.494086+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463737+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051027+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1001,7 +1229,7 @@
         ]
       },
       "first_seen_at": "2026-11-05T11:47:55.494119+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463743+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051031+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1043,7 +1271,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-05T11:47:55.494124+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463748+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051035+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1095,7 +1323,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-05T11:47:55.494127+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463754+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051039+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1137,7 +1365,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-05T11:47:55.494130+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463759+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051042+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1182,7 +1410,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-05T11:47:55.494132+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463764+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051046+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1226,7 +1454,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-04T11:48:48.228087+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463769+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051049+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1273,7 +1501,7 @@
         ]
       },
       "first_seen_at": "2026-11-04T11:48:48.228117+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463775+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051080+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1314,7 +1542,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-04T11:48:48.228129+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463781+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051085+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1355,7 +1583,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-04T11:48:48.228133+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463786+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051089+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1464,7 +1692,7 @@
         ]
       },
       "first_seen_at": "2026-11-04T11:48:48.228154+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463792+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051093+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1505,7 +1733,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-04T11:48:48.228157+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463797+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051097+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1622,7 +1850,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-04T11:48:48.228172+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463803+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051111+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1665,7 +1893,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-03T11:34:03.441844+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463808+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051116+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1707,7 +1935,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-04T11:48:48.228185+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463814+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051119+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1763,7 +1991,7 @@
         ]
       },
       "first_seen_at": "2026-11-03T11:34:03.441875+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463818+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051124+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1820,7 +2048,7 @@
         ]
       },
       "first_seen_at": "2026-11-03T11:34:03.441880+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463824+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051128+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1876,7 +2104,7 @@
         ]
       },
       "first_seen_at": "2026-11-03T11:34:03.441884+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463829+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051131+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1922,7 +2150,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-03T11:34:03.441887+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463835+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051136+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1964,7 +2192,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-03T11:34:03.441891+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463840+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051139+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2007,7 +2235,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-03T11:34:03.441894+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463848+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051143+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2049,7 +2277,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-02T11:57:48.575101+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463854+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051147+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2073,6 +2301,7 @@
         "cond-mat.str-el",
         "hep-lat",
         "hep-ph",
+        "hep-th",
         "quant-ph"
       ],
       "abstract_url": "https://arxiv.org/abs/2610.42103v1",
@@ -2099,7 +2328,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-02T11:57:48.575129+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463871+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051151+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -2146,7 +2375,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-02T11:57:48.575133+00:00",
-      "last_seen_at": "2026-11-12T12:07:06.463878+00:00",
+      "last_seen_at": "2026-11-13T11:48:49.051155+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
