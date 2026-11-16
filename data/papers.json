@@ -1,8 +1,102 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-11-15T11:43:33.552297+00:00",
+  "updated_at": "2026-11-16T12:22:54.126822+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2611.18402",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.18402v1",
+      "title": "Uniaxial strain induces $d$-wave phonon chirality in ferroelectric BaTiO$_3$",
+      "authors": [
+        "Juan M. Florez",
+        "Eric Suárez Morell"
+      ],
+      "abstract": "Circularly dichroic resonant inelastic x-ray scattering has revealed electrically switchable $g$-wave phonon chirality in freestanding BaTiO$_3$ membranes. Here, we show from first principles that uniaxial strain changes the angular class of this texture. Lowering $C_{4v}$ to $C_{2v}$ adds a $d$-wave helicity that is bilinear in the orthorhombic strain $η$ and the polarization, with nodal lines along the stress axis. For the 38~meV branches at $η=1\\%$, we find that (i) along the diagonal, where the helicity vanishes by symmetry without strain, it reaches about 60\\% of the unstrained maximum, and (ii) at the measured wave vectors off the mirror it is reduced by more than half. With PBEsol and PBE+D3 force constants, the $d$-wave component grows linearly in $η$ and equals the $g$-wave one at $η^*\\approx1.3\\text{--}1.4\\%$. Resolved by branch, the response of strain-split $E$ doublets is non-analytic in $η$, as captured by a two-band model. Strain therefore provides a second knob, besides the electric field, that controls the symmetry and the sign of phonon chirality in ferroelectric membranes.",
+      "initial_submission_date": "2026-11-13T16:44:38Z",
+      "latest_update_date": "2026-11-13T16:44:38Z",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.18402v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.18402v1",
+      "versions_seen": [
+        "2611.18402v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "ferroelectric"
+      ],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [
+        "phonon chirality"
+      ],
+      "matched_keywords": [
+        "phonon chirality",
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [
+          "phonon chirality"
+        ],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-11-16T12:22:54.124134+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124134+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.17936",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.17936v1",
+      "title": "Efficient representations by PEPS: critical free-fermion and chiral topological states",
+      "authors": [
+        "Ignacio Cirac",
+        "Rahul Trivedi"
+      ],
+      "abstract": "We construct projected entangled-pair state (PEPS) approximations to various many-body states in 2D lattices with global error at most $ε$ and bond dimension polynomial in the system size and $1/ε$. They include critical free-fermion models in two dimensions, as well as chiral topological states. For the two-dimensional nearest-neighbor tight-binding model at half filling, our construction combines Gaussian wavelet transformations with matrix product state approximations of the one-dimensional chains, as well as selected fermionic swap operations. For arbitrary uniformly gapped, finite-range quadratic Hamiltonians, we give a different construction based on repeated one-particle filtering, which yields Gaussian PEPS in any spatial dimension. Those include, for instance, $p+ip$ models or a Chern-insulator in a square lattice, for which we give an explicit construction. Finally, we prove that Gutzwiller projections of a fixed number of identical Gaussian PEPS approximations to free-fermion states at arbitrary filling do not amplify considerably the approximation error. This provides a polynomial-bond PEPS approximations to the resulting states, including familiar lattice chiral-spin-liquid states.",
+      "initial_submission_date": "2026-11-13T09:17:25Z",
+      "latest_update_date": "2026-11-13T09:17:25Z",
+      "categories": [
+        "quant-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.17936v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17936v1",
+      "versions_seen": [
+        "2611.17936v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-16T12:22:54.124167+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124167+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2611.17335",
       "current_version": 1,
@@ -69,7 +163,7 @@
         ]
       },
       "first_seen_at": "2026-11-13T11:48:49.050882+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550172+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124184+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -124,7 +218,7 @@
         ]
       },
       "first_seen_at": "2026-11-13T11:48:49.050912+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550205+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124192+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -182,7 +276,7 @@
         ]
       },
       "first_seen_at": "2026-11-13T11:48:49.050917+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550212+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124197+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -224,7 +318,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-11T11:39:08.467066+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550218+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124203+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -273,7 +367,7 @@
         ]
       },
       "first_seen_at": "2026-11-06T11:44:47.564521+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550222+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124207+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -316,7 +410,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-13T11:48:49.050945+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550227+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124211+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -363,7 +457,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-11T11:39:08.467035+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550231+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124216+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -408,7 +502,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-09T12:27:34.015266+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550235+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124220+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -450,7 +544,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-11T11:39:08.467092+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550239+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124223+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -502,7 +596,7 @@
         ]
       },
       "first_seen_at": "2026-11-11T11:39:08.467097+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550245+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124226+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -549,7 +643,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-11T11:39:08.467100+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550248+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124230+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -595,7 +689,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-10T12:01:58.217793+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550252+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124235+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -640,7 +734,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-10T12:01:58.217819+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550256+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124239+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -684,7 +778,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-10T12:01:58.217824+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550260+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124242+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -733,7 +827,7 @@
         ]
       },
       "first_seen_at": "2026-11-10T12:01:58.217827+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550264+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124245+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -783,7 +877,7 @@
         ]
       },
       "first_seen_at": "2026-11-11T11:39:08.467127+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550268+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124249+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -836,7 +930,7 @@
         ]
       },
       "first_seen_at": "2026-11-10T12:01:58.217843+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550271+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124252+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -897,7 +991,7 @@
         ]
       },
       "first_seen_at": "2026-11-09T12:27:34.015294+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550275+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124256+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -943,7 +1037,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-04T11:48:48.228122+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550279+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124259+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -996,7 +1090,7 @@
         ]
       },
       "first_seen_at": "2026-11-06T11:44:47.564459+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550283+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124263+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1090,7 +1184,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-06T11:44:47.564517+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550287+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124267+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1135,7 +1229,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-06T11:44:47.564525+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550291+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124270+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1180,7 +1274,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-05T11:47:55.494086+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550294+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124273+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1229,7 +1323,7 @@
         ]
       },
       "first_seen_at": "2026-11-05T11:47:55.494119+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550298+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124276+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1271,7 +1365,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-05T11:47:55.494124+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550302+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124281+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1323,7 +1417,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-05T11:47:55.494127+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550306+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124284+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1365,7 +1459,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-05T11:47:55.494130+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550309+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124287+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1410,7 +1504,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-05T11:47:55.494132+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550315+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124290+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1454,7 +1548,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-04T11:48:48.228087+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550319+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124294+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1501,7 +1595,7 @@
         ]
       },
       "first_seen_at": "2026-11-04T11:48:48.228117+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550323+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124297+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1542,7 +1636,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-04T11:48:48.228129+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550327+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124301+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1583,7 +1677,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-04T11:48:48.228133+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550331+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124310+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1692,7 +1786,7 @@
         ]
       },
       "first_seen_at": "2026-11-04T11:48:48.228154+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550334+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124314+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1733,7 +1827,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-04T11:48:48.228157+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550338+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124317+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1850,7 +1944,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-04T11:48:48.228172+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550342+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124321+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1893,7 +1987,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-03T11:34:03.441844+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550345+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124326+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1935,7 +2029,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-04T11:48:48.228185+00:00",
-      "last_seen_at": "2026-11-15T11:43:33.550349+00:00",
+      "last_seen_at": "2026-11-16T12:22:54.124329+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
