@@ -1,8 +1,532 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-11-23T13:57:56.529420+00:00",
+  "updated_at": "2026-11-25T13:49:02.324737+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2611.33156",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.33156v1",
+      "title": "Antiferromagnetic phase of MnTe2: spin-order-induced renormalization of phonon Raman spectrum",
+      "authors": [
+        "Taras Palasyuk",
+        "Ashutosh S. Wadge",
+        "Eduard E. Zubov",
+        "Igor Antoniazzi",
+        "Gayatri",
+        "Andrzej Wiśniewski",
+        "Wojciech Szuszkiewicz",
+        "Daniel Jastrzebski",
+        "Ryszard Diduszko",
+        "Adam Babiński",
+        "Maciej R. Molas",
+        "Michał Wierzbicki",
+        "Cezariusz Jastrzebski"
+      ],
+      "abstract": "Recently, two modes of spin wave excitations (magnons) were detected in Raman scattering spectra of MnTe2. It is an unconventional magnet that features a pyrite-type crystal structure hosting a non-collinear, non-coplanar antiferromagnetic (AFM) spin order below the Néel temperature. In this brief communication, the focus is primarily on the effect of spin ordering on lattice dynamics (phonons) that has been established through temperature (5 - 300 K), linear polarization angle (0 deg - 360 deg) and external magnetic field (up to 16 T) dependent measurements. It has been found that below the magnetic transition temperature, the frequencies of four out of five Raman-active lattice vibrations (i.e., Eg and three Tg phonon modes) revealed significant departure from the mechanism of the three-phonon anharmonic decay described by Klemens model. Here, we propose a new model considering spin-phonon coupling to explain frequency renormalization of the phonon part of the Raman spectrum upon the para-/antiferro- (PM/AFM) magnetic phase transition change in MnTe2. Through employing Green's function formalism, we show that a simple two-sublattice collinear antiferromagnet approach follows well both spin ordering induced hardening and softening of phonon modes observed in AFM phase of MnTe2 upon cooling. Additionally, the detailed temperature and field dependences of the energy for both magnon modes are presented. In addition to unexpected twofold anisotropy of the higher energy magnon mode (approx. 3.5 meV) unveiled in crossed configuration, our magneto-optical measurements revealed a subtle, yet definite softening trend for the lower energy mode (approx. 2.6 meV). Although the precise reasons for these effects remain unclear, we put forward a symmetry reduction in the local atomic surroundings as a possible mechanism for discussion.",
+      "initial_submission_date": "2026-11-24T18:59:35Z",
+      "latest_update_date": "2026-11-24T18:59:35Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.33156v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.33156v1",
+      "versions_seen": [
+        "2611.33156v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon",
+        "lattice vibration"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon",
+          "lattice vibration"
+        ]
+      },
+      "first_seen_at": "2026-11-25T13:49:02.322308+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322308+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.32743",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.32743v1",
+      "title": "Lattice models of chiral random motion: A short review",
+      "authors": [
+        "E. Kalz",
+        "J. Wojcik",
+        "N. Sherf",
+        "Y. Roichman",
+        "R. Metzler"
+      ],
+      "abstract": "Chirality, a systematic rotational bias, is ubiquitous in many random motion patterns, from bacteria cells, that swim in circles near surfaces and spinning colloids, to charged particles diffusing under the influence of magnetic fields. In two dimensions, chirality renders random transport \\textit{odd}: the diffusion tensor acquires an antisymmetric part that leaves the mean-squared displacement invariant but modifies fluxes and boundary currents. Lattice models for random motion are a natural setting to study chirality, since they are exactly solvable, connect directly to heterogeneous media, cellular automata, and programmable robots, and in discrete time admit fully chiral limits with a localised bulk and edge transport. Lattice walks with a rotational bias have been introduced in different communities several times since 1960, yet without a common language or conceptual connection between them. Here we review these models from the perspective that on the lattice, chirality requires memory. Taking the recently introduced chiral random walk model as a template, we describe the walker with an internal degree of freedom. With a chiral biased updating rule, the full diffusion tensor of this chiral walker turns odd. Within this picture, we can unite persistent and chiral walks, run-and-tumble motion, and cyclic random motions in one framework. We discuss how the memory is followed into the environment; in Lorentz lattice gases, kinetic and rotor walks, and random odd environments; and into the path; in spiral self-avoiding walks.",
+      "initial_submission_date": "2026-11-24T14:55:43Z",
+      "latest_update_date": "2026-11-24T14:55:43Z",
+      "categories": [
+        "cond-mat.stat-mech",
+        "physics.bio-ph",
+        "q-bio.QM"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.32743v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.32743v1",
+      "versions_seen": [
+        "2611.32743v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Review / perspective",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-25T13:49:02.322337+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322337+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.32466",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.32466v1",
+      "title": "Reconfigurable Chiral Phonons and Their Selection in Asymmetrically Stacked Graphene MoirMoiré Superlattices",
+      "authors": [
+        "Yi-Fei Zhang",
+        "Ting-Ting Wang",
+        "Zhong-Jie Wang",
+        "Miao-Ling Lin",
+        "Yue Wang",
+        "Zi-Jian Zhong",
+        "Xue-Lu Liu",
+        "Heng Wu",
+        "Lin-Shang Chen",
+        "Yan-Meng Shi",
+        "Jin-Yang Lou",
+        "Lin-Han Li",
+        "Jia-Liang Xie",
+        "Rui Mei",
+        "Ti-Ying Zhu",
+        "Li-Fa Zhang",
+        "Jiang-Bin Wu",
+        "Ping-Heng Tan"
+      ],
+      "abstract": "Chiral phonons, lattice vibrations carrying angular momentum, offer a new handle for controlling phonon-mediated phenomena in condensed matter, yet their on-demand generation and deterministic control remain challenging. Here we show, using helicity-resolved Raman spectroscopy, that asymmetrically stacked graphene moiré superlattices provide a reconfigurable platform for chiral phonons. We observe a finite degree of circular polarization for both chiral interlayer shear phonons and intralayer optical phonons. A chiral-phonon Raman-tensor model attributes this response to interfacial $C_{2}$-symmetry breaking together with Raman resonance within the van Hove singularity region. Reversing either the twist sense or the stacking order inverts the degree of circular polarization through the spatial transformations linking the corresponding stacking geometries. By tuning the excitation energy and twist angle, we achieve nearly full-range control of the degree of circular polarization of interlayer shear phonons, from $-1$ to $1$, while gate-induced interlayer potential redistribution enables substantial and reversible in situ modulation. These results establish asymmetrically stacked graphene moiré superlattices as a versatile platform for generating and controlling chiral phonons, with implications for optoelectronic and quantum technologies.",
+      "initial_submission_date": "2026-11-24T12:01:09Z",
+      "latest_update_date": "2026-11-24T12:01:09Z",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci",
+        "physics.optics"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.32466v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.32466v1",
+      "versions_seen": [
+        "2611.32466v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Experimental",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [
+        "Raman spectroscopy"
+      ],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [
+        "chiral phonon",
+        "chiral phonons"
+      ],
+      "matched_keywords": [
+        "chiral phonon",
+        "chiral phonons",
+        "phonon",
+        "lattice vibration"
+      ],
+      "classification_evidence": {
+        "primary_terms": [
+          "chiral phonon",
+          "chiral phonons"
+        ],
+        "related_terms": [],
+        "author_experimental_actions": [
+          "We observe"
+        ],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon",
+          "lattice vibration"
+        ]
+      },
+      "first_seen_at": "2026-11-25T13:49:02.322343+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322343+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.32331",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.32331v1",
+      "title": "Angular Momentum Hall Effect of Axial Ferrons in Ferroelectrics",
+      "authors": [
+        "Xiyin Ye",
+        "Tao Yu"
+      ],
+      "abstract": "Phonon thermal and angular-momentum (AM) Hall effects are known in non-ferroelectric insulators, yet whether terahertz soft modes of displacive ferroelectrics, i.e., ``ferrons\", share them remains open. We report axial ferrons that hold polarization-momentum locking in uniaxial ferroelectrics and show that both effects exist: a longitudinal temperature gradient drives a transverse AM flow without any field, whereas an out-of-plane magnetic field switches on the thermal Hall response. Two competitive channels emerge for the AM Hall effect: self-radiated magnetic fields hybridize two branches into circular modes whose momentum-locked Berry curvature deflects opposite magnetic moments to opposite edges, while temperature-gradient-induced mode quantum coherence adds a magnetic-moment dipole that leads to an opposite transverse AM current. An out-of-plane magnetic field breaks the exact polarization-momentum locking and yields a polarization Hall current. Numerical calculations show these effects are significant in both LiNbO$_3$ and van der Waals ferroelectrics. Edge magnetization or polarization accumulation can switch adjacent magnets or ferroelectrics, enabling low-power magnetoelectric functionality by thermal current in the future.",
+      "initial_submission_date": "2026-11-24T10:18:53Z",
+      "latest_update_date": "2026-11-24T10:18:53Z",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.32331v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.32331v1",
+      "versions_seen": [
+        "2611.32331v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "ferroelectric"
+      ],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-11-25T13:49:02.322346+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322346+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.31423",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.31423v1",
+      "title": "Moiré-enabled polariton control in large-angle twisted bilayer graphene",
+      "authors": [
+        "Bogdan Borodin",
+        "Xuanpu Zhang",
+        "Christopher Yang",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Cyprian Lewandowski",
+        "Petr Stepanov"
+      ],
+      "abstract": "Twisted bilayer graphene (TBG) is commonly viewed through two limiting regimes: strongly correlated flat bands near the magic angle and nearly decoupled Dirac cones at large twist angles. Here we explore the intermediate regime. Using hyperbolic plasmon-phonon polaritons (HP$^{3}$) to probe the dynamical electronic response, we investigate bilayer graphene from AB stacking to $5.5^\\circ$ TBG. We identify a narrow density window in which the HP$^{3}$ wavelength becomes strongly gate tunable. The window opens when doping suppresses Landau damping and a coherent graphene plasmon emerges. It closes at a second crossover, which appears only above $4^\\circ$ and shifts systematically with twist angle. Continuum-model and electrodynamic calculations trace this second crossover to hybridization between the central and remote moiré bands, which weakens the density dependence of the Drude response. The resulting polaritonic tunability is concentrated within a twist-angle-selected density window and produces total wavelength changes approaching $90\\%$. Our results demonstrate that remote moiré bands reshape the collective electrodynamics of TBG far from the magic-angle regime and establish large-angle TBG as a platform for gate-reconfigurable mid-infrared polaritons and material cavities.",
+      "initial_submission_date": "2026-11-23T19:11:21Z",
+      "latest_update_date": "2026-11-23T19:11:21Z",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.31423v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31423v1",
+      "versions_seen": [
+        "2611.31423v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-11-25T13:49:02.322350+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322350+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.30767",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.30767v1",
+      "title": "Janus Asymmetry Unlocks Rashba Spintronics and Chiral Phononics in Two-Dimensional Carbo-Chalcogenides",
+      "authors": [
+        "Valentina Barreca",
+        "Giorgio Sangiovanni",
+        "Giovanni Cantele",
+        "Ludovica Zullo"
+      ],
+      "abstract": "Spintronics and chiral phononics offer complementary routes for nanoscale control, yet realizing both functionalities within a common two-dimensional platform remains challenging. Here, using extensive first-principles calculations, we show that Janus asymmetry simultaneously drives both effects in transition-metal carbo-chalcogenides (JTMCCs) along two chemically distinct routes, through either chalcogen or transition-metal substitution. Remarkably, both Janus routes yield giant Rashba responses, with $α_\\mathrm{R}\\approx2$ eV Å in Ta$_2$CSSe and NbTaCS$_2$, exceeding those reported for Mo/W-based Janus transition-metal dichalcogenides. Furthermore, Janus asymmetry lifts the degeneracy of opposite-chirality phonons, producing splittings as large as $\\approx28$ cm$^{-1}$. More strikingly, asymmetry generates chiral carbon vibrations that were achiral in the centrosymmetric parent compounds, with splittings reaching $\\approx8$ cm$^{-1}$. Finally, we show external electric fields tunability over Rashba strength and chiral-phonon splittings, providing a common control knob for electronic spin and lattice angular momentum. Our work offers a unified strategy for realizing spintronic and chiral phononic in two-dimensional materials.",
+      "initial_submission_date": "2026-11-23T14:40:25Z",
+      "latest_update_date": "2026-11-23T14:40:25Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.30767v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.30767v1",
+      "versions_seen": [
+        "2611.30767v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [
+        "chiral phonon",
+        "lattice angular momentum"
+      ],
+      "matched_keywords": [
+        "chiral phonon",
+        "lattice angular momentum",
+        "spintronics",
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [
+          "chiral phonon",
+          "lattice angular momentum"
+        ],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-11-25T13:49:02.322353+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322353+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.30210",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.30210v1",
+      "title": "Quantum Geometry Effects in Lattice Dynamics",
+      "authors": [
+        "Haoshu Li",
+        "Hao Chen",
+        "Qian Niu"
+      ],
+      "abstract": "Quantum geometric effects such as the Berry curvature and the quantum metric are well established in electronic transport, whereas in lattice dynamics the Berry curvature also plays a key role: adiabatically following the lattice, electrons generate a molecular Berry curvature that splits degenerate optical phonons into chiral partners. To determine how the quantum metric affects phonons, we go beyond adiabatic lattice dynamics, identifying Berry curvature and quantum metric contributions to the electronic response of the lattice. Using first-principles calculations in the magnetic topological semimetal EuB$_6$, we find that phonon modes with chiral splitting and those with nonchiral splitting coexist. Unlike the former, which originate from the Berry curvature, the latter arise from the pure quantum metric, while the Berry curvature contribution is forbidden by crystal symmetry.",
+      "initial_submission_date": "2026-11-23T07:47:49Z",
+      "latest_update_date": "2026-11-23T07:47:49Z",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.30210v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.30210v1",
+      "versions_seen": [
+        "2611.30210v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-11-25T13:49:02.322356+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322356+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.30058",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.30058v1",
+      "title": "Solids activated by multi-body nonreciprocity",
+      "authors": [
+        "Brady Wu",
+        "Daniel S. Seara",
+        "Qinghao Mao",
+        "Vincenzo Vitelli",
+        "Heinrich M. Jaeger"
+      ],
+      "abstract": "Field-mediated forces between particles can be both nonreciprocal and irreducibly multi-body, giving rise to emergent activity in systems of individually passive particles. While prior work extensively studied how multi-body nonreciprocity can activate few-body systems, fuel intermittency, and drive liquid-like behavior, the effect on the solid state of large particle ensembles is less explored. Here we use two-dimensional, close-packed rafts of identical, athermal, acoustically levitated microspheres to show how multi-body nonreciprocity injects activity in solids. At the level of both individual particles and collective dynamics, crystalline rafts exhibit persistent circulations with no net handedness. The rafts also exhibit a phonon-like dispersion relation corresponding to a large Poisson ratio, indicating an induced softness to shear. Within the bulk, lattice symmetry masks microscopic nonreciprocity, although it can manifest in renormalized, reciprocal elastic coefficients. At dislocations and raft edges, where this symmetry is broken, multi-body nonreciprocal interactions act as local generators of activity. A coarse-grained microscopic model of multi-body nonreciprocity, calibrated on three-particle simulations, recovers the rafts' experimentally observed dispersion relations and localized activity. Using these findings, we illustrate how to harness defect-induced activity for programmable movement by arranging microscopic dislocations to drive macroscopic propulsion and rotation of a whole raft.",
+      "initial_submission_date": "2026-11-23T05:04:11Z",
+      "latest_update_date": "2026-11-23T05:04:11Z",
+      "categories": [
+        "cond-mat.soft",
+        "cond-mat.mtrl-sci",
+        "cond-mat.stat-mech"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.30058v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.30058v1",
+      "versions_seen": [
+        "2611.30058v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-11-25T13:49:02.322366+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322366+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.28316",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.28316v1",
+      "title": "Comment on phase vortex lattices in neutron interferometry",
+      "authors": [
+        "Wolfgang Treimer",
+        "Terrence Jach",
+        "Martin suda",
+        "Frank Haußer"
+      ],
+      "abstract": "We present a phase-based theoretical description of the four-plate crystal neutron interferometer (LLLL geometry) originally introduced by Heinrich et al. [Z. Phys. B 72, 357 (1988)]. The LLLL interferometer can be interpreted as two coupled LLL interferometric loops that share partial beam paths, leading to characteristic interference phenomena beyond the standard three-plate configuration. Using a coherent beam-splitting model we derive the forward intensity in terms of loop phase sums and recover the cosine-sum structure reported in Refs.[1,2]. Based on these results we analyze the phase dependence of the forward beam in the presence of localized phase objects, such as wedges inserted into individual partial beams. In experiments presented in [2], the LLLL interferometer is used to generate a periodic array of intensity in two dimensions by which the authors claim to demonstrate a phase vortex grating of significant extrinsic orbital angular momentum (OAM). However, the same interference patterns are predicted by simulating a coherent superposition of {beam paths} along different interferometer loops and experiencing phase shifts in each loop due to two wedges that are perpendicular to each other, without assuming any neutron OAM.",
+      "initial_submission_date": "2026-11-20T21:07:07Z",
+      "latest_update_date": "2026-11-20T21:07:07Z",
+      "categories": [
+        "quant-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.28316v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.28316v1",
+      "versions_seen": [
+        "2611.28316v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Computational / theoretical",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [
+          "we derive"
+        ],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-25T13:49:02.322370+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322370+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.28246",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.28246v1",
+      "title": "Observation of collective flatbands in hybrid Mie-grating THz metasurfaces",
+      "authors": [
+        "Jie Ji",
+        "Thanh Xuan Hoang",
+        "Ayan Nussupbekov",
+        "Siyan Zhou",
+        "Kehan Wang",
+        "Yuri Kivshar",
+        "Jaime Gómez Rivas"
+      ],
+      "abstract": "We propose a novel type of functional metasurfaces created by a hybridization of Mie resonators with high-index optical gratings. We demonstrate that such hybrid metasurfaces possess flatbands characterized by zero group velocity and strong energy localization. We experimentally observe the flatbands in free-standing terahertz (THz) metasurfaces, where dielectric interconnections between Mie resonators, forming the grating, mediate multipolar hybridization and provide a geometric control over collective resonances. Our THz near-field measurements with a dipole excitation uncover long-lived coherent oscillations associated with the quasi-flat magnetic-dipolar resonant modes, while a spatial mapping resolves the resonant electromagnetic response across the dielectric interconnections. We vary the grating width continuously to tune the hybrid magnetic-dipolar resonances and substantially enhance the quality factor (Q factor), while preserving the quasi-!atband dispersion. Complementary Bloch-resolved Purcell calculations reveal the substantial Purcell enhancement with increasing Q factor, followed by a trend towards saturation and highlighting the interplay between radiative confinement and local emitter-mode coupling. We believe our findings establish the engineering of dielectric interconnections in periodic lattices as a novel strategy for spectrally tuning high-Q flatbands in these metastructures, tailoring localized electromagnetic interactions in functional optical metasurfaces.",
+      "initial_submission_date": "2026-11-20T19:26:08Z",
+      "latest_update_date": "2026-11-20T19:26:08Z",
+      "categories": [
+        "physics.optics",
+        "cond-mat.mtrl-sci",
+        "physics.app-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.28246v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.28246v1",
+      "versions_seen": [
+        "2611.28246v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-25T13:49:02.322373+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322373+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2611.27747",
       "current_version": 1,
@@ -51,7 +575,7 @@
         ]
       },
       "first_seen_at": "2026-11-23T13:57:56.527495+00:00",
-      "last_seen_at": "2026-11-23T13:57:56.527495+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322387+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -98,7 +622,7 @@
         ]
       },
       "first_seen_at": "2026-11-23T13:57:56.527530+00:00",
-      "last_seen_at": "2026-11-23T13:57:56.527530+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322395+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -142,7 +666,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-23T13:57:56.527534+00:00",
-      "last_seen_at": "2026-11-23T13:57:56.527534+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322401+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -187,7 +711,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-20T12:26:36.518055+00:00",
-      "last_seen_at": "2026-11-23T13:57:56.527549+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322406+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -255,7 +779,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-20T12:26:36.518083+00:00",
-      "last_seen_at": "2026-11-23T13:57:56.527555+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322412+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -313,7 +837,7 @@
         ]
       },
       "first_seen_at": "2026-11-20T12:26:36.518088+00:00",
-      "last_seen_at": "2026-11-23T13:57:56.527560+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322416+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -358,7 +882,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-19T12:25:22.215068+00:00",
-      "last_seen_at": "2026-11-23T13:57:56.527563+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322421+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -405,7 +929,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-19T12:25:22.215094+00:00",
-      "last_seen_at": "2026-11-23T13:57:56.527567+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322426+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -450,7 +974,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-19T12:25:22.215099+00:00",
-      "last_seen_at": "2026-11-23T13:57:56.527571+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322431+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -498,7 +1022,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-19T12:25:22.215102+00:00",
-      "last_seen_at": "2026-11-23T13:57:56.527574+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322435+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -553,7 +1077,7 @@
         ]
       },
       "first_seen_at": "2026-11-17T12:43:25.195703+00:00",
-      "last_seen_at": "2026-11-23T13:57:56.527578+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322440+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -613,7 +1137,7 @@
         ]
       },
       "first_seen_at": "2026-11-18T12:34:54.492383+00:00",
-      "last_seen_at": "2026-11-23T13:57:56.527582+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322446+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -660,7 +1184,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-18T12:34:54.492389+00:00",
-      "last_seen_at": "2026-11-23T13:57:56.527585+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322452+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -702,7 +1226,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-18T12:34:54.492394+00:00",
-      "last_seen_at": "2026-11-23T13:57:56.527588+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322456+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -745,7 +1269,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-17T12:43:25.195665+00:00",
-      "last_seen_at": "2026-11-23T13:57:56.527591+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322461+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -800,7 +1324,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-17T12:43:25.195693+00:00",
-      "last_seen_at": "2026-11-23T13:57:56.527594+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322468+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -846,7 +1370,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-17T12:43:25.195699+00:00",
-      "last_seen_at": "2026-11-23T13:57:56.527597+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322473+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -891,7 +1415,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-17T12:43:25.195706+00:00",
-      "last_seen_at": "2026-11-23T13:57:56.527600+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322478+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -939,7 +1463,7 @@
         ]
       },
       "first_seen_at": "2026-11-17T12:43:25.195712+00:00",
-      "last_seen_at": "2026-11-23T13:57:56.527603+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322483+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -992,7 +1516,7 @@
         ]
       },
       "first_seen_at": "2026-11-16T12:22:54.124134+00:00",
-      "last_seen_at": "2026-11-23T13:57:56.527607+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322487+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1033,7 +1557,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-16T12:22:54.124167+00:00",
-      "last_seen_at": "2026-11-23T13:57:56.527611+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322492+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1103,7 +1627,7 @@
         ]
       },
       "first_seen_at": "2026-11-13T11:48:49.050882+00:00",
-      "last_seen_at": "2026-11-23T13:57:56.527614+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322497+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1158,7 +1682,7 @@
         ]
       },
       "first_seen_at": "2026-11-13T11:48:49.050912+00:00",
-      "last_seen_at": "2026-11-23T13:57:56.527617+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322502+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1216,7 +1740,7 @@
         ]
       },
       "first_seen_at": "2026-11-13T11:48:49.050917+00:00",
-      "last_seen_at": "2026-11-23T13:57:56.527620+00:00",
+      "last_seen_at": "2026-11-25T13:49:02.322506+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
