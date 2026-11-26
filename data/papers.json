@@ -1,8 +1,200 @@
 {
   "schema_version": 1,
   "topic": "chiral phonons",
-  "updated_at": "2026-11-25T13:49:02.324737+00:00",
+  "updated_at": "2026-11-26T13:29:43.218808+00:00",
   "papers": [
+    {
+      "base_arxiv_id": "2611.34077",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.34077v1",
+      "title": "Pseudospin-mediated broadband hypersonic phonon transport beyond localized Berry curvature",
+      "authors": [
+        "Byunggi Kim",
+        "Michele Diego",
+        "Yohei Ogawara",
+        "Matteo Pirro",
+        "Hyuga Oka",
+        "Ryo Sasaki",
+        "Satoshi Iwamoto",
+        "Masahiro Nomura"
+      ],
+      "abstract": "Phononic nanostructures offer compact and highly confined control of elastic waves for signal transport, filtering, and quantum transduction. More recently, topological phononic structures have been explored as a route to robust waveguiding around defects and sharp bends, offering a promising basis for scalable and reliable phononic circuitry. However, how robust transport can persist as conventional localized Berry-curvature signatures diminish with increasing structural perturbation remains elusive. Here, we demonstrate bend-resilient hypersonic phonon transport beyond the conventional valley Hall framework. Using an engineered propeller phononic crystal operating at 1.9 GHz, we continuously increase the geometric perturbation to gradually weaken the valley topology while enhancing modal pseudospin character. Strikingly, as the Berry curvature progressively delocalizes from valleys, the complete elastic bandgap broadens to a normalized width of 34% and the interface modes become more strongly confined. Two-port electromechanical measurements on a thin-film lithium niobate-on-SOI platform experimentally confirm broadband interface-mode transport with no measurable bend-induced loss, despite the absence of well-localized valley-topology signatures. Our findings establish modal pseudospin engineering as a powerful design principle for robust acoustic guiding beyond conventional topological constraints, paving the way for broadband hypersonic phononic circuitry for classical and quantum information processing.",
+      "initial_submission_date": "2026-11-25T09:48:37Z",
+      "latest_update_date": "2026-11-25T09:48:37Z",
+      "categories": [
+        "physics.app-ph"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.34077v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34077v1",
+      "versions_seen": [
+        "2611.34077v1"
+      ],
+      "preliminary_include": true,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [
+        "lithium niobate"
+      ],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [
+        "topological phonon"
+      ],
+      "matched_keywords": [
+        "topological phonon",
+        "phonon"
+      ],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [
+          "topological phonon"
+        ],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": [
+          "phonon"
+        ]
+      },
+      "first_seen_at": "2026-11-26T13:29:43.217018+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217018+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.32743",
+      "current_version": 2,
+      "versioned_arxiv_id": "2611.32743v2",
+      "title": "Lattice models of chiral random motion: A short review",
+      "authors": [
+        "E. Kalz",
+        "J. Wojcik",
+        "J. Uhlig",
+        "N. Sherf",
+        "Y. Roichman",
+        "R. Metzler"
+      ],
+      "abstract": "Chirality, a systematic rotational bias, is ubiquitous in many random motion patterns, from bacteria cells, that swim in circles near surfaces and spinning colloids, to charged particles diffusing under the influence of magnetic fields. In two dimensions, chirality renders random transport \\textit{odd}: the diffusion tensor acquires an antisymmetric part that leaves the mean-squared displacement invariant but modifies fluxes and boundary currents. Lattice models for random motion are a natural setting to study chirality, since they are exactly solvable, connect directly to heterogeneous media, cellular automata, and programmable robots, and in discrete time admit fully chiral limits with a localised bulk and edge transport. Lattice walks with a rotational bias have been introduced in different communities several times since 1960, yet without a common language or conceptual connection between them. Here we review these models from the perspective that on the lattice, chirality requires memory. Taking the recently introduced chiral random walk model as a template, we describe the walker with an internal degree of freedom. With a chiral biased updating rule, the full diffusion tensor of this chiral walker turns odd. Within this picture, we can unite persistent and chiral walks, run-and-tumble motion, and cyclic random motions in one framework. We discuss how the memory is followed into the environment; in Lorentz lattice gases, kinetic and rotor walks, and random odd environments; and into the path; in spiral self-avoiding walks.",
+      "initial_submission_date": "2026-11-24T14:55:43Z",
+      "latest_update_date": "2026-11-25T08:32:42Z",
+      "categories": [
+        "cond-mat.stat-mech",
+        "physics.bio-ph",
+        "q-bio.QM"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.32743v2",
+      "pdf_url": "https://arxiv.org/pdf/2611.32743v2",
+      "versions_seen": [
+        "2611.32743v1",
+        "2611.32743v2"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Review / perspective",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-25T13:49:02.322337+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217050+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.33814",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.33814v1",
+      "title": "Spin-vibronic order in Ba$_2$MgReO$_6$",
+      "authors": [
+        "Zhishuo Huang",
+        "Takumi Gengo",
+        "Teruki Matsuzaki",
+        "Liviu F. Chibotaru",
+        "Naoya Iwahara"
+      ],
+      "abstract": "Strong spin-orbit coupling in $5d$ ions produces multipolar orders that conventional probes barely detect. In cubic $5d^1$ double perovskites, the spin-orbit quartet couples to Jahn-Teller vibrations, and resonant inelastic x-ray scattering (RIXS) has established the resulting spin-orbit-lattice entangled (vibronic) states [Phys. Rev. Lett. \\textbf{133}, 036501 (2024)]. We proposed that these vibronic states order cooperatively and thereby explain the hidden quadrupole and canted magnetic phases of Ba$_2$MgReO$_6$ [Phys. Rev. B \\textbf{107}, L220404 (2023)], but that proposal rested on a simplified model. Here, we show that a spin-vibronic Hamiltonian derived from first principles, with a single scale factor for the elastic coupling, reproduces the ordered phases of Ba$_2$MgReO$_6$ with the same vibronic states that describe its RIXS spectra. With this factor bringing the quadrupolar transition to 34.7 K, near the measured 33 K, the theory predicts the magnetic transition at 19.3 K, against the measured 18 K, and reproduces the antiferro distortion and the ferro elongation between the transitions. These results support spin-vibronic order in Ba$_2$MgReO$_6$ and point to it as the origin of the hidden multipolar phases of $5d^1$ double perovskites.",
+      "initial_submission_date": "2026-11-25T05:45:14Z",
+      "latest_update_date": "2026-11-25T05:45:14Z",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.33814v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.33814v1",
+      "versions_seen": [
+        "2611.33814v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-26T13:29:43.217056+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217056+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
+    {
+      "base_arxiv_id": "2611.33294",
+      "current_version": 1,
+      "versioned_arxiv_id": "2611.33294v1",
+      "title": "Spin superfluid transport of magnons in altermagnetic insulators",
+      "authors": [
+        "Dele Li",
+        "Meng-Han Zhang",
+        "Dao-Xin Yao"
+      ],
+      "abstract": "We study the spin superfluidity for Lieb and inverse Lieb lattices in altermagnets, which enables coherent transport of spin angular momentum carried by the phase of an easy-plane Néel order. The easy-plane anisotropy supplies the $U(1)$ platform, while the nonrelativistic spin splitting generates sublattice-alternating exchange imbalance with $B_{1g}$ symmetry. Via a continuum theory and Landau-Lifshitz-Gilbert simulations, we find that the Goldstone mode becomes quadratic at the critical stability boundary. An axial phase gradient transfers phase-channel spectral weight to the gapped mode, whereas a diagonal flow leaves these signatures absent. The spin superfluid exhibits momentum-space anisotropy due to the chiral-splitting magnon dispersion, while strong fields or elevated temperatures suppress phase coherence. Accounting for the contribution of thermal magnons at the interface, we present that the critical spin flow varies with the injection angle under the altermagnetic crystal-field effects. The spin-superfluid decay length scales with the interfacial spin-mixing conductance, which can be measured by the spin Hall magnetoresistance and spin Seebeck effect. Our findings establish altermagnetic insulators, particularly $\\mathrm{La_2O_3FeMnSe_2}$, as promising platforms for low-dissipation spin transport.",
+      "initial_submission_date": "2026-11-24T19:00:12Z",
+      "latest_update_date": "2026-11-24T19:00:12Z",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2611.33294v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.33294v1",
+      "versions_seen": [
+        "2611.33294v1"
+      ],
+      "preliminary_include": false,
+      "preliminary_research_type": "Unclassified",
+      "preliminary_paper_nature": "Original research",
+      "detected_materials_or_systems": [],
+      "detected_experimental_methods": [],
+      "detected_computational_methods": [],
+      "detected_physical_properties": [],
+      "matched_keywords": [],
+      "classification_evidence": {
+        "primary_terms": [],
+        "related_terms": [],
+        "author_experimental_actions": [],
+        "author_computational_actions": [],
+        "false_positive_terms": [],
+        "lattice_anchors": []
+      },
+      "first_seen_at": "2026-11-26T13:29:43.217060+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217060+00:00",
+      "ai_decision": null,
+      "ai_fingerprint": null
+    },
     {
       "base_arxiv_id": "2611.33156",
       "current_version": 1,
@@ -57,53 +249,7 @@
         ]
       },
       "first_seen_at": "2026-11-25T13:49:02.322308+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322308+00:00",
-      "ai_decision": null,
-      "ai_fingerprint": null
-    },
-    {
-      "base_arxiv_id": "2611.32743",
-      "current_version": 1,
-      "versioned_arxiv_id": "2611.32743v1",
-      "title": "Lattice models of chiral random motion: A short review",
-      "authors": [
-        "E. Kalz",
-        "J. Wojcik",
-        "N. Sherf",
-        "Y. Roichman",
-        "R. Metzler"
-      ],
-      "abstract": "Chirality, a systematic rotational bias, is ubiquitous in many random motion patterns, from bacteria cells, that swim in circles near surfaces and spinning colloids, to charged particles diffusing under the influence of magnetic fields. In two dimensions, chirality renders random transport \\textit{odd}: the diffusion tensor acquires an antisymmetric part that leaves the mean-squared displacement invariant but modifies fluxes and boundary currents. Lattice models for random motion are a natural setting to study chirality, since they are exactly solvable, connect directly to heterogeneous media, cellular automata, and programmable robots, and in discrete time admit fully chiral limits with a localised bulk and edge transport. Lattice walks with a rotational bias have been introduced in different communities several times since 1960, yet without a common language or conceptual connection between them. Here we review these models from the perspective that on the lattice, chirality requires memory. Taking the recently introduced chiral random walk model as a template, we describe the walker with an internal degree of freedom. With a chiral biased updating rule, the full diffusion tensor of this chiral walker turns odd. Within this picture, we can unite persistent and chiral walks, run-and-tumble motion, and cyclic random motions in one framework. We discuss how the memory is followed into the environment; in Lorentz lattice gases, kinetic and rotor walks, and random odd environments; and into the path; in spiral self-avoiding walks.",
-      "initial_submission_date": "2026-11-24T14:55:43Z",
-      "latest_update_date": "2026-11-24T14:55:43Z",
-      "categories": [
-        "cond-mat.stat-mech",
-        "physics.bio-ph",
-        "q-bio.QM"
-      ],
-      "abstract_url": "https://arxiv.org/abs/2611.32743v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.32743v1",
-      "versions_seen": [
-        "2611.32743v1"
-      ],
-      "preliminary_include": false,
-      "preliminary_research_type": "Unclassified",
-      "preliminary_paper_nature": "Review / perspective",
-      "detected_materials_or_systems": [],
-      "detected_experimental_methods": [],
-      "detected_computational_methods": [],
-      "detected_physical_properties": [],
-      "matched_keywords": [],
-      "classification_evidence": {
-        "primary_terms": [],
-        "related_terms": [],
-        "author_experimental_actions": [],
-        "author_computational_actions": [],
-        "false_positive_terms": [],
-        "lattice_anchors": []
-      },
-      "first_seen_at": "2026-11-25T13:49:02.322337+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322337+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217073+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -180,7 +326,7 @@
         ]
       },
       "first_seen_at": "2026-11-25T13:49:02.322343+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322343+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217079+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -227,7 +373,7 @@
         ]
       },
       "first_seen_at": "2026-11-25T13:49:02.322346+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322346+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217085+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -277,7 +423,7 @@
         ]
       },
       "first_seen_at": "2026-11-25T13:49:02.322350+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322350+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217090+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -333,7 +479,7 @@
         ]
       },
       "first_seen_at": "2026-11-25T13:49:02.322353+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322353+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217095+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -380,7 +526,7 @@
         ]
       },
       "first_seen_at": "2026-11-25T13:49:02.322356+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322356+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217100+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -430,7 +576,7 @@
         ]
       },
       "first_seen_at": "2026-11-25T13:49:02.322366+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322366+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217104+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -475,7 +621,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-25T13:49:02.322370+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322370+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217109+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -523,7 +669,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-25T13:49:02.322373+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322373+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217113+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -575,7 +721,7 @@
         ]
       },
       "first_seen_at": "2026-11-23T13:57:56.527495+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322387+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217117+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -622,7 +768,7 @@
         ]
       },
       "first_seen_at": "2026-11-23T13:57:56.527530+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322395+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217122+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -666,7 +812,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-23T13:57:56.527534+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322401+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217126+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -711,7 +857,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-20T12:26:36.518055+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322406+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217130+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -779,7 +925,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-20T12:26:36.518083+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322412+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217135+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -837,7 +983,7 @@
         ]
       },
       "first_seen_at": "2026-11-20T12:26:36.518088+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322416+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217139+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -882,7 +1028,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-19T12:25:22.215068+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322421+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217143+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -929,7 +1075,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-19T12:25:22.215094+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322426+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217148+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -974,7 +1120,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-19T12:25:22.215099+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322431+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217152+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1022,7 +1168,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-19T12:25:22.215102+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322435+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217156+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1077,7 +1223,7 @@
         ]
       },
       "first_seen_at": "2026-11-17T12:43:25.195703+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322440+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217160+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1137,7 +1283,7 @@
         ]
       },
       "first_seen_at": "2026-11-18T12:34:54.492383+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322446+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217167+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1184,7 +1330,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-18T12:34:54.492389+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322452+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217172+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1226,7 +1372,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-18T12:34:54.492394+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322456+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217176+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1269,7 +1415,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-17T12:43:25.195665+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322461+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217180+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1324,7 +1470,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-17T12:43:25.195693+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322468+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217185+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1370,7 +1516,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-17T12:43:25.195699+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322473+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217190+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1415,7 +1561,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-17T12:43:25.195706+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322478+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217194+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1463,7 +1609,7 @@
         ]
       },
       "first_seen_at": "2026-11-17T12:43:25.195712+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322483+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217199+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1516,7 +1662,7 @@
         ]
       },
       "first_seen_at": "2026-11-16T12:22:54.124134+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322487+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217203+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1557,7 +1703,7 @@
         "lattice_anchors": []
       },
       "first_seen_at": "2026-11-16T12:22:54.124167+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322492+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217207+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1627,7 +1773,7 @@
         ]
       },
       "first_seen_at": "2026-11-13T11:48:49.050882+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322497+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217211+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
@@ -1682,7 +1828,7 @@
         ]
       },
       "first_seen_at": "2026-11-13T11:48:49.050912+00:00",
-      "last_seen_at": "2026-11-25T13:49:02.322502+00:00",
+      "last_seen_at": "2026-11-26T13:29:43.217216+00:00",
       "ai_decision": null,
       "ai_fingerprint": null
     },
